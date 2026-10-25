@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { createRequire } from "node:module";
+import { auditCollectionRegressions } from "./audit-ui-preview-regressions.mjs";
 
 // Optional QA dependency; the static site has no build/runtime dependencies.
 export async function auditBrowser(url, screen) {
@@ -100,6 +101,36 @@ export async function auditBrowser(url, screen) {
       assert.deepEqual(textRendering.aspectOptions, ["16:9", "18:9", "20:9", "4:3"]);
       assert.equal(textRendering.selectedAspect, "18:9");
       assert.match(textRendering.radialFill, /conic-gradient/);
+      async function checkLabelFit() {
+        const labels = await page.evaluate(() => [...document.querySelectorAll("#ui-preview-stage .ui-text")].filter(span => span.clientWidth && span.clientHeight).map(span => {
+          const content = span.querySelector(":scope > .ui-text-content");
+          return { path: span.parentElement.dataset.uiPath || span.parentElement.dataset.uiClonePath, text: span.textContent,
+            fontSize: Number.parseFloat(span.style.fontSize), maximum: Number(span.dataset.uiFontSize),
+            fits: !!content && content.scrollWidth <= span.clientWidth && content.offsetHeight <= span.clientHeight,
+            h: span.style.textAlign, v: span.style.justifyContent, props: JSON.parse(span.dataset.uiTextProps) };
+        }));
+        for (const label of labels) {
+          assert.ok(label.fits, `Label clipped: ${label.path}: ${label.text}`);
+          assert.ok(label.fontSize > 0 && label.fontSize <= label.maximum, `Label font exceeds source maximum: ${label.path}`);
+          assert.equal(label.h, label.props.alignment?.h || "center", label.path);
+          assert.equal(label.v, ({ top: "flex-start", middle: "center", bottom: "flex-end" })[label.props.alignment?.v] || "center", label.path);
+        }
+        return labels;
+      }
+      const fittedLabels = await checkLabelFit();
+      assert.ok(fittedLabels.some(label => label.fontSize < label.maximum), "Long translated labels/counters were not reduced");
+      await page.waitForFunction(() => [...document.querySelectorAll("#ui-preview-stage .ui-sliced")].filter(el => el.getBoundingClientRect().width).every(el => el.tagName === "IMG" && el.complete && el.src.startsWith("data:image/png")));
+      const slicedRendering = await page.evaluate(() => {
+        const image = document.querySelector('[data-ui-name="CommonTabButton"] .ui-sliced');
+        const canvas = document.createElement("canvas"); canvas.width = image.naturalWidth; canvas.height = image.naturalHeight;
+        const ctx = canvas.getContext("2d"); ctx.drawImage(image, 0, 0);
+        const border = JSON.parse(image.dataset.uiSliceBorder), y = Math.floor(canvas.height / 2);
+        const center = [...ctx.getImageData(Math.floor(canvas.width / 2), y, 1, 1).data];
+        const seams = [border.left - 1, border.left, canvas.width - border.right - 1, canvas.width - border.right].map(x => [...ctx.getImageData(x, y, 1, 1).data]);
+        return { center, seams, borderWidth: getComputedStyle(image).borderWidth };
+      });
+      assert.ok(slicedRendering.seams.every(pixel => pixel.every((channel, index) => channel === slicedRendering.center[index])), "Nine-slice has internal seams on a flat source region");
+      assert.equal(slicedRendering.borderWidth, "0px");
       const pressedReset = await page.evaluate(() => {
         const button = document.querySelector('#ui-preview-stage button[data-ui-name="CommonTabButton"]');
         let source = null;
@@ -125,6 +156,7 @@ export async function auditBrowser(url, screen) {
       for (const rarity of ["Common", "Rare", "Epic", "Legendary", "Mythic", "Apex", "Limited", "All"]) {
         await click(button(`${rarity}TabButton`));
         assert.equal(await page.evaluate(() => collectionPreview.rarity), rarity.toUpperCase());
+        await checkLabelFit();
       }
       let petsClicked = 0;
       for (let pageIndex = 0; ; pageIndex++) {
@@ -133,6 +165,7 @@ export async function auditBrowser(url, screen) {
           await click(`[data-ui-pet-id="${expected}"] button`);
           assert.equal(await page.evaluate(() => collectionPreview.selected.ID), expected);
           petsClicked++;
+          await checkLabelFit();
         }
         if (!await page.locator(button("NextPageButton")).isVisible()) break;
         await click(button("NextPageButton"));
@@ -388,7 +421,17 @@ export async function auditBrowser(url, screen) {
       assert.deepEqual(await measure(), before);
       assert.equal(await page.locator(".ui-resource-selected").count(), 0);
       assert.deepEqual(errors, [], "Browser console/page errors");
+      const languageChecks = [];
+      for (const language of ["en", "vi"]) {
+        await page.selectOption("#ui-language", language);
+        await page.waitForSelector("[data-ui-pet-id]");
+        await page.waitForFunction(() => [...document.querySelectorAll('#ui-preview-stage .ui-text')].filter(span => span.clientWidth && span.clientHeight).every(span => span.dataset.uiFittedFontSize));
+        languageChecks.push({ language, labels: (await checkLabelFit()).length });
+      }
+      assert.deepEqual(errors, [], "Browser console/page errors after language changes");
+      const collectionRegressions = await auditCollectionRegressions(browser, url, viewport);
       results.push({ viewport, clicks, petsClicked, consoleErrors: errors.length, scroll: "unchanged before/after every mouse click", sample: measurements[0], alpha,
+        collectionRegressions,
         ownership: { ownedVisuals, unownedVisuals, ownedMutationIconColor: ownedIconColor, unownedMutationIconColor: unownedIconColor },
         widgetComparison,
         hover: { resourceRowUnchanged: resourceHoverAfter === resourceHoverBefore, pressedReset },
@@ -396,6 +439,7 @@ export async function auditBrowser(url, screen) {
           rightClickPrevented: inspectorOpen.rightClickPrevented, dialogWithinViewport: true, rowSelectionChanged, copyStatus,
           inactiveHit: hiddenHit.hit, alphaZeroHit: alphaZeroHit.hit, outsideContextDefaultPreserved: true, closeByEscapeAndOutsideClick: true },
         textRendering: { count: textRendering.count, clipApplied: textRendering.spans.every(span => span.overflowStyle === "hidden"),
+          reducedLabelCount: fittedLabels.filter(label => label.fontSize < label.maximum).length, languageChecks, slicedRendering,
           sourcePropertiesPresent: textRendering.spans.every(span => span.font && Number.isFinite(span.lineSpacing)),
           systemFontFamilies: [...new Set(textRendering.spans.map(span => span.fontFamily))],
           pivotOriginsMatch: textRendering.transformOrigins.every(item => item.expected === item.actual),

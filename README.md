@@ -2,6 +2,35 @@
 
 Private design dashboard generated from the checked-in StealAPet config snapshot and source references.
 
+## UI Preview: sprite đã move/rename và label (2026-10-25)
+
+`Assets/HUDs/PetsCollection.ui` lưu cả `fileId` và `filePath` trong
+`propsData.image.source` / `propsData.button.spriteName`. Move/rename PNG
+không đảm bảo đường dẫn đã serialize trong HUD được cập nhật. Sync hiện
+tra ID trong `.png.meta` ở `Assets/Sprites/NewAssets/`, chỉ copy PNG có ID
+khớp và giữ `declaredKeys` trong `collection-sprites.json` để truy vết.
+Ví dụ `Img_bg02_BG.png` → `ContainerBG.png`, `Img_decorate01/02.png` →
+`DecorateIcon1/2.png`, `Icon_mutation.png` → `HasMWIcon.png`. Hai alias
+BG/ShadowTriangleRounded được xác thực ID với metadata tại đường dẫn mới.
+Resource đang dùng hiển thị cả đường dẫn thực và đường dẫn cũ trong `.ui`.
+
+Renderer ghép 9-slice vào bitmap ở kích thước tham chiếu trước khi scale,
+tránh đường nối vuông của CSS border-image. Label `overflow=0` (Reduce
+when exceed, do designer xác nhận) tự giảm từ `fontSize` nguồn, cập nhật
+khi đổi nội dung/ngôn ngữ/kích thước; giữ bold/italic và căn ngang/dọc.
+Font `Default` vẫn dùng sans-serif hệ thống vì chưa có font engine gốc.
+Placeholder chỉ hiện khi bật Debug; bảng resource vẫn ghi sprite thiếu.
+Hiện còn 2 sprite `lib://` không có file trong checkout.
+
+Collection bindings: clone sprite được xử lý lại tint/gradient riêng, gồm
+HasMW. Khung pet lớn cập nhật cả thanh `Rarity` (UIUtils.UpdatePetWidgetV3;
+chưa sở hữu dùng DEFAULT_COLOR) và badge `RarityBG` (HudCollection).
+Sync xuất nguồn nhận cho từng pet theo thứ tự Giftcode → LuckyBox → Fusion
+→ Road → Fishing → Dig → Event, kiểm membership từ PoolFishing/DigPools
+như client config; không phụ thuộc event hiện đang mở. Recipe dùng icon
+`Summon<previousPetRarity>` từ `Assets/Sprites/Summon/`, nhãn/màu ô bất kỳ
+theo rarity pet đích và giữ pet cụ thể ở ô thứ hai nếu pet trước là secret.
+
 ## UI Proposal
 
 Mở `#uiproposal/collection/collection-pipeline-example` hoặc mục **UI Proposal**

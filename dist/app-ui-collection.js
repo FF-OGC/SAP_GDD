@@ -45,7 +45,7 @@ function initCollectionPreview(screen, rules, rendered, options = {}) {
     recordRuntime(el, "IsVisible", visible, source || "dist/app-ui-collection.js (preview simulation)");
     if (wasVisible !== visible) uiRenderer.refreshLayouts(rendered.canvas, screen);
   }
-  function setText(el, value, source) { const span = el?.querySelector(":scope > .ui-text"); if (span) { span.textContent = uiTranslate(String(value)); el.dataset.uiRuntimeContent = String(value); recordRuntime(el, "Content", String(value), source); } }
+  function setText(el, value, source) { const span = el?.querySelector(":scope > .ui-text"); if (span) { uiRenderer.setText(el, uiTranslate(String(value))); el.dataset.uiRuntimeContent = String(value); recordRuntime(el, "Content", String(value), source); } }
   function setImage(el, url, dark = false, sources = {}) {
     if (!el) return;
     el.dataset.uiRuntimeUrl = url || "";
@@ -95,6 +95,7 @@ function initCollectionPreview(screen, rules, rendered, options = {}) {
       delete el.dataset.uiId;
     }
     container.appendChild(clone);
+    uiRenderer.refreshSprites(clone);
     uiRenderer.refreshLayouts(rendered.canvas, screen);
     return clone;
   }
@@ -142,15 +143,7 @@ function initCollectionPreview(screen, rules, rendered, options = {}) {
     setVisible(directChild(card, "SelectBorder"), pet.ID === state.selected?.ID);
   }
   function obtainKind(pet) {
-    const id = Number(pet.ID), o = rules.obtain;
-    if (o.giftcodePetIds.includes(id)) return "giftcode";
-    if (o.luckyboxPetIds.includes(id)) return "luckybox";
-    const fuse = pet[o.canFuseColumn] === "1";
-    const road = o.roadWeightColumns.some(column => Number(pet[column]) > 0);
-    const secret = id !== o.secretFusionException && id > o.secretFusionStart && id <= o.secretFusionStart + o.secretFusionCount;
-    if (fuse && (secret || !road)) return "fusion";
-    if (road) return "road";
-    return "chưa có dữ liệu";
+    return rules.obtain.byPetId?.[pet.ID]?.kind || "chưa có dữ liệu";
   }
   function updateDetails() {
     const pet = state.selected;
@@ -166,6 +159,10 @@ function initCollectionPreview(screen, rules, rendered, options = {}) {
       color: owned ? "Assets/HUDs/PetsCollection.ui (base image Color)" : rules.runtimeColorRules.petUnowned.source
     });
     setText(directChild(detailPet, "Name"), owned ? pet.Name : rules.unowned.name, owned ? "Assets/CSV/Pet.csv (preview row)" : rules.unowned.nameSource);
+    const detailRarity = directChild(detailPet, "Rarity");
+    const detailColor = owned ? rarityColor(pet.Rarity) : rules.unowned.tint;
+    uiRenderer.tint(detailRarity, detailColor);
+    recordRuntime(detailRarity, "Color", detailColor, owned ? rules.petWidget.rarityColorSource : sourceFor("rarityWidget", "Color"));
     const rarity = directChild(detailPet, "RarityBG");
     if (rarity) {
       const color = rarityColor(pet.Rarity);
@@ -180,6 +177,7 @@ function initCollectionPreview(screen, rules, rendered, options = {}) {
     setVisible(unlock, !owned);
     const obtainKeys = { giftcode: "HUD_REBIRTH_GIFTCODE", luckybox: "HUD_LUCKYBOX", fusion: "HUD_FUSE", road: "HUD_ROAD", fishing: "HUD_FISH", dig: "HUD_DIG", event: "HUD_EVENT" };
     const obtainText = uiTranslate(obtainKeys[kind] || kind);
+    panel.dataset.uiObtainKind = kind;
     const obtainSprite = rules.obtain.iconSpriteKeys?.[kind];
     if (obtainSprite) {
       for (const target of [byPath(base + "PetDetails/Obtain/BG/ObtainIcon"), byPath(base + "UnlockObtain/Icon")]) {
@@ -193,20 +191,19 @@ function initCollectionPreview(screen, rules, rendered, options = {}) {
     setText(byPath(base + "PetDetails/Obtain/BG/ObtainWay"), obtainText, sourceFor("_ObtainWay", "Content"));
     setVisible(recipe, showRecipe);
     if (showRecipe) {
-      let rank = Number(pet.Rank) - rules.recipe.previousRankOffset;
-      let previous = null;
-      while (rank >= 1 && !previous) {
-        const candidate = allPets.find(row => Number(row.Rank) === rank);
-        if (candidate?.[rules.obtain.canFuseColumn] === "1") previous = candidate;
-        else rank -= 1;
-      }
+      const recipeRule = rules.recipe.byPetId?.[pet.ID];
+      const previous = pets.find(row => row.ID === recipeRule?.previousPetId);
       const materials = [...recipe.children].filter(el => el.dataset.uiName === "Pet");
       materials.forEach((item, index) => {
-        const previousId = Number(previous?.ID);
-        const isSecret = previousId !== rules.obtain.secretFusionException && previousId > rules.obtain.secretFusionStart && previousId <= rules.obtain.secretFusionStart + rules.obtain.secretFusionCount;
-        const isSpecific = index === 1 && previous && isSecret;
-        setText(directChild(item, "Name"), isSpecific ? previous.Name : previous ? uiTranslate("ANY_RARITY", [uiTranslate(`RARITY_${previous.Rarity}`)]) : "chưa có dữ liệu", isSpecific ? "Assets/CSV/Pet.csv (preview row)" : sourceFor("petName", "Content", "ANY_RARITY"));
-        setImage(directChild(item, "Thumbnail"), isSpecific ? icon(iconSets.petIcons, previous.ID) : "", false, { sprite: sourceFor("thumbnail", "SpriteName"), color: "Assets/HUDs/PetsCollection.ui (base image Color)" });
+        const isSpecific = index === 1 && previous && recipeRule.secondIsSpecific;
+        setText(directChild(item, "Name"), isSpecific ? previous.Name : previous ? uiTranslate("ANY_RARITY", [uiTranslate(`RARITY_${recipeRule.anyRarity}`)]) : "chưa có dữ liệu", isSpecific ? "Assets/CSV/Pet.csv (preview row)" : sourceFor("petName", "Content", "ANY_RARITY"));
+        const thumbnail = directChild(item, "Thumbnail");
+        if (isSpecific) setImage(thumbnail, icon(iconSets.petIcons, previous.ID), false, { sprite: sourceFor("thumbnail", "SpriteName") });
+        else {
+          const sprite = rules.recipe.iconSpriteKeys?.[recipeRule?.thumbnailKey];
+          uiRenderer.setSprite(thumbnail, sprite, screenEntity(thumbnail)?.image || {}, context.manifest);
+          recordRuntime(thumbnail, "SpriteName", sprite, rules.recipe.thumbnailSource);
+        }
         const materialRarity = directChild(item, "Rarity");
         if (materialRarity) {
           const materialRarityValue = isSpecific ? previous.Rarity : pet.Rarity;

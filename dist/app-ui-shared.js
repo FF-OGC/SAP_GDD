@@ -1,5 +1,9 @@
 "use strict";
 
+// UI snapshots are regenerated locally; always read the current files when
+// opening a preview/proposal instead of mixing cached rules with new scripts.
+function fetchUiResource(url) { return fetch(url, { cache: "no-store" }); }
+
 function uiResourceRows(context, extraCells = () => "") {
   const rows = [];
   function walk(node, parentAlpha = 1) {
@@ -16,7 +20,10 @@ function uiResourceRows(context, extraCells = () => "") {
       const border = sprite?.border ? `${sprite.border.left}/${sprite.border.right}/${sprite.border.top}/${sprite.border.bottom}` : "—";
       const shown = context.rendered?.byId.get(node.id)?.querySelector(":scope > .ui-text")?.textContent;
       const label = text ? `${text.key || "chuỗi thô"} · ${shown ?? uiTranslate(text.key || text.value)} · ${text.fontSize || "?"}px${text.outline ? " · outline" : ""}` : "";
-      rows.push(`<tr data-resource-id="${esc(node.id)}" data-resource-path="${esc(node.path)}"><td>${esc(node.path)}</td><td>${runtimeUrl || sprite?.output ? `<img src="${esc(runtimeUrl || sprite.output)}" alt="">` : ""}${esc(runtimeUrl ? runtimeUrl.split("/").at(-1) : key.split("/").at(-1) || "—")}<small>${esc(runtimeUrl || key || "")}</small></td><td>${runtimeUrl ? "Runtime" : key ? (sprite?.missing || !sprite ? "Thiếu" : "Có file") : "—"}<small>${sprite ? `${sprite.width || "?"}×${sprite.height || "?"} · border ${border} · ${(sprite.origins || []).join(", ")}` : ""}</small></td><td>${node.alpha ?? 100}%<small>Web cộng dồn: ${Number((effectiveAlpha * 100).toFixed(4))}% · cascade game chưa xác minh</small></td><td>${esc(kind)}<small>${esc(color)}${data.centerInvisible ? " · center hidden" : ""}</small></td><td>${esc(label)}</td>${extraCells(node)}</tr>`);
+      const declaredPath = data.source?.filePath || data.spriteName?.filePath || "";
+      const moved = declaredPath && declaredPath.replaceAll("\\", "/") !== key && sprite?.declaredKeys?.includes(declaredPath.replaceAll("\\", "/"));
+      const relocation = moved ? `<small>fileId: ${esc(sprite.fileId)} · .ui: ${esc(declaredPath)}</small>` : "";
+      rows.push(`<tr data-resource-id="${esc(node.id)}" data-resource-path="${esc(node.path)}"><td>${esc(node.path)}</td><td>${runtimeUrl || sprite?.output ? `<img src="${esc(runtimeUrl || sprite.output)}" alt="">` : ""}${esc(runtimeUrl ? runtimeUrl.split("/").at(-1) : key.split("/").at(-1) || "—")}<small>${esc(runtimeUrl || key || "")}</small>${relocation}</td><td>${runtimeUrl ? "Runtime" : key ? (sprite?.missing || !sprite ? "Thiếu" : moved ? "Có file · khớp fileId" : "Có file") : "—"}<small>${sprite ? `${sprite.width || "?"}×${sprite.height || "?"} · border ${border} · ${(sprite.origins || []).join(", ")}` : ""}</small></td><td>${node.alpha ?? 100}%<small>Web cộng dồn: ${Number((effectiveAlpha * 100).toFixed(4))}% · cascade game chưa xác minh</small></td><td>${esc(kind)}<small>${esc(color)}${data.centerInvisible ? " · center hidden" : ""}</small></td><td>${esc(label)}</td>${extraCells(node)}</tr>`);
     }
     node.children.forEach(child => walk(child, effectiveAlpha));
   }

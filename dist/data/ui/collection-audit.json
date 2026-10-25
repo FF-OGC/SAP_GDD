@@ -55,15 +55,55 @@
   "inspectorModule": true,
   "inspectorContextMenuAndGeometryHitTest": true,
   "inspectorCloneIdentityAndFullProps": true,
-  "spriteCount": 41,
+  "spriteCount": 46,
   "missingSprites": [
-    "Assets/Sprites/UIComponents/Backgrounds/BG.png",
     "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
-    "Assets/_Test/NewUI/Assets/Img_bg02_BG.png",
-    "Assets/_Test/NewUI/Assets/Img_decorate01.png",
-    "Assets/_Test/NewUI/Assets/Img_decorate02.png",
-    "Assets/_Test/NewAssets/Assets/Icon_mutation.png",
     "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png"
+  ],
+  "movedSprites": [
+    {
+      "key": "Assets/Sprites/Backgrounds/BG.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Backgrounds/BG.png",
+        "Assets/Sprites/Backgrounds/BG.png"
+      ],
+      "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk"
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/ContainerBG.png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Img_bg02_BG.png"
+      ],
+      "fileId": "gszc833692p-mu6veyfp-g1yynwpple7"
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/DecorateIcon1.png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Img_decorate01.png"
+      ],
+      "fileId": "ouansc8n289-mu6xhpqu-centw2ek0ns"
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/DecorateIcon2.png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Img_decorate02.png"
+      ],
+      "fileId": "z3itg018ujr-mu6xhpvo-cnfqx0exhhp"
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/HasMWIcon.png",
+      "declaredKeys": [
+        "Assets/_Test/NewAssets/Assets/Icon_mutation.png"
+      ],
+      "fileId": "b9hti3lr6oq-mu9dppgj-r0zg509ivmi"
+    },
+    {
+      "key": "Assets/Sprites/Shapes/ShadowTriangleRounded.png",
+      "declaredKeys": [
+        "Assets/Sprites/ShadowTriangleRounded.png"
+      ],
+      "fileId": "2dwx88lny2t-mgctluht-todfgsnoa3q"
+    }
   ],
   "missingCopiedFiles": [],
   "imageEntityCount": 68,

@@ -111,6 +111,12 @@ const missingEntities = sourceEntities.filter(item => !exportedKeys.has(key(item
 const extraEntities = exportedEntities.filter(item => !sourceKeys.has(key(item)));
 const missingFiles = manifest.sprites.filter(item => item.output && !existsSync(path.join(gdd, "dist", item.output.startsWith("./") ? item.output.slice(2) : item.output)));
 const spriteByKey = new Map(manifest.sprites.map(item => [item.key, item]));
+const movedSprites = manifest.sprites.filter(item => item.declaredKeys?.some(key => key !== item.key));
+for (const item of movedSprites) {
+  const metadata = JSON.parse(readFileSync(path.join(sourceRoot, item.key + ".meta"), "utf8"));
+  assert.equal(item.fileId, metadata.fileId, `Moved sprite identity mismatch: ${item.key}`);
+}
+assert.ok(manifest.missing.every(item => item.key.startsWith("lib://")), "A referenced project sprite is unresolved");
 const imageEntities = [], unmanifestedImages = [], borderMismatches = [], missingKeys = [];
 function inspect(node) {
   const graphic = node.image || node.button;
@@ -158,6 +164,7 @@ const report = {
   inspectorContextMenuAndGeometryHitTest: true,
   inspectorCloneIdentityAndFullProps: true,
   spriteCount: manifest.sprites.length, missingSprites: manifest.missing.map(item => item.key),
+  movedSprites: movedSprites.map(({ key, declaredKeys, fileId }) => ({ key, declaredKeys, fileId })),
   missingCopiedFiles: missingFiles.map(item => item.output),
   imageEntityCount: imageEntities.length, unmanifestedImages, borderMismatches,
   localizationKeyCount: Object.keys(i18n.entries).length,

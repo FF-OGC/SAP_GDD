@@ -18,8 +18,8 @@
     "tintStatus": "matches requested blend model; Craftland runtime pixel output not verified",
     "imageGradient": "vertical interpolation from GradientTop to GradientBottom when gradient is nonzero",
     "imageGradientStatus": "MCP documents top/bottom gradient colors; numeric mode semantics and runtime output are unverified",
-    "text": "source text fields retained; browser system font; lineSpacing numeric values map to CSS unitless line-height; text clips to RectTransform",
-    "textStatus": "MCP documents field names and types but not font metrics, lineSpacing units, Overflow values, gradient semantics, or exact shadow/outline rasterization",
+    "text": "source font style and horizontal/vertical alignment; overflow 0 reduces font size to fit the label; source fontSize is the maximum; text clips to RectTransform",
+    "textStatus": "Overflow 0 (Reduce when exceed) confirmed by designer; Default uses an explicit browser sans-serif fallback, not the engine font; lineSpacing units, other overflow modes and exact effects remain unverified",
     "textBackground": "backgroundRGBA when alpha is nonzero; otherwise backgroundColor when background is enabled",
     "fill": "FillType values use simple/sliced/tiled/filled/fit rendering; horizontal/vertical/radial fills use CSS clip-path or conic mask",
     "fillStatus": "enum labels confirmed by MCP; radial origin/sweep/invert behavior and Fit sizing are approximations",
@@ -364,7 +364,7 @@
           "animationAtlasID": null,
           "animationFrameRate": 30,
           "animationLoop": true,
-          "spriteKey": "Assets/Sprites/UIComponents/Backgrounds/BG.png"
+          "spriteKey": "Assets/Sprites/Backgrounds/BG.png"
         },
         "button": null,
         "text": null,
@@ -1239,7 +1239,7 @@
               "animationAtlasID": null,
               "animationFrameRate": 30,
               "animationLoop": true,
-              "spriteKey": "Assets/_Test/NewUI/Assets/Img_bg02_BG.png"
+              "spriteKey": "Assets/Sprites/NewAssets/ContainerBG.png"
             },
             "button": null,
             "text": null,
@@ -1409,7 +1409,7 @@
                   "animationAtlasID": null,
                   "animationFrameRate": 30,
                   "animationLoop": true,
-                  "spriteKey": "Assets/_Test/NewUI/Assets/Img_decorate01.png"
+                  "spriteKey": "Assets/Sprites/NewAssets/DecorateIcon1.png"
                 },
                 "button": null,
                 "text": null,
@@ -1755,7 +1755,7 @@
                   "animationAtlasID": null,
                   "animationFrameRate": 30,
                   "animationLoop": true,
-                  "spriteKey": "Assets/_Test/NewUI/Assets/Img_decorate02.png"
+                  "spriteKey": "Assets/Sprites/NewAssets/DecorateIcon2.png"
                 },
                 "button": null,
                 "text": null,
@@ -5548,7 +5548,7 @@
                       "animationAtlasID": null,
                       "animationFrameRate": 30,
                       "animationLoop": true,
-                      "spriteKey": "Assets/_Test/NewAssets/Assets/Icon_mutation.png"
+                      "spriteKey": "Assets/Sprites/NewAssets/HasMWIcon.png"
                     },
                     "button": null,
                     "text": null,

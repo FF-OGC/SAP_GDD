@@ -15,7 +15,7 @@ function uiProposalPage() {
 async function updateUiProposalPage() {
   const ticket = ++uiProposal.ticket;
   try {
-    uiProposal.registry ||= await fetch('./data/ui/proposals/registry.json').then(checkUiJson);
+    uiProposal.registry ||= await fetchUiResource('./data/ui/proposals/registry.json').then(checkUiJson);
     const entries = uiProposal.registry.proposals;
     if (s.page !== 'uiproposal' || ticket !== uiProposal.ticket) return;
     const select = document.getElementById('ui-proposal-select');
@@ -26,9 +26,9 @@ async function updateUiProposalPage() {
     const entry = hasRoute ? entries.find(e => e.screen === segments[1] && e.id === segments[2]) : entries.find(e => e.id === remembered) || entries[0];
     if (!entry) throw new Error(hasRoute ? 'Deep-link đề xuất không tồn tại.' : 'Chưa có đề xuất.');
     const [base, proposed, resources, diff, prompt, rules, i18n] = await Promise.all([
-      fetch(`./data/ui/${entry.screen}.json`).then(checkUiJson), fetch(entry.data).then(checkUiJson), fetch(entry.resources).then(checkUiJson), fetch(entry.diff).then(checkUiJson),
-      fetch(entry.prompt).then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); }),
-      fetch(`./data/ui/${entry.screen}-rules.json`).then(checkUiJson), fetch(`./data/ui/${entry.screen}-i18n.json`).then(checkUiJson)
+      fetchUiResource(`./data/ui/${entry.screen}.json`).then(checkUiJson), fetchUiResource(entry.data).then(checkUiJson), fetchUiResource(entry.resources).then(checkUiJson), fetchUiResource(entry.diff).then(checkUiJson),
+      fetchUiResource(entry.prompt).then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); }),
+      fetchUiResource(`./data/ui/${entry.screen}-rules.json`).then(checkUiJson), fetchUiResource(`./data/ui/${entry.screen}-i18n.json`).then(checkUiJson)
     ]);
     if (s.page !== 'uiproposal' || ticket !== uiProposal.ticket) return;
     Object.assign(uiProposal, { entry, base, proposed, resources, diff, prompt });

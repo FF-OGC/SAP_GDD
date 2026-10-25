@@ -54,6 +54,24 @@ export function syncUiPreview(sourceRoot, gddRoot) {
     const commentAt = raw.lastIndexOf("\n//");
     const parsed = JSON.parse(commentAt >= 0 ? raw.slice(0, commentAt) : raw);
     const sprites = new Map();
+    // Studio keeps the asset identity when a sprite is moved or renamed;
+    // serialized filePath values in older HUDs can still point to its old name.
+    // Only index metadata in the relocation directory confirmed for this HUD.
+    const relocatedById = new Map();
+    const relocationDirectory = "Assets/Sprites/NewAssets";
+    for (const name of readdirSync(source(relocationDirectory)).sort()) {
+      if (!name.toLowerCase().endsWith(".png.meta")) continue;
+      const key = `${relocationDirectory}/${name.slice(0, -5)}`;
+      const metadata = JSON.parse(readFileSync(source(key + ".meta"), "utf8"));
+      if (!metadata.fileId) continue;
+      const candidates = relocatedById.get(metadata.fileId) || [];
+      candidates.push(key);
+      relocatedById.set(metadata.fileId, candidates);
+    }
+    const legacySpritePaths = {
+      "Assets/Sprites/UIComponents/Backgrounds/BG.png": "Assets/Sprites/Backgrounds/BG.png",
+      "Assets/Sprites/ShadowTriangleRounded.png": "Assets/Sprites/Shapes/ShadowTriangleRounded.png"
+    };
     const unsupported = [];
     let entityCount = 0;
     function sprite(ref, entityPath, origin = ".ui") {
@@ -61,10 +79,19 @@ export function syncUiPreview(sourceRoot, gddRoot) {
       const filePath = String(ref.filePath || "");
       if (!filePath) return null;
       const declaredKey = filePath.replaceAll("\\", "/");
-      const key = declaredKey === "Assets/Sprites/ShadowTriangleRounded.png" && existsSync(source("Assets/Sprites/Shapes/ShadowTriangleRounded.png"))
-        ? "Assets/Sprites/Shapes/ShadowTriangleRounded.png" : declaredKey;
+      let key = declaredKey;
+      if (declaredKey.startsWith("Assets/") && !existsSync(source(declaredKey))) {
+        const candidates = ref.fileId ? relocatedById.get(ref.fileId) || [] : [];
+        if (candidates.length > 1) throw new Error(`Ambiguous sprite fileId ${ref.fileId}: ${candidates.join(", ")}`);
+        if (candidates.length === 1) key = candidates[0];
+        else if (legacySpritePaths[declaredKey]) {
+          const candidate = legacySpritePaths[declaredKey];
+          const meta = source(candidate + ".meta");
+          if (existsSync(source(candidate)) && existsSync(meta) && JSON.parse(readFileSync(meta, "utf8")).fileId === ref.fileId) key = candidate;
+        }
+      }
       if (!sprites.has(key)) {
-        const entry = { key, declaredKey, output: null, missing: false, references: [], origins: [], border: null, width: null, height: null };
+        const entry = { key, declaredKey, declaredKeys: [], fileId: ref.fileId || null, output: null, missing: false, references: [], origins: [], border: null, width: null, height: null };
         if (key.startsWith("lib://") || !key.startsWith("Assets/") || !key.toLowerCase().endsWith(".png")) entry.missing = true;
         else {
           const input = source(key);
@@ -86,6 +113,7 @@ export function syncUiPreview(sourceRoot, gddRoot) {
         sprites.set(key, entry);
       }
       sprites.get(key).references.push(entityPath);
+      if (!sprites.get(key).declaredKeys.includes(declaredKey)) sprites.get(key).declaredKeys.push(declaredKey);
       if (!sprites.get(key).origins.includes(origin)) sprites.get(key).origins.push(origin);
       return key;
     }
@@ -131,8 +159,8 @@ export function syncUiPreview(sourceRoot, gddRoot) {
         tintStatus: "matches requested blend model; Craftland runtime pixel output not verified",
         imageGradient: "vertical interpolation from GradientTop to GradientBottom when gradient is nonzero",
         imageGradientStatus: "MCP documents top/bottom gradient colors; numeric mode semantics and runtime output are unverified",
-        text: "source text fields retained; browser system font; lineSpacing numeric values map to CSS unitless line-height; text clips to RectTransform",
-        textStatus: "MCP documents field names and types but not font metrics, lineSpacing units, Overflow values, gradient semantics, or exact shadow/outline rasterization",
+        text: "source font style and horizontal/vertical alignment; overflow 0 reduces font size to fit the label; source fontSize is the maximum; text clips to RectTransform",
+        textStatus: "Overflow 0 (Reduce when exceed) confirmed by designer; Default uses an explicit browser sans-serif fallback, not the engine font; lineSpacing units, other overflow modes and exact effects remain unverified",
         textBackground: "backgroundRGBA when alpha is nonzero; otherwise backgroundColor when background is enabled",
         fill: "FillType values use simple/sliced/tiled/filled/fit rendering; horizontal/vertical/radial fills use CSS clip-path or conic mask",
         fillStatus: "enum labels confirmed by MCP; radial origin/sweep/invert behavior and Fit sizing are approximations",
@@ -147,11 +175,19 @@ export function syncUiPreview(sourceRoot, gddRoot) {
     });
     if (ui.id === "collection") {
       const rules = collectionRules(source);
+      deriveCollectionPets(source, rules);
       const files = readdirSync(source("Assets/Sprites"), { recursive: true }).filter(name => String(name).toLowerCase().endsWith(".png")).map(name => `Assets/Sprites/${String(name).replaceAll("\\", "/")}`);
       for (const [kind, name] of Object.entries(rules.obtain.icons)) {
         const matches = files.filter(file => file.split("/").at(-1) === `${name}.png`);
         if (matches.length === 1) { rules.obtain.iconSpriteKeys[kind] = matches[0]; sprite({ filePath: matches[0] }, `runtime:obtain:${kind}`, "runtime-code"); }
         else rules.obtain.iconSpriteKeys[kind] = null;
+      }
+      rules.recipe.iconSpriteKeys = {};
+      for (const recipe of Object.values(rules.recipe.byPetId)) {
+        const key = recipe.thumbnailKey;
+        if (key in rules.recipe.iconSpriteKeys) continue;
+        const file = `Assets/Sprites/Summon/${recipe.previousRarity}.png`;
+        rules.recipe.iconSpriteKeys[key] = sprite({ filePath: file }, `runtime:recipe:${key}`, "runtime-code");
       }
       json(["data", "ui", "collection-rules.json"], rules);
       const keys = new Set();
@@ -176,15 +212,58 @@ export function syncUiPreview(sourceRoot, gddRoot) {
   }
 }
 
+function deriveCollectionPets(source, rules) {
+  const petCsv = "Assets/CSV/Pet.csv";
+  const rawPets = parseCsv(readFileSync(source(petCsv), "utf8"));
+  const pets = rawPets.slice(2).map(row => Object.fromEntries(rawPets[0].map((key, index) => [key, row[index] || ""])));
+  const poolFiles = { fishing: "Assets/CSV/Event/Fishing/PoolFishing.csv", dig: "Assets/CSV/Event/Dig/DigPools.csv" };
+  const pools = Object.fromEntries(Object.entries(poolFiles).map(([kind, file]) => {
+    const rows = parseCsv(readFileSync(source(file), "utf8"));
+    if (rows[0][0] !== "IDPET") throw new Error(`Unexpected Collection pool ID column: ${file}`);
+    return [kind, new Set(rows.slice(2).map(row => Number(row[0])))];
+  }));
+  const o = rules.obtain;
+  const isSecret = id => id !== o.secretFusionException && id > o.secretFusionStart && id <= o.secretFusionStart + o.secretFusionCount;
+  o.byPetId = {};
+  o.poolSources = poolFiles;
+  rules.recipe.byPetId = {};
+  for (const pet of pets) {
+    const id = Number(pet.ID), canFuse = pet[o.canFuseColumn] === "1";
+    const road = o.roadWeightColumns.some(column => Number(pet[column]) !== 0);
+    const fishing = pools.fishing.has(id), dig = pools.dig.has(id);
+    const kind = o.giftcodePetIds.includes(id) ? "giftcode" : o.luckyboxPetIds.includes(id) ? "luckybox" :
+      canFuse && (isSecret(id) || !road) ? "fusion" : road ? "road" : !canFuse && fishing ? "fishing" : !canFuse && dig ? "dig" : "event";
+    o.byPetId[pet.ID] = { kind, canFuse, road, fishing, dig, source: petCsv };
+    if (kind !== "fusion") continue;
+    const rank = Number(pet.Rank) - rules.recipe.previousRankOffset;
+    let previousRank = rank;
+    let previous = pets.find(row => Number(row.Rank) === previousRank);
+    while (!previous || previous[o.canFuseColumn] !== "1") {
+      previousRank -= 1;
+      if (previousRank < 1) { previous = pets.find(row => Number(row.Rank) === rank); break; }
+      previous = pets.find(row => Number(row.Rank) === previousRank);
+    }
+    if (!previous) continue;
+    rules.recipe.byPetId[pet.ID] = { previousPetId: previous.ID, previousRarity: previous.Rarity,
+      anyRarity: pet.Rarity, thumbnailKey: `Summon${previous.Rarity}`, secondIsSpecific: isSecret(Number(previous.ID)) };
+  }
+}
+
 function collectionRules(source) {
   const hudFile = "Assets/Scripts/HUDs/HudCollection.fcg";
   const managerFile = "Assets/Scripts/Manager/CollectionManager.fcg";
   const petFile = "Assets/Scripts/Configs/PetConfigs.fcg";
   const clientPetFile = "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg";
+  const widgetFile = "Assets/Scripts/Utils/UIUtils.fcg";
+  const fishingFile = "Assets/Scripts/ClientConfigs/EventFishingConfig_Client.fcg";
+  const digFile = "Assets/Scripts/ClientConfigs/EventDigConfig_Client.fcg";
   const hud = readFileSync(source(hudFile), "utf8").split(/\r?\n/);
   const manager = readFileSync(source(managerFile), "utf8").split(/\r?\n/);
   const petCode = readFileSync(source(petFile), "utf8").split(/\r?\n/);
   const clientPetCode = readFileSync(source(clientPetFile), "utf8").split(/\r?\n/);
+  const widgetCode = readFileSync(source(widgetFile), "utf8").split(/\r?\n/);
+  const fishingCode = readFileSync(source(fishingFile), "utf8").split(/\r?\n/);
+  const digCode = readFileSync(source(digFile), "utf8").split(/\r?\n/);
   function find(lines, pattern, file) {
     const index = lines.findIndex(line => pattern.test(line));
     if (index < 0) throw new Error(`Collection rule missing from ${file}: ${pattern}`);
@@ -246,7 +325,8 @@ function collectionRules(source) {
   const obtainIcons = Object.fromEntries(iconMatches.map(match => [match[1].toLowerCase(), match[2]]));
   obtainIcons.road = [...iconFunction.matchAll(/return EResSprite\.(\w+)/g)].at(-1)?.[1];
   return {
-    sourceFiles: [hudFile, managerFile, petFile, clientPetFile],
+    sourceFiles: [hudFile, managerFile, petFile, clientPetFile, widgetFile, fishingFile, digFile],
+    petWidget: { rarityColorSource: required(widgetCode, /func UpdatePetWidgetV3\(/, widgetFile) },
     rarityColors: readRarityColors(),
     runtimeColorRules,
     runtimeAssignments,
@@ -294,6 +374,9 @@ function collectionRules(source) {
       sourceFunctionAt: required(hud, /var source int = PetConfigs.GetPetObtainSource/, hudFile),
       precedence: ["giftcode", "luckybox", "fusion", "road", "fishing", "dig", "event"],
       precedenceSource: required(petCode, /func GetPetObtainSource\(/, petFile),
+      eventFallbackSource: required(petCode, /return PET_OBTAIN_SOURCE_EVENT/, petFile),
+      fishingPoolSource: required(fishingCode, /CSVData.ReadCSV\(EResCSV.PoolFishing\)/, fishingFile),
+      digPoolSource: required(digCode, /CSVData.ReadCSV\(EResCSV.DigPools\)/, digFile),
       giftcodePetIds: [...find(petCode, /PET_OBTAIN_GIFTCODE_PET_IDS List<int> = List<int>\{/, petFile).line.match(/\{([^}]*)\}/)[1].matchAll(/\d+/g)].map(x => Number(x[0])),
       luckyboxPetIds: [...find(petCode, /PET_OBTAIN_LUCKYBOX_PET_IDS List<int> = List<int>\{/, petFile).line.match(/\{([^}]*)\}/)[1].matchAll(/\d+/g)].map(x => Number(x[0])),
       secretFusionStart: Number(find(petCode, /SECRET_FUSION_PET_START_INDEX int = \d+/, petFile).line.match(/=\s*(\d+)/)[1]),
@@ -312,7 +395,9 @@ function collectionRules(source) {
       previousRankOffset: Number(find(hud, /var previousRank int = petRank - \d+/, hudFile).line.match(/-\s*(\d+)/)[1]),
       previousRankSource: required(hud, /var previousRank int = petRank - \d+/, hudFile),
       previousPetSelection: "scan descending from previousRank; skip ranks without a pet or with CanFuse=false",
-      previousPetSelectionSource: required(petCode, /func GetPetIdWithPrevRank\(/, petFile)
+      previousPetSelectionSource: required(petCode, /func GetPetIdWithPrevRank\(/, petFile),
+      thumbnailSource: required(hud, /var previousPetSprite string = "Summon" \+ previousPetRarity/, hudFile),
+      anyRaritySource: required(hud, /UpdateAnyRarityPetWidget\(_RecipeMaterial1, petRarity, previousPetSprite\)/, hudFile)
     },
     counters: {
       pets: { owned: "GetPCPetsCountByRarity", total: "GetCollectionPetIdsByRarity.length", source: required(hud, /var ownPetsCount int = CollectionManager.GetPCPetsCountByRarity/, hudFile) },

@@ -1,5 +1,32 @@
 # Việc kỹ thuật còn mở
 
+## Cập nhật UI Preview (2026-10-25)
+
+- DA-004/008: nguồn nhận Collection đã mirror đủ thứ tự GetPetObtainSource,
+  kiểm ID membership ở Event/Fishing/PoolFishing.csv và Event/Dig/DigPools.csv
+  như EventFishingConfig_Client/EventDigConfig_Client. MrFootBall (1037),
+  Dragon (1042), Pegasus (1045) đều fallback Event. Không đọc giftcode.csv.
+- Bổ sung runtime binding UIUtils.UpdatePetWidgetV3 cho thanh Rarity ở pet
+  chi tiết; chưa sở hữu dùng DEFAULT_COLOR, badge RarityBG vẫn theo rarity.
+  Clone khởi chạy lại xử lý pixel gradient từ source để tránh copy URL thô
+  khi template chưa render xong. Recipe xuất 44 cấu hình và 6 sprite Summon
+  theo HudCollection.UpdateRecipe/UpdateAnyRarityPetWidget; ô thứ hai vẫn
+  dùng thumbnail pet thật khi previousPetId là secret.
+
+- DA-002: đã phân giải 5 sprite project bằng `fileId` trong `.png.meta`.
+  `ContainerBG`, `DecorateIcon1/2`, `HasMWIcon` đã move/rename vào NewAssets;
+  Container BG khớp ID với `Assets/Sprites/Backgrounds/BG.png`. Alias
+  ShadowTriangleRounded cũng kiểm ID. Chỉ còn 2 sprite thư viện `lib://`.
+- DA-012: designer xác nhận `text.overflow=0` là Reduce when exceed.
+  Preview đo nội dung và giảm font trong RectTransform, tách nội dung khỏi
+  khung để căn ngang/dọc đúng; cập nhật cả label clone và nội dung runtime.
+  Font Default là sans-serif hệ thống, chưa có font engine để đối chiếu.
+  Label không có newline được giữ một dòng; quy tắc wrap của engine vẫn
+  cần ảnh runtime. Các enum overflow khác không được suy diễn.
+- 9-slice: thay CSS border-image bằng bitmap ghép 9 vùng theo border metadata
+  tại kích thước tham chiếu để tránh đường nối ở scale lẻ. Không đổi source
+  PNG, tọa độ entity, màu, hoặc quy tắc sở hữu trong game.
+
 ## DA-015 · Field patch và binding UI Proposal (2026-10-23)
 
 MCP đã xác nhận UIWidget, UIWidgetLabel/Image/Button và enum fill; 74 field

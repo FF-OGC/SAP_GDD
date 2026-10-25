@@ -3,8 +3,14 @@
     "Assets/Scripts/HUDs/HudCollection.fcg",
     "Assets/Scripts/Manager/CollectionManager.fcg",
     "Assets/Scripts/Configs/PetConfigs.fcg",
-    "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg"
+    "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg",
+    "Assets/Scripts/Utils/UIUtils.fcg",
+    "Assets/Scripts/ClientConfigs/EventFishingConfig_Client.fcg",
+    "Assets/Scripts/ClientConfigs/EventDigConfig_Client.fcg"
   ],
+  "petWidget": {
+    "rarityColorSource": "Assets/Scripts/Utils/UIUtils.fcg:199"
+  },
   "rarityColors": {
     "values": {
       "COMMON": {
@@ -765,6 +771,9 @@
       "event"
     ],
     "precedenceSource": "Assets/Scripts/Configs/PetConfigs.fcg:598",
+    "eventFallbackSource": "Assets/Scripts/Configs/PetConfigs.fcg:620",
+    "fishingPoolSource": "Assets/Scripts/ClientConfigs/EventFishingConfig_Client.fcg:24",
+    "digPoolSource": "Assets/Scripts/ClientConfigs/EventDigConfig_Client.fcg:24",
     "giftcodePetIds": [
       1047
     ],
@@ -785,7 +794,1421 @@
       "Weight5"
     ],
     "roadSource": "Assets/Scripts/Configs/PetConfigs.fcg:590",
-    "specialListSource": "Assets/Scripts/Configs/PetConfigs.fcg:106"
+    "specialListSource": "Assets/Scripts/Configs/PetConfigs.fcg:106",
+    "byPetId": {
+      "1": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "2": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "3": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "4": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "5": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "6": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "7": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "8": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "9": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "10": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "11": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "12": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "13": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "14": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "15": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "16": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "17": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "18": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "19": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "20": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "21": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "22": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "23": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "24": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "25": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "26": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "27": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "28": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "29": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "30": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "31": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "32": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "33": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "34": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "35": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "36": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "37": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "38": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "39": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "40": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "41": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "42": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "43": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "44": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "45": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "46": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "47": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "48": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "49": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "50": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "51": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "52": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "53": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "54": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "55": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "56": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "57": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "58": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "59": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "60": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "61": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "62": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "63": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "64": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "65": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "66": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "67": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "68": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "69": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "70": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "71": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "72": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "73": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "74": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "75": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "76": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "77": {
+        "kind": "road",
+        "canFuse": false,
+        "road": true,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "78": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "79": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "80": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "81": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "82": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "83": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "84": {
+        "kind": "road",
+        "canFuse": false,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "85": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "86": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "87": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "88": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "89": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "90": {
+        "kind": "event",
+        "canFuse": false,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "91": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "92": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "93": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "94": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "95": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "96": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "97": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "98": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "99": {
+        "kind": "road",
+        "canFuse": false,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "100": {
+        "kind": "road",
+        "canFuse": false,
+        "road": true,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "101": {
+        "kind": "fishing",
+        "canFuse": false,
+        "road": false,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "102": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "103": {
+        "kind": "event",
+        "canFuse": false,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "104": {
+        "kind": "road",
+        "canFuse": false,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "105": {
+        "kind": "road",
+        "canFuse": false,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "106": {
+        "kind": "road",
+        "canFuse": false,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "107": {
+        "kind": "fishing",
+        "canFuse": false,
+        "road": false,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "108": {
+        "kind": "fishing",
+        "canFuse": false,
+        "road": false,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "109": {
+        "kind": "fishing",
+        "canFuse": false,
+        "road": false,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "110": {
+        "kind": "dig",
+        "canFuse": false,
+        "road": false,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "111": {
+        "kind": "dig",
+        "canFuse": false,
+        "road": false,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "112": {
+        "kind": "dig",
+        "canFuse": false,
+        "road": false,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "113": {
+        "kind": "dig",
+        "canFuse": false,
+        "road": false,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "114": {
+        "kind": "dig",
+        "canFuse": false,
+        "road": false,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "115": {
+        "kind": "road",
+        "canFuse": false,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "116": {
+        "kind": "road",
+        "canFuse": false,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "117": {
+        "kind": "fishing",
+        "canFuse": false,
+        "road": false,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "118": {
+        "kind": "dig",
+        "canFuse": false,
+        "road": false,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "119": {
+        "kind": "road",
+        "canFuse": false,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1001": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1002": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1003": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1004": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1005": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1006": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1007": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1008": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1009": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1010": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1011": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1012": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1013": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1014": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1015": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1016": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1017": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1018": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1019": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1020": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1021": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1022": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1023": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1024": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1025": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1026": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1027": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1028": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1029": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1030": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1031": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1032": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1033": {
+        "kind": "road",
+        "canFuse": true,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1034": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1035": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1036": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1037": {
+        "kind": "event",
+        "canFuse": false,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1038": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1039": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1040": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1041": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1042": {
+        "kind": "event",
+        "canFuse": false,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1043": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1044": {
+        "kind": "fusion",
+        "canFuse": true,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1045": {
+        "kind": "event",
+        "canFuse": false,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1046": {
+        "kind": "luckybox",
+        "canFuse": false,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1047": {
+        "kind": "giftcode",
+        "canFuse": false,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1048": {
+        "kind": "dig",
+        "canFuse": false,
+        "road": false,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1049": {
+        "kind": "dig",
+        "canFuse": false,
+        "road": false,
+        "fishing": false,
+        "dig": true,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1050": {
+        "kind": "fishing",
+        "canFuse": false,
+        "road": false,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1051": {
+        "kind": "fishing",
+        "canFuse": false,
+        "road": false,
+        "fishing": true,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1052": {
+        "kind": "road",
+        "canFuse": false,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1053": {
+        "kind": "luckybox",
+        "canFuse": false,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "1054": {
+        "kind": "event",
+        "canFuse": false,
+        "road": false,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "6001": {
+        "kind": "road",
+        "canFuse": false,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "6002": {
+        "kind": "road",
+        "canFuse": false,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      },
+      "6003": {
+        "kind": "road",
+        "canFuse": false,
+        "road": true,
+        "fishing": false,
+        "dig": false,
+        "source": "Assets/CSV/Pet.csv"
+      }
+    },
+    "poolSources": {
+      "fishing": "Assets/CSV/Event/Fishing/PoolFishing.csv",
+      "dig": "Assets/CSV/Event/Dig/DigPools.csv"
+    }
   },
   "recipe": {
     "when": "unowned and PetConfigs.GetPetObtainSource(...) == PET_OBTAIN_SOURCE_FUSION",
@@ -796,7 +2219,327 @@
     "previousRankOffset": 1,
     "previousRankSource": "Assets/Scripts/HUDs/HudCollection.fcg:822",
     "previousPetSelection": "scan descending from previousRank; skip ranks without a pet or with CanFuse=false",
-    "previousPetSelectionSource": "Assets/Scripts/Configs/PetConfigs.fcg:736"
+    "previousPetSelectionSource": "Assets/Scripts/Configs/PetConfigs.fcg:736",
+    "thumbnailSource": "Assets/Scripts/HUDs/HudCollection.fcg:825",
+    "anyRaritySource": "Assets/Scripts/HUDs/HudCollection.fcg:827",
+    "byPetId": {
+      "74": {
+        "previousPetId": "73",
+        "previousRarity": "MYTHIC",
+        "anyRarity": "MYTHIC",
+        "thumbnailKey": "SummonMYTHIC",
+        "secondIsSpecific": false
+      },
+      "83": {
+        "previousPetId": "82",
+        "previousRarity": "MYTHIC",
+        "anyRarity": "MYTHIC",
+        "thumbnailKey": "SummonMYTHIC",
+        "secondIsSpecific": false
+      },
+      "86": {
+        "previousPetId": "85",
+        "previousRarity": "APEX",
+        "anyRarity": "APEX",
+        "thumbnailKey": "SummonAPEX",
+        "secondIsSpecific": false
+      },
+      "1001": {
+        "previousPetId": "52",
+        "previousRarity": "COMMON",
+        "anyRarity": "COMMON",
+        "thumbnailKey": "SummonCOMMON",
+        "secondIsSpecific": false
+      },
+      "1002": {
+        "previousPetId": "53",
+        "previousRarity": "RARE",
+        "anyRarity": "RARE",
+        "thumbnailKey": "SummonRARE",
+        "secondIsSpecific": false
+      },
+      "1003": {
+        "previousPetId": "57",
+        "previousRarity": "EPIC",
+        "anyRarity": "EPIC",
+        "thumbnailKey": "SummonEPIC",
+        "secondIsSpecific": false
+      },
+      "1004": {
+        "previousPetId": "65",
+        "previousRarity": "LEGENDARY",
+        "anyRarity": "LEGENDARY",
+        "thumbnailKey": "SummonLEGENDARY",
+        "secondIsSpecific": false
+      },
+      "1005": {
+        "previousPetId": "83",
+        "previousRarity": "MYTHIC",
+        "anyRarity": "MYTHIC",
+        "thumbnailKey": "SummonMYTHIC",
+        "secondIsSpecific": false
+      },
+      "1006": {
+        "previousPetId": "1016",
+        "previousRarity": "MYTHIC",
+        "anyRarity": "MYTHIC",
+        "thumbnailKey": "SummonMYTHIC",
+        "secondIsSpecific": true
+      },
+      "1007": {
+        "previousPetId": "1001",
+        "previousRarity": "COMMON",
+        "anyRarity": "COMMON",
+        "thumbnailKey": "SummonCOMMON",
+        "secondIsSpecific": true
+      },
+      "1008": {
+        "previousPetId": "1002",
+        "previousRarity": "RARE",
+        "anyRarity": "RARE",
+        "thumbnailKey": "SummonRARE",
+        "secondIsSpecific": true
+      },
+      "1009": {
+        "previousPetId": "1003",
+        "previousRarity": "EPIC",
+        "anyRarity": "EPIC",
+        "thumbnailKey": "SummonEPIC",
+        "secondIsSpecific": true
+      },
+      "1010": {
+        "previousPetId": "1004",
+        "previousRarity": "LEGENDARY",
+        "anyRarity": "LEGENDARY",
+        "thumbnailKey": "SummonLEGENDARY",
+        "secondIsSpecific": true
+      },
+      "1011": {
+        "previousPetId": "1005",
+        "previousRarity": "MYTHIC",
+        "anyRarity": "MYTHIC",
+        "thumbnailKey": "SummonMYTHIC",
+        "secondIsSpecific": true
+      },
+      "1012": {
+        "previousPetId": "1007",
+        "previousRarity": "COMMON",
+        "anyRarity": "COMMON",
+        "thumbnailKey": "SummonCOMMON",
+        "secondIsSpecific": true
+      },
+      "1013": {
+        "previousPetId": "1008",
+        "previousRarity": "RARE",
+        "anyRarity": "RARE",
+        "thumbnailKey": "SummonRARE",
+        "secondIsSpecific": true
+      },
+      "1014": {
+        "previousPetId": "1009",
+        "previousRarity": "EPIC",
+        "anyRarity": "EPIC",
+        "thumbnailKey": "SummonEPIC",
+        "secondIsSpecific": true
+      },
+      "1015": {
+        "previousPetId": "1010",
+        "previousRarity": "LEGENDARY",
+        "anyRarity": "LEGENDARY",
+        "thumbnailKey": "SummonLEGENDARY",
+        "secondIsSpecific": true
+      },
+      "1016": {
+        "previousPetId": "1011",
+        "previousRarity": "MYTHIC",
+        "anyRarity": "MYTHIC",
+        "thumbnailKey": "SummonMYTHIC",
+        "secondIsSpecific": true
+      },
+      "1017": {
+        "previousPetId": "1012",
+        "previousRarity": "COMMON",
+        "anyRarity": "COMMON",
+        "thumbnailKey": "SummonCOMMON",
+        "secondIsSpecific": true
+      },
+      "1018": {
+        "previousPetId": "1013",
+        "previousRarity": "RARE",
+        "anyRarity": "RARE",
+        "thumbnailKey": "SummonRARE",
+        "secondIsSpecific": true
+      },
+      "1019": {
+        "previousPetId": "1014",
+        "previousRarity": "EPIC",
+        "anyRarity": "EPIC",
+        "thumbnailKey": "SummonEPIC",
+        "secondIsSpecific": true
+      },
+      "1020": {
+        "previousPetId": "1015",
+        "previousRarity": "LEGENDARY",
+        "anyRarity": "LEGENDARY",
+        "thumbnailKey": "SummonLEGENDARY",
+        "secondIsSpecific": true
+      },
+      "1021": {
+        "previousPetId": "1006",
+        "previousRarity": "MYTHIC",
+        "anyRarity": "MYTHIC",
+        "thumbnailKey": "SummonMYTHIC",
+        "secondIsSpecific": true
+      },
+      "1022": {
+        "previousPetId": "1020",
+        "previousRarity": "LEGENDARY",
+        "anyRarity": "LEGENDARY",
+        "thumbnailKey": "SummonLEGENDARY",
+        "secondIsSpecific": true
+      },
+      "1023": {
+        "previousPetId": "1021",
+        "previousRarity": "MYTHIC",
+        "anyRarity": "MYTHIC",
+        "thumbnailKey": "SummonMYTHIC",
+        "secondIsSpecific": true
+      },
+      "1024": {
+        "previousPetId": "1023",
+        "previousRarity": "MYTHIC",
+        "anyRarity": "MYTHIC",
+        "thumbnailKey": "SummonMYTHIC",
+        "secondIsSpecific": true
+      },
+      "1025": {
+        "previousPetId": "1024",
+        "previousRarity": "MYTHIC",
+        "anyRarity": "MYTHIC",
+        "thumbnailKey": "SummonMYTHIC",
+        "secondIsSpecific": true
+      },
+      "1026": {
+        "previousPetId": "102",
+        "previousRarity": "APEX",
+        "anyRarity": "APEX",
+        "thumbnailKey": "SummonAPEX",
+        "secondIsSpecific": false
+      },
+      "1027": {
+        "previousPetId": "1025",
+        "previousRarity": "MYTHIC",
+        "anyRarity": "MYTHIC",
+        "thumbnailKey": "SummonMYTHIC",
+        "secondIsSpecific": true
+      },
+      "1028": {
+        "previousPetId": "1026",
+        "previousRarity": "APEX",
+        "anyRarity": "APEX",
+        "thumbnailKey": "SummonAPEX",
+        "secondIsSpecific": true
+      },
+      "1029": {
+        "previousPetId": "1027",
+        "previousRarity": "MYTHIC",
+        "anyRarity": "MYTHIC",
+        "thumbnailKey": "SummonMYTHIC",
+        "secondIsSpecific": true
+      },
+      "1030": {
+        "previousPetId": "1029",
+        "previousRarity": "MYTHIC",
+        "anyRarity": "MYTHIC",
+        "thumbnailKey": "SummonMYTHIC",
+        "secondIsSpecific": true
+      },
+      "1031": {
+        "previousPetId": "1028",
+        "previousRarity": "APEX",
+        "anyRarity": "APEX",
+        "thumbnailKey": "SummonAPEX",
+        "secondIsSpecific": true
+      },
+      "1032": {
+        "previousPetId": "1031",
+        "previousRarity": "APEX",
+        "anyRarity": "APEX",
+        "thumbnailKey": "SummonAPEX",
+        "secondIsSpecific": true
+      },
+      "1034": {
+        "previousPetId": "1032",
+        "previousRarity": "APEX",
+        "anyRarity": "APEX",
+        "thumbnailKey": "SummonAPEX",
+        "secondIsSpecific": true
+      },
+      "1035": {
+        "previousPetId": "1034",
+        "previousRarity": "APEX",
+        "anyRarity": "APEX",
+        "thumbnailKey": "SummonAPEX",
+        "secondIsSpecific": true
+      },
+      "1036": {
+        "previousPetId": "1035",
+        "previousRarity": "APEX",
+        "anyRarity": "APEX",
+        "thumbnailKey": "SummonAPEX",
+        "secondIsSpecific": true
+      },
+      "1038": {
+        "previousPetId": "1036",
+        "previousRarity": "APEX",
+        "anyRarity": "APEX",
+        "thumbnailKey": "SummonAPEX",
+        "secondIsSpecific": true
+      },
+      "1039": {
+        "previousPetId": "1038",
+        "previousRarity": "APEX",
+        "anyRarity": "APEX",
+        "thumbnailKey": "SummonAPEX",
+        "secondIsSpecific": true
+      },
+      "1040": {
+        "previousPetId": "1039",
+        "previousRarity": "APEX",
+        "anyRarity": "APEX",
+        "thumbnailKey": "SummonAPEX",
+        "secondIsSpecific": true
+      },
+      "1041": {
+        "previousPetId": "1040",
+        "previousRarity": "APEX",
+        "anyRarity": "APEX",
+        "thumbnailKey": "SummonAPEX",
+        "secondIsSpecific": true
+      },
+      "1043": {
+        "previousPetId": "1030",
+        "previousRarity": "MYTHIC",
+        "anyRarity": "MYTHIC",
+        "thumbnailKey": "SummonMYTHIC",
+        "secondIsSpecific": true
+      },
+      "1044": {
+        "previousPetId": "1041",
+        "previousRarity": "APEX",
+        "anyRarity": "APEX",
+        "thumbnailKey": "SummonAPEX",
+        "secondIsSpecific": true
+      }
+    },
+    "iconSpriteKeys": {
+      "SummonMYTHIC": "Assets/Sprites/Summon/MYTHIC.png",
+      "SummonAPEX": "Assets/Sprites/Summon/APEX.png",
+      "SummonCOMMON": "Assets/Sprites/Summon/COMMON.png",
+      "SummonRARE": "Assets/Sprites/Summon/RARE.png",
+      "SummonEPIC": "Assets/Sprites/Summon/EPIC.png",
+      "SummonLEGENDARY": "Assets/Sprites/Summon/LEGENDARY.png"
+    }
   },
   "counters": {
     "pets": {

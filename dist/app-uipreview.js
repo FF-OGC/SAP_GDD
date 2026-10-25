@@ -21,15 +21,15 @@ async function updateUiPreviewPage() {
   const tabs = document.getElementById("ui-preview-tabs");
   if (!tabs) return;
   try {
-    uiPreview.registry ||= await fetch("./data/ui/registry.json").then(checkUiJson);
+    uiPreview.registry ||= await fetchUiResource("./data/ui/registry.json").then(checkUiJson);
     tabs.innerHTML = uiPreview.registry.screens.map(item => `<button type="button" data-ui-screen="${item.id}" ${item.status === "ready" ? "" : "disabled"} class="${item.id === "collection" ? "active" : ""}">${item.name}${item.status === "ready" ? "" : " · Sắp có"}</button>`).join("");
     const entry = uiPreview.registry.screens.find(item => item.id === "collection");
     if (!entry) throw new Error("Collection chưa có trong registry");
     const [screen, manifest, rules, i18n] = await Promise.all([
-      fetch(entry.data).then(checkUiJson),
-      fetch("./data/ui/collection-sprites.json").then(checkUiJson),
-      fetch(entry.rules).then(checkUiJson),
-      fetch("./data/ui/collection-i18n.json").then(checkUiJson)
+      fetchUiResource(entry.data).then(checkUiJson),
+      fetchUiResource("./data/ui/collection-sprites.json").then(checkUiJson),
+      fetchUiResource(entry.rules).then(checkUiJson),
+      fetchUiResource("./data/ui/collection-i18n.json").then(checkUiJson)
     ]);
     if (s.page !== "uipreview") return;
     uiPreview.screen = screen;

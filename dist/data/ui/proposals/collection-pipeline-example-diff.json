@@ -23,7 +23,7 @@
       "afterPath": "PetsCollection/Container/BG/DecorLeft",
       "id": "gr8BcPhJ",
       "field": "image.spriteKey",
-      "before": "Assets/_Test/NewUI/Assets/Img_decorate01.png",
+      "before": "Assets/Sprites/NewAssets/DecorateIcon1.png",
       "after": "Assets/Sprites/Shapes/ShadowTriangleRounded.png",
       "reason": "Ví dụ để kiểm pipeline: kiểm manifest bằng một sprite đã có file, chưa phải art được duyệt.",
       "affectedIds": [
@@ -53,7 +53,7 @@
       "afterPath": "PetsCollection/Container/BG/DecorLeft",
       "id": "gr8BcPhJ",
       "field": "image.spriteKey",
-      "before": "Assets/_Test/NewUI/Assets/Img_decorate01.png",
+      "before": "Assets/Sprites/NewAssets/DecorateIcon1.png",
       "after": "Assets/Sprites/Shapes/ShadowTriangleRounded.png",
       "reason": "Ví dụ để kiểm pipeline: kiểm manifest bằng một sprite đã có file, chưa phải art được duyệt.",
       "affectedIds": [

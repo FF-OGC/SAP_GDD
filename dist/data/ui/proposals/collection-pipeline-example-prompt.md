@@ -20,7 +20,7 @@ Ví dụ để kiểm pipeline: dịch label tiêu đề 4 đơn vị và thay s
 | # | Path / sau move | _entityId | Op / field | Cũ → mới | Reason |
 |---|---|---|---|---|---|
 | 1 | PetsCollection/Container/Title/Label | JRxpWV4m | set · transform.anchoredPosition.x | 40 → 44 | Ví dụ để kiểm pipeline: kiểm so sánh vị trí label trước/sau. |
-| 2 | PetsCollection/Container/BG/DecorLeft | gr8BcPhJ | replaceSprite · image.spriteKey | Assets/_Test/NewUI/Assets/Img_decorate01.png → Assets/Sprites/Shapes/ShadowTriangleRounded.png | Ví dụ để kiểm pipeline: kiểm manifest bằng một sprite đã có file, chưa phải art được duyệt. |
+| 2 | PetsCollection/Container/BG/DecorLeft | gr8BcPhJ | replaceSprite · image.spriteKey | Assets/Sprites/NewAssets/DecorateIcon1.png → Assets/Sprites/Shapes/ShadowTriangleRounded.png | Ví dụ để kiểm pipeline: kiểm manifest bằng một sprite đã có file, chưa phải art được duyệt. |
 
 ## 4. Sprite mới hoặc đổi
 - Assets/Sprites/Shapes/ShadowTriangleRounded.png · game; bản GDD ./assets/ui-sprites/collection/Shapes__ShadowTriangleRounded.png · PNG 256×256 · 9-grid {"left":0,"right":0,"top":0,"bottom":0}

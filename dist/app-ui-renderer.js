@@ -2,6 +2,44 @@
 
 const uiRenderer = (() => {
   const spriteCache = new Map();
+  const imageCache = new Map();
+  function loadImage(url) {
+    if (!imageCache.has(url)) {
+      const pending = new Promise((resolve, reject) => {
+        const image = new Image();
+        image.onload = () => resolve(image);
+        image.onerror = reject;
+        image.src = url;
+      });
+      imageCache.set(url, pending);
+      pending.catch(() => imageCache.delete(url));
+      if (imageCache.size > 256) imageCache.delete(imageCache.keys().next().value);
+    }
+    return imageCache.get(url);
+  }
+  async function sliceSprite(visual, url) {
+    const border = JSON.parse(visual.dataset.uiSliceBorder);
+    const size = elementSize(visual.parentElement.parentElement);
+    const width = Math.max(1, Math.round(size.width)), height = Math.max(1, Math.round(size.height));
+    const image = await loadImage(url);
+    const canvas = document.createElement("canvas");
+    canvas.width = width; canvas.height = height;
+    const context = canvas.getContext("2d");
+    // Compose the nine regions at integer reference pixels. CSS border-image
+    // produces visible internal seams when the HUD canvas has a fractional scale.
+    const factor = Math.min(1, width / Math.max(1, border.left + border.right), height / Math.max(1, border.top + border.bottom));
+    const sx = [0, border.left, image.naturalWidth - border.right, image.naturalWidth];
+    const sy = [0, border.top, image.naturalHeight - border.bottom, image.naturalHeight];
+    const dx = [0, Math.round(border.left * factor), width - Math.round(border.right * factor), width];
+    const dy = [0, Math.round(border.top * factor), height - Math.round(border.bottom * factor), height];
+    for (let row = 0; row < 3; row++) for (let column = 0; column < 3; column++) {
+      if (row === 1 && column === 1 && visual.dataset.uiSliceCenterInvisible === "true") continue;
+      const sw = sx[column + 1] - sx[column], sh = sy[row + 1] - sy[row];
+      const dw = dx[column + 1] - dx[column], dh = dy[row + 1] - dy[row];
+      if (sw > 0 && sh > 0 && dw > 0 && dh > 0) context.drawImage(image, sx[column], sy[row], sw, sh, dx[column], dy[row], dw, dh);
+    }
+    return canvas.toDataURL("image/png");
+  }
   function rect(transform, parent) {
     if (!transform) return { left: 0, top: 0, width: parent.width, height: parent.height };
     const a = transform.anchorMin || { x: 0, y: 0 };
@@ -86,12 +124,13 @@ const uiRenderer = (() => {
     visual.dataset.uiRenderData = JSON.stringify(data);
     const version = Number(visual.dataset.uiRenderVersion || 0) + 1;
     visual.dataset.uiRenderVersion = String(version);
-    processSprite(source, data).then(rendered => {
+    processSprite(source, data).then(async rendered => {
+      if (visual.dataset.uiSliceBorder) rendered = await sliceSprite(visual, rendered);
       if (visual.dataset.uiRenderVersion !== String(version) || visual.dataset.uiSourceUrl !== source) return;
       if (visual.tagName === "IMG") visual.src = rendered;
       else if (visual.classList.contains("ui-tiled")) visual.style.backgroundImage = `url("${rendered}")`;
       else visual.style.borderImageSource = `url("${rendered}")`;
-    });
+    }).catch(() => { if (visual.tagName === "IMG" && visual.dataset.uiRenderVersion === String(version)) visual.src = source; });
   }
   function mountSprite(layer, url, data, entry = null, simple = false) {
     if (!simple && data.fillType === 2) {
@@ -107,16 +146,14 @@ const uiRenderer = (() => {
       return visual;
     }
     const sliced = !simple && data.fillType === 1 && (data.enableBorderImage !== false) && entry?.border && Object.values(entry.border).some(Number);
-    const visual = document.createElement(sliced ? "div" : "img");
+    const visual = document.createElement("img");
     visual.className = "ui-sprite";
-    if (visual.tagName === "IMG") { visual.src = url; visual.alt = ""; visual.draggable = false; if (data.fillType === 5) visual.style.objectFit = "contain"; }
-    else {
+    visual.src = url; visual.alt = ""; visual.draggable = false;
+    if (data.fillType === 5) visual.style.objectFit = "contain";
+    if (sliced) {
       visual.classList.add("ui-sliced");
-      const border = entry.border;
-      visual.style.borderWidth = `${border.top}px ${border.right}px ${border.bottom}px ${border.left}px`;
-      visual.style.borderImageSource = `url("${url}")`;
-      visual.style.borderImageSlice = `${border.top} ${border.right} ${border.bottom} ${border.left} ${data.centerInvisible ? "" : "fill"}`.trim();
-      visual.style.borderImageRepeat = data.fillType === 2 ? "repeat" : "stretch";
+      visual.dataset.uiSliceBorder = JSON.stringify(entry.border);
+      visual.dataset.uiSliceCenterInvisible = String(!!data.centerInvisible);
     }
     visual.dataset.uiSourceUrl = url;
     visual.dataset.uiRenderData = JSON.stringify({ color: data.color || "#FFFFFF", gradient: data.gradient || 0, gradientTop: data.gradientTop, gradientBottom: data.gradientBottom });
@@ -176,6 +213,7 @@ const uiRenderer = (() => {
     el.querySelector(":scope > .ui-visual")?.remove();
     el.classList.remove("ui-missing-sprite", "ui-flip-x", "ui-flip-y");
     delete el.dataset.uiMissingSprite;
+    delete el.dataset.uiRuntimeUrl;
     graphic(el, { ...data, spriteKey: key }, manifest);
     el.dataset.uiSpriteKey = key;
     el.dataset.uiRuntimeSpriteKey = key;
@@ -198,6 +236,14 @@ const uiRenderer = (() => {
     if (!el) return;
     el.dataset.uiRuntimeColor = color || "#FFFFFF";
     for (const visual of el.querySelectorAll(":scope > .ui-visual > .ui-sprite")) applyTint(visual, color || "#FFFFFF");
+  }
+  function refreshSprites(root) {
+    // Clones can copy the raw URL while their template is still processing.
+    // Reapply each clone's source tint/gradient with its own async version.
+    for (const visual of root.querySelectorAll(".ui-sprite[data-ui-source-url]")) {
+      const data = JSON.parse(visual.dataset.uiRenderData || "{}");
+      applyTint(visual, data.color);
+    }
   }
   function setTextOutlineColor(el, color) {
     const span = el?.querySelector(":scope > .ui-text");
@@ -230,7 +276,11 @@ const uiRenderer = (() => {
     const span = document.createElement("span");
     span.className = "ui-text";
     span.dataset.uiTextProps = JSON.stringify(data);
-    span.textContent = data.key ? uiTranslate(data.key) : (data.value || "");
+    const content = document.createElement("span");
+    content.className = "ui-text-content";
+    content.textContent = data.key ? uiTranslate(data.key) : (data.value || "");
+    span.appendChild(content);
+    span.dataset.uiFontSize = String(data.fontSize || 16);
     span.style.fontSize = `${data.fontSize || 16}px`;
     span.style.color = data.color || "#fff";
     span.dataset.uiBaseColor = data.color || "#fff";
@@ -242,13 +292,14 @@ const uiRenderer = (() => {
     span.style.fontWeight = data.fontStyle?.bold ? "700" : "400";
     span.style.fontStyle = data.fontStyle?.italic ? "italic" : "normal";
     span.style.textDecoration = data.fontStyle?.underline ? "underline" : "none";
-    span.style.justifyContent = ({ left: "flex-start", center: "center", right: "flex-end" })[data.alignment?.h] || "center";
-    span.style.alignItems = ({ top: "flex-start", middle: "center", bottom: "flex-end" })[data.alignment?.v] || "center";
+    span.style.textAlign = data.alignment?.h || "center";
+    span.style.justifyContent = ({ top: "flex-start", middle: "center", bottom: "flex-end" })[data.alignment?.v] || "center";
     const lineSpacing = Number(data.lineSpacing) || 0;
     span.style.lineHeight = lineSpacing > 0 ? String(lineSpacing) : "normal";
     span.style.overflow = "hidden";
-    span.style.overflowWrap = "anywhere";
-    span.style.fontFamily = "inherit";
+    span.style.overflowWrap = "normal";
+    // Default is an engine font identifier, not the dashboard's typography.
+    span.style.fontFamily = 'ui-sans-serif, system-ui, "Segoe UI", sans-serif';
     span.dataset.uiBackgroundEnabled = String(!!data.background);
     if (data.background) span.style.backgroundColor = Number(data.backgroundRGBA?.a || 0) > 0 ? toColor(data.backgroundRGBA) : (data.backgroundColor || "transparent");
     if (Number(data.gradient) > 0) {
@@ -264,6 +315,49 @@ const uiRenderer = (() => {
     span.dataset.uiOutlineEnabled = String(!!data.outline);
     el.appendChild(span);
     if (data.outline) setTextOutlineColor(el, data.outlineColor || "#000");
+  }
+  function fitText(span) {
+    if (!span.isConnected || !span.clientWidth || !span.clientHeight) return;
+    const content = span.querySelector(":scope > .ui-text-content");
+    if (!content) return;
+    const maximum = Number(span.dataset.uiFontSize) || 16;
+    span.style.fontSize = `${maximum}px`;
+    if (Number(span.dataset.uiOverflow) === 0) {
+      // Prefer one line when the source label has no explicit line break.
+      // This keeps translated tabs/counters together before reducing their size.
+      content.style.whiteSpace = content.textContent.includes("\n") ? "pre-wrap" : "pre";
+      const fits = () => content.scrollWidth <= span.clientWidth && content.offsetHeight <= span.clientHeight;
+      if (!fits()) {
+        let low = 1, high = maximum;
+        for (let step = 0; step < 12; step++) {
+          const middle = (low + high) / 2;
+          span.style.fontSize = `${middle}px`;
+          if (fits()) low = middle; else high = middle;
+        }
+        span.style.fontSize = `${Math.floor(low * 100) / 100}px`;
+      }
+    }
+    span.dataset.uiFittedFontSize = String(Number.parseFloat(span.style.fontSize));
+  }
+  function setText(el, value) {
+    const span = el?.querySelector(":scope > .ui-text");
+    if (!span) return;
+    span.querySelector(":scope > .ui-text-content").textContent = String(value);
+    fitText(span);
+  }
+  const observedVisuals = new WeakSet();
+  const visualObserver = new ResizeObserver(entries => {
+    for (const { target } of entries) {
+      if (!target.isConnected) { visualObserver.unobserve(target); observedVisuals.delete(target); continue; }
+      if (target.classList.contains("ui-text")) fitText(target);
+      else applyTint(target, JSON.parse(target.dataset.uiRenderData || "{}").color);
+    }
+  });
+  function refreshVisuals(canvas) {
+    for (const visual of canvas.querySelectorAll(".ui-text, .ui-sliced")) {
+      if (!observedVisuals.has(visual)) { observedVisuals.add(visual); visualObserver.observe(visual); }
+      if (visual.classList.contains("ui-text")) fitText(visual);
+    }
   }
   const layoutQueue = new WeakSet();
   function elementSize(element) {
@@ -375,6 +469,7 @@ const uiRenderer = (() => {
       }
     }
     walk(data.tree, canvas.firstElementChild);
+    refreshVisuals(canvas);
   }
   function refreshLayouts(canvas, data) {
     if (!canvas || layoutQueue.has(canvas)) return;
@@ -457,5 +552,5 @@ const uiRenderer = (() => {
     layoutTree(canvas, data);
     return { canvas, byId };
   }
-  return { render, rect, setSprite, setImage, tint, setTextColor, setTextOutlineColor, setFillAmount: (element, amount, data) => applyFill(element, data?.fillType, data?.fillDir, amount, data?.invertFill), refreshLayouts, setLayoutOptions, setSize };
+  return { render, rect, setSprite, setImage, tint, refreshSprites, setText, setTextColor, setTextOutlineColor, setFillAmount: (element, amount, data) => applyFill(element, data?.fillType, data?.fillDir, amount, data?.invertFill), refreshLayouts, setLayoutOptions, setSize };
 })();

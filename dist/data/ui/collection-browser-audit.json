@@ -63,6 +63,20 @@
           "entityOpacity": "0.01"
         }
       ],
+      "collectionRegressions": {
+        "cloneGradientCount": 16,
+        "sameClonePixels": true,
+        "detailPetsChecked": 173,
+        "recipesChecked": 44,
+        "rarityBoundaryRecipes": 0,
+        "eventPets": [
+          "MRFOOTBALL",
+          "DRAGON",
+          "PEGASUS"
+        ],
+        "unownedDetailTint": "#111111",
+        "rarityPixelChecks": 7
+      },
       "ownership": {
         "ownedVisuals": {
           "petId": "1",
@@ -151,12 +165,12 @@
               "width": 1040,
               "height": 600
             },
-            "color": null,
-            "colorSource": "no rendered color",
+            "color": "#1f64c4",
+            "colorSource": "source .ui visual color",
             "outlineColor": "",
             "outlineColorSource": "",
-            "renderStatus": "missing sprite: Assets/Sprites/UIComponents/Backgrounds/BG.png",
-            "sprite": "Assets/Sprites/UIComponents/Backgrounds/BG.png"
+            "renderStatus": "rendered",
+            "sprite": "Assets/Sprites/Backgrounds/BG.png"
           }
         },
         {
@@ -555,9 +569,55 @@
       "textRendering": {
         "count": 63,
         "clipApplied": true,
+        "reducedLabelCount": 48,
+        "languageChecks": [
+          {
+            "language": "en",
+            "labels": 51
+          },
+          {
+            "language": "vi",
+            "labels": 51
+          }
+        ],
+        "slicedRendering": {
+          "center": [
+            200,
+            223,
+            252,
+            255
+          ],
+          "seams": [
+            [
+              200,
+              223,
+              252,
+              255
+            ],
+            [
+              200,
+              223,
+              252,
+              255
+            ],
+            [
+              200,
+              223,
+              252,
+              255
+            ],
+            [
+              200,
+              223,
+              252,
+              255
+            ]
+          ],
+          "borderWidth": "0px"
+        },
         "sourcePropertiesPresent": true,
         "systemFontFamilies": [
-          "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          "ui-sans-serif, system-ui, \"Segoe UI\", sans-serif"
         ],
         "pivotOriginsMatch": true,
         "aspectOptions": [
@@ -905,6 +965,20 @@
           "entityOpacity": "0.01"
         }
       ],
+      "collectionRegressions": {
+        "cloneGradientCount": 16,
+        "sameClonePixels": true,
+        "detailPetsChecked": 173,
+        "recipesChecked": 44,
+        "rarityBoundaryRecipes": 0,
+        "eventPets": [
+          "MRFOOTBALL",
+          "DRAGON",
+          "PEGASUS"
+        ],
+        "unownedDetailTint": "#111111",
+        "rarityPixelChecks": 7
+      },
       "ownership": {
         "ownedVisuals": {
           "petId": "1",
@@ -993,12 +1067,12 @@
               "width": 1040,
               "height": 600
             },
-            "color": null,
-            "colorSource": "no rendered color",
+            "color": "#1f64c4",
+            "colorSource": "source .ui visual color",
             "outlineColor": "",
             "outlineColorSource": "",
-            "renderStatus": "missing sprite: Assets/Sprites/UIComponents/Backgrounds/BG.png",
-            "sprite": "Assets/Sprites/UIComponents/Backgrounds/BG.png"
+            "renderStatus": "rendered",
+            "sprite": "Assets/Sprites/Backgrounds/BG.png"
           }
         },
         {
@@ -1397,9 +1471,55 @@
       "textRendering": {
         "count": 63,
         "clipApplied": true,
+        "reducedLabelCount": 48,
+        "languageChecks": [
+          {
+            "language": "en",
+            "labels": 51
+          },
+          {
+            "language": "vi",
+            "labels": 51
+          }
+        ],
+        "slicedRendering": {
+          "center": [
+            200,
+            223,
+            252,
+            255
+          ],
+          "seams": [
+            [
+              200,
+              223,
+              252,
+              255
+            ],
+            [
+              200,
+              223,
+              252,
+              255
+            ],
+            [
+              200,
+              223,
+              252,
+              255
+            ],
+            [
+              200,
+              223,
+              252,
+              255
+            ]
+          ],
+          "borderWidth": "0px"
+        },
         "sourcePropertiesPresent": true,
         "systemFontFamilies": [
-          "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          "ui-sans-serif, system-ui, \"Segoe UI\", sans-serif"
         ],
         "pivotOriginsMatch": true,
         "aspectOptions": [
