@@ -46,6 +46,12 @@ Mở `http://localhost:8080`. Sync chỉ đọc allowlist CSV và `.fcg` từ ch
 
 ## Quy trình thay đổi
 
+Khi mapping UI game sang website hoặc sửa parity, đọc skill
+[`map-game-ui`](design/skills/map-game-ui/SKILL.md) và các reference phù hợp.
+Skill ghi rule mapping, regression từ commit Collection và acceptance gates;
+không tự mở rộng allowlist nguồn. UI mới ngoài Collection vẫn cần đăng ký
+phạm vi trước khi đọc nguồn game tương ứng.
+
 1. Đọc plan, README và các module/trang liên quan.
 2. Xác nhận nguồn số liệu trong CSV và `.fcg` cho phép đọc; không suy diễn cơ chế chưa kiểm chứng.
 3. Sửa script sinh dữ liệu và UI tĩnh; không hard-code dữ liệu config vào JavaScript.

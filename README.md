@@ -70,6 +70,12 @@ See [CLAUDE.md](CLAUDE.md) for the read-only source boundary, output guard, proj
 
 ## UI Preview · Collection
 
+Quy trình tái sử dụng cho Codex/Claude:
+[`map-game-ui`](design/skills/map-game-ui/SKILL.md), gồm rule mapping từ
+source, regression gắn với commit Collection, acceptance gates và prompt
+cho màn hình tiếp theo. Skill tách phần dùng chung khỏi allowlist SAP;
+audit web pass chưa thay thế đối chiếu runtime game.
+
 Chạy sync HUD riêng rồi serve site:
 
 ```powershell
