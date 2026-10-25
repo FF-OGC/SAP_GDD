@@ -25,14 +25,17 @@ async function updateUiProposalPage() {
     const hasRoute = segments[0] === 'uiproposal' && segments.length > 1;
     const entry = hasRoute ? entries.find(e => e.screen === segments[1] && e.id === segments[2]) : entries.find(e => e.id === remembered) || entries[0];
     if (!entry) throw new Error(hasRoute ? 'Deep-link đề xuất không tồn tại.' : 'Chưa có đề xuất.');
-    const [base, proposed, resources, diff, prompt, rules, i18n] = await Promise.all([
+    const [base, proposed, resources, diff, prompt, rules, i18n, rewardSpec] = await Promise.all([
       fetchUiResource(`./data/ui/${entry.screen}.json`).then(checkUiJson), fetchUiResource(entry.data).then(checkUiJson), fetchUiResource(entry.resources).then(checkUiJson), fetchUiResource(entry.diff).then(checkUiJson),
       fetchUiResource(entry.prompt).then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); }),
-      fetchUiResource(`./data/ui/${entry.screen}-rules.json`).then(checkUiJson), fetchUiResource(`./data/ui/${entry.screen}-i18n.json`).then(checkUiJson)
+      fetchUiResource(`./data/ui/${entry.screen}-rules.json`).then(checkUiJson), fetchUiResource(`./data/ui/${entry.screen}-i18n.json`).then(checkUiJson),
+      fetchUiResource('./data/ui/proposals/collection-reward-experiments.json').then(checkUiJson)
     ]);
     if (s.page !== 'uiproposal' || ticket !== uiProposal.ticket) return;
-    Object.assign(uiProposal, { entry, base, proposed, resources, diff, prompt });
+    const changedProposal = uiProposal.entry?.id !== entry.id;
+    Object.assign(uiProposal, { entry, base, proposed, resources, diff, prompt, rewardSpec });
     Object.assign(uiPreview, { screen: proposed, manifest: resources.manifest, rules, i18n, width: base.referenceSize.width, height: base.referenceSize.height, open: true });
+    if (changedProposal && typeof isRewardProposal === 'function' && isRewardProposal()) rewardProposalState().detailTab = entry.id === 'collection-rewards-inline' ? 'Mutations' : 'Info';
     select.value = entry.id;
     document.getElementById('ui-proposal-status').textContent = `${entry.status} · ${entry.author}`;
     document.getElementById('ui-proposal-summary').textContent = entry.summary;
@@ -67,7 +70,7 @@ function mountUiProposal() {
   const oldPanel = document.getElementById('ui-player-panel');
   oldPanel.replaceWith(oldPanel.cloneNode(false));
   let baselineBinding = null;
-  const refresh = () => { baselineBinding?.refresh(); if (typeof renderUiProposalResources === 'function') renderUiProposalResources(); };
+  const refresh = () => { baselineBinding?.refresh(); if (typeof refreshRewardProposal === 'function') refreshRewardProposal(); if (typeof renderUiProposalResources === 'function') renderUiProposalResources(); };
   // Structural patches can invalidate Collection's template bindings. Show the
   // tree faithfully and request developer bindings instead of inventing them.
   const structural = uiProposal.diff.operations.some(op => ['add', 'remove', 'move'].includes(op.op));
@@ -78,7 +81,8 @@ function mountUiProposal() {
   };
   const bind = (screen, rendered, passive = false) => {
     if (!canBind(screen)) return null;
-    return initCollectionPreview(screen, uiPreview.rules, rendered, { context: uiPreview, passive, onUpdate: passive ? () => {} : refresh, onClose: () => uiProposal.baseline?.canvas.classList.add('ui-closed') });
+    const state = typeof isRewardProposal === 'function' && isRewardProposal() ? rewardProposalState() : collectionPreview;
+    return initCollectionPreview(screen, uiPreview.rules, rendered, { context: uiPreview, state, passive, onUpdate: passive ? () => {} : refresh, onClose: () => uiProposal.baseline?.canvas.classList.add('ui-closed') });
   };
   if (uiProposal.mode === 'overlay') {
     const context = { ...uiPreview, screen: uiProposal.base };
@@ -88,7 +92,8 @@ function mountUiProposal() {
     uiProposal.baseline = baseline;
     baselineBinding = bind(context.screen, baseline, true);
   }
-  bind(uiPreview.screen, rendered);
+  uiProposal.collectionBinding = bind(uiPreview.screen, rendered);
+  if (typeof mountRewardProposal === 'function') mountRewardProposal();
   if (!canBind(uiPreview.screen)) document.getElementById('ui-player-panel').textContent = 'Cây đã áp patch. Thiếu template Collection; cần dev xác nhận binding tương tác.';
   document.getElementById('ui-proposal-warning').textContent = structural ? 'Có add/remove/move: mô phỏng tương tác cần dev xác nhận binding; không tự suy code mới.' : '';
   document.getElementById('ui-open-toggle').textContent = uiPreview.open ? 'Đóng UI' : 'Mở UI';

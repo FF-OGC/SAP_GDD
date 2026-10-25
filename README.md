@@ -33,6 +33,30 @@ theo rarity pet đích và giữ pet cụ thể ở ô thứ hai nếu pet trư�
 
 ## UI Proposal
 
+### Collection rewards · 2026-10-25
+
+Ba phương án ở UI Proposal: `#uiproposal/collection/collection-rewards-inline`
+(A, khuyến nghị: thanh thưởng trong tab), `collection-rewards-overview`
+(B: hai thẻ ở Info), `collection-rewards-roadmap` (C: cửa sổ lộ trình).
+Có nút chuyển A/B/C, ưu/nhược điểm, các tình huống 3/3, 4/4, 8/4,
+đủ toàn bộ loại và khôi phục demo. Nhận thử cập nhật badge pet, rarity
+và từng tab Mutation/Weather; quà của pet khác vẫn giữ badge nhóm.
+
+Quy tắc 4 loại/mốc/nhánh do người dùng cung cấp. Giả định đếm loại đã
+ghi nhận trong Collection theo pet type; không đếm số hiệu ứng đồng thời.
+Snapshot có 10 loại mỗi nhánh nên chỉ hiện mốc 4 và 8. Lượng Cash/Dust
+ghi “chưa có dữ liệu”; không dùng số thưởng giả. Claim chỉ lưu trong RAM.
+Spec: `design/ui-proposals/collection-reward-experiments.json`; layout
+patch: ba file `collection/collection-rewards-*.json`. Helper tác giả
+`tools/create-collection-reward-proposals.mjs` tái tạo các patch; sau khi
+designer sửa patch bằng tay, không chạy helper nếu muốn giữ thay đổi đó.
+`sync-ui-proposals.mjs` sinh JSON/resource/diff/prompt và spec cho website.
+
+QA phiên này: 671 case tĩnh; browser trong pane 650×668 kiểm A/B/C,
+nhận độc lập hai nhánh, giữ badge nhóm, Current/Overlay/Proposed và
+không sở hữu. Chi tiết: `design/ui-proposals/collection-rewards-qa.md`.
+Chưa đối chiếu runtime game hoặc kiểm viewport 390/1440 trong phiên này.
+
 Mở `#uiproposal/collection/collection-pipeline-example` hoặc mục **UI Proposal**
 ngay dưới UI Preview. Trang so sánh Hiện tại/Đề xuất/Chồng lớp trên renderer
 chung, có Inspector (right-click hoặc bật chạm Inspect), prompt tự sinh và

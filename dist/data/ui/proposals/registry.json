@@ -11,6 +11,42 @@
       "diff": "./data/ui/proposals/collection-pipeline-example-diff.json",
       "resources": "./data/ui/proposals/collection-pipeline-example-resources.json",
       "prompt": "./data/ui/proposals/collection-pipeline-example-prompt.md"
+    },
+    {
+      "id": "collection-rewards-inline",
+      "screen": "collection",
+      "title": "A · Thanh thưởng trong tab",
+      "author": "GDD · Collection rewards",
+      "status": "draft",
+      "summary": "Khuyến nghị: xem loại đang thiếu và nhận quà trong cùng tab. Thanh chân giữ mốc gần nhất; nút Mốc sau mở toàn bộ lộ trình.",
+      "data": "./data/ui/proposals/collection-rewards-inline.json",
+      "diff": "./data/ui/proposals/collection-rewards-inline-diff.json",
+      "resources": "./data/ui/proposals/collection-rewards-inline-resources.json",
+      "prompt": "./data/ui/proposals/collection-rewards-inline-prompt.md"
+    },
+    {
+      "id": "collection-rewards-overview",
+      "screen": "collection",
+      "title": "B · Hai thẻ thưởng ở Info",
+      "author": "GDD · Collection rewards",
+      "status": "draft",
+      "summary": "Hai nhánh cạnh nhau trong Info: thấy đồng thời Mutation và Weather. Mỗi thẻ có tiến độ, quà và nút nhận; danh sách loại vẫn ở tab riêng.",
+      "data": "./data/ui/proposals/collection-rewards-overview.json",
+      "diff": "./data/ui/proposals/collection-rewards-overview-diff.json",
+      "resources": "./data/ui/proposals/collection-rewards-overview-resources.json",
+      "prompt": "./data/ui/proposals/collection-rewards-overview-prompt.md"
+    },
+    {
+      "id": "collection-rewards-roadmap",
+      "screen": "collection",
+      "title": "C · Cửa sổ lộ trình riêng",
+      "author": "GDD · Collection rewards",
+      "status": "draft",
+      "summary": "Giữ bố cục Collection; nút Quà pet mở cửa sổ lớn với hai đường mốc. Hợp người chơi lâu năm có nhiều mốc chờ nhận, đổi lại cần thêm một lần chạm.",
+      "data": "./data/ui/proposals/collection-rewards-roadmap.json",
+      "diff": "./data/ui/proposals/collection-rewards-roadmap-diff.json",
+      "resources": "./data/ui/proposals/collection-rewards-roadmap-resources.json",
+      "prompt": "./data/ui/proposals/collection-rewards-roadmap-prompt.md"
     }
   ]
 }

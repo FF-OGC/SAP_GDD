@@ -173,6 +173,9 @@ export function syncUiProposals({ root = GDD_ROOT, dryRun = false } = {}) {
     if (output.has(destination)) throw new Error('Proposal output filename collision: ' + destination);
     output.set(destination, JSON.stringify(data, null, 2) + '\n');
   };
+  const rewardSpecPath = guard(proposalRoot, path.join(proposalRoot, 'collection-reward-experiments.json'));
+  const rewardSpec = existsSync(rewardSpecPath) ? json(rewardSpecPath) : null;
+  if (rewardSpec) addJson('collection-reward-experiments', rewardSpec);
   for (const screen of readdirSync(proposalRoot, { withFileTypes: true }).filter(item => item.isDirectory()).sort((a,b) => a.name.localeCompare(b.name))) {
     if (screen.name !== 'collection') throw new Error('Unregistered proposal screen: ' + screen.name);
     const folder = guard(proposalRoot, path.join(proposalRoot, screen.name));
@@ -188,7 +191,8 @@ export function syncUiProposals({ root = GDD_ROOT, dryRun = false } = {}) {
       }
       const assets = prepareAssets(proposal, sourceManifest, root);
       const result = applyProposal(base, assets.manifest, proposal);
-      const prompt = generatePrompt({ proposal, result, base, root, gameRoot: GAME_ROOT, checkedPath: guard });
+      let prompt = generatePrompt({ proposal, result, base, root, gameRoot: GAME_ROOT, checkedPath: guard });
+      if (rewardSpec?.proposalIds.includes(proposal.id)) prompt += '\n## Collection reward proposal behavior\n\n' + rewardSpec.source + '\n\n' + rewardSpec.assumptions.join('\n\n') + '\n\n' + rewardSpec.notifications + '\n\n' + rewardSpec.implementation + '\n';
       output.set(`data/ui/proposals/${proposal.id}-prompt.md`, prompt);
       all.push({ proposal, ...result });
       addJson(proposal.id, result.screen); addJson(proposal.id + '-diff', result.diff); addJson(proposal.id + '-resources', { resources: result.resources, manifest: result.manifest });

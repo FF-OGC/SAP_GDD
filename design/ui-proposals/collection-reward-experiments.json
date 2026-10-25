@@ -1,0 +1,46 @@
+{
+  "proposalIds": [
+    "collection-rewards-inline",
+    "collection-rewards-overview",
+    "collection-rewards-roadmap"
+  ],
+  "step": 4,
+  "milestonesPerPage": 2,
+  "source": "Yêu cầu người dùng 2026-10-25: mỗi 4 mutation hoặc 4 weather trên từng pet có quà cash/dust. Chưa cung cấp lượng thưởng.",
+  "assumptions": [
+    "Đếm loại khác nhau đã ghi nhận trong Collection của pet, không phải số hiệu ứng đồng thời trên một cá thể.",
+    "Hai nhánh độc lập, mốc nhận một lần; nhận không tiêu hao tiến độ.",
+    "Không tự thêm mốc lẻ cuối danh mục nếu tổng loại không chia hết cho 4.",
+    "Giữ tiến độ đã ghi nhận khi pet bị mất/đổi; cần đối chiếu persistence ở game khi triển khai."
+  ],
+  "audience": {
+    "primary": "Mid: săn loại còn thiếu để đạt mốc 4 tiếp theo.",
+    "secondary": "Late: tìm và nhận nhiều mốc bị bỏ sót.",
+    "protected": "New: rarity/pet vẫn là luồng chính; không báo đỏ cho mốc chưa đạt."
+  },
+  "variants": {
+    "collection-rewards-inline": {
+      "recommendation": "Ưu tiên A để triển khai đầu tiên.",
+      "pros": "Ít lần chạm; phần thưởng gắn ngay với hành động tìm loại còn thiếu.",
+      "cons": "Không thấy cả hai nhánh cùng lúc; phải dịch lưới và kiểm tra chật trên màn nhỏ."
+    },
+    "collection-rewards-overview": {
+      "recommendation": "B phù hợp nếu muốn quà là nội dung chính khi chọn pet.",
+      "pros": "So hai nhánh ngay ở Info; người mới dễ hiểu mục tiêu gần.",
+      "cons": "Info dày hơn; danh sách hiệu ứng và lộ trình nằm sau thao tác khác."
+    },
+    "collection-rewards-roadmap": {
+      "recommendation": "C phù hợp khi số mốc và quà tăng, hoặc cần ít thay đổi màn cũ.",
+      "pros": "Xem hai nhánh và nhiều mốc rõ; dễ mở rộng, giữ lưới cũ.",
+      "cons": "Thêm lần chạm; cửa sổ che danh sách pet khi đang nhận."
+    }
+  },
+  "notifications": "Gift trên pet = có mốc đủ điều kiện chưa nhận. Gift trên rarity/All = OR toàn bộ pet thuộc nhóm, kể cả ngoài trang. Gift trên Mutation/Weather = nhánh tương ứng của pet chọn. Mở UI hoặc đổi tab không xóa dấu; chỉ nhận thành công mới cập nhật. Nếu nhận một nhánh, nhánh kia còn quà vẫn giữ dấu pet/rarity.",
+  "implementation": "Demo chỉ lưu trong bộ nhớ trang. Game cần key nhận theo account + pet type + nhánh + mốc và claim server có tính idempotent; cập nhật badge sau xác nhận thành công, giữ nguyên khi lỗi. Không giả lập cấp tiền thật. Lượng Cash/Dust và quy tắc retroactive cần nối config hiện hành trước triển khai.",
+  "demo": {
+    "mutationCount": 8,
+    "weatherCount": 3,
+    "claimedMutation": [],
+    "claimedWeather": []
+  }
+}

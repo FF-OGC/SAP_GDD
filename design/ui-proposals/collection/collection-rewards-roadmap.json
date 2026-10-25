@@ -1,0 +1,1696 @@
+{
+  "$schema": "../proposal.schema.json",
+  "screen": "collection",
+  "author": "GDD · Collection rewards",
+  "status": "draft",
+  "newAssets": [],
+  "id": "collection-rewards-roadmap",
+  "title": "C · Cửa sổ lộ trình riêng",
+  "summary": "Giữ bố cục Collection; nút Quà pet mở cửa sổ lớn với hai đường mốc. Hợp người chơi lâu năm có nhiều mốc chờ nhận, đổi lại cần thêm một lần chạm.",
+  "ops": [
+    {
+      "op": "add",
+      "parent": "PetsCollection/Container/PetsLayout/Pet (1)",
+      "entity": {
+        "id": "reward-PetGift",
+        "name": "PetGift",
+        "type": "UIImageEntity",
+        "transform": {
+          "anchorMin": {
+            "x": 0,
+            "y": 1
+          },
+          "anchorMax": {
+            "x": 0,
+            "y": 1
+          },
+          "pivot": {
+            "x": 0,
+            "y": 1
+          },
+          "anchoredPosition": {
+            "x": 2,
+            "y": -2
+          },
+          "sizeDelta": {
+            "x": 27,
+            "y": 27
+          },
+          "rotate": 0
+        },
+        "image": {
+          "spriteKey": "Assets/Sprites/Icons/Giftcode3DIcon.png",
+          "color": "#FFFFFF",
+          "fillType": 5
+        }
+      },
+      "reason": "Dấu quà cho pet có ít nhất một mốc chưa nhận; góc trái giữ riêng HasMW ở góc phải."
+    },
+    {
+      "op": "add",
+      "parent": "PetsCollection/Container/RarityTabsLayout/AllTabButton",
+      "entity": {
+        "id": "reward-AllGift",
+        "name": "AllGift",
+        "type": "UIImageEntity",
+        "transform": {
+          "anchorMin": {
+            "x": 1,
+            "y": 1
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": {
+            "x": 1,
+            "y": 1
+          },
+          "anchoredPosition": {
+            "x": -2,
+            "y": -2
+          },
+          "sizeDelta": {
+            "x": 27,
+            "y": 27
+          },
+          "rotate": 0
+        },
+        "image": {
+          "spriteKey": "Assets/Sprites/Icons/Giftcode3DIcon.png",
+          "color": "#FFFFFF",
+          "fillType": 5
+        }
+      },
+      "reason": "OR quà chưa nhận của mọi pet trong rarity, gồm các trang chưa xem."
+    },
+    {
+      "op": "add",
+      "parent": "PetsCollection/Container/RarityTabsLayout/CommonTabButton",
+      "entity": {
+        "id": "reward-CommonGift",
+        "name": "CommonGift",
+        "type": "UIImageEntity",
+        "transform": {
+          "anchorMin": {
+            "x": 1,
+            "y": 1
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": {
+            "x": 1,
+            "y": 1
+          },
+          "anchoredPosition": {
+            "x": -2,
+            "y": -2
+          },
+          "sizeDelta": {
+            "x": 27,
+            "y": 27
+          },
+          "rotate": 0
+        },
+        "image": {
+          "spriteKey": "Assets/Sprites/Icons/Giftcode3DIcon.png",
+          "color": "#FFFFFF",
+          "fillType": 5
+        }
+      },
+      "reason": "OR quà chưa nhận của mọi pet trong rarity, gồm các trang chưa xem."
+    },
+    {
+      "op": "add",
+      "parent": "PetsCollection/Container/RarityTabsLayout/RareTabButton",
+      "entity": {
+        "id": "reward-RareGift",
+        "name": "RareGift",
+        "type": "UIImageEntity",
+        "transform": {
+          "anchorMin": {
+            "x": 1,
+            "y": 1
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": {
+            "x": 1,
+            "y": 1
+          },
+          "anchoredPosition": {
+            "x": -2,
+            "y": -2
+          },
+          "sizeDelta": {
+            "x": 27,
+            "y": 27
+          },
+          "rotate": 0
+        },
+        "image": {
+          "spriteKey": "Assets/Sprites/Icons/Giftcode3DIcon.png",
+          "color": "#FFFFFF",
+          "fillType": 5
+        }
+      },
+      "reason": "OR quà chưa nhận của mọi pet trong rarity, gồm các trang chưa xem."
+    },
+    {
+      "op": "add",
+      "parent": "PetsCollection/Container/RarityTabsLayout/EpicTabButton",
+      "entity": {
+        "id": "reward-EpicGift",
+        "name": "EpicGift",
+        "type": "UIImageEntity",
+        "transform": {
+          "anchorMin": {
+            "x": 1,
+            "y": 1
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": {
+            "x": 1,
+            "y": 1
+          },
+          "anchoredPosition": {
+            "x": -2,
+            "y": -2
+          },
+          "sizeDelta": {
+            "x": 27,
+            "y": 27
+          },
+          "rotate": 0
+        },
+        "image": {
+          "spriteKey": "Assets/Sprites/Icons/Giftcode3DIcon.png",
+          "color": "#FFFFFF",
+          "fillType": 5
+        }
+      },
+      "reason": "OR quà chưa nhận của mọi pet trong rarity, gồm các trang chưa xem."
+    },
+    {
+      "op": "add",
+      "parent": "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton",
+      "entity": {
+        "id": "reward-LegendaryGift",
+        "name": "LegendaryGift",
+        "type": "UIImageEntity",
+        "transform": {
+          "anchorMin": {
+            "x": 1,
+            "y": 1
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": {
+            "x": 1,
+            "y": 1
+          },
+          "anchoredPosition": {
+            "x": -2,
+            "y": -2
+          },
+          "sizeDelta": {
+            "x": 27,
+            "y": 27
+          },
+          "rotate": 0
+        },
+        "image": {
+          "spriteKey": "Assets/Sprites/Icons/Giftcode3DIcon.png",
+          "color": "#FFFFFF",
+          "fillType": 5
+        }
+      },
+      "reason": "OR quà chưa nhận của mọi pet trong rarity, gồm các trang chưa xem."
+    },
+    {
+      "op": "add",
+      "parent": "PetsCollection/Container/RarityTabsLayout/MythicTabButton",
+      "entity": {
+        "id": "reward-MythicGift",
+        "name": "MythicGift",
+        "type": "UIImageEntity",
+        "transform": {
+          "anchorMin": {
+            "x": 1,
+            "y": 1
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": {
+            "x": 1,
+            "y": 1
+          },
+          "anchoredPosition": {
+            "x": -2,
+            "y": -2
+          },
+          "sizeDelta": {
+            "x": 27,
+            "y": 27
+          },
+          "rotate": 0
+        },
+        "image": {
+          "spriteKey": "Assets/Sprites/Icons/Giftcode3DIcon.png",
+          "color": "#FFFFFF",
+          "fillType": 5
+        }
+      },
+      "reason": "OR quà chưa nhận của mọi pet trong rarity, gồm các trang chưa xem."
+    },
+    {
+      "op": "add",
+      "parent": "PetsCollection/Container/RarityTabsLayout/ApexTabButton",
+      "entity": {
+        "id": "reward-ApexGift",
+        "name": "ApexGift",
+        "type": "UIImageEntity",
+        "transform": {
+          "anchorMin": {
+            "x": 1,
+            "y": 1
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": {
+            "x": 1,
+            "y": 1
+          },
+          "anchoredPosition": {
+            "x": -2,
+            "y": -2
+          },
+          "sizeDelta": {
+            "x": 27,
+            "y": 27
+          },
+          "rotate": 0
+        },
+        "image": {
+          "spriteKey": "Assets/Sprites/Icons/Giftcode3DIcon.png",
+          "color": "#FFFFFF",
+          "fillType": 5
+        }
+      },
+      "reason": "OR quà chưa nhận của mọi pet trong rarity, gồm các trang chưa xem."
+    },
+    {
+      "op": "add",
+      "parent": "PetsCollection/Container/RarityTabsLayout/LimitedTabButton",
+      "entity": {
+        "id": "reward-LimitedGift",
+        "name": "LimitedGift",
+        "type": "UIImageEntity",
+        "transform": {
+          "anchorMin": {
+            "x": 1,
+            "y": 1
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": {
+            "x": 1,
+            "y": 1
+          },
+          "anchoredPosition": {
+            "x": -2,
+            "y": -2
+          },
+          "sizeDelta": {
+            "x": 27,
+            "y": 27
+          },
+          "rotate": 0
+        },
+        "image": {
+          "spriteKey": "Assets/Sprites/Icons/Giftcode3DIcon.png",
+          "color": "#FFFFFF",
+          "fillType": 5
+        }
+      },
+      "reason": "OR quà chưa nhận của mọi pet trong rarity, gồm các trang chưa xem."
+    },
+    {
+      "op": "add",
+      "parent": "PetsCollection/Container/DetailsTabsLayout/MutationsTabButton",
+      "entity": {
+        "id": "reward-MutationsGift",
+        "name": "MutationsGift",
+        "type": "UIImageEntity",
+        "transform": {
+          "anchorMin": {
+            "x": 1,
+            "y": 1
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": {
+            "x": 1,
+            "y": 1
+          },
+          "anchoredPosition": {
+            "x": -2,
+            "y": -2
+          },
+          "sizeDelta": {
+            "x": 27,
+            "y": 27
+          },
+          "rotate": 0
+        },
+        "image": {
+          "spriteKey": "Assets/Sprites/Icons/Giftcode3DIcon.png",
+          "color": "#FFFFFF",
+          "fillType": 5
+        }
+      },
+      "reason": "Quà chưa nhận của nhánh tương ứng trên pet đang chọn."
+    },
+    {
+      "op": "add",
+      "parent": "PetsCollection/Container/DetailsTabsLayout/WeathersTabButton",
+      "entity": {
+        "id": "reward-WeathersGift",
+        "name": "WeathersGift",
+        "type": "UIImageEntity",
+        "transform": {
+          "anchorMin": {
+            "x": 1,
+            "y": 1
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": {
+            "x": 1,
+            "y": 1
+          },
+          "anchoredPosition": {
+            "x": -2,
+            "y": -2
+          },
+          "sizeDelta": {
+            "x": 27,
+            "y": 27
+          },
+          "rotate": 0
+        },
+        "image": {
+          "spriteKey": "Assets/Sprites/Icons/Giftcode3DIcon.png",
+          "color": "#FFFFFF",
+          "fillType": 5
+        }
+      },
+      "reason": "Quà chưa nhận của nhánh tương ứng trên pet đang chọn."
+    },
+    {
+      "op": "add",
+      "parent": "PetsCollection/Container",
+      "entity": {
+        "id": "reward-RewardEntry",
+        "name": "RewardEntry",
+        "type": "UIButtonEntity",
+        "transform": {
+          "anchorMin": {
+            "x": 0,
+            "y": 1
+          },
+          "anchorMax": {
+            "x": 0,
+            "y": 1
+          },
+          "pivot": {
+            "x": 0,
+            "y": 1
+          },
+          "anchoredPosition": {
+            "x": 860,
+            "y": -182
+          },
+          "sizeDelta": {
+            "x": 150,
+            "y": 26
+          },
+          "rotate": 0
+        },
+        "button": {
+          "spriteKey": "Assets/Sprites/NewAssets/ShopItemBG.png",
+          "normal": "#D7A54B",
+          "pressed": "#B18539",
+          "disabled": "#657384",
+          "fillType": 1,
+          "disableCollider": false
+        },
+        "children": [
+          {
+            "id": "reward-RewardEntryText",
+            "name": "RewardEntryText",
+            "type": "UITextEntity",
+            "transform": {
+              "anchorMin": {
+                "x": 0,
+                "y": 1
+              },
+              "anchorMax": {
+                "x": 0,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0,
+                "y": 1
+              },
+              "anchoredPosition": {
+                "x": 8,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 134,
+                "y": 26
+              },
+              "rotate": 0
+            },
+            "text": {
+              "value": "Quà pet",
+              "fontSize": 18,
+              "color": "#FFFFFF",
+              "alignment": {
+                "h": "left",
+                "v": "middle"
+              }
+            }
+          }
+        ]
+      },
+      "reason": "Mở lộ trình hai nhánh của pet được chọn; đặt giữa rarity và nguồn nhận, không đè tab."
+    },
+    {
+      "op": "add",
+      "parent": "PetsCollection/Container",
+      "entity": {
+        "id": "reward-RewardRoadmap",
+        "name": "RewardRoadmap",
+        "type": "UIImageEntity",
+        "transform": {
+          "anchorMin": {
+            "x": 0,
+            "y": 1
+          },
+          "anchorMax": {
+            "x": 0,
+            "y": 1
+          },
+          "pivot": {
+            "x": 0,
+            "y": 1
+          },
+          "anchoredPosition": {
+            "x": 225,
+            "y": -70
+          },
+          "sizeDelta": {
+            "x": 795,
+            "y": 500
+          },
+          "rotate": 0
+        },
+        "image": {
+          "spriteKey": "Assets/Sprites/NewAssets/ShopItemBG.png",
+          "color": "#233E59",
+          "fillType": 1
+        },
+        "children": [
+          {
+            "id": "reward-RoadTitle",
+            "name": "RoadTitle",
+            "type": "UITextEntity",
+            "transform": {
+              "anchorMin": {
+                "x": 0,
+                "y": 1
+              },
+              "anchorMax": {
+                "x": 0,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0,
+                "y": 1
+              },
+              "anchoredPosition": {
+                "x": 22,
+                "y": -12
+              },
+              "sizeDelta": {
+                "x": 650,
+                "y": 34
+              },
+              "rotate": 0
+            },
+            "text": {
+              "value": "LỘ TRÌNH THƯỞNG · PET ĐANG CHỌN",
+              "fontSize": 24,
+              "color": "#FFFFFF",
+              "alignment": {
+                "h": "left",
+                "v": "middle"
+              }
+            }
+          },
+          {
+            "id": "reward-RoadClose",
+            "name": "RoadClose",
+            "type": "UIButtonEntity",
+            "transform": {
+              "anchorMin": {
+                "x": 0,
+                "y": 1
+              },
+              "anchorMax": {
+                "x": 0,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0,
+                "y": 1
+              },
+              "anchoredPosition": {
+                "x": 680,
+                "y": -12
+              },
+              "sizeDelta": {
+                "x": 95,
+                "y": 34
+              },
+              "rotate": 0
+            },
+            "button": {
+              "spriteKey": "Assets/Sprites/NewAssets/ShopItemBG.png",
+              "normal": "#D7A54B",
+              "pressed": "#B18539",
+              "disabled": "#657384",
+              "fillType": 1,
+              "disableCollider": false
+            },
+            "children": [
+              {
+                "id": "reward-RoadCloseText",
+                "name": "RoadCloseText",
+                "type": "UITextEntity",
+                "transform": {
+                  "anchorMin": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchorMax": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "pivot": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchoredPosition": {
+                    "x": 8,
+                    "y": 0
+                  },
+                  "sizeDelta": {
+                    "x": 79,
+                    "y": 34
+                  },
+                  "rotate": 0
+                },
+                "text": {
+                  "value": "Đóng",
+                  "fontSize": 18,
+                  "color": "#FFFFFF",
+                  "alignment": {
+                    "h": "left",
+                    "v": "middle"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "reward-RoadRule",
+            "name": "RoadRule",
+            "type": "UITextEntity",
+            "transform": {
+              "anchorMin": {
+                "x": 0,
+                "y": 1
+              },
+              "anchorMax": {
+                "x": 0,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0,
+                "y": 1
+              },
+              "anchoredPosition": {
+                "x": 22,
+                "y": -48
+              },
+              "sizeDelta": {
+                "x": 740,
+                "y": 30
+              },
+              "rotate": 0
+            },
+            "text": {
+              "value": "Mỗi 4 loại / nhánh · không cộng Mutation với Weather",
+              "fontSize": 18,
+              "color": "#FFFFFF",
+              "alignment": {
+                "h": "left",
+                "v": "middle"
+              }
+            }
+          },
+          {
+            "id": "reward-MutationsRoadTitle",
+            "name": "MutationsRoadTitle",
+            "type": "UITextEntity",
+            "transform": {
+              "anchorMin": {
+                "x": 0,
+                "y": 1
+              },
+              "anchorMax": {
+                "x": 0,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0,
+                "y": 1
+              },
+              "anchoredPosition": {
+                "x": 22,
+                "y": -90
+              },
+              "sizeDelta": {
+                "x": 740,
+                "y": 30
+              },
+              "rotate": 0
+            },
+            "text": {
+              "value": "Mutations",
+              "fontSize": 21,
+              "color": "#FFFFFF",
+              "alignment": {
+                "h": "left",
+                "v": "middle"
+              }
+            }
+          },
+          {
+            "id": "reward-MutationsMilestone0",
+            "name": "MutationsMilestone0",
+            "type": "UIImageEntity",
+            "transform": {
+              "anchorMin": {
+                "x": 0,
+                "y": 1
+              },
+              "anchorMax": {
+                "x": 0,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0,
+                "y": 1
+              },
+              "anchoredPosition": {
+                "x": 22,
+                "y": -126
+              },
+              "sizeDelta": {
+                "x": 365,
+                "y": 122
+              },
+              "rotate": 0
+            },
+            "image": {
+              "spriteKey": "Assets/Sprites/NewAssets/ShopItemBG.png",
+              "color": "#233E59",
+              "fillType": 1
+            },
+            "children": [
+              {
+                "id": "reward-MutationsMilestoneLabel0",
+                "name": "MutationsMilestoneLabel0",
+                "type": "UITextEntity",
+                "transform": {
+                  "anchorMin": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchorMax": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "pivot": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchoredPosition": {
+                    "x": 14,
+                    "y": -8
+                  },
+                  "sizeDelta": {
+                    "x": 337,
+                    "y": 28
+                  },
+                  "rotate": 0
+                },
+                "text": {
+                  "value": "Mốc 4",
+                  "fontSize": 23,
+                  "color": "#FFFFFF",
+                  "alignment": {
+                    "h": "left",
+                    "v": "middle"
+                  }
+                }
+              },
+              {
+                "id": "reward-MutationsMilestoneReward0",
+                "name": "MutationsMilestoneReward0",
+                "type": "UITextEntity",
+                "transform": {
+                  "anchorMin": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchorMax": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "pivot": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchoredPosition": {
+                    "x": 14,
+                    "y": -41
+                  },
+                  "sizeDelta": {
+                    "x": 195,
+                    "y": 64
+                  },
+                  "rotate": 0
+                },
+                "text": {
+                  "value": "Cash + Dust\nchưa có dữ liệu",
+                  "fontSize": 18,
+                  "color": "#FFFFFF",
+                  "alignment": {
+                    "h": "left",
+                    "v": "middle"
+                  }
+                }
+              },
+              {
+                "id": "reward-MutationsClaim0",
+                "name": "MutationsClaim0",
+                "type": "UIButtonEntity",
+                "transform": {
+                  "anchorMin": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchorMax": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "pivot": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchoredPosition": {
+                    "x": 222,
+                    "y": -67
+                  },
+                  "sizeDelta": {
+                    "x": 129,
+                    "y": 40
+                  },
+                  "rotate": 0
+                },
+                "button": {
+                  "spriteKey": "Assets/Sprites/NewAssets/ShopItemBG.png",
+                  "normal": "#D7A54B",
+                  "pressed": "#B18539",
+                  "disabled": "#657384",
+                  "fillType": 1,
+                  "disableCollider": false
+                },
+                "children": [
+                  {
+                    "id": "reward-MutationsClaim0Text",
+                    "name": "MutationsClaim0Text",
+                    "type": "UITextEntity",
+                    "transform": {
+                      "anchorMin": {
+                        "x": 0,
+                        "y": 1
+                      },
+                      "anchorMax": {
+                        "x": 0,
+                        "y": 1
+                      },
+                      "pivot": {
+                        "x": 0,
+                        "y": 1
+                      },
+                      "anchoredPosition": {
+                        "x": 8,
+                        "y": 0
+                      },
+                      "sizeDelta": {
+                        "x": 113,
+                        "y": 40
+                      },
+                      "rotate": 0
+                    },
+                    "text": {
+                      "value": "Chưa đạt",
+                      "fontSize": 18,
+                      "color": "#FFFFFF",
+                      "alignment": {
+                        "h": "left",
+                        "v": "middle"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "reward-MutationsMilestone1",
+            "name": "MutationsMilestone1",
+            "type": "UIImageEntity",
+            "transform": {
+              "anchorMin": {
+                "x": 0,
+                "y": 1
+              },
+              "anchorMax": {
+                "x": 0,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0,
+                "y": 1
+              },
+              "anchoredPosition": {
+                "x": 402,
+                "y": -126
+              },
+              "sizeDelta": {
+                "x": 365,
+                "y": 122
+              },
+              "rotate": 0
+            },
+            "image": {
+              "spriteKey": "Assets/Sprites/NewAssets/ShopItemBG.png",
+              "color": "#233E59",
+              "fillType": 1
+            },
+            "children": [
+              {
+                "id": "reward-MutationsMilestoneLabel1",
+                "name": "MutationsMilestoneLabel1",
+                "type": "UITextEntity",
+                "transform": {
+                  "anchorMin": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchorMax": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "pivot": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchoredPosition": {
+                    "x": 14,
+                    "y": -8
+                  },
+                  "sizeDelta": {
+                    "x": 337,
+                    "y": 28
+                  },
+                  "rotate": 0
+                },
+                "text": {
+                  "value": "Mốc 8",
+                  "fontSize": 23,
+                  "color": "#FFFFFF",
+                  "alignment": {
+                    "h": "left",
+                    "v": "middle"
+                  }
+                }
+              },
+              {
+                "id": "reward-MutationsMilestoneReward1",
+                "name": "MutationsMilestoneReward1",
+                "type": "UITextEntity",
+                "transform": {
+                  "anchorMin": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchorMax": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "pivot": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchoredPosition": {
+                    "x": 14,
+                    "y": -41
+                  },
+                  "sizeDelta": {
+                    "x": 195,
+                    "y": 64
+                  },
+                  "rotate": 0
+                },
+                "text": {
+                  "value": "Cash + Dust\nchưa có dữ liệu",
+                  "fontSize": 18,
+                  "color": "#FFFFFF",
+                  "alignment": {
+                    "h": "left",
+                    "v": "middle"
+                  }
+                }
+              },
+              {
+                "id": "reward-MutationsClaim1",
+                "name": "MutationsClaim1",
+                "type": "UIButtonEntity",
+                "transform": {
+                  "anchorMin": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchorMax": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "pivot": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchoredPosition": {
+                    "x": 222,
+                    "y": -67
+                  },
+                  "sizeDelta": {
+                    "x": 129,
+                    "y": 40
+                  },
+                  "rotate": 0
+                },
+                "button": {
+                  "spriteKey": "Assets/Sprites/NewAssets/ShopItemBG.png",
+                  "normal": "#D7A54B",
+                  "pressed": "#B18539",
+                  "disabled": "#657384",
+                  "fillType": 1,
+                  "disableCollider": false
+                },
+                "children": [
+                  {
+                    "id": "reward-MutationsClaim1Text",
+                    "name": "MutationsClaim1Text",
+                    "type": "UITextEntity",
+                    "transform": {
+                      "anchorMin": {
+                        "x": 0,
+                        "y": 1
+                      },
+                      "anchorMax": {
+                        "x": 0,
+                        "y": 1
+                      },
+                      "pivot": {
+                        "x": 0,
+                        "y": 1
+                      },
+                      "anchoredPosition": {
+                        "x": 8,
+                        "y": 0
+                      },
+                      "sizeDelta": {
+                        "x": 113,
+                        "y": 40
+                      },
+                      "rotate": 0
+                    },
+                    "text": {
+                      "value": "Chưa đạt",
+                      "fontSize": 18,
+                      "color": "#FFFFFF",
+                      "alignment": {
+                        "h": "left",
+                        "v": "middle"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "reward-WeathersRoadTitle",
+            "name": "WeathersRoadTitle",
+            "type": "UITextEntity",
+            "transform": {
+              "anchorMin": {
+                "x": 0,
+                "y": 1
+              },
+              "anchorMax": {
+                "x": 0,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0,
+                "y": 1
+              },
+              "anchoredPosition": {
+                "x": 22,
+                "y": -255
+              },
+              "sizeDelta": {
+                "x": 740,
+                "y": 30
+              },
+              "rotate": 0
+            },
+            "text": {
+              "value": "Weathers",
+              "fontSize": 21,
+              "color": "#FFFFFF",
+              "alignment": {
+                "h": "left",
+                "v": "middle"
+              }
+            }
+          },
+          {
+            "id": "reward-WeathersMilestone0",
+            "name": "WeathersMilestone0",
+            "type": "UIImageEntity",
+            "transform": {
+              "anchorMin": {
+                "x": 0,
+                "y": 1
+              },
+              "anchorMax": {
+                "x": 0,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0,
+                "y": 1
+              },
+              "anchoredPosition": {
+                "x": 22,
+                "y": -291
+              },
+              "sizeDelta": {
+                "x": 365,
+                "y": 122
+              },
+              "rotate": 0
+            },
+            "image": {
+              "spriteKey": "Assets/Sprites/NewAssets/ShopItemBG.png",
+              "color": "#233E59",
+              "fillType": 1
+            },
+            "children": [
+              {
+                "id": "reward-WeathersMilestoneLabel0",
+                "name": "WeathersMilestoneLabel0",
+                "type": "UITextEntity",
+                "transform": {
+                  "anchorMin": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchorMax": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "pivot": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchoredPosition": {
+                    "x": 14,
+                    "y": -8
+                  },
+                  "sizeDelta": {
+                    "x": 337,
+                    "y": 28
+                  },
+                  "rotate": 0
+                },
+                "text": {
+                  "value": "Mốc 4",
+                  "fontSize": 23,
+                  "color": "#FFFFFF",
+                  "alignment": {
+                    "h": "left",
+                    "v": "middle"
+                  }
+                }
+              },
+              {
+                "id": "reward-WeathersMilestoneReward0",
+                "name": "WeathersMilestoneReward0",
+                "type": "UITextEntity",
+                "transform": {
+                  "anchorMin": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchorMax": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "pivot": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchoredPosition": {
+                    "x": 14,
+                    "y": -41
+                  },
+                  "sizeDelta": {
+                    "x": 195,
+                    "y": 64
+                  },
+                  "rotate": 0
+                },
+                "text": {
+                  "value": "Cash + Dust\nchưa có dữ liệu",
+                  "fontSize": 18,
+                  "color": "#FFFFFF",
+                  "alignment": {
+                    "h": "left",
+                    "v": "middle"
+                  }
+                }
+              },
+              {
+                "id": "reward-WeathersClaim0",
+                "name": "WeathersClaim0",
+                "type": "UIButtonEntity",
+                "transform": {
+                  "anchorMin": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchorMax": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "pivot": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchoredPosition": {
+                    "x": 222,
+                    "y": -67
+                  },
+                  "sizeDelta": {
+                    "x": 129,
+                    "y": 40
+                  },
+                  "rotate": 0
+                },
+                "button": {
+                  "spriteKey": "Assets/Sprites/NewAssets/ShopItemBG.png",
+                  "normal": "#D7A54B",
+                  "pressed": "#B18539",
+                  "disabled": "#657384",
+                  "fillType": 1,
+                  "disableCollider": false
+                },
+                "children": [
+                  {
+                    "id": "reward-WeathersClaim0Text",
+                    "name": "WeathersClaim0Text",
+                    "type": "UITextEntity",
+                    "transform": {
+                      "anchorMin": {
+                        "x": 0,
+                        "y": 1
+                      },
+                      "anchorMax": {
+                        "x": 0,
+                        "y": 1
+                      },
+                      "pivot": {
+                        "x": 0,
+                        "y": 1
+                      },
+                      "anchoredPosition": {
+                        "x": 8,
+                        "y": 0
+                      },
+                      "sizeDelta": {
+                        "x": 113,
+                        "y": 40
+                      },
+                      "rotate": 0
+                    },
+                    "text": {
+                      "value": "Chưa đạt",
+                      "fontSize": 18,
+                      "color": "#FFFFFF",
+                      "alignment": {
+                        "h": "left",
+                        "v": "middle"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "reward-WeathersMilestone1",
+            "name": "WeathersMilestone1",
+            "type": "UIImageEntity",
+            "transform": {
+              "anchorMin": {
+                "x": 0,
+                "y": 1
+              },
+              "anchorMax": {
+                "x": 0,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0,
+                "y": 1
+              },
+              "anchoredPosition": {
+                "x": 402,
+                "y": -291
+              },
+              "sizeDelta": {
+                "x": 365,
+                "y": 122
+              },
+              "rotate": 0
+            },
+            "image": {
+              "spriteKey": "Assets/Sprites/NewAssets/ShopItemBG.png",
+              "color": "#233E59",
+              "fillType": 1
+            },
+            "children": [
+              {
+                "id": "reward-WeathersMilestoneLabel1",
+                "name": "WeathersMilestoneLabel1",
+                "type": "UITextEntity",
+                "transform": {
+                  "anchorMin": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchorMax": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "pivot": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchoredPosition": {
+                    "x": 14,
+                    "y": -8
+                  },
+                  "sizeDelta": {
+                    "x": 337,
+                    "y": 28
+                  },
+                  "rotate": 0
+                },
+                "text": {
+                  "value": "Mốc 8",
+                  "fontSize": 23,
+                  "color": "#FFFFFF",
+                  "alignment": {
+                    "h": "left",
+                    "v": "middle"
+                  }
+                }
+              },
+              {
+                "id": "reward-WeathersMilestoneReward1",
+                "name": "WeathersMilestoneReward1",
+                "type": "UITextEntity",
+                "transform": {
+                  "anchorMin": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchorMax": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "pivot": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchoredPosition": {
+                    "x": 14,
+                    "y": -41
+                  },
+                  "sizeDelta": {
+                    "x": 195,
+                    "y": 64
+                  },
+                  "rotate": 0
+                },
+                "text": {
+                  "value": "Cash + Dust\nchưa có dữ liệu",
+                  "fontSize": 18,
+                  "color": "#FFFFFF",
+                  "alignment": {
+                    "h": "left",
+                    "v": "middle"
+                  }
+                }
+              },
+              {
+                "id": "reward-WeathersClaim1",
+                "name": "WeathersClaim1",
+                "type": "UIButtonEntity",
+                "transform": {
+                  "anchorMin": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchorMax": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "pivot": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchoredPosition": {
+                    "x": 222,
+                    "y": -67
+                  },
+                  "sizeDelta": {
+                    "x": 129,
+                    "y": 40
+                  },
+                  "rotate": 0
+                },
+                "button": {
+                  "spriteKey": "Assets/Sprites/NewAssets/ShopItemBG.png",
+                  "normal": "#D7A54B",
+                  "pressed": "#B18539",
+                  "disabled": "#657384",
+                  "fillType": 1,
+                  "disableCollider": false
+                },
+                "children": [
+                  {
+                    "id": "reward-WeathersClaim1Text",
+                    "name": "WeathersClaim1Text",
+                    "type": "UITextEntity",
+                    "transform": {
+                      "anchorMin": {
+                        "x": 0,
+                        "y": 1
+                      },
+                      "anchorMax": {
+                        "x": 0,
+                        "y": 1
+                      },
+                      "pivot": {
+                        "x": 0,
+                        "y": 1
+                      },
+                      "anchoredPosition": {
+                        "x": 8,
+                        "y": 0
+                      },
+                      "sizeDelta": {
+                        "x": 113,
+                        "y": 40
+                      },
+                      "rotate": 0
+                    },
+                    "text": {
+                      "value": "Chưa đạt",
+                      "fontSize": 18,
+                      "color": "#FFFFFF",
+                      "alignment": {
+                        "h": "left",
+                        "v": "middle"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "reward-RoadPrev",
+            "name": "RoadPrev",
+            "type": "UIButtonEntity",
+            "transform": {
+              "anchorMin": {
+                "x": 0,
+                "y": 1
+              },
+              "anchorMax": {
+                "x": 0,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0,
+                "y": 1
+              },
+              "anchoredPosition": {
+                "x": 22,
+                "y": -444
+              },
+              "sizeDelta": {
+                "x": 155,
+                "y": 34
+              },
+              "rotate": 0
+            },
+            "button": {
+              "spriteKey": "Assets/Sprites/NewAssets/ShopItemBG.png",
+              "normal": "#D7A54B",
+              "pressed": "#B18539",
+              "disabled": "#657384",
+              "fillType": 1,
+              "disableCollider": false
+            },
+            "children": [
+              {
+                "id": "reward-RoadPrevText",
+                "name": "RoadPrevText",
+                "type": "UITextEntity",
+                "transform": {
+                  "anchorMin": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchorMax": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "pivot": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchoredPosition": {
+                    "x": 8,
+                    "y": 0
+                  },
+                  "sizeDelta": {
+                    "x": 139,
+                    "y": 34
+                  },
+                  "rotate": 0
+                },
+                "text": {
+                  "value": "← Mốc trước",
+                  "fontSize": 18,
+                  "color": "#FFFFFF",
+                  "alignment": {
+                    "h": "left",
+                    "v": "middle"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "reward-RoadPage",
+            "name": "RoadPage",
+            "type": "UITextEntity",
+            "transform": {
+              "anchorMin": {
+                "x": 0,
+                "y": 1
+              },
+              "anchorMax": {
+                "x": 0,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0,
+                "y": 1
+              },
+              "anchoredPosition": {
+                "x": 195,
+                "y": -444
+              },
+              "sizeDelta": {
+                "x": 360,
+                "y": 34
+              },
+              "rotate": 0
+            },
+            "text": {
+              "value": "Các mốc 4 / 8",
+              "fontSize": 17,
+              "color": "#FFFFFF",
+              "alignment": {
+                "h": "left",
+                "v": "middle"
+              }
+            }
+          },
+          {
+            "id": "reward-RoadNext",
+            "name": "RoadNext",
+            "type": "UIButtonEntity",
+            "transform": {
+              "anchorMin": {
+                "x": 0,
+                "y": 1
+              },
+              "anchorMax": {
+                "x": 0,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0,
+                "y": 1
+              },
+              "anchoredPosition": {
+                "x": 595,
+                "y": -444
+              },
+              "sizeDelta": {
+                "x": 178,
+                "y": 34
+              },
+              "rotate": 0
+            },
+            "button": {
+              "spriteKey": "Assets/Sprites/NewAssets/ShopItemBG.png",
+              "normal": "#D7A54B",
+              "pressed": "#B18539",
+              "disabled": "#657384",
+              "fillType": 1,
+              "disableCollider": false
+            },
+            "children": [
+              {
+                "id": "reward-RoadNextText",
+                "name": "RoadNextText",
+                "type": "UITextEntity",
+                "transform": {
+                  "anchorMin": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchorMax": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "pivot": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "anchoredPosition": {
+                    "x": 8,
+                    "y": 0
+                  },
+                  "sizeDelta": {
+                    "x": 162,
+                    "y": 34
+                  },
+                  "rotate": 0
+                },
+                "text": {
+                  "value": "Mốc sau →",
+                  "fontSize": 18,
+                  "color": "#FFFFFF",
+                  "alignment": {
+                    "h": "left",
+                    "v": "middle"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "reason": "Lộ trình phân trang: hiện tất cả mốc cấu hình có thể đạt; nhận độc lập từng mốc, giữ mốc cũ chưa nhận."
+    }
+  ]
+}
