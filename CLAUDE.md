@@ -12,6 +12,7 @@
 - Không commit/push trong repo game. Trong GDD chỉ commit local cho từng thay đổi của plan; không push, amend, rebase, reset hoặc tạo tag.
 - Không bịa số. Dùng CSV/code đã kiểm chứng; thiếu nguồn thì ghi “chưa có dữ liệu”. Balance target và mô phỏng chỉ thêm khi có quyết định hoặc cơ chế nguồn đã xác nhận.
 - Giao diện dùng vanilla JS, tiếng Việt, mặc định gọn; dữ liệu dẫn xuất do `tools/*.mjs` sinh vào `dist/data/`. Trình duyệt chỉ đọc JSON và hiển thị.
+- Phân luồng UI: yêu cầu thêm tính năng/đổi thiết kế/tạo UI mới chỉ sửa **UI Proposal**. Yêu cầu chỉnh cho khớp project gốc chỉ sửa **UI Preview**, cập nhật thêm Proposal tương ứng nếu bản đó chưa từng chỉnh sửa thiết kế. Kiểm lịch sử/patch trước khi kết luận; bảo toàn Proposal đã sửa hoặc chưa rõ lịch sử, kể cả tác động gián tiếp qua renderer chung/sync baseline. Chi tiết ở skill `map-game-ui`, rule R8.
 
 ## Lệnh thường dùng
 

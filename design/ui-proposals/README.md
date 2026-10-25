@@ -4,6 +4,16 @@ Spec chính: `plans/PLAN-ui-proposal.md` §3. Chỉ Collection được đăng k
 Đề xuất là dữ liệu do GDD sở hữu. `collection/collection-pipeline-example.json`
 là **ví dụ để kiểm pipeline**, trạng thái draft, chưa phải thiết kế được duyệt.
 
+## Phân luồng yêu cầu
+
+Thêm tính năng, đổi thiết kế hoặc tạo UI mới chỉ thực hiện ở **UI Proposal**.
+Chỉnh UI cho khớp project gốc chỉ sửa **UI Preview**; cập nhật thêm Proposal
+tương ứng nếu bản đó chưa từng chỉnh sửa thiết kế. Proposal đã có chỉnh sửa
+riêng phải được bảo toàn, kể cả khi đổi renderer chung hoặc regenerate trên
+baseline mới. Kiểm lịch sử/patch, không suy từ status=draft hay diff rỗng;
+chưa rõ lịch sử thì giữ nguyên Proposal. Xem
+[rule R8](../skills/map-game-ui/references/mapping-rules.md#r8--chia-sẻ-primitive-và-phân-biệt-proposal).
+
 ## Schema và identity
 
 Schema: `proposal.schema.json`; validator semantic: `tools/sync-ui-proposals.mjs`;

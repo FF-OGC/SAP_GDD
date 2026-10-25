@@ -117,8 +117,36 @@ giả làm config thật. Fixture tổng hợp phải gắn nhãn và chỉ dùn
 
 ## R8 · Chia sẻ primitive và phân biệt proposal
 
+**Chọn đích sửa từ ý định người dùng, trước khi chọn file:**
+
+| Yêu cầu | Đích sửa | Xử lý mục còn lại |
+|---|---|---|
+| Thêm tính năng vào UI, đổi thiết kế, tạo UI mới | Chỉ UI Proposal | Giữ UI Preview theo project gốc |
+| Map hoặc chỉnh UI cho khớp project gốc | UI Preview | Cập nhật thêm Proposal tương ứng nếu chưa từng chỉnh sửa thiết kế |
+| Sửa parity khi Proposal đã có chỉnh sửa riêng | Chỉ UI Preview | Giữ thiết kế Proposal; không tự reset/rebase/ghi đè |
+
+“Chưa từng chỉnh sửa” xét từng bản Proposal của màn hình: kiểm patch/ops,
+asset/binding thiết kế và lịch sử Git hoặc record chỉnh sửa nếu có. Chỉnh
+sửa thiết kế theo yêu cầu trước đó, dù do agent thực hiện, vẫn được tính.
+File dẫn xuất regenerate không tự là một lần chỉnh thiết kế; ngược lại,
+diff hiện tại rỗng hoặc status=draft không chứng minh chưa từng chỉnh sửa.
+Thiếu lịch sử để kết luận thì bảo toàn Proposal, ghi rõ chưa xác định; tiếp
+tục sửa Preview theo scope đã có. Không tự tạo Proposal mới chỉ vì sửa parity.
+
+Proposal chưa từng chỉnh sửa có thể kế thừa baseline Preview đã sửa và được
+regenerate qua pipeline; không vá JSON output bằng tay. Proposal đã chỉnh
+sửa không tự động nhận thay đổi baseline làm đổi thiết kế. Kiểm tác động
+trước khi sync vì pipeline đang áp patch lên snapshot Preview hiện tại;
+không gọi regenerate toàn bộ Proposal một cách máy móc nếu nó làm đổi bản
+đã chỉnh sửa. Nếu cần, giữ baseline/override hoặc tách hành vi render trong
+phạm vi bản Proposal đó để bảo toàn thiết kế, không tự mở rộng scope task.
+
 Giữ renderer/layout/tint/text/slice/stage/resource panel dùng chung giữa
-preview và proposal. Binder riêng điều khiển hành vi màn hình. Đảm bảo thứ
+preview và proposal khi phù hợp với phân luồng trên. Sửa primitive chung
+không được làm tính năng mới lọt sang Preview hoặc làm đổi thiết kế Proposal
+đã chỉnh sửa; dùng binding/option theo mode nếu cần. Kiểm regression consumer
+khác là kiểm bảo toàn, không phải quyền sửa thiết kế ở cả hai mục.
+Binder riêng điều khiển hành vi màn hình. Đảm bảo thứ
 tự script dependency và cache version khiến browser tải code tương thích.
 Mở deep-link trực tiếp với storage sạch là case bắt buộc khi đổi module.
 

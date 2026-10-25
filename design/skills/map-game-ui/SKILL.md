@@ -3,8 +3,9 @@ name: map-game-ui
 description: >-
   Map an existing game's UI to a website from UI trees, runtime bindings,
   config and original sprites; audit visual and interaction fidelity and
-  prevent regressions learned from SAP Collection. Use for source-based UI
-  reconstruction or parity fixes, not UI redesign or a screenshot-only mockup.
+  prevent regressions learned from SAP Collection. Route feature updates and
+  new UI to UI Proposal, source-parity fixes to UI Preview. Use for that
+  routing and source-based reconstruction, not a screenshot-only mockup.
 ---
 
 # Map game UI từ source sang website
@@ -12,6 +13,22 @@ description: >-
 Mục tiêu: tái hiện cây widget, hình ảnh, dữ liệu và chuyển trạng thái theo
 nguồn; có bằng chứng kiểm tra và khai báo phần chưa xác minh. Không hứa
 pixel parity chỉ vì DOM hoặc test web đã pass.
+
+## Phân luồng UI Preview / UI Proposal trước khi sửa
+
+- **Update UI để thêm tính năng, đổi thiết kế hoặc tạo UI mới:** chỉ thực
+  hiện ở **UI Proposal**; giữ UI Preview phản ánh project gốc. UI mới do
+  người dùng đề xuất khác với map một UI đã có trong project gốc.
+- **Chỉnh UI cho khớp project gốc:** chỉ sửa **UI Preview**. Sửa thêm bản
+  **UI Proposal tương ứng nếu bản đó chưa từng được chỉnh sửa thiết kế**,
+  để nó tiếp tục khớp baseline. Proposal đã được chỉnh sửa phải giữ nguyên
+  thiết kế riêng; không tự reset, ghi đè hay đồng bộ lại theo Preview.
+- Kiểm lịch sử/patch để xác định Proposal đã từng chỉnh sửa; không kết luận
+  chỉ từ diff hiện tại rỗng. Chưa xác định được thì bảo toàn Proposal và ghi
+  rõ giới hạn. Chi tiết và trường hợp renderer chung: R8 trong
+  [quy tắc mapping](references/mapping-rules.md).
+- Prompt chứa cả thêm tính năng và sửa parity: tách phần việc theo hai đích
+  trên; không đưa tính năng đề xuất vào baseline Preview.
 
 ## Đọc theo công việc
 
@@ -25,7 +42,8 @@ pixel parity chỉ vì DOM hoặc test web đã pass.
 
 ## Quy trình
 
-1. Chốt màn hình, checkout nguồn, trạng thái cần map và nguồn được phép đọc.
+1. Phân luồng ý định theo quy tắc trên, xác định Proposal đã từng chỉnh sửa
+   hay chưa. Chốt màn hình, checkout nguồn, trạng thái cần map và nguồn được phép đọc.
    Ghi commit/hash khi có, file UI, controller, config, resource, localization,
    ảnh runtime nếu có; kiểm tra snapshot có cùng phiên bản với code không.
    Thiếu quyền/nguồn chỉ chặn phần phụ thuộc, tiếp tục phần đã đủ chứng cứ.

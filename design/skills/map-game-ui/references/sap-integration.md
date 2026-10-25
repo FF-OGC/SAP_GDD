@@ -5,6 +5,16 @@ thư mục skill cá nhân Codex/Claude là bản sao; khi cập nhật, sửa c
 trước và đồng bộ cả folder, tránh chỉnh ba bản độc lập. CLAUDE.md của checkout
 luôn là nguồn hiện hành cho quyền đọc/ghi, không lấy reference này để mở rộng.
 
+## Đích thay đổi Preview / Proposal
+
+Thêm tính năng, đổi thiết kế hoặc tạo UI mới: chỉ sửa UI Proposal qua nguồn
+GDD sở hữu. Chỉnh để khớp project gốc: sửa UI Preview, và cập nhật Proposal
+tương ứng nếu bản đó chưa từng chỉnh sửa thiết kế. Kiểm lịch sử/patch; bảo
+toàn Proposal đã sửa hoặc chưa xác định được lịch sử. Xem R8 của
+[mapping-rules](mapping-rules.md) trước khi sửa renderer chung hoặc chạy
+sync-ui-proposals: regenerate trên baseline mới có thể làm đổi Proposal
+gián tiếp dù không đụng file patch.
+
 ## Phạm vi hiện tại (2026-10-25)
 
 - Website static vanilla JS trong `dist/`, tiếng Việt; không thêm framework,

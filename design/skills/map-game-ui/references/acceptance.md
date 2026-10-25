@@ -4,6 +4,17 @@
 Mỗi kết quả kèm file/report hoặc ảnh và phạm vi state đã kiểm. Không áp số
 entity/test Collection làm quota cho màn hình mới.
 
+## G0 · Đích sửa và bảo toàn thiết kế
+
+- Ghi ý định và đích sửa: tính năng/thiết kế/UI mới chỉ vào Proposal; parity
+  project gốc vào Preview. Với parity, chỉ cập nhật thêm Proposal tương ứng
+  khi có bằng chứng bản đó chưa từng chỉnh sửa thiết kế.
+- Ghi bằng chứng lịch sử/patch dùng để phân loại Proposal. Không dùng status
+  draft hay diff rỗng làm bằng chứng duy nhất; chưa biết thì bảo toàn.
+- Kiểm diff và ảnh/hành vi trước–sau ở mục cần giữ: task Proposal không đổi
+  Preview; task parity không đổi thiết kế Proposal đã chỉnh sửa. Kiểm cả tác
+  động gián tiếp qua renderer chung, baseline và regenerate patch.
+
 ## G1 · Source và export
 
 - Phiên bản UI/controller/config/resource/snapshot đã ghi, hoặc ghi phần
@@ -74,6 +85,9 @@ không tuyên bố “1-1 hoàn toàn” hoặc “pixel-perfect” ngoài phạ
 Dùng skill map-game-ui để map UI [screen] từ [source checkout] vào website
 [target checkout]. Đọc CLAUDE.md/AGENTS.md hiện tại trước và kiểm tra màn hình
 đã nằm trong allowlist chưa; skill không tự mở rộng quyền nguồn.
+Phân luồng trước: thêm tính năng hoặc tạo UI mới chỉ sửa UI Proposal; chỉnh
+cho khớp project gốc chỉ sửa UI Preview, cập nhật thêm Proposal tương ứng
+nếu chưa từng chỉnh sửa thiết kế. Kiểm lịch sử và bảo toàn Proposal đã sửa.
 
 Đối chiếu .ui + controller/runtime assignments + config + sprite/meta +
 localization. Lập inventory và state matrix theo nguồn, dùng pipeline dữ liệu
@@ -84,6 +98,6 @@ chép hằng số/allowlist hay giả định engine của Collection sang màn 
 Kiểm static, browser desktop/mobile, actual pixel cho tint/clone/9-slice,
 text fit khi đổi nội dung/ngôn ngữ, click/collider/scroll stability, các nhánh
 runtime và regression consumer renderer chung. Đối chiếu ảnh game được cung
-cấp tại [reference, nếu có]. Bàn giao G1–G5, report thực chạy và gap còn mở;
+cấp tại [reference, nếu có]. Bàn giao G0–G5, report thực chạy và gap còn mở;
 phân biệt khớp source, hành vi web và parity runtime.
 ```
