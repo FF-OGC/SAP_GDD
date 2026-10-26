@@ -34,12 +34,16 @@ function rewardMilestones(pet,type) {
     return {milestone,key,claimed:rewardDemo.claims.has(key),ready:count>=milestone&&!rewardDemo.claims.has(key)};
   });
 }
+function rewardProposalComparison(spec) {
+  return `<details class="reward-comparison"><summary>So sánh 3 phương án và UI Components tham chiếu</summary><div class="reward-comparison-grid">${spec.proposalIds.map((id,i)=>`<article><h3><a href="#uiproposal/collection/${id}">${['A · Thanh trong tab ★','B · Hai thẻ ở Info','C · Lộ trình riêng'][i]}</a></h3><p>${esc(spec.variants[id].recommendation)}</p><p>${esc(spec.variants[id].pros)}</p><p class="muted">Đánh đổi: ${esc(spec.variants[id].cons)}</p></article>`).join('')}</div><p><strong>Dấu quà:</strong> ô pet → tab rarity / All → tab Mutation hoặc Weather. Chỉ tắt khi nhận thành công; xem tab không xoá dấu.</p><p><strong>Mốc tiếp theo:</strong> nút Quà pet / Mốc sau mở cả hai nhánh, gồm mốc đã nhận, có thể nhận và chưa đạt. Mỗi 4 loại riêng từng nhánh; không cộng chéo.</p><p>${esc(spec.componentNote||'')}</p><ul>${(spec.componentReferences||[]).map(ref=>`<li><a href="#uicomponents/${esc(ref.id)}">${esc(ref.id)}</a> · ${esc(ref.kind)} — ${esc(ref.usage)}</li>`).join('')}</ul></details>`;
+}
 function mountRewardProposal() {
   document.getElementById('reward-experiment-shell')?.remove();
   if (!isRewardProposal()) return;
   const spec=uiProposal.rewardSpec,variant=spec.variants[uiProposal.entry.id];
   document.getElementById('ui-proposal-summary').insertAdjacentHTML('afterend',`<section id="reward-experiment-shell" class="reward-experiment-shell"><div class="reward-variant-links">${spec.proposalIds.map((id,i)=>`<a class="${id===uiProposal.entry.id?'active':''}" href="#uiproposal/collection/${id}">${['A · Trong tab ★','B · Hai thẻ ở Info','C · Lộ trình riêng'][i]}</a>`).join('')}</div><p><strong>${esc(variant.recommendation)}</strong> ${esc(variant.pros)}</p><p class="muted">Đánh đổi: ${esc(variant.cons)}</p><details><summary>Quy tắc và đối tượng thiết kế</summary><p>${esc(spec.source)}</p><p>${spec.assumptions.map(esc).join('<br>')}</p><p>${Object.values(spec.audience).map(esc).join('<br>')}</p><p>${esc(spec.notifications)}</p><p>${esc(spec.implementation)}</p></details><p>Mô phỏng tương tác · lượng Cash/Dust chưa có dữ liệu. Bấm pet có 🎁, đổi tab, nhận thử hoặc xem mốc sau.</p><div class="reward-scenarios"><button data-reward-scenario="3,3">Sắp đạt · 3 / 3</button><button data-reward-scenario="4,4">Vừa đạt · 4 / 4</button><button data-reward-scenario="8,4">Nhiều mốc · 8 / 4</button><button data-reward-scenario="max">Đủ toàn bộ loại</button><button data-reward-scenario="reset">Khôi phục demo</button></div><p id="reward-demo-status" role="status" aria-live="polite"></p></section>`);
   rewardDemo.open=false;
+  document.querySelector('#reward-experiment-shell .reward-scenarios').insertAdjacentHTML('beforebegin',rewardProposalComparison(spec));
   rewardDemo.page=0;
   uiProposal.collectionBinding?.refresh();
   const canvas=uiPreview.rendered.canvas;
@@ -114,7 +118,7 @@ function refreshRewardProposal() {
       if(!m)continue;
       text(type+'MilestoneLabel'+j,`Mốc ${m.milestone}`);
       text(type+'Claim'+j+'Text',m.claimed?'✓ Đã nhận':m.ready?'🎁 Nhận':`Còn ${m.milestone-rewardCount(pet,type)} loại`);
-      named(type+'Claim'+j).disabled=!m.ready;
+      const claim=named(type+'Claim'+j);if(claim)claim.disabled=!m.ready;
     }
   });
   const status=document.getElementById('reward-demo-status');

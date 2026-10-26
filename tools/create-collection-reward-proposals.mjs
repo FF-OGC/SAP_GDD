@@ -49,6 +49,16 @@ const proposals = [
 for (const p of proposals) writeFileSync(new URL('collection/'+p.id+'.json',root),JSON.stringify({$schema:'../proposal.schema.json',screen:'collection',author:'GDD · Collection rewards',status:'draft',newAssets:[],...p,ops:[...p.ops,...common()]},null,2)+'\n');
 const spec = {
   proposalIds:proposals.map(p=>p.id),step:4,milestonesPerPage:2,
+  componentReferences:[
+    {id:'item-cell',usage:'Giữ template ô pet và binding sở hữu; thêm Gift ở góc trái, tách HasMW góc phải.',kind:'Giữ + mở rộng'},
+    {id:'tab-button',usage:'Giữ tab rarity; thêm Gift tổng hợp mọi pet trong nhóm, kể cả ngoài trang.',kind:'Giữ + mở rộng'},
+    {id:'detail-tab-button',usage:'Giữ tab Mutation / Weather và selected state; thêm Gift theo nhánh.',kind:'Giữ + mở rộng'},
+    {id:'info-row',usage:'B tham chiếu cách trình bày nhãn / giá trị; thay vùng Info bằng hai thẻ thưởng.',kind:'Tham chiếu'},
+    {id:'progress-counter',usage:'A/B tham chiếu bộ đếm; hiển thị số loại đã có / mốc cần đạt.',kind:'Tham chiếu'},
+    {id:'popup-frame',usage:'C tham chiếu khung popup; roadmap là bố cục mới, dùng sprite đã có.',kind:'Tham chiếu'},
+    {id:'pagination',usage:'Lộ trình tham chiếu điều hướng trước / sau; chỉ mở trang khi có mốc tương ứng.',kind:'Tham chiếu'}
+  ],
+  componentNote:'Giữ các subtree Collection hiện có bằng patch. Thanh thưởng, thẻ thưởng, nút nhận và Gift là phần mở rộng Proposal; chưa phải template chuẩn mới. Các mục Tham chiếu không đồng nghĩa đã instantiate component. Không dùng op addComponent.',
   source:'Yêu cầu người dùng 2026-10-25: mỗi 4 mutation hoặc 4 weather trên từng pet có quà cash/dust. Chưa cung cấp lượng thưởng.',
   assumptions:['Đếm loại khác nhau đã ghi nhận trong Collection của pet, không phải số hiệu ứng đồng thời trên một cá thể.','Hai nhánh độc lập, mốc nhận một lần; nhận không tiêu hao tiến độ.','Không tự thêm mốc lẻ cuối danh mục nếu tổng loại không chia hết cho 4.','Giữ tiến độ đã ghi nhận khi pet bị mất/đổi; cần đối chiếu persistence ở game khi triển khai.'],
   audience:{primary:'Mid: săn loại còn thiếu để đạt mốc 4 tiếp theo.',secondary:'Late: tìm và nhận nhiều mốc bị bỏ sót.',protected:'New: rarity/pet vẫn là luồng chính; không báo đỏ cho mốc chưa đạt.'},

@@ -1,5 +1,22 @@
 # Collection rewards proposals — QA 2026-10-25
 
+## Hoàn thiện 2026-10-26
+
+- Giữ ba patch A/B/C đã có; thêm so sánh và liên kết đến bảy template trong
+  UI Components. Phân biệt subtree giữ/mở rộng với component chỉ tham chiếu.
+  Prompt dev sinh lại cùng nguồn tham chiếu; không thêm op addComponent.
+- Sửa DA-019: guard nút claim không tồn tại trên cây Hiện tại.
+- Chạy lại generator, sync, audit Proposal: 671 case pass, idempotent;
+  `node --check dist/app-ui-rewards-proposal.js` pass.
+- CUA localhost:8080, pane 634×653: A DOM 159/159; current 107/107 và
+  không có RewardEntry; B 165/165 với hai thẻ tiến độ; C 152/152 với mốc
+  4/8 hai nhánh. Nhận Mutation ở 4/4 tắt Mutation Gift, giữ Weather/Pet
+  Gift; mở/đóng roadmap; liên kết item-cell đi tới UI Components. Không
+  ghi nhận console warn/error. Không chạy lại viewport 390/1440 trong phiên
+  này; không có bằng chứng runtime game. Preview/controller chung không sửa.
+
+Các kết quả còn lại bên dưới là lịch sử phiên 2026-10-25.
+
 Đích: chỉ UI Proposal. Baseline Collection, renderer, controller Preview,
 snapshot config và fixture cũ được giữ nguyên; kiểm bằng Git diff. Không
 ghi repo game. Baseline nguồn website ghi master/1075dcec.

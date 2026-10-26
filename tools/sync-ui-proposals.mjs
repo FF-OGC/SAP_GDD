@@ -192,7 +192,7 @@ export function syncUiProposals({ root = GDD_ROOT, dryRun = false } = {}) {
       const assets = prepareAssets(proposal, sourceManifest, root);
       const result = applyProposal(base, assets.manifest, proposal);
       let prompt = generatePrompt({ proposal, result, base, root, gameRoot: GAME_ROOT, checkedPath: guard });
-      if (rewardSpec?.proposalIds.includes(proposal.id)) prompt += '\n## Collection reward proposal behavior\n\n' + rewardSpec.source + '\n\n' + rewardSpec.assumptions.join('\n\n') + '\n\n' + rewardSpec.notifications + '\n\n' + rewardSpec.implementation + '\n';
+        if (rewardSpec?.proposalIds.includes(proposal.id)) prompt += '\n## Collection reward proposal behavior\n\n' + rewardSpec.source + '\n\n' + rewardSpec.assumptions.join('\n\n') + '\n\n' + rewardSpec.notifications + '\n\n' + rewardSpec.implementation + '\n\n## UI Components references\n\n' + (rewardSpec.componentNote || '') + '\n\n' + (rewardSpec.componentReferences || []).map(ref => `- ${ref.id} (design/ui-components/${ref.id}.json): ${ref.kind}. ${ref.usage}`).join('\n') + '\n';
       output.set(`data/ui/proposals/${proposal.id}-prompt.md`, prompt);
       all.push({ proposal, ...result });
       addJson(proposal.id, result.screen); addJson(proposal.id + '-diff', result.diff); addJson(proposal.id + '-resources', { resources: result.resources, manifest: result.manifest });

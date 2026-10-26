@@ -72,3 +72,15 @@ Giữ tiến độ đã ghi nhận khi pet bị mất/đổi; cần đối chi�
 Gift trên pet = có mốc đủ điều kiện chưa nhận. Gift trên rarity/All = OR toàn bộ pet thuộc nhóm, kể cả ngoài trang. Gift trên Mutation/Weather = nhánh tương ứng của pet chọn. Mở UI hoặc đổi tab không xóa dấu; chỉ nhận thành công mới cập nhật. Nếu nhận một nhánh, nhánh kia còn quà vẫn giữ dấu pet/rarity.
 
 Demo chỉ lưu trong bộ nhớ trang. Game cần key nhận theo account + pet type + nhánh + mốc và claim server có tính idempotent; cập nhật badge sau xác nhận thành công, giữ nguyên khi lỗi. Không giả lập cấp tiền thật. Lượng Cash/Dust và quy tắc retroactive cần nối config hiện hành trước triển khai.
+
+## UI Components references
+
+Giữ các subtree Collection hiện có bằng patch. Thanh thưởng, thẻ thưởng, nút nhận và Gift là phần mở rộng Proposal; chưa phải template chuẩn mới. Các mục Tham chiếu không đồng nghĩa đã instantiate component. Không dùng op addComponent.
+
+- item-cell (design/ui-components/item-cell.json): Giữ + mở rộng. Giữ template ô pet và binding sở hữu; thêm Gift ở góc trái, tách HasMW góc phải.
+- tab-button (design/ui-components/tab-button.json): Giữ + mở rộng. Giữ tab rarity; thêm Gift tổng hợp mọi pet trong nhóm, kể cả ngoài trang.
+- detail-tab-button (design/ui-components/detail-tab-button.json): Giữ + mở rộng. Giữ tab Mutation / Weather và selected state; thêm Gift theo nhánh.
+- info-row (design/ui-components/info-row.json): Tham chiếu. B tham chiếu cách trình bày nhãn / giá trị; thay vùng Info bằng hai thẻ thưởng.
+- progress-counter (design/ui-components/progress-counter.json): Tham chiếu. A/B tham chiếu bộ đếm; hiển thị số loại đã có / mốc cần đạt.
+- popup-frame (design/ui-components/popup-frame.json): Tham chiếu. C tham chiếu khung popup; roadmap là bố cục mới, dùng sprite đã có.
+- pagination (design/ui-components/pagination.json): Tham chiếu. Lộ trình tham chiếu điều hướng trước / sau; chỉ mở trang khi có mốc tương ứng.

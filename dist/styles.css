@@ -726,6 +726,11 @@ button.ui-entity[data-ui-hit-target="false"]{pointer-events:none}
 .reward-variant-links a.active { color:#ffdc82; border-color:#d2a44d; background:#413b29; }
 .reward-experiment-shell p { margin:10px 0; line-height:1.55; }
 .reward-experiment-shell summary { cursor:pointer; }
+.reward-comparison { margin:14px 0; }
+.reward-comparison-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr)); gap:12px; margin-top:12px; }
+.reward-comparison-grid article { padding:12px; border:1px solid #39516a; border-radius:8px; min-width:0; }
+.reward-comparison a { color:#ffdc82; }
+.reward-comparison li { margin:8px 0; overflow-wrap:anywhere; }
 #reward-demo-status { color:#ffdc82; min-height:1.5em; }
 
 /* UI Components: tool shell only; entity visuals come from the shared renderer. */

@@ -13,7 +13,11 @@
 - DA-018: Export Proposal chỉ hỗ trợ whitelist hiện có. `templateOmitted`
   liệt kê field không xuất (gradient/raw visual fields và sprite lib thiếu).
   Cần quyết định riêng nếu muốn mở hợp đồng Proposal; không tự mở renderer.
-- DA-019: Lỗi có sẵn trước UI Components: phương án thưởng Collection đổi
+- DA-019 (đã sửa 2026-10-26 trong task Collection rewards): phương án thưởng
+  bảo vệ nút claim vắng mặt trên cây `current`. Kiểm CUA: current DOM
+  107/107, không RewardEntry; đổi lại proposed và nhận riêng Mutation giữ
+  Weather/Pet Gift, console sạch. Mô tả lịch sử dưới đây được giữ để truy vết.
+  Lỗi có sẵn trước UI Components: phương án thưởng Collection đổi
   sang `current` ném `Cannot set properties of null (setting 'disabled')`
   trong binding thưởng vì cây hiện tại không có nút thưởng. Audit hồi quy
   chạy HTTP substitution từ baseline GDD `4787ee6` để đối chiếu cả lỗi,
