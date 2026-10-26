@@ -1,6 +1,6 @@
 # Plan: mục "UI Components" — thư viện thành phần UI chuẩn trích từ Collection
 
-**Trạng thái:** chưa làm (lập 2026-10-26). Prompt giao Codex: `plans/PROMPT-codex-ui-components.md`.
+**Trạng thái:** đã triển khai và nghiệm thu web 2026-10-26; xem `design/ui-components/QA.md` (G4 chưa có bằng chứng, lỗi Proposal có sẵn DA-019 được bảo toàn). Prompt giao Codex: `plans/PROMPT-codex-ui-components.md`.
 
 Mục tiêu: thêm mục sidebar **UI Components** (dưới "UI Proposal", `data-page="uicomponents"`, deep-link `#uicomponents/<id>`). Mục này tách các thành phần con lặp lại trong UI Collection (đã dựng ở UI Preview) thành **template chuẩn có tham số**, để các UI sau (Shop, Mail, Mission, Leaderboard…) và các UI Proposal dùng lại cùng một bộ, không vẽ lại từng màn.
 

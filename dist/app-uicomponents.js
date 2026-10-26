@@ -56,8 +56,29 @@ function renderUicLibrary() {
   const list = uiComponents.registry.components.filter(c => (!uiComponents.group || c.group === uiComponents.group) && `${c.name} ${c.id} ${c.sourcePath}`.toLocaleLowerCase('vi').includes(uiComponents.search.toLocaleLowerCase('vi')));
   document.getElementById('uic-count').textContent = `${list.length}/${uiComponents.registry.components.length} component`;
   const library = document.getElementById('uic-library');
-  library.innerHTML = list.map(c => `<a class="uic-card" href="#uicomponents/${esc(c.id)}" data-uic-card="${esc(c.id)}"><div class="uic-thumb" aria-hidden="true"></div><strong>${esc(c.name)}</strong><span>${esc(c.group)} · ${esc(c.status)}</span><small>${c.usedCount} màn dùng · ${c.plannedCount} dự kiến</small></a>`).join('') || '<p>Không có component khớp bộ lọc.</p>';
+  if (library.children.length && library.dataset.uicReady === 'true') {
+    const visible = new Set(list.map(c => c.id));
+    for (const card of library.querySelectorAll('[data-uic-card]')) card.hidden = !visible.has(card.dataset.uicCard);
+    let empty = library.querySelector('.uic-empty');
+    if (!empty) { empty = document.createElement('p'); empty.className = 'uic-empty'; empty.textContent = 'Không có component khớp bộ lọc.'; library.appendChild(empty); }
+    empty.hidden = list.length > 0;
+    return;
+  }
+  for (const host of library.querySelectorAll('.uic-thumb')) uicResize.unobserve(host);
+  library.innerHTML = uiComponents.registry.components.map(c => `<a class="uic-card" href="#uicomponents/${esc(c.id)}" data-uic-card="${esc(c.id)}"><div class="uic-thumb" aria-hidden="true" inert></div><strong>${esc(c.name)}</strong><span>${esc(c.group)} · ${esc(c.status)}</span><small>${c.usedCount} màn dùng · ${c.plannedCount} dự kiến</small></a>`).join('');
   for (const card of library.querySelectorAll('[data-uic-card]')) uicMount(card.querySelector('.uic-thumb'), uiComponents.data.get(card.dataset.uicCard));
+  library.dataset.uicReady = 'true';
+  renderUicLibrary();
+}
+function selectUicRoute() {
+  if (!uiComponents.registry || !document.getElementById('uic-detail')) return updateUiComponentsPage();
+  const id = decodeURIComponent(location.hash.split('/')[1] || '');
+  uiComponents.selected = uiComponents.data.get(id) || null;
+  if (uiComponents.selected) renderUicDetail();
+  else {
+    document.getElementById('uic-detail').innerHTML = `<h2>Chi tiết component</h2><p>${id ? 'Component không tồn tại.' : 'Chọn một component trong thư viện.'}</p>`;
+    document.getElementById('uic-variants').hidden = true;
+  }
 }
 function renderUicDetail() {
   const data = uiComponents.selected;

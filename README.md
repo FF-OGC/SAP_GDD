@@ -9,6 +9,12 @@ Thư viện riêng ở `#uicomponents`, ngay dưới UI Proposal, theo
 đã sync trong GDD. Không đổi allowlist, UI Preview hoặc nội dung UI Proposal.
 Định nghĩa: `design/ui-components/`; sync: `node tools/sync-ui-components.mjs`;
 audit: `node tools/audit-ui-components.mjs`.
+Catalog đã chốt gồm 16 component; preview chỉnh slot/state, spec dẫn xuất,
+quan hệ tái dùng và xuất template op add. [Catalog/schema](design/ui-components/README.md),
+[báo cáo nghiệm thu và ranh giới](design/ui-components/QA.md).
+Components: 219 case tĩnh; hai viewport, 112 lượt slot/22 lượt state;
+26 crop/DOM Preview–Proposal không đổi. Lỗi có sẵn của ba Proposal thưởng
+ở mode current được bảo toàn và ghi DA-019, không gọi là console sạch.
 
 ## UI Preview: sprite đã move/rename và label (2026-10-25)
 

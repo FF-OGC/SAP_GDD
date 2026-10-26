@@ -21,6 +21,8 @@ export function loadInputs(root = GDD_ROOT) {
 // Export only fields accepted by Proposal add; retain all original fields in tree/spec.
 export function proposalEntity(tree, manifest, prefix, omitted = []) {
   const entity = { id: `${prefix}-${tree.id}`, name: tree.name, type: tree.type, children: tree.children.map(n => proposalEntity(n, manifest, prefix, omitted)) };
+  const names = entity.children.map(n => n.name);
+  for (const child of entity.children) if (names.filter(name => name === child.name).length > 1) child.name += `_${child.id}`;
   const visit = (value, field) => {
     if (PATCH_FIELDS[field]) { put(entity, field, value); return; }
     if (/^(image|button)\.spriteKey$/.test(field)) {

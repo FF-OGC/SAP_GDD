@@ -109,7 +109,11 @@ if (urlAt >= 0) {
   const proposal = { ...make([set, { ...add, entity: { ...add.entity, children: [{ id: 'audit-new-child', name: 'Child', type: 'UIEmptyEntity' }] } }, sprite, move, { op: 'remove', path: 'PetsCollection/Container/BG/DecorRight', reason: 'Audit remove' }]), id: 'browser-fixture' };
   const result = applyProposal(base, manifest, proposal);
   const prompt = generatePrompt({ proposal, result, base, root: GDD_ROOT, gameRoot: GAME_ROOT, checkedPath: guard });
-  browser = await auditProposalBrowser(process.argv[urlAt + 1], first.registry, { ...result, prompt });
+  // This browser suite asserts the pipeline fixture's intentional +4 label
+  // offset. Design proposals have different geometry. All registered proposals
+  // are compared to the pre-feature baseline by audit-ui-components-browser.
+  const fixtureRegistry = { proposals: first.registry.proposals.filter(entry => entry.id === 'collection-pipeline-example') };
+  browser = await auditProposalBrowser(process.argv[urlAt + 1], fixtureRegistry, { ...result, prompt });
 }
 const report = { cases, proposals: first.all.length, fieldCount: Object.keys(PATCH_FIELDS).length, idempotent: true, invalidBatchWritesNothing: true, allFiveOps: true, newAssetCopyAndBorder: true, duplicatePathsRequireId: true, emptyAndCancelledDiff: true, browser };
 const output = guard(auditParent, path.join(auditParent, 'data/ui/proposals-audit.json'));

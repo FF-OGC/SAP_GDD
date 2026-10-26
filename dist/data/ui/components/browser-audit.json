@@ -1,0 +1,526 @@
+[
+  {
+    "viewport": {
+      "width": 1440,
+      "height": 1100
+    },
+    "components": [
+      {
+        "id": "close-button",
+        "nodes": 1,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "art"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "detail-card",
+        "nodes": 12,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "label",
+          "art",
+          "tint"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "detail-tab-button",
+        "nodes": 2,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Không chọn",
+          "Chọn"
+        ],
+        "slots": [
+          "visible",
+          "label",
+          "art"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "info-row",
+        "nodes": 3,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "label",
+          "art",
+          "tint"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "item-cell",
+        "nodes": 8,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Không chọn",
+          "Chọn"
+        ],
+        "slots": [
+          "visible",
+          "label",
+          "art",
+          "tint",
+          "selected"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "item-grid",
+        "nodes": 9,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "label",
+          "art"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "list-popup",
+        "nodes": 105,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "label",
+          "art",
+          "tint"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "pagination",
+        "nodes": 4,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "label",
+          "art"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "popup-frame",
+        "nodes": 4,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "art",
+          "tint"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "progress-counter",
+        "nodes": 4,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Chưa có tiến độ"
+        ],
+        "slots": [
+          "visible",
+          "label",
+          "art",
+          "tint",
+          "progress"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "rarity-badge",
+        "nodes": 2,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "COMMON",
+          "RARE"
+        ],
+        "slots": [
+          "visible",
+          "label",
+          "art",
+          "tint"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "scrim",
+        "nodes": 1,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "art"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "tab-bar",
+        "nodes": 17,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "label",
+          "art"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "tab-button",
+        "nodes": 2,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Không chọn",
+          "Chọn"
+        ],
+        "slots": [
+          "visible",
+          "label",
+          "art"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "title-bar",
+        "nodes": 3,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "label",
+          "art",
+          "tint"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "unlock-banner",
+        "nodes": 3,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Chưa sở hữu",
+          "Đã sở hữu"
+        ],
+        "slots": [
+          "visible",
+          "label",
+          "art",
+          "tint"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      }
+    ],
+    "clipboardFailureHandled": true,
+    "filtersAndDeepLinks": true,
+    "previewNavigation": true,
+    "consoleErrors": [],
+    "regression": null
+  },
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "components": [
+      {
+        "id": "close-button",
+        "nodes": 1,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "art"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "detail-card",
+        "nodes": 12,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "label",
+          "art",
+          "tint"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "detail-tab-button",
+        "nodes": 2,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Không chọn",
+          "Chọn"
+        ],
+        "slots": [
+          "visible",
+          "label",
+          "art"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "info-row",
+        "nodes": 3,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "label",
+          "art",
+          "tint"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "item-cell",
+        "nodes": 8,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Không chọn",
+          "Chọn"
+        ],
+        "slots": [
+          "visible",
+          "label",
+          "art",
+          "tint",
+          "selected"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "item-grid",
+        "nodes": 9,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "label",
+          "art"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "list-popup",
+        "nodes": 105,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "label",
+          "art",
+          "tint"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "pagination",
+        "nodes": 4,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "label",
+          "art"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "popup-frame",
+        "nodes": 4,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "art",
+          "tint"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "progress-counter",
+        "nodes": 4,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Chưa có tiến độ"
+        ],
+        "slots": [
+          "visible",
+          "label",
+          "art",
+          "tint",
+          "progress"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "rarity-badge",
+        "nodes": 2,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "COMMON",
+          "RARE"
+        ],
+        "slots": [
+          "visible",
+          "label",
+          "art",
+          "tint"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "scrim",
+        "nodes": 1,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "art"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "tab-bar",
+        "nodes": 17,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "label",
+          "art"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "tab-button",
+        "nodes": 2,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Không chọn",
+          "Chọn"
+        ],
+        "slots": [
+          "visible",
+          "label",
+          "art"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "title-bar",
+        "nodes": 3,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "label",
+          "art",
+          "tint"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "unlock-banner",
+        "nodes": 3,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Chưa sở hữu",
+          "Đã sở hữu"
+        ],
+        "slots": [
+          "visible",
+          "label",
+          "art",
+          "tint"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      }
+    ],
+    "clipboardFailureHandled": true,
+    "filtersAndDeepLinks": true,
+    "previewNavigation": true,
+    "consoleErrors": [],
+    "regression": null
+  }
+]

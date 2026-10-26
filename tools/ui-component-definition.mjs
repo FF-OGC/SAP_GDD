@@ -47,6 +47,7 @@ export function validateDefinitions(definitions, { screen, manifest, rules, sche
     if (ids.has(def.id) || ['registry', 'components-audit'].includes(def.id)) throw Error('Duplicate/reserved component id: ' + def.id);
     ids.add(def.id);
     const source = resolve(def.sourcePath, def.sourceId), subtree = walk(source);
+    if (def.usedIn.some(use => use.screen !== screen.id && !use.planned)) throw Error('Unregistered screen must be planned: ' + def.id);
     const target = p => { const matches = subtree.filter(n => n.path === p); if (matches.length !== 1) throw Error('Slot/state path missing or ambiguous: ' + p); return matches[0]; };
     const slotNames = new Set(), stateNames = new Set();
     for (const slot of def.slots) {

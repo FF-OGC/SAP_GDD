@@ -42,4 +42,4 @@ window.addEventListener("hashchange",()=>{if(location.hash.startsWith("#uiprevie
 
 window.addEventListener("hashchange",()=>{if(location.hash.startsWith("#uiproposal/"))go("uiproposal")});
 
-window.addEventListener("hashchange",()=>{if(location.hash.startsWith("#uicomponents"))go("uicomponents")});
+window.addEventListener("hashchange",()=>{if(location.hash.startsWith("#uicomponents")){if(s.page==="uicomponents")selectUicRoute();else go("uicomponents")}});

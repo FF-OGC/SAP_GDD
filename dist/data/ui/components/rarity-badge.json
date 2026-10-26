@@ -51,6 +51,11 @@
           "path": "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName",
           "field": "text.outlineColor",
           "value": "#8CFF91"
+        },
+        {
+          "path": "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName",
+          "field": "text.value",
+          "value": "THƯỜNG"
         }
       ]
     },
@@ -68,6 +73,11 @@
           "path": "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName",
           "field": "text.outlineColor",
           "value": "#4CC8FE"
+        },
+        {
+          "path": "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName",
+          "field": "text.value",
+          "value": "HIẾM"
         }
       ]
     }
@@ -90,7 +100,8 @@
   ],
   "composedOf": [],
   "notes": [
-    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection."
+    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection.",
+    "Tên rarity theo runtimeAssignments target rarityName, Content = PetConfigs.GetRarityLocalization(rarity), HudCollection.fcg:433; key RARITY_COMMON/RARE có trong collection-i18n.json. Màu/outline theo rarityColors và HudCollection.fcg:430/434."
   ],
   "source": "Assets/HUDs/PetsCollection.ui",
   "sourceRect": {
@@ -845,5 +856,7 @@
       }
     }
   ],
-  "usedBy": []
+  "usedBy": [
+    "detail-card"
+  ]
 }

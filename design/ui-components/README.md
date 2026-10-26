@@ -30,3 +30,5 @@ So với plan §4: popup-frame dùng BG (decor) vì Container chứa toàn màn;
 Rect khung dùng kích thước đã resolve anchor/sizeDelta bằng uiRenderer.rect; BG có sizeDelta.y âm và scrim có anchor stretch nên không thể dùng sizeDelta thô. Re-root chỉ thay transform gốc, giữ nguyên mọi node con. Spec.nodes.rect giữ tọa độ cục bộ của nguồn; cây trên web đo lại sau layout bằng renderer.
 
 Template xuất op add hợp lệ; slot đã áp vào entity, tên/binding được ghi ở reason, không thêm field slots trái schema Proposal. ID được thêm tiền tố uic. Những field serialize không được whitelist Proposal hỗ trợ và sprite lib thiếu được liệt kê templateOmitted, không ngầm khẳng định export đầy đủ shader/gradient. Không thực thi op addComponent.
+
+Tên gốc template xuất là Component_<id>; các sibling trùng tên (Recipe/Pet) thêm ID vào tên để validator Proposal chấp nhận. Bản preview/spec giữ nguyên tên/path nguồn. Sprite lib thiếu không được thay bằng asset giả.

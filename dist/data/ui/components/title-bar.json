@@ -53,7 +53,9 @@
       "planned": true
     }
   ],
-  "composedOf": [],
+  "composedOf": [
+    "close-button"
+  ],
   "notes": [
     "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection."
   ],

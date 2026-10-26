@@ -1,7 +1,11 @@
 {
+  "cases": 219,
   "components": 16,
   "entityInstances": 180,
-  "validated": true,
-  "source": "Assets/HUDs/PetsCollection.ui",
-  "gameReads": false
+  "idempotent": true,
+  "invalidBatchWritesNothing": true,
+  "invalidCases": 16,
+  "proposalTemplateSemanticValidation": true,
+  "gameReads": false,
+  "browser": null
 }

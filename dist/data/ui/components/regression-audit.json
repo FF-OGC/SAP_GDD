@@ -1,0 +1,266 @@
+[
+  {
+    "baselineRef": "4787ee6",
+    "viewport": {
+      "width": 1440,
+      "height": 1100
+    },
+    "captures": [
+      {
+        "route": "#uipreview/collection",
+        "mode": null,
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "2558c9ef710386eefddbb1db89b2cb2bd779707a331da46b6e2225c4fe824de7"
+      },
+      {
+        "route": "#uiproposal/collection/collection-pipeline-example",
+        "mode": "current",
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "9a491d71d5ae253f96ad1d99ed6e43f6e437484fa4e3bacd13038a8a08dbf29e"
+      },
+      {
+        "route": "#uiproposal/collection/collection-pipeline-example",
+        "mode": "proposed",
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "52277087ec37299e5d840b322896c86482b4f3595a1f743f17b3316db72c5ceb"
+      },
+      {
+        "route": "#uiproposal/collection/collection-pipeline-example",
+        "mode": "overlay",
+        "entities": 214,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "61b0aec3f60bef3d8c42904b511f9174121fd1d49e65ae856e1b1e5ae9e32e03"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-inline",
+        "mode": "current",
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [
+          "Cannot set properties of null (setting 'disabled')"
+        ],
+        "sha256": "95f7ce54932d9dcb71489716f3639fa755ebd20e79884f462642fbf0ca0adb4a"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-inline",
+        "mode": "proposed",
+        "entities": 159,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "aeb8aab58c4675195d3343cf2e398e0fadecb6ae8ef4b218a91d3c3b2604b09f"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-inline",
+        "mode": "overlay",
+        "entities": 266,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "fcf4a4d58082606d45cbf6dab4572184190aebf8499590731a224d960530139c"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-overview",
+        "mode": "current",
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [
+          "Cannot set properties of null (setting 'disabled')"
+        ],
+        "sha256": "1827c9e8978f3e8bbadb8858be38f949c5eaaec4c5ba294e3c3a7b830c620bf3"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-overview",
+        "mode": "proposed",
+        "entities": 165,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "4265b4149792f4df062c728f9c3c627c8508c8af4856f5925ad85560733bb338"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-overview",
+        "mode": "overlay",
+        "entities": 272,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "0ba70435880d8748d160d0d28a9d03fe9f1acccb3fcaac05190adbecd580c2f1"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-roadmap",
+        "mode": "current",
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [
+          "Cannot set properties of null (setting 'disabled')"
+        ],
+        "sha256": "ef2de7ebb01e0ec8fdc002d8eec679481bb4e53a5b3a051620da6b36494f2c88"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-roadmap",
+        "mode": "proposed",
+        "entities": 152,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "5072d972481c08b9bd40d294d2ce4cc9f4f27506d4e5321b2249e123fdc2446e"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-roadmap",
+        "mode": "overlay",
+        "entities": 259,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "7d1a48c5ded50cc5d23f891569ff6322afe7ed9c94a8f72cb76ec1785aa94c2d"
+      }
+    ]
+  },
+  {
+    "baselineRef": "4787ee6",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "captures": [
+      {
+        "route": "#uipreview/collection",
+        "mode": null,
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "109587978675f5f5bd3117529a6d57c96d43aaa0ca6f41e9455a330de129643b"
+      },
+      {
+        "route": "#uiproposal/collection/collection-pipeline-example",
+        "mode": "current",
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "b1d83c68b2713ff0345e52064bf2f273fe40081ca596b7204c129a6c8c17002b"
+      },
+      {
+        "route": "#uiproposal/collection/collection-pipeline-example",
+        "mode": "proposed",
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "0178e3fce95ba09716e30938551cb564d8aeb614a9b5f594c5aa73e05f26a2bf"
+      },
+      {
+        "route": "#uiproposal/collection/collection-pipeline-example",
+        "mode": "overlay",
+        "entities": 214,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "c98d638443130f013f721db7c1376c20fca8b47dcc917dea659c80134965f550"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-inline",
+        "mode": "current",
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [
+          "Cannot set properties of null (setting 'disabled')"
+        ],
+        "sha256": "9ed79b15ce751bd617cfe22bafb4b6f5f88b02be16608082b8d1e55550df1625"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-inline",
+        "mode": "proposed",
+        "entities": 159,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "e6c9d2ff9f8513cc32b5a580f91f04b9a87adea4ffcb1642c52bc5980bff302f"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-inline",
+        "mode": "overlay",
+        "entities": 266,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "f013db5128091f326936d8bd153ac5b6f742ab131fc9e3795e22d248c21a7080"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-overview",
+        "mode": "current",
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [
+          "Cannot set properties of null (setting 'disabled')"
+        ],
+        "sha256": "f681d739d50b949b021ccd8a51b593f4f230703737a57c61d277f4193a7b54f1"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-overview",
+        "mode": "proposed",
+        "entities": 165,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "5b5fc4acd385c9ce19085d0afea7f555e6ac692fa998f5eb78e797a53cb80572"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-overview",
+        "mode": "overlay",
+        "entities": 272,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "9a733f452b7b57afebb9926471e7c013111293dab6ce24e2cf45dcdef0d545ec"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-roadmap",
+        "mode": "current",
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [
+          "Cannot set properties of null (setting 'disabled')"
+        ],
+        "sha256": "9b2e30c5d06071d4384c4f02d45e5c9ac0c0976618209624d98532f94e706220"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-roadmap",
+        "mode": "proposed",
+        "entities": 152,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "2247ae3c60ed4ca5ada179f8cc36d2d13a6f7866f30c6acb77fc9e61df84dda4"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-roadmap",
+        "mode": "overlay",
+        "entities": 259,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "839266cb35b597a2f6c3bf006a3fb7576260f50caa8f33ad60b75e3a0de01209"
+      }
+    ]
+  }
+]

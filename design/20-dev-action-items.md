@@ -1,5 +1,30 @@
 # Việc kỹ thuật còn mở
 
+## UI Components (2026-10-26)
+
+- DA-016: `op: addComponent` và đưa template ngược vào Proposal cũ cần quyết
+  định riêng. Phiên này chỉ xuất `op: add`, không sửa nguồn Proposal.
+- DA-017: Collection snapshot còn hai sprite `lib://` thiếu, font Default,
+  gradient/shader, alpha cascade và scaler chưa có đối chiếu runtime game.
+  Component mặc định giữ `.ui`; tab/grid không clone/bind dữ liệu Collection.
+  `recipe-row` chưa có hợp đồng tham số tái dùng (hai Pet trùng path).
+  “Khoá” không có bằng chứng rule đủ rõ nên không thêm state. Tái dùng màn
+  Shop/Mission đều là dự kiến, chưa được tính như màn đã đăng ký.
+- DA-018: Export Proposal chỉ hỗ trợ whitelist hiện có. `templateOmitted`
+  liệt kê field không xuất (gradient/raw visual fields và sprite lib thiếu).
+  Cần quyết định riêng nếu muốn mở hợp đồng Proposal; không tự mở renderer.
+- DA-019: Lỗi có sẵn trước UI Components: phương án thưởng Collection đổi
+  sang `current` ném `Cannot set properties of null (setting 'disabled')`
+  trong binding thưởng vì cây hiện tại không có nút thưởng. Audit hồi quy
+  chạy HTTP substitution từ baseline GDD `4787ee6` để đối chiếu cả lỗi,
+  DOM và ảnh crop với hiện tại. Giữ nguyên code/hành vi Proposal trong task
+  này. Audit browser Proposal chi tiết chỉ áp dụng fixture pipeline (kỳ vọng
+  offset +4); audit Components kiểm cả bốn Proposal / ba mode.
+- DA-020: Geometry/spec khung resolve bằng renderer hiện có; kiểm rect và
+  raster sprite với snapshot `.ui` qua renderer Preview, chưa phải ảnh game.
+  Không suy semantic layout V2 hoặc hit-order mới từ các test web.
+
+
 ## Cập nhật UI Preview (2026-10-25)
 
 - DA-004/008: nguồn nhận Collection đã mirror đủ thứ tự GetPetObtainSource,
