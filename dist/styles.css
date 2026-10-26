@@ -742,3 +742,12 @@ button.ui-entity[data-ui-hit-target="false"]{pointer-events:none}
 .uic-preview{height:360px;width:100%}
 .uic-page small{color:#b4c1d3}
 @media(max-width:600px){.uic-section{padding:12px}.uic-library{grid-template-columns:1fr}.uic-toolbar{flex-direction:column}.uic-preview{height:280px}}
+
+.uic-preview-layout{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:20px}
+.uic-controls,.uic-control{display:grid;gap:8px;min-width:0}.uic-control{margin:10px 0;padding-bottom:12px;border-bottom:1px solid #344256}
+.uic-control label{font-size:13px}.uic-control input[type=checkbox]{justify-self:start;width:20px;height:20px}
+.uic-toolbar button,.uic-control button,.uic-page button.uic-copy{padding:8px 12px;color:#e5edf6;background:#25384e;border:1px solid #52667e;border-radius:6px;cursor:pointer}
+.uic-disclosure{margin-top:20px}.uic-disclosure summary{cursor:pointer;padding:10px;background:#1c2a3e;border-radius:6px}
+.uic-tree-row{display:grid;gap:4px;padding-top:8px;padding-bottom:8px;border-bottom:1px solid #344256;font-size:12px}.uic-tree-row code{white-space:normal}
+.uic-comparison{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:14px;min-width:0}.uic-comparison article{min-width:0}.uic-comparison .uic-preview{height:220px}
+@media(max-width:700px){.uic-preview-layout{grid-template-columns:1fr}.uic-comparison{grid-template-columns:1fr}}

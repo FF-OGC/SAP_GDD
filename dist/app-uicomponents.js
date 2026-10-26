@@ -61,12 +61,71 @@ function renderUicLibrary() {
 }
 function renderUicDetail() {
   const data = uiComponents.selected;
-  document.getElementById('uic-detail').innerHTML = `<h2>${esc(data.name)}</h2><p>${esc(data.sourcePath)} · ${esc(data.status)} · ${data.entityCount} entity</p><div class="uic-preview"></div>`;
-  uiComponents.rendered = uicMount(document.querySelector('#uic-detail .uic-preview'), data);
+  uiComponents.values = {}; uiComponents.state = '';
+  document.getElementById('uic-detail').innerHTML = `<h2>${esc(data.name)}</h2><p>${esc(data.sourcePath)} · ${esc(data.status)} · ${data.entityCount} entity</p>
+    <div class="uic-toolbar"><label>Trạng thái<select id="uic-state"><option value="">Mặc định .ui</option>${data.states.map(st => `<option>${esc(st.name)}</option>`).join('')}</select></label><label><span>Đường viền entity</span><input id="uic-outlines" type="checkbox"></label><button id="uic-reset" type="button">Khôi phục .ui</button></div>
+    <div class="uic-preview-layout"><div id="uic-stage" class="uic-preview"></div><div><h3>Tham số instance</h3><p><small>Chỉ đổi bản xem thử. Dữ liệu mẫu có nhãn “mẫu”.</small></p><div id="uic-controls" class="uic-controls"></div><p id="uic-control-status" role="status"></p></div></div>
+    <details class="uic-disclosure"><summary>Cây entity và rect sau layout</summary><p>Đơn vị .ui trước scale; gốc đã re-root. Transform/props gốc giữ trong dữ liệu JSON.</p><div id="uic-tree"></div></details>
+    <div id="uic-spec"></div>`;
+  renderUicControls(); renderUicInstance(); renderUicVariants();
+}
+function uicGet(node, field) { return field.split('.').reduce((v, k) => v?.[k], node); }
+function uicPut(node, field, value) { const keys = field.split('.'); let at = node; for (const key of keys.slice(0,-1)) at = at[key] ||= {}; at[keys.at(-1)] = structuredClone(value); }
+function uicInstance(data, state = '', values = {}) {
+  const tree = structuredClone(data.tree), nodes = uicWalk(tree);
+  for (const change of data.states.find(st => st.name === state)?.overrides || []) uicPut(nodes.find(n => n.path === change.path), change.field, change.value);
+  for (const slot of data.slots) if (Object.hasOwn(values, slot.name)) uicPut(nodes.find(n => n.path === slot.path), slot.field, values[slot.name]);
+  return tree;
+}
+function renderUicControls() {
+  const data = uiComponents.selected, nodes = uicWalk(uicInstance(data, uiComponents.state, uiComponents.values));
+  document.getElementById('uic-controls').innerHTML = data.slots.map((slot, index) => {
+    const value = uicGet(nodes.find(n => n.path === slot.path), slot.field), attr = `data-uic-slot="${index}" id="uic-slot-${index}"`;
+    let input;
+    if (slot.type === 'active') input = `<input ${attr} type="checkbox" ${value ? 'checked' : ''}>`;
+    else if (slot.type === 'sprite') input = `<select ${attr}>${uiComponents.manifest.sprites.map(sp => `<option value="${esc(sp.key)}" ${sp.key === value ? 'selected' : ''}>${esc(sp.key.split('/').at(-1))}${sp.missing ? ' · thiếu' : ''}</option>`).join('')}</select>`;
+    else input = `<input ${attr} type="${slot.type === 'count' ? 'number' : 'text'}" ${slot.type === 'count' ? 'step="any"' : ''} value="${esc(value ?? '')}" ${slot.type === 'tint' ? 'pattern="#[0-9a-fA-F]{3}([0-9a-fA-F]{3}|[0-9a-fA-F]{5})?"' : ''}>`;
+    return `<div class="uic-control"><label for="uic-slot-${index}">${esc(slot.name)} · ${esc(slot.type)}</label>${input}${Object.hasOwn(slot, 'sample') ? `<button type="button" data-uic-sample="${index}">Dùng mẫu: ${esc(slot.sample)}</button>` : ''}</div>`;
+  }).join('');
+}
+function renderUicInstance() {
+  const data = uiComponents.selected, tree = uicInstance(data, uiComponents.state, uiComponents.values);
+  const host = document.getElementById('uic-stage');
+  host.classList.toggle('ui-debug', !!document.getElementById('uic-outlines').checked);
+  uiComponents.instance = tree;
+  uiComponents.rendered = uicMount(host, data, tree);
+  const nodes = uicWalk(tree), depth = tree.path.split('/').length;
+  document.getElementById('uic-tree').innerHTML = nodes.map(n => {
+    const element = uiComponents.rendered.byId.get(n.id), rect = ['left','top','width','height'].map(f => `${f}: ${parseFloat(element.style[f])}`);
+    return `<div class="uic-tree-row" data-uic-tree="${esc(n.id)}" style="padding-left:${Math.min(6,n.path.split('/').length-depth)*10}px"><strong>${esc(n.name)}</strong><span>${esc(n.type)} · ${n.active ? 'active' : 'inactive'}</span><code>${esc(rect.join(' · '))}</code></div>`;
+  }).join('');
+}
+function renderUicVariants() {
+  const data = uiComponents.selected, section = document.getElementById('uic-variants');
+  section.hidden = !data.states.length;
+  if (!data.states.length) { section.replaceChildren(); return; }
+  section.innerHTML = '<h2>So sánh biến thể</h2><p>Các instance độc lập theo rule đã sync. Bản mặc định giữ .ui.</p><div class="uic-comparison">' + [{name:'Mặc định .ui',state:''}, ...data.states.map(st => ({name:st.name,state:st.name}))].map(st => `<article><h3>${esc(st.name)}</h3><div class="uic-preview" data-uic-variant="${esc(st.state)}"></div></article>`).join('') + '</div>';
+  for (const host of section.querySelectorAll('[data-uic-variant]')) uicMount(host, data, uicInstance(data, host.dataset.uicVariant));
+}
+function applyUicSlot(index, value) {
+  const slot = uiComponents.selected.slots[index];
+  if (slot.type === 'tint' && !/^#(?:[\da-f]{3}|[\da-f]{6}|[\da-f]{8})$/i.test(value)) { document.getElementById('uic-control-status').textContent = 'Màu cần có dạng #RGB, #RRGGBB hoặc #RRGGBBAA'; return; }
+  if (slot.type === 'count' && (!Number.isFinite(value) || (slot.field.endsWith('fillAmount') && (value < 0 || value > 1)))) { document.getElementById('uic-control-status').textContent = 'Giá trị không hợp lệ (fillAmount từ 0 đến 1).'; return; }
+  uiComponents.values[slot.name] = value; document.getElementById('uic-control-status').textContent = '';
+  renderUicInstance();
 }
 document.addEventListener('input', event => {
   if (event.target.id === 'uic-search') { uiComponents.search = event.target.value; renderUicLibrary(); }
+  const input = event.target;
+  if (input.dataset.uicSlot != null) applyUicSlot(+input.dataset.uicSlot, input.type === 'checkbox' ? input.checked : input.type === 'number' ? Number(input.value) : input.value);
 });
 document.addEventListener('change', event => {
   if (event.target.id === 'uic-group') { uiComponents.group = event.target.value; renderUicLibrary(); }
+  if (event.target.id === 'uic-state') { uiComponents.state = event.target.value; uiComponents.values = {}; renderUicControls(); renderUicInstance(); }
+  if (event.target.id === 'uic-outlines') renderUicInstance();
+});
+document.addEventListener('click', event => {
+  if (event.target.id === 'uic-reset') renderUicDetail();
+  const sample = event.target.closest('[data-uic-sample]');
+  if (sample) { const index = +sample.dataset.uicSample; applyUicSlot(index, uiComponents.selected.slots[index].sample); renderUicControls(); }
 });
