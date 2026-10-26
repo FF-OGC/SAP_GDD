@@ -727,3 +727,18 @@ button.ui-entity[data-ui-hit-target="false"]{pointer-events:none}
 .reward-experiment-shell p { margin:10px 0; line-height:1.55; }
 .reward-experiment-shell summary { cursor:pointer; }
 #reward-demo-status { color:#ffdc82; min-height:1.5em; }
+
+/* UI Components: tool shell only; entity visuals come from the shared renderer. */
+.uic-page{max-width:1320px;min-width:0;margin:0 auto;overflow-wrap:anywhere}
+.uic-section{margin:24px 0;padding:20px;border:1px solid var(--border,#334155);border-radius:14px;background:var(--panel,#17202f);min-width:0}
+.uic-toolbar{display:flex;gap:16px;flex-wrap:wrap;margin:16px 0}
+.uic-toolbar label{display:grid;gap:6px;min-width:0;flex:1}
+.uic-page input,.uic-page select{max-width:100%;min-width:0;padding:9px;border:1px solid #4b5563;border-radius:6px;background:#111827;color:#f3f4f6}
+.uic-library{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(210px,100%),1fr));gap:14px}
+.uic-card{display:flex;flex-direction:column;gap:8px;padding:12px;color:inherit;text-decoration:none;border:1px solid #3e4b60;border-radius:10px;min-width:0}
+.uic-card:focus-visible{outline:2px solid #62c7e9}
+.uic-thumb,.uic-preview{position:relative;isolation:isolate;overflow:hidden;background-color:#374151;background-image:conic-gradient(#283242 25%,transparent 0 50%,#283242 0 75%,transparent 0);background-size:20px 20px;border-radius:8px}
+.uic-thumb{height:140px;pointer-events:none}
+.uic-preview{height:360px;width:100%}
+.uic-page small{color:#b4c1d3}
+@media(max-width:600px){.uic-section{padding:12px}.uic-library{grid-template-columns:1fr}.uic-toolbar{flex-direction:column}.uic-preview{height:280px}}
