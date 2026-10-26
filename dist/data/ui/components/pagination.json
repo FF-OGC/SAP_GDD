@@ -1052,7 +1052,7 @@
     "reason": "Template pagination; slot: visible = PetsCollection/Container/PageBtns.active; label = PetsCollection/Container/PageBtns/Page.text.value; art = PetsCollection/Container/PageBtns/PrevPageButton.button.spriteKey",
     "entity": {
       "id": "uic-pagination-Ij15xtQe",
-      "name": "PageBtns",
+      "name": "Component_pagination",
       "type": "UIEmptyEntity",
       "children": [
         {

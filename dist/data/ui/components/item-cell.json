@@ -2404,7 +2404,7 @@
     "reason": "Template item-cell; slot: visible = PetsCollection/Container/PetsLayout/Pet (1).active; label = PetsCollection/Container/PetsLayout/Pet (1)/HasMW/Count.text.value; art = PetsCollection/Container/PetsLayout/Pet (1).image.spriteKey; tint = PetsCollection/Container/PetsLayout/Pet (1).image.color; selected = PetsCollection/Container/PetsLayout/Pet (1)/SelectBorder.active",
     "entity": {
       "id": "uic-item-cell-Y9R2FYBj",
-      "name": "Pet (1)",
+      "name": "Component_item-cell",
       "type": "UIImageEntity",
       "children": [
         {

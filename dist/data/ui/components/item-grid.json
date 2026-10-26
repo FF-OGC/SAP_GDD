@@ -2531,7 +2531,7 @@
     "reason": "Template item-grid; slot: visible = PetsCollection/Container/PetsLayout.active; label = PetsCollection/Container/PetsLayout/Pet (1)/HasMW/Count.text.value; art = PetsCollection/Container/PetsLayout/Pet (1).image.spriteKey",
     "entity": {
       "id": "uic-item-grid-T1xtLFOi",
-      "name": "PetsLayout",
+      "name": "Component_item-grid",
       "type": "UILayoutEntityV2",
       "children": [
         {

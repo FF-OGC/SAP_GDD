@@ -372,7 +372,7 @@
     "reason": "Template scrim; slot: visible = PetsCollection/DarkBG.active; art = PetsCollection/DarkBG.button.spriteKey",
     "entity": {
       "id": "uic-scrim-YD8GYJ30",
-      "name": "DarkBG",
+      "name": "Component_scrim",
       "type": "UIButtonEntity",
       "children": [],
       "active": true,

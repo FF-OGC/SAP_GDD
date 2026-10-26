@@ -680,7 +680,7 @@
     "reason": "Template rarity-badge; slot: visible = PetsCollection/Container/PetDetails/Pet/RarityBG.active; label = PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName.text.value; art = PetsCollection/Container/PetDetails/Pet/RarityBG.image.spriteKey; tint = PetsCollection/Container/PetDetails/Pet/RarityBG.image.color",
     "entity": {
       "id": "uic-rarity-badge-pG0KrAI2",
-      "name": "RarityBG",
+      "name": "Component_rarity-badge",
       "type": "UIImageEntity",
       "children": [
         {

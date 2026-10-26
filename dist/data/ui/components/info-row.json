@@ -929,7 +929,7 @@
     "reason": "Template info-row; slot: visible = PetsCollection/Container/Info/Value.active; label = PetsCollection/Container/Info/Value/Content.text.value; art = PetsCollection/Container/Info/Value.image.spriteKey; tint = PetsCollection/Container/Info/Value.image.color",
     "entity": {
       "id": "uic-info-row-TFWi8T1X",
-      "name": "Value",
+      "name": "Component_info-row",
       "type": "UIImageEntity",
       "children": [
         {

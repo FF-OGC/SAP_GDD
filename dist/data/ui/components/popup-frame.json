@@ -1241,7 +1241,7 @@
     "reason": "Template popup-frame; slot: visible = PetsCollection/Container/BG.active; art = PetsCollection/Container/BG.image.spriteKey; tint = PetsCollection/Container/BG.image.color",
     "entity": {
       "id": "uic-popup-frame-sRToCiPA",
-      "name": "BG",
+      "name": "Component_popup-frame",
       "type": "UIImageEntity",
       "children": [
         {

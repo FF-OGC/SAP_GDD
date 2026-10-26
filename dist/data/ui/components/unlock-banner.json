@@ -964,7 +964,7 @@
     "reason": "Template unlock-banner; slot: visible = PetsCollection/Container/UnlockObtain.active; label = PetsCollection/Container/UnlockObtain/Label.text.value; art = PetsCollection/Container/UnlockObtain.image.spriteKey; tint = PetsCollection/Container/UnlockObtain.image.color",
     "entity": {
       "id": "uic-unlock-banner-neVVrPZ5",
-      "name": "UnlockObtain",
+      "name": "Component_unlock-banner",
       "type": "UIImageEntity",
       "children": [
         {

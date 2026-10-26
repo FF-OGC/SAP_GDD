@@ -941,7 +941,7 @@
     "reason": "Template title-bar; slot: visible = PetsCollection/Container/Title.active; label = PetsCollection/Container/Title/Label.text.key; art = PetsCollection/Container/Title.image.spriteKey; tint = PetsCollection/Container/Title.image.color",
     "entity": {
       "id": "uic-title-bar-JUnMlJee",
-      "name": "Title",
+      "name": "Component_title-bar",
       "type": "UIImageEntity",
       "children": [
         {

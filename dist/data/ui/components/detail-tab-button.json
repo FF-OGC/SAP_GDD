@@ -680,7 +680,7 @@
     "reason": "Template detail-tab-button; slot: visible = PetsCollection/Container/DetailsTabsLayout/InfoTabButton.active; label = PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label.text.key; art = PetsCollection/Container/DetailsTabsLayout/InfoTabButton.button.spriteKey",
     "entity": {
       "id": "uic-detail-tab-button-s31m5yHS",
-      "name": "InfoTabButton",
+      "name": "Component_detail-tab-button",
       "type": "UIButtonEntity",
       "children": [
         {

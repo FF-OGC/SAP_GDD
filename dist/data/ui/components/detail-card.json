@@ -3543,7 +3543,7 @@
     "reason": "Template detail-card; slot: visible = PetsCollection/Container/PetDetails/Pet.active; label = PetsCollection/Container/PetDetails/Pet/Name.text.value; art = PetsCollection/Container/PetDetails/Pet.image.spriteKey; tint = PetsCollection/Container/PetDetails/Pet.image.color",
     "entity": {
       "id": "uic-detail-card-r6JjsVsl",
-      "name": "Pet",
+      "name": "Component_detail-card",
       "type": "UIImageEntity",
       "children": [
         {

@@ -67,7 +67,7 @@ function renderUicDetail() {
     <div class="uic-preview-layout"><div id="uic-stage" class="uic-preview"></div><div><h3>Tham số instance</h3><p><small>Chỉ đổi bản xem thử. Dữ liệu mẫu có nhãn “mẫu”.</small></p><div id="uic-controls" class="uic-controls"></div><p id="uic-control-status" role="status"></p></div></div>
     <details class="uic-disclosure"><summary>Cây entity và rect sau layout</summary><p>Đơn vị .ui trước scale; gốc đã re-root. Transform/props gốc giữ trong dữ liệu JSON.</p><div id="uic-tree"></div></details>
     <div id="uic-spec"></div>`;
-  renderUicControls(); renderUicInstance(); renderUicVariants();
+  renderUicControls(); renderUicInstance(); renderUicVariants(); renderUicSpec();
 }
 function uicGet(node, field) { return field.split('.').reduce((v, k) => v?.[k], node); }
 function uicPut(node, field, value) { const keys = field.split('.'); let at = node; for (const key of keys.slice(0,-1)) at = at[key] ||= {}; at[keys.at(-1)] = structuredClone(value); }
@@ -99,6 +99,41 @@ function renderUicInstance() {
     const element = uiComponents.rendered.byId.get(n.id), rect = ['left','top','width','height'].map(f => `${f}: ${parseFloat(element.style[f])}`);
     return `<div class="uic-tree-row" data-uic-tree="${esc(n.id)}" style="padding-left:${Math.min(6,n.path.split('/').length-depth)*10}px"><strong>${esc(n.name)}</strong><span>${esc(n.type)} · ${n.active ? 'active' : 'inactive'}</span><code>${esc(rect.join(' · '))}</code></div>`;
   }).join('');
+  renderUicTemplate();
+}
+const uicValue = value => value == null ? 'chưa có dữ liệu' : typeof value === 'object' ? JSON.stringify(value) : String(value);
+function uicTable(headings, rows) {
+  return rows.length ? `<table class="uic-table"><thead><tr>${headings.map(h => `<th>${esc(h)}</th>`).join('')}</tr></thead><tbody>${rows.map(row => `<tr>${row.map((cell, i) => `<td data-label="${esc(headings[i])}">${cell}</td>`).join('')}</tr>`).join('')}</tbody></table>` : '<p>chưa có dữ liệu</p>';
+}
+function renderUicSpec() {
+  const d = uiComponents.selected, size = r => `${r.width} × ${r.height}`, val = v => esc(uicValue(v));
+  const imageRows = d.spec.images.map(r => [r.sprite?.output ? `<img class="uic-spec-thumb" src="${esc(r.sprite.output)}" alt="${esc(r.key || '')}">` : 'thiếu',
+    `${val(r.path)}<small>${val(r.key)} · ${r.sprite?.missing ? 'thiếu' : r.key ? 'có file' : 'chưa có dữ liệu'}</small><small>${val(r.sprite?.declaredKeys)}</small>`, `${size(r.rect)}<small>Sprite: ${val(r.sprite?.width)} × ${val(r.sprite?.height)}</small>`, `${val(r.sprite?.border)}<small>fillType: ${val(r.image.fillType)} · centerInvisible: ${val(r.image.centerInvisible)}</small>`, val(r.tint)]);
+  const shapeRows = d.spec.shapes.map(r => [val(r.path),size(r.rect),val(r.color),`${r.alpha}% · ${r.active ? 'active' : 'inactive'}`]);
+  const textRows = d.spec.texts.map(r => [val(r.path),`${val(r.key || r.value)}<small>${val(r.localization?.vi || r.value)}</small>`, `${val(r.fontSize)} · ${val(r.color)}`, `${val(r.outline)} · ${val(r.outlineColor)}<small>offset: ${val(r.outlineOffset)} · alpha: ${val(r.outlineAlpha)}</small>`, `${val(r.alignment)}<small>font: ${val(r.font)} · style: ${val(r.fontStyle)} · overflow: ${val(r.overflow)}</small>`]);
+  const slotRows = d.slots.map(slot => [val(slot.name),val(slot.type),`${val(slot.default)}${Object.hasOwn(slot,'sample') ? `<small>Mẫu: ${val(slot.sample)}</small>` : ''}`,`${val(slot.path)}<small>${val(slot.field)}</small>`]);
+  const stateRows = d.states.map(st => [val(st.name),val(st.when),`${val(st.ruleSource)}<small>${val(d.stateEvidence.find(e => e.name === st.name)?.rule)}</small>`,val(st.overrides)]);
+  const links = ids => ids.length ? ids.map(id => `<a href="#uicomponents/${esc(id)}">${esc(id)}</a>`).join(' · ') : 'chưa có dữ liệu';
+  document.getElementById('uic-spec').innerHTML = `<details class="uic-disclosure"><summary>Spec cho dev · dữ liệu nguồn .ui</summary><p>Kích thước nguồn trước scale/layout runtime. Hình khối là rect entity, không phải asset thay thế. 9-grid theo metadata đã sync (left/right/top/bottom).</p><h3>Hình ảnh</h3>${uicTable(['Xem trước','Nguồn / key','Kích thước','9-grid / fill','Tint'],imageRows)}<h3>Hình khối / màu</h3>${uicTable(['Entity','Kích thước','Màu','Alpha / active'],shapeRows)}<h3>Chữ</h3>${uicTable(['Entity','i18n / nội dung','Cỡ / màu','Outline','Căn / font'],textRows)}</details>
+    <details class="uic-disclosure"><summary>Slot và state</summary><h3>Slot</h3>${uicTable(['Tên','Kiểu','Mặc định .ui','Đích'],slotRows)}<h3>State</h3>${uicTable(['Tên','Điều kiện','Nguồn collection-rules.json','Override'],stateRows)}</details>
+    <details class="uic-disclosure"><summary>Nguồn và tái dùng</summary><p>${val(d.source)}<br>${val(d.sourcePath)}<br>ID: ${val(d.sourceId)} · ${val(d.status)}</p><p>composedOf: ${links(d.composedOf)}<br>usedBy: ${links(d.usedBy)}</p><ul>${d.usedIn.map(u => `<li>${u.planned ? `${val(u.screen)} · dự kiến` : u.screen === 'collection' ? '<a href="#uipreview/collection">Collection · UI Preview</a>' : val(u.screen)}: ${val(u.note)}</li>`).join('')}</ul><ul>${d.notes.map(note => `<li>${val(note)}</li>`).join('')}</ul><p>Font, shader, alpha cascade và scaler: chưa xác minh runtime game. Không thực thi binder Collection.</p></details>
+    <details class="uic-disclosure"><summary>Template JSON · op add</summary><p>Slot/state hiện tại đã áp vào entity; binding slot ghi ở reason. Sửa parent/ID trước khi tái dùng nhiều lần. Chỉ xuất field được schema Proposal hỗ trợ.</p><p>${d.templateOmitted.length} field không xuất (gồm gradient/raw props hoặc sprite thiếu); đây là template cho Proposal, không bảo đảm giữ toàn bộ hiệu ứng serialize.</p><details><summary>Chi tiết field không xuất</summary><ul>${d.templateOmitted.map(v => `<li>${val(v)}</li>`).join('')}</ul></details><button type="button" id="uic-copy" class="uic-copy">Sao chép template</button><p id="uic-copy-status" role="status"></p><pre id="uic-template"></pre></details>`;
+  renderUicTemplate();
+}
+function currentUicTemplate() {
+  const d = uiComponents.selected, op = structuredClone(d.template), targets = uicWalk(op.entity), sources = uicWalk(d.tree);
+  const overrides = [...(d.states.find(st => st.name === uiComponents.state)?.overrides || []), ...d.slots.filter(slot => Object.hasOwn(uiComponents.values,slot.name)).map(slot => ({path:slot.path,field:slot.field,value:uiComponents.values[slot.name]}))];
+  for (const change of overrides) {
+    const source = sources.find(n => n.path === change.path), target = targets.find(n => n.id === `uic-${d.id}-${source.id}`);
+    if (change.field.endsWith('.spriteKey') && !uiComponents.manifest.sprites.some(sp => sp.key === change.value && !sp.missing && sp.output)) {
+      delete target[change.field.split('.')[0]].spriteKey;
+    } else uicPut(target, change.field, change.value);
+  }
+  return op;
+}
+function renderUicTemplate() {
+  const pre = document.getElementById('uic-template');
+  if (pre) pre.textContent = JSON.stringify(currentUicTemplate(), null, 2);
 }
 function renderUicVariants() {
   const data = uiComponents.selected, section = document.getElementById('uic-variants');
@@ -128,4 +163,10 @@ document.addEventListener('click', event => {
   if (event.target.id === 'uic-reset') renderUicDetail();
   const sample = event.target.closest('[data-uic-sample]');
   if (sample) { const index = +sample.dataset.uicSample; applyUicSlot(index, uiComponents.selected.slots[index].sample); renderUicControls(); }
+});
+document.addEventListener('click', async event => {
+  if (event.target.id !== 'uic-copy') return;
+  const status = document.getElementById('uic-copy-status');
+  try { await navigator.clipboard.writeText(JSON.stringify(currentUicTemplate(),null,2)); status.textContent = 'Đã sao chép template'; }
+  catch (error) { status.textContent = 'Không sao chép được: ' + error.message + '. Có thể chọn JSON bên dưới để sao chép thủ công.'; }
 });

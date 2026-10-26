@@ -680,7 +680,7 @@
     "reason": "Template tab-button; slot: visible = PetsCollection/Container/RarityTabsLayout/AllTabButton.active; label = PetsCollection/Container/RarityTabsLayout/AllTabButton/Text.text.key; art = PetsCollection/Container/RarityTabsLayout/AllTabButton.button.spriteKey",
     "entity": {
       "id": "uic-tab-button-Ss6rC1EV",
-      "name": "AllTabButton",
+      "name": "Component_tab-button",
       "type": "UIButtonEntity",
       "children": [
         {

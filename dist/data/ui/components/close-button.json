@@ -372,7 +372,7 @@
     "reason": "Template close-button; slot: visible = PetsCollection/Container/Title/CloseButton.active; art = PetsCollection/Container/Title/CloseButton.button.spriteKey",
     "entity": {
       "id": "uic-close-button-GnjIZuxE",
-      "name": "CloseButton",
+      "name": "Component_close-button",
       "type": "UIButtonEntity",
       "children": [],
       "active": true,

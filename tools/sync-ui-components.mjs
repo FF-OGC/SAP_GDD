@@ -63,6 +63,7 @@ export function deriveComponents(inputs, root = GDD_ROOT) {
       if (n.text) spec.texts.push({ ...row, ...n.text, localization: i18n.entries[n.text.key] || null });
     }
     const omitted = [], entity = proposalEntity(tree, manifest, `uic-${def.id}`, omitted);
+    entity.name = `Component_${def.id}`;
     const template = { op: 'add', parent: screen.tree.path, parentId: screen.tree.id, reason: `Template ${def.id}; slot: ${def.slots.map(s => `${s.name} = ${s.path}.${s.field}`).join('; ') || 'chưa có dữ liệu'}`, entity };
     return { ...def, source: screen.source, sourceRect, referenceSize: { width, height }, tree, entityCount: spec.nodes.length, spec, template, templateOmitted: omitted,
       stateEvidence: def.states.map(s => ({ name: s.name, ruleSource: s.ruleSource, rule: get(rules, s.ruleSource) })),

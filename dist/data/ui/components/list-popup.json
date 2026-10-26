@@ -29369,7 +29369,7 @@
     "reason": "Template list-popup; slot: visible = PetsCollection/Container.active; label = PetsCollection/Container/Title/Label.text.key; art = PetsCollection/Container.image.spriteKey; tint = PetsCollection/Container.image.color",
     "entity": {
       "id": "uic-list-popup-jMGHqNVH",
-      "name": "Container",
+      "name": "Component_list-popup",
       "type": "UIImageEntity",
       "children": [
         {

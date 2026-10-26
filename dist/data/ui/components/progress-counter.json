@@ -1214,7 +1214,7 @@
     "reason": "Template progress-counter; slot: visible = PetsCollection/Container/PetsCount.active; label = PetsCollection/Container/PetsCount/PetsAmount.text.value; art = PetsCollection/Container/PetsCount.image.spriteKey; tint = PetsCollection/Container/PetsCount.image.color; progress = PetsCollection/Container/PetsCount/Progress.image.fillAmount",
     "entity": {
       "id": "uic-progress-counter-QAgClHag",
-      "name": "PetsCount",
+      "name": "Component_progress-counter",
       "type": "UIImageEntity",
       "children": [
         {

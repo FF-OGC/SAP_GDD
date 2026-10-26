@@ -4828,7 +4828,7 @@
     "reason": "Template tab-bar; slot: visible = PetsCollection/Container/RarityTabsLayout.active; label = PetsCollection/Container/RarityTabsLayout/AllTabButton/Text.text.key; art = PetsCollection/Container/RarityTabsLayout/AllTabButton.button.spriteKey",
     "entity": {
       "id": "uic-tab-bar-i8q67SIt",
-      "name": "RarityTabsLayout",
+      "name": "Component_tab-bar",
       "type": "UILayoutEntityV2",
       "children": [
         {
