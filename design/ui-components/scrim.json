@@ -1,0 +1,45 @@
+{
+  "id": "scrim",
+  "name": "Nền chặn modal",
+  "sourcePath": "PetsCollection/DarkBG",
+  "sourceId": "YD8GYJ30",
+  "group": "Khung",
+  "status": "real",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "PetsCollection/DarkBG",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "art",
+      "type": "sprite",
+      "path": "PetsCollection/DarkBG",
+      "field": "button.spriteKey",
+      "default": "Assets/Sprites/Backgrounds/DarkBG.png"
+    }
+  ],
+  "states": [],
+  "usedIn": [
+    {
+      "screen": "collection",
+      "note": "Có subtree trong PetsCollection.ui"
+    },
+    {
+      "screen": "shop",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    },
+    {
+      "screen": "mission",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection."
+  ]
+}

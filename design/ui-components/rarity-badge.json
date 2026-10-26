@@ -1,0 +1,95 @@
+{
+  "id": "rarity-badge",
+  "name": "Nhãn rarity",
+  "sourcePath": "PetsCollection/Container/PetDetails/Pet/RarityBG",
+  "sourceId": "pG0KrAI2",
+  "group": "Hiển thị dữ liệu",
+  "status": "runtime",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "PetsCollection/Container/PetDetails/Pet/RarityBG",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "path": "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName",
+      "field": "text.value",
+      "default": "MYTHIC",
+      "sample": "Nội dung mẫu"
+    },
+    {
+      "name": "art",
+      "type": "sprite",
+      "path": "PetsCollection/Container/PetDetails/Pet/RarityBG",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/Backgrounds/BG.png"
+    },
+    {
+      "name": "tint",
+      "type": "tint",
+      "path": "PetsCollection/Container/PetDetails/Pet/RarityBG",
+      "field": "image.color",
+      "default": "#FF6F6F"
+    }
+  ],
+  "states": [
+    {
+      "name": "COMMON",
+      "when": "rarity = COMMON",
+      "ruleSource": "rarityColors.values.COMMON",
+      "overrides": [
+        {
+          "path": "PetsCollection/Container/PetDetails/Pet/RarityBG",
+          "field": "image.color",
+          "value": "#8CFF91"
+        },
+        {
+          "path": "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName",
+          "field": "text.outlineColor",
+          "value": "#8CFF91"
+        }
+      ]
+    },
+    {
+      "name": "RARE",
+      "when": "rarity = RARE",
+      "ruleSource": "rarityColors.values.RARE",
+      "overrides": [
+        {
+          "path": "PetsCollection/Container/PetDetails/Pet/RarityBG",
+          "field": "image.color",
+          "value": "#4CC8FE"
+        },
+        {
+          "path": "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName",
+          "field": "text.outlineColor",
+          "value": "#4CC8FE"
+        }
+      ]
+    }
+  ],
+  "usedIn": [
+    {
+      "screen": "collection",
+      "note": "Có subtree trong PetsCollection.ui"
+    },
+    {
+      "screen": "shop",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    },
+    {
+      "screen": "mission",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection."
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "source": "Assets/HUDs/PetsCollection.ui",
+  "groups": [
+    "Điều khiển",
+    "Hiển thị dữ liệu",
+    "Ghép",
+    "Khung"
+  ],
+  "components": [
+    {
+      "id": "close-button",
+      "name": "Nút đóng",
+      "group": "Điều khiển",
+      "status": "real",
+      "sourcePath": "PetsCollection/Container/Title/CloseButton",
+      "sourceId": "GnjIZuxE",
+      "entityCount": 1,
+      "usedCount": 1,
+      "plannedCount": 2,
+      "data": "./data/ui/components/close-button.json"
+    },
+    {
+      "id": "detail-card",
+      "name": "Thẻ chi tiết",
+      "group": "Hiển thị dữ liệu",
+      "status": "real",
+      "sourcePath": "PetsCollection/Container/PetDetails/Pet",
+      "sourceId": "r6JjsVsl",
+      "entityCount": 12,
+      "usedCount": 1,
+      "plannedCount": 2,
+      "data": "./data/ui/components/detail-card.json"
+    },
+    {
+      "id": "detail-tab-button",
+      "name": "Tab chi tiết",
+      "group": "Điều khiển",
+      "status": "runtime",
+      "sourcePath": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton",
+      "sourceId": "s31m5yHS",
+      "entityCount": 2,
+      "usedCount": 1,
+      "plannedCount": 2,
+      "data": "./data/ui/components/detail-tab-button.json"
+    },
+    {
+      "id": "info-row",
+      "name": "Dòng thông tin",
+      "group": "Hiển thị dữ liệu",
+      "status": "real",
+      "sourcePath": "PetsCollection/Container/Info/Value",
+      "sourceId": "TFWi8T1X",
+      "entityCount": 3,
+      "usedCount": 1,
+      "plannedCount": 2,
+      "data": "./data/ui/components/info-row.json"
+    },
+    {
+      "id": "item-cell",
+      "name": "Ô vật phẩm",
+      "group": "Hiển thị dữ liệu",
+      "status": "real",
+      "sourcePath": "PetsCollection/Container/PetsLayout/Pet (1)",
+      "sourceId": "Y9R2FYBj",
+      "entityCount": 8,
+      "usedCount": 1,
+      "plannedCount": 2,
+      "data": "./data/ui/components/item-cell.json"
+    },
+    {
+      "id": "item-grid",
+      "name": "Lưới vật phẩm",
+      "group": "Ghép",
+      "status": "real",
+      "sourcePath": "PetsCollection/Container/PetsLayout",
+      "sourceId": "T1xtLFOi",
+      "entityCount": 9,
+      "usedCount": 1,
+      "plannedCount": 2,
+      "data": "./data/ui/components/item-grid.json"
+    },
+    {
+      "id": "list-popup",
+      "name": "Popup lưới và chi tiết",
+      "group": "Ghép",
+      "status": "real",
+      "sourcePath": "PetsCollection/Container",
+      "sourceId": "jMGHqNVH",
+      "entityCount": 105,
+      "usedCount": 1,
+      "plannedCount": 2,
+      "data": "./data/ui/components/list-popup.json"
+    },
+    {
+      "id": "pagination",
+      "name": "Phân trang",
+      "group": "Điều khiển",
+      "status": "real",
+      "sourcePath": "PetsCollection/Container/PageBtns",
+      "sourceId": "Ij15xtQe",
+      "entityCount": 4,
+      "usedCount": 1,
+      "plannedCount": 2,
+      "data": "./data/ui/components/pagination.json"
+    },
+    {
+      "id": "popup-frame",
+      "name": "Khung trang trí popup",
+      "group": "Khung",
+      "status": "real",
+      "sourcePath": "PetsCollection/Container/BG",
+      "sourceId": "sRToCiPA",
+      "entityCount": 4,
+      "usedCount": 1,
+      "plannedCount": 2,
+      "data": "./data/ui/components/popup-frame.json"
+    },
+    {
+      "id": "progress-counter",
+      "name": "Bộ đếm tiến độ",
+      "group": "Hiển thị dữ liệu",
+      "status": "real",
+      "sourcePath": "PetsCollection/Container/PetsCount",
+      "sourceId": "QAgClHag",
+      "entityCount": 4,
+      "usedCount": 1,
+      "plannedCount": 2,
+      "data": "./data/ui/components/progress-counter.json"
+    },
+    {
+      "id": "rarity-badge",
+      "name": "Nhãn rarity",
+      "group": "Hiển thị dữ liệu",
+      "status": "runtime",
+      "sourcePath": "PetsCollection/Container/PetDetails/Pet/RarityBG",
+      "sourceId": "pG0KrAI2",
+      "entityCount": 2,
+      "usedCount": 1,
+      "plannedCount": 2,
+      "data": "./data/ui/components/rarity-badge.json"
+    },
+    {
+      "id": "scrim",
+      "name": "Nền chặn modal",
+      "group": "Khung",
+      "status": "real",
+      "sourcePath": "PetsCollection/DarkBG",
+      "sourceId": "YD8GYJ30",
+      "entityCount": 1,
+      "usedCount": 1,
+      "plannedCount": 2,
+      "data": "./data/ui/components/scrim.json"
+    },
+    {
+      "id": "tab-bar",
+      "name": "Dải tab rarity",
+      "group": "Ghép",
+      "status": "real",
+      "sourcePath": "PetsCollection/Container/RarityTabsLayout",
+      "sourceId": "i8q67SIt",
+      "entityCount": 17,
+      "usedCount": 1,
+      "plannedCount": 2,
+      "data": "./data/ui/components/tab-bar.json"
+    },
+    {
+      "id": "tab-button",
+      "name": "Tab rarity",
+      "group": "Điều khiển",
+      "status": "runtime",
+      "sourcePath": "PetsCollection/Container/RarityTabsLayout/AllTabButton",
+      "sourceId": "Ss6rC1EV",
+      "entityCount": 2,
+      "usedCount": 1,
+      "plannedCount": 2,
+      "data": "./data/ui/components/tab-button.json"
+    },
+    {
+      "id": "title-bar",
+      "name": "Thanh tiêu đề",
+      "group": "Khung",
+      "status": "real",
+      "sourcePath": "PetsCollection/Container/Title",
+      "sourceId": "JUnMlJee",
+      "entityCount": 3,
+      "usedCount": 1,
+      "plannedCount": 2,
+      "data": "./data/ui/components/title-bar.json"
+    },
+    {
+      "id": "unlock-banner",
+      "name": "Dải nguồn mở khoá",
+      "group": "Hiển thị dữ liệu",
+      "status": "real",
+      "sourcePath": "PetsCollection/Container/UnlockObtain",
+      "sourceId": "neVVrPZ5",
+      "entityCount": 3,
+      "usedCount": 1,
+      "plannedCount": 2,
+      "data": "./data/ui/components/unlock-banner.json"
+    }
+  ]
+}

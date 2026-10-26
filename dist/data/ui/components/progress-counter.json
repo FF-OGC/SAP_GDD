@@ -1,0 +1,1537 @@
+{
+  "id": "progress-counter",
+  "name": "Bộ đếm tiến độ",
+  "sourcePath": "PetsCollection/Container/PetsCount",
+  "sourceId": "QAgClHag",
+  "group": "Hiển thị dữ liệu",
+  "status": "real",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "PetsCollection/Container/PetsCount",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "path": "PetsCollection/Container/PetsCount/PetsAmount",
+      "field": "text.value",
+      "default": "26/272",
+      "sample": "Nội dung mẫu"
+    },
+    {
+      "name": "art",
+      "type": "sprite",
+      "path": "PetsCollection/Container/PetsCount",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/Buttons/SkillButtonBG.png"
+    },
+    {
+      "name": "tint",
+      "type": "tint",
+      "path": "PetsCollection/Container/PetsCount",
+      "field": "image.color",
+      "default": "#ffffff"
+    },
+    {
+      "name": "progress",
+      "type": "count",
+      "path": "PetsCollection/Container/PetsCount/Progress",
+      "field": "image.fillAmount",
+      "default": 0.3
+    }
+  ],
+  "states": [
+    {
+      "name": "Chưa có tiến độ",
+      "when": "total <= 0 hoặc owned < 0",
+      "ruleSource": "counters",
+      "overrides": [
+        {
+          "path": "PetsCollection/Container/PetsCount/Progress",
+          "field": "image.fillAmount",
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "usedIn": [
+    {
+      "screen": "collection",
+      "note": "Có subtree trong PetsCollection.ui"
+    },
+    {
+      "screen": "shop",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    },
+    {
+      "screen": "mission",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection."
+  ],
+  "source": "Assets/HUDs/PetsCollection.ui",
+  "sourceRect": {
+    "left": 1040,
+    "top": -15,
+    "width": 120,
+    "height": 120
+  },
+  "referenceSize": {
+    "width": 120,
+    "height": 120
+  },
+  "tree": {
+    "path": "PetsCollection/Container/PetsCount",
+    "id": "QAgClHag",
+    "name": "PetsCount",
+    "type": "UIImageEntity",
+    "active": true,
+    "transform": {
+      "rotate": 0,
+      "anchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchoredPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sizeDelta": {
+        "x": 120,
+        "y": 120
+      }
+    },
+    "alpha": 100,
+    "priority": 0,
+    "image": {
+      "source": {
+        "fileId": "vp527gybpr-mincvg4z-pp4iuvf2pc",
+        "filePath": "Assets\\Sprites\\Buttons\\SkillButtonBG.png",
+        "_tag": {
+          "type": "GFileRefer"
+        },
+        "fileType": "texture"
+      },
+      "color": "#ffffff",
+      "reverse": {
+        "x": false,
+        "y": false
+      },
+      "fillType": 1,
+      "slicedBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "tiledBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "centerInvisible": false,
+      "fillDir": 0,
+      "fillAmount": 0,
+      "invertFill": false,
+      "flip": 0,
+      "gradient": 1,
+      "gradientTop": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "gradientBottom": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "isApplyAnimation": false,
+      "animationAtlasID": null,
+      "animationFrameRate": 30,
+      "animationLoop": true,
+      "spriteKey": "Assets/Sprites/Buttons/SkillButtonBG.png"
+    },
+    "button": null,
+    "text": null,
+    "layout": null,
+    "propsData": {
+      "activeSelf": true,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 1,
+          "y": 1
+        },
+        "anchorMax": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 1,
+          "y": 1
+        },
+        "anchoredPosition": {
+          "x": 120,
+          "y": 15
+        },
+        "sizeDelta": {
+          "x": 120,
+          "y": 120
+        }
+      },
+      "alpha": 100,
+      "priority": 0,
+      "image": {
+        "source": {
+          "fileId": "vp527gybpr-mincvg4z-pp4iuvf2pc",
+          "filePath": "Assets\\Sprites\\Buttons\\SkillButtonBG.png",
+          "_tag": {
+            "type": "GFileRefer"
+          },
+          "fileType": "texture"
+        },
+        "color": "#ffffff",
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "fillType": 1,
+        "slicedBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "tiledBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "flip": 0,
+        "gradient": 1,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "isApplyAnimation": false,
+        "animationAtlasID": null,
+        "animationFrameRate": 30,
+        "animationLoop": true
+      }
+    },
+    "ecaProps": {
+      "HudImageWidget": {},
+      "HudWidget": {},
+      "Entity": {}
+    },
+    "unsupported": [],
+    "children": [
+      {
+        "path": "PetsCollection/Container/PetsCount/Progress",
+        "id": "FOm9BnS9",
+        "name": "Progress",
+        "type": "UIImageEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sizeDelta": {
+            "x": -40,
+            "y": -40
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": {
+          "source": {
+            "fileId": "s3zv96erpn-mg4ze9yz-hgh0an9w9es",
+            "filePath": "Assets\\Sprites\\Guides\\GuideCircle.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 3,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 4,
+          "fillAmount": 0.3,
+          "invertFill": true,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/Guides/GuideCircle.png"
+        },
+        "button": null,
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 0,
+              "y": 0
+            },
+            "sizeDelta": {
+              "x": -40,
+              "y": -40
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "image": {
+            "source": {
+              "fileId": "s3zv96erpn-mg4ze9yz-hgh0an9w9es",
+              "filePath": "Assets\\Sprites\\Guides\\GuideCircle.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "isApplyAnimation": false,
+            "animationAtlasID": null,
+            "animationFrameRate": 30,
+            "animationLoop": true,
+            "fillType": 3,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 4,
+            "fillAmount": 0.3,
+            "invertFill": true,
+            "flip": 0,
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudImageWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "m_ApplyingPreviewAnimation"
+        ],
+        "children": []
+      },
+      {
+        "path": "PetsCollection/Container/PetsCount/PetsAmount",
+        "id": "G3sxtHPV",
+        "name": "PetsAmount",
+        "type": "UITextEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sizeDelta": {
+            "x": -60,
+            "y": -92
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": null,
+        "button": null,
+        "text": {
+          "value": "26/272",
+          "key": "",
+          "font": "Default",
+          "fontSize": 26,
+          "fontStyle": {
+            "bold": false,
+            "italic": false,
+            "underline": false
+          },
+          "color": "#FFFFFF",
+          "alignment": {
+            "h": "center",
+            "v": "bottom"
+          },
+          "lineSpacing": 0,
+          "background": false,
+          "backgroundColor": "#e7b200",
+          "overflow": 0,
+          "backgroundRGBA": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0
+          },
+          "shadow": true,
+          "shadowColor": "#000000",
+          "shadowOffset": {
+            "x": 1,
+            "y": 1
+          },
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "outline": false,
+          "outlineColor": "#000000",
+          "outlineAlpha": 1,
+          "outlineOffset": 1,
+          "shadowAlpha": 1
+        },
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 0,
+              "y": 0
+            },
+            "sizeDelta": {
+              "x": -60,
+              "y": -92
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "text": {
+            "value": "26/272",
+            "key": "",
+            "font": "Default",
+            "fontSize": 26,
+            "fontStyle": {
+              "bold": false,
+              "italic": false,
+              "underline": false
+            },
+            "color": "#FFFFFF",
+            "alignment": {
+              "h": "center",
+              "v": "bottom"
+            },
+            "lineSpacing": 0,
+            "background": false,
+            "backgroundColor": "#e7b200",
+            "overflow": 0,
+            "backgroundRGBA": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0
+            },
+            "shadow": true,
+            "shadowColor": "#000000",
+            "shadowOffset": {
+              "x": 1,
+              "y": 1
+            },
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "outline": false,
+            "outlineColor": "#000000",
+            "outlineAlpha": 1,
+            "outlineOffset": 1,
+            "shadowAlpha": 1
+          }
+        },
+        "ecaProps": {
+          "HudLabelWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [],
+        "children": []
+      },
+      {
+        "path": "PetsCollection/Container/PetsCount/Label",
+        "id": "IJwKJchc",
+        "name": "Label",
+        "type": "UITextEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0.5,
+            "y": 0
+          },
+          "anchorMax": {
+            "x": 0.5,
+            "y": 0
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0
+          },
+          "anchoredPosition": {
+            "x": 0,
+            "y": -10
+          },
+          "sizeDelta": {
+            "x": 100,
+            "y": 30
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": null,
+        "button": null,
+        "text": {
+          "value": "Pets",
+          "key": "HUD_COLLECTION_PET_COUNT",
+          "font": "Default",
+          "fontSize": 24,
+          "fontStyle": {
+            "bold": false,
+            "italic": false,
+            "underline": false
+          },
+          "color": "#ffffff",
+          "alignment": {
+            "h": "center",
+            "v": "middle"
+          },
+          "lineSpacing": 0,
+          "background": false,
+          "backgroundColor": "#e7b200",
+          "overflow": 0,
+          "backgroundRGBA": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0
+          },
+          "shadow": true,
+          "shadowColor": "#000000",
+          "shadowOffset": {
+            "x": 1,
+            "y": 1
+          },
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "outline": false,
+          "outlineColor": "#000000",
+          "outlineAlpha": 1,
+          "outlineOffset": 1,
+          "shadowAlpha": 1
+        },
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0.5,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 0.5,
+              "y": 0
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0
+            },
+            "anchoredPosition": {
+              "x": 0,
+              "y": -10
+            },
+            "sizeDelta": {
+              "x": 100,
+              "y": 30
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "text": {
+            "value": "Pets",
+            "key": "HUD_COLLECTION_PET_COUNT",
+            "font": "Default",
+            "fontSize": 24,
+            "fontStyle": {
+              "bold": false,
+              "italic": false,
+              "underline": false
+            },
+            "color": "#ffffff",
+            "alignment": {
+              "h": "center",
+              "v": "middle"
+            },
+            "lineSpacing": 0,
+            "background": false,
+            "backgroundColor": "#e7b200",
+            "overflow": 0,
+            "backgroundRGBA": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0
+            },
+            "shadow": true,
+            "shadowColor": "#000000",
+            "shadowOffset": {
+              "x": 1,
+              "y": 1
+            },
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "outline": false,
+            "outlineColor": "#000000",
+            "outlineAlpha": 1,
+            "outlineOffset": 1,
+            "shadowAlpha": 1
+          }
+        },
+        "ecaProps": {
+          "HudLabelWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [],
+        "children": []
+      }
+    ]
+  },
+  "entityCount": 4,
+  "spec": {
+    "nodes": [
+      {
+        "id": "QAgClHag",
+        "path": "PetsCollection/Container/PetsCount",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 1040,
+          "top": -15,
+          "width": 120,
+          "height": 120
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "FOm9BnS9",
+        "path": "PetsCollection/Container/PetsCount/Progress",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 20,
+          "top": 20,
+          "width": 80,
+          "height": 80
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "G3sxtHPV",
+        "path": "PetsCollection/Container/PetsCount/PetsAmount",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 30,
+          "top": 46,
+          "width": 60,
+          "height": 28
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "IJwKJchc",
+        "path": "PetsCollection/Container/PetsCount/Label",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 100,
+          "width": 100,
+          "height": 30
+        },
+        "active": true,
+        "alpha": 100
+      }
+    ],
+    "images": [
+      {
+        "id": "QAgClHag",
+        "path": "PetsCollection/Container/PetsCount",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 1040,
+          "top": -15,
+          "width": 120,
+          "height": 120
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/Buttons/SkillButtonBG.png",
+        "sprite": {
+          "key": "Assets/Sprites/Buttons/SkillButtonBG.png",
+          "declaredKey": "Assets/Sprites/Buttons/SkillButtonBG.png",
+          "declaredKeys": [
+            "Assets/Sprites/Buttons/SkillButtonBG.png"
+          ],
+          "fileId": "vp527gybpr-mincvg4z-pp4iuvf2pc",
+          "output": "./assets/ui-sprites/collection/Buttons__SkillButtonBG.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/PetsCount",
+            "PetsCollection/Container/MutationsCount",
+            "PetsCollection/Container/WeathersCount"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "width": 152,
+          "height": 152
+        },
+        "image": {
+          "source": {
+            "fileId": "vp527gybpr-mincvg4z-pp4iuvf2pc",
+            "filePath": "Assets\\Sprites\\Buttons\\SkillButtonBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/Buttons/SkillButtonBG.png"
+        },
+        "tint": "#ffffff"
+      },
+      {
+        "id": "FOm9BnS9",
+        "path": "PetsCollection/Container/PetsCount/Progress",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 20,
+          "top": 20,
+          "width": 80,
+          "height": 80
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/Guides/GuideCircle.png",
+        "sprite": {
+          "key": "Assets/Sprites/Guides/GuideCircle.png",
+          "declaredKey": "Assets/Sprites/Guides/GuideCircle.png",
+          "declaredKeys": [
+            "Assets/Sprites/Guides/GuideCircle.png"
+          ],
+          "fileId": "s3zv96erpn-mg4ze9yz-hgh0an9w9es",
+          "output": "./assets/ui-sprites/collection/Guides__GuideCircle.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/PetsCount/Progress",
+            "PetsCollection/Container/MutationsCount/Progress",
+            "PetsCollection/Container/WeathersCount/Progress"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "width": 88,
+          "height": 88
+        },
+        "image": {
+          "source": {
+            "fileId": "s3zv96erpn-mg4ze9yz-hgh0an9w9es",
+            "filePath": "Assets\\Sprites\\Guides\\GuideCircle.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 3,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 4,
+          "fillAmount": 0.3,
+          "invertFill": true,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/Guides/GuideCircle.png"
+        },
+        "tint": "#ffffff"
+      }
+    ],
+    "shapes": [
+      {
+        "id": "QAgClHag",
+        "path": "PetsCollection/Container/PetsCount",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 1040,
+          "top": -15,
+          "width": 120,
+          "height": 120
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#ffffff",
+        "background": null
+      },
+      {
+        "id": "FOm9BnS9",
+        "path": "PetsCollection/Container/PetsCount/Progress",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 20,
+          "top": 20,
+          "width": 80,
+          "height": 80
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#ffffff",
+        "background": null
+      },
+      {
+        "id": "G3sxtHPV",
+        "path": "PetsCollection/Container/PetsCount/PetsAmount",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 30,
+          "top": 46,
+          "width": 60,
+          "height": 28
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#e7b200",
+        "background": false
+      },
+      {
+        "id": "IJwKJchc",
+        "path": "PetsCollection/Container/PetsCount/Label",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 100,
+          "width": 100,
+          "height": 30
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#e7b200",
+        "background": false
+      }
+    ],
+    "texts": [
+      {
+        "id": "G3sxtHPV",
+        "path": "PetsCollection/Container/PetsCount/PetsAmount",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 30,
+          "top": 46,
+          "width": 60,
+          "height": 28
+        },
+        "active": true,
+        "alpha": 100,
+        "value": "26/272",
+        "key": "",
+        "font": "Default",
+        "fontSize": 26,
+        "fontStyle": {
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        "color": "#FFFFFF",
+        "alignment": {
+          "h": "center",
+          "v": "bottom"
+        },
+        "lineSpacing": 0,
+        "background": false,
+        "backgroundColor": "#e7b200",
+        "overflow": 0,
+        "backgroundRGBA": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "shadow": true,
+        "shadowColor": "#000000",
+        "shadowOffset": {
+          "x": 1,
+          "y": 1
+        },
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "outline": false,
+        "outlineColor": "#000000",
+        "outlineAlpha": 1,
+        "outlineOffset": 1,
+        "shadowAlpha": 1,
+        "localization": null
+      },
+      {
+        "id": "IJwKJchc",
+        "path": "PetsCollection/Container/PetsCount/Label",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 100,
+          "width": 100,
+          "height": 30
+        },
+        "active": true,
+        "alpha": 100,
+        "value": "Pets",
+        "key": "HUD_COLLECTION_PET_COUNT",
+        "font": "Default",
+        "fontSize": 24,
+        "fontStyle": {
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        "color": "#ffffff",
+        "alignment": {
+          "h": "center",
+          "v": "middle"
+        },
+        "lineSpacing": 0,
+        "background": false,
+        "backgroundColor": "#e7b200",
+        "overflow": 0,
+        "backgroundRGBA": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "shadow": true,
+        "shadowColor": "#000000",
+        "shadowOffset": {
+          "x": 1,
+          "y": 1
+        },
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "outline": false,
+        "outlineColor": "#000000",
+        "outlineAlpha": 1,
+        "outlineOffset": 1,
+        "shadowAlpha": 1,
+        "localization": {
+          "en": "Pets",
+          "vi": "Thú Cưng"
+        }
+      }
+    ]
+  },
+  "template": {
+    "op": "add",
+    "parent": "PetsCollection",
+    "parentId": "CyEjtaLS",
+    "reason": "Template progress-counter; slot: visible = PetsCollection/Container/PetsCount.active; label = PetsCollection/Container/PetsCount/PetsAmount.text.value; art = PetsCollection/Container/PetsCount.image.spriteKey; tint = PetsCollection/Container/PetsCount.image.color; progress = PetsCollection/Container/PetsCount/Progress.image.fillAmount",
+    "entity": {
+      "id": "uic-progress-counter-QAgClHag",
+      "name": "PetsCount",
+      "type": "UIImageEntity",
+      "children": [
+        {
+          "id": "uic-progress-counter-FOm9BnS9",
+          "name": "Progress",
+          "type": "UIImageEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 0,
+              "y": 0
+            },
+            "sizeDelta": {
+              "x": -40,
+              "y": -40
+            }
+          },
+          "image": {
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "fillType": 3,
+            "centerInvisible": false,
+            "fillDir": 4,
+            "fillAmount": 0.3,
+            "invertFill": true,
+            "spriteKey": "Assets/Sprites/Guides/GuideCircle.png"
+          }
+        },
+        {
+          "id": "uic-progress-counter-G3sxtHPV",
+          "name": "PetsAmount",
+          "type": "UITextEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 0,
+              "y": 0
+            },
+            "sizeDelta": {
+              "x": -60,
+              "y": -92
+            }
+          },
+          "text": {
+            "value": "26/272",
+            "key": "",
+            "fontSize": 26,
+            "fontStyle": {
+              "bold": false,
+              "italic": false,
+              "underline": false
+            },
+            "color": "#FFFFFF",
+            "alignment": {
+              "h": "center",
+              "v": "bottom"
+            },
+            "lineSpacing": 0,
+            "background": false,
+            "backgroundColor": "#e7b200",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "shadowOffset": {
+              "x": 1,
+              "y": 1
+            },
+            "outline": false,
+            "outlineColor": "#000000",
+            "outlineAlpha": 1,
+            "outlineOffset": 1,
+            "shadowAlpha": 1
+          }
+        },
+        {
+          "id": "uic-progress-counter-IJwKJchc",
+          "name": "Label",
+          "type": "UITextEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0.5,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 0.5,
+              "y": 0
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0
+            },
+            "anchoredPosition": {
+              "x": 0,
+              "y": -10
+            },
+            "sizeDelta": {
+              "x": 100,
+              "y": 30
+            }
+          },
+          "text": {
+            "value": "Pets",
+            "key": "HUD_COLLECTION_PET_COUNT",
+            "fontSize": 24,
+            "fontStyle": {
+              "bold": false,
+              "italic": false,
+              "underline": false
+            },
+            "color": "#ffffff",
+            "alignment": {
+              "h": "center",
+              "v": "middle"
+            },
+            "lineSpacing": 0,
+            "background": false,
+            "backgroundColor": "#e7b200",
+            "shadow": true,
+            "shadowColor": "#000000",
+            "shadowOffset": {
+              "x": 1,
+              "y": 1
+            },
+            "outline": false,
+            "outlineColor": "#000000",
+            "outlineAlpha": 1,
+            "outlineOffset": 1,
+            "shadowAlpha": 1
+          }
+        }
+      ],
+      "active": true,
+      "alpha": 100,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchorMax": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchoredPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "sizeDelta": {
+          "x": 120,
+          "y": 120
+        }
+      },
+      "image": {
+        "color": "#ffffff",
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "fillType": 1,
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "spriteKey": "Assets/Sprites/Buttons/SkillButtonBG.png"
+      }
+    }
+  },
+  "templateOmitted": [
+    "PetsCollection/Container/PetsCount/Progress: image.source.fileId",
+    "PetsCollection/Container/PetsCount/Progress: image.source.filePath",
+    "PetsCollection/Container/PetsCount/Progress: image.source._tag.type",
+    "PetsCollection/Container/PetsCount/Progress: image.source.fileType",
+    "PetsCollection/Container/PetsCount/Progress: image.slicedBorder.left",
+    "PetsCollection/Container/PetsCount/Progress: image.slicedBorder.right",
+    "PetsCollection/Container/PetsCount/Progress: image.slicedBorder.top",
+    "PetsCollection/Container/PetsCount/Progress: image.slicedBorder.bottom",
+    "PetsCollection/Container/PetsCount/Progress: image.tiledBorder.left",
+    "PetsCollection/Container/PetsCount/Progress: image.tiledBorder.right",
+    "PetsCollection/Container/PetsCount/Progress: image.tiledBorder.top",
+    "PetsCollection/Container/PetsCount/Progress: image.tiledBorder.bottom",
+    "PetsCollection/Container/PetsCount/Progress: image.flip",
+    "PetsCollection/Container/PetsCount/Progress: image.gradient",
+    "PetsCollection/Container/PetsCount/Progress: image.gradientTop.r",
+    "PetsCollection/Container/PetsCount/Progress: image.gradientTop.g",
+    "PetsCollection/Container/PetsCount/Progress: image.gradientTop.b",
+    "PetsCollection/Container/PetsCount/Progress: image.gradientTop.a",
+    "PetsCollection/Container/PetsCount/Progress: image.gradientBottom.r",
+    "PetsCollection/Container/PetsCount/Progress: image.gradientBottom.g",
+    "PetsCollection/Container/PetsCount/Progress: image.gradientBottom.b",
+    "PetsCollection/Container/PetsCount/Progress: image.gradientBottom.a",
+    "PetsCollection/Container/PetsCount/Progress: image.isApplyAnimation",
+    "PetsCollection/Container/PetsCount/Progress: image.animationAtlasID",
+    "PetsCollection/Container/PetsCount/Progress: image.animationFrameRate",
+    "PetsCollection/Container/PetsCount/Progress: image.animationLoop",
+    "PetsCollection/Container/PetsCount/PetsAmount: text.font",
+    "PetsCollection/Container/PetsCount/PetsAmount: text.overflow",
+    "PetsCollection/Container/PetsCount/PetsAmount: text.backgroundRGBA.r",
+    "PetsCollection/Container/PetsCount/PetsAmount: text.backgroundRGBA.g",
+    "PetsCollection/Container/PetsCount/PetsAmount: text.backgroundRGBA.b",
+    "PetsCollection/Container/PetsCount/PetsAmount: text.backgroundRGBA.a",
+    "PetsCollection/Container/PetsCount/PetsAmount: text.gradient",
+    "PetsCollection/Container/PetsCount/PetsAmount: text.gradientTop.r",
+    "PetsCollection/Container/PetsCount/PetsAmount: text.gradientTop.g",
+    "PetsCollection/Container/PetsCount/PetsAmount: text.gradientTop.b",
+    "PetsCollection/Container/PetsCount/PetsAmount: text.gradientTop.a",
+    "PetsCollection/Container/PetsCount/PetsAmount: text.gradientBottom.r",
+    "PetsCollection/Container/PetsCount/PetsAmount: text.gradientBottom.g",
+    "PetsCollection/Container/PetsCount/PetsAmount: text.gradientBottom.b",
+    "PetsCollection/Container/PetsCount/PetsAmount: text.gradientBottom.a",
+    "PetsCollection/Container/PetsCount/Label: text.font",
+    "PetsCollection/Container/PetsCount/Label: text.overflow",
+    "PetsCollection/Container/PetsCount/Label: text.backgroundRGBA.r",
+    "PetsCollection/Container/PetsCount/Label: text.backgroundRGBA.g",
+    "PetsCollection/Container/PetsCount/Label: text.backgroundRGBA.b",
+    "PetsCollection/Container/PetsCount/Label: text.backgroundRGBA.a",
+    "PetsCollection/Container/PetsCount/Label: text.gradient",
+    "PetsCollection/Container/PetsCount/Label: text.gradientTop.r",
+    "PetsCollection/Container/PetsCount/Label: text.gradientTop.g",
+    "PetsCollection/Container/PetsCount/Label: text.gradientTop.b",
+    "PetsCollection/Container/PetsCount/Label: text.gradientTop.a",
+    "PetsCollection/Container/PetsCount/Label: text.gradientBottom.r",
+    "PetsCollection/Container/PetsCount/Label: text.gradientBottom.g",
+    "PetsCollection/Container/PetsCount/Label: text.gradientBottom.b",
+    "PetsCollection/Container/PetsCount/Label: text.gradientBottom.a",
+    "PetsCollection/Container/PetsCount: image.source.fileId",
+    "PetsCollection/Container/PetsCount: image.source.filePath",
+    "PetsCollection/Container/PetsCount: image.source._tag.type",
+    "PetsCollection/Container/PetsCount: image.source.fileType",
+    "PetsCollection/Container/PetsCount: image.slicedBorder.left",
+    "PetsCollection/Container/PetsCount: image.slicedBorder.right",
+    "PetsCollection/Container/PetsCount: image.slicedBorder.top",
+    "PetsCollection/Container/PetsCount: image.slicedBorder.bottom",
+    "PetsCollection/Container/PetsCount: image.tiledBorder.left",
+    "PetsCollection/Container/PetsCount: image.tiledBorder.right",
+    "PetsCollection/Container/PetsCount: image.tiledBorder.top",
+    "PetsCollection/Container/PetsCount: image.tiledBorder.bottom",
+    "PetsCollection/Container/PetsCount: image.flip",
+    "PetsCollection/Container/PetsCount: image.gradient",
+    "PetsCollection/Container/PetsCount: image.gradientTop.r",
+    "PetsCollection/Container/PetsCount: image.gradientTop.g",
+    "PetsCollection/Container/PetsCount: image.gradientTop.b",
+    "PetsCollection/Container/PetsCount: image.gradientTop.a",
+    "PetsCollection/Container/PetsCount: image.gradientBottom.r",
+    "PetsCollection/Container/PetsCount: image.gradientBottom.g",
+    "PetsCollection/Container/PetsCount: image.gradientBottom.b",
+    "PetsCollection/Container/PetsCount: image.gradientBottom.a",
+    "PetsCollection/Container/PetsCount: image.isApplyAnimation",
+    "PetsCollection/Container/PetsCount: image.animationAtlasID",
+    "PetsCollection/Container/PetsCount: image.animationFrameRate",
+    "PetsCollection/Container/PetsCount: image.animationLoop"
+  ],
+  "stateEvidence": [
+    {
+      "name": "Chưa có tiến độ",
+      "ruleSource": "counters",
+      "rule": {
+        "pets": {
+          "owned": "GetPCPetsCountByRarity",
+          "total": "GetCollectionPetIdsByRarity.length",
+          "source": "Assets/Scripts/HUDs/HudCollection.fcg:572"
+        },
+        "mutations": {
+          "owned": "GetPCMutationsCountByRarity",
+          "total": "GetPetCountByRarity * (GetMutationCount - 1)",
+          "source": "Assets/Scripts/Manager/CollectionManager.fcg:406"
+        },
+        "weathers": {
+          "owned": "GetPCWeathersCountByRarity",
+          "total": "GetPetCountByRarity * (GetWeatherEffectCount - WEATHER_START_INDEX + 1)",
+          "source": "Assets/Scripts/Manager/CollectionManager.fcg:519"
+        },
+        "progress": "owned / total; 0 when total <= 0 or owned < 0",
+        "source": "Assets/Scripts/HUDs/HudCollection.fcg:624"
+      }
+    }
+  ],
+  "usedBy": [
+    "list-popup"
+  ]
+}

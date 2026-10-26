@@ -1,0 +1,6076 @@
+{
+  "id": "tab-bar",
+  "name": "Dải tab rarity",
+  "sourcePath": "PetsCollection/Container/RarityTabsLayout",
+  "sourceId": "i8q67SIt",
+  "group": "Ghép",
+  "status": "real",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "PetsCollection/Container/RarityTabsLayout",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "path": "PetsCollection/Container/RarityTabsLayout/AllTabButton/Text",
+      "field": "text.key",
+      "default": "HUD_COLLECTION_ALL",
+      "sample": "Nội dung mẫu"
+    },
+    {
+      "name": "art",
+      "type": "sprite",
+      "path": "PetsCollection/Container/RarityTabsLayout/AllTabButton",
+      "field": "button.spriteKey",
+      "default": "Assets/Sprites/NewAssets/LongSelectTabBG.png"
+    }
+  ],
+  "states": [],
+  "usedIn": [
+    {
+      "screen": "collection",
+      "note": "Có subtree trong PetsCollection.ui"
+    },
+    {
+      "screen": "shop",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    },
+    {
+      "screen": "mission",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    }
+  ],
+  "composedOf": [
+    "tab-button"
+  ],
+  "notes": [
+    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection."
+  ],
+  "source": "Assets/HUDs/PetsCollection.ui",
+  "sourceRect": {
+    "left": 16,
+    "top": 60,
+    "width": 190,
+    "height": 540
+  },
+  "referenceSize": {
+    "width": 190,
+    "height": 540
+  },
+  "tree": {
+    "path": "PetsCollection/Container/RarityTabsLayout",
+    "id": "i8q67SIt",
+    "name": "RarityTabsLayout",
+    "type": "UILayoutEntityV2",
+    "active": true,
+    "transform": {
+      "rotate": 0,
+      "anchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchoredPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sizeDelta": {
+        "x": 190,
+        "y": 540
+      }
+    },
+    "alpha": 100,
+    "priority": 0,
+    "image": null,
+    "button": null,
+    "text": null,
+    "layout": {
+      "enable": true,
+      "type": "grid",
+      "corner": 0,
+      "offset": {
+        "up": 0,
+        "down": 0,
+        "left": 0,
+        "right": 0
+      },
+      "space": {
+        "x": 0,
+        "y": 7
+      },
+      "size": {
+        "x": 190,
+        "y": 50
+      },
+      "constraint": 0,
+      "direction": 1,
+      "fixedRowCount": 2,
+      "fixedColumnCount": 2,
+      "tableOffset": {
+        "up": 0,
+        "down": 0,
+        "left": 0,
+        "right": 0
+      },
+      "tableSpace": 0,
+      "sortType": 0,
+      "ignoreInactive": false
+    },
+    "propsData": {
+      "activeSelf": true,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0,
+          "y": 1
+        },
+        "anchorMax": {
+          "x": 0,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 1
+        },
+        "anchoredPosition": {
+          "x": 16,
+          "y": -60
+        },
+        "sizeDelta": {
+          "x": 190,
+          "y": 540
+        }
+      },
+      "alpha": 100,
+      "priority": 0,
+      "layout": {
+        "enable": true,
+        "type": "grid",
+        "corner": 0,
+        "offset": {
+          "up": 0,
+          "down": 0,
+          "left": 0,
+          "right": 0
+        },
+        "space": {
+          "x": 0,
+          "y": 7
+        },
+        "size": {
+          "x": 190,
+          "y": 50
+        },
+        "constraint": 0,
+        "direction": 1,
+        "fixedRowCount": 2,
+        "fixedColumnCount": 2,
+        "tableOffset": {
+          "up": 0,
+          "down": 0,
+          "left": 0,
+          "right": 0
+        },
+        "tableSpace": 0,
+        "sortType": 0,
+        "ignoreInactive": false
+      }
+    },
+    "ecaProps": {
+      "HudLayout": {},
+      "HudWidget": {},
+      "Entity": {}
+    },
+    "unsupported": [],
+    "children": [
+      {
+        "path": "PetsCollection/Container/RarityTabsLayout/AllTabButton",
+        "id": "Ss6rC1EV",
+        "name": "AllTabButton",
+        "type": "UIButtonEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0.5
+          },
+          "anchorMax": {
+            "x": 0,
+            "y": 0.5
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 95,
+            "y": 245
+          },
+          "sizeDelta": {
+            "x": 190,
+            "y": 50
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": null,
+        "button": {
+          "spriteName": {
+            "fileId": "8ildizw7xxo-mu2ohzc9-rtkaiq296jo",
+            "filePath": "Assets\\Sprites\\NewAssets\\LongSelectTabBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 2,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/NewAssets/LongSelectTabBG.png"
+        },
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 95,
+              "y": 245
+            },
+            "sizeDelta": {
+              "x": 190,
+              "y": 50
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "button": {
+            "spriteName": {
+              "fileId": "8ildizw7xxo-mu2ohzc9-rtkaiq296jo",
+              "filePath": "Assets\\Sprites\\NewAssets\\LongSelectTabBG.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "normal": "#FFFFFF",
+            "highlight": "#e2a222",
+            "pressed": "#C5C5C5",
+            "disabled": "#494949",
+            "onClicks": [],
+            "enableBorderImage": true,
+            "clickHandlers": [],
+            "disableCollider": false,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "flip": 0,
+            "gradient": 2,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudButtonWidget": {
+            "PROP_45691568": {
+              "type": "CustomEnum90516480",
+              "value": "E37191476"
+            }
+          },
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "button.onClicks",
+          "button.clickHandlers"
+        ],
+        "children": [
+          {
+            "path": "PetsCollection/Container/RarityTabsLayout/AllTabButton/Text",
+            "id": "fxL1KQRT",
+            "name": "Text",
+            "type": "UITextEntity",
+            "active": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0,
+                "y": 0.5
+              },
+              "anchorMax": {
+                "x": 0,
+                "y": 0.5
+              },
+              "pivot": {
+                "x": 0,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 10,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 145,
+                "y": 45
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "image": null,
+            "button": null,
+            "text": {
+              "value": "ALL",
+              "key": "HUD_COLLECTION_ALL",
+              "font": "Default",
+              "fontSize": 28,
+              "fontStyle": {
+                "bold": false,
+                "italic": false,
+                "underline": false
+              },
+              "color": "#E5FAFE",
+              "alignment": {
+                "h": "left",
+                "v": "middle"
+              },
+              "lineSpacing": 0,
+              "background": false,
+              "backgroundColor": "#e7b200",
+              "overflow": 0,
+              "backgroundRGBA": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+              },
+              "shadow": false,
+              "shadowColor": "#000000",
+              "shadowOffset": {
+                "x": 1,
+                "y": 1
+              },
+              "gradient": 0,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "outline": false,
+              "outlineColor": "#000000",
+              "outlineAlpha": 1,
+              "outlineOffset": 1,
+              "shadowAlpha": 1
+            },
+            "layout": null,
+            "propsData": {
+              "activeSelf": true,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchorMax": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 10,
+                  "y": 0
+                },
+                "sizeDelta": {
+                  "x": 145,
+                  "y": 45
+                }
+              },
+              "alpha": 100,
+              "priority": 0,
+              "text": {
+                "value": "ALL",
+                "key": "HUD_COLLECTION_ALL",
+                "font": "Default",
+                "fontSize": 28,
+                "fontStyle": {
+                  "bold": false,
+                  "italic": false,
+                  "underline": false
+                },
+                "color": "#E5FAFE",
+                "alignment": {
+                  "h": "left",
+                  "v": "middle"
+                },
+                "lineSpacing": 0,
+                "background": false,
+                "backgroundColor": "#e7b200",
+                "overflow": 0,
+                "backgroundRGBA": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 0
+                },
+                "shadow": false,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "x": 1,
+                  "y": 1
+                },
+                "gradient": 0,
+                "gradientTop": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "gradientBottom": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "outline": false,
+                "outlineColor": "#000000",
+                "outlineAlpha": 1,
+                "outlineOffset": 1,
+                "shadowAlpha": 1
+              }
+            },
+            "ecaProps": {
+              "HudLabelWidget": {},
+              "HudWidget": {},
+              "Entity": {}
+            },
+            "unsupported": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "PetsCollection/Container/RarityTabsLayout/CommonTabButton",
+        "id": "pYbPgX1w",
+        "name": "CommonTabButton",
+        "type": "UIButtonEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0.5
+          },
+          "anchorMax": {
+            "x": 0,
+            "y": 0.5
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 95,
+            "y": 188
+          },
+          "sizeDelta": {
+            "x": 190,
+            "y": 50
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": null,
+        "button": {
+          "spriteName": {
+            "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+            "filePath": "Assets\\Sprites\\NewAssets\\NormalTabBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 2,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/NewAssets/NormalTabBG.png"
+        },
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 95,
+              "y": 188
+            },
+            "sizeDelta": {
+              "x": 190,
+              "y": 50
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "button": {
+            "spriteName": {
+              "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+              "filePath": "Assets\\Sprites\\NewAssets\\NormalTabBG.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "normal": "#FFFFFF",
+            "highlight": "#e2a222",
+            "pressed": "#C5C5C5",
+            "disabled": "#494949",
+            "onClicks": [],
+            "enableBorderImage": true,
+            "clickHandlers": [],
+            "disableCollider": false,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "flip": 0,
+            "gradient": 2,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudButtonWidget": {
+            "PROP_45691568": {
+              "type": "CustomEnum90516480",
+              "value": "E86168789"
+            }
+          },
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "button.onClicks",
+          "button.clickHandlers"
+        ],
+        "children": [
+          {
+            "path": "PetsCollection/Container/RarityTabsLayout/CommonTabButton/Text",
+            "id": "SkctdxIw",
+            "name": "Text",
+            "type": "UITextEntity",
+            "active": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0,
+                "y": 0.5
+              },
+              "anchorMax": {
+                "x": 0,
+                "y": 0.5
+              },
+              "pivot": {
+                "x": 0,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 10,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 145,
+                "y": 45
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "image": null,
+            "button": null,
+            "text": {
+              "value": "COMMON",
+              "key": "RARITY_COMMON",
+              "font": "Default",
+              "fontSize": 28,
+              "fontStyle": {
+                "bold": false,
+                "italic": false,
+                "underline": false
+              },
+              "color": "#1f64c4",
+              "alignment": {
+                "h": "left",
+                "v": "middle"
+              },
+              "lineSpacing": 0,
+              "background": false,
+              "backgroundColor": "#e7b200",
+              "overflow": 0,
+              "backgroundRGBA": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+              },
+              "shadow": false,
+              "shadowColor": "#000000",
+              "shadowOffset": {
+                "x": 1,
+                "y": 1
+              },
+              "gradient": 0,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "outline": false,
+              "outlineColor": "#000000",
+              "outlineAlpha": 1,
+              "outlineOffset": 1,
+              "shadowAlpha": 1
+            },
+            "layout": null,
+            "propsData": {
+              "activeSelf": true,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchorMax": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 10,
+                  "y": 0
+                },
+                "sizeDelta": {
+                  "x": 145,
+                  "y": 45
+                }
+              },
+              "alpha": 100,
+              "priority": 0,
+              "text": {
+                "value": "COMMON",
+                "key": "RARITY_COMMON",
+                "font": "Default",
+                "fontSize": 28,
+                "fontStyle": {
+                  "bold": false,
+                  "italic": false,
+                  "underline": false
+                },
+                "color": "#1f64c4",
+                "alignment": {
+                  "h": "left",
+                  "v": "middle"
+                },
+                "lineSpacing": 0,
+                "background": false,
+                "backgroundColor": "#e7b200",
+                "overflow": 0,
+                "backgroundRGBA": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 0
+                },
+                "shadow": false,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "x": 1,
+                  "y": 1
+                },
+                "gradient": 0,
+                "gradientTop": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "gradientBottom": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "outline": false,
+                "outlineColor": "#000000",
+                "outlineAlpha": 1,
+                "outlineOffset": 1,
+                "shadowAlpha": 1
+              }
+            },
+            "ecaProps": {
+              "HudLabelWidget": {},
+              "HudWidget": {},
+              "Entity": {}
+            },
+            "unsupported": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "PetsCollection/Container/RarityTabsLayout/RareTabButton",
+        "id": "aXFzoEAP",
+        "name": "RareTabButton",
+        "type": "UIButtonEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0.5
+          },
+          "anchorMax": {
+            "x": 0,
+            "y": 0.5
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 95,
+            "y": 131
+          },
+          "sizeDelta": {
+            "x": 190,
+            "y": 50
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": null,
+        "button": {
+          "spriteName": {
+            "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+            "filePath": "Assets\\Sprites\\NewAssets\\NormalTabBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 2,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/NewAssets/NormalTabBG.png"
+        },
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 95,
+              "y": 131
+            },
+            "sizeDelta": {
+              "x": 190,
+              "y": 50
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "button": {
+            "spriteName": {
+              "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+              "filePath": "Assets\\Sprites\\NewAssets\\NormalTabBG.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "normal": "#FFFFFF",
+            "highlight": "#e2a222",
+            "pressed": "#C5C5C5",
+            "disabled": "#494949",
+            "onClicks": [],
+            "enableBorderImage": true,
+            "clickHandlers": [],
+            "disableCollider": false,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "flip": 0,
+            "gradient": 2,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudButtonWidget": {
+            "PROP_45691568": {
+              "type": "CustomEnum90516480",
+              "value": "E17926222"
+            }
+          },
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "button.onClicks",
+          "button.clickHandlers"
+        ],
+        "children": [
+          {
+            "path": "PetsCollection/Container/RarityTabsLayout/RareTabButton/Text",
+            "id": "hwHDdZ8w",
+            "name": "Text",
+            "type": "UITextEntity",
+            "active": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0,
+                "y": 0.5
+              },
+              "anchorMax": {
+                "x": 0,
+                "y": 0.5
+              },
+              "pivot": {
+                "x": 0,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 10,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 145,
+                "y": 45
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "image": null,
+            "button": null,
+            "text": {
+              "value": "RARE",
+              "key": "RARITY_RARE",
+              "font": "Default",
+              "fontSize": 28,
+              "fontStyle": {
+                "bold": false,
+                "italic": false,
+                "underline": false
+              },
+              "color": "#1f64c4",
+              "alignment": {
+                "h": "left",
+                "v": "middle"
+              },
+              "lineSpacing": 0,
+              "background": false,
+              "backgroundColor": "#e7b200",
+              "overflow": 0,
+              "backgroundRGBA": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+              },
+              "shadow": false,
+              "shadowColor": "#000000",
+              "shadowOffset": {
+                "x": 1,
+                "y": 1
+              },
+              "gradient": 0,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "outline": false,
+              "outlineColor": "#000000",
+              "outlineAlpha": 1,
+              "outlineOffset": 1,
+              "shadowAlpha": 1
+            },
+            "layout": null,
+            "propsData": {
+              "activeSelf": true,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchorMax": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 10,
+                  "y": 0
+                },
+                "sizeDelta": {
+                  "x": 145,
+                  "y": 45
+                }
+              },
+              "alpha": 100,
+              "priority": 0,
+              "text": {
+                "value": "RARE",
+                "key": "RARITY_RARE",
+                "font": "Default",
+                "fontSize": 28,
+                "fontStyle": {
+                  "bold": false,
+                  "italic": false,
+                  "underline": false
+                },
+                "color": "#1f64c4",
+                "alignment": {
+                  "h": "left",
+                  "v": "middle"
+                },
+                "lineSpacing": 0,
+                "background": false,
+                "backgroundColor": "#e7b200",
+                "overflow": 0,
+                "backgroundRGBA": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 0
+                },
+                "shadow": false,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "x": 1,
+                  "y": 1
+                },
+                "gradient": 0,
+                "gradientTop": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "gradientBottom": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "outline": false,
+                "outlineColor": "#000000",
+                "outlineAlpha": 1,
+                "outlineOffset": 1,
+                "shadowAlpha": 1
+              }
+            },
+            "ecaProps": {
+              "HudLabelWidget": {},
+              "HudWidget": {},
+              "Entity": {}
+            },
+            "unsupported": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "PetsCollection/Container/RarityTabsLayout/EpicTabButton",
+        "id": "BHGjULlj",
+        "name": "EpicTabButton",
+        "type": "UIButtonEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0.5
+          },
+          "anchorMax": {
+            "x": 0,
+            "y": 0.5
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 95,
+            "y": 74
+          },
+          "sizeDelta": {
+            "x": 190,
+            "y": 50
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": null,
+        "button": {
+          "spriteName": {
+            "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+            "filePath": "Assets\\Sprites\\NewAssets\\NormalTabBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 2,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/NewAssets/NormalTabBG.png"
+        },
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 95,
+              "y": 74
+            },
+            "sizeDelta": {
+              "x": 190,
+              "y": 50
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "button": {
+            "spriteName": {
+              "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+              "filePath": "Assets\\Sprites\\NewAssets\\NormalTabBG.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "normal": "#FFFFFF",
+            "highlight": "#e2a222",
+            "pressed": "#C5C5C5",
+            "disabled": "#494949",
+            "onClicks": [],
+            "enableBorderImage": true,
+            "clickHandlers": [],
+            "disableCollider": false,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "flip": 0,
+            "gradient": 2,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudButtonWidget": {
+            "PROP_45691568": {
+              "type": "CustomEnum90516480",
+              "value": "E26119120"
+            }
+          },
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "button.onClicks",
+          "button.clickHandlers"
+        ],
+        "children": [
+          {
+            "path": "PetsCollection/Container/RarityTabsLayout/EpicTabButton/Text",
+            "id": "DQrkFcDg",
+            "name": "Text",
+            "type": "UITextEntity",
+            "active": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0,
+                "y": 0.5
+              },
+              "anchorMax": {
+                "x": 0,
+                "y": 0.5
+              },
+              "pivot": {
+                "x": 0,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 10,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 145,
+                "y": 45
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "image": null,
+            "button": null,
+            "text": {
+              "value": "EPIC",
+              "key": "RARITY_EPIC",
+              "font": "Default",
+              "fontSize": 28,
+              "fontStyle": {
+                "bold": false,
+                "italic": false,
+                "underline": false
+              },
+              "color": "#1f64c4",
+              "alignment": {
+                "h": "left",
+                "v": "middle"
+              },
+              "lineSpacing": 0,
+              "background": false,
+              "backgroundColor": "#e7b200",
+              "overflow": 0,
+              "backgroundRGBA": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+              },
+              "shadow": false,
+              "shadowColor": "#000000",
+              "shadowOffset": {
+                "x": 1,
+                "y": 1
+              },
+              "gradient": 0,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "outline": false,
+              "outlineColor": "#000000",
+              "outlineAlpha": 1,
+              "outlineOffset": 1,
+              "shadowAlpha": 1
+            },
+            "layout": null,
+            "propsData": {
+              "activeSelf": true,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchorMax": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 10,
+                  "y": 0
+                },
+                "sizeDelta": {
+                  "x": 145,
+                  "y": 45
+                }
+              },
+              "alpha": 100,
+              "priority": 0,
+              "text": {
+                "value": "EPIC",
+                "key": "RARITY_EPIC",
+                "font": "Default",
+                "fontSize": 28,
+                "fontStyle": {
+                  "bold": false,
+                  "italic": false,
+                  "underline": false
+                },
+                "color": "#1f64c4",
+                "alignment": {
+                  "h": "left",
+                  "v": "middle"
+                },
+                "lineSpacing": 0,
+                "background": false,
+                "backgroundColor": "#e7b200",
+                "overflow": 0,
+                "backgroundRGBA": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 0
+                },
+                "shadow": false,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "x": 1,
+                  "y": 1
+                },
+                "gradient": 0,
+                "gradientTop": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "gradientBottom": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "outline": false,
+                "outlineColor": "#000000",
+                "outlineAlpha": 1,
+                "outlineOffset": 1,
+                "shadowAlpha": 1
+              }
+            },
+            "ecaProps": {
+              "HudLabelWidget": {},
+              "HudWidget": {},
+              "Entity": {}
+            },
+            "unsupported": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton",
+        "id": "aX7o89kh",
+        "name": "LegendaryTabButton",
+        "type": "UIButtonEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0.5
+          },
+          "anchorMax": {
+            "x": 0,
+            "y": 0.5
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 95,
+            "y": 17
+          },
+          "sizeDelta": {
+            "x": 190,
+            "y": 50
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": null,
+        "button": {
+          "spriteName": {
+            "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+            "filePath": "Assets\\Sprites\\NewAssets\\NormalTabBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 2,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/NewAssets/NormalTabBG.png"
+        },
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 95,
+              "y": 17
+            },
+            "sizeDelta": {
+              "x": 190,
+              "y": 50
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "button": {
+            "spriteName": {
+              "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+              "filePath": "Assets\\Sprites\\NewAssets\\NormalTabBG.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "normal": "#FFFFFF",
+            "highlight": "#e2a222",
+            "pressed": "#C5C5C5",
+            "disabled": "#494949",
+            "onClicks": [],
+            "enableBorderImage": true,
+            "clickHandlers": [],
+            "disableCollider": false,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "flip": 0,
+            "gradient": 2,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudButtonWidget": {
+            "PROP_45691568": {
+              "type": "CustomEnum90516480",
+              "value": "E94680662"
+            }
+          },
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "button.onClicks",
+          "button.clickHandlers"
+        ],
+        "children": [
+          {
+            "path": "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton/Text",
+            "id": "nNQpzkum",
+            "name": "Text",
+            "type": "UITextEntity",
+            "active": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0,
+                "y": 0.5
+              },
+              "anchorMax": {
+                "x": 0,
+                "y": 0.5
+              },
+              "pivot": {
+                "x": 0,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 10,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 145,
+                "y": 45
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "image": null,
+            "button": null,
+            "text": {
+              "value": "LEGENDARY",
+              "key": "RARITY_LEGENDARY",
+              "font": "Default",
+              "fontSize": 28,
+              "fontStyle": {
+                "bold": false,
+                "italic": false,
+                "underline": false
+              },
+              "color": "#1f64c4",
+              "alignment": {
+                "h": "left",
+                "v": "middle"
+              },
+              "lineSpacing": 0,
+              "background": false,
+              "backgroundColor": "#e7b200",
+              "overflow": 0,
+              "backgroundRGBA": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+              },
+              "shadow": false,
+              "shadowColor": "#000000",
+              "shadowOffset": {
+                "x": 1,
+                "y": 1
+              },
+              "gradient": 0,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "outline": false,
+              "outlineColor": "#000000",
+              "outlineAlpha": 1,
+              "outlineOffset": 1,
+              "shadowAlpha": 1
+            },
+            "layout": null,
+            "propsData": {
+              "activeSelf": true,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchorMax": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 10,
+                  "y": 0
+                },
+                "sizeDelta": {
+                  "x": 145,
+                  "y": 45
+                }
+              },
+              "alpha": 100,
+              "priority": 0,
+              "text": {
+                "value": "LEGENDARY",
+                "key": "RARITY_LEGENDARY",
+                "font": "Default",
+                "fontSize": 28,
+                "fontStyle": {
+                  "bold": false,
+                  "italic": false,
+                  "underline": false
+                },
+                "color": "#1f64c4",
+                "alignment": {
+                  "h": "left",
+                  "v": "middle"
+                },
+                "lineSpacing": 0,
+                "background": false,
+                "backgroundColor": "#e7b200",
+                "overflow": 0,
+                "backgroundRGBA": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 0
+                },
+                "shadow": false,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "x": 1,
+                  "y": 1
+                },
+                "gradient": 0,
+                "gradientTop": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "gradientBottom": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "outline": false,
+                "outlineColor": "#000000",
+                "outlineAlpha": 1,
+                "outlineOffset": 1,
+                "shadowAlpha": 1
+              }
+            },
+            "ecaProps": {
+              "HudLabelWidget": {},
+              "HudWidget": {},
+              "Entity": {}
+            },
+            "unsupported": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "PetsCollection/Container/RarityTabsLayout/MythicTabButton",
+        "id": "Ll09Iu8l",
+        "name": "MythicTabButton",
+        "type": "UIButtonEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0.5
+          },
+          "anchorMax": {
+            "x": 0,
+            "y": 0.5
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 95,
+            "y": -40
+          },
+          "sizeDelta": {
+            "x": 190,
+            "y": 50
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": null,
+        "button": {
+          "spriteName": {
+            "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+            "filePath": "Assets\\Sprites\\NewAssets\\NormalTabBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 2,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/NewAssets/NormalTabBG.png"
+        },
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 95,
+              "y": -40
+            },
+            "sizeDelta": {
+              "x": 190,
+              "y": 50
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "button": {
+            "spriteName": {
+              "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+              "filePath": "Assets\\Sprites\\NewAssets\\NormalTabBG.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "normal": "#FFFFFF",
+            "highlight": "#e2a222",
+            "pressed": "#C5C5C5",
+            "disabled": "#494949",
+            "onClicks": [],
+            "enableBorderImage": true,
+            "clickHandlers": [],
+            "disableCollider": false,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "flip": 0,
+            "gradient": 2,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudButtonWidget": {
+            "PROP_45691568": {
+              "type": "CustomEnum90516480",
+              "value": "E39656922"
+            }
+          },
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "button.onClicks",
+          "button.clickHandlers"
+        ],
+        "children": [
+          {
+            "path": "PetsCollection/Container/RarityTabsLayout/MythicTabButton/Text",
+            "id": "KiZDbrDH",
+            "name": "Text",
+            "type": "UITextEntity",
+            "active": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0,
+                "y": 0.5
+              },
+              "anchorMax": {
+                "x": 0,
+                "y": 0.5
+              },
+              "pivot": {
+                "x": 0,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 10,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 145,
+                "y": 45
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "image": null,
+            "button": null,
+            "text": {
+              "value": "MYTHIC",
+              "key": "RARITY_MYTHIC",
+              "font": "Default",
+              "fontSize": 28,
+              "fontStyle": {
+                "bold": false,
+                "italic": false,
+                "underline": false
+              },
+              "color": "#1f64c4",
+              "alignment": {
+                "h": "left",
+                "v": "middle"
+              },
+              "lineSpacing": 0,
+              "background": false,
+              "backgroundColor": "#e7b200",
+              "overflow": 0,
+              "backgroundRGBA": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+              },
+              "shadow": false,
+              "shadowColor": "#000000",
+              "shadowOffset": {
+                "x": 1,
+                "y": 1
+              },
+              "gradient": 0,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "outline": false,
+              "outlineColor": "#000000",
+              "outlineAlpha": 1,
+              "outlineOffset": 1,
+              "shadowAlpha": 1
+            },
+            "layout": null,
+            "propsData": {
+              "activeSelf": true,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchorMax": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 10,
+                  "y": 0
+                },
+                "sizeDelta": {
+                  "x": 145,
+                  "y": 45
+                }
+              },
+              "alpha": 100,
+              "priority": 0,
+              "text": {
+                "value": "MYTHIC",
+                "key": "RARITY_MYTHIC",
+                "font": "Default",
+                "fontSize": 28,
+                "fontStyle": {
+                  "bold": false,
+                  "italic": false,
+                  "underline": false
+                },
+                "color": "#1f64c4",
+                "alignment": {
+                  "h": "left",
+                  "v": "middle"
+                },
+                "lineSpacing": 0,
+                "background": false,
+                "backgroundColor": "#e7b200",
+                "overflow": 0,
+                "backgroundRGBA": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 0
+                },
+                "shadow": false,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "x": 1,
+                  "y": 1
+                },
+                "gradient": 0,
+                "gradientTop": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "gradientBottom": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "outline": false,
+                "outlineColor": "#000000",
+                "outlineAlpha": 1,
+                "outlineOffset": 1,
+                "shadowAlpha": 1
+              }
+            },
+            "ecaProps": {
+              "HudLabelWidget": {},
+              "HudWidget": {},
+              "Entity": {}
+            },
+            "unsupported": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "PetsCollection/Container/RarityTabsLayout/ApexTabButton",
+        "id": "MOHxOi6H",
+        "name": "ApexTabButton",
+        "type": "UIButtonEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0.5
+          },
+          "anchorMax": {
+            "x": 0,
+            "y": 0.5
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 95,
+            "y": -97
+          },
+          "sizeDelta": {
+            "x": 190,
+            "y": 50
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": null,
+        "button": {
+          "spriteName": {
+            "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+            "filePath": "Assets\\Sprites\\NewAssets\\NormalTabBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 2,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/NewAssets/NormalTabBG.png"
+        },
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 95,
+              "y": -97
+            },
+            "sizeDelta": {
+              "x": 190,
+              "y": 50
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "button": {
+            "spriteName": {
+              "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+              "filePath": "Assets\\Sprites\\NewAssets\\NormalTabBG.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "normal": "#FFFFFF",
+            "highlight": "#e2a222",
+            "pressed": "#C5C5C5",
+            "disabled": "#494949",
+            "onClicks": [],
+            "enableBorderImage": true,
+            "clickHandlers": [],
+            "disableCollider": false,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "flip": 0,
+            "gradient": 2,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudButtonWidget": {
+            "PROP_45691568": {
+              "type": "CustomEnum90516480",
+              "value": "E83721567"
+            }
+          },
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "button.onClicks",
+          "button.clickHandlers"
+        ],
+        "children": [
+          {
+            "path": "PetsCollection/Container/RarityTabsLayout/ApexTabButton/Text",
+            "id": "eLwpRHdK",
+            "name": "Text",
+            "type": "UITextEntity",
+            "active": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0,
+                "y": 0.5
+              },
+              "anchorMax": {
+                "x": 0,
+                "y": 0.5
+              },
+              "pivot": {
+                "x": 0,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 10,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 145,
+                "y": 45
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "image": null,
+            "button": null,
+            "text": {
+              "value": "APEX",
+              "key": "RARITY_APEX",
+              "font": "Default",
+              "fontSize": 28,
+              "fontStyle": {
+                "bold": false,
+                "italic": false,
+                "underline": false
+              },
+              "color": "#1f64c4",
+              "alignment": {
+                "h": "left",
+                "v": "middle"
+              },
+              "lineSpacing": 0,
+              "background": false,
+              "backgroundColor": "#e7b200",
+              "overflow": 0,
+              "backgroundRGBA": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+              },
+              "shadow": false,
+              "shadowColor": "#000000",
+              "shadowOffset": {
+                "x": 1,
+                "y": 1
+              },
+              "gradient": 0,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "outline": false,
+              "outlineColor": "#000000",
+              "outlineAlpha": 1,
+              "outlineOffset": 1,
+              "shadowAlpha": 1
+            },
+            "layout": null,
+            "propsData": {
+              "activeSelf": true,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchorMax": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 10,
+                  "y": 0
+                },
+                "sizeDelta": {
+                  "x": 145,
+                  "y": 45
+                }
+              },
+              "alpha": 100,
+              "priority": 0,
+              "text": {
+                "value": "APEX",
+                "key": "RARITY_APEX",
+                "font": "Default",
+                "fontSize": 28,
+                "fontStyle": {
+                  "bold": false,
+                  "italic": false,
+                  "underline": false
+                },
+                "color": "#1f64c4",
+                "alignment": {
+                  "h": "left",
+                  "v": "middle"
+                },
+                "lineSpacing": 0,
+                "background": false,
+                "backgroundColor": "#e7b200",
+                "overflow": 0,
+                "backgroundRGBA": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 0
+                },
+                "shadow": false,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "x": 1,
+                  "y": 1
+                },
+                "gradient": 0,
+                "gradientTop": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "gradientBottom": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "outline": false,
+                "outlineColor": "#000000",
+                "outlineAlpha": 1,
+                "outlineOffset": 1,
+                "shadowAlpha": 1
+              }
+            },
+            "ecaProps": {
+              "HudLabelWidget": {},
+              "HudWidget": {},
+              "Entity": {}
+            },
+            "unsupported": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "PetsCollection/Container/RarityTabsLayout/LimitedTabButton",
+        "id": "fGyAC2jh",
+        "name": "LimitedTabButton",
+        "type": "UIButtonEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0.5
+          },
+          "anchorMax": {
+            "x": 0,
+            "y": 0.5
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 95,
+            "y": -154
+          },
+          "sizeDelta": {
+            "x": 190,
+            "y": 50
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": null,
+        "button": {
+          "spriteName": {
+            "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+            "filePath": "Assets\\Sprites\\NewAssets\\NormalTabBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 2,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/NewAssets/NormalTabBG.png"
+        },
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 95,
+              "y": -154
+            },
+            "sizeDelta": {
+              "x": 190,
+              "y": 50
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "button": {
+            "spriteName": {
+              "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+              "filePath": "Assets\\Sprites\\NewAssets\\NormalTabBG.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "normal": "#FFFFFF",
+            "highlight": "#e2a222",
+            "pressed": "#C5C5C5",
+            "disabled": "#494949",
+            "onClicks": [],
+            "enableBorderImage": true,
+            "clickHandlers": [],
+            "disableCollider": false,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "flip": 0,
+            "gradient": 2,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudButtonWidget": {
+            "PROP_45691568": {
+              "type": "CustomEnum90516480",
+              "value": "E70543394"
+            }
+          },
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "button.onClicks",
+          "button.clickHandlers"
+        ],
+        "children": [
+          {
+            "path": "PetsCollection/Container/RarityTabsLayout/LimitedTabButton/Text",
+            "id": "yKLhWxxy",
+            "name": "Text",
+            "type": "UITextEntity",
+            "active": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0,
+                "y": 0.5
+              },
+              "anchorMax": {
+                "x": 0,
+                "y": 0.5
+              },
+              "pivot": {
+                "x": 0,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 10,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 145,
+                "y": 45
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "image": null,
+            "button": null,
+            "text": {
+              "value": "LIMITED",
+              "key": "RARITY_LIMITED",
+              "font": "Default",
+              "fontSize": 28,
+              "fontStyle": {
+                "bold": false,
+                "italic": false,
+                "underline": false
+              },
+              "color": "#1f64c4",
+              "alignment": {
+                "h": "left",
+                "v": "middle"
+              },
+              "lineSpacing": 0,
+              "background": false,
+              "backgroundColor": "#e7b200",
+              "overflow": 0,
+              "backgroundRGBA": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+              },
+              "shadow": false,
+              "shadowColor": "#000000",
+              "shadowOffset": {
+                "x": 1,
+                "y": 1
+              },
+              "gradient": 0,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "outline": false,
+              "outlineColor": "#000000",
+              "outlineAlpha": 1,
+              "outlineOffset": 1,
+              "shadowAlpha": 1
+            },
+            "layout": null,
+            "propsData": {
+              "activeSelf": true,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchorMax": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 10,
+                  "y": 0
+                },
+                "sizeDelta": {
+                  "x": 145,
+                  "y": 45
+                }
+              },
+              "alpha": 100,
+              "priority": 0,
+              "text": {
+                "value": "LIMITED",
+                "key": "RARITY_LIMITED",
+                "font": "Default",
+                "fontSize": 28,
+                "fontStyle": {
+                  "bold": false,
+                  "italic": false,
+                  "underline": false
+                },
+                "color": "#1f64c4",
+                "alignment": {
+                  "h": "left",
+                  "v": "middle"
+                },
+                "lineSpacing": 0,
+                "background": false,
+                "backgroundColor": "#e7b200",
+                "overflow": 0,
+                "backgroundRGBA": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 0
+                },
+                "shadow": false,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "x": 1,
+                  "y": 1
+                },
+                "gradient": 0,
+                "gradientTop": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "gradientBottom": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "outline": false,
+                "outlineColor": "#000000",
+                "outlineAlpha": 1,
+                "outlineOffset": 1,
+                "shadowAlpha": 1
+              }
+            },
+            "ecaProps": {
+              "HudLabelWidget": {},
+              "HudWidget": {},
+              "Entity": {}
+            },
+            "unsupported": [],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "entityCount": 17,
+  "spec": {
+    "nodes": [
+      {
+        "id": "i8q67SIt",
+        "path": "PetsCollection/Container/RarityTabsLayout",
+        "type": "UILayoutEntityV2",
+        "rect": {
+          "left": 16,
+          "top": 60,
+          "width": 190,
+          "height": 540
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "Ss6rC1EV",
+        "path": "PetsCollection/Container/RarityTabsLayout/AllTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 0,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "fxL1KQRT",
+        "path": "PetsCollection/Container/RarityTabsLayout/AllTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "pYbPgX1w",
+        "path": "PetsCollection/Container/RarityTabsLayout/CommonTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 57,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "SkctdxIw",
+        "path": "PetsCollection/Container/RarityTabsLayout/CommonTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "aXFzoEAP",
+        "path": "PetsCollection/Container/RarityTabsLayout/RareTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 114,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "hwHDdZ8w",
+        "path": "PetsCollection/Container/RarityTabsLayout/RareTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "BHGjULlj",
+        "path": "PetsCollection/Container/RarityTabsLayout/EpicTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 171,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "DQrkFcDg",
+        "path": "PetsCollection/Container/RarityTabsLayout/EpicTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "aX7o89kh",
+        "path": "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 228,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "nNQpzkum",
+        "path": "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "Ll09Iu8l",
+        "path": "PetsCollection/Container/RarityTabsLayout/MythicTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 285,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "KiZDbrDH",
+        "path": "PetsCollection/Container/RarityTabsLayout/MythicTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "MOHxOi6H",
+        "path": "PetsCollection/Container/RarityTabsLayout/ApexTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 342,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "eLwpRHdK",
+        "path": "PetsCollection/Container/RarityTabsLayout/ApexTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "fGyAC2jh",
+        "path": "PetsCollection/Container/RarityTabsLayout/LimitedTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 399,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "yKLhWxxy",
+        "path": "PetsCollection/Container/RarityTabsLayout/LimitedTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100
+      }
+    ],
+    "images": [
+      {
+        "id": "Ss6rC1EV",
+        "path": "PetsCollection/Container/RarityTabsLayout/AllTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 0,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/LongSelectTabBG.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/LongSelectTabBG.png",
+          "declaredKey": "Assets/Sprites/NewAssets/LongSelectTabBG.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/LongSelectTabBG.png"
+          ],
+          "fileId": "8ildizw7xxo-mu2ohzc9-rtkaiq296jo",
+          "output": "./assets/ui-sprites/collection/NewAssets__LongSelectTabBG.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/RarityTabsLayout/AllTabButton"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 70,
+            "right": 70,
+            "top": 20,
+            "bottom": 20
+          },
+          "width": 200,
+          "height": 54
+        },
+        "image": {
+          "spriteName": {
+            "fileId": "8ildizw7xxo-mu2ohzc9-rtkaiq296jo",
+            "filePath": "Assets\\Sprites\\NewAssets\\LongSelectTabBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 2,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/NewAssets/LongSelectTabBG.png"
+        },
+        "tint": "#FFFFFF"
+      },
+      {
+        "id": "pYbPgX1w",
+        "path": "PetsCollection/Container/RarityTabsLayout/CommonTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 57,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/NormalTabBG.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/NormalTabBG.png",
+          "declaredKey": "Assets/Sprites/NewAssets/NormalTabBG.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/NormalTabBG.png"
+          ],
+          "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+          "output": "./assets/ui-sprites/collection/NewAssets__NormalTabBG.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/RarityTabsLayout/CommonTabButton",
+            "PetsCollection/Container/RarityTabsLayout/RareTabButton",
+            "PetsCollection/Container/RarityTabsLayout/EpicTabButton",
+            "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton",
+            "PetsCollection/Container/RarityTabsLayout/MythicTabButton",
+            "PetsCollection/Container/RarityTabsLayout/ApexTabButton",
+            "PetsCollection/Container/RarityTabsLayout/LimitedTabButton",
+            "PetsCollection/Container/DetailsTabsLayout/MutationsTabButton",
+            "PetsCollection/Container/DetailsTabsLayout/WeathersTabButton"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 20,
+            "right": 20,
+            "top": 20,
+            "bottom": 20
+          },
+          "width": 96,
+          "height": 98
+        },
+        "image": {
+          "spriteName": {
+            "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+            "filePath": "Assets\\Sprites\\NewAssets\\NormalTabBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 2,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/NewAssets/NormalTabBG.png"
+        },
+        "tint": "#FFFFFF"
+      },
+      {
+        "id": "aXFzoEAP",
+        "path": "PetsCollection/Container/RarityTabsLayout/RareTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 114,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/NormalTabBG.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/NormalTabBG.png",
+          "declaredKey": "Assets/Sprites/NewAssets/NormalTabBG.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/NormalTabBG.png"
+          ],
+          "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+          "output": "./assets/ui-sprites/collection/NewAssets__NormalTabBG.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/RarityTabsLayout/CommonTabButton",
+            "PetsCollection/Container/RarityTabsLayout/RareTabButton",
+            "PetsCollection/Container/RarityTabsLayout/EpicTabButton",
+            "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton",
+            "PetsCollection/Container/RarityTabsLayout/MythicTabButton",
+            "PetsCollection/Container/RarityTabsLayout/ApexTabButton",
+            "PetsCollection/Container/RarityTabsLayout/LimitedTabButton",
+            "PetsCollection/Container/DetailsTabsLayout/MutationsTabButton",
+            "PetsCollection/Container/DetailsTabsLayout/WeathersTabButton"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 20,
+            "right": 20,
+            "top": 20,
+            "bottom": 20
+          },
+          "width": 96,
+          "height": 98
+        },
+        "image": {
+          "spriteName": {
+            "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+            "filePath": "Assets\\Sprites\\NewAssets\\NormalTabBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 2,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/NewAssets/NormalTabBG.png"
+        },
+        "tint": "#FFFFFF"
+      },
+      {
+        "id": "BHGjULlj",
+        "path": "PetsCollection/Container/RarityTabsLayout/EpicTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 171,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/NormalTabBG.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/NormalTabBG.png",
+          "declaredKey": "Assets/Sprites/NewAssets/NormalTabBG.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/NormalTabBG.png"
+          ],
+          "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+          "output": "./assets/ui-sprites/collection/NewAssets__NormalTabBG.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/RarityTabsLayout/CommonTabButton",
+            "PetsCollection/Container/RarityTabsLayout/RareTabButton",
+            "PetsCollection/Container/RarityTabsLayout/EpicTabButton",
+            "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton",
+            "PetsCollection/Container/RarityTabsLayout/MythicTabButton",
+            "PetsCollection/Container/RarityTabsLayout/ApexTabButton",
+            "PetsCollection/Container/RarityTabsLayout/LimitedTabButton",
+            "PetsCollection/Container/DetailsTabsLayout/MutationsTabButton",
+            "PetsCollection/Container/DetailsTabsLayout/WeathersTabButton"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 20,
+            "right": 20,
+            "top": 20,
+            "bottom": 20
+          },
+          "width": 96,
+          "height": 98
+        },
+        "image": {
+          "spriteName": {
+            "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+            "filePath": "Assets\\Sprites\\NewAssets\\NormalTabBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 2,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/NewAssets/NormalTabBG.png"
+        },
+        "tint": "#FFFFFF"
+      },
+      {
+        "id": "aX7o89kh",
+        "path": "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 228,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/NormalTabBG.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/NormalTabBG.png",
+          "declaredKey": "Assets/Sprites/NewAssets/NormalTabBG.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/NormalTabBG.png"
+          ],
+          "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+          "output": "./assets/ui-sprites/collection/NewAssets__NormalTabBG.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/RarityTabsLayout/CommonTabButton",
+            "PetsCollection/Container/RarityTabsLayout/RareTabButton",
+            "PetsCollection/Container/RarityTabsLayout/EpicTabButton",
+            "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton",
+            "PetsCollection/Container/RarityTabsLayout/MythicTabButton",
+            "PetsCollection/Container/RarityTabsLayout/ApexTabButton",
+            "PetsCollection/Container/RarityTabsLayout/LimitedTabButton",
+            "PetsCollection/Container/DetailsTabsLayout/MutationsTabButton",
+            "PetsCollection/Container/DetailsTabsLayout/WeathersTabButton"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 20,
+            "right": 20,
+            "top": 20,
+            "bottom": 20
+          },
+          "width": 96,
+          "height": 98
+        },
+        "image": {
+          "spriteName": {
+            "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+            "filePath": "Assets\\Sprites\\NewAssets\\NormalTabBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 2,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/NewAssets/NormalTabBG.png"
+        },
+        "tint": "#FFFFFF"
+      },
+      {
+        "id": "Ll09Iu8l",
+        "path": "PetsCollection/Container/RarityTabsLayout/MythicTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 285,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/NormalTabBG.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/NormalTabBG.png",
+          "declaredKey": "Assets/Sprites/NewAssets/NormalTabBG.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/NormalTabBG.png"
+          ],
+          "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+          "output": "./assets/ui-sprites/collection/NewAssets__NormalTabBG.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/RarityTabsLayout/CommonTabButton",
+            "PetsCollection/Container/RarityTabsLayout/RareTabButton",
+            "PetsCollection/Container/RarityTabsLayout/EpicTabButton",
+            "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton",
+            "PetsCollection/Container/RarityTabsLayout/MythicTabButton",
+            "PetsCollection/Container/RarityTabsLayout/ApexTabButton",
+            "PetsCollection/Container/RarityTabsLayout/LimitedTabButton",
+            "PetsCollection/Container/DetailsTabsLayout/MutationsTabButton",
+            "PetsCollection/Container/DetailsTabsLayout/WeathersTabButton"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 20,
+            "right": 20,
+            "top": 20,
+            "bottom": 20
+          },
+          "width": 96,
+          "height": 98
+        },
+        "image": {
+          "spriteName": {
+            "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+            "filePath": "Assets\\Sprites\\NewAssets\\NormalTabBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 2,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/NewAssets/NormalTabBG.png"
+        },
+        "tint": "#FFFFFF"
+      },
+      {
+        "id": "MOHxOi6H",
+        "path": "PetsCollection/Container/RarityTabsLayout/ApexTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 342,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/NormalTabBG.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/NormalTabBG.png",
+          "declaredKey": "Assets/Sprites/NewAssets/NormalTabBG.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/NormalTabBG.png"
+          ],
+          "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+          "output": "./assets/ui-sprites/collection/NewAssets__NormalTabBG.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/RarityTabsLayout/CommonTabButton",
+            "PetsCollection/Container/RarityTabsLayout/RareTabButton",
+            "PetsCollection/Container/RarityTabsLayout/EpicTabButton",
+            "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton",
+            "PetsCollection/Container/RarityTabsLayout/MythicTabButton",
+            "PetsCollection/Container/RarityTabsLayout/ApexTabButton",
+            "PetsCollection/Container/RarityTabsLayout/LimitedTabButton",
+            "PetsCollection/Container/DetailsTabsLayout/MutationsTabButton",
+            "PetsCollection/Container/DetailsTabsLayout/WeathersTabButton"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 20,
+            "right": 20,
+            "top": 20,
+            "bottom": 20
+          },
+          "width": 96,
+          "height": 98
+        },
+        "image": {
+          "spriteName": {
+            "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+            "filePath": "Assets\\Sprites\\NewAssets\\NormalTabBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 2,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/NewAssets/NormalTabBG.png"
+        },
+        "tint": "#FFFFFF"
+      },
+      {
+        "id": "fGyAC2jh",
+        "path": "PetsCollection/Container/RarityTabsLayout/LimitedTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 399,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/NormalTabBG.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/NormalTabBG.png",
+          "declaredKey": "Assets/Sprites/NewAssets/NormalTabBG.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/NormalTabBG.png"
+          ],
+          "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+          "output": "./assets/ui-sprites/collection/NewAssets__NormalTabBG.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/RarityTabsLayout/CommonTabButton",
+            "PetsCollection/Container/RarityTabsLayout/RareTabButton",
+            "PetsCollection/Container/RarityTabsLayout/EpicTabButton",
+            "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton",
+            "PetsCollection/Container/RarityTabsLayout/MythicTabButton",
+            "PetsCollection/Container/RarityTabsLayout/ApexTabButton",
+            "PetsCollection/Container/RarityTabsLayout/LimitedTabButton",
+            "PetsCollection/Container/DetailsTabsLayout/MutationsTabButton",
+            "PetsCollection/Container/DetailsTabsLayout/WeathersTabButton"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 20,
+            "right": 20,
+            "top": 20,
+            "bottom": 20
+          },
+          "width": 96,
+          "height": 98
+        },
+        "image": {
+          "spriteName": {
+            "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+            "filePath": "Assets\\Sprites\\NewAssets\\NormalTabBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 2,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/NewAssets/NormalTabBG.png"
+        },
+        "tint": "#FFFFFF"
+      }
+    ],
+    "shapes": [
+      {
+        "id": "i8q67SIt",
+        "path": "PetsCollection/Container/RarityTabsLayout",
+        "type": "UILayoutEntityV2",
+        "rect": {
+          "left": 16,
+          "top": 60,
+          "width": 190,
+          "height": 540
+        },
+        "active": true,
+        "alpha": 100,
+        "color": null,
+        "background": null
+      },
+      {
+        "id": "Ss6rC1EV",
+        "path": "PetsCollection/Container/RarityTabsLayout/AllTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 0,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#FFFFFF",
+        "background": null
+      },
+      {
+        "id": "fxL1KQRT",
+        "path": "PetsCollection/Container/RarityTabsLayout/AllTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#e7b200",
+        "background": false
+      },
+      {
+        "id": "pYbPgX1w",
+        "path": "PetsCollection/Container/RarityTabsLayout/CommonTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 57,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#FFFFFF",
+        "background": null
+      },
+      {
+        "id": "SkctdxIw",
+        "path": "PetsCollection/Container/RarityTabsLayout/CommonTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#e7b200",
+        "background": false
+      },
+      {
+        "id": "aXFzoEAP",
+        "path": "PetsCollection/Container/RarityTabsLayout/RareTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 114,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#FFFFFF",
+        "background": null
+      },
+      {
+        "id": "hwHDdZ8w",
+        "path": "PetsCollection/Container/RarityTabsLayout/RareTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#e7b200",
+        "background": false
+      },
+      {
+        "id": "BHGjULlj",
+        "path": "PetsCollection/Container/RarityTabsLayout/EpicTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 171,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#FFFFFF",
+        "background": null
+      },
+      {
+        "id": "DQrkFcDg",
+        "path": "PetsCollection/Container/RarityTabsLayout/EpicTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#e7b200",
+        "background": false
+      },
+      {
+        "id": "aX7o89kh",
+        "path": "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 228,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#FFFFFF",
+        "background": null
+      },
+      {
+        "id": "nNQpzkum",
+        "path": "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#e7b200",
+        "background": false
+      },
+      {
+        "id": "Ll09Iu8l",
+        "path": "PetsCollection/Container/RarityTabsLayout/MythicTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 285,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#FFFFFF",
+        "background": null
+      },
+      {
+        "id": "KiZDbrDH",
+        "path": "PetsCollection/Container/RarityTabsLayout/MythicTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#e7b200",
+        "background": false
+      },
+      {
+        "id": "MOHxOi6H",
+        "path": "PetsCollection/Container/RarityTabsLayout/ApexTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 342,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#FFFFFF",
+        "background": null
+      },
+      {
+        "id": "eLwpRHdK",
+        "path": "PetsCollection/Container/RarityTabsLayout/ApexTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#e7b200",
+        "background": false
+      },
+      {
+        "id": "fGyAC2jh",
+        "path": "PetsCollection/Container/RarityTabsLayout/LimitedTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 399,
+          "width": 190,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#FFFFFF",
+        "background": null
+      },
+      {
+        "id": "yKLhWxxy",
+        "path": "PetsCollection/Container/RarityTabsLayout/LimitedTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#e7b200",
+        "background": false
+      }
+    ],
+    "texts": [
+      {
+        "id": "fxL1KQRT",
+        "path": "PetsCollection/Container/RarityTabsLayout/AllTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100,
+        "value": "ALL",
+        "key": "HUD_COLLECTION_ALL",
+        "font": "Default",
+        "fontSize": 28,
+        "fontStyle": {
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        "color": "#E5FAFE",
+        "alignment": {
+          "h": "left",
+          "v": "middle"
+        },
+        "lineSpacing": 0,
+        "background": false,
+        "backgroundColor": "#e7b200",
+        "overflow": 0,
+        "backgroundRGBA": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "shadow": false,
+        "shadowColor": "#000000",
+        "shadowOffset": {
+          "x": 1,
+          "y": 1
+        },
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "outline": false,
+        "outlineColor": "#000000",
+        "outlineAlpha": 1,
+        "outlineOffset": 1,
+        "shadowAlpha": 1,
+        "localization": {
+          "en": "ALL",
+          "vi": "TẤT CẢ"
+        }
+      },
+      {
+        "id": "SkctdxIw",
+        "path": "PetsCollection/Container/RarityTabsLayout/CommonTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100,
+        "value": "COMMON",
+        "key": "RARITY_COMMON",
+        "font": "Default",
+        "fontSize": 28,
+        "fontStyle": {
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        "color": "#1f64c4",
+        "alignment": {
+          "h": "left",
+          "v": "middle"
+        },
+        "lineSpacing": 0,
+        "background": false,
+        "backgroundColor": "#e7b200",
+        "overflow": 0,
+        "backgroundRGBA": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "shadow": false,
+        "shadowColor": "#000000",
+        "shadowOffset": {
+          "x": 1,
+          "y": 1
+        },
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "outline": false,
+        "outlineColor": "#000000",
+        "outlineAlpha": 1,
+        "outlineOffset": 1,
+        "shadowAlpha": 1,
+        "localization": {
+          "en": "COMMON",
+          "vi": "THƯỜNG"
+        }
+      },
+      {
+        "id": "hwHDdZ8w",
+        "path": "PetsCollection/Container/RarityTabsLayout/RareTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100,
+        "value": "RARE",
+        "key": "RARITY_RARE",
+        "font": "Default",
+        "fontSize": 28,
+        "fontStyle": {
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        "color": "#1f64c4",
+        "alignment": {
+          "h": "left",
+          "v": "middle"
+        },
+        "lineSpacing": 0,
+        "background": false,
+        "backgroundColor": "#e7b200",
+        "overflow": 0,
+        "backgroundRGBA": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "shadow": false,
+        "shadowColor": "#000000",
+        "shadowOffset": {
+          "x": 1,
+          "y": 1
+        },
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "outline": false,
+        "outlineColor": "#000000",
+        "outlineAlpha": 1,
+        "outlineOffset": 1,
+        "shadowAlpha": 1,
+        "localization": {
+          "en": "RARE",
+          "vi": "HIẾM"
+        }
+      },
+      {
+        "id": "DQrkFcDg",
+        "path": "PetsCollection/Container/RarityTabsLayout/EpicTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100,
+        "value": "EPIC",
+        "key": "RARITY_EPIC",
+        "font": "Default",
+        "fontSize": 28,
+        "fontStyle": {
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        "color": "#1f64c4",
+        "alignment": {
+          "h": "left",
+          "v": "middle"
+        },
+        "lineSpacing": 0,
+        "background": false,
+        "backgroundColor": "#e7b200",
+        "overflow": 0,
+        "backgroundRGBA": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "shadow": false,
+        "shadowColor": "#000000",
+        "shadowOffset": {
+          "x": 1,
+          "y": 1
+        },
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "outline": false,
+        "outlineColor": "#000000",
+        "outlineAlpha": 1,
+        "outlineOffset": 1,
+        "shadowAlpha": 1,
+        "localization": {
+          "en": "EPIC",
+          "vi": "SỬ THI"
+        }
+      },
+      {
+        "id": "nNQpzkum",
+        "path": "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100,
+        "value": "LEGENDARY",
+        "key": "RARITY_LEGENDARY",
+        "font": "Default",
+        "fontSize": 28,
+        "fontStyle": {
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        "color": "#1f64c4",
+        "alignment": {
+          "h": "left",
+          "v": "middle"
+        },
+        "lineSpacing": 0,
+        "background": false,
+        "backgroundColor": "#e7b200",
+        "overflow": 0,
+        "backgroundRGBA": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "shadow": false,
+        "shadowColor": "#000000",
+        "shadowOffset": {
+          "x": 1,
+          "y": 1
+        },
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "outline": false,
+        "outlineColor": "#000000",
+        "outlineAlpha": 1,
+        "outlineOffset": 1,
+        "shadowAlpha": 1,
+        "localization": {
+          "en": "LEGENDARY",
+          "vi": "HUYỀN THOẠI"
+        }
+      },
+      {
+        "id": "KiZDbrDH",
+        "path": "PetsCollection/Container/RarityTabsLayout/MythicTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100,
+        "value": "MYTHIC",
+        "key": "RARITY_MYTHIC",
+        "font": "Default",
+        "fontSize": 28,
+        "fontStyle": {
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        "color": "#1f64c4",
+        "alignment": {
+          "h": "left",
+          "v": "middle"
+        },
+        "lineSpacing": 0,
+        "background": false,
+        "backgroundColor": "#e7b200",
+        "overflow": 0,
+        "backgroundRGBA": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "shadow": false,
+        "shadowColor": "#000000",
+        "shadowOffset": {
+          "x": 1,
+          "y": 1
+        },
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "outline": false,
+        "outlineColor": "#000000",
+        "outlineAlpha": 1,
+        "outlineOffset": 1,
+        "shadowAlpha": 1,
+        "localization": {
+          "en": "MYTHIC",
+          "vi": "THẦN THOẠI"
+        }
+      },
+      {
+        "id": "eLwpRHdK",
+        "path": "PetsCollection/Container/RarityTabsLayout/ApexTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100,
+        "value": "APEX",
+        "key": "RARITY_APEX",
+        "font": "Default",
+        "fontSize": 28,
+        "fontStyle": {
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        "color": "#1f64c4",
+        "alignment": {
+          "h": "left",
+          "v": "middle"
+        },
+        "lineSpacing": 0,
+        "background": false,
+        "backgroundColor": "#e7b200",
+        "overflow": 0,
+        "backgroundRGBA": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "shadow": false,
+        "shadowColor": "#000000",
+        "shadowOffset": {
+          "x": 1,
+          "y": 1
+        },
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "outline": false,
+        "outlineColor": "#000000",
+        "outlineAlpha": 1,
+        "outlineOffset": 1,
+        "shadowAlpha": 1,
+        "localization": {
+          "en": "APEX",
+          "vi": "TỐI THƯỢNG"
+        }
+      },
+      {
+        "id": "yKLhWxxy",
+        "path": "PetsCollection/Container/RarityTabsLayout/LimitedTabButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2.5,
+          "width": 145,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100,
+        "value": "LIMITED",
+        "key": "RARITY_LIMITED",
+        "font": "Default",
+        "fontSize": 28,
+        "fontStyle": {
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        "color": "#1f64c4",
+        "alignment": {
+          "h": "left",
+          "v": "middle"
+        },
+        "lineSpacing": 0,
+        "background": false,
+        "backgroundColor": "#e7b200",
+        "overflow": 0,
+        "backgroundRGBA": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "shadow": false,
+        "shadowColor": "#000000",
+        "shadowOffset": {
+          "x": 1,
+          "y": 1
+        },
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "outline": false,
+        "outlineColor": "#000000",
+        "outlineAlpha": 1,
+        "outlineOffset": 1,
+        "shadowAlpha": 1,
+        "localization": {
+          "en": "LIMITED",
+          "vi": "LIMITED "
+        }
+      }
+    ]
+  },
+  "template": {
+    "op": "add",
+    "parent": "PetsCollection",
+    "parentId": "CyEjtaLS",
+    "reason": "Template tab-bar; slot: visible = PetsCollection/Container/RarityTabsLayout.active; label = PetsCollection/Container/RarityTabsLayout/AllTabButton/Text.text.key; art = PetsCollection/Container/RarityTabsLayout/AllTabButton.button.spriteKey",
+    "entity": {
+      "id": "uic-tab-bar-i8q67SIt",
+      "name": "RarityTabsLayout",
+      "type": "UILayoutEntityV2",
+      "children": [
+        {
+          "id": "uic-tab-bar-Ss6rC1EV",
+          "name": "AllTabButton",
+          "type": "UIButtonEntity",
+          "children": [
+            {
+              "id": "uic-tab-bar-fxL1KQRT",
+              "name": "Text",
+              "type": "UITextEntity",
+              "children": [],
+              "active": true,
+              "alpha": 100,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchorMax": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 10,
+                  "y": 0
+                },
+                "sizeDelta": {
+                  "x": 145,
+                  "y": 45
+                }
+              },
+              "text": {
+                "value": "ALL",
+                "key": "HUD_COLLECTION_ALL",
+                "fontSize": 28,
+                "fontStyle": {
+                  "bold": false,
+                  "italic": false,
+                  "underline": false
+                },
+                "color": "#E5FAFE",
+                "alignment": {
+                  "h": "left",
+                  "v": "middle"
+                },
+                "lineSpacing": 0,
+                "background": false,
+                "backgroundColor": "#e7b200",
+                "shadow": false,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "x": 1,
+                  "y": 1
+                },
+                "outline": false,
+                "outlineColor": "#000000",
+                "outlineAlpha": 1,
+                "outlineOffset": 1,
+                "shadowAlpha": 1
+              }
+            }
+          ],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 95,
+              "y": 245
+            },
+            "sizeDelta": {
+              "x": 190,
+              "y": 50
+            }
+          },
+          "button": {
+            "normal": "#FFFFFF",
+            "pressed": "#C5C5C5",
+            "disabled": "#494949",
+            "disableCollider": false,
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "spriteKey": "Assets/Sprites/NewAssets/LongSelectTabBG.png"
+          }
+        },
+        {
+          "id": "uic-tab-bar-pYbPgX1w",
+          "name": "CommonTabButton",
+          "type": "UIButtonEntity",
+          "children": [
+            {
+              "id": "uic-tab-bar-SkctdxIw",
+              "name": "Text",
+              "type": "UITextEntity",
+              "children": [],
+              "active": true,
+              "alpha": 100,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchorMax": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 10,
+                  "y": 0
+                },
+                "sizeDelta": {
+                  "x": 145,
+                  "y": 45
+                }
+              },
+              "text": {
+                "value": "COMMON",
+                "key": "RARITY_COMMON",
+                "fontSize": 28,
+                "fontStyle": {
+                  "bold": false,
+                  "italic": false,
+                  "underline": false
+                },
+                "color": "#1f64c4",
+                "alignment": {
+                  "h": "left",
+                  "v": "middle"
+                },
+                "lineSpacing": 0,
+                "background": false,
+                "backgroundColor": "#e7b200",
+                "shadow": false,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "x": 1,
+                  "y": 1
+                },
+                "outline": false,
+                "outlineColor": "#000000",
+                "outlineAlpha": 1,
+                "outlineOffset": 1,
+                "shadowAlpha": 1
+              }
+            }
+          ],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 95,
+              "y": 188
+            },
+            "sizeDelta": {
+              "x": 190,
+              "y": 50
+            }
+          },
+          "button": {
+            "normal": "#FFFFFF",
+            "pressed": "#C5C5C5",
+            "disabled": "#494949",
+            "disableCollider": false,
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "spriteKey": "Assets/Sprites/NewAssets/NormalTabBG.png"
+          }
+        },
+        {
+          "id": "uic-tab-bar-aXFzoEAP",
+          "name": "RareTabButton",
+          "type": "UIButtonEntity",
+          "children": [
+            {
+              "id": "uic-tab-bar-hwHDdZ8w",
+              "name": "Text",
+              "type": "UITextEntity",
+              "children": [],
+              "active": true,
+              "alpha": 100,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchorMax": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 10,
+                  "y": 0
+                },
+                "sizeDelta": {
+                  "x": 145,
+                  "y": 45
+                }
+              },
+              "text": {
+                "value": "RARE",
+                "key": "RARITY_RARE",
+                "fontSize": 28,
+                "fontStyle": {
+                  "bold": false,
+                  "italic": false,
+                  "underline": false
+                },
+                "color": "#1f64c4",
+                "alignment": {
+                  "h": "left",
+                  "v": "middle"
+                },
+                "lineSpacing": 0,
+                "background": false,
+                "backgroundColor": "#e7b200",
+                "shadow": false,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "x": 1,
+                  "y": 1
+                },
+                "outline": false,
+                "outlineColor": "#000000",
+                "outlineAlpha": 1,
+                "outlineOffset": 1,
+                "shadowAlpha": 1
+              }
+            }
+          ],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 95,
+              "y": 131
+            },
+            "sizeDelta": {
+              "x": 190,
+              "y": 50
+            }
+          },
+          "button": {
+            "normal": "#FFFFFF",
+            "pressed": "#C5C5C5",
+            "disabled": "#494949",
+            "disableCollider": false,
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "spriteKey": "Assets/Sprites/NewAssets/NormalTabBG.png"
+          }
+        },
+        {
+          "id": "uic-tab-bar-BHGjULlj",
+          "name": "EpicTabButton",
+          "type": "UIButtonEntity",
+          "children": [
+            {
+              "id": "uic-tab-bar-DQrkFcDg",
+              "name": "Text",
+              "type": "UITextEntity",
+              "children": [],
+              "active": true,
+              "alpha": 100,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchorMax": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 10,
+                  "y": 0
+                },
+                "sizeDelta": {
+                  "x": 145,
+                  "y": 45
+                }
+              },
+              "text": {
+                "value": "EPIC",
+                "key": "RARITY_EPIC",
+                "fontSize": 28,
+                "fontStyle": {
+                  "bold": false,
+                  "italic": false,
+                  "underline": false
+                },
+                "color": "#1f64c4",
+                "alignment": {
+                  "h": "left",
+                  "v": "middle"
+                },
+                "lineSpacing": 0,
+                "background": false,
+                "backgroundColor": "#e7b200",
+                "shadow": false,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "x": 1,
+                  "y": 1
+                },
+                "outline": false,
+                "outlineColor": "#000000",
+                "outlineAlpha": 1,
+                "outlineOffset": 1,
+                "shadowAlpha": 1
+              }
+            }
+          ],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 95,
+              "y": 74
+            },
+            "sizeDelta": {
+              "x": 190,
+              "y": 50
+            }
+          },
+          "button": {
+            "normal": "#FFFFFF",
+            "pressed": "#C5C5C5",
+            "disabled": "#494949",
+            "disableCollider": false,
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "spriteKey": "Assets/Sprites/NewAssets/NormalTabBG.png"
+          }
+        },
+        {
+          "id": "uic-tab-bar-aX7o89kh",
+          "name": "LegendaryTabButton",
+          "type": "UIButtonEntity",
+          "children": [
+            {
+              "id": "uic-tab-bar-nNQpzkum",
+              "name": "Text",
+              "type": "UITextEntity",
+              "children": [],
+              "active": true,
+              "alpha": 100,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchorMax": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 10,
+                  "y": 0
+                },
+                "sizeDelta": {
+                  "x": 145,
+                  "y": 45
+                }
+              },
+              "text": {
+                "value": "LEGENDARY",
+                "key": "RARITY_LEGENDARY",
+                "fontSize": 28,
+                "fontStyle": {
+                  "bold": false,
+                  "italic": false,
+                  "underline": false
+                },
+                "color": "#1f64c4",
+                "alignment": {
+                  "h": "left",
+                  "v": "middle"
+                },
+                "lineSpacing": 0,
+                "background": false,
+                "backgroundColor": "#e7b200",
+                "shadow": false,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "x": 1,
+                  "y": 1
+                },
+                "outline": false,
+                "outlineColor": "#000000",
+                "outlineAlpha": 1,
+                "outlineOffset": 1,
+                "shadowAlpha": 1
+              }
+            }
+          ],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 95,
+              "y": 17
+            },
+            "sizeDelta": {
+              "x": 190,
+              "y": 50
+            }
+          },
+          "button": {
+            "normal": "#FFFFFF",
+            "pressed": "#C5C5C5",
+            "disabled": "#494949",
+            "disableCollider": false,
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "spriteKey": "Assets/Sprites/NewAssets/NormalTabBG.png"
+          }
+        },
+        {
+          "id": "uic-tab-bar-Ll09Iu8l",
+          "name": "MythicTabButton",
+          "type": "UIButtonEntity",
+          "children": [
+            {
+              "id": "uic-tab-bar-KiZDbrDH",
+              "name": "Text",
+              "type": "UITextEntity",
+              "children": [],
+              "active": true,
+              "alpha": 100,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchorMax": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 10,
+                  "y": 0
+                },
+                "sizeDelta": {
+                  "x": 145,
+                  "y": 45
+                }
+              },
+              "text": {
+                "value": "MYTHIC",
+                "key": "RARITY_MYTHIC",
+                "fontSize": 28,
+                "fontStyle": {
+                  "bold": false,
+                  "italic": false,
+                  "underline": false
+                },
+                "color": "#1f64c4",
+                "alignment": {
+                  "h": "left",
+                  "v": "middle"
+                },
+                "lineSpacing": 0,
+                "background": false,
+                "backgroundColor": "#e7b200",
+                "shadow": false,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "x": 1,
+                  "y": 1
+                },
+                "outline": false,
+                "outlineColor": "#000000",
+                "outlineAlpha": 1,
+                "outlineOffset": 1,
+                "shadowAlpha": 1
+              }
+            }
+          ],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 95,
+              "y": -40
+            },
+            "sizeDelta": {
+              "x": 190,
+              "y": 50
+            }
+          },
+          "button": {
+            "normal": "#FFFFFF",
+            "pressed": "#C5C5C5",
+            "disabled": "#494949",
+            "disableCollider": false,
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "spriteKey": "Assets/Sprites/NewAssets/NormalTabBG.png"
+          }
+        },
+        {
+          "id": "uic-tab-bar-MOHxOi6H",
+          "name": "ApexTabButton",
+          "type": "UIButtonEntity",
+          "children": [
+            {
+              "id": "uic-tab-bar-eLwpRHdK",
+              "name": "Text",
+              "type": "UITextEntity",
+              "children": [],
+              "active": true,
+              "alpha": 100,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchorMax": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 10,
+                  "y": 0
+                },
+                "sizeDelta": {
+                  "x": 145,
+                  "y": 45
+                }
+              },
+              "text": {
+                "value": "APEX",
+                "key": "RARITY_APEX",
+                "fontSize": 28,
+                "fontStyle": {
+                  "bold": false,
+                  "italic": false,
+                  "underline": false
+                },
+                "color": "#1f64c4",
+                "alignment": {
+                  "h": "left",
+                  "v": "middle"
+                },
+                "lineSpacing": 0,
+                "background": false,
+                "backgroundColor": "#e7b200",
+                "shadow": false,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "x": 1,
+                  "y": 1
+                },
+                "outline": false,
+                "outlineColor": "#000000",
+                "outlineAlpha": 1,
+                "outlineOffset": 1,
+                "shadowAlpha": 1
+              }
+            }
+          ],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 95,
+              "y": -97
+            },
+            "sizeDelta": {
+              "x": 190,
+              "y": 50
+            }
+          },
+          "button": {
+            "normal": "#FFFFFF",
+            "pressed": "#C5C5C5",
+            "disabled": "#494949",
+            "disableCollider": false,
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "spriteKey": "Assets/Sprites/NewAssets/NormalTabBG.png"
+          }
+        },
+        {
+          "id": "uic-tab-bar-fGyAC2jh",
+          "name": "LimitedTabButton",
+          "type": "UIButtonEntity",
+          "children": [
+            {
+              "id": "uic-tab-bar-yKLhWxxy",
+              "name": "Text",
+              "type": "UITextEntity",
+              "children": [],
+              "active": true,
+              "alpha": 100,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchorMax": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 10,
+                  "y": 0
+                },
+                "sizeDelta": {
+                  "x": 145,
+                  "y": 45
+                }
+              },
+              "text": {
+                "value": "LIMITED",
+                "key": "RARITY_LIMITED",
+                "fontSize": 28,
+                "fontStyle": {
+                  "bold": false,
+                  "italic": false,
+                  "underline": false
+                },
+                "color": "#1f64c4",
+                "alignment": {
+                  "h": "left",
+                  "v": "middle"
+                },
+                "lineSpacing": 0,
+                "background": false,
+                "backgroundColor": "#e7b200",
+                "shadow": false,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "x": 1,
+                  "y": 1
+                },
+                "outline": false,
+                "outlineColor": "#000000",
+                "outlineAlpha": 1,
+                "outlineOffset": 1,
+                "shadowAlpha": 1
+              }
+            }
+          ],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 95,
+              "y": -154
+            },
+            "sizeDelta": {
+              "x": 190,
+              "y": 50
+            }
+          },
+          "button": {
+            "normal": "#FFFFFF",
+            "pressed": "#C5C5C5",
+            "disabled": "#494949",
+            "disableCollider": false,
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "spriteKey": "Assets/Sprites/NewAssets/NormalTabBG.png"
+          }
+        }
+      ],
+      "active": true,
+      "alpha": 100,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchorMax": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchoredPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "sizeDelta": {
+          "x": 190,
+          "y": 540
+        }
+      },
+      "layout": {
+        "enable": true,
+        "corner": 0,
+        "offset": {
+          "up": 0,
+          "down": 0,
+          "left": 0,
+          "right": 0
+        },
+        "space": {
+          "x": 0,
+          "y": 7
+        },
+        "size": {
+          "x": 190,
+          "y": 50
+        },
+        "constraint": 0,
+        "direction": 1,
+        "fixedRowCount": 2,
+        "fixedColumnCount": 2,
+        "tableOffset": {
+          "up": 0,
+          "down": 0,
+          "left": 0,
+          "right": 0
+        },
+        "tableSpace": 0,
+        "sortType": 0,
+        "ignoreInactive": false
+      }
+    }
+  },
+  "templateOmitted": [
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton/Text: text.font",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton/Text: text.overflow",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton/Text: text.backgroundRGBA.r",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton/Text: text.backgroundRGBA.g",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton/Text: text.backgroundRGBA.b",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton/Text: text.backgroundRGBA.a",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton/Text: text.gradient",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton/Text: text.gradientTop.r",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton/Text: text.gradientTop.g",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton/Text: text.gradientTop.b",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton/Text: text.gradientTop.a",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton/Text: text.gradientBottom.r",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton/Text: text.gradientBottom.g",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton/Text: text.gradientBottom.b",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton/Text: text.gradientBottom.a",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.spriteName.fileId",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.spriteName.filePath",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.spriteName._tag.type",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.spriteName.fileType",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.highlight",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.enableBorderImage",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.slicedBorder.left",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.slicedBorder.right",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.slicedBorder.top",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.slicedBorder.bottom",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.tiledBorder.left",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.tiledBorder.right",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.tiledBorder.top",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.tiledBorder.bottom",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.flip",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.gradient",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.gradientTop.r",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.gradientTop.g",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.gradientTop.b",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.gradientTop.a",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.gradientBottom.r",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.gradientBottom.g",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.gradientBottom.b",
+    "PetsCollection/Container/RarityTabsLayout/AllTabButton: button.gradientBottom.a",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton/Text: text.font",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton/Text: text.overflow",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton/Text: text.backgroundRGBA.r",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton/Text: text.backgroundRGBA.g",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton/Text: text.backgroundRGBA.b",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton/Text: text.backgroundRGBA.a",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton/Text: text.gradient",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton/Text: text.gradientTop.r",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton/Text: text.gradientTop.g",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton/Text: text.gradientTop.b",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton/Text: text.gradientTop.a",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton/Text: text.gradientBottom.r",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton/Text: text.gradientBottom.g",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton/Text: text.gradientBottom.b",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton/Text: text.gradientBottom.a",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.spriteName.fileId",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.spriteName.filePath",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.spriteName._tag.type",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.spriteName.fileType",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.highlight",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.enableBorderImage",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.slicedBorder.left",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.slicedBorder.right",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.slicedBorder.top",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.slicedBorder.bottom",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.tiledBorder.left",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.tiledBorder.right",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.tiledBorder.top",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.tiledBorder.bottom",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.flip",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.gradient",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.gradientTop.r",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.gradientTop.g",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.gradientTop.b",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.gradientTop.a",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.gradientBottom.r",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.gradientBottom.g",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.gradientBottom.b",
+    "PetsCollection/Container/RarityTabsLayout/CommonTabButton: button.gradientBottom.a",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton/Text: text.font",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton/Text: text.overflow",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton/Text: text.backgroundRGBA.r",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton/Text: text.backgroundRGBA.g",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton/Text: text.backgroundRGBA.b",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton/Text: text.backgroundRGBA.a",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton/Text: text.gradient",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton/Text: text.gradientTop.r",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton/Text: text.gradientTop.g",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton/Text: text.gradientTop.b",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton/Text: text.gradientTop.a",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton/Text: text.gradientBottom.r",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton/Text: text.gradientBottom.g",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton/Text: text.gradientBottom.b",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton/Text: text.gradientBottom.a",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.spriteName.fileId",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.spriteName.filePath",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.spriteName._tag.type",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.spriteName.fileType",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.highlight",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.enableBorderImage",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.slicedBorder.left",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.slicedBorder.right",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.slicedBorder.top",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.slicedBorder.bottom",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.tiledBorder.left",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.tiledBorder.right",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.tiledBorder.top",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.tiledBorder.bottom",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.flip",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.gradient",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.gradientTop.r",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.gradientTop.g",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.gradientTop.b",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.gradientTop.a",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.gradientBottom.r",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.gradientBottom.g",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.gradientBottom.b",
+    "PetsCollection/Container/RarityTabsLayout/RareTabButton: button.gradientBottom.a",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton/Text: text.font",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton/Text: text.overflow",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton/Text: text.backgroundRGBA.r",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton/Text: text.backgroundRGBA.g",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton/Text: text.backgroundRGBA.b",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton/Text: text.backgroundRGBA.a",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton/Text: text.gradient",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton/Text: text.gradientTop.r",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton/Text: text.gradientTop.g",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton/Text: text.gradientTop.b",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton/Text: text.gradientTop.a",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton/Text: text.gradientBottom.r",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton/Text: text.gradientBottom.g",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton/Text: text.gradientBottom.b",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton/Text: text.gradientBottom.a",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.spriteName.fileId",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.spriteName.filePath",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.spriteName._tag.type",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.spriteName.fileType",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.highlight",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.enableBorderImage",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.slicedBorder.left",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.slicedBorder.right",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.slicedBorder.top",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.slicedBorder.bottom",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.tiledBorder.left",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.tiledBorder.right",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.tiledBorder.top",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.tiledBorder.bottom",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.flip",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.gradient",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.gradientTop.r",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.gradientTop.g",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.gradientTop.b",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.gradientTop.a",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.gradientBottom.r",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.gradientBottom.g",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.gradientBottom.b",
+    "PetsCollection/Container/RarityTabsLayout/EpicTabButton: button.gradientBottom.a",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton/Text: text.font",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton/Text: text.overflow",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton/Text: text.backgroundRGBA.r",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton/Text: text.backgroundRGBA.g",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton/Text: text.backgroundRGBA.b",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton/Text: text.backgroundRGBA.a",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton/Text: text.gradient",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton/Text: text.gradientTop.r",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton/Text: text.gradientTop.g",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton/Text: text.gradientTop.b",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton/Text: text.gradientTop.a",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton/Text: text.gradientBottom.r",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton/Text: text.gradientBottom.g",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton/Text: text.gradientBottom.b",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton/Text: text.gradientBottom.a",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.spriteName.fileId",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.spriteName.filePath",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.spriteName._tag.type",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.spriteName.fileType",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.highlight",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.enableBorderImage",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.slicedBorder.left",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.slicedBorder.right",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.slicedBorder.top",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.slicedBorder.bottom",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.tiledBorder.left",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.tiledBorder.right",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.tiledBorder.top",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.tiledBorder.bottom",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.flip",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.gradient",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.gradientTop.r",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.gradientTop.g",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.gradientTop.b",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.gradientTop.a",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.gradientBottom.r",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.gradientBottom.g",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.gradientBottom.b",
+    "PetsCollection/Container/RarityTabsLayout/LegendaryTabButton: button.gradientBottom.a",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton/Text: text.font",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton/Text: text.overflow",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton/Text: text.backgroundRGBA.r",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton/Text: text.backgroundRGBA.g",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton/Text: text.backgroundRGBA.b",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton/Text: text.backgroundRGBA.a",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton/Text: text.gradient",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton/Text: text.gradientTop.r",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton/Text: text.gradientTop.g",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton/Text: text.gradientTop.b",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton/Text: text.gradientTop.a",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton/Text: text.gradientBottom.r",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton/Text: text.gradientBottom.g",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton/Text: text.gradientBottom.b",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton/Text: text.gradientBottom.a",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.spriteName.fileId",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.spriteName.filePath",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.spriteName._tag.type",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.spriteName.fileType",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.highlight",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.enableBorderImage",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.slicedBorder.left",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.slicedBorder.right",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.slicedBorder.top",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.slicedBorder.bottom",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.tiledBorder.left",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.tiledBorder.right",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.tiledBorder.top",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.tiledBorder.bottom",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.flip",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.gradient",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.gradientTop.r",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.gradientTop.g",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.gradientTop.b",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.gradientTop.a",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.gradientBottom.r",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.gradientBottom.g",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.gradientBottom.b",
+    "PetsCollection/Container/RarityTabsLayout/MythicTabButton: button.gradientBottom.a",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton/Text: text.font",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton/Text: text.overflow",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton/Text: text.backgroundRGBA.r",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton/Text: text.backgroundRGBA.g",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton/Text: text.backgroundRGBA.b",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton/Text: text.backgroundRGBA.a",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton/Text: text.gradient",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton/Text: text.gradientTop.r",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton/Text: text.gradientTop.g",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton/Text: text.gradientTop.b",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton/Text: text.gradientTop.a",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton/Text: text.gradientBottom.r",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton/Text: text.gradientBottom.g",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton/Text: text.gradientBottom.b",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton/Text: text.gradientBottom.a",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.spriteName.fileId",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.spriteName.filePath",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.spriteName._tag.type",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.spriteName.fileType",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.highlight",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.enableBorderImage",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.slicedBorder.left",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.slicedBorder.right",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.slicedBorder.top",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.slicedBorder.bottom",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.tiledBorder.left",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.tiledBorder.right",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.tiledBorder.top",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.tiledBorder.bottom",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.flip",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.gradient",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.gradientTop.r",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.gradientTop.g",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.gradientTop.b",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.gradientTop.a",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.gradientBottom.r",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.gradientBottom.g",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.gradientBottom.b",
+    "PetsCollection/Container/RarityTabsLayout/ApexTabButton: button.gradientBottom.a",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton/Text: text.font",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton/Text: text.overflow",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton/Text: text.backgroundRGBA.r",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton/Text: text.backgroundRGBA.g",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton/Text: text.backgroundRGBA.b",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton/Text: text.backgroundRGBA.a",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton/Text: text.gradient",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton/Text: text.gradientTop.r",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton/Text: text.gradientTop.g",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton/Text: text.gradientTop.b",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton/Text: text.gradientTop.a",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton/Text: text.gradientBottom.r",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton/Text: text.gradientBottom.g",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton/Text: text.gradientBottom.b",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton/Text: text.gradientBottom.a",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.spriteName.fileId",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.spriteName.filePath",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.spriteName._tag.type",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.spriteName.fileType",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.highlight",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.enableBorderImage",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.slicedBorder.left",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.slicedBorder.right",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.slicedBorder.top",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.slicedBorder.bottom",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.tiledBorder.left",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.tiledBorder.right",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.tiledBorder.top",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.tiledBorder.bottom",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.flip",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.gradient",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.gradientTop.r",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.gradientTop.g",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.gradientTop.b",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.gradientTop.a",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.gradientBottom.r",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.gradientBottom.g",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.gradientBottom.b",
+    "PetsCollection/Container/RarityTabsLayout/LimitedTabButton: button.gradientBottom.a",
+    "PetsCollection/Container/RarityTabsLayout: layout.type"
+  ],
+  "stateEvidence": [],
+  "usedBy": [
+    "list-popup"
+  ]
+}

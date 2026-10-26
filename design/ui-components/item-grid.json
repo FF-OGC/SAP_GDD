@@ -1,0 +1,56 @@
+{
+  "id": "item-grid",
+  "name": "Lưới vật phẩm",
+  "sourcePath": "PetsCollection/Container/PetsLayout",
+  "sourceId": "T1xtLFOi",
+  "group": "Ghép",
+  "status": "real",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "PetsCollection/Container/PetsLayout",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "path": "PetsCollection/Container/PetsLayout/Pet (1)/HasMW/Count",
+      "field": "text.value",
+      "default": "27",
+      "sample": "Nội dung mẫu"
+    },
+    {
+      "name": "art",
+      "type": "sprite",
+      "path": "PetsCollection/Container/PetsLayout/Pet (1)",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/NewAssets/ItemBG.png"
+    }
+  ],
+  "states": [],
+  "usedIn": [
+    {
+      "screen": "collection",
+      "note": "Có subtree trong PetsCollection.ui"
+    },
+    {
+      "screen": "shop",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    },
+    {
+      "screen": "mission",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    }
+  ],
+  "composedOf": [
+    "item-cell"
+  ],
+  "notes": [
+    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection.",
+    "PageBtns là sibling nên phân trang là component riêng; không tạo khung ghép giả."
+  ]
+}

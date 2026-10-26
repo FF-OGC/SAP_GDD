@@ -1,0 +1,88 @@
+{
+  "id": "detail-tab-button",
+  "name": "Tab chi tiết",
+  "sourcePath": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton",
+  "sourceId": "s31m5yHS",
+  "group": "Điều khiển",
+  "status": "runtime",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "path": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label",
+      "field": "text.key",
+      "default": "HUD_COLLECTION_PET_COUNT",
+      "sample": "Nội dung mẫu"
+    },
+    {
+      "name": "art",
+      "type": "sprite",
+      "path": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton",
+      "field": "button.spriteKey",
+      "default": "Assets/Sprites/NewAssets/SelectTabBG.png"
+    }
+  ],
+  "states": [
+    {
+      "name": "Không chọn",
+      "when": "isSelected = false",
+      "ruleSource": "tabVisuals.details",
+      "overrides": [
+        {
+          "path": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton",
+          "field": "button.spriteKey",
+          "value": "Assets/Sprites/NewAssets/NormalTabBG.png"
+        },
+        {
+          "path": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label",
+          "field": "text.color",
+          "value": "#1F64C4"
+        }
+      ]
+    },
+    {
+      "name": "Chọn",
+      "when": "isSelected = true",
+      "ruleSource": "tabVisuals.details",
+      "overrides": [
+        {
+          "path": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton",
+          "field": "button.spriteKey",
+          "value": "Assets/Sprites/NewAssets/SelectTabBG.png"
+        },
+        {
+          "path": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label",
+          "field": "text.color",
+          "value": "#FFFFFF"
+        }
+      ]
+    }
+  ],
+  "usedIn": [
+    {
+      "screen": "collection",
+      "note": "Có subtree trong PetsCollection.ui"
+    },
+    {
+      "screen": "shop",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    },
+    {
+      "screen": "mission",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection."
+  ]
+}

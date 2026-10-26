@@ -1,0 +1,60 @@
+{
+  "id": "info-row",
+  "name": "Dòng thông tin",
+  "sourcePath": "PetsCollection/Container/Info/Value",
+  "sourceId": "TFWi8T1X",
+  "group": "Hiển thị dữ liệu",
+  "status": "real",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "PetsCollection/Container/Info/Value",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "path": "PetsCollection/Container/Info/Value/Content",
+      "field": "text.value",
+      "default": "Value: 270.9Cp/s",
+      "sample": "Nội dung mẫu"
+    },
+    {
+      "name": "art",
+      "type": "sprite",
+      "path": "PetsCollection/Container/Info/Value",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/NewAssets/ShopItemBG.png"
+    },
+    {
+      "name": "tint",
+      "type": "tint",
+      "path": "PetsCollection/Container/Info/Value",
+      "field": "image.color",
+      "default": "#ffffff"
+    }
+  ],
+  "states": [],
+  "usedIn": [
+    {
+      "screen": "collection",
+      "note": "Có subtree trong PetsCollection.ui"
+    },
+    {
+      "screen": "shop",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    },
+    {
+      "screen": "mission",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "pagination",
+  "name": "Phân trang",
+  "sourcePath": "PetsCollection/Container/PageBtns",
+  "sourceId": "Ij15xtQe",
+  "group": "Điều khiển",
+  "status": "real",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "PetsCollection/Container/PageBtns",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "path": "PetsCollection/Container/PageBtns/Page",
+      "field": "text.value",
+      "default": "09/27",
+      "sample": "Nội dung mẫu"
+    },
+    {
+      "name": "art",
+      "type": "sprite",
+      "path": "PetsCollection/Container/PageBtns/PrevPageButton",
+      "field": "button.spriteKey",
+      "default": "Assets/Sprites/Shapes/ShadowTriangleRounded.png"
+    }
+  ],
+  "states": [],
+  "usedIn": [
+    {
+      "screen": "collection",
+      "note": "Có subtree trong PetsCollection.ui"
+    },
+    {
+      "screen": "shop",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    },
+    {
+      "screen": "mission",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection."
+  ]
+}

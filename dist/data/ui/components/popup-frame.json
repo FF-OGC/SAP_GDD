@@ -1,0 +1,1530 @@
+{
+  "id": "popup-frame",
+  "name": "Khung trang trí popup",
+  "sourcePath": "PetsCollection/Container/BG",
+  "sourceId": "sRToCiPA",
+  "group": "Khung",
+  "status": "real",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "PetsCollection/Container/BG",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "art",
+      "type": "sprite",
+      "path": "PetsCollection/Container/BG",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/NewAssets/ContainerBG.png"
+    },
+    {
+      "name": "tint",
+      "type": "tint",
+      "path": "PetsCollection/Container/BG",
+      "field": "image.color",
+      "default": "#FFFFFF"
+    }
+  ],
+  "states": [],
+  "usedIn": [
+    {
+      "screen": "collection",
+      "note": "Có subtree trong PetsCollection.ui"
+    },
+    {
+      "screen": "shop",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    },
+    {
+      "screen": "mission",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection.",
+    "Chọn BG gồm decor; Container chứa toàn màn nên chỉ dùng cho list-popup. Title là sibling, được tách riêng."
+  ],
+  "source": "Assets/HUDs/PetsCollection.ui",
+  "sourceRect": {
+    "left": 0,
+    "top": 40,
+    "width": 1040,
+    "height": 560
+  },
+  "referenceSize": {
+    "width": 1040,
+    "height": 560
+  },
+  "tree": {
+    "path": "PetsCollection/Container/BG",
+    "id": "sRToCiPA",
+    "name": "BG",
+    "type": "UIImageEntity",
+    "active": true,
+    "transform": {
+      "rotate": 0,
+      "anchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchoredPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sizeDelta": {
+        "x": 1040,
+        "y": 560
+      }
+    },
+    "alpha": 100,
+    "priority": 0,
+    "image": {
+      "source": {
+        "fileId": "gszc833692p-mu6veyfp-g1yynwpple7",
+        "filePath": "Assets\\_Test\\NewUI\\Assets\\Img_bg02_BG.png",
+        "_tag": {
+          "type": "GFileRefer"
+        },
+        "fileType": "texture"
+      },
+      "color": "#FFFFFF",
+      "reverse": {
+        "x": false,
+        "y": false
+      },
+      "fillType": 1,
+      "slicedBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "tiledBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "centerInvisible": false,
+      "fillDir": 0,
+      "fillAmount": 0,
+      "invertFill": false,
+      "flip": 0,
+      "gradient": 0,
+      "gradientTop": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "gradientBottom": {
+        "r": 198,
+        "g": 253,
+        "b": 254,
+        "a": 1
+      },
+      "isApplyAnimation": false,
+      "animationAtlasID": null,
+      "animationFrameRate": 30,
+      "animationLoop": true,
+      "spriteKey": "Assets/Sprites/NewAssets/ContainerBG.png"
+    },
+    "button": null,
+    "text": null,
+    "layout": null,
+    "propsData": {
+      "activeSelf": true,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0,
+          "y": 0
+        },
+        "anchorMax": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 1
+        },
+        "anchoredPosition": {
+          "x": 0,
+          "y": -40
+        },
+        "sizeDelta": {
+          "x": 0,
+          "y": -40
+        }
+      },
+      "alpha": 100,
+      "priority": 0,
+      "image": {
+        "source": {
+          "fileId": "gszc833692p-mu6veyfp-g1yynwpple7",
+          "filePath": "Assets\\_Test\\NewUI\\Assets\\Img_bg02_BG.png",
+          "_tag": {
+            "type": "GFileRefer"
+          },
+          "fileType": "texture"
+        },
+        "color": "#FFFFFF",
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "fillType": 1,
+        "slicedBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "tiledBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "flip": 0,
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 198,
+          "g": 253,
+          "b": 254,
+          "a": 1
+        },
+        "isApplyAnimation": false,
+        "animationAtlasID": null,
+        "animationFrameRate": 30,
+        "animationLoop": true
+      }
+    },
+    "ecaProps": {
+      "HudImageWidget": {},
+      "HudWidget": {},
+      "Entity": {}
+    },
+    "unsupported": [],
+    "children": [
+      {
+        "path": "PetsCollection/Container/BG/DecorLeft",
+        "id": "gr8BcPhJ",
+        "name": "DecorLeft",
+        "type": "UIImageEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0
+          },
+          "anchorMax": {
+            "x": 0,
+            "y": 0
+          },
+          "pivot": {
+            "x": 0,
+            "y": 0
+          },
+          "anchoredPosition": {
+            "x": 5,
+            "y": 6
+          },
+          "sizeDelta": {
+            "x": 100,
+            "y": 150
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": {
+          "source": {
+            "fileId": "ouansc8n289-mu6xhpqu-centw2ek0ns",
+            "filePath": "Assets\\_Test\\NewUI\\Assets\\Img_decorate01.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/DecorateIcon1.png"
+        },
+        "button": null,
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "anchoredPosition": {
+              "x": 5,
+              "y": 6
+            },
+            "sizeDelta": {
+              "x": 100,
+              "y": 150
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "image": {
+            "source": {
+              "fileId": "ouansc8n289-mu6xhpqu-centw2ek0ns",
+              "filePath": "Assets\\_Test\\NewUI\\Assets\\Img_decorate01.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "isApplyAnimation": false,
+            "animationAtlasID": null,
+            "animationFrameRate": 30,
+            "animationLoop": true,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "flip": 0,
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudImageWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "m_ApplyingPreviewAnimation"
+        ],
+        "children": []
+      },
+      {
+        "path": "PetsCollection/Container/BG/Main",
+        "id": "y2VytDvF",
+        "name": "Main",
+        "type": "UIImageEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 1,
+            "y": 0.5
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 0.5
+          },
+          "pivot": {
+            "x": 1,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": -6,
+            "y": 1
+          },
+          "sizeDelta": {
+            "x": 814,
+            "y": 546
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": {
+          "source": {
+            "fileId": "earvmnoqs6p-mu2oi0z2-k994sun5yc",
+            "filePath": "Assets\\Sprites\\NewAssets\\HalfContainerBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#F6FAFE",
+          "reverse": {
+            "x": true,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/HalfContainerBG.png"
+        },
+        "button": null,
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 1,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 1,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": -6,
+              "y": 1
+            },
+            "sizeDelta": {
+              "x": 814,
+              "y": 546
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "image": {
+            "source": {
+              "fileId": "earvmnoqs6p-mu2oi0z2-k994sun5yc",
+              "filePath": "Assets\\Sprites\\NewAssets\\HalfContainerBG.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "color": "#F6FAFE",
+            "reverse": {
+              "x": true,
+              "y": false
+            },
+            "isApplyAnimation": false,
+            "animationAtlasID": null,
+            "animationFrameRate": 30,
+            "animationLoop": true,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "flip": 0,
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudImageWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "m_ApplyingPreviewAnimation"
+        ],
+        "children": []
+      },
+      {
+        "path": "PetsCollection/Container/BG/DecorRight",
+        "id": "XgiQWXKW",
+        "name": "DecorRight",
+        "type": "UIImageEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 1,
+            "y": 0
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 0
+          },
+          "pivot": {
+            "x": 1,
+            "y": 0
+          },
+          "anchoredPosition": {
+            "x": -6,
+            "y": 6
+          },
+          "sizeDelta": {
+            "x": 150,
+            "y": 75
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": {
+          "source": {
+            "fileId": "z3itg018ujr-mu6xhpvo-cnfqx0exhhp",
+            "filePath": "Assets\\_Test\\NewUI\\Assets\\Img_decorate02.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/DecorateIcon2.png"
+        },
+        "button": null,
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 1,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 0
+            },
+            "pivot": {
+              "x": 1,
+              "y": 0
+            },
+            "anchoredPosition": {
+              "x": -6,
+              "y": 6
+            },
+            "sizeDelta": {
+              "x": 150,
+              "y": 75
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "image": {
+            "source": {
+              "fileId": "z3itg018ujr-mu6xhpvo-cnfqx0exhhp",
+              "filePath": "Assets\\_Test\\NewUI\\Assets\\Img_decorate02.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "isApplyAnimation": false,
+            "animationAtlasID": null,
+            "animationFrameRate": 30,
+            "animationLoop": true,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "flip": 0,
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudImageWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "m_ApplyingPreviewAnimation"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "entityCount": 4,
+  "spec": {
+    "nodes": [
+      {
+        "id": "sRToCiPA",
+        "path": "PetsCollection/Container/BG",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 0,
+          "top": 40,
+          "width": 1040,
+          "height": 560
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "gr8BcPhJ",
+        "path": "PetsCollection/Container/BG/DecorLeft",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 5,
+          "top": 404,
+          "width": 100,
+          "height": 150
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "y2VytDvF",
+        "path": "PetsCollection/Container/BG/Main",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 220,
+          "top": 6,
+          "width": 814,
+          "height": 546
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "XgiQWXKW",
+        "path": "PetsCollection/Container/BG/DecorRight",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 884,
+          "top": 479,
+          "width": 150,
+          "height": 75
+        },
+        "active": true,
+        "alpha": 100
+      }
+    ],
+    "images": [
+      {
+        "id": "sRToCiPA",
+        "path": "PetsCollection/Container/BG",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 0,
+          "top": 40,
+          "width": 1040,
+          "height": 560
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/ContainerBG.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/ContainerBG.png",
+          "declaredKey": "Assets/_Test/NewUI/Assets/Img_bg02_BG.png",
+          "declaredKeys": [
+            "Assets/_Test/NewUI/Assets/Img_bg02_BG.png"
+          ],
+          "fileId": "gszc833692p-mu6veyfp-g1yynwpple7",
+          "output": "./assets/ui-sprites/collection/NewAssets__ContainerBG.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/BG"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 34,
+            "right": 33,
+            "top": 32,
+            "bottom": 39
+          },
+          "width": 106,
+          "height": 118
+        },
+        "image": {
+          "source": {
+            "fileId": "gszc833692p-mu6veyfp-g1yynwpple7",
+            "filePath": "Assets\\_Test\\NewUI\\Assets\\Img_bg02_BG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#FFFFFF",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 198,
+            "g": 253,
+            "b": 254,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/ContainerBG.png"
+        },
+        "tint": "#FFFFFF"
+      },
+      {
+        "id": "gr8BcPhJ",
+        "path": "PetsCollection/Container/BG/DecorLeft",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 5,
+          "top": 404,
+          "width": 100,
+          "height": 150
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/DecorateIcon1.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/DecorateIcon1.png",
+          "declaredKey": "Assets/_Test/NewUI/Assets/Img_decorate01.png",
+          "declaredKeys": [
+            "Assets/_Test/NewUI/Assets/Img_decorate01.png"
+          ],
+          "fileId": "ouansc8n289-mu6xhpqu-centw2ek0ns",
+          "output": "./assets/ui-sprites/collection/NewAssets__DecorateIcon1.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/BG/DecorLeft"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "width": 68,
+          "height": 104
+        },
+        "image": {
+          "source": {
+            "fileId": "ouansc8n289-mu6xhpqu-centw2ek0ns",
+            "filePath": "Assets\\_Test\\NewUI\\Assets\\Img_decorate01.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/DecorateIcon1.png"
+        },
+        "tint": "#ffffff"
+      },
+      {
+        "id": "y2VytDvF",
+        "path": "PetsCollection/Container/BG/Main",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 220,
+          "top": 6,
+          "width": 814,
+          "height": 546
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/HalfContainerBG.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/HalfContainerBG.png",
+          "declaredKey": "Assets/Sprites/NewAssets/HalfContainerBG.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/HalfContainerBG.png"
+          ],
+          "fileId": "earvmnoqs6p-mu2oi0z2-k994sun5yc",
+          "output": "./assets/ui-sprites/collection/NewAssets__HalfContainerBG.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/BG/Main"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 20,
+            "right": 4,
+            "top": 20,
+            "bottom": 18
+          },
+          "width": 28,
+          "height": 52
+        },
+        "image": {
+          "source": {
+            "fileId": "earvmnoqs6p-mu2oi0z2-k994sun5yc",
+            "filePath": "Assets\\Sprites\\NewAssets\\HalfContainerBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#F6FAFE",
+          "reverse": {
+            "x": true,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/HalfContainerBG.png"
+        },
+        "tint": "#F6FAFE"
+      },
+      {
+        "id": "XgiQWXKW",
+        "path": "PetsCollection/Container/BG/DecorRight",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 884,
+          "top": 479,
+          "width": 150,
+          "height": 75
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/DecorateIcon2.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/DecorateIcon2.png",
+          "declaredKey": "Assets/_Test/NewUI/Assets/Img_decorate02.png",
+          "declaredKeys": [
+            "Assets/_Test/NewUI/Assets/Img_decorate02.png"
+          ],
+          "fileId": "z3itg018ujr-mu6xhpvo-cnfqx0exhhp",
+          "output": "./assets/ui-sprites/collection/NewAssets__DecorateIcon2.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/BG/DecorRight"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "width": 114,
+          "height": 52
+        },
+        "image": {
+          "source": {
+            "fileId": "z3itg018ujr-mu6xhpvo-cnfqx0exhhp",
+            "filePath": "Assets\\_Test\\NewUI\\Assets\\Img_decorate02.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/DecorateIcon2.png"
+        },
+        "tint": "#ffffff"
+      }
+    ],
+    "shapes": [
+      {
+        "id": "sRToCiPA",
+        "path": "PetsCollection/Container/BG",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 0,
+          "top": 40,
+          "width": 1040,
+          "height": 560
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#FFFFFF",
+        "background": null
+      },
+      {
+        "id": "gr8BcPhJ",
+        "path": "PetsCollection/Container/BG/DecorLeft",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 5,
+          "top": 404,
+          "width": 100,
+          "height": 150
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#ffffff",
+        "background": null
+      },
+      {
+        "id": "y2VytDvF",
+        "path": "PetsCollection/Container/BG/Main",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 220,
+          "top": 6,
+          "width": 814,
+          "height": 546
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#F6FAFE",
+        "background": null
+      },
+      {
+        "id": "XgiQWXKW",
+        "path": "PetsCollection/Container/BG/DecorRight",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 884,
+          "top": 479,
+          "width": 150,
+          "height": 75
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#ffffff",
+        "background": null
+      }
+    ],
+    "texts": []
+  },
+  "template": {
+    "op": "add",
+    "parent": "PetsCollection",
+    "parentId": "CyEjtaLS",
+    "reason": "Template popup-frame; slot: visible = PetsCollection/Container/BG.active; art = PetsCollection/Container/BG.image.spriteKey; tint = PetsCollection/Container/BG.image.color",
+    "entity": {
+      "id": "uic-popup-frame-sRToCiPA",
+      "name": "BG",
+      "type": "UIImageEntity",
+      "children": [
+        {
+          "id": "uic-popup-frame-gr8BcPhJ",
+          "name": "DecorLeft",
+          "type": "UIImageEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "anchoredPosition": {
+              "x": 5,
+              "y": 6
+            },
+            "sizeDelta": {
+              "x": 100,
+              "y": 150
+            }
+          },
+          "image": {
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "spriteKey": "Assets/Sprites/NewAssets/DecorateIcon1.png"
+          }
+        },
+        {
+          "id": "uic-popup-frame-y2VytDvF",
+          "name": "Main",
+          "type": "UIImageEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 1,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 1,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": -6,
+              "y": 1
+            },
+            "sizeDelta": {
+              "x": 814,
+              "y": 546
+            }
+          },
+          "image": {
+            "color": "#F6FAFE",
+            "reverse": {
+              "x": true,
+              "y": false
+            },
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "spriteKey": "Assets/Sprites/NewAssets/HalfContainerBG.png"
+          }
+        },
+        {
+          "id": "uic-popup-frame-XgiQWXKW",
+          "name": "DecorRight",
+          "type": "UIImageEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 1,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 0
+            },
+            "pivot": {
+              "x": 1,
+              "y": 0
+            },
+            "anchoredPosition": {
+              "x": -6,
+              "y": 6
+            },
+            "sizeDelta": {
+              "x": 150,
+              "y": 75
+            }
+          },
+          "image": {
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "spriteKey": "Assets/Sprites/NewAssets/DecorateIcon2.png"
+          }
+        }
+      ],
+      "active": true,
+      "alpha": 100,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchorMax": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchoredPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "sizeDelta": {
+          "x": 1040,
+          "y": 560
+        }
+      },
+      "image": {
+        "color": "#FFFFFF",
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "fillType": 1,
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "spriteKey": "Assets/Sprites/NewAssets/ContainerBG.png"
+      }
+    }
+  },
+  "templateOmitted": [
+    "PetsCollection/Container/BG/DecorLeft: image.source.fileId",
+    "PetsCollection/Container/BG/DecorLeft: image.source.filePath",
+    "PetsCollection/Container/BG/DecorLeft: image.source._tag.type",
+    "PetsCollection/Container/BG/DecorLeft: image.source.fileType",
+    "PetsCollection/Container/BG/DecorLeft: image.slicedBorder.left",
+    "PetsCollection/Container/BG/DecorLeft: image.slicedBorder.right",
+    "PetsCollection/Container/BG/DecorLeft: image.slicedBorder.top",
+    "PetsCollection/Container/BG/DecorLeft: image.slicedBorder.bottom",
+    "PetsCollection/Container/BG/DecorLeft: image.tiledBorder.left",
+    "PetsCollection/Container/BG/DecorLeft: image.tiledBorder.right",
+    "PetsCollection/Container/BG/DecorLeft: image.tiledBorder.top",
+    "PetsCollection/Container/BG/DecorLeft: image.tiledBorder.bottom",
+    "PetsCollection/Container/BG/DecorLeft: image.flip",
+    "PetsCollection/Container/BG/DecorLeft: image.gradient",
+    "PetsCollection/Container/BG/DecorLeft: image.gradientTop.r",
+    "PetsCollection/Container/BG/DecorLeft: image.gradientTop.g",
+    "PetsCollection/Container/BG/DecorLeft: image.gradientTop.b",
+    "PetsCollection/Container/BG/DecorLeft: image.gradientTop.a",
+    "PetsCollection/Container/BG/DecorLeft: image.gradientBottom.r",
+    "PetsCollection/Container/BG/DecorLeft: image.gradientBottom.g",
+    "PetsCollection/Container/BG/DecorLeft: image.gradientBottom.b",
+    "PetsCollection/Container/BG/DecorLeft: image.gradientBottom.a",
+    "PetsCollection/Container/BG/DecorLeft: image.isApplyAnimation",
+    "PetsCollection/Container/BG/DecorLeft: image.animationAtlasID",
+    "PetsCollection/Container/BG/DecorLeft: image.animationFrameRate",
+    "PetsCollection/Container/BG/DecorLeft: image.animationLoop",
+    "PetsCollection/Container/BG/Main: image.source.fileId",
+    "PetsCollection/Container/BG/Main: image.source.filePath",
+    "PetsCollection/Container/BG/Main: image.source._tag.type",
+    "PetsCollection/Container/BG/Main: image.source.fileType",
+    "PetsCollection/Container/BG/Main: image.slicedBorder.left",
+    "PetsCollection/Container/BG/Main: image.slicedBorder.right",
+    "PetsCollection/Container/BG/Main: image.slicedBorder.top",
+    "PetsCollection/Container/BG/Main: image.slicedBorder.bottom",
+    "PetsCollection/Container/BG/Main: image.tiledBorder.left",
+    "PetsCollection/Container/BG/Main: image.tiledBorder.right",
+    "PetsCollection/Container/BG/Main: image.tiledBorder.top",
+    "PetsCollection/Container/BG/Main: image.tiledBorder.bottom",
+    "PetsCollection/Container/BG/Main: image.flip",
+    "PetsCollection/Container/BG/Main: image.gradient",
+    "PetsCollection/Container/BG/Main: image.gradientTop.r",
+    "PetsCollection/Container/BG/Main: image.gradientTop.g",
+    "PetsCollection/Container/BG/Main: image.gradientTop.b",
+    "PetsCollection/Container/BG/Main: image.gradientTop.a",
+    "PetsCollection/Container/BG/Main: image.gradientBottom.r",
+    "PetsCollection/Container/BG/Main: image.gradientBottom.g",
+    "PetsCollection/Container/BG/Main: image.gradientBottom.b",
+    "PetsCollection/Container/BG/Main: image.gradientBottom.a",
+    "PetsCollection/Container/BG/Main: image.isApplyAnimation",
+    "PetsCollection/Container/BG/Main: image.animationAtlasID",
+    "PetsCollection/Container/BG/Main: image.animationFrameRate",
+    "PetsCollection/Container/BG/Main: image.animationLoop",
+    "PetsCollection/Container/BG/DecorRight: image.source.fileId",
+    "PetsCollection/Container/BG/DecorRight: image.source.filePath",
+    "PetsCollection/Container/BG/DecorRight: image.source._tag.type",
+    "PetsCollection/Container/BG/DecorRight: image.source.fileType",
+    "PetsCollection/Container/BG/DecorRight: image.slicedBorder.left",
+    "PetsCollection/Container/BG/DecorRight: image.slicedBorder.right",
+    "PetsCollection/Container/BG/DecorRight: image.slicedBorder.top",
+    "PetsCollection/Container/BG/DecorRight: image.slicedBorder.bottom",
+    "PetsCollection/Container/BG/DecorRight: image.tiledBorder.left",
+    "PetsCollection/Container/BG/DecorRight: image.tiledBorder.right",
+    "PetsCollection/Container/BG/DecorRight: image.tiledBorder.top",
+    "PetsCollection/Container/BG/DecorRight: image.tiledBorder.bottom",
+    "PetsCollection/Container/BG/DecorRight: image.flip",
+    "PetsCollection/Container/BG/DecorRight: image.gradient",
+    "PetsCollection/Container/BG/DecorRight: image.gradientTop.r",
+    "PetsCollection/Container/BG/DecorRight: image.gradientTop.g",
+    "PetsCollection/Container/BG/DecorRight: image.gradientTop.b",
+    "PetsCollection/Container/BG/DecorRight: image.gradientTop.a",
+    "PetsCollection/Container/BG/DecorRight: image.gradientBottom.r",
+    "PetsCollection/Container/BG/DecorRight: image.gradientBottom.g",
+    "PetsCollection/Container/BG/DecorRight: image.gradientBottom.b",
+    "PetsCollection/Container/BG/DecorRight: image.gradientBottom.a",
+    "PetsCollection/Container/BG/DecorRight: image.isApplyAnimation",
+    "PetsCollection/Container/BG/DecorRight: image.animationAtlasID",
+    "PetsCollection/Container/BG/DecorRight: image.animationFrameRate",
+    "PetsCollection/Container/BG/DecorRight: image.animationLoop",
+    "PetsCollection/Container/BG: image.source.fileId",
+    "PetsCollection/Container/BG: image.source.filePath",
+    "PetsCollection/Container/BG: image.source._tag.type",
+    "PetsCollection/Container/BG: image.source.fileType",
+    "PetsCollection/Container/BG: image.slicedBorder.left",
+    "PetsCollection/Container/BG: image.slicedBorder.right",
+    "PetsCollection/Container/BG: image.slicedBorder.top",
+    "PetsCollection/Container/BG: image.slicedBorder.bottom",
+    "PetsCollection/Container/BG: image.tiledBorder.left",
+    "PetsCollection/Container/BG: image.tiledBorder.right",
+    "PetsCollection/Container/BG: image.tiledBorder.top",
+    "PetsCollection/Container/BG: image.tiledBorder.bottom",
+    "PetsCollection/Container/BG: image.flip",
+    "PetsCollection/Container/BG: image.gradient",
+    "PetsCollection/Container/BG: image.gradientTop.r",
+    "PetsCollection/Container/BG: image.gradientTop.g",
+    "PetsCollection/Container/BG: image.gradientTop.b",
+    "PetsCollection/Container/BG: image.gradientTop.a",
+    "PetsCollection/Container/BG: image.gradientBottom.r",
+    "PetsCollection/Container/BG: image.gradientBottom.g",
+    "PetsCollection/Container/BG: image.gradientBottom.b",
+    "PetsCollection/Container/BG: image.gradientBottom.a",
+    "PetsCollection/Container/BG: image.isApplyAnimation",
+    "PetsCollection/Container/BG: image.animationAtlasID",
+    "PetsCollection/Container/BG: image.animationFrameRate",
+    "PetsCollection/Container/BG: image.animationLoop"
+  ],
+  "stateEvidence": [],
+  "usedBy": [
+    "list-popup"
+  ]
+}

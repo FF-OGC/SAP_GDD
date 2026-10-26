@@ -1,0 +1,1211 @@
+{
+  "id": "unlock-banner",
+  "name": "Dải nguồn mở khoá",
+  "sourcePath": "PetsCollection/Container/UnlockObtain",
+  "sourceId": "neVVrPZ5",
+  "group": "Hiển thị dữ liệu",
+  "status": "real",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "PetsCollection/Container/UnlockObtain",
+      "field": "active",
+      "default": false
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "path": "PetsCollection/Container/UnlockObtain/Label",
+      "field": "text.value",
+      "default": "Obtain: Fishing",
+      "sample": "Nội dung mẫu"
+    },
+    {
+      "name": "art",
+      "type": "sprite",
+      "path": "PetsCollection/Container/UnlockObtain",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/Backgrounds/BG.png"
+    },
+    {
+      "name": "tint",
+      "type": "tint",
+      "path": "PetsCollection/Container/UnlockObtain",
+      "field": "image.color",
+      "default": "#E6F1FF"
+    }
+  ],
+  "states": [
+    {
+      "name": "Chưa sở hữu",
+      "when": "isOwned = false",
+      "ruleSource": "runtimeAssignments.27",
+      "overrides": [
+        {
+          "path": "PetsCollection/Container/UnlockObtain",
+          "field": "active",
+          "value": true
+        }
+      ]
+    },
+    {
+      "name": "Đã sở hữu",
+      "when": "isOwned = true",
+      "ruleSource": "runtimeAssignments.27",
+      "overrides": [
+        {
+          "path": "PetsCollection/Container/UnlockObtain",
+          "field": "active",
+          "value": false
+        }
+      ]
+    }
+  ],
+  "usedIn": [
+    {
+      "screen": "collection",
+      "note": "Có subtree trong PetsCollection.ui"
+    },
+    {
+      "screen": "shop",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    },
+    {
+      "screen": "mission",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection."
+  ],
+  "source": "Assets/HUDs/PetsCollection.ui",
+  "sourceRect": {
+    "left": 670,
+    "top": 320,
+    "width": 350,
+    "height": 250
+  },
+  "referenceSize": {
+    "width": 350,
+    "height": 250
+  },
+  "tree": {
+    "path": "PetsCollection/Container/UnlockObtain",
+    "id": "neVVrPZ5",
+    "name": "UnlockObtain",
+    "type": "UIImageEntity",
+    "active": false,
+    "transform": {
+      "rotate": 0,
+      "anchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchoredPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sizeDelta": {
+        "x": 350,
+        "y": 250
+      }
+    },
+    "alpha": 100,
+    "priority": 0,
+    "image": {
+      "source": {
+        "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+        "filePath": "Assets\\Sprites\\Backgrounds\\BG.png",
+        "_tag": {
+          "type": "GFileRefer"
+        },
+        "fileType": "texture"
+      },
+      "color": "#E6F1FF",
+      "reverse": {
+        "x": false,
+        "y": false
+      },
+      "fillType": 1,
+      "slicedBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "tiledBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "centerInvisible": false,
+      "fillDir": 0,
+      "fillAmount": 0,
+      "invertFill": false,
+      "flip": 0,
+      "gradient": 0,
+      "gradientTop": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "gradientBottom": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "isApplyAnimation": false,
+      "animationAtlasID": null,
+      "animationFrameRate": 30,
+      "animationLoop": true,
+      "spriteKey": "Assets/Sprites/Backgrounds/BG.png"
+    },
+    "button": null,
+    "text": null,
+    "layout": null,
+    "propsData": {
+      "activeSelf": false,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 1,
+          "y": 0
+        },
+        "anchorMax": {
+          "x": 1,
+          "y": 0
+        },
+        "pivot": {
+          "x": 1,
+          "y": 0
+        },
+        "anchoredPosition": {
+          "x": -20,
+          "y": 30
+        },
+        "sizeDelta": {
+          "x": 350,
+          "y": 250
+        }
+      },
+      "alpha": 100,
+      "priority": 0,
+      "image": {
+        "source": {
+          "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+          "filePath": "Assets\\Sprites\\Backgrounds\\BG.png",
+          "_tag": {
+            "type": "GFileRefer"
+          },
+          "fileType": "texture"
+        },
+        "color": "#E6F1FF",
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "isApplyAnimation": false,
+        "animationAtlasID": null,
+        "animationFrameRate": 30,
+        "animationLoop": true,
+        "fillType": 1,
+        "slicedBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "tiledBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "flip": 0,
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        }
+      }
+    },
+    "ecaProps": {
+      "HudImageWidget": {},
+      "HudWidget": {},
+      "Entity": {}
+    },
+    "unsupported": [
+      "m_ApplyingPreviewAnimation"
+    ],
+    "children": [
+      {
+        "path": "PetsCollection/Container/UnlockObtain/Icon",
+        "id": "Mv4awOlH",
+        "name": "Icon",
+        "type": "UIImageEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0.5
+          },
+          "anchorMax": {
+            "x": 0,
+            "y": 0.5
+          },
+          "pivot": {
+            "x": 0,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 60,
+            "y": 0
+          },
+          "sizeDelta": {
+            "x": 60,
+            "y": 60
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": {
+          "source": {
+            "fileId": "4rmnocgrmp-mt1fr9q2-t5ucsp4gh6c",
+            "filePath": "Assets\\Sprites\\Icons\\FishIcon.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/Icons/FishIcon.png"
+        },
+        "button": null,
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 60,
+              "y": 0
+            },
+            "sizeDelta": {
+              "x": 60,
+              "y": 60
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "image": {
+            "source": {
+              "fileId": "4rmnocgrmp-mt1fr9q2-t5ucsp4gh6c",
+              "filePath": "Assets\\Sprites\\Icons\\FishIcon.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "isApplyAnimation": false,
+            "animationAtlasID": null,
+            "animationFrameRate": 30,
+            "animationLoop": true,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "flip": 0,
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudImageWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "m_ApplyingPreviewAnimation"
+        ],
+        "children": []
+      },
+      {
+        "path": "PetsCollection/Container/UnlockObtain/Label",
+        "id": "UE9FbphF",
+        "name": "Label",
+        "type": "UITextEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0.5
+          },
+          "anchorMax": {
+            "x": 0,
+            "y": 0.5
+          },
+          "pivot": {
+            "x": 0,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 134,
+            "y": 0
+          },
+          "sizeDelta": {
+            "x": 180,
+            "y": 80
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": null,
+        "button": null,
+        "text": {
+          "value": "Obtain: Fishing",
+          "key": "",
+          "font": "Default",
+          "fontSize": 24,
+          "fontStyle": {
+            "bold": false,
+            "italic": false,
+            "underline": false
+          },
+          "color": "#103F98",
+          "alignment": {
+            "h": "left",
+            "v": "middle"
+          },
+          "lineSpacing": 0,
+          "background": false,
+          "backgroundColor": "#e7b200",
+          "overflow": 0,
+          "backgroundRGBA": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0
+          },
+          "shadow": false,
+          "shadowColor": "#000000",
+          "shadowOffset": {
+            "x": 1,
+            "y": 1
+          },
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "outline": false,
+          "outlineColor": "#000000",
+          "outlineAlpha": 1,
+          "outlineOffset": 1,
+          "shadowAlpha": 1
+        },
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 134,
+              "y": 0
+            },
+            "sizeDelta": {
+              "x": 180,
+              "y": 80
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "text": {
+            "value": "Obtain: Fishing",
+            "key": "",
+            "font": "Default",
+            "fontSize": 24,
+            "fontStyle": {
+              "bold": false,
+              "italic": false,
+              "underline": false
+            },
+            "color": "#103F98",
+            "alignment": {
+              "h": "left",
+              "v": "middle"
+            },
+            "lineSpacing": 0,
+            "background": false,
+            "backgroundColor": "#e7b200",
+            "overflow": 0,
+            "backgroundRGBA": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0
+            },
+            "shadow": false,
+            "shadowColor": "#000000",
+            "shadowOffset": {
+              "x": 1,
+              "y": 1
+            },
+            "shadowAlpha": 1,
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "outline": false,
+            "outlineColor": "#000000",
+            "outlineAlpha": 1,
+            "outlineOffset": 1
+          }
+        },
+        "ecaProps": {
+          "HudLabelWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [],
+        "children": []
+      }
+    ]
+  },
+  "entityCount": 3,
+  "spec": {
+    "nodes": [
+      {
+        "id": "neVVrPZ5",
+        "path": "PetsCollection/Container/UnlockObtain",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 670,
+          "top": 320,
+          "width": 350,
+          "height": 250
+        },
+        "active": false,
+        "alpha": 100
+      },
+      {
+        "id": "Mv4awOlH",
+        "path": "PetsCollection/Container/UnlockObtain/Icon",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 60,
+          "top": 95,
+          "width": 60,
+          "height": 60
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "UE9FbphF",
+        "path": "PetsCollection/Container/UnlockObtain/Label",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 134,
+          "top": 85,
+          "width": 180,
+          "height": 80
+        },
+        "active": true,
+        "alpha": 100
+      }
+    ],
+    "images": [
+      {
+        "id": "neVVrPZ5",
+        "path": "PetsCollection/Container/UnlockObtain",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 670,
+          "top": 320,
+          "width": 350,
+          "height": 250
+        },
+        "active": false,
+        "alpha": 100,
+        "key": "Assets/Sprites/Backgrounds/BG.png",
+        "sprite": {
+          "key": "Assets/Sprites/Backgrounds/BG.png",
+          "declaredKey": "Assets/Sprites/UIComponents/Backgrounds/BG.png",
+          "declaredKeys": [
+            "Assets/Sprites/UIComponents/Backgrounds/BG.png",
+            "Assets/Sprites/Backgrounds/BG.png"
+          ],
+          "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+          "output": "./assets/ui-sprites/collection/Backgrounds__BG.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container",
+            "PetsCollection/Container/PetDetails",
+            "PetsCollection/Container/PetDetails/Pet/RarityBG",
+            "PetsCollection/Container/Info",
+            "PetsCollection/Container/MutationsWeathers",
+            "PetsCollection/Container/UnlockObtain",
+            "PetsCollection/Container/Recipe"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 8,
+            "right": 8,
+            "top": 8,
+            "bottom": 8
+          },
+          "width": 26,
+          "height": 26
+        },
+        "image": {
+          "source": {
+            "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+            "filePath": "Assets\\Sprites\\Backgrounds\\BG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#E6F1FF",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/Backgrounds/BG.png"
+        },
+        "tint": "#E6F1FF"
+      },
+      {
+        "id": "Mv4awOlH",
+        "path": "PetsCollection/Container/UnlockObtain/Icon",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 60,
+          "top": 95,
+          "width": 60,
+          "height": 60
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/Icons/FishIcon.png",
+        "sprite": {
+          "key": "Assets/Sprites/Icons/FishIcon.png",
+          "declaredKey": "Assets/Sprites/Icons/FishIcon.png",
+          "declaredKeys": [
+            "Assets/Sprites/Icons/FishIcon.png"
+          ],
+          "fileId": "4rmnocgrmp-mt1fr9q2-t5ucsp4gh6c",
+          "output": "./assets/ui-sprites/collection/Icons__FishIcon.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/PetDetails/Obtain/BG/ObtainIcon",
+            "PetsCollection/Container/UnlockObtain/Icon",
+            "runtime:obtain:fishing"
+          ],
+          "origins": [
+            ".ui",
+            "runtime-code"
+          ],
+          "border": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "width": 128,
+          "height": 128
+        },
+        "image": {
+          "source": {
+            "fileId": "4rmnocgrmp-mt1fr9q2-t5ucsp4gh6c",
+            "filePath": "Assets\\Sprites\\Icons\\FishIcon.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/Icons/FishIcon.png"
+        },
+        "tint": "#ffffff"
+      }
+    ],
+    "shapes": [
+      {
+        "id": "neVVrPZ5",
+        "path": "PetsCollection/Container/UnlockObtain",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 670,
+          "top": 320,
+          "width": 350,
+          "height": 250
+        },
+        "active": false,
+        "alpha": 100,
+        "color": "#E6F1FF",
+        "background": null
+      },
+      {
+        "id": "Mv4awOlH",
+        "path": "PetsCollection/Container/UnlockObtain/Icon",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 60,
+          "top": 95,
+          "width": 60,
+          "height": 60
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#ffffff",
+        "background": null
+      },
+      {
+        "id": "UE9FbphF",
+        "path": "PetsCollection/Container/UnlockObtain/Label",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 134,
+          "top": 85,
+          "width": 180,
+          "height": 80
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#e7b200",
+        "background": false
+      }
+    ],
+    "texts": [
+      {
+        "id": "UE9FbphF",
+        "path": "PetsCollection/Container/UnlockObtain/Label",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 134,
+          "top": 85,
+          "width": 180,
+          "height": 80
+        },
+        "active": true,
+        "alpha": 100,
+        "value": "Obtain: Fishing",
+        "key": "",
+        "font": "Default",
+        "fontSize": 24,
+        "fontStyle": {
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        "color": "#103F98",
+        "alignment": {
+          "h": "left",
+          "v": "middle"
+        },
+        "lineSpacing": 0,
+        "background": false,
+        "backgroundColor": "#e7b200",
+        "overflow": 0,
+        "backgroundRGBA": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "shadow": false,
+        "shadowColor": "#000000",
+        "shadowOffset": {
+          "x": 1,
+          "y": 1
+        },
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "outline": false,
+        "outlineColor": "#000000",
+        "outlineAlpha": 1,
+        "outlineOffset": 1,
+        "shadowAlpha": 1,
+        "localization": null
+      }
+    ]
+  },
+  "template": {
+    "op": "add",
+    "parent": "PetsCollection",
+    "parentId": "CyEjtaLS",
+    "reason": "Template unlock-banner; slot: visible = PetsCollection/Container/UnlockObtain.active; label = PetsCollection/Container/UnlockObtain/Label.text.value; art = PetsCollection/Container/UnlockObtain.image.spriteKey; tint = PetsCollection/Container/UnlockObtain.image.color",
+    "entity": {
+      "id": "uic-unlock-banner-neVVrPZ5",
+      "name": "UnlockObtain",
+      "type": "UIImageEntity",
+      "children": [
+        {
+          "id": "uic-unlock-banner-Mv4awOlH",
+          "name": "Icon",
+          "type": "UIImageEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 60,
+              "y": 0
+            },
+            "sizeDelta": {
+              "x": 60,
+              "y": 60
+            }
+          },
+          "image": {
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "spriteKey": "Assets/Sprites/Icons/FishIcon.png"
+          }
+        },
+        {
+          "id": "uic-unlock-banner-UE9FbphF",
+          "name": "Label",
+          "type": "UITextEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 134,
+              "y": 0
+            },
+            "sizeDelta": {
+              "x": 180,
+              "y": 80
+            }
+          },
+          "text": {
+            "value": "Obtain: Fishing",
+            "key": "",
+            "fontSize": 24,
+            "fontStyle": {
+              "bold": false,
+              "italic": false,
+              "underline": false
+            },
+            "color": "#103F98",
+            "alignment": {
+              "h": "left",
+              "v": "middle"
+            },
+            "lineSpacing": 0,
+            "background": false,
+            "backgroundColor": "#e7b200",
+            "shadow": false,
+            "shadowColor": "#000000",
+            "shadowOffset": {
+              "x": 1,
+              "y": 1
+            },
+            "outline": false,
+            "outlineColor": "#000000",
+            "outlineAlpha": 1,
+            "outlineOffset": 1,
+            "shadowAlpha": 1
+          }
+        }
+      ],
+      "active": false,
+      "alpha": 100,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchorMax": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchoredPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "sizeDelta": {
+          "x": 350,
+          "y": 250
+        }
+      },
+      "image": {
+        "color": "#E6F1FF",
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "fillType": 1,
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "spriteKey": "Assets/Sprites/Backgrounds/BG.png"
+      }
+    }
+  },
+  "templateOmitted": [
+    "PetsCollection/Container/UnlockObtain/Icon: image.source.fileId",
+    "PetsCollection/Container/UnlockObtain/Icon: image.source.filePath",
+    "PetsCollection/Container/UnlockObtain/Icon: image.source._tag.type",
+    "PetsCollection/Container/UnlockObtain/Icon: image.source.fileType",
+    "PetsCollection/Container/UnlockObtain/Icon: image.slicedBorder.left",
+    "PetsCollection/Container/UnlockObtain/Icon: image.slicedBorder.right",
+    "PetsCollection/Container/UnlockObtain/Icon: image.slicedBorder.top",
+    "PetsCollection/Container/UnlockObtain/Icon: image.slicedBorder.bottom",
+    "PetsCollection/Container/UnlockObtain/Icon: image.tiledBorder.left",
+    "PetsCollection/Container/UnlockObtain/Icon: image.tiledBorder.right",
+    "PetsCollection/Container/UnlockObtain/Icon: image.tiledBorder.top",
+    "PetsCollection/Container/UnlockObtain/Icon: image.tiledBorder.bottom",
+    "PetsCollection/Container/UnlockObtain/Icon: image.flip",
+    "PetsCollection/Container/UnlockObtain/Icon: image.gradient",
+    "PetsCollection/Container/UnlockObtain/Icon: image.gradientTop.r",
+    "PetsCollection/Container/UnlockObtain/Icon: image.gradientTop.g",
+    "PetsCollection/Container/UnlockObtain/Icon: image.gradientTop.b",
+    "PetsCollection/Container/UnlockObtain/Icon: image.gradientTop.a",
+    "PetsCollection/Container/UnlockObtain/Icon: image.gradientBottom.r",
+    "PetsCollection/Container/UnlockObtain/Icon: image.gradientBottom.g",
+    "PetsCollection/Container/UnlockObtain/Icon: image.gradientBottom.b",
+    "PetsCollection/Container/UnlockObtain/Icon: image.gradientBottom.a",
+    "PetsCollection/Container/UnlockObtain/Icon: image.isApplyAnimation",
+    "PetsCollection/Container/UnlockObtain/Icon: image.animationAtlasID",
+    "PetsCollection/Container/UnlockObtain/Icon: image.animationFrameRate",
+    "PetsCollection/Container/UnlockObtain/Icon: image.animationLoop",
+    "PetsCollection/Container/UnlockObtain/Label: text.font",
+    "PetsCollection/Container/UnlockObtain/Label: text.overflow",
+    "PetsCollection/Container/UnlockObtain/Label: text.backgroundRGBA.r",
+    "PetsCollection/Container/UnlockObtain/Label: text.backgroundRGBA.g",
+    "PetsCollection/Container/UnlockObtain/Label: text.backgroundRGBA.b",
+    "PetsCollection/Container/UnlockObtain/Label: text.backgroundRGBA.a",
+    "PetsCollection/Container/UnlockObtain/Label: text.gradient",
+    "PetsCollection/Container/UnlockObtain/Label: text.gradientTop.r",
+    "PetsCollection/Container/UnlockObtain/Label: text.gradientTop.g",
+    "PetsCollection/Container/UnlockObtain/Label: text.gradientTop.b",
+    "PetsCollection/Container/UnlockObtain/Label: text.gradientTop.a",
+    "PetsCollection/Container/UnlockObtain/Label: text.gradientBottom.r",
+    "PetsCollection/Container/UnlockObtain/Label: text.gradientBottom.g",
+    "PetsCollection/Container/UnlockObtain/Label: text.gradientBottom.b",
+    "PetsCollection/Container/UnlockObtain/Label: text.gradientBottom.a",
+    "PetsCollection/Container/UnlockObtain: image.source.fileId",
+    "PetsCollection/Container/UnlockObtain: image.source.filePath",
+    "PetsCollection/Container/UnlockObtain: image.source._tag.type",
+    "PetsCollection/Container/UnlockObtain: image.source.fileType",
+    "PetsCollection/Container/UnlockObtain: image.slicedBorder.left",
+    "PetsCollection/Container/UnlockObtain: image.slicedBorder.right",
+    "PetsCollection/Container/UnlockObtain: image.slicedBorder.top",
+    "PetsCollection/Container/UnlockObtain: image.slicedBorder.bottom",
+    "PetsCollection/Container/UnlockObtain: image.tiledBorder.left",
+    "PetsCollection/Container/UnlockObtain: image.tiledBorder.right",
+    "PetsCollection/Container/UnlockObtain: image.tiledBorder.top",
+    "PetsCollection/Container/UnlockObtain: image.tiledBorder.bottom",
+    "PetsCollection/Container/UnlockObtain: image.flip",
+    "PetsCollection/Container/UnlockObtain: image.gradient",
+    "PetsCollection/Container/UnlockObtain: image.gradientTop.r",
+    "PetsCollection/Container/UnlockObtain: image.gradientTop.g",
+    "PetsCollection/Container/UnlockObtain: image.gradientTop.b",
+    "PetsCollection/Container/UnlockObtain: image.gradientTop.a",
+    "PetsCollection/Container/UnlockObtain: image.gradientBottom.r",
+    "PetsCollection/Container/UnlockObtain: image.gradientBottom.g",
+    "PetsCollection/Container/UnlockObtain: image.gradientBottom.b",
+    "PetsCollection/Container/UnlockObtain: image.gradientBottom.a",
+    "PetsCollection/Container/UnlockObtain: image.isApplyAnimation",
+    "PetsCollection/Container/UnlockObtain: image.animationAtlasID",
+    "PetsCollection/Container/UnlockObtain: image.animationFrameRate",
+    "PetsCollection/Container/UnlockObtain: image.animationLoop"
+  ],
+  "stateEvidence": [
+    {
+      "name": "Chưa sở hữu",
+      "ruleSource": "runtimeAssignments.27",
+      "rule": {
+        "target": "_UnlockObtainWidget",
+        "widgetType": "UIWidget",
+        "property": "IsVisible",
+        "expression": "!isOwned",
+        "source": "Assets/Scripts/HUDs/HudCollection.fcg:492"
+      }
+    },
+    {
+      "name": "Đã sở hữu",
+      "ruleSource": "runtimeAssignments.27",
+      "rule": {
+        "target": "_UnlockObtainWidget",
+        "widgetType": "UIWidget",
+        "property": "IsVisible",
+        "expression": "!isOwned",
+        "source": "Assets/Scripts/HUDs/HudCollection.fcg:492"
+      }
+    }
+  ],
+  "usedBy": [
+    "list-popup"
+  ]
+}

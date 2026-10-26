@@ -1,0 +1,80 @@
+{
+  "id": "progress-counter",
+  "name": "Bộ đếm tiến độ",
+  "sourcePath": "PetsCollection/Container/PetsCount",
+  "sourceId": "QAgClHag",
+  "group": "Hiển thị dữ liệu",
+  "status": "real",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "PetsCollection/Container/PetsCount",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "path": "PetsCollection/Container/PetsCount/PetsAmount",
+      "field": "text.value",
+      "default": "26/272",
+      "sample": "Nội dung mẫu"
+    },
+    {
+      "name": "art",
+      "type": "sprite",
+      "path": "PetsCollection/Container/PetsCount",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/Buttons/SkillButtonBG.png"
+    },
+    {
+      "name": "tint",
+      "type": "tint",
+      "path": "PetsCollection/Container/PetsCount",
+      "field": "image.color",
+      "default": "#ffffff"
+    },
+    {
+      "name": "progress",
+      "type": "count",
+      "path": "PetsCollection/Container/PetsCount/Progress",
+      "field": "image.fillAmount",
+      "default": 0.3
+    }
+  ],
+  "states": [
+    {
+      "name": "Chưa có tiến độ",
+      "when": "total <= 0 hoặc owned < 0",
+      "ruleSource": "counters",
+      "overrides": [
+        {
+          "path": "PetsCollection/Container/PetsCount/Progress",
+          "field": "image.fillAmount",
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "usedIn": [
+    {
+      "screen": "collection",
+      "note": "Có subtree trong PetsCollection.ui"
+    },
+    {
+      "screen": "shop",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    },
+    {
+      "screen": "mission",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection."
+  ]
+}

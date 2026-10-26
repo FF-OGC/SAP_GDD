@@ -1,0 +1,449 @@
+{
+  "id": "close-button",
+  "name": "Nút đóng",
+  "sourcePath": "PetsCollection/Container/Title/CloseButton",
+  "sourceId": "GnjIZuxE",
+  "group": "Điều khiển",
+  "status": "real",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "PetsCollection/Container/Title/CloseButton",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "art",
+      "type": "sprite",
+      "path": "PetsCollection/Container/Title/CloseButton",
+      "field": "button.spriteKey",
+      "default": "Assets/Sprites/NewAssets/CloseButton.png"
+    }
+  ],
+  "states": [],
+  "usedIn": [
+    {
+      "screen": "collection",
+      "note": "Có subtree trong PetsCollection.ui"
+    },
+    {
+      "screen": "shop",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    },
+    {
+      "screen": "mission",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection."
+  ],
+  "source": "Assets/HUDs/PetsCollection.ui",
+  "sourceRect": {
+    "left": 1010,
+    "top": 58,
+    "width": 40,
+    "height": 40
+  },
+  "referenceSize": {
+    "width": 40,
+    "height": 40
+  },
+  "tree": {
+    "path": "PetsCollection/Container/Title/CloseButton",
+    "id": "GnjIZuxE",
+    "name": "CloseButton",
+    "type": "UIButtonEntity",
+    "active": true,
+    "transform": {
+      "rotate": 0,
+      "anchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchoredPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sizeDelta": {
+        "x": 40,
+        "y": 40
+      }
+    },
+    "alpha": 100,
+    "priority": 0,
+    "image": null,
+    "button": {
+      "spriteName": {
+        "fileId": "ub3ok34eqnr-mu6xhog5-q0tv8gncefb",
+        "filePath": "Assets\\Sprites\\NewAssets\\CloseButton.png",
+        "_tag": {
+          "type": "GFileRefer"
+        },
+        "fileType": "texture"
+      },
+      "normal": "#FFFFFF",
+      "highlight": "#e2a222",
+      "pressed": "#C5C5C5",
+      "disabled": "#494949",
+      "enableBorderImage": true,
+      "disableCollider": false,
+      "fillType": 1,
+      "slicedBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "tiledBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "centerInvisible": false,
+      "fillDir": 0,
+      "fillAmount": 0,
+      "invertFill": false,
+      "reverse": {
+        "x": true,
+        "y": false
+      },
+      "flip": 0,
+      "gradient": 1,
+      "gradientTop": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "gradientBottom": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "spriteKey": "Assets/Sprites/NewAssets/CloseButton.png"
+    },
+    "text": null,
+    "layout": null,
+    "propsData": {
+      "activeSelf": true,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 1,
+          "y": 0.5
+        },
+        "anchorMax": {
+          "x": 1,
+          "y": 0.5
+        },
+        "pivot": {
+          "x": 1,
+          "y": 0.5
+        },
+        "anchoredPosition": {
+          "x": -16,
+          "y": -16
+        },
+        "sizeDelta": {
+          "x": 40,
+          "y": 40
+        }
+      },
+      "alpha": 100,
+      "priority": 0,
+      "button": {
+        "spriteName": {
+          "fileId": "ub3ok34eqnr-mu6xhog5-q0tv8gncefb",
+          "filePath": "Assets\\Sprites\\NewAssets\\CloseButton.png",
+          "_tag": {
+            "type": "GFileRefer"
+          },
+          "fileType": "texture"
+        },
+        "normal": "#FFFFFF",
+        "highlight": "#e2a222",
+        "pressed": "#C5C5C5",
+        "disabled": "#494949",
+        "onClicks": [],
+        "enableBorderImage": true,
+        "clickHandlers": [],
+        "disableCollider": false,
+        "fillType": 1,
+        "slicedBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "tiledBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "reverse": {
+          "x": true,
+          "y": false
+        },
+        "flip": 0,
+        "gradient": 1,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        }
+      }
+    },
+    "ecaProps": {
+      "HudButtonWidget": {
+        "PROP_45691568": {
+          "type": "CustomEnum90516480",
+          "value": "E99425497"
+        }
+      },
+      "HudWidget": {},
+      "Entity": {}
+    },
+    "unsupported": [
+      "button.onClicks",
+      "button.clickHandlers"
+    ],
+    "children": []
+  },
+  "entityCount": 1,
+  "spec": {
+    "nodes": [
+      {
+        "id": "GnjIZuxE",
+        "path": "PetsCollection/Container/Title/CloseButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 1010,
+          "top": 58,
+          "width": 40,
+          "height": 40
+        },
+        "active": true,
+        "alpha": 100
+      }
+    ],
+    "images": [
+      {
+        "id": "GnjIZuxE",
+        "path": "PetsCollection/Container/Title/CloseButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 1010,
+          "top": 58,
+          "width": 40,
+          "height": 40
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/CloseButton.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/CloseButton.png",
+          "declaredKey": "Assets/Sprites/NewAssets/CloseButton.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/CloseButton.png"
+          ],
+          "fileId": "ub3ok34eqnr-mu6xhog5-q0tv8gncefb",
+          "output": "./assets/ui-sprites/collection/NewAssets__CloseButton.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/Title/CloseButton"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "width": 38,
+          "height": 40
+        },
+        "image": {
+          "spriteName": {
+            "fileId": "ub3ok34eqnr-mu6xhog5-q0tv8gncefb",
+            "filePath": "Assets\\Sprites\\NewAssets\\CloseButton.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": true,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/NewAssets/CloseButton.png"
+        },
+        "tint": "#FFFFFF"
+      }
+    ],
+    "shapes": [
+      {
+        "id": "GnjIZuxE",
+        "path": "PetsCollection/Container/Title/CloseButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 1010,
+          "top": 58,
+          "width": 40,
+          "height": 40
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#FFFFFF",
+        "background": null
+      }
+    ],
+    "texts": []
+  },
+  "template": {
+    "op": "add",
+    "parent": "PetsCollection",
+    "parentId": "CyEjtaLS",
+    "reason": "Template close-button; slot: visible = PetsCollection/Container/Title/CloseButton.active; art = PetsCollection/Container/Title/CloseButton.button.spriteKey",
+    "entity": {
+      "id": "uic-close-button-GnjIZuxE",
+      "name": "CloseButton",
+      "type": "UIButtonEntity",
+      "children": [],
+      "active": true,
+      "alpha": 100,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchorMax": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchoredPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "sizeDelta": {
+          "x": 40,
+          "y": 40
+        }
+      },
+      "button": {
+        "normal": "#FFFFFF",
+        "pressed": "#C5C5C5",
+        "disabled": "#494949",
+        "disableCollider": false,
+        "fillType": 1,
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "reverse": {
+          "x": true,
+          "y": false
+        },
+        "spriteKey": "Assets/Sprites/NewAssets/CloseButton.png"
+      }
+    }
+  },
+  "templateOmitted": [
+    "PetsCollection/Container/Title/CloseButton: button.spriteName.fileId",
+    "PetsCollection/Container/Title/CloseButton: button.spriteName.filePath",
+    "PetsCollection/Container/Title/CloseButton: button.spriteName._tag.type",
+    "PetsCollection/Container/Title/CloseButton: button.spriteName.fileType",
+    "PetsCollection/Container/Title/CloseButton: button.highlight",
+    "PetsCollection/Container/Title/CloseButton: button.enableBorderImage",
+    "PetsCollection/Container/Title/CloseButton: button.slicedBorder.left",
+    "PetsCollection/Container/Title/CloseButton: button.slicedBorder.right",
+    "PetsCollection/Container/Title/CloseButton: button.slicedBorder.top",
+    "PetsCollection/Container/Title/CloseButton: button.slicedBorder.bottom",
+    "PetsCollection/Container/Title/CloseButton: button.tiledBorder.left",
+    "PetsCollection/Container/Title/CloseButton: button.tiledBorder.right",
+    "PetsCollection/Container/Title/CloseButton: button.tiledBorder.top",
+    "PetsCollection/Container/Title/CloseButton: button.tiledBorder.bottom",
+    "PetsCollection/Container/Title/CloseButton: button.flip",
+    "PetsCollection/Container/Title/CloseButton: button.gradient",
+    "PetsCollection/Container/Title/CloseButton: button.gradientTop.r",
+    "PetsCollection/Container/Title/CloseButton: button.gradientTop.g",
+    "PetsCollection/Container/Title/CloseButton: button.gradientTop.b",
+    "PetsCollection/Container/Title/CloseButton: button.gradientTop.a",
+    "PetsCollection/Container/Title/CloseButton: button.gradientBottom.r",
+    "PetsCollection/Container/Title/CloseButton: button.gradientBottom.g",
+    "PetsCollection/Container/Title/CloseButton: button.gradientBottom.b",
+    "PetsCollection/Container/Title/CloseButton: button.gradientBottom.a"
+  ],
+  "stateEvidence": [],
+  "usedBy": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "unlock-banner",
+  "name": "Dải nguồn mở khoá",
+  "sourcePath": "PetsCollection/Container/UnlockObtain",
+  "sourceId": "neVVrPZ5",
+  "group": "Hiển thị dữ liệu",
+  "status": "real",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "PetsCollection/Container/UnlockObtain",
+      "field": "active",
+      "default": false
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "path": "PetsCollection/Container/UnlockObtain/Label",
+      "field": "text.value",
+      "default": "Obtain: Fishing",
+      "sample": "Nội dung mẫu"
+    },
+    {
+      "name": "art",
+      "type": "sprite",
+      "path": "PetsCollection/Container/UnlockObtain",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/Backgrounds/BG.png"
+    },
+    {
+      "name": "tint",
+      "type": "tint",
+      "path": "PetsCollection/Container/UnlockObtain",
+      "field": "image.color",
+      "default": "#E6F1FF"
+    }
+  ],
+  "states": [
+    {
+      "name": "Chưa sở hữu",
+      "when": "isOwned = false",
+      "ruleSource": "runtimeAssignments.27",
+      "overrides": [
+        {
+          "path": "PetsCollection/Container/UnlockObtain",
+          "field": "active",
+          "value": true
+        }
+      ]
+    },
+    {
+      "name": "Đã sở hữu",
+      "when": "isOwned = true",
+      "ruleSource": "runtimeAssignments.27",
+      "overrides": [
+        {
+          "path": "PetsCollection/Container/UnlockObtain",
+          "field": "active",
+          "value": false
+        }
+      ]
+    }
+  ],
+  "usedIn": [
+    {
+      "screen": "collection",
+      "note": "Có subtree trong PetsCollection.ui"
+    },
+    {
+      "screen": "shop",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    },
+    {
+      "screen": "mission",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection."
+  ]
+}

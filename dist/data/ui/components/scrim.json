@@ -1,0 +1,449 @@
+{
+  "id": "scrim",
+  "name": "Nền chặn modal",
+  "sourcePath": "PetsCollection/DarkBG",
+  "sourceId": "YD8GYJ30",
+  "group": "Khung",
+  "status": "real",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "PetsCollection/DarkBG",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "art",
+      "type": "sprite",
+      "path": "PetsCollection/DarkBG",
+      "field": "button.spriteKey",
+      "default": "Assets/Sprites/Backgrounds/DarkBG.png"
+    }
+  ],
+  "states": [],
+  "usedIn": [
+    {
+      "screen": "collection",
+      "note": "Có subtree trong PetsCollection.ui"
+    },
+    {
+      "screen": "shop",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    },
+    {
+      "screen": "mission",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection."
+  ],
+  "source": "Assets/HUDs/PetsCollection.ui",
+  "sourceRect": {
+    "left": -1000,
+    "top": -1000,
+    "width": 3500,
+    "height": 2750
+  },
+  "referenceSize": {
+    "width": 3500,
+    "height": 2750
+  },
+  "tree": {
+    "path": "PetsCollection/DarkBG",
+    "id": "YD8GYJ30",
+    "name": "DarkBG",
+    "type": "UIButtonEntity",
+    "active": true,
+    "transform": {
+      "rotate": 0,
+      "anchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchoredPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sizeDelta": {
+        "x": 3500,
+        "y": 2750
+      }
+    },
+    "alpha": 100,
+    "priority": 0,
+    "image": null,
+    "button": {
+      "spriteName": {
+        "fileId": "amqbaf0ix1n-mincvgtv-gm0n5ept0bj",
+        "filePath": "Assets\\Sprites\\Backgrounds\\DarkBG.png",
+        "_tag": {
+          "type": "GFileRefer"
+        },
+        "fileType": "texture"
+      },
+      "normal": "#FFFFFF",
+      "highlight": "#e2a222",
+      "pressed": "#C5C5C5",
+      "disabled": "#494949",
+      "enableBorderImage": true,
+      "disableCollider": false,
+      "fillType": 1,
+      "slicedBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "tiledBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "centerInvisible": false,
+      "fillDir": 0,
+      "fillAmount": 0,
+      "invertFill": false,
+      "reverse": {
+        "x": false,
+        "y": false
+      },
+      "flip": 0,
+      "gradient": 1,
+      "gradientTop": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "gradientBottom": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "spriteKey": "Assets/Sprites/Backgrounds/DarkBG.png"
+    },
+    "text": null,
+    "layout": null,
+    "propsData": {
+      "activeSelf": true,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0,
+          "y": 0
+        },
+        "anchorMax": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchoredPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "sizeDelta": {
+          "x": 2000,
+          "y": 2000
+        }
+      },
+      "alpha": 100,
+      "priority": 0,
+      "button": {
+        "spriteName": {
+          "fileId": "amqbaf0ix1n-mincvgtv-gm0n5ept0bj",
+          "filePath": "Assets\\Sprites\\Backgrounds\\DarkBG.png",
+          "_tag": {
+            "type": "GFileRefer"
+          },
+          "fileType": "texture"
+        },
+        "normal": "#FFFFFF",
+        "highlight": "#e2a222",
+        "pressed": "#C5C5C5",
+        "disabled": "#494949",
+        "onClicks": [],
+        "enableBorderImage": true,
+        "clickHandlers": [],
+        "disableCollider": false,
+        "fillType": 1,
+        "slicedBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "tiledBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "flip": 0,
+        "gradient": 1,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        }
+      }
+    },
+    "ecaProps": {
+      "HudButtonWidget": {
+        "PROP_45691568": {
+          "type": "CustomEnum90516480",
+          "value": "E99425497"
+        }
+      },
+      "HudWidget": {},
+      "Entity": {}
+    },
+    "unsupported": [
+      "button.onClicks",
+      "button.clickHandlers"
+    ],
+    "children": []
+  },
+  "entityCount": 1,
+  "spec": {
+    "nodes": [
+      {
+        "id": "YD8GYJ30",
+        "path": "PetsCollection/DarkBG",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": -1000,
+          "top": -1000,
+          "width": 3500,
+          "height": 2750
+        },
+        "active": true,
+        "alpha": 100
+      }
+    ],
+    "images": [
+      {
+        "id": "YD8GYJ30",
+        "path": "PetsCollection/DarkBG",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": -1000,
+          "top": -1000,
+          "width": 3500,
+          "height": 2750
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/Backgrounds/DarkBG.png",
+        "sprite": {
+          "key": "Assets/Sprites/Backgrounds/DarkBG.png",
+          "declaredKey": "Assets/Sprites/Backgrounds/DarkBG.png",
+          "declaredKeys": [
+            "Assets/Sprites/Backgrounds/DarkBG.png"
+          ],
+          "fileId": "amqbaf0ix1n-mincvgtv-gm0n5ept0bj",
+          "output": "./assets/ui-sprites/collection/Backgrounds__DarkBG.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/DarkBG"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 12,
+            "right": 12,
+            "top": 12,
+            "bottom": 12
+          },
+          "width": 40,
+          "height": 40
+        },
+        "image": {
+          "spriteName": {
+            "fileId": "amqbaf0ix1n-mincvgtv-gm0n5ept0bj",
+            "filePath": "Assets\\Sprites\\Backgrounds\\DarkBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/Backgrounds/DarkBG.png"
+        },
+        "tint": "#FFFFFF"
+      }
+    ],
+    "shapes": [
+      {
+        "id": "YD8GYJ30",
+        "path": "PetsCollection/DarkBG",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": -1000,
+          "top": -1000,
+          "width": 3500,
+          "height": 2750
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#FFFFFF",
+        "background": null
+      }
+    ],
+    "texts": []
+  },
+  "template": {
+    "op": "add",
+    "parent": "PetsCollection",
+    "parentId": "CyEjtaLS",
+    "reason": "Template scrim; slot: visible = PetsCollection/DarkBG.active; art = PetsCollection/DarkBG.button.spriteKey",
+    "entity": {
+      "id": "uic-scrim-YD8GYJ30",
+      "name": "DarkBG",
+      "type": "UIButtonEntity",
+      "children": [],
+      "active": true,
+      "alpha": 100,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchorMax": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchoredPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "sizeDelta": {
+          "x": 3500,
+          "y": 2750
+        }
+      },
+      "button": {
+        "normal": "#FFFFFF",
+        "pressed": "#C5C5C5",
+        "disabled": "#494949",
+        "disableCollider": false,
+        "fillType": 1,
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "spriteKey": "Assets/Sprites/Backgrounds/DarkBG.png"
+      }
+    }
+  },
+  "templateOmitted": [
+    "PetsCollection/DarkBG: button.spriteName.fileId",
+    "PetsCollection/DarkBG: button.spriteName.filePath",
+    "PetsCollection/DarkBG: button.spriteName._tag.type",
+    "PetsCollection/DarkBG: button.spriteName.fileType",
+    "PetsCollection/DarkBG: button.highlight",
+    "PetsCollection/DarkBG: button.enableBorderImage",
+    "PetsCollection/DarkBG: button.slicedBorder.left",
+    "PetsCollection/DarkBG: button.slicedBorder.right",
+    "PetsCollection/DarkBG: button.slicedBorder.top",
+    "PetsCollection/DarkBG: button.slicedBorder.bottom",
+    "PetsCollection/DarkBG: button.tiledBorder.left",
+    "PetsCollection/DarkBG: button.tiledBorder.right",
+    "PetsCollection/DarkBG: button.tiledBorder.top",
+    "PetsCollection/DarkBG: button.tiledBorder.bottom",
+    "PetsCollection/DarkBG: button.flip",
+    "PetsCollection/DarkBG: button.gradient",
+    "PetsCollection/DarkBG: button.gradientTop.r",
+    "PetsCollection/DarkBG: button.gradientTop.g",
+    "PetsCollection/DarkBG: button.gradientTop.b",
+    "PetsCollection/DarkBG: button.gradientTop.a",
+    "PetsCollection/DarkBG: button.gradientBottom.r",
+    "PetsCollection/DarkBG: button.gradientBottom.g",
+    "PetsCollection/DarkBG: button.gradientBottom.b",
+    "PetsCollection/DarkBG: button.gradientBottom.a"
+  ],
+  "stateEvidence": [],
+  "usedBy": []
+}

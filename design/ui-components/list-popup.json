@@ -1,0 +1,71 @@
+{
+  "id": "list-popup",
+  "name": "Popup lưới và chi tiết",
+  "sourcePath": "PetsCollection/Container",
+  "sourceId": "jMGHqNVH",
+  "group": "Ghép",
+  "status": "real",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "PetsCollection/Container",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "path": "PetsCollection/Container/Title/Label",
+      "field": "text.key",
+      "default": "HUD_COLLECTION_TITLE",
+      "sample": "Nội dung mẫu"
+    },
+    {
+      "name": "art",
+      "type": "sprite",
+      "path": "PetsCollection/Container",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/Backgrounds/BG.png"
+    },
+    {
+      "name": "tint",
+      "type": "tint",
+      "path": "PetsCollection/Container",
+      "field": "image.color",
+      "default": "#1f64c4"
+    }
+  ],
+  "states": [],
+  "usedIn": [
+    {
+      "screen": "collection",
+      "note": "Có subtree trong PetsCollection.ui"
+    },
+    {
+      "screen": "shop",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    },
+    {
+      "screen": "mission",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    }
+  ],
+  "composedOf": [
+    "popup-frame",
+    "title-bar",
+    "tab-bar",
+    "item-grid",
+    "pagination",
+    "detail-card",
+    "info-row",
+    "progress-counter",
+    "unlock-banner"
+  ],
+  "notes": [
+    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection.",
+    "Container nguyên vẹn làm template ghép, không inject component hoặc clone runtime."
+  ]
+}

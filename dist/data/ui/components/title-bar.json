@@ -1,0 +1,1166 @@
+{
+  "id": "title-bar",
+  "name": "Thanh tiêu đề",
+  "sourcePath": "PetsCollection/Container/Title",
+  "sourceId": "JUnMlJee",
+  "group": "Khung",
+  "status": "real",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "PetsCollection/Container/Title",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "path": "PetsCollection/Container/Title/Label",
+      "field": "text.key",
+      "default": "HUD_COLLECTION_TITLE",
+      "sample": "Nội dung mẫu"
+    },
+    {
+      "name": "art",
+      "type": "sprite",
+      "path": "PetsCollection/Container/Title",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/NewAssets/TitleBG.png"
+    },
+    {
+      "name": "tint",
+      "type": "tint",
+      "path": "PetsCollection/Container/Title",
+      "field": "image.color",
+      "default": "#ffffff"
+    }
+  ],
+  "states": [],
+  "usedIn": [
+    {
+      "screen": "collection",
+      "note": "Có subtree trong PetsCollection.ui"
+    },
+    {
+      "screen": "shop",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    },
+    {
+      "screen": "mission",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection."
+  ],
+  "source": "Assets/HUDs/PetsCollection.ui",
+  "sourceRect": {
+    "left": -26,
+    "top": -60,
+    "width": 1066,
+    "height": 124
+  },
+  "referenceSize": {
+    "width": 1066,
+    "height": 124
+  },
+  "tree": {
+    "path": "PetsCollection/Container/Title",
+    "id": "JUnMlJee",
+    "name": "Title",
+    "type": "UIImageEntity",
+    "active": true,
+    "transform": {
+      "rotate": 0,
+      "anchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchoredPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sizeDelta": {
+        "x": 1066,
+        "y": 124
+      }
+    },
+    "alpha": 100,
+    "priority": 0,
+    "image": {
+      "source": {
+        "fileId": "zkfpx1yzvtc-mu6xhq5y-nv8ey9h3kfj",
+        "filePath": "Assets\\Sprites\\NewAssets\\TitleBG.png",
+        "_tag": {
+          "type": "GFileRefer"
+        },
+        "fileType": "texture"
+      },
+      "color": "#ffffff",
+      "reverse": {
+        "x": false,
+        "y": false
+      },
+      "fillType": 1,
+      "slicedBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "tiledBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "centerInvisible": false,
+      "fillDir": 0,
+      "fillAmount": 0,
+      "invertFill": false,
+      "flip": 0,
+      "gradient": 1,
+      "gradientTop": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "gradientBottom": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "isApplyAnimation": false,
+      "animationAtlasID": null,
+      "animationFrameRate": 30,
+      "animationLoop": true,
+      "spriteKey": "Assets/Sprites/NewAssets/TitleBG.png"
+    },
+    "button": null,
+    "text": null,
+    "layout": null,
+    "propsData": {
+      "activeSelf": true,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0.5,
+          "y": 1
+        },
+        "anchorMax": {
+          "x": 0.5,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 1
+        },
+        "anchoredPosition": {
+          "x": -13,
+          "y": 60
+        },
+        "sizeDelta": {
+          "x": 1066,
+          "y": 124
+        }
+      },
+      "alpha": 100,
+      "priority": 0,
+      "image": {
+        "source": {
+          "fileId": "zkfpx1yzvtc-mu6xhq5y-nv8ey9h3kfj",
+          "filePath": "Assets\\Sprites\\NewAssets\\TitleBG.png",
+          "_tag": {
+            "type": "GFileRefer"
+          },
+          "fileType": "texture"
+        },
+        "color": "#ffffff",
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "fillType": 1,
+        "slicedBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "tiledBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "flip": 0,
+        "gradient": 1,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "isApplyAnimation": false,
+        "animationAtlasID": null,
+        "animationFrameRate": 30,
+        "animationLoop": true
+      }
+    },
+    "ecaProps": {
+      "HudImageWidget": {},
+      "HudWidget": {},
+      "Entity": {}
+    },
+    "unsupported": [],
+    "children": [
+      {
+        "path": "PetsCollection/Container/Title/Label",
+        "id": "JRxpWV4m",
+        "name": "Label",
+        "type": "UITextEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0.5
+          },
+          "anchorMax": {
+            "x": 0,
+            "y": 0.5
+          },
+          "pivot": {
+            "x": 0,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 40,
+            "y": -20
+          },
+          "sizeDelta": {
+            "x": 760,
+            "y": 40
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": null,
+        "button": null,
+        "text": {
+          "value": "COLLECTION",
+          "key": "HUD_COLLECTION_TITLE",
+          "font": "Default",
+          "fontSize": 40,
+          "fontStyle": {
+            "bold": true,
+            "italic": false,
+            "underline": false
+          },
+          "color": "#FFFCB7",
+          "alignment": {
+            "h": "left",
+            "v": "middle"
+          },
+          "lineSpacing": 0,
+          "background": false,
+          "backgroundColor": "#e7b200",
+          "overflow": 0,
+          "backgroundRGBA": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0
+          },
+          "shadow": true,
+          "shadowColor": "#093C78",
+          "shadowOffset": {
+            "x": 1,
+            "y": 1
+          },
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "outline": false,
+          "outlineColor": "#000000",
+          "outlineAlpha": 1,
+          "outlineOffset": 1,
+          "shadowAlpha": 1
+        },
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 40,
+              "y": -20
+            },
+            "sizeDelta": {
+              "x": 760,
+              "y": 40
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "text": {
+            "value": "COLLECTION",
+            "key": "HUD_COLLECTION_TITLE",
+            "font": "Default",
+            "fontSize": 40,
+            "fontStyle": {
+              "bold": true,
+              "italic": false,
+              "underline": false
+            },
+            "color": "#FFFCB7",
+            "alignment": {
+              "h": "left",
+              "v": "middle"
+            },
+            "lineSpacing": 0,
+            "background": false,
+            "backgroundColor": "#e7b200",
+            "overflow": 0,
+            "backgroundRGBA": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0
+            },
+            "shadow": true,
+            "shadowColor": "#093C78",
+            "shadowOffset": {
+              "x": 1,
+              "y": 1
+            },
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "outline": false,
+            "outlineColor": "#000000",
+            "outlineAlpha": 1,
+            "outlineOffset": 1,
+            "shadowAlpha": 1
+          }
+        },
+        "ecaProps": {
+          "HudLabelWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [],
+        "children": []
+      },
+      {
+        "path": "PetsCollection/Container/Title/CloseButton",
+        "id": "GnjIZuxE",
+        "name": "CloseButton",
+        "type": "UIButtonEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 1,
+            "y": 0.5
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 0.5
+          },
+          "pivot": {
+            "x": 1,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": -16,
+            "y": -16
+          },
+          "sizeDelta": {
+            "x": 40,
+            "y": 40
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": null,
+        "button": {
+          "spriteName": {
+            "fileId": "ub3ok34eqnr-mu6xhog5-q0tv8gncefb",
+            "filePath": "Assets\\Sprites\\NewAssets\\CloseButton.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": true,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/NewAssets/CloseButton.png"
+        },
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 1,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 1,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": -16,
+              "y": -16
+            },
+            "sizeDelta": {
+              "x": 40,
+              "y": 40
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "button": {
+            "spriteName": {
+              "fileId": "ub3ok34eqnr-mu6xhog5-q0tv8gncefb",
+              "filePath": "Assets\\Sprites\\NewAssets\\CloseButton.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "normal": "#FFFFFF",
+            "highlight": "#e2a222",
+            "pressed": "#C5C5C5",
+            "disabled": "#494949",
+            "onClicks": [],
+            "enableBorderImage": true,
+            "clickHandlers": [],
+            "disableCollider": false,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "reverse": {
+              "x": true,
+              "y": false
+            },
+            "flip": 0,
+            "gradient": 1,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudButtonWidget": {
+            "PROP_45691568": {
+              "type": "CustomEnum90516480",
+              "value": "E99425497"
+            }
+          },
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "button.onClicks",
+          "button.clickHandlers"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "entityCount": 3,
+  "spec": {
+    "nodes": [
+      {
+        "id": "JUnMlJee",
+        "path": "PetsCollection/Container/Title",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": -26,
+          "top": -60,
+          "width": 1066,
+          "height": 124
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "JRxpWV4m",
+        "path": "PetsCollection/Container/Title/Label",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 40,
+          "top": 62,
+          "width": 760,
+          "height": 40
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "GnjIZuxE",
+        "path": "PetsCollection/Container/Title/CloseButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 1010,
+          "top": 58,
+          "width": 40,
+          "height": 40
+        },
+        "active": true,
+        "alpha": 100
+      }
+    ],
+    "images": [
+      {
+        "id": "JUnMlJee",
+        "path": "PetsCollection/Container/Title",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": -26,
+          "top": -60,
+          "width": 1066,
+          "height": 124
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/TitleBG.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/TitleBG.png",
+          "declaredKey": "Assets/Sprites/NewAssets/TitleBG.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/TitleBG.png"
+          ],
+          "fileId": "zkfpx1yzvtc-mu6xhq5y-nv8ey9h3kfj",
+          "output": "./assets/ui-sprites/collection/NewAssets__TitleBG.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/Title"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 113,
+            "right": 12,
+            "top": 48,
+            "bottom": 18
+          },
+          "width": 752,
+          "height": 126
+        },
+        "image": {
+          "source": {
+            "fileId": "zkfpx1yzvtc-mu6xhq5y-nv8ey9h3kfj",
+            "filePath": "Assets\\Sprites\\NewAssets\\TitleBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/TitleBG.png"
+        },
+        "tint": "#ffffff"
+      },
+      {
+        "id": "GnjIZuxE",
+        "path": "PetsCollection/Container/Title/CloseButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 1010,
+          "top": 58,
+          "width": 40,
+          "height": 40
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/CloseButton.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/CloseButton.png",
+          "declaredKey": "Assets/Sprites/NewAssets/CloseButton.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/CloseButton.png"
+          ],
+          "fileId": "ub3ok34eqnr-mu6xhog5-q0tv8gncefb",
+          "output": "./assets/ui-sprites/collection/NewAssets__CloseButton.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/Title/CloseButton"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "width": 38,
+          "height": 40
+        },
+        "image": {
+          "spriteName": {
+            "fileId": "ub3ok34eqnr-mu6xhog5-q0tv8gncefb",
+            "filePath": "Assets\\Sprites\\NewAssets\\CloseButton.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": true,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/NewAssets/CloseButton.png"
+        },
+        "tint": "#FFFFFF"
+      }
+    ],
+    "shapes": [
+      {
+        "id": "JUnMlJee",
+        "path": "PetsCollection/Container/Title",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": -26,
+          "top": -60,
+          "width": 1066,
+          "height": 124
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#ffffff",
+        "background": null
+      },
+      {
+        "id": "JRxpWV4m",
+        "path": "PetsCollection/Container/Title/Label",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 40,
+          "top": 62,
+          "width": 760,
+          "height": 40
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#e7b200",
+        "background": false
+      },
+      {
+        "id": "GnjIZuxE",
+        "path": "PetsCollection/Container/Title/CloseButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 1010,
+          "top": 58,
+          "width": 40,
+          "height": 40
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#FFFFFF",
+        "background": null
+      }
+    ],
+    "texts": [
+      {
+        "id": "JRxpWV4m",
+        "path": "PetsCollection/Container/Title/Label",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 40,
+          "top": 62,
+          "width": 760,
+          "height": 40
+        },
+        "active": true,
+        "alpha": 100,
+        "value": "COLLECTION",
+        "key": "HUD_COLLECTION_TITLE",
+        "font": "Default",
+        "fontSize": 40,
+        "fontStyle": {
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        "color": "#FFFCB7",
+        "alignment": {
+          "h": "left",
+          "v": "middle"
+        },
+        "lineSpacing": 0,
+        "background": false,
+        "backgroundColor": "#e7b200",
+        "overflow": 0,
+        "backgroundRGBA": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "shadow": true,
+        "shadowColor": "#093C78",
+        "shadowOffset": {
+          "x": 1,
+          "y": 1
+        },
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "outline": false,
+        "outlineColor": "#000000",
+        "outlineAlpha": 1,
+        "outlineOffset": 1,
+        "shadowAlpha": 1,
+        "localization": {
+          "en": "COLLECTION",
+          "vi": "BỘ SƯU TẬP"
+        }
+      }
+    ]
+  },
+  "template": {
+    "op": "add",
+    "parent": "PetsCollection",
+    "parentId": "CyEjtaLS",
+    "reason": "Template title-bar; slot: visible = PetsCollection/Container/Title.active; label = PetsCollection/Container/Title/Label.text.key; art = PetsCollection/Container/Title.image.spriteKey; tint = PetsCollection/Container/Title.image.color",
+    "entity": {
+      "id": "uic-title-bar-JUnMlJee",
+      "name": "Title",
+      "type": "UIImageEntity",
+      "children": [
+        {
+          "id": "uic-title-bar-JRxpWV4m",
+          "name": "Label",
+          "type": "UITextEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 40,
+              "y": -20
+            },
+            "sizeDelta": {
+              "x": 760,
+              "y": 40
+            }
+          },
+          "text": {
+            "value": "COLLECTION",
+            "key": "HUD_COLLECTION_TITLE",
+            "fontSize": 40,
+            "fontStyle": {
+              "bold": true,
+              "italic": false,
+              "underline": false
+            },
+            "color": "#FFFCB7",
+            "alignment": {
+              "h": "left",
+              "v": "middle"
+            },
+            "lineSpacing": 0,
+            "background": false,
+            "backgroundColor": "#e7b200",
+            "shadow": true,
+            "shadowColor": "#093C78",
+            "shadowOffset": {
+              "x": 1,
+              "y": 1
+            },
+            "outline": false,
+            "outlineColor": "#000000",
+            "outlineAlpha": 1,
+            "outlineOffset": 1,
+            "shadowAlpha": 1
+          }
+        },
+        {
+          "id": "uic-title-bar-GnjIZuxE",
+          "name": "CloseButton",
+          "type": "UIButtonEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 1,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 1,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": -16,
+              "y": -16
+            },
+            "sizeDelta": {
+              "x": 40,
+              "y": 40
+            }
+          },
+          "button": {
+            "normal": "#FFFFFF",
+            "pressed": "#C5C5C5",
+            "disabled": "#494949",
+            "disableCollider": false,
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "reverse": {
+              "x": true,
+              "y": false
+            },
+            "spriteKey": "Assets/Sprites/NewAssets/CloseButton.png"
+          }
+        }
+      ],
+      "active": true,
+      "alpha": 100,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchorMax": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchoredPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "sizeDelta": {
+          "x": 1066,
+          "y": 124
+        }
+      },
+      "image": {
+        "color": "#ffffff",
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "fillType": 1,
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "spriteKey": "Assets/Sprites/NewAssets/TitleBG.png"
+      }
+    }
+  },
+  "templateOmitted": [
+    "PetsCollection/Container/Title/Label: text.font",
+    "PetsCollection/Container/Title/Label: text.overflow",
+    "PetsCollection/Container/Title/Label: text.backgroundRGBA.r",
+    "PetsCollection/Container/Title/Label: text.backgroundRGBA.g",
+    "PetsCollection/Container/Title/Label: text.backgroundRGBA.b",
+    "PetsCollection/Container/Title/Label: text.backgroundRGBA.a",
+    "PetsCollection/Container/Title/Label: text.gradient",
+    "PetsCollection/Container/Title/Label: text.gradientTop.r",
+    "PetsCollection/Container/Title/Label: text.gradientTop.g",
+    "PetsCollection/Container/Title/Label: text.gradientTop.b",
+    "PetsCollection/Container/Title/Label: text.gradientTop.a",
+    "PetsCollection/Container/Title/Label: text.gradientBottom.r",
+    "PetsCollection/Container/Title/Label: text.gradientBottom.g",
+    "PetsCollection/Container/Title/Label: text.gradientBottom.b",
+    "PetsCollection/Container/Title/Label: text.gradientBottom.a",
+    "PetsCollection/Container/Title/CloseButton: button.spriteName.fileId",
+    "PetsCollection/Container/Title/CloseButton: button.spriteName.filePath",
+    "PetsCollection/Container/Title/CloseButton: button.spriteName._tag.type",
+    "PetsCollection/Container/Title/CloseButton: button.spriteName.fileType",
+    "PetsCollection/Container/Title/CloseButton: button.highlight",
+    "PetsCollection/Container/Title/CloseButton: button.enableBorderImage",
+    "PetsCollection/Container/Title/CloseButton: button.slicedBorder.left",
+    "PetsCollection/Container/Title/CloseButton: button.slicedBorder.right",
+    "PetsCollection/Container/Title/CloseButton: button.slicedBorder.top",
+    "PetsCollection/Container/Title/CloseButton: button.slicedBorder.bottom",
+    "PetsCollection/Container/Title/CloseButton: button.tiledBorder.left",
+    "PetsCollection/Container/Title/CloseButton: button.tiledBorder.right",
+    "PetsCollection/Container/Title/CloseButton: button.tiledBorder.top",
+    "PetsCollection/Container/Title/CloseButton: button.tiledBorder.bottom",
+    "PetsCollection/Container/Title/CloseButton: button.flip",
+    "PetsCollection/Container/Title/CloseButton: button.gradient",
+    "PetsCollection/Container/Title/CloseButton: button.gradientTop.r",
+    "PetsCollection/Container/Title/CloseButton: button.gradientTop.g",
+    "PetsCollection/Container/Title/CloseButton: button.gradientTop.b",
+    "PetsCollection/Container/Title/CloseButton: button.gradientTop.a",
+    "PetsCollection/Container/Title/CloseButton: button.gradientBottom.r",
+    "PetsCollection/Container/Title/CloseButton: button.gradientBottom.g",
+    "PetsCollection/Container/Title/CloseButton: button.gradientBottom.b",
+    "PetsCollection/Container/Title/CloseButton: button.gradientBottom.a",
+    "PetsCollection/Container/Title: image.source.fileId",
+    "PetsCollection/Container/Title: image.source.filePath",
+    "PetsCollection/Container/Title: image.source._tag.type",
+    "PetsCollection/Container/Title: image.source.fileType",
+    "PetsCollection/Container/Title: image.slicedBorder.left",
+    "PetsCollection/Container/Title: image.slicedBorder.right",
+    "PetsCollection/Container/Title: image.slicedBorder.top",
+    "PetsCollection/Container/Title: image.slicedBorder.bottom",
+    "PetsCollection/Container/Title: image.tiledBorder.left",
+    "PetsCollection/Container/Title: image.tiledBorder.right",
+    "PetsCollection/Container/Title: image.tiledBorder.top",
+    "PetsCollection/Container/Title: image.tiledBorder.bottom",
+    "PetsCollection/Container/Title: image.flip",
+    "PetsCollection/Container/Title: image.gradient",
+    "PetsCollection/Container/Title: image.gradientTop.r",
+    "PetsCollection/Container/Title: image.gradientTop.g",
+    "PetsCollection/Container/Title: image.gradientTop.b",
+    "PetsCollection/Container/Title: image.gradientTop.a",
+    "PetsCollection/Container/Title: image.gradientBottom.r",
+    "PetsCollection/Container/Title: image.gradientBottom.g",
+    "PetsCollection/Container/Title: image.gradientBottom.b",
+    "PetsCollection/Container/Title: image.gradientBottom.a",
+    "PetsCollection/Container/Title: image.isApplyAnimation",
+    "PetsCollection/Container/Title: image.animationAtlasID",
+    "PetsCollection/Container/Title: image.animationFrameRate",
+    "PetsCollection/Container/Title: image.animationLoop"
+  ],
+  "stateEvidence": [],
+  "usedBy": [
+    "list-popup"
+  ]
+}

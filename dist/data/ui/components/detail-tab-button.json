@@ -1,0 +1,858 @@
+{
+  "id": "detail-tab-button",
+  "name": "Tab chi tiết",
+  "sourcePath": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton",
+  "sourceId": "s31m5yHS",
+  "group": "Điều khiển",
+  "status": "runtime",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "path": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label",
+      "field": "text.key",
+      "default": "HUD_COLLECTION_PET_COUNT",
+      "sample": "Nội dung mẫu"
+    },
+    {
+      "name": "art",
+      "type": "sprite",
+      "path": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton",
+      "field": "button.spriteKey",
+      "default": "Assets/Sprites/NewAssets/SelectTabBG.png"
+    }
+  ],
+  "states": [
+    {
+      "name": "Không chọn",
+      "when": "isSelected = false",
+      "ruleSource": "tabVisuals.details",
+      "overrides": [
+        {
+          "path": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton",
+          "field": "button.spriteKey",
+          "value": "Assets/Sprites/NewAssets/NormalTabBG.png"
+        },
+        {
+          "path": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label",
+          "field": "text.color",
+          "value": "#1F64C4"
+        }
+      ]
+    },
+    {
+      "name": "Chọn",
+      "when": "isSelected = true",
+      "ruleSource": "tabVisuals.details",
+      "overrides": [
+        {
+          "path": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton",
+          "field": "button.spriteKey",
+          "value": "Assets/Sprites/NewAssets/SelectTabBG.png"
+        },
+        {
+          "path": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label",
+          "field": "text.color",
+          "value": "#FFFFFF"
+        }
+      ]
+    }
+  ],
+  "usedIn": [
+    {
+      "screen": "collection",
+      "note": "Có subtree trong PetsCollection.ui"
+    },
+    {
+      "screen": "shop",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    },
+    {
+      "screen": "mission",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection."
+  ],
+  "source": "Assets/HUDs/PetsCollection.ui",
+  "sourceRect": {
+    "left": 0,
+    "top": 0,
+    "width": 108,
+    "height": 60
+  },
+  "referenceSize": {
+    "width": 108,
+    "height": 60
+  },
+  "tree": {
+    "path": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton",
+    "id": "s31m5yHS",
+    "name": "InfoTabButton",
+    "type": "UIButtonEntity",
+    "active": true,
+    "transform": {
+      "rotate": 0,
+      "anchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchoredPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sizeDelta": {
+        "x": 108,
+        "y": 60
+      }
+    },
+    "alpha": 100,
+    "priority": 0,
+    "image": null,
+    "button": {
+      "spriteName": {
+        "fileId": "f2arxt0zsis-mu9bpuhj-5tki52jlbcn",
+        "filePath": "Assets\\Sprites\\NewAssets\\SelectTabBG.png",
+        "_tag": {
+          "type": "GFileRefer"
+        },
+        "fileType": "texture"
+      },
+      "normal": "#FFFFFF",
+      "highlight": "#e2a222",
+      "pressed": "#C5C5C5",
+      "disabled": "#494949",
+      "enableBorderImage": true,
+      "disableCollider": false,
+      "fillType": 1,
+      "slicedBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "tiledBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "centerInvisible": false,
+      "fillDir": 0,
+      "fillAmount": 0,
+      "invertFill": false,
+      "reverse": {
+        "x": false,
+        "y": false
+      },
+      "flip": 0,
+      "gradient": 1,
+      "gradientTop": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "gradientBottom": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "spriteKey": "Assets/Sprites/NewAssets/SelectTabBG.png"
+    },
+    "text": null,
+    "layout": null,
+    "propsData": {
+      "activeSelf": true,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchorMax": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchoredPosition": {
+          "x": -114,
+          "y": 0
+        },
+        "sizeDelta": {
+          "x": 108,
+          "y": 60
+        }
+      },
+      "alpha": 100,
+      "priority": 0,
+      "button": {
+        "spriteName": {
+          "fileId": "f2arxt0zsis-mu9bpuhj-5tki52jlbcn",
+          "filePath": "Assets\\Sprites\\NewAssets\\SelectTabBG.png",
+          "_tag": {
+            "type": "GFileRefer"
+          },
+          "fileType": "texture"
+        },
+        "normal": "#FFFFFF",
+        "highlight": "#e2a222",
+        "pressed": "#C5C5C5",
+        "disabled": "#494949",
+        "onClicks": [],
+        "enableBorderImage": true,
+        "clickHandlers": [],
+        "disableCollider": false,
+        "fillType": 1,
+        "slicedBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "tiledBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "flip": 0,
+        "gradient": 1,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        }
+      }
+    },
+    "ecaProps": {
+      "HudButtonWidget": {
+        "PROP_45691568": {
+          "type": "CustomEnum90516480",
+          "value": "E58246713"
+        }
+      },
+      "HudWidget": {},
+      "Entity": {}
+    },
+    "unsupported": [
+      "button.onClicks",
+      "button.clickHandlers"
+    ],
+    "children": [
+      {
+        "path": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label",
+        "id": "WwnHtn4r",
+        "name": "Label",
+        "type": "UITextEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 0,
+            "y": 5
+          },
+          "sizeDelta": {
+            "x": -20,
+            "y": -20
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": null,
+        "button": null,
+        "text": {
+          "value": "Info",
+          "key": "HUD_COLLECTION_PET_COUNT",
+          "font": "Default",
+          "fontSize": 20,
+          "fontStyle": {
+            "bold": false,
+            "italic": false,
+            "underline": false
+          },
+          "color": "#ffffff",
+          "alignment": {
+            "h": "center",
+            "v": "middle"
+          },
+          "lineSpacing": 0,
+          "background": false,
+          "backgroundColor": "#e7b200",
+          "overflow": 0,
+          "backgroundRGBA": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0
+          },
+          "shadow": false,
+          "shadowColor": "#000000",
+          "shadowOffset": {
+            "x": 1,
+            "y": 1
+          },
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "outline": false,
+          "outlineColor": "#000000",
+          "outlineAlpha": 1,
+          "outlineOffset": 1,
+          "shadowAlpha": 1
+        },
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 0,
+              "y": 5
+            },
+            "sizeDelta": {
+              "x": -20,
+              "y": -20
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "text": {
+            "value": "Info",
+            "key": "HUD_COLLECTION_PET_COUNT",
+            "font": "Default",
+            "fontSize": 20,
+            "fontStyle": {
+              "bold": false,
+              "italic": false,
+              "underline": false
+            },
+            "color": "#ffffff",
+            "alignment": {
+              "h": "center",
+              "v": "middle"
+            },
+            "lineSpacing": 0,
+            "background": false,
+            "backgroundColor": "#e7b200",
+            "overflow": 0,
+            "backgroundRGBA": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0
+            },
+            "shadow": false,
+            "shadowColor": "#000000",
+            "shadowOffset": {
+              "x": 1,
+              "y": 1
+            },
+            "shadowAlpha": 1,
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "outline": false,
+            "outlineColor": "#000000",
+            "outlineAlpha": 1,
+            "outlineOffset": 1
+          }
+        },
+        "ecaProps": {
+          "HudLabelWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [],
+        "children": []
+      }
+    ]
+  },
+  "entityCount": 2,
+  "spec": {
+    "nodes": [
+      {
+        "id": "s31m5yHS",
+        "path": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 0,
+          "width": 108,
+          "height": 60
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "WwnHtn4r",
+        "path": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 5,
+          "width": 88,
+          "height": 40
+        },
+        "active": true,
+        "alpha": 100
+      }
+    ],
+    "images": [
+      {
+        "id": "s31m5yHS",
+        "path": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 0,
+          "width": 108,
+          "height": 60
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/SelectTabBG.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/SelectTabBG.png",
+          "declaredKey": "Assets/Sprites/NewAssets/SelectTabBG.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/SelectTabBG.png"
+          ],
+          "fileId": "f2arxt0zsis-mu9bpuhj-5tki52jlbcn",
+          "output": "./assets/ui-sprites/collection/NewAssets__SelectTabBG.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/DetailsTabsLayout/InfoTabButton"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 10,
+            "right": 10,
+            "top": 10,
+            "bottom": 10
+          },
+          "width": 96,
+          "height": 96
+        },
+        "image": {
+          "spriteName": {
+            "fileId": "f2arxt0zsis-mu9bpuhj-5tki52jlbcn",
+            "filePath": "Assets\\Sprites\\NewAssets\\SelectTabBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/NewAssets/SelectTabBG.png"
+        },
+        "tint": "#FFFFFF"
+      }
+    ],
+    "shapes": [
+      {
+        "id": "s31m5yHS",
+        "path": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 0,
+          "width": 108,
+          "height": 60
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#FFFFFF",
+        "background": null
+      },
+      {
+        "id": "WwnHtn4r",
+        "path": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 5,
+          "width": 88,
+          "height": 40
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#e7b200",
+        "background": false
+      }
+    ],
+    "texts": [
+      {
+        "id": "WwnHtn4r",
+        "path": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 5,
+          "width": 88,
+          "height": 40
+        },
+        "active": true,
+        "alpha": 100,
+        "value": "Info",
+        "key": "HUD_COLLECTION_PET_COUNT",
+        "font": "Default",
+        "fontSize": 20,
+        "fontStyle": {
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        "color": "#ffffff",
+        "alignment": {
+          "h": "center",
+          "v": "middle"
+        },
+        "lineSpacing": 0,
+        "background": false,
+        "backgroundColor": "#e7b200",
+        "overflow": 0,
+        "backgroundRGBA": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "shadow": false,
+        "shadowColor": "#000000",
+        "shadowOffset": {
+          "x": 1,
+          "y": 1
+        },
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "outline": false,
+        "outlineColor": "#000000",
+        "outlineAlpha": 1,
+        "outlineOffset": 1,
+        "shadowAlpha": 1,
+        "localization": {
+          "en": "Pets",
+          "vi": "Thú Cưng"
+        }
+      }
+    ]
+  },
+  "template": {
+    "op": "add",
+    "parent": "PetsCollection",
+    "parentId": "CyEjtaLS",
+    "reason": "Template detail-tab-button; slot: visible = PetsCollection/Container/DetailsTabsLayout/InfoTabButton.active; label = PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label.text.key; art = PetsCollection/Container/DetailsTabsLayout/InfoTabButton.button.spriteKey",
+    "entity": {
+      "id": "uic-detail-tab-button-s31m5yHS",
+      "name": "InfoTabButton",
+      "type": "UIButtonEntity",
+      "children": [
+        {
+          "id": "uic-detail-tab-button-WwnHtn4r",
+          "name": "Label",
+          "type": "UITextEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 0,
+              "y": 5
+            },
+            "sizeDelta": {
+              "x": -20,
+              "y": -20
+            }
+          },
+          "text": {
+            "value": "Info",
+            "key": "HUD_COLLECTION_PET_COUNT",
+            "fontSize": 20,
+            "fontStyle": {
+              "bold": false,
+              "italic": false,
+              "underline": false
+            },
+            "color": "#ffffff",
+            "alignment": {
+              "h": "center",
+              "v": "middle"
+            },
+            "lineSpacing": 0,
+            "background": false,
+            "backgroundColor": "#e7b200",
+            "shadow": false,
+            "shadowColor": "#000000",
+            "shadowOffset": {
+              "x": 1,
+              "y": 1
+            },
+            "outline": false,
+            "outlineColor": "#000000",
+            "outlineAlpha": 1,
+            "outlineOffset": 1,
+            "shadowAlpha": 1
+          }
+        }
+      ],
+      "active": true,
+      "alpha": 100,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchorMax": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchoredPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "sizeDelta": {
+          "x": 108,
+          "y": 60
+        }
+      },
+      "button": {
+        "normal": "#FFFFFF",
+        "pressed": "#C5C5C5",
+        "disabled": "#494949",
+        "disableCollider": false,
+        "fillType": 1,
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "spriteKey": "Assets/Sprites/NewAssets/SelectTabBG.png"
+      }
+    }
+  },
+  "templateOmitted": [
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label: text.font",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label: text.overflow",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label: text.backgroundRGBA.r",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label: text.backgroundRGBA.g",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label: text.backgroundRGBA.b",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label: text.backgroundRGBA.a",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label: text.gradient",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label: text.gradientTop.r",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label: text.gradientTop.g",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label: text.gradientTop.b",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label: text.gradientTop.a",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label: text.gradientBottom.r",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label: text.gradientBottom.g",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label: text.gradientBottom.b",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton/Label: text.gradientBottom.a",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.spriteName.fileId",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.spriteName.filePath",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.spriteName._tag.type",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.spriteName.fileType",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.highlight",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.enableBorderImage",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.slicedBorder.left",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.slicedBorder.right",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.slicedBorder.top",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.slicedBorder.bottom",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.tiledBorder.left",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.tiledBorder.right",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.tiledBorder.top",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.tiledBorder.bottom",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.flip",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.gradient",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.gradientTop.r",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.gradientTop.g",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.gradientTop.b",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.gradientTop.a",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.gradientBottom.r",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.gradientBottom.g",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.gradientBottom.b",
+    "PetsCollection/Container/DetailsTabsLayout/InfoTabButton: button.gradientBottom.a"
+  ],
+  "stateEvidence": [
+    {
+      "name": "Không chọn",
+      "ruleSource": "tabVisuals.details",
+      "rule": {
+        "textChild": "Label",
+        "selectedSprite": "Assets/Sprites/NewAssets/SelectTabBG.png",
+        "normalSprite": "Assets/Sprites/NewAssets/NormalTabBG.png",
+        "selectedTextColor": "#FFFFFF",
+        "normalTextColor": "#1F64C4",
+        "source": "Assets/Scripts/HUDs/HudCollection.fcg:664"
+      }
+    },
+    {
+      "name": "Chọn",
+      "ruleSource": "tabVisuals.details",
+      "rule": {
+        "textChild": "Label",
+        "selectedSprite": "Assets/Sprites/NewAssets/SelectTabBG.png",
+        "normalSprite": "Assets/Sprites/NewAssets/NormalTabBG.png",
+        "selectedTextColor": "#FFFFFF",
+        "normalTextColor": "#1F64C4",
+        "source": "Assets/Scripts/HUDs/HudCollection.fcg:664"
+      }
+    }
+  ],
+  "usedBy": []
+}

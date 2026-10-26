@@ -1,0 +1,1153 @@
+{
+  "id": "info-row",
+  "name": "Dòng thông tin",
+  "sourcePath": "PetsCollection/Container/Info/Value",
+  "sourceId": "TFWi8T1X",
+  "group": "Hiển thị dữ liệu",
+  "status": "real",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "PetsCollection/Container/Info/Value",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "path": "PetsCollection/Container/Info/Value/Content",
+      "field": "text.value",
+      "default": "Value: 270.9Cp/s",
+      "sample": "Nội dung mẫu"
+    },
+    {
+      "name": "art",
+      "type": "sprite",
+      "path": "PetsCollection/Container/Info/Value",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/NewAssets/ShopItemBG.png"
+    },
+    {
+      "name": "tint",
+      "type": "tint",
+      "path": "PetsCollection/Container/Info/Value",
+      "field": "image.color",
+      "default": "#ffffff"
+    }
+  ],
+  "states": [],
+  "usedIn": [
+    {
+      "screen": "collection",
+      "note": "Có subtree trong PetsCollection.ui"
+    },
+    {
+      "screen": "shop",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    },
+    {
+      "screen": "mission",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection."
+  ],
+  "source": "Assets/HUDs/PetsCollection.ui",
+  "sourceRect": {
+    "left": 15,
+    "top": 18,
+    "width": 320,
+    "height": 50
+  },
+  "referenceSize": {
+    "width": 320,
+    "height": 50
+  },
+  "tree": {
+    "path": "PetsCollection/Container/Info/Value",
+    "id": "TFWi8T1X",
+    "name": "Value",
+    "type": "UIImageEntity",
+    "active": true,
+    "transform": {
+      "rotate": 0,
+      "anchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchoredPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sizeDelta": {
+        "x": 320,
+        "y": 50
+      }
+    },
+    "alpha": 100,
+    "priority": 0,
+    "image": {
+      "source": {
+        "fileId": "e4ea2am4nbh-mu9bpkes-beszxuyebu7",
+        "filePath": "Assets\\Sprites\\NewAssets\\ShopItemBG.png",
+        "_tag": {
+          "type": "GFileRefer"
+        },
+        "fileType": "texture"
+      },
+      "color": "#ffffff",
+      "reverse": {
+        "x": false,
+        "y": false
+      },
+      "fillType": 1,
+      "slicedBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "tiledBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "centerInvisible": false,
+      "fillDir": 0,
+      "fillAmount": 0,
+      "invertFill": false,
+      "flip": 0,
+      "gradient": 1,
+      "gradientTop": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "gradientBottom": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "isApplyAnimation": false,
+      "animationAtlasID": null,
+      "animationFrameRate": 30,
+      "animationLoop": true,
+      "spriteKey": "Assets/Sprites/NewAssets/ShopItemBG.png"
+    },
+    "button": null,
+    "text": null,
+    "layout": null,
+    "propsData": {
+      "activeSelf": true,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0.5,
+          "y": 1
+        },
+        "anchorMax": {
+          "x": 0.5,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 1
+        },
+        "anchoredPosition": {
+          "x": 0,
+          "y": -18
+        },
+        "sizeDelta": {
+          "x": 320,
+          "y": 50
+        }
+      },
+      "alpha": 100,
+      "priority": 0,
+      "image": {
+        "source": {
+          "fileId": "e4ea2am4nbh-mu9bpkes-beszxuyebu7",
+          "filePath": "Assets\\Sprites\\NewAssets\\ShopItemBG.png",
+          "_tag": {
+            "type": "GFileRefer"
+          },
+          "fileType": "texture"
+        },
+        "color": "#ffffff",
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "fillType": 1,
+        "slicedBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "tiledBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "flip": 0,
+        "gradient": 1,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "isApplyAnimation": false,
+        "animationAtlasID": null,
+        "animationFrameRate": 30,
+        "animationLoop": true
+      }
+    },
+    "ecaProps": {
+      "HudImageWidget": {},
+      "HudWidget": {},
+      "Entity": {}
+    },
+    "unsupported": [],
+    "children": [
+      {
+        "path": "PetsCollection/Container/Info/Value/Icon",
+        "id": "kMbzMxFi",
+        "name": "Icon",
+        "type": "UIImageEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0.5
+          },
+          "anchorMax": {
+            "x": 0,
+            "y": 0.5
+          },
+          "pivot": {
+            "x": 0,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 10,
+            "y": 0
+          },
+          "sizeDelta": {
+            "x": 36,
+            "y": 36
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": {
+          "source": {
+            "fileId": "1ev4vbb6r81-mincvh0q-an2r8ytn9ao",
+            "filePath": "Assets\\Sprites\\Icons\\MoneyIcon.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/Icons/MoneyIcon.png"
+        },
+        "button": null,
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 10,
+              "y": 0
+            },
+            "sizeDelta": {
+              "x": 36,
+              "y": 36
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "image": {
+            "source": {
+              "fileId": "1ev4vbb6r81-mincvh0q-an2r8ytn9ao",
+              "filePath": "Assets\\Sprites\\Icons\\MoneyIcon.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "isApplyAnimation": false,
+            "animationAtlasID": null,
+            "animationFrameRate": 30,
+            "animationLoop": true,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "flip": 0,
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudImageWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "m_ApplyingPreviewAnimation"
+        ],
+        "children": []
+      },
+      {
+        "path": "PetsCollection/Container/Info/Value/Content",
+        "id": "OvSmZKnU",
+        "name": "Content",
+        "type": "UITextEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0.5
+          },
+          "anchorMax": {
+            "x": 0,
+            "y": 0.5
+          },
+          "pivot": {
+            "x": 0,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 60,
+            "y": -2
+          },
+          "sizeDelta": {
+            "x": 240,
+            "y": 28
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": null,
+        "button": null,
+        "text": {
+          "value": "Value: 270.9Cp/s",
+          "key": "",
+          "font": "Default",
+          "fontSize": 22,
+          "fontStyle": {
+            "bold": false,
+            "italic": false,
+            "underline": false
+          },
+          "color": "#103F98",
+          "alignment": {
+            "h": "left",
+            "v": "middle"
+          },
+          "lineSpacing": 0,
+          "background": false,
+          "backgroundColor": "#e7b200",
+          "overflow": 0,
+          "backgroundRGBA": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0
+          },
+          "shadow": false,
+          "shadowColor": "#000000",
+          "shadowOffset": {
+            "x": 1,
+            "y": 1
+          },
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "outline": false,
+          "outlineColor": "#000000",
+          "outlineAlpha": 1,
+          "outlineOffset": 1,
+          "shadowAlpha": 1
+        },
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 60,
+              "y": -2
+            },
+            "sizeDelta": {
+              "x": 240,
+              "y": 28
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "text": {
+            "value": "Value: 270.9Cp/s",
+            "key": "",
+            "font": "Default",
+            "fontSize": 22,
+            "fontStyle": {
+              "bold": false,
+              "italic": false,
+              "underline": false
+            },
+            "color": "#103F98",
+            "alignment": {
+              "h": "left",
+              "v": "middle"
+            },
+            "lineSpacing": 0,
+            "background": false,
+            "backgroundColor": "#e7b200",
+            "overflow": 0,
+            "backgroundRGBA": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0
+            },
+            "shadow": false,
+            "shadowColor": "#000000",
+            "shadowOffset": {
+              "x": 1,
+              "y": 1
+            },
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "outline": false,
+            "outlineColor": "#000000",
+            "outlineAlpha": 1,
+            "outlineOffset": 1,
+            "shadowAlpha": 1
+          }
+        },
+        "ecaProps": {
+          "HudLabelWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [],
+        "children": []
+      }
+    ]
+  },
+  "entityCount": 3,
+  "spec": {
+    "nodes": [
+      {
+        "id": "TFWi8T1X",
+        "path": "PetsCollection/Container/Info/Value",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 15,
+          "top": 18,
+          "width": 320,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "kMbzMxFi",
+        "path": "PetsCollection/Container/Info/Value/Icon",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 10,
+          "top": 7,
+          "width": 36,
+          "height": 36
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "OvSmZKnU",
+        "path": "PetsCollection/Container/Info/Value/Content",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 60,
+          "top": 13,
+          "width": 240,
+          "height": 28
+        },
+        "active": true,
+        "alpha": 100
+      }
+    ],
+    "images": [
+      {
+        "id": "TFWi8T1X",
+        "path": "PetsCollection/Container/Info/Value",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 15,
+          "top": 18,
+          "width": 320,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/ShopItemBG.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/ShopItemBG.png",
+          "declaredKey": "Assets/Sprites/NewAssets/ShopItemBG.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/ShopItemBG.png"
+          ],
+          "fileId": "e4ea2am4nbh-mu9bpkes-beszxuyebu7",
+          "output": "./assets/ui-sprites/collection/NewAssets__ShopItemBG.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/Info/Value",
+            "PetsCollection/Container/Info/Mutations",
+            "PetsCollection/Container/Info/Weathers"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 15,
+            "right": 15,
+            "top": 15,
+            "bottom": 15
+          },
+          "width": 38,
+          "height": 38
+        },
+        "image": {
+          "source": {
+            "fileId": "e4ea2am4nbh-mu9bpkes-beszxuyebu7",
+            "filePath": "Assets\\Sprites\\NewAssets\\ShopItemBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/ShopItemBG.png"
+        },
+        "tint": "#ffffff"
+      },
+      {
+        "id": "kMbzMxFi",
+        "path": "PetsCollection/Container/Info/Value/Icon",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 10,
+          "top": 7,
+          "width": 36,
+          "height": 36
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/Icons/MoneyIcon.png",
+        "sprite": {
+          "key": "Assets/Sprites/Icons/MoneyIcon.png",
+          "declaredKey": "Assets/Sprites/Icons/MoneyIcon.png",
+          "declaredKeys": [
+            "Assets/Sprites/Icons/MoneyIcon.png"
+          ],
+          "fileId": "1ev4vbb6r81-mincvh0q-an2r8ytn9ao",
+          "output": "./assets/ui-sprites/collection/Icons__MoneyIcon.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/Info/Value/Icon"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "width": 96,
+          "height": 96
+        },
+        "image": {
+          "source": {
+            "fileId": "1ev4vbb6r81-mincvh0q-an2r8ytn9ao",
+            "filePath": "Assets\\Sprites\\Icons\\MoneyIcon.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/Icons/MoneyIcon.png"
+        },
+        "tint": "#ffffff"
+      }
+    ],
+    "shapes": [
+      {
+        "id": "TFWi8T1X",
+        "path": "PetsCollection/Container/Info/Value",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 15,
+          "top": 18,
+          "width": 320,
+          "height": 50
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#ffffff",
+        "background": null
+      },
+      {
+        "id": "kMbzMxFi",
+        "path": "PetsCollection/Container/Info/Value/Icon",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 10,
+          "top": 7,
+          "width": 36,
+          "height": 36
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#ffffff",
+        "background": null
+      },
+      {
+        "id": "OvSmZKnU",
+        "path": "PetsCollection/Container/Info/Value/Content",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 60,
+          "top": 13,
+          "width": 240,
+          "height": 28
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#e7b200",
+        "background": false
+      }
+    ],
+    "texts": [
+      {
+        "id": "OvSmZKnU",
+        "path": "PetsCollection/Container/Info/Value/Content",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 60,
+          "top": 13,
+          "width": 240,
+          "height": 28
+        },
+        "active": true,
+        "alpha": 100,
+        "value": "Value: 270.9Cp/s",
+        "key": "",
+        "font": "Default",
+        "fontSize": 22,
+        "fontStyle": {
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        "color": "#103F98",
+        "alignment": {
+          "h": "left",
+          "v": "middle"
+        },
+        "lineSpacing": 0,
+        "background": false,
+        "backgroundColor": "#e7b200",
+        "overflow": 0,
+        "backgroundRGBA": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "shadow": false,
+        "shadowColor": "#000000",
+        "shadowOffset": {
+          "x": 1,
+          "y": 1
+        },
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "outline": false,
+        "outlineColor": "#000000",
+        "outlineAlpha": 1,
+        "outlineOffset": 1,
+        "shadowAlpha": 1,
+        "localization": null
+      }
+    ]
+  },
+  "template": {
+    "op": "add",
+    "parent": "PetsCollection",
+    "parentId": "CyEjtaLS",
+    "reason": "Template info-row; slot: visible = PetsCollection/Container/Info/Value.active; label = PetsCollection/Container/Info/Value/Content.text.value; art = PetsCollection/Container/Info/Value.image.spriteKey; tint = PetsCollection/Container/Info/Value.image.color",
+    "entity": {
+      "id": "uic-info-row-TFWi8T1X",
+      "name": "Value",
+      "type": "UIImageEntity",
+      "children": [
+        {
+          "id": "uic-info-row-kMbzMxFi",
+          "name": "Icon",
+          "type": "UIImageEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 10,
+              "y": 0
+            },
+            "sizeDelta": {
+              "x": 36,
+              "y": 36
+            }
+          },
+          "image": {
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "spriteKey": "Assets/Sprites/Icons/MoneyIcon.png"
+          }
+        },
+        {
+          "id": "uic-info-row-OvSmZKnU",
+          "name": "Content",
+          "type": "UITextEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 60,
+              "y": -2
+            },
+            "sizeDelta": {
+              "x": 240,
+              "y": 28
+            }
+          },
+          "text": {
+            "value": "Value: 270.9Cp/s",
+            "key": "",
+            "fontSize": 22,
+            "fontStyle": {
+              "bold": false,
+              "italic": false,
+              "underline": false
+            },
+            "color": "#103F98",
+            "alignment": {
+              "h": "left",
+              "v": "middle"
+            },
+            "lineSpacing": 0,
+            "background": false,
+            "backgroundColor": "#e7b200",
+            "shadow": false,
+            "shadowColor": "#000000",
+            "shadowOffset": {
+              "x": 1,
+              "y": 1
+            },
+            "outline": false,
+            "outlineColor": "#000000",
+            "outlineAlpha": 1,
+            "outlineOffset": 1,
+            "shadowAlpha": 1
+          }
+        }
+      ],
+      "active": true,
+      "alpha": 100,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchorMax": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchoredPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "sizeDelta": {
+          "x": 320,
+          "y": 50
+        }
+      },
+      "image": {
+        "color": "#ffffff",
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "fillType": 1,
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "spriteKey": "Assets/Sprites/NewAssets/ShopItemBG.png"
+      }
+    }
+  },
+  "templateOmitted": [
+    "PetsCollection/Container/Info/Value/Icon: image.source.fileId",
+    "PetsCollection/Container/Info/Value/Icon: image.source.filePath",
+    "PetsCollection/Container/Info/Value/Icon: image.source._tag.type",
+    "PetsCollection/Container/Info/Value/Icon: image.source.fileType",
+    "PetsCollection/Container/Info/Value/Icon: image.slicedBorder.left",
+    "PetsCollection/Container/Info/Value/Icon: image.slicedBorder.right",
+    "PetsCollection/Container/Info/Value/Icon: image.slicedBorder.top",
+    "PetsCollection/Container/Info/Value/Icon: image.slicedBorder.bottom",
+    "PetsCollection/Container/Info/Value/Icon: image.tiledBorder.left",
+    "PetsCollection/Container/Info/Value/Icon: image.tiledBorder.right",
+    "PetsCollection/Container/Info/Value/Icon: image.tiledBorder.top",
+    "PetsCollection/Container/Info/Value/Icon: image.tiledBorder.bottom",
+    "PetsCollection/Container/Info/Value/Icon: image.flip",
+    "PetsCollection/Container/Info/Value/Icon: image.gradient",
+    "PetsCollection/Container/Info/Value/Icon: image.gradientTop.r",
+    "PetsCollection/Container/Info/Value/Icon: image.gradientTop.g",
+    "PetsCollection/Container/Info/Value/Icon: image.gradientTop.b",
+    "PetsCollection/Container/Info/Value/Icon: image.gradientTop.a",
+    "PetsCollection/Container/Info/Value/Icon: image.gradientBottom.r",
+    "PetsCollection/Container/Info/Value/Icon: image.gradientBottom.g",
+    "PetsCollection/Container/Info/Value/Icon: image.gradientBottom.b",
+    "PetsCollection/Container/Info/Value/Icon: image.gradientBottom.a",
+    "PetsCollection/Container/Info/Value/Icon: image.isApplyAnimation",
+    "PetsCollection/Container/Info/Value/Icon: image.animationAtlasID",
+    "PetsCollection/Container/Info/Value/Icon: image.animationFrameRate",
+    "PetsCollection/Container/Info/Value/Icon: image.animationLoop",
+    "PetsCollection/Container/Info/Value/Content: text.font",
+    "PetsCollection/Container/Info/Value/Content: text.overflow",
+    "PetsCollection/Container/Info/Value/Content: text.backgroundRGBA.r",
+    "PetsCollection/Container/Info/Value/Content: text.backgroundRGBA.g",
+    "PetsCollection/Container/Info/Value/Content: text.backgroundRGBA.b",
+    "PetsCollection/Container/Info/Value/Content: text.backgroundRGBA.a",
+    "PetsCollection/Container/Info/Value/Content: text.gradient",
+    "PetsCollection/Container/Info/Value/Content: text.gradientTop.r",
+    "PetsCollection/Container/Info/Value/Content: text.gradientTop.g",
+    "PetsCollection/Container/Info/Value/Content: text.gradientTop.b",
+    "PetsCollection/Container/Info/Value/Content: text.gradientTop.a",
+    "PetsCollection/Container/Info/Value/Content: text.gradientBottom.r",
+    "PetsCollection/Container/Info/Value/Content: text.gradientBottom.g",
+    "PetsCollection/Container/Info/Value/Content: text.gradientBottom.b",
+    "PetsCollection/Container/Info/Value/Content: text.gradientBottom.a",
+    "PetsCollection/Container/Info/Value: image.source.fileId",
+    "PetsCollection/Container/Info/Value: image.source.filePath",
+    "PetsCollection/Container/Info/Value: image.source._tag.type",
+    "PetsCollection/Container/Info/Value: image.source.fileType",
+    "PetsCollection/Container/Info/Value: image.slicedBorder.left",
+    "PetsCollection/Container/Info/Value: image.slicedBorder.right",
+    "PetsCollection/Container/Info/Value: image.slicedBorder.top",
+    "PetsCollection/Container/Info/Value: image.slicedBorder.bottom",
+    "PetsCollection/Container/Info/Value: image.tiledBorder.left",
+    "PetsCollection/Container/Info/Value: image.tiledBorder.right",
+    "PetsCollection/Container/Info/Value: image.tiledBorder.top",
+    "PetsCollection/Container/Info/Value: image.tiledBorder.bottom",
+    "PetsCollection/Container/Info/Value: image.flip",
+    "PetsCollection/Container/Info/Value: image.gradient",
+    "PetsCollection/Container/Info/Value: image.gradientTop.r",
+    "PetsCollection/Container/Info/Value: image.gradientTop.g",
+    "PetsCollection/Container/Info/Value: image.gradientTop.b",
+    "PetsCollection/Container/Info/Value: image.gradientTop.a",
+    "PetsCollection/Container/Info/Value: image.gradientBottom.r",
+    "PetsCollection/Container/Info/Value: image.gradientBottom.g",
+    "PetsCollection/Container/Info/Value: image.gradientBottom.b",
+    "PetsCollection/Container/Info/Value: image.gradientBottom.a",
+    "PetsCollection/Container/Info/Value: image.isApplyAnimation",
+    "PetsCollection/Container/Info/Value: image.animationAtlasID",
+    "PetsCollection/Container/Info/Value: image.animationFrameRate",
+    "PetsCollection/Container/Info/Value: image.animationLoop"
+  ],
+  "stateEvidence": [],
+  "usedBy": [
+    "list-popup"
+  ]
+}

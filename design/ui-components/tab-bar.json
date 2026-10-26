@@ -1,0 +1,55 @@
+{
+  "id": "tab-bar",
+  "name": "Dải tab rarity",
+  "sourcePath": "PetsCollection/Container/RarityTabsLayout",
+  "sourceId": "i8q67SIt",
+  "group": "Ghép",
+  "status": "real",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "PetsCollection/Container/RarityTabsLayout",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "path": "PetsCollection/Container/RarityTabsLayout/AllTabButton/Text",
+      "field": "text.key",
+      "default": "HUD_COLLECTION_ALL",
+      "sample": "Nội dung mẫu"
+    },
+    {
+      "name": "art",
+      "type": "sprite",
+      "path": "PetsCollection/Container/RarityTabsLayout/AllTabButton",
+      "field": "button.spriteKey",
+      "default": "Assets/Sprites/NewAssets/LongSelectTabBG.png"
+    }
+  ],
+  "states": [],
+  "usedIn": [
+    {
+      "screen": "collection",
+      "note": "Có subtree trong PetsCollection.ui"
+    },
+    {
+      "screen": "shop",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    },
+    {
+      "screen": "mission",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    }
+  ],
+  "composedOf": [
+    "tab-button"
+  ],
+  "notes": [
+    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection."
+  ]
+}

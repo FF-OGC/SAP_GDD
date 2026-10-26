@@ -1,0 +1,849 @@
+{
+  "id": "rarity-badge",
+  "name": "Nhãn rarity",
+  "sourcePath": "PetsCollection/Container/PetDetails/Pet/RarityBG",
+  "sourceId": "pG0KrAI2",
+  "group": "Hiển thị dữ liệu",
+  "status": "runtime",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "PetsCollection/Container/PetDetails/Pet/RarityBG",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "path": "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName",
+      "field": "text.value",
+      "default": "MYTHIC",
+      "sample": "Nội dung mẫu"
+    },
+    {
+      "name": "art",
+      "type": "sprite",
+      "path": "PetsCollection/Container/PetDetails/Pet/RarityBG",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/Backgrounds/BG.png"
+    },
+    {
+      "name": "tint",
+      "type": "tint",
+      "path": "PetsCollection/Container/PetDetails/Pet/RarityBG",
+      "field": "image.color",
+      "default": "#FF6F6F"
+    }
+  ],
+  "states": [
+    {
+      "name": "COMMON",
+      "when": "rarity = COMMON",
+      "ruleSource": "rarityColors.values.COMMON",
+      "overrides": [
+        {
+          "path": "PetsCollection/Container/PetDetails/Pet/RarityBG",
+          "field": "image.color",
+          "value": "#8CFF91"
+        },
+        {
+          "path": "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName",
+          "field": "text.outlineColor",
+          "value": "#8CFF91"
+        }
+      ]
+    },
+    {
+      "name": "RARE",
+      "when": "rarity = RARE",
+      "ruleSource": "rarityColors.values.RARE",
+      "overrides": [
+        {
+          "path": "PetsCollection/Container/PetDetails/Pet/RarityBG",
+          "field": "image.color",
+          "value": "#4CC8FE"
+        },
+        {
+          "path": "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName",
+          "field": "text.outlineColor",
+          "value": "#4CC8FE"
+        }
+      ]
+    }
+  ],
+  "usedIn": [
+    {
+      "screen": "collection",
+      "note": "Có subtree trong PetsCollection.ui"
+    },
+    {
+      "screen": "shop",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    },
+    {
+      "screen": "mission",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection."
+  ],
+  "source": "Assets/HUDs/PetsCollection.ui",
+  "sourceRect": {
+    "left": 180,
+    "top": 66,
+    "width": 120,
+    "height": 36
+  },
+  "referenceSize": {
+    "width": 120,
+    "height": 36
+  },
+  "tree": {
+    "path": "PetsCollection/Container/PetDetails/Pet/RarityBG",
+    "id": "pG0KrAI2",
+    "name": "RarityBG",
+    "type": "UIImageEntity",
+    "active": true,
+    "transform": {
+      "rotate": 0,
+      "anchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchoredPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sizeDelta": {
+        "x": 120,
+        "y": 36
+      }
+    },
+    "alpha": 90,
+    "priority": 0,
+    "image": {
+      "source": {
+        "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+        "filePath": "Assets\\Sprites\\Backgrounds\\BG.png",
+        "_tag": {
+          "type": "GFileRefer"
+        },
+        "fileType": "texture"
+      },
+      "color": "#FF6F6F",
+      "reverse": {
+        "x": false,
+        "y": false
+      },
+      "fillType": 1,
+      "slicedBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "tiledBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "centerInvisible": false,
+      "fillDir": 0,
+      "fillAmount": 0,
+      "invertFill": false,
+      "flip": 0,
+      "gradient": 2,
+      "gradientTop": {
+        "r": 201,
+        "g": 201,
+        "b": 201,
+        "a": 1
+      },
+      "gradientBottom": {
+        "r": 233,
+        "g": 233,
+        "b": 233,
+        "a": 1
+      },
+      "isApplyAnimation": false,
+      "animationAtlasID": null,
+      "animationFrameRate": 30,
+      "animationLoop": true,
+      "spriteKey": "Assets/Sprites/Backgrounds/BG.png"
+    },
+    "button": null,
+    "text": null,
+    "layout": null,
+    "propsData": {
+      "activeSelf": true,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 1,
+          "y": 0.5
+        },
+        "anchorMax": {
+          "x": 1,
+          "y": 0.5
+        },
+        "pivot": {
+          "x": 0,
+          "y": 1
+        },
+        "anchoredPosition": {
+          "x": 10,
+          "y": 42
+        },
+        "sizeDelta": {
+          "x": 120,
+          "y": 36
+        }
+      },
+      "alpha": 90,
+      "priority": 0,
+      "image": {
+        "source": {
+          "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+          "filePath": "Assets\\Sprites\\Backgrounds\\BG.png",
+          "_tag": {
+            "type": "GFileRefer"
+          },
+          "fileType": "texture"
+        },
+        "color": "#FF6F6F",
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "isApplyAnimation": false,
+        "animationAtlasID": null,
+        "animationFrameRate": 30,
+        "animationLoop": true,
+        "fillType": 1,
+        "slicedBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "tiledBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "flip": 0,
+        "gradient": 2,
+        "gradientTop": {
+          "r": 201,
+          "g": 201,
+          "b": 201,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 233,
+          "g": 233,
+          "b": 233,
+          "a": 1
+        }
+      }
+    },
+    "ecaProps": {
+      "HudImageWidget": {},
+      "HudWidget": {},
+      "Entity": {}
+    },
+    "unsupported": [
+      "m_ApplyingPreviewAnimation"
+    ],
+    "children": [
+      {
+        "path": "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName",
+        "id": "S7N5fNhj",
+        "name": "RarityName",
+        "type": "UITextEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": {
+            "x": 0,
+            "y": 1
+          },
+          "anchoredPosition": {
+            "x": 10,
+            "y": -5
+          },
+          "sizeDelta": {
+            "x": -20,
+            "y": -7
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": null,
+        "button": null,
+        "text": {
+          "value": "MYTHIC",
+          "key": "",
+          "font": "Default",
+          "fontSize": 20,
+          "fontStyle": {
+            "bold": true,
+            "italic": false,
+            "underline": false
+          },
+          "color": "#FFFFFF",
+          "alignment": {
+            "h": "center",
+            "v": "middle"
+          },
+          "lineSpacing": 0,
+          "background": false,
+          "backgroundColor": "#e7b200",
+          "overflow": 0,
+          "backgroundRGBA": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0
+          },
+          "shadow": false,
+          "shadowColor": "#7095BE",
+          "shadowOffset": {
+            "x": 1,
+            "y": 1
+          },
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "outline": true,
+          "outlineColor": "#FF0000",
+          "outlineAlpha": 0.5,
+          "outlineOffset": 0.5,
+          "shadowAlpha": 1
+        },
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 1
+            },
+            "anchoredPosition": {
+              "x": 10,
+              "y": -5
+            },
+            "sizeDelta": {
+              "x": -20,
+              "y": -7
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "text": {
+            "value": "MYTHIC",
+            "key": "",
+            "font": "Default",
+            "fontSize": 20,
+            "fontStyle": {
+              "bold": true,
+              "italic": false,
+              "underline": false
+            },
+            "color": "#FFFFFF",
+            "alignment": {
+              "h": "center",
+              "v": "middle"
+            },
+            "lineSpacing": 0,
+            "background": false,
+            "backgroundColor": "#e7b200",
+            "overflow": 0,
+            "backgroundRGBA": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0
+            },
+            "shadow": false,
+            "shadowColor": "#7095BE",
+            "shadowOffset": {
+              "x": 1,
+              "y": 1
+            },
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "outline": true,
+            "outlineColor": "#FF0000",
+            "outlineAlpha": 0.5,
+            "outlineOffset": 0.5,
+            "shadowAlpha": 1
+          }
+        },
+        "ecaProps": {
+          "HudLabelWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [],
+        "children": []
+      }
+    ]
+  },
+  "entityCount": 2,
+  "spec": {
+    "nodes": [
+      {
+        "id": "pG0KrAI2",
+        "path": "PetsCollection/Container/PetDetails/Pet/RarityBG",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 180,
+          "top": 66,
+          "width": 120,
+          "height": 36
+        },
+        "active": true,
+        "alpha": 90
+      },
+      {
+        "id": "S7N5fNhj",
+        "path": "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 5,
+          "width": 100,
+          "height": 29
+        },
+        "active": true,
+        "alpha": 100
+      }
+    ],
+    "images": [
+      {
+        "id": "pG0KrAI2",
+        "path": "PetsCollection/Container/PetDetails/Pet/RarityBG",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 180,
+          "top": 66,
+          "width": 120,
+          "height": 36
+        },
+        "active": true,
+        "alpha": 90,
+        "key": "Assets/Sprites/Backgrounds/BG.png",
+        "sprite": {
+          "key": "Assets/Sprites/Backgrounds/BG.png",
+          "declaredKey": "Assets/Sprites/UIComponents/Backgrounds/BG.png",
+          "declaredKeys": [
+            "Assets/Sprites/UIComponents/Backgrounds/BG.png",
+            "Assets/Sprites/Backgrounds/BG.png"
+          ],
+          "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+          "output": "./assets/ui-sprites/collection/Backgrounds__BG.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container",
+            "PetsCollection/Container/PetDetails",
+            "PetsCollection/Container/PetDetails/Pet/RarityBG",
+            "PetsCollection/Container/Info",
+            "PetsCollection/Container/MutationsWeathers",
+            "PetsCollection/Container/UnlockObtain",
+            "PetsCollection/Container/Recipe"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 8,
+            "right": 8,
+            "top": 8,
+            "bottom": 8
+          },
+          "width": 26,
+          "height": 26
+        },
+        "image": {
+          "source": {
+            "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+            "filePath": "Assets\\Sprites\\Backgrounds\\BG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#FF6F6F",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 2,
+          "gradientTop": {
+            "r": 201,
+            "g": 201,
+            "b": 201,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 233,
+            "g": 233,
+            "b": 233,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/Backgrounds/BG.png"
+        },
+        "tint": "#FF6F6F"
+      }
+    ],
+    "shapes": [
+      {
+        "id": "pG0KrAI2",
+        "path": "PetsCollection/Container/PetDetails/Pet/RarityBG",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 180,
+          "top": 66,
+          "width": 120,
+          "height": 36
+        },
+        "active": true,
+        "alpha": 90,
+        "color": "#FF6F6F",
+        "background": null
+      },
+      {
+        "id": "S7N5fNhj",
+        "path": "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 5,
+          "width": 100,
+          "height": 29
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#e7b200",
+        "background": false
+      }
+    ],
+    "texts": [
+      {
+        "id": "S7N5fNhj",
+        "path": "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 5,
+          "width": 100,
+          "height": 29
+        },
+        "active": true,
+        "alpha": 100,
+        "value": "MYTHIC",
+        "key": "",
+        "font": "Default",
+        "fontSize": 20,
+        "fontStyle": {
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        "color": "#FFFFFF",
+        "alignment": {
+          "h": "center",
+          "v": "middle"
+        },
+        "lineSpacing": 0,
+        "background": false,
+        "backgroundColor": "#e7b200",
+        "overflow": 0,
+        "backgroundRGBA": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "shadow": false,
+        "shadowColor": "#7095BE",
+        "shadowOffset": {
+          "x": 1,
+          "y": 1
+        },
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "outline": true,
+        "outlineColor": "#FF0000",
+        "outlineAlpha": 0.5,
+        "outlineOffset": 0.5,
+        "shadowAlpha": 1,
+        "localization": null
+      }
+    ]
+  },
+  "template": {
+    "op": "add",
+    "parent": "PetsCollection",
+    "parentId": "CyEjtaLS",
+    "reason": "Template rarity-badge; slot: visible = PetsCollection/Container/PetDetails/Pet/RarityBG.active; label = PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName.text.value; art = PetsCollection/Container/PetDetails/Pet/RarityBG.image.spriteKey; tint = PetsCollection/Container/PetDetails/Pet/RarityBG.image.color",
+    "entity": {
+      "id": "uic-rarity-badge-pG0KrAI2",
+      "name": "RarityBG",
+      "type": "UIImageEntity",
+      "children": [
+        {
+          "id": "uic-rarity-badge-S7N5fNhj",
+          "name": "RarityName",
+          "type": "UITextEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 1
+            },
+            "anchoredPosition": {
+              "x": 10,
+              "y": -5
+            },
+            "sizeDelta": {
+              "x": -20,
+              "y": -7
+            }
+          },
+          "text": {
+            "value": "MYTHIC",
+            "key": "",
+            "fontSize": 20,
+            "fontStyle": {
+              "bold": true,
+              "italic": false,
+              "underline": false
+            },
+            "color": "#FFFFFF",
+            "alignment": {
+              "h": "center",
+              "v": "middle"
+            },
+            "lineSpacing": 0,
+            "background": false,
+            "backgroundColor": "#e7b200",
+            "shadow": false,
+            "shadowColor": "#7095BE",
+            "shadowOffset": {
+              "x": 1,
+              "y": 1
+            },
+            "outline": true,
+            "outlineColor": "#FF0000",
+            "outlineAlpha": 0.5,
+            "outlineOffset": 0.5,
+            "shadowAlpha": 1
+          }
+        }
+      ],
+      "active": true,
+      "alpha": 90,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchorMax": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchoredPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "sizeDelta": {
+          "x": 120,
+          "y": 36
+        }
+      },
+      "image": {
+        "color": "#FF6F6F",
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "fillType": 1,
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "spriteKey": "Assets/Sprites/Backgrounds/BG.png"
+      }
+    }
+  },
+  "templateOmitted": [
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.font",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.overflow",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.backgroundRGBA.r",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.backgroundRGBA.g",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.backgroundRGBA.b",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.backgroundRGBA.a",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.gradient",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.gradientTop.r",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.gradientTop.g",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.gradientTop.b",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.gradientTop.a",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.gradientBottom.r",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.gradientBottom.g",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.gradientBottom.b",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.gradientBottom.a",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.source.fileId",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.source.filePath",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.source._tag.type",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.source.fileType",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.slicedBorder.left",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.slicedBorder.right",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.slicedBorder.top",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.slicedBorder.bottom",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.tiledBorder.left",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.tiledBorder.right",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.tiledBorder.top",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.tiledBorder.bottom",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.flip",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.gradient",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.gradientTop.r",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.gradientTop.g",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.gradientTop.b",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.gradientTop.a",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.gradientBottom.r",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.gradientBottom.g",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.gradientBottom.b",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.gradientBottom.a",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.isApplyAnimation",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.animationAtlasID",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.animationFrameRate",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.animationLoop"
+  ],
+  "stateEvidence": [
+    {
+      "name": "COMMON",
+      "ruleSource": "rarityColors.values.COMMON",
+      "rule": {
+        "value": "#8CFF91",
+        "source": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:63"
+      }
+    },
+    {
+      "name": "RARE",
+      "ruleSource": "rarityColors.values.RARE",
+      "rule": {
+        "value": "#4CC8FE",
+        "source": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:64"
+      }
+    }
+  ],
+  "usedBy": []
+}

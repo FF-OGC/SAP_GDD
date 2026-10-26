@@ -1,0 +1,4404 @@
+{
+  "id": "detail-card",
+  "name": "Thẻ chi tiết",
+  "sourcePath": "PetsCollection/Container/PetDetails/Pet",
+  "sourceId": "r6JjsVsl",
+  "group": "Hiển thị dữ liệu",
+  "status": "real",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "PetsCollection/Container/PetDetails/Pet",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "path": "PetsCollection/Container/PetDetails/Pet/Name",
+      "field": "text.value",
+      "default": "Whale",
+      "sample": "Nội dung mẫu"
+    },
+    {
+      "name": "art",
+      "type": "sprite",
+      "path": "PetsCollection/Container/PetDetails/Pet",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/NewAssets/ItemBG.png"
+    },
+    {
+      "name": "tint",
+      "type": "tint",
+      "path": "PetsCollection/Container/PetDetails/Pet",
+      "field": "image.color",
+      "default": "#ffffff"
+    }
+  ],
+  "states": [],
+  "usedIn": [
+    {
+      "screen": "collection",
+      "note": "Có subtree trong PetsCollection.ui"
+    },
+    {
+      "screen": "shop",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    },
+    {
+      "screen": "mission",
+      "note": "Đề xuất tái dùng; chưa đăng ký .ui",
+      "planned": true
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ dữ liệu serialize .ui; không chạy binder Collection."
+  ],
+  "source": "Assets/HUDs/PetsCollection.ui",
+  "sourceRect": {
+    "left": 10,
+    "top": 20,
+    "width": 170,
+    "height": 216
+  },
+  "referenceSize": {
+    "width": 170,
+    "height": 216
+  },
+  "tree": {
+    "path": "PetsCollection/Container/PetDetails/Pet",
+    "id": "r6JjsVsl",
+    "name": "Pet",
+    "type": "UIImageEntity",
+    "active": true,
+    "transform": {
+      "rotate": 0,
+      "anchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchoredPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sizeDelta": {
+        "x": 170,
+        "y": 216
+      }
+    },
+    "alpha": 100,
+    "priority": 0,
+    "image": {
+      "source": {
+        "fileId": "uxm85o6u4w-mu6xhq1i-eqcetnq7xhd",
+        "filePath": "Assets\\Sprites\\NewAssets\\ItemBG.png",
+        "_tag": {
+          "type": "GFileRefer"
+        },
+        "fileType": "texture"
+      },
+      "color": "#ffffff",
+      "reverse": {
+        "x": false,
+        "y": false
+      },
+      "fillType": 1,
+      "slicedBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "tiledBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "centerInvisible": false,
+      "fillDir": 0,
+      "fillAmount": 0,
+      "invertFill": false,
+      "flip": 0,
+      "gradient": 0,
+      "gradientTop": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "gradientBottom": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "isApplyAnimation": false,
+      "animationAtlasID": null,
+      "animationFrameRate": 30,
+      "animationLoop": true,
+      "spriteKey": "Assets/Sprites/NewAssets/ItemBG.png"
+    },
+    "button": null,
+    "text": null,
+    "layout": null,
+    "propsData": {
+      "activeSelf": true,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0,
+          "y": 1
+        },
+        "anchorMax": {
+          "x": 0,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 1
+        },
+        "anchoredPosition": {
+          "x": 10,
+          "y": -20
+        },
+        "sizeDelta": {
+          "x": 170,
+          "y": 216
+        }
+      },
+      "alpha": 100,
+      "priority": 0,
+      "image": {
+        "source": {
+          "fileId": "uxm85o6u4w-mu6xhq1i-eqcetnq7xhd",
+          "filePath": "Assets\\Sprites\\NewAssets\\ItemBG.png",
+          "_tag": {
+            "type": "GFileRefer"
+          },
+          "fileType": "texture"
+        },
+        "color": "#ffffff",
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "isApplyAnimation": false,
+        "animationAtlasID": null,
+        "animationFrameRate": 30,
+        "animationLoop": true,
+        "fillType": 1,
+        "slicedBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "tiledBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "flip": 0,
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        }
+      }
+    },
+    "ecaProps": {
+      "HudImageWidget": {},
+      "HudWidget": {},
+      "Entity": {}
+    },
+    "unsupported": [
+      "m_ApplyingPreviewAnimation"
+    ],
+    "children": [
+      {
+        "path": "PetsCollection/Container/PetDetails/Pet/Decor1",
+        "id": "yYlS40CG",
+        "name": "Decor1",
+        "type": "UIImageEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 1
+          },
+          "anchorMax": {
+            "x": 0,
+            "y": 1
+          },
+          "pivot": {
+            "x": 0,
+            "y": 1
+          },
+          "anchoredPosition": {
+            "x": 1,
+            "y": -2
+          },
+          "sizeDelta": {
+            "x": 50,
+            "y": 45
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": {
+          "source": {
+            "fileId": "058qt1gskw1o-mu2oi1q0-f81v9jct7y",
+            "filePath": "Assets\\Sprites\\NewAssets\\DecorateIcon4.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/DecorateIcon4.png"
+        },
+        "button": null,
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 1
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 1
+            },
+            "anchoredPosition": {
+              "x": 1,
+              "y": -2
+            },
+            "sizeDelta": {
+              "x": 50,
+              "y": 45
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "image": {
+            "source": {
+              "fileId": "058qt1gskw1o-mu2oi1q0-f81v9jct7y",
+              "filePath": "Assets\\Sprites\\NewAssets\\DecorateIcon4.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "isApplyAnimation": false,
+            "animationAtlasID": null,
+            "animationFrameRate": 30,
+            "animationLoop": true,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "flip": 0,
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudImageWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "m_ApplyingPreviewAnimation"
+        ],
+        "children": []
+      },
+      {
+        "path": "PetsCollection/Container/PetDetails/Pet/Decor2",
+        "id": "rjVmB0pK",
+        "name": "Decor2",
+        "type": "UIImageEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 1,
+            "y": 1
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": {
+            "x": 1,
+            "y": 1
+          },
+          "anchoredPosition": {
+            "x": -1,
+            "y": -2
+          },
+          "sizeDelta": {
+            "x": 40,
+            "y": 60
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": {
+          "source": {
+            "fileId": "nhnozvvj76j-mu2oi22i-ssmhg8hvxjp",
+            "filePath": "Assets\\Sprites\\NewAssets\\DecorateIcon6.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/DecorateIcon6.png"
+        },
+        "button": null,
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 1,
+              "y": 1
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 1,
+              "y": 1
+            },
+            "anchoredPosition": {
+              "x": -1,
+              "y": -2
+            },
+            "sizeDelta": {
+              "x": 40,
+              "y": 60
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "image": {
+            "source": {
+              "fileId": "nhnozvvj76j-mu2oi22i-ssmhg8hvxjp",
+              "filePath": "Assets\\Sprites\\NewAssets\\DecorateIcon6.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "isApplyAnimation": false,
+            "animationAtlasID": null,
+            "animationFrameRate": 30,
+            "animationLoop": true,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "flip": 0,
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudImageWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "m_ApplyingPreviewAnimation"
+        ],
+        "children": []
+      },
+      {
+        "path": "PetsCollection/Container/PetDetails/Pet/Decor3",
+        "id": "KSg7J3fJ",
+        "name": "Decor3",
+        "type": "UIImageEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 1,
+            "y": 0
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 0
+          },
+          "pivot": {
+            "x": 1,
+            "y": 0
+          },
+          "anchoredPosition": {
+            "x": -1,
+            "y": 14
+          },
+          "sizeDelta": {
+            "x": 64,
+            "y": 64
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": {
+          "source": {
+            "fileId": "r8t5u61jnjr-mu2oi1iy-oghn9iypa9",
+            "filePath": "Assets\\Sprites\\NewAssets\\DecorateIcon3.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/DecorateIcon3.png"
+        },
+        "button": null,
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 1,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 0
+            },
+            "pivot": {
+              "x": 1,
+              "y": 0
+            },
+            "anchoredPosition": {
+              "x": -1,
+              "y": 14
+            },
+            "sizeDelta": {
+              "x": 64,
+              "y": 64
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "image": {
+            "source": {
+              "fileId": "r8t5u61jnjr-mu2oi1iy-oghn9iypa9",
+              "filePath": "Assets\\Sprites\\NewAssets\\DecorateIcon3.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "isApplyAnimation": false,
+            "animationAtlasID": null,
+            "animationFrameRate": 30,
+            "animationLoop": true,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "flip": 0,
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudImageWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "m_ApplyingPreviewAnimation"
+        ],
+        "children": []
+      },
+      {
+        "path": "PetsCollection/Container/PetDetails/Pet/Decor4",
+        "id": "KRHC5dt6",
+        "name": "Decor4",
+        "type": "UIImageEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0
+          },
+          "anchorMax": {
+            "x": 0,
+            "y": 0
+          },
+          "pivot": {
+            "x": 0,
+            "y": 0
+          },
+          "anchoredPosition": {
+            "x": 1,
+            "y": 14
+          },
+          "sizeDelta": {
+            "x": 80,
+            "y": 80
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": {
+          "source": {
+            "fileId": "h5xqad16ta-mu2oi1w5-iiuxegfn4d",
+            "filePath": "Assets\\Sprites\\NewAssets\\DecorateIcon5.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/DecorateIcon5.png"
+        },
+        "button": null,
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "anchoredPosition": {
+              "x": 1,
+              "y": 14
+            },
+            "sizeDelta": {
+              "x": 80,
+              "y": 80
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "image": {
+            "source": {
+              "fileId": "h5xqad16ta-mu2oi1w5-iiuxegfn4d",
+              "filePath": "Assets\\Sprites\\NewAssets\\DecorateIcon5.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "isApplyAnimation": false,
+            "animationAtlasID": null,
+            "animationFrameRate": 30,
+            "animationLoop": true,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "flip": 0,
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudImageWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "m_ApplyingPreviewAnimation"
+        ],
+        "children": []
+      },
+      {
+        "path": "PetsCollection/Container/PetDetails/Pet/Decor5",
+        "id": "nUHXnN3W",
+        "name": "Decor5",
+        "type": "UIImageEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchorMax": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 6,
+            "y": 10
+          },
+          "sizeDelta": {
+            "x": 150,
+            "y": 150
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": {
+          "source": {
+            "fileId": "tae4dpz3taj-mu2oi2ut-kade5xgahy",
+            "filePath": "Assets\\Sprites\\NewAssets\\PetBaseIcon.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/PetBaseIcon.png"
+        },
+        "button": null,
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 6,
+              "y": 10
+            },
+            "sizeDelta": {
+              "x": 150,
+              "y": 150
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "image": {
+            "source": {
+              "fileId": "tae4dpz3taj-mu2oi2ut-kade5xgahy",
+              "filePath": "Assets\\Sprites\\NewAssets\\PetBaseIcon.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "isApplyAnimation": false,
+            "animationAtlasID": null,
+            "animationFrameRate": 30,
+            "animationLoop": true,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "flip": 0,
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudImageWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "m_ApplyingPreviewAnimation"
+        ],
+        "children": []
+      },
+      {
+        "path": "PetsCollection/Container/PetDetails/Pet/Rarity",
+        "id": "JIfUjK0t",
+        "name": "Rarity",
+        "type": "UIImageEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0.5,
+            "y": 0
+          },
+          "anchorMax": {
+            "x": 0.5,
+            "y": 0
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0
+          },
+          "anchoredPosition": {
+            "x": 0,
+            "y": 1
+          },
+          "sizeDelta": {
+            "x": 168,
+            "y": 16
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": {
+          "source": {
+            "fileId": "rqpomo66vjg-mu6vezgl-j2m6wc8co4",
+            "filePath": "Assets\\Sprites\\NewAssets\\RarityBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#FF6F6F",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/RarityBG.png"
+        },
+        "button": null,
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0.5,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 0.5,
+              "y": 0
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0
+            },
+            "anchoredPosition": {
+              "x": 0,
+              "y": 1
+            },
+            "sizeDelta": {
+              "x": 168,
+              "y": 16
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "image": {
+            "source": {
+              "fileId": "rqpomo66vjg-mu6vezgl-j2m6wc8co4",
+              "filePath": "Assets\\Sprites\\NewAssets\\RarityBG.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "color": "#FF6F6F",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "isApplyAnimation": false,
+            "animationAtlasID": null,
+            "animationFrameRate": 30,
+            "animationLoop": true,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "flip": 0,
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudImageWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "m_ApplyingPreviewAnimation"
+        ],
+        "children": []
+      },
+      {
+        "path": "PetsCollection/Container/PetDetails/Pet/Thumbnail",
+        "id": "GopiKdhn",
+        "name": "Thumbnail",
+        "type": "UIImageEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchorMax": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 0,
+            "y": 8
+          },
+          "sizeDelta": {
+            "x": 166,
+            "y": 166
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": {
+          "source": {
+            "fileId": "63tf7u5p89f-mir2uppa-kquuyta6oll",
+            "filePath": "Assets\\Sprites\\Pets\\PENGUIN.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/Pets/PENGUIN.png"
+        },
+        "button": null,
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 0,
+              "y": 8
+            },
+            "sizeDelta": {
+              "x": 166,
+              "y": 166
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "image": {
+            "source": {
+              "fileId": "63tf7u5p89f-mir2uppa-kquuyta6oll",
+              "filePath": "Assets\\Sprites\\Pets\\PENGUIN.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "isApplyAnimation": false,
+            "animationAtlasID": null,
+            "animationFrameRate": 30,
+            "animationLoop": true,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "flip": 0,
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudImageWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "m_ApplyingPreviewAnimation"
+        ],
+        "children": []
+      },
+      {
+        "path": "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton",
+        "id": "Z6sfJ0V6",
+        "name": "ShowDetailsPetButton",
+        "type": "UIButtonEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 435,
+            "y": -45.5
+          },
+          "sizeDelta": {
+            "x": 0,
+            "y": -1
+          }
+        },
+        "alpha": 0,
+        "priority": 0,
+        "image": null,
+        "button": {
+          "spriteName": {
+            "fileId": "4fea53c19488f972a3e911c826b1bea7",
+            "filePath": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png"
+        },
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 435,
+              "y": -45.5
+            },
+            "sizeDelta": {
+              "x": 0,
+              "y": -1
+            }
+          },
+          "alpha": 0,
+          "priority": 0,
+          "button": {
+            "spriteName": {
+              "fileId": "4fea53c19488f972a3e911c826b1bea7",
+              "filePath": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "normal": "#FFFFFF",
+            "highlight": "#e2a222",
+            "pressed": "#C5C5C5",
+            "disabled": "#494949",
+            "onClicks": [],
+            "enableBorderImage": true,
+            "clickHandlers": [],
+            "disableCollider": false,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "flip": 0,
+            "gradient": 1,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudButtonWidget": {
+            "PROP_45691568": {
+              "type": "CustomEnum90516480",
+              "value": "E65171527"
+            }
+          },
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "button.onClicks",
+          "button.clickHandlers"
+        ],
+        "children": []
+      },
+      {
+        "path": "PetsCollection/Container/PetDetails/Pet/Name",
+        "id": "wPbAbf6I",
+        "name": "Name",
+        "type": "UITextEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 1,
+            "y": 0.5
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 0.5
+          },
+          "pivot": {
+            "x": 0,
+            "y": 1
+          },
+          "anchoredPosition": {
+            "x": 10,
+            "y": 84
+          },
+          "sizeDelta": {
+            "x": 150,
+            "y": 40
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": null,
+        "button": null,
+        "text": {
+          "value": "Whale",
+          "key": "",
+          "font": "Default",
+          "fontSize": 32,
+          "fontStyle": {
+            "bold": false,
+            "italic": false,
+            "underline": false
+          },
+          "color": "#123D7A",
+          "alignment": {
+            "h": "left",
+            "v": "middle"
+          },
+          "lineSpacing": 0,
+          "background": false,
+          "backgroundColor": "#e7b200",
+          "overflow": 0,
+          "backgroundRGBA": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0
+          },
+          "shadow": true,
+          "shadowColor": "#123D7A",
+          "shadowOffset": {
+            "x": 1,
+            "y": 1
+          },
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "outline": false,
+          "outlineColor": "#FFFFFF",
+          "outlineAlpha": 0.5,
+          "outlineOffset": 0.5,
+          "shadowAlpha": 1
+        },
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 1,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0,
+              "y": 1
+            },
+            "anchoredPosition": {
+              "x": 10,
+              "y": 84
+            },
+            "sizeDelta": {
+              "x": 150,
+              "y": 40
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "text": {
+            "value": "Whale",
+            "key": "",
+            "font": "Default",
+            "fontSize": 32,
+            "fontStyle": {
+              "bold": false,
+              "italic": false,
+              "underline": false
+            },
+            "color": "#123D7A",
+            "alignment": {
+              "h": "left",
+              "v": "middle"
+            },
+            "lineSpacing": 0,
+            "background": false,
+            "backgroundColor": "#e7b200",
+            "overflow": 0,
+            "backgroundRGBA": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0
+            },
+            "shadow": true,
+            "shadowColor": "#123D7A",
+            "shadowOffset": {
+              "x": 1,
+              "y": 1
+            },
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "outline": false,
+            "outlineColor": "#FFFFFF",
+            "outlineAlpha": 0.5,
+            "outlineOffset": 0.5,
+            "shadowAlpha": 1
+          }
+        },
+        "ecaProps": {
+          "HudLabelWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [],
+        "children": []
+      },
+      {
+        "path": "PetsCollection/Container/PetDetails/Pet/RarityBG",
+        "id": "pG0KrAI2",
+        "name": "RarityBG",
+        "type": "UIImageEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 1,
+            "y": 0.5
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 0.5
+          },
+          "pivot": {
+            "x": 0,
+            "y": 1
+          },
+          "anchoredPosition": {
+            "x": 10,
+            "y": 42
+          },
+          "sizeDelta": {
+            "x": 120,
+            "y": 36
+          }
+        },
+        "alpha": 90,
+        "priority": 0,
+        "image": {
+          "source": {
+            "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+            "filePath": "Assets\\Sprites\\Backgrounds\\BG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#FF6F6F",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 2,
+          "gradientTop": {
+            "r": 201,
+            "g": 201,
+            "b": 201,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 233,
+            "g": 233,
+            "b": 233,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/Backgrounds/BG.png"
+        },
+        "button": null,
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 1,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0,
+              "y": 1
+            },
+            "anchoredPosition": {
+              "x": 10,
+              "y": 42
+            },
+            "sizeDelta": {
+              "x": 120,
+              "y": 36
+            }
+          },
+          "alpha": 90,
+          "priority": 0,
+          "image": {
+            "source": {
+              "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+              "filePath": "Assets\\Sprites\\Backgrounds\\BG.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "color": "#FF6F6F",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "isApplyAnimation": false,
+            "animationAtlasID": null,
+            "animationFrameRate": 30,
+            "animationLoop": true,
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "flip": 0,
+            "gradient": 2,
+            "gradientTop": {
+              "r": 201,
+              "g": 201,
+              "b": 201,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 233,
+              "g": 233,
+              "b": 233,
+              "a": 1
+            }
+          }
+        },
+        "ecaProps": {
+          "HudImageWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [
+          "m_ApplyingPreviewAnimation"
+        ],
+        "children": [
+          {
+            "path": "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName",
+            "id": "S7N5fNhj",
+            "name": "RarityName",
+            "type": "UITextEntity",
+            "active": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0,
+                "y": 0
+              },
+              "anchorMax": {
+                "x": 1,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0,
+                "y": 1
+              },
+              "anchoredPosition": {
+                "x": 10,
+                "y": -5
+              },
+              "sizeDelta": {
+                "x": -20,
+                "y": -7
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "image": null,
+            "button": null,
+            "text": {
+              "value": "MYTHIC",
+              "key": "",
+              "font": "Default",
+              "fontSize": 20,
+              "fontStyle": {
+                "bold": true,
+                "italic": false,
+                "underline": false
+              },
+              "color": "#FFFFFF",
+              "alignment": {
+                "h": "center",
+                "v": "middle"
+              },
+              "lineSpacing": 0,
+              "background": false,
+              "backgroundColor": "#e7b200",
+              "overflow": 0,
+              "backgroundRGBA": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+              },
+              "shadow": false,
+              "shadowColor": "#7095BE",
+              "shadowOffset": {
+                "x": 1,
+                "y": 1
+              },
+              "gradient": 0,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "outline": true,
+              "outlineColor": "#FF0000",
+              "outlineAlpha": 0.5,
+              "outlineOffset": 0.5,
+              "shadowAlpha": 1
+            },
+            "layout": null,
+            "propsData": {
+              "activeSelf": true,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0,
+                  "y": 0
+                },
+                "anchorMax": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 1
+                },
+                "anchoredPosition": {
+                  "x": 10,
+                  "y": -5
+                },
+                "sizeDelta": {
+                  "x": -20,
+                  "y": -7
+                }
+              },
+              "alpha": 100,
+              "priority": 0,
+              "text": {
+                "value": "MYTHIC",
+                "key": "",
+                "font": "Default",
+                "fontSize": 20,
+                "fontStyle": {
+                  "bold": true,
+                  "italic": false,
+                  "underline": false
+                },
+                "color": "#FFFFFF",
+                "alignment": {
+                  "h": "center",
+                  "v": "middle"
+                },
+                "lineSpacing": 0,
+                "background": false,
+                "backgroundColor": "#e7b200",
+                "overflow": 0,
+                "backgroundRGBA": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 0
+                },
+                "shadow": false,
+                "shadowColor": "#7095BE",
+                "shadowOffset": {
+                  "x": 1,
+                  "y": 1
+                },
+                "gradient": 0,
+                "gradientTop": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "gradientBottom": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "outline": true,
+                "outlineColor": "#FF0000",
+                "outlineAlpha": 0.5,
+                "outlineOffset": 0.5,
+                "shadowAlpha": 1
+              }
+            },
+            "ecaProps": {
+              "HudLabelWidget": {},
+              "HudWidget": {},
+              "Entity": {}
+            },
+            "unsupported": [],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "entityCount": 12,
+  "spec": {
+    "nodes": [
+      {
+        "id": "r6JjsVsl",
+        "path": "PetsCollection/Container/PetDetails/Pet",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 10,
+          "top": 20,
+          "width": 170,
+          "height": 216
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "yYlS40CG",
+        "path": "PetsCollection/Container/PetDetails/Pet/Decor1",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 1,
+          "top": 2,
+          "width": 50,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "rjVmB0pK",
+        "path": "PetsCollection/Container/PetDetails/Pet/Decor2",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 129,
+          "top": 2,
+          "width": 40,
+          "height": 60
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "KSg7J3fJ",
+        "path": "PetsCollection/Container/PetDetails/Pet/Decor3",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 105,
+          "top": 138,
+          "width": 64,
+          "height": 64
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "KRHC5dt6",
+        "path": "PetsCollection/Container/PetDetails/Pet/Decor4",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 1,
+          "top": 122,
+          "width": 80,
+          "height": 80
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "nUHXnN3W",
+        "path": "PetsCollection/Container/PetDetails/Pet/Decor5",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 16,
+          "top": 23,
+          "width": 150,
+          "height": 150
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "JIfUjK0t",
+        "path": "PetsCollection/Container/PetDetails/Pet/Rarity",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 1,
+          "top": 199,
+          "width": 168,
+          "height": 16
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "GopiKdhn",
+        "path": "PetsCollection/Container/PetDetails/Pet/Thumbnail",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 2,
+          "top": 17,
+          "width": 166,
+          "height": 166
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "Z6sfJ0V6",
+        "path": "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 435,
+          "top": 46,
+          "width": 170,
+          "height": 215
+        },
+        "active": true,
+        "alpha": 0
+      },
+      {
+        "id": "wPbAbf6I",
+        "path": "PetsCollection/Container/PetDetails/Pet/Name",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 180,
+          "top": 24,
+          "width": 150,
+          "height": 40
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "pG0KrAI2",
+        "path": "PetsCollection/Container/PetDetails/Pet/RarityBG",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 180,
+          "top": 66,
+          "width": 120,
+          "height": 36
+        },
+        "active": true,
+        "alpha": 90
+      },
+      {
+        "id": "S7N5fNhj",
+        "path": "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 5,
+          "width": 100,
+          "height": 29
+        },
+        "active": true,
+        "alpha": 100
+      }
+    ],
+    "images": [
+      {
+        "id": "r6JjsVsl",
+        "path": "PetsCollection/Container/PetDetails/Pet",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 10,
+          "top": 20,
+          "width": 170,
+          "height": 216
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/ItemBG.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/ItemBG.png",
+          "declaredKey": "Assets/Sprites/NewAssets/ItemBG.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/ItemBG.png"
+          ],
+          "fileId": "uxm85o6u4w-mu6xhq1i-eqcetnq7xhd",
+          "output": "./assets/ui-sprites/collection/NewAssets__ItemBG.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/PetsLayout/Pet (1)",
+            "PetsCollection/Container/PetDetails/Pet",
+            "PetsCollection/Container/PetDetails/Obtain/BG",
+            "PetsCollection/Container/Recipe/Pet",
+            "PetsCollection/Container/Recipe/Pet"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 20,
+            "right": 20,
+            "top": 20,
+            "bottom": 20
+          },
+          "width": 90,
+          "height": 90
+        },
+        "image": {
+          "source": {
+            "fileId": "uxm85o6u4w-mu6xhq1i-eqcetnq7xhd",
+            "filePath": "Assets\\Sprites\\NewAssets\\ItemBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/ItemBG.png"
+        },
+        "tint": "#ffffff"
+      },
+      {
+        "id": "yYlS40CG",
+        "path": "PetsCollection/Container/PetDetails/Pet/Decor1",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 1,
+          "top": 2,
+          "width": 50,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/DecorateIcon4.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/DecorateIcon4.png",
+          "declaredKey": "Assets/Sprites/NewAssets/DecorateIcon4.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/DecorateIcon4.png"
+          ],
+          "fileId": "058qt1gskw1o-mu2oi1q0-f81v9jct7y",
+          "output": "./assets/ui-sprites/collection/NewAssets__DecorateIcon4.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/PetDetails/Pet/Decor1"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "width": 70,
+          "height": 56
+        },
+        "image": {
+          "source": {
+            "fileId": "058qt1gskw1o-mu2oi1q0-f81v9jct7y",
+            "filePath": "Assets\\Sprites\\NewAssets\\DecorateIcon4.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/DecorateIcon4.png"
+        },
+        "tint": "#ffffff"
+      },
+      {
+        "id": "rjVmB0pK",
+        "path": "PetsCollection/Container/PetDetails/Pet/Decor2",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 129,
+          "top": 2,
+          "width": 40,
+          "height": 60
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/DecorateIcon6.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/DecorateIcon6.png",
+          "declaredKey": "Assets/Sprites/NewAssets/DecorateIcon6.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/DecorateIcon6.png"
+          ],
+          "fileId": "nhnozvvj76j-mu2oi22i-ssmhg8hvxjp",
+          "output": "./assets/ui-sprites/collection/NewAssets__DecorateIcon6.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/PetDetails/Pet/Decor2"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "width": 62,
+          "height": 90
+        },
+        "image": {
+          "source": {
+            "fileId": "nhnozvvj76j-mu2oi22i-ssmhg8hvxjp",
+            "filePath": "Assets\\Sprites\\NewAssets\\DecorateIcon6.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/DecorateIcon6.png"
+        },
+        "tint": "#ffffff"
+      },
+      {
+        "id": "KSg7J3fJ",
+        "path": "PetsCollection/Container/PetDetails/Pet/Decor3",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 105,
+          "top": 138,
+          "width": 64,
+          "height": 64
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/DecorateIcon3.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/DecorateIcon3.png",
+          "declaredKey": "Assets/Sprites/NewAssets/DecorateIcon3.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/DecorateIcon3.png"
+          ],
+          "fileId": "r8t5u61jnjr-mu2oi1iy-oghn9iypa9",
+          "output": "./assets/ui-sprites/collection/NewAssets__DecorateIcon3.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/PetDetails/Pet/Decor3"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "width": 90,
+          "height": 64
+        },
+        "image": {
+          "source": {
+            "fileId": "r8t5u61jnjr-mu2oi1iy-oghn9iypa9",
+            "filePath": "Assets\\Sprites\\NewAssets\\DecorateIcon3.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/DecorateIcon3.png"
+        },
+        "tint": "#ffffff"
+      },
+      {
+        "id": "KRHC5dt6",
+        "path": "PetsCollection/Container/PetDetails/Pet/Decor4",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 1,
+          "top": 122,
+          "width": 80,
+          "height": 80
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/DecorateIcon5.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/DecorateIcon5.png",
+          "declaredKey": "Assets/Sprites/NewAssets/DecorateIcon5.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/DecorateIcon5.png"
+          ],
+          "fileId": "h5xqad16ta-mu2oi1w5-iiuxegfn4d",
+          "output": "./assets/ui-sprites/collection/NewAssets__DecorateIcon5.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/PetDetails/Pet/Decor4"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "width": 98,
+          "height": 126
+        },
+        "image": {
+          "source": {
+            "fileId": "h5xqad16ta-mu2oi1w5-iiuxegfn4d",
+            "filePath": "Assets\\Sprites\\NewAssets\\DecorateIcon5.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/DecorateIcon5.png"
+        },
+        "tint": "#ffffff"
+      },
+      {
+        "id": "nUHXnN3W",
+        "path": "PetsCollection/Container/PetDetails/Pet/Decor5",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 16,
+          "top": 23,
+          "width": 150,
+          "height": 150
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/PetBaseIcon.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/PetBaseIcon.png",
+          "declaredKey": "Assets/Sprites/NewAssets/PetBaseIcon.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/PetBaseIcon.png"
+          ],
+          "fileId": "tae4dpz3taj-mu2oi2ut-kade5xgahy",
+          "output": "./assets/ui-sprites/collection/NewAssets__PetBaseIcon.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/PetDetails/Pet/Decor5"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "width": 230,
+          "height": 238
+        },
+        "image": {
+          "source": {
+            "fileId": "tae4dpz3taj-mu2oi2ut-kade5xgahy",
+            "filePath": "Assets\\Sprites\\NewAssets\\PetBaseIcon.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/PetBaseIcon.png"
+        },
+        "tint": "#ffffff"
+      },
+      {
+        "id": "JIfUjK0t",
+        "path": "PetsCollection/Container/PetDetails/Pet/Rarity",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 1,
+          "top": 199,
+          "width": 168,
+          "height": 16
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/RarityBG.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/RarityBG.png",
+          "declaredKey": "Assets/Sprites/NewAssets/RarityBG.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/RarityBG.png"
+          ],
+          "fileId": "rqpomo66vjg-mu6vezgl-j2m6wc8co4",
+          "output": "./assets/ui-sprites/collection/NewAssets__RarityBG.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/PetsLayout/Pet (1)/Rarity",
+            "PetsCollection/Container/PetDetails/Pet/Rarity",
+            "PetsCollection/Container/Recipe/Pet/Rarity",
+            "PetsCollection/Container/Recipe/Pet/Rarity"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 10,
+            "right": 10,
+            "top": 0,
+            "bottom": 3
+          },
+          "width": 62,
+          "height": 10
+        },
+        "image": {
+          "source": {
+            "fileId": "rqpomo66vjg-mu6vezgl-j2m6wc8co4",
+            "filePath": "Assets\\Sprites\\NewAssets\\RarityBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#FF6F6F",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/RarityBG.png"
+        },
+        "tint": "#FF6F6F"
+      },
+      {
+        "id": "GopiKdhn",
+        "path": "PetsCollection/Container/PetDetails/Pet/Thumbnail",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 2,
+          "top": 17,
+          "width": 166,
+          "height": 166
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/Pets/PENGUIN.png",
+        "sprite": {
+          "key": "Assets/Sprites/Pets/PENGUIN.png",
+          "declaredKey": "Assets/Sprites/Pets/PENGUIN.png",
+          "declaredKeys": [
+            "Assets/Sprites/Pets/PENGUIN.png"
+          ],
+          "fileId": "63tf7u5p89f-mir2uppa-kquuyta6oll",
+          "output": "./assets/ui-sprites/collection/Pets__PENGUIN.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container/PetsLayout/Pet (1)/Thumbnail",
+            "PetsCollection/Container/PetDetails/Pet/Thumbnail",
+            "PetsCollection/Container/Recipe/Pet/Thumbnail",
+            "PetsCollection/Container/Recipe/Pet/Thumbnail"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "width": 256,
+          "height": 256
+        },
+        "image": {
+          "source": {
+            "fileId": "63tf7u5p89f-mir2uppa-kquuyta6oll",
+            "filePath": "Assets\\Sprites\\Pets\\PENGUIN.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/Pets/PENGUIN.png"
+        },
+        "tint": "#ffffff"
+      },
+      {
+        "id": "Z6sfJ0V6",
+        "path": "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 435,
+          "top": 46,
+          "width": 170,
+          "height": 215
+        },
+        "active": true,
+        "alpha": 0,
+        "key": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+        "sprite": {
+          "key": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+          "declaredKey": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+          "declaredKeys": [
+            "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png"
+          ],
+          "fileId": "4fea53c19488f972a3e911c826b1bea7",
+          "output": null,
+          "missing": true,
+          "references": [
+            "PetsCollection/Container/PreventCloseButton",
+            "PetsCollection/Container/PetsLayout/Pet (1)/ShowDetailsPetButton",
+            "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": null,
+          "width": null,
+          "height": null
+        },
+        "image": {
+          "spriteName": {
+            "fileId": "4fea53c19488f972a3e911c826b1bea7",
+            "filePath": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png"
+        },
+        "tint": "#FFFFFF"
+      },
+      {
+        "id": "pG0KrAI2",
+        "path": "PetsCollection/Container/PetDetails/Pet/RarityBG",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 180,
+          "top": 66,
+          "width": 120,
+          "height": 36
+        },
+        "active": true,
+        "alpha": 90,
+        "key": "Assets/Sprites/Backgrounds/BG.png",
+        "sprite": {
+          "key": "Assets/Sprites/Backgrounds/BG.png",
+          "declaredKey": "Assets/Sprites/UIComponents/Backgrounds/BG.png",
+          "declaredKeys": [
+            "Assets/Sprites/UIComponents/Backgrounds/BG.png",
+            "Assets/Sprites/Backgrounds/BG.png"
+          ],
+          "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+          "output": "./assets/ui-sprites/collection/Backgrounds__BG.png",
+          "missing": false,
+          "references": [
+            "PetsCollection/Container",
+            "PetsCollection/Container/PetDetails",
+            "PetsCollection/Container/PetDetails/Pet/RarityBG",
+            "PetsCollection/Container/Info",
+            "PetsCollection/Container/MutationsWeathers",
+            "PetsCollection/Container/UnlockObtain",
+            "PetsCollection/Container/Recipe"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 8,
+            "right": 8,
+            "top": 8,
+            "bottom": 8
+          },
+          "width": 26,
+          "height": 26
+        },
+        "image": {
+          "source": {
+            "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+            "filePath": "Assets\\Sprites\\Backgrounds\\BG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#FF6F6F",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 2,
+          "gradientTop": {
+            "r": 201,
+            "g": 201,
+            "b": 201,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 233,
+            "g": 233,
+            "b": 233,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/Backgrounds/BG.png"
+        },
+        "tint": "#FF6F6F"
+      }
+    ],
+    "shapes": [
+      {
+        "id": "r6JjsVsl",
+        "path": "PetsCollection/Container/PetDetails/Pet",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 10,
+          "top": 20,
+          "width": 170,
+          "height": 216
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#ffffff",
+        "background": null
+      },
+      {
+        "id": "yYlS40CG",
+        "path": "PetsCollection/Container/PetDetails/Pet/Decor1",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 1,
+          "top": 2,
+          "width": 50,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#ffffff",
+        "background": null
+      },
+      {
+        "id": "rjVmB0pK",
+        "path": "PetsCollection/Container/PetDetails/Pet/Decor2",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 129,
+          "top": 2,
+          "width": 40,
+          "height": 60
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#ffffff",
+        "background": null
+      },
+      {
+        "id": "KSg7J3fJ",
+        "path": "PetsCollection/Container/PetDetails/Pet/Decor3",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 105,
+          "top": 138,
+          "width": 64,
+          "height": 64
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#ffffff",
+        "background": null
+      },
+      {
+        "id": "KRHC5dt6",
+        "path": "PetsCollection/Container/PetDetails/Pet/Decor4",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 1,
+          "top": 122,
+          "width": 80,
+          "height": 80
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#ffffff",
+        "background": null
+      },
+      {
+        "id": "nUHXnN3W",
+        "path": "PetsCollection/Container/PetDetails/Pet/Decor5",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 16,
+          "top": 23,
+          "width": 150,
+          "height": 150
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#ffffff",
+        "background": null
+      },
+      {
+        "id": "JIfUjK0t",
+        "path": "PetsCollection/Container/PetDetails/Pet/Rarity",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 1,
+          "top": 199,
+          "width": 168,
+          "height": 16
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#FF6F6F",
+        "background": null
+      },
+      {
+        "id": "GopiKdhn",
+        "path": "PetsCollection/Container/PetDetails/Pet/Thumbnail",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 2,
+          "top": 17,
+          "width": 166,
+          "height": 166
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#ffffff",
+        "background": null
+      },
+      {
+        "id": "Z6sfJ0V6",
+        "path": "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 435,
+          "top": 46,
+          "width": 170,
+          "height": 215
+        },
+        "active": true,
+        "alpha": 0,
+        "color": "#FFFFFF",
+        "background": null
+      },
+      {
+        "id": "wPbAbf6I",
+        "path": "PetsCollection/Container/PetDetails/Pet/Name",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 180,
+          "top": 24,
+          "width": 150,
+          "height": 40
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#e7b200",
+        "background": false
+      },
+      {
+        "id": "pG0KrAI2",
+        "path": "PetsCollection/Container/PetDetails/Pet/RarityBG",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 180,
+          "top": 66,
+          "width": 120,
+          "height": 36
+        },
+        "active": true,
+        "alpha": 90,
+        "color": "#FF6F6F",
+        "background": null
+      },
+      {
+        "id": "S7N5fNhj",
+        "path": "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 5,
+          "width": 100,
+          "height": 29
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#e7b200",
+        "background": false
+      }
+    ],
+    "texts": [
+      {
+        "id": "wPbAbf6I",
+        "path": "PetsCollection/Container/PetDetails/Pet/Name",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 180,
+          "top": 24,
+          "width": 150,
+          "height": 40
+        },
+        "active": true,
+        "alpha": 100,
+        "value": "Whale",
+        "key": "",
+        "font": "Default",
+        "fontSize": 32,
+        "fontStyle": {
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        "color": "#123D7A",
+        "alignment": {
+          "h": "left",
+          "v": "middle"
+        },
+        "lineSpacing": 0,
+        "background": false,
+        "backgroundColor": "#e7b200",
+        "overflow": 0,
+        "backgroundRGBA": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "shadow": true,
+        "shadowColor": "#123D7A",
+        "shadowOffset": {
+          "x": 1,
+          "y": 1
+        },
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "outline": false,
+        "outlineColor": "#FFFFFF",
+        "outlineAlpha": 0.5,
+        "outlineOffset": 0.5,
+        "shadowAlpha": 1,
+        "localization": null
+      },
+      {
+        "id": "S7N5fNhj",
+        "path": "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 5,
+          "width": 100,
+          "height": 29
+        },
+        "active": true,
+        "alpha": 100,
+        "value": "MYTHIC",
+        "key": "",
+        "font": "Default",
+        "fontSize": 20,
+        "fontStyle": {
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        "color": "#FFFFFF",
+        "alignment": {
+          "h": "center",
+          "v": "middle"
+        },
+        "lineSpacing": 0,
+        "background": false,
+        "backgroundColor": "#e7b200",
+        "overflow": 0,
+        "backgroundRGBA": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "shadow": false,
+        "shadowColor": "#7095BE",
+        "shadowOffset": {
+          "x": 1,
+          "y": 1
+        },
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "outline": true,
+        "outlineColor": "#FF0000",
+        "outlineAlpha": 0.5,
+        "outlineOffset": 0.5,
+        "shadowAlpha": 1,
+        "localization": null
+      }
+    ]
+  },
+  "template": {
+    "op": "add",
+    "parent": "PetsCollection",
+    "parentId": "CyEjtaLS",
+    "reason": "Template detail-card; slot: visible = PetsCollection/Container/PetDetails/Pet.active; label = PetsCollection/Container/PetDetails/Pet/Name.text.value; art = PetsCollection/Container/PetDetails/Pet.image.spriteKey; tint = PetsCollection/Container/PetDetails/Pet.image.color",
+    "entity": {
+      "id": "uic-detail-card-r6JjsVsl",
+      "name": "Pet",
+      "type": "UIImageEntity",
+      "children": [
+        {
+          "id": "uic-detail-card-yYlS40CG",
+          "name": "Decor1",
+          "type": "UIImageEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 1
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 1
+            },
+            "anchoredPosition": {
+              "x": 1,
+              "y": -2
+            },
+            "sizeDelta": {
+              "x": 50,
+              "y": 45
+            }
+          },
+          "image": {
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "spriteKey": "Assets/Sprites/NewAssets/DecorateIcon4.png"
+          }
+        },
+        {
+          "id": "uic-detail-card-rjVmB0pK",
+          "name": "Decor2",
+          "type": "UIImageEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 1,
+              "y": 1
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 1,
+              "y": 1
+            },
+            "anchoredPosition": {
+              "x": -1,
+              "y": -2
+            },
+            "sizeDelta": {
+              "x": 40,
+              "y": 60
+            }
+          },
+          "image": {
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "spriteKey": "Assets/Sprites/NewAssets/DecorateIcon6.png"
+          }
+        },
+        {
+          "id": "uic-detail-card-KSg7J3fJ",
+          "name": "Decor3",
+          "type": "UIImageEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 1,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 0
+            },
+            "pivot": {
+              "x": 1,
+              "y": 0
+            },
+            "anchoredPosition": {
+              "x": -1,
+              "y": 14
+            },
+            "sizeDelta": {
+              "x": 64,
+              "y": 64
+            }
+          },
+          "image": {
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "spriteKey": "Assets/Sprites/NewAssets/DecorateIcon3.png"
+          }
+        },
+        {
+          "id": "uic-detail-card-KRHC5dt6",
+          "name": "Decor4",
+          "type": "UIImageEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "anchoredPosition": {
+              "x": 1,
+              "y": 14
+            },
+            "sizeDelta": {
+              "x": 80,
+              "y": 80
+            }
+          },
+          "image": {
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "spriteKey": "Assets/Sprites/NewAssets/DecorateIcon5.png"
+          }
+        },
+        {
+          "id": "uic-detail-card-nUHXnN3W",
+          "name": "Decor5",
+          "type": "UIImageEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 6,
+              "y": 10
+            },
+            "sizeDelta": {
+              "x": 150,
+              "y": 150
+            }
+          },
+          "image": {
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "spriteKey": "Assets/Sprites/NewAssets/PetBaseIcon.png"
+          }
+        },
+        {
+          "id": "uic-detail-card-JIfUjK0t",
+          "name": "Rarity",
+          "type": "UIImageEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0.5,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 0.5,
+              "y": 0
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0
+            },
+            "anchoredPosition": {
+              "x": 0,
+              "y": 1
+            },
+            "sizeDelta": {
+              "x": 168,
+              "y": 16
+            }
+          },
+          "image": {
+            "color": "#FF6F6F",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "spriteKey": "Assets/Sprites/NewAssets/RarityBG.png"
+          }
+        },
+        {
+          "id": "uic-detail-card-GopiKdhn",
+          "name": "Thumbnail",
+          "type": "UIImageEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 0,
+              "y": 8
+            },
+            "sizeDelta": {
+              "x": 166,
+              "y": 166
+            }
+          },
+          "image": {
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "spriteKey": "Assets/Sprites/Pets/PENGUIN.png"
+          }
+        },
+        {
+          "id": "uic-detail-card-Z6sfJ0V6",
+          "name": "ShowDetailsPetButton",
+          "type": "UIButtonEntity",
+          "children": [],
+          "active": true,
+          "alpha": 0,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 435,
+              "y": -45.5
+            },
+            "sizeDelta": {
+              "x": 0,
+              "y": -1
+            }
+          },
+          "button": {
+            "normal": "#FFFFFF",
+            "pressed": "#C5C5C5",
+            "disabled": "#494949",
+            "disableCollider": false,
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "reverse": {
+              "x": false,
+              "y": false
+            }
+          }
+        },
+        {
+          "id": "uic-detail-card-wPbAbf6I",
+          "name": "Name",
+          "type": "UITextEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 1,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0,
+              "y": 1
+            },
+            "anchoredPosition": {
+              "x": 10,
+              "y": 84
+            },
+            "sizeDelta": {
+              "x": 150,
+              "y": 40
+            }
+          },
+          "text": {
+            "value": "Whale",
+            "key": "",
+            "fontSize": 32,
+            "fontStyle": {
+              "bold": false,
+              "italic": false,
+              "underline": false
+            },
+            "color": "#123D7A",
+            "alignment": {
+              "h": "left",
+              "v": "middle"
+            },
+            "lineSpacing": 0,
+            "background": false,
+            "backgroundColor": "#e7b200",
+            "shadow": true,
+            "shadowColor": "#123D7A",
+            "shadowOffset": {
+              "x": 1,
+              "y": 1
+            },
+            "outline": false,
+            "outlineColor": "#FFFFFF",
+            "outlineAlpha": 0.5,
+            "outlineOffset": 0.5,
+            "shadowAlpha": 1
+          }
+        },
+        {
+          "id": "uic-detail-card-pG0KrAI2",
+          "name": "RarityBG",
+          "type": "UIImageEntity",
+          "children": [
+            {
+              "id": "uic-detail-card-S7N5fNhj",
+              "name": "RarityName",
+              "type": "UITextEntity",
+              "children": [],
+              "active": true,
+              "alpha": 100,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0,
+                  "y": 0
+                },
+                "anchorMax": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 1
+                },
+                "anchoredPosition": {
+                  "x": 10,
+                  "y": -5
+                },
+                "sizeDelta": {
+                  "x": -20,
+                  "y": -7
+                }
+              },
+              "text": {
+                "value": "MYTHIC",
+                "key": "",
+                "fontSize": 20,
+                "fontStyle": {
+                  "bold": true,
+                  "italic": false,
+                  "underline": false
+                },
+                "color": "#FFFFFF",
+                "alignment": {
+                  "h": "center",
+                  "v": "middle"
+                },
+                "lineSpacing": 0,
+                "background": false,
+                "backgroundColor": "#e7b200",
+                "shadow": false,
+                "shadowColor": "#7095BE",
+                "shadowOffset": {
+                  "x": 1,
+                  "y": 1
+                },
+                "outline": true,
+                "outlineColor": "#FF0000",
+                "outlineAlpha": 0.5,
+                "outlineOffset": 0.5,
+                "shadowAlpha": 1
+              }
+            }
+          ],
+          "active": true,
+          "alpha": 90,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 1,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0,
+              "y": 1
+            },
+            "anchoredPosition": {
+              "x": 10,
+              "y": 42
+            },
+            "sizeDelta": {
+              "x": 120,
+              "y": 36
+            }
+          },
+          "image": {
+            "color": "#FF6F6F",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "spriteKey": "Assets/Sprites/Backgrounds/BG.png"
+          }
+        }
+      ],
+      "active": true,
+      "alpha": 100,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchorMax": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchoredPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "sizeDelta": {
+          "x": 170,
+          "y": 216
+        }
+      },
+      "image": {
+        "color": "#ffffff",
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "fillType": 1,
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "spriteKey": "Assets/Sprites/NewAssets/ItemBG.png"
+      }
+    }
+  },
+  "templateOmitted": [
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.source.fileId",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.source.filePath",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.source._tag.type",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.source.fileType",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.slicedBorder.left",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.slicedBorder.right",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.slicedBorder.top",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.slicedBorder.bottom",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.tiledBorder.left",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.tiledBorder.right",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.tiledBorder.top",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.tiledBorder.bottom",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.flip",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.gradient",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.gradientTop.r",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.gradientTop.g",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.gradientTop.b",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.gradientTop.a",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.gradientBottom.r",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.gradientBottom.g",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.gradientBottom.b",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.gradientBottom.a",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.isApplyAnimation",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.animationAtlasID",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.animationFrameRate",
+    "PetsCollection/Container/PetDetails/Pet/Decor1: image.animationLoop",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.source.fileId",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.source.filePath",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.source._tag.type",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.source.fileType",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.slicedBorder.left",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.slicedBorder.right",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.slicedBorder.top",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.slicedBorder.bottom",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.tiledBorder.left",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.tiledBorder.right",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.tiledBorder.top",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.tiledBorder.bottom",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.flip",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.gradient",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.gradientTop.r",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.gradientTop.g",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.gradientTop.b",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.gradientTop.a",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.gradientBottom.r",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.gradientBottom.g",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.gradientBottom.b",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.gradientBottom.a",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.isApplyAnimation",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.animationAtlasID",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.animationFrameRate",
+    "PetsCollection/Container/PetDetails/Pet/Decor2: image.animationLoop",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.source.fileId",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.source.filePath",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.source._tag.type",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.source.fileType",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.slicedBorder.left",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.slicedBorder.right",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.slicedBorder.top",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.slicedBorder.bottom",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.tiledBorder.left",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.tiledBorder.right",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.tiledBorder.top",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.tiledBorder.bottom",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.flip",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.gradient",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.gradientTop.r",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.gradientTop.g",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.gradientTop.b",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.gradientTop.a",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.gradientBottom.r",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.gradientBottom.g",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.gradientBottom.b",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.gradientBottom.a",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.isApplyAnimation",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.animationAtlasID",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.animationFrameRate",
+    "PetsCollection/Container/PetDetails/Pet/Decor3: image.animationLoop",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.source.fileId",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.source.filePath",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.source._tag.type",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.source.fileType",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.slicedBorder.left",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.slicedBorder.right",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.slicedBorder.top",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.slicedBorder.bottom",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.tiledBorder.left",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.tiledBorder.right",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.tiledBorder.top",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.tiledBorder.bottom",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.flip",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.gradient",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.gradientTop.r",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.gradientTop.g",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.gradientTop.b",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.gradientTop.a",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.gradientBottom.r",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.gradientBottom.g",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.gradientBottom.b",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.gradientBottom.a",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.isApplyAnimation",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.animationAtlasID",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.animationFrameRate",
+    "PetsCollection/Container/PetDetails/Pet/Decor4: image.animationLoop",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.source.fileId",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.source.filePath",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.source._tag.type",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.source.fileType",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.slicedBorder.left",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.slicedBorder.right",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.slicedBorder.top",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.slicedBorder.bottom",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.tiledBorder.left",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.tiledBorder.right",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.tiledBorder.top",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.tiledBorder.bottom",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.flip",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.gradient",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.gradientTop.r",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.gradientTop.g",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.gradientTop.b",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.gradientTop.a",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.gradientBottom.r",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.gradientBottom.g",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.gradientBottom.b",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.gradientBottom.a",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.isApplyAnimation",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.animationAtlasID",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.animationFrameRate",
+    "PetsCollection/Container/PetDetails/Pet/Decor5: image.animationLoop",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.source.fileId",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.source.filePath",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.source._tag.type",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.source.fileType",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.slicedBorder.left",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.slicedBorder.right",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.slicedBorder.top",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.slicedBorder.bottom",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.tiledBorder.left",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.tiledBorder.right",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.tiledBorder.top",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.tiledBorder.bottom",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.flip",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.gradient",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.gradientTop.r",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.gradientTop.g",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.gradientTop.b",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.gradientTop.a",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.gradientBottom.r",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.gradientBottom.g",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.gradientBottom.b",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.gradientBottom.a",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.isApplyAnimation",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.animationAtlasID",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.animationFrameRate",
+    "PetsCollection/Container/PetDetails/Pet/Rarity: image.animationLoop",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.source.fileId",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.source.filePath",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.source._tag.type",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.source.fileType",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.slicedBorder.left",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.slicedBorder.right",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.slicedBorder.top",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.slicedBorder.bottom",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.tiledBorder.left",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.tiledBorder.right",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.tiledBorder.top",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.tiledBorder.bottom",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.flip",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.gradient",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.gradientTop.r",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.gradientTop.g",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.gradientTop.b",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.gradientTop.a",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.gradientBottom.r",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.gradientBottom.g",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.gradientBottom.b",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.gradientBottom.a",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.isApplyAnimation",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.animationAtlasID",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.animationFrameRate",
+    "PetsCollection/Container/PetDetails/Pet/Thumbnail: image.animationLoop",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.spriteName.fileId",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.spriteName.filePath",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.spriteName._tag.type",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.spriteName.fileType",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.highlight",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.enableBorderImage",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.slicedBorder.left",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.slicedBorder.right",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.slicedBorder.top",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.slicedBorder.bottom",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.tiledBorder.left",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.tiledBorder.right",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.tiledBorder.top",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.tiledBorder.bottom",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.flip",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.gradient",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.gradientTop.r",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.gradientTop.g",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.gradientTop.b",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.gradientTop.a",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.gradientBottom.r",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.gradientBottom.g",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.gradientBottom.b",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.gradientBottom.a",
+    "PetsCollection/Container/PetDetails/Pet/ShowDetailsPetButton: button.spriteKey (thiếu sprite)",
+    "PetsCollection/Container/PetDetails/Pet/Name: text.font",
+    "PetsCollection/Container/PetDetails/Pet/Name: text.overflow",
+    "PetsCollection/Container/PetDetails/Pet/Name: text.backgroundRGBA.r",
+    "PetsCollection/Container/PetDetails/Pet/Name: text.backgroundRGBA.g",
+    "PetsCollection/Container/PetDetails/Pet/Name: text.backgroundRGBA.b",
+    "PetsCollection/Container/PetDetails/Pet/Name: text.backgroundRGBA.a",
+    "PetsCollection/Container/PetDetails/Pet/Name: text.gradient",
+    "PetsCollection/Container/PetDetails/Pet/Name: text.gradientTop.r",
+    "PetsCollection/Container/PetDetails/Pet/Name: text.gradientTop.g",
+    "PetsCollection/Container/PetDetails/Pet/Name: text.gradientTop.b",
+    "PetsCollection/Container/PetDetails/Pet/Name: text.gradientTop.a",
+    "PetsCollection/Container/PetDetails/Pet/Name: text.gradientBottom.r",
+    "PetsCollection/Container/PetDetails/Pet/Name: text.gradientBottom.g",
+    "PetsCollection/Container/PetDetails/Pet/Name: text.gradientBottom.b",
+    "PetsCollection/Container/PetDetails/Pet/Name: text.gradientBottom.a",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.font",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.overflow",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.backgroundRGBA.r",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.backgroundRGBA.g",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.backgroundRGBA.b",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.backgroundRGBA.a",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.gradient",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.gradientTop.r",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.gradientTop.g",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.gradientTop.b",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.gradientTop.a",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.gradientBottom.r",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.gradientBottom.g",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.gradientBottom.b",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG/RarityName: text.gradientBottom.a",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.source.fileId",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.source.filePath",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.source._tag.type",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.source.fileType",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.slicedBorder.left",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.slicedBorder.right",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.slicedBorder.top",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.slicedBorder.bottom",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.tiledBorder.left",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.tiledBorder.right",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.tiledBorder.top",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.tiledBorder.bottom",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.flip",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.gradient",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.gradientTop.r",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.gradientTop.g",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.gradientTop.b",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.gradientTop.a",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.gradientBottom.r",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.gradientBottom.g",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.gradientBottom.b",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.gradientBottom.a",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.isApplyAnimation",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.animationAtlasID",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.animationFrameRate",
+    "PetsCollection/Container/PetDetails/Pet/RarityBG: image.animationLoop",
+    "PetsCollection/Container/PetDetails/Pet: image.source.fileId",
+    "PetsCollection/Container/PetDetails/Pet: image.source.filePath",
+    "PetsCollection/Container/PetDetails/Pet: image.source._tag.type",
+    "PetsCollection/Container/PetDetails/Pet: image.source.fileType",
+    "PetsCollection/Container/PetDetails/Pet: image.slicedBorder.left",
+    "PetsCollection/Container/PetDetails/Pet: image.slicedBorder.right",
+    "PetsCollection/Container/PetDetails/Pet: image.slicedBorder.top",
+    "PetsCollection/Container/PetDetails/Pet: image.slicedBorder.bottom",
+    "PetsCollection/Container/PetDetails/Pet: image.tiledBorder.left",
+    "PetsCollection/Container/PetDetails/Pet: image.tiledBorder.right",
+    "PetsCollection/Container/PetDetails/Pet: image.tiledBorder.top",
+    "PetsCollection/Container/PetDetails/Pet: image.tiledBorder.bottom",
+    "PetsCollection/Container/PetDetails/Pet: image.flip",
+    "PetsCollection/Container/PetDetails/Pet: image.gradient",
+    "PetsCollection/Container/PetDetails/Pet: image.gradientTop.r",
+    "PetsCollection/Container/PetDetails/Pet: image.gradientTop.g",
+    "PetsCollection/Container/PetDetails/Pet: image.gradientTop.b",
+    "PetsCollection/Container/PetDetails/Pet: image.gradientTop.a",
+    "PetsCollection/Container/PetDetails/Pet: image.gradientBottom.r",
+    "PetsCollection/Container/PetDetails/Pet: image.gradientBottom.g",
+    "PetsCollection/Container/PetDetails/Pet: image.gradientBottom.b",
+    "PetsCollection/Container/PetDetails/Pet: image.gradientBottom.a",
+    "PetsCollection/Container/PetDetails/Pet: image.isApplyAnimation",
+    "PetsCollection/Container/PetDetails/Pet: image.animationAtlasID",
+    "PetsCollection/Container/PetDetails/Pet: image.animationFrameRate",
+    "PetsCollection/Container/PetDetails/Pet: image.animationLoop"
+  ],
+  "stateEvidence": [],
+  "usedBy": [
+    "list-popup"
+  ]
+}
