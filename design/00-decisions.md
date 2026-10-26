@@ -77,3 +77,10 @@ Ngày ghi nhận: 2026-10-22. Các mục dưới đây ghi lại quyết định
 - **Quyết định:** Khi `fillType=1` (Sliced), dùng border `borderLeft/Right/Top/Bottom` của `.png.meta` cho CSS `border-image`; `slicedBorder` trong `.ui` hiện bằng 0 nên không dùng làm border cắt. `centerInvisible` quyết định có fill phần giữa. Border của 68 entity image/button đã được audit với meta nguồn.
 - **Bằng chứng:** MCP `ScriptManual/Types/FillType` xác nhận `Sliced=1`, `Tiled=2`, `Filled=3`; `.png.meta` của `NormalTabBG` có 20 px bốn cạnh; `.ui` khai `fillType=1` và `slicedBorder=0`.
 - **Giới hạn:** MCP không mô tả thứ tự ưu tiên giữa meta và `.ui`, hành vi khi kích thước entity nhỏ hơn tổng border, hay cách tint/gradient chính xác của Studio. Renderer web dùng CSS `border-image`; cần ảnh game để nghiệm thu hình ảnh.
+
+## D-010 — UI Components (2026-10-26)
+
+Tính năng riêng theo PLAN-ui-components: subtree + slot, renderer hiện có.
+Chỉ đọc collection*.json và sprite đã sync trong GDD; không mở rộng allowlist,
+không đổi Preview/Proposal, không nhận project-root. Màn chưa đăng ký là dự kiến.
+

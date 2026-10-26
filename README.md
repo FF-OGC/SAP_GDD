@@ -2,6 +2,14 @@
 
 Private design dashboard generated from the checked-in StealAPet config snapshot and source references.
 
+## UI Components
+
+Thư viện riêng ở `#uicomponents`, ngay dưới UI Proposal, theo
+`plans/PLAN-ui-components.md`. Nguồn duy nhất là snapshot Collection và sprite
+đã sync trong GDD. Không đổi allowlist, UI Preview hoặc nội dung UI Proposal.
+Định nghĩa: `design/ui-components/`; sync: `node tools/sync-ui-components.mjs`;
+audit: `node tools/audit-ui-components.mjs`.
+
 ## UI Preview: sprite đã move/rename và label (2026-10-25)
 
 `Assets/HUDs/PetsCollection.ui` lưu cả `fileId` và `filePath` trong
