@@ -280,4 +280,7 @@ Commit nguồn `2c3598a2`: GOLDENMOLE #114 có Dig Weight_4=6, Weight_5=208; SAL
 
 ## DA-016 · Chase Apex plan odds
 
-Plan §1 nêu shot 24 ≈4,89%, shot 56 ≈80%; `ChaseConfigs.GetChaseChance` tại `2c3598a2` dùng Step=6.5641e-7, Power=3, cho 0,798654047% / 10,921021375%. Website hiển thị rate ceiling theo lượt, không xem ví dụ plan là target. Cần PO xác nhận target trước khi sửa plan.
+GDD gốc `[Craftland] Steal A Pet GDD - Chase & Limited.csv` v10, §4 ghi xác suất có ít nhất một Chase. Với p(n) từ code, 1 − ∏(1 − p(n)) tại 24/56 shot = 4,88890913% / 79,99977535%, khớp GDD; tỷ lệ riêng shot 24/56 là 0,798654047% / 10,921021375%. Nhận định cũ rằng ví dụ 80% sai được rút lại.
+## DA-017 · Chase Box Limited-first
+
+Với 3 box/ngày và Step=3.3331e-5, không tính Limited thì ngày 7 đạt 79,9996518% Chase; kỳ vọng 4,2844 Chase/28 ngày. Luồng Limited-first 1,58%, trong đó Kirin dùng quota nhưng giữ pity, đưa xác suất Chase tích lũy xuống 77,54615925% và kỳ vọng còn 4,2105/28 ngày. Đây là phân phối trạng thái counter chính xác, chưa gồm pool thường; cần chốt cách trình bày bảng pace tích hợp.

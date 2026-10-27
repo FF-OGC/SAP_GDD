@@ -269,7 +269,13 @@ after the daily quota keep rolling without increasing pity.
 
 The audited source is commit `2c3598a21952bf57ae09b56cf65dd7a6fe6e1794`.
 Current code gives 10.921021375% at Fish/Dig shot 56 and 26.6648% at Box shot 21.
-The plan's 80% example does not match these constants. See
+The original GDD's 80% at day 7 is cumulative first-hit probability,
+not the per-shot rate. The constants reproduce 79.9998% for Fish/Dig
+after 56 eligible shots. Box reaches 79.9997% after 21 opens when Limited
+is excluded; the runtime Limited-first flow lowers Chase first-hit probability
+to 77.5462%, because Kirin can consume daily quota without increasing pity.
+These figures assume exactly the daily cap of eligible actions, starting at
+zero, and exclude ordinary-pool leaks. See
 `design/20-dev-action-items.md` for confirmed config concerns.
 
 Validate calculations after sync: `node --test tools/chase-model.test.mjs`.
