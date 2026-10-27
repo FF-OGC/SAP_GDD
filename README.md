@@ -255,7 +255,32 @@ Then open http://localhost:8080.
 
 Use **Pool & phần thưởng** to review `PoolRandomItem`, secret reward pools, Dig and Fishing pet/reward pools, GuaranteePool, and Collector/FuseContract schedules. Each row includes its matching pet, reward, item or chest icon. `dist/data/pools.json` stores weight shares precomputed by sync. A share appears only when the `.fcg` load/draw code confirms a weighted selection; Dig/Fishing chest counters, GuaranteePool, and event schedules remain raw where runtime semantics do not establish a per-item probability. Fishing bands follow the runtime Rebirth mapping (RB 0–5 through RB 21+). Large tables are filtered and paginated in the page; IDs and reward values remain raw unless their meaning is confirmed by source code.
 
-## Data boundaries
+## Guarantee theo ngày (Chase Apex)
+
+Use **Guarantee theo ngày** for Dig, Fish and Lucky Box pity ceilings from
+`ChaseConfigs.fcg` and `ChaseManager.fcg`. Sync generates `dist/data/chase.json`;
+the browser only renders the derived data. Days count full daily quotas from a
+fresh counter with no Chase hit, across GMT day boundaries, independently of the
+world's seven-day cycle. The page shows each day's maximum per-roll rate and the
+plateau, eligibility rules, feature flags, Limited-first Box probabilities, and
+positive-weight leaks in ordinary pools. These are conditional rate ceilings,
+not cumulative daily success probabilities or a 100% guarantee. Extra rolls
+after the daily quota keep rolling without increasing pity.
+
+The audited source is commit `2c3598a21952bf57ae09b56cf65dd7a6fe6e1794`.
+Current code gives 10.921021375% at Fish/Dig shot 56 and 26.6648% at Box shot 21.
+The plan's 80% example does not match these constants. See
+`design/20-dev-action-items.md` for confirmed config concerns.
+
+Validate calculations after sync: `node --test tools/chase-model.test.mjs`.
+
+Primary audience: designers auditing all progression cohorts; secondary:
+developers checking config and call sites. No player-facing progression changes.
+The tables make the rate cap and counter rules inspectable; their limitation is
+that player history, eligible action frequency and daily hit probability are not
+modeled.
+
+## Source boundaries
 
 The linked Google Sheets could not be read with the available connector during this build. The site labels its snapshot as repository CSV/code data and does not claim it is a fresh pull from those sheets. The gift view projects only referenced Gift `ID` → `Reward` ID links from `giftcode.csv`; redeem codes, limits, and availability fields are excluded. It has no validated session-time simulator or retention telemetry; pacing is shown as configured progression gates and event cadence.
 

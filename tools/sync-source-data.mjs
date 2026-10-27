@@ -3,6 +3,7 @@ import { readFileSync, writeFileSync, copyFileSync, existsSync, mkdirSync } from
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { spawnSync } from "node:child_process";
+import { dailyChaseCeilings } from "./chase-model.mjs";
 
 const args = process.argv.slice(2);
 const rootAt = args.indexOf("--project-root");
@@ -36,6 +37,8 @@ const csvFiles = [
   "Event/RarityContract/RarityContract.csv"
 ];
 const codeFiles = [
+  "Assets/Scripts/Configs/ChaseConfigs.fcg",
+  "Assets/Scripts/Manager/ChaseManager.fcg",
   "Assets/Scripts/Configs/PetConfigs.fcg",
   "Assets/Scripts/Configs/RebirthConfigs.fcg",
   "Assets/Scripts/Configs/FeatureUnlockConfigs.fcg",
@@ -708,6 +711,50 @@ const poolsData = {
   }
 };
 writeOutput(outputPath("dist", "data", "pools.json"), JSON.stringify(poolsData, null, 2) + "\n");
+const chaseConfigPath = "Assets/Scripts/Configs/ChaseConfigs.fcg";
+const chaseManagerPath = "Assets/Scripts/Manager/ChaseManager.fcg";
+const chaseCode = code[chaseConfigPath];
+const chaseRuntime = code[chaseManagerPath];
+function chaseNumber(name) {
+  const raw = constant(chaseCode, name);
+  if (raw === null || !Number.isFinite(Number(raw))) throw new Error("Missing Chase constant: " + name);
+  return Number(raw);
+}
+// Refuse to publish calculated odds if the audited core formula/flow changes.
+for (const [text, pattern, label] of [
+  [chaseCode, /Math\.Exponentiation\(effectiveShot - 1, CHASE_POWER\)/, "cubic formula"],
+  [chaseCode, /Math\.Min\(chaseShots, maxShot\)/, "shot clamp"],
+  [chaseCode, /Math\.Max\(MIN_CHANCE, Math\.Min\(chance, MAX_CHANCE\)\)/, "chance clamp"],
+  [chaseRuntime, /shotsToday < ChaseConfigs\.GetShotsPerDay\(channel\)/, "daily quota"],
+  [chaseRuntime, /if isCountedShot\s*\{\s*effectiveShot \+= 1/, "count before roll"],
+  [chaseRuntime, /_PlayerChaseShots\[playerUID\]\[channel\] = 0\s*return true/, "reset on win"],
+  [luckyBoxManager, /RollLimitedBox\(playerUID\)[\s\S]*?else if ChaseManager\.RollChase/, "Limited priority"]
+]) if (!pattern.test(text)) throw new Error("Chase logic needs review: " + label);
+const limitedChance = chaseNumber("LIMITED_BOX_CHANCE");
+const chaseChannels = ["DIG", "FISH", "BOX"].map(key => {
+  const enabledRaw = constant(chaseCode, "CHASE_" + key + "_ENABLED");
+  if (!["true", "false"].includes(enabledRaw)) throw new Error("Missing Chase flag: " + key);
+  const config = {
+    key, enabled: enabledRaw === "true", petId: chaseNumber("CHASE_" + key + "_PET_ID"),
+    shotsPerDay: chaseNumber(key + "_SHOTS_PER_DAY"), maxShot: chaseNumber(key + "_MAX_SHOT"),
+    step: chaseNumber(key + "_CHASE_STEP"), power: chaseNumber("CHASE_POWER"),
+    minChance: chaseNumber("MIN_CHANCE"), maxChance: chaseNumber("MAX_CHANCE")
+  };
+  if (config.shotsPerDay <= 0 || config.maxShot <= 0) throw new Error("Invalid Chase quota: " + key);
+  const pet = petCsv.rows.find(row => Number(row.ID) === config.petId);
+  const poolRows = byName.get(key === "DIG" ? "DigPools.csv" : key === "FISH" ? "PoolFishing.csv" : "LuckyBox.csv")?.rows ?? [];
+  const auditedIds = key === "BOX" ? [config.petId, chaseNumber("LIMITED_BOX_PET_ID")] : [config.petId];
+  const poolLeaks = poolRows.filter(row => auditedIds.includes(Number(row.IDPET ?? row.PetID)) &&
+    Object.entries(row).some(([column, value]) => /^(Weight(?:_\d+)?|DrawWeight)$/.test(column) && Number(value) > 0));
+  return { ...config, petName: pet?.Name ?? "chưa có dữ liệu", plateauDay: Math.ceil(config.maxShot / config.shotsPerDay),
+    poolLeaks, days: dailyChaseCeilings(config, key === "BOX" && config.enabled ? limitedChance : 0) };
+});
+writeOutput(outputPath("dist", "data", "chase.json"), JSON.stringify({
+  sourceCommit: versionCode.sourceCommit, generatedAt: new Date().toISOString(),
+  sourceFiles: [chaseConfigPath, chaseManagerPath, "Assets/Scripts/Manager/EventDigManager.fcg", "Assets/Scripts/Manager/EventFishingManager.fcg", "Assets/Scripts/Manager/LuckyBoxManager.fcg"],
+  limited: { petId: chaseNumber("LIMITED_BOX_PET_ID"), petName: petCsv.rows.find(row => Number(row.ID) === chaseNumber("LIMITED_BOX_PET_ID"))?.Name ?? "chưa có dữ liệu", chance: limitedChance, sourceBoxPetId: chaseNumber("CHASE_BOX_SOURCE_BOX_PET_ID") },
+  channels: chaseChannels
+}, null, 2) + "\n");
 const output = {
   generatedAt: new Date().toISOString(),
   sourceLabel: "StealAPet repository",

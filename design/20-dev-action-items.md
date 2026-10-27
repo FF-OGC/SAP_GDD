@@ -273,3 +273,11 @@ collection-browser-audit.json ghi 12 mẫu transform/màu source .ui cùng
 AABB/màu quan sát ở web. Bảng này so cấu hình nguồn với preview, không phải
 đo từ Craftland Editor. Engine pixel parity, font/raster, scaler/safe area,
 alpha/raycast và 7 sprite thiếu tiếp tục chờ xác nhận runtime/asset.
+
+## DA-015 · Chase/Limited và pool fallback
+
+Commit nguồn `2c3598a2`: GOLDENMOLE #114 có Dig Weight_4=6, Weight_5=208; SALMON #117 có Fishing weights 17/37/171/171/171; LuckyBox còn bốn dòng weight dương cho #106/#1046. Runtime chỉ reset pity khi nhánh Chase hit; cùng pet qua fallback không reset. Trang Guarantee cảnh báo và tính riêng nhánh Chase/Limited. Cần đồng bộ Master Data trước khi kết luận pool đã được làm sạch.
+
+## DA-016 · Chase Apex plan odds
+
+Plan §1 nêu shot 24 ≈4,89%, shot 56 ≈80%; `ChaseConfigs.GetChaseChance` tại `2c3598a2` dùng Step=6.5641e-7, Power=3, cho 0,798654047% / 10,921021375%. Website hiển thị rate ceiling theo lượt, không xem ví dụ plan là target. Cần PO xác nhận target trước khi sửa plan.

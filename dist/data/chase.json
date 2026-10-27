@@ -1,0 +1,298 @@
+{
+  "sourceCommit": "2c3598a21952bf57ae09b56cf65dd7a6fe6e1794",
+  "generatedAt": "2026-10-27T08:29:53.738Z",
+  "sourceFiles": [
+    "Assets/Scripts/Configs/ChaseConfigs.fcg",
+    "Assets/Scripts/Manager/ChaseManager.fcg",
+    "Assets/Scripts/Manager/EventDigManager.fcg",
+    "Assets/Scripts/Manager/EventFishingManager.fcg",
+    "Assets/Scripts/Manager/LuckyBoxManager.fcg"
+  ],
+  "limited": {
+    "petId": 1046,
+    "petName": "KIRIN",
+    "chance": 0.0158,
+    "sourceBoxPetId": 6003
+  },
+  "channels": [
+    {
+      "key": "DIG",
+      "enabled": true,
+      "petId": 114,
+      "shotsPerDay": 8,
+      "maxShot": 56,
+      "step": 6.5641e-7,
+      "power": 3,
+      "minChance": 0,
+      "maxChance": 1,
+      "petName": "GOLDENMOLE",
+      "plateauDay": 7,
+      "poolLeaks": [
+        {
+          "IDPET": "114",
+          "Weight": "0",
+          "Weight_2": "0",
+          "Weight_3": "0",
+          "Weight_4": "6",
+          "Weight_5": "208"
+        }
+      ],
+      "days": [
+        {
+          "day": 1,
+          "shots": 8,
+          "effectiveShot": 8,
+          "chance": 0.00022514863000000002,
+          "chasePerOpen": 0.00022514863000000002,
+          "eitherPerOpen": 0.00022514863000000002
+        },
+        {
+          "day": 2,
+          "shots": 16,
+          "effectiveShot": 16,
+          "chance": 0.00221538375,
+          "chasePerOpen": 0.00221538375,
+          "eitherPerOpen": 0.00221538375
+        },
+        {
+          "day": 3,
+          "shots": 24,
+          "effectiveShot": 24,
+          "chance": 0.007986540470000001,
+          "chasePerOpen": 0.007986540470000001,
+          "eitherPerOpen": 0.007986540470000001
+        },
+        {
+          "day": 4,
+          "shots": 32,
+          "effectiveShot": 32,
+          "chance": 0.019555110310000002,
+          "chasePerOpen": 0.019555110310000002,
+          "eitherPerOpen": 0.019555110310000002
+        },
+        {
+          "day": 5,
+          "shots": 40,
+          "effectiveShot": 40,
+          "chance": 0.03893758479,
+          "chasePerOpen": 0.03893758479,
+          "eitherPerOpen": 0.03893758479
+        },
+        {
+          "day": 6,
+          "shots": 48,
+          "effectiveShot": 48,
+          "chance": 0.06815045543,
+          "chasePerOpen": 0.06815045543,
+          "eitherPerOpen": 0.06815045543
+        },
+        {
+          "day": 7,
+          "shots": 56,
+          "effectiveShot": 56,
+          "chance": 0.10921021375000001,
+          "chasePerOpen": 0.10921021375000001,
+          "eitherPerOpen": 0.10921021375000001
+        },
+        {
+          "day": 8,
+          "shots": 64,
+          "effectiveShot": 56,
+          "chance": 0.10921021375000001,
+          "chasePerOpen": 0.10921021375000001,
+          "eitherPerOpen": 0.10921021375000001
+        }
+      ]
+    },
+    {
+      "key": "FISH",
+      "enabled": true,
+      "petId": 117,
+      "shotsPerDay": 8,
+      "maxShot": 56,
+      "step": 6.5641e-7,
+      "power": 3,
+      "minChance": 0,
+      "maxChance": 1,
+      "petName": "SALMON",
+      "plateauDay": 7,
+      "poolLeaks": [
+        {
+          "IDPET": "117",
+          "Weight": "17",
+          "Weight_2": "37",
+          "Weight_3": "171",
+          "Weight_4": "171",
+          "Weight_5": "171"
+        }
+      ],
+      "days": [
+        {
+          "day": 1,
+          "shots": 8,
+          "effectiveShot": 8,
+          "chance": 0.00022514863000000002,
+          "chasePerOpen": 0.00022514863000000002,
+          "eitherPerOpen": 0.00022514863000000002
+        },
+        {
+          "day": 2,
+          "shots": 16,
+          "effectiveShot": 16,
+          "chance": 0.00221538375,
+          "chasePerOpen": 0.00221538375,
+          "eitherPerOpen": 0.00221538375
+        },
+        {
+          "day": 3,
+          "shots": 24,
+          "effectiveShot": 24,
+          "chance": 0.007986540470000001,
+          "chasePerOpen": 0.007986540470000001,
+          "eitherPerOpen": 0.007986540470000001
+        },
+        {
+          "day": 4,
+          "shots": 32,
+          "effectiveShot": 32,
+          "chance": 0.019555110310000002,
+          "chasePerOpen": 0.019555110310000002,
+          "eitherPerOpen": 0.019555110310000002
+        },
+        {
+          "day": 5,
+          "shots": 40,
+          "effectiveShot": 40,
+          "chance": 0.03893758479,
+          "chasePerOpen": 0.03893758479,
+          "eitherPerOpen": 0.03893758479
+        },
+        {
+          "day": 6,
+          "shots": 48,
+          "effectiveShot": 48,
+          "chance": 0.06815045543,
+          "chasePerOpen": 0.06815045543,
+          "eitherPerOpen": 0.06815045543
+        },
+        {
+          "day": 7,
+          "shots": 56,
+          "effectiveShot": 56,
+          "chance": 0.10921021375000001,
+          "chasePerOpen": 0.10921021375000001,
+          "eitherPerOpen": 0.10921021375000001
+        },
+        {
+          "day": 8,
+          "shots": 64,
+          "effectiveShot": 56,
+          "chance": 0.10921021375000001,
+          "chasePerOpen": 0.10921021375000001,
+          "eitherPerOpen": 0.10921021375000001
+        }
+      ]
+    },
+    {
+      "key": "BOX",
+      "enabled": true,
+      "petId": 106,
+      "shotsPerDay": 3,
+      "maxShot": 21,
+      "step": 0.000033331,
+      "power": 3,
+      "minChance": 0,
+      "maxChance": 1,
+      "petName": "LEMUR",
+      "plateauDay": 7,
+      "poolLeaks": [
+        {
+          "BoxID": "60002",
+          "PetID": "1046",
+          "DrawWeight": "1"
+        },
+        {
+          "BoxID": "60003",
+          "PetID": "106",
+          "DrawWeight": "90"
+        },
+        {
+          "BoxID": "60003",
+          "PetID": "1046",
+          "DrawWeight": "1"
+        },
+        {
+          "BoxID": "60003",
+          "PetID": "106",
+          "DrawWeight": "1"
+        }
+      ],
+      "days": [
+        {
+          "day": 1,
+          "shots": 3,
+          "effectiveShot": 3,
+          "chance": 0.000266648,
+          "chasePerOpen": 0.0002624349616,
+          "eitherPerOpen": 0.0160624349616
+        },
+        {
+          "day": 2,
+          "shots": 6,
+          "effectiveShot": 6,
+          "chance": 0.004166375000000001,
+          "chasePerOpen": 0.004100546275,
+          "eitherPerOpen": 0.019900546275
+        },
+        {
+          "day": 3,
+          "shots": 9,
+          "effectiveShot": 9,
+          "chance": 0.017065472,
+          "chasePerOpen": 0.0167958375424,
+          "eitherPerOpen": 0.0325958375424
+        },
+        {
+          "day": 4,
+          "shots": 12,
+          "effectiveShot": 12,
+          "chance": 0.044363561,
+          "chasePerOpen": 0.0436626167362,
+          "eitherPerOpen": 0.0594626167362
+        },
+        {
+          "day": 5,
+          "shots": 15,
+          "effectiveShot": 15,
+          "chance": 0.09146026400000001,
+          "chasePerOpen": 0.09001519182880001,
+          "eitherPerOpen": 0.1058151918288
+        },
+        {
+          "day": 6,
+          "shots": 18,
+          "effectiveShot": 18,
+          "chance": 0.16375520300000002,
+          "chasePerOpen": 0.1611678707926,
+          "eitherPerOpen": 0.1769678707926
+        },
+        {
+          "day": 7,
+          "shots": 21,
+          "effectiveShot": 21,
+          "chance": 0.26664800000000005,
+          "chasePerOpen": 0.2624349616,
+          "eitherPerOpen": 0.2782349616
+        },
+        {
+          "day": 8,
+          "shots": 24,
+          "effectiveShot": 21,
+          "chance": 0.26664800000000005,
+          "chasePerOpen": 0.2624349616,
+          "eitherPerOpen": 0.2782349616
+        }
+      ]
+    }
+  ]
+}
