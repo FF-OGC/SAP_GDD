@@ -1,0 +1,448 @@
+{
+  "source": "Assets/Localization/key.csv",
+  "entries": {
+    "RACOON": {
+      "en": "Racoon",
+      "vi": "Gấu Mèo"
+    },
+    "SQUIRREL": {
+      "en": "Squirrel",
+      "vi": "Sóc"
+    },
+    "TURTLE": {
+      "en": "Turtle",
+      "vi": "Rùa"
+    },
+    "BISON": {
+      "en": "Bison",
+      "vi": "Bò Rừng Bison"
+    },
+    "HORSE": {
+      "en": "Horse",
+      "vi": "Ngựa"
+    },
+    "ZEBRA": {
+      "en": "Zebra",
+      "vi": "Ngựa Vằn"
+    },
+    "JELLYFISH": {
+      "en": "Jellyfish",
+      "vi": "Sứa"
+    },
+    "SEALION": {
+      "en": "Sealion",
+      "vi": "Sư Tử Biển"
+    },
+    "MOOSE": {
+      "en": "Moose",
+      "vi": "Nai Sừng Tấm"
+    },
+    "GIRAFFE": {
+      "en": "Giraffe",
+      "vi": "Hươu Cao Cổ"
+    },
+    "SNOWOWL": {
+      "en": "Snow Owl",
+      "vi": "Cú Tuyết"
+    },
+    "ALIGATOR": {
+      "en": "Alligator",
+      "vi": "Cá Sấu"
+    },
+    "TIGER": {
+      "en": "Tiger",
+      "vi": "Hổ"
+    },
+    "ELEPHANT": {
+      "en": "Elephant",
+      "vi": "Voi"
+    },
+    "PANDA": {
+      "en": "Panda",
+      "vi": "Gấu Trúc"
+    },
+    "EAGLE": {
+      "en": "Eagle",
+      "vi": "Chim Ưng"
+    },
+    "POLARBEAR": {
+      "en": "Polar Bear",
+      "vi": "Gấu Bắc Cực"
+    },
+    "RHINO": {
+      "en": "Rhino",
+      "vi": "Tê Giác"
+    },
+    "WOLF": {
+      "en": "Wolf",
+      "vi": "Sói"
+    },
+    "HORNBILL": {
+      "en": "Hornbill",
+      "vi": "Chim Mỏ Sừng"
+    },
+    "HIPPO": {
+      "en": "Hippo",
+      "vi": "Hà Mã"
+    },
+    "BROWNBEAR": {
+      "en": "Brown Bear",
+      "vi": "Gấu Nâu"
+    },
+    "MANATEE": {
+      "en": "Manatee",
+      "vi": "Bò Biển"
+    },
+    "OSTRICH": {
+      "en": "Ostrich",
+      "vi": "Đà Điểu"
+    },
+    "SMALLWHALE": {
+      "en": "Baby Whale",
+      "vi": "Cá Voi Con"
+    },
+    "GORILLA": {
+      "en": "Gorilla",
+      "vi": "Khỉ Đột"
+    },
+    "BELUGA": {
+      "en": "Beluga",
+      "vi": "Cá Voi Trắng"
+    },
+    "NARWHAL": {
+      "en": "Narwhal",
+      "vi": "Kỳ Lân Biển"
+    },
+    "HUSKY": {
+      "en": "Husky",
+      "vi": "Chó Husky"
+    },
+    "PLATYPUS": {
+      "en": "Platypus",
+      "vi": "Thú Mỏ Vịt"
+    },
+    "JAGUAR": {
+      "en": "Jaguar",
+      "vi": "Báo Đen"
+    },
+    "FENNECFOX": {
+      "en": "Fennec Fox",
+      "vi": "Cáo Fennec"
+    },
+    "REINDEER": {
+      "en": "Reindeer",
+      "vi": "Tuần Lộc"
+    },
+    "MOODENG": {
+      "en": "Moo Deng",
+      "vi": "Moo Deng"
+    },
+    "SNOWLEOPARD": {
+      "en": "Snow Leopard",
+      "vi": "Báo Tuyết"
+    },
+    "ARCTICFOX": {
+      "en": "Arctic Fox",
+      "vi": "Cáo Tuyết"
+    },
+    "PARROT": {
+      "en": "Parrot",
+      "vi": "Vẹt"
+    },
+    "COW": {
+      "en": "Cow",
+      "vi": "Bò Sữa"
+    },
+    "OX": {
+      "en": "Ox",
+      "vi": "Trâu"
+    },
+    "TURKEY": {
+      "en": "Turkey",
+      "vi": "Gà Tây"
+    },
+    "FRILLNECKEDLIZARD": {
+      "en": "Frill Necked Lizard",
+      "vi": "Thằn Lằn Cổ Diềm"
+    },
+    "TORTOISE": {
+      "en": "Tortoise",
+      "vi": "Rùa Cạn"
+    },
+    "SEAHORSE": {
+      "en": "Seahorse",
+      "vi": "Cá Ngựa"
+    },
+    "ALPACA": {
+      "en": "Alpaca",
+      "vi": "Lạc Đà Alpaca"
+    },
+    "COYOTE": {
+      "en": "Coyote",
+      "vi": "Sói Đồng Cỏ"
+    },
+    "MALLARD": {
+      "en": "Mallard",
+      "vi": "Vịt Trời"
+    },
+    "CATFISH": {
+      "en": "Catfish",
+      "vi": "Cá Trê"
+    },
+    "SLOTH": {
+      "en": "Sloth",
+      "vi": "Con Lười"
+    },
+    "AXOLOTLBLUE": {
+      "en": "Axolotl-Azure",
+      "vi": "Axolotl-Thủy"
+    },
+    "AXOLOTLWHITE": {
+      "en": "Axolotl-Pearl",
+      "vi": "Axolotl-Kim"
+    },
+    "AXOLOTLORANGE": {
+      "en": "Axolotl-Amber",
+      "vi": "Axolotl-Thổ"
+    },
+    "AXOLOTLGREEN": {
+      "en": "Axolotl-Jade",
+      "vi": "Axolotl-Mộc"
+    },
+    "AXOLOTLPINK": {
+      "en": "Axolotl-Coral",
+      "vi": "Axolotl-Hỏa"
+    },
+    "ARMADILLO": {
+      "en": "Armadillo",
+      "vi": "Tê Tê"
+    },
+    "LLAMA": {
+      "en": "Llama",
+      "vi": "Đà Mã"
+    },
+    "BABOON": {
+      "en": "Baboon",
+      "vi": "Khỉ Đầu Chó"
+    },
+    "RARITY_COMMON": {
+      "en": "COMMON",
+      "vi": "THƯỜNG"
+    },
+    "RARITY_RARE": {
+      "en": "RARE",
+      "vi": "HIẾM"
+    },
+    "RARITY_EPIC": {
+      "en": "EPIC",
+      "vi": "SỬ THI"
+    },
+    "RARITY_LEGENDARY": {
+      "en": "LEGENDARY",
+      "vi": "HUYỀN THOẠI"
+    },
+    "RARITY_MYTHIC": {
+      "en": "MYTHIC",
+      "vi": "THẦN THOẠI"
+    },
+    "RARITY_APEX": {
+      "en": "APEX",
+      "vi": "TỐI THƯỢNG"
+    },
+    "RARITY_LIMITED": {
+      "en": "LIMITED",
+      "vi": "LIMITED "
+    },
+    "MUTATION_GOLDEN": {
+      "en": "Golden",
+      "vi": "Hoàng Kim"
+    },
+    "MUTATION_FROZEN": {
+      "en": "Frozen",
+      "vi": "Băng Giá"
+    },
+    "MUTATION_MAGMA": {
+      "en": "Magma",
+      "vi": "Dung Nham"
+    },
+    "MUTATION_CLOVER": {
+      "en": "Clover",
+      "vi": "Cỏ May Mắn"
+    },
+    "MUTATION_FOSSILIZED": {
+      "en": "Fossilized",
+      "vi": "Hóa Thạch"
+    },
+    "MUTATION_SWEETHEART": {
+      "en": "Sweetheart",
+      "vi": "Ngọt Ngào"
+    },
+    "MUTATION_CRYSTALLINE": {
+      "en": "Crystalline",
+      "vi": "Tinh Thể"
+    },
+    "MUTATION_FOOTBALL": {
+      "en": "Football",
+      "vi": "Bóng Đá"
+    },
+    "MUTATION_WEBBED": {
+      "en": "Webbed",
+      "vi": "Nhền Nhện"
+    },
+    "WEATHER_RAINY": {
+      "en": "Rainy",
+      "vi": "Trời Mưa"
+    },
+    "WEATHER_SNOWY": {
+      "en": "Snowy",
+      "vi": "Tuyết Rơi"
+    },
+    "WEATHER_WINDY": {
+      "en": "Windy",
+      "vi": "Gió Nhẹ"
+    },
+    "WEATHER_SHADOWFALL": {
+      "en": "Shadowfall",
+      "vi": "Màn Đêm"
+    },
+    "WEATHER_RAINBOW": {
+      "en": "Rainbow",
+      "vi": "Cầu Vồng"
+    },
+    "WEATHER_TEMPEST": {
+      "en": "Tempest",
+      "vi": "Bích Bão"
+    },
+    "WEATHER_NEBULA": {
+      "en": "Nebula",
+      "vi": "Tinh Vân"
+    },
+    "WEATHER_HIGHTIDE": {
+      "en": "High Tide",
+      "vi": "Triều Cường"
+    },
+    "WEATHER_HEAVYRAIN": {
+      "en": "Heavy Rain",
+      "vi": "Mưa Lớn"
+    },
+    "WEATHER_GROUNDSHAKE": {
+      "en": "Ground Shake",
+      "vi": "Rung Chấn"
+    },
+    "HUD_SHOP_BUTTON": {
+      "en": "SHOP",
+      "vi": "CỬA HÀNG"
+    },
+    "HUD_SHOP_BUY_BUTTON": {
+      "en": "BUY",
+      "vi": "MUA"
+    },
+    "HUD_SHOP_ITEM_RISE_SPEED": {
+      "en": "Rise Speed",
+      "vi": "Tăng Tốc"
+    },
+    "HUD_SHOP_ITEM_SUPER_WEAPON": {
+      "en": "Super Weapon",
+      "vi": "Gậy Siêu Cấp"
+    },
+    "HUD_SHOP_ITEM_DOUBLE_COST": {
+      "en": "Unlock Cost x2",
+      "vi": "Phí Mở Khóa x2"
+    },
+    "HUD_SHOP_ITEM_SUMMON_LEGENDARY": {
+      "en": "Summon Legendary Pet",
+      "vi": "Gọi Thú HUYỀN THOẠI"
+    },
+    "HUD_SHOP_ITEM_SUMMON_MYTHIC": {
+      "en": "Summon Mythic Pet",
+      "vi": "Gọi Thú THẦN THOẠI"
+    },
+    "HUD_SHOP_ITEM_SUMMON_RAINY": {
+      "en": "Summon Rainy Weather",
+      "vi": "Gọi thời tiết Trời Mưa"
+    },
+    "HUD_SHOP_ITEM_SUMMON_SNOWY": {
+      "en": "Summon Snowy Weather",
+      "vi": "Gọi thời tiết Tuyết Rơi"
+    },
+    "HUD_SHOP_ITEM_SUMMON_WINDY": {
+      "en": "Summon Windy Weather",
+      "vi": "Gọi thời tiết Gió Nhẹ"
+    },
+    "HUD_SHOP_DETAILS_TITLE": {
+      "en": "Details",
+      "vi": "Chi tiết"
+    },
+    "HUD_SHOP_DETAILS_RISE_SPEED": {
+      "en": "Speed boosted for 30s!",
+      "vi": "Tăng tốc độ trong 30s tiếp theo"
+    },
+    "HUD_SHOP_DETAILS_SUPER_WEAPON": {
+      "en": "Increase attack range for 30 seconds.",
+      "vi": "Đánh người chơi khác xa hơn trong 30s"
+    },
+    "HUD_SHOP_DETAILS_DOUBLE_UNLOCK_COST": {
+      "en": "Double money to unlock your house for 30 second",
+      "vi": "Gấp đôi tiền để mở khóa nhà của bạn trong 30s"
+    },
+    "HUD_SHOP_DETAILS_SUMMON_LEGENDARY": {
+      "en": "Summon a [-][FED868]LEGENDARY[-] pet on the road. Unlocks at Base Level 11.",
+      "vi": "Thêm ngẫu nhiên thú cưng [-][FED868]HUYỀN THOẠI[-] trên đường. Nhà của bạn đạt cấp độ 11 để có thể mua."
+    },
+    "HUD_SHOP_DETAILS_SUMMON_MYTHIC": {
+      "en": "Summon a [-][FF6F6F]MYTHIC[-] pet on the road. Unlocks at Base Level 13.",
+      "vi": "Thêm ngẫu nhiên thú cưng [-][FF6F6F]THẦN THOẠI[-] trên đường. Nhà của bạn đạt cấp độ 13 để có thể mua."
+    },
+    "HUD_SHOP_DETAILS_SUMMON_RAINY": {
+      "en": "You will summon rainy weather for 5 minutes.",
+      "vi": "Thời tiết sẽ chuyển mưa trong 5 phút"
+    },
+    "HUD_SHOP_DETAILS_SUMMON_SNOWY": {
+      "en": "You will summon snowy weather for 5 minutes.",
+      "vi": "Bạn sẽ gọi tuyết rơi trong 5 phút"
+    },
+    "HUD_SHOP_DETAILS_SUMMON_WINDY": {
+      "en": "You will summon windy weather for 5 minutes.",
+      "vi": "Bạn sẽ gọi gió nổi lên trong 5 phút"
+    },
+    "HUD_SHOP_ROTATION_ITEMS": {
+      "en": "FEATURED ITEMS",
+      "vi": "VẬT PHẨM NỔI BẬT"
+    },
+    "HUD_SHOP_NORMAL_ITEMS": {
+      "en": "PERMANENT ITEMS",
+      "vi": "VẬT PHẨM THƯỜNG"
+    },
+    "HUD_SHOP_REBIRTH_PET_ITEMS": {
+      "en": "REBIRTH PETS",
+      "vi": "THÚ CƯNG NÂNG CẤP"
+    },
+    "HUD_ROTATION_SHOP_COUNTDOWN": {
+      "en": "Refreshed in {0}",
+      "vi": "Làm mới sau {0}"
+    },
+    "HUD_ROTATION_SHOP_SUMMON_TITLE": {
+      "en": "Summon {0}",
+      "vi": "Triệu hồi {0}"
+    },
+    "HUD_ROTATION_SHOP_MUTAGEN_TITLE": {
+      "en": "{0} Mutagen Grade {1}",
+      "vi": "Tinh chất {0} Bậc {1}"
+    },
+    "HUD_ROTATION_SHOP_SUMMON_PET_DESC": {
+      "en": "You will receive {0} via in-game mail.",
+      "vi": "Bạn sẽ nhận {0} trong thư."
+    },
+    "HUD_ROTATION_SHOP_SUMMON_WEATHER_DESC": {
+      "en": "You will [b]SUMMON[/b] {0} weather.",
+      "vi": "Bạn sẽ [b]TRIỆU HỒI[/b] thời tiết {0}."
+    },
+    "HUD_ROTATION_SHOP_MUTAGEN_DESC": {
+      "en": "You will receive a [b]{0}[/b] mutagen with a [b]chance to mutate[/b] your pet.",
+      "vi": "Bạn sẽ nhận được một tinh chất [b]{0}[/b] có [b]tỉ lệ đột biến[/b] thú cưng của bạn."
+    }
+  },
+  "missing": [
+    "HUD_ROTATION_SHOP_WEATHERGEN_DESC"
+  ]
+}

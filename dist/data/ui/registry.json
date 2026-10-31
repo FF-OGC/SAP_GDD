@@ -17,7 +17,9 @@
     {
       "id": "shop",
       "name": "Shop",
-      "status": "planned"
+      "status": "ready",
+      "data": "./data/ui/shop.json",
+      "rules": "./data/ui/shop-rules.json"
     },
     {
       "id": "mail",

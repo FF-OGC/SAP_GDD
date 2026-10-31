@@ -1,0 +1,206 @@
+{
+  "source": "pass",
+  "sourceCommit": "471a62bb8a55ad735cfeebf5a0a315730df90daa",
+  "entities": 70,
+  "sprites": 110,
+  "missing": [
+    "lib://fftextures/WorkshopIconLibrary/T_36_JH_WS_SHOPFRONT.png",
+    "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+    "lib://fftextures/WorkshopIconLibrary/HuntingGroun d_BG_Bag_Delete01.png",
+    "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+    "lib://fftextures/WorkshopIconLibrary/ui_icon_skill_RunSpeedUp.png",
+    "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_MONEY.png",
+    "lib://fftextures/WorkshopIconLibrary/Icon_HUD_Hammer.png",
+    "Assets/Sprites/Mutations/Rainy.png",
+    "Assets/Sprites/Mutations/Snowy.png",
+    "Assets/Sprites/Mutations/Windy.png"
+  ],
+  "normalItems": 8,
+  "rotationItems": 2060,
+  "waves": 60,
+  "unsupported": [
+    {
+      "path": "Shop/ShopButton/Icon",
+      "id": "P7xvRKtW",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "Shop/ShopButton/Text",
+      "id": "JxGuclVn",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "Shop/ShopButton",
+      "id": "rsnKGyWA",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "_filters"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Title/CloseButton",
+      "id": "CjkKexWC",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/BG/BG",
+      "id": "SPLcquNu",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/BG/DecorLeft",
+      "id": "mIq4YM4g",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/BG/DecorRight",
+      "id": "Nak8SW5t",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/BG/PreventButton",
+      "id": "RFWPyGUh",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/RotationItems/Line",
+      "id": "sFOA75Qn",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/RotationItems/RotationItemsLayout/Item (1)/SelectButton/Header",
+      "id": "fz95IAhk",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/RotationItems/RotationItemsLayout/Item (1)/SelectButton/Rarity",
+      "id": "LtghLF1v",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/RotationItems/RotationItemsLayout/Item (1)/SelectButton",
+      "id": "BCcnBpgg",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/RebirthPets/Line",
+      "id": "m9GgCLdu",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/RebirthPets/RebirthPetsLayout/Item (1)/SelectButton/Header",
+      "id": "B10BNXTH",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/RebirthPets/RebirthPetsLayout/Item (1)/SelectButton/Rarity",
+      "id": "NDa8Swhp",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/RebirthPets/RebirthPetsLayout/Item (1)/SelectButton",
+      "id": "OHSbZksZ",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/NormalItems/Line",
+      "id": "kLtePMuB",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/NormalItems/NormalItemsLayout/Item (1)/SelectButton/Header",
+      "id": "FA0DG0XE",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/NormalItems/NormalItemsLayout/Item (1)/SelectButton/Rarity",
+      "id": "Suw4jcIf",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/NormalItems/NormalItemsLayout/Item (1)/SelectButton",
+      "id": "bIxGdXJG",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View",
+      "id": "jLw5nGAz",
+      "fields": [
+        "propsData.panel",
+        "propsData.scrollView"
+      ]
+    },
+    {
+      "path": "Shop/Shop/BuyButton",
+      "id": "IQuBI9UG",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop",
+      "id": "zBXLQ3ne",
+      "fields": [
+        "ecaScripts"
+      ]
+    }
+  ],
+  "gaps": [
+    "Registered Shop is stale; Shop widget resolved as BuyButton parent per HudShop",
+    "No engine screenshots: font/shader/scaler, scroll inertia and hit order unverified",
+    "Wave selection, wallets, friend presence, stocks and purchases are local simulations; no server, pet spawning or UseItem gameplay",
+    "Normal-item Requirement and gameplay success/target checks are not executed; buy is an explicit local UI simulation",
+    "WeatherGen description preserves the unreachable duplicated Mutagen branch in source",
+    "Native web scrolling; source section positions retained even when config exceeds source section height"
+  ],
+  "browser": "see plans/PLAN-ui-shop.md for separately executed CUA checks",
+  "engineParity": "not verified; no engine screenshots"
+}

@@ -1,0 +1,2992 @@
+{
+  "sprites": [
+    {
+      "key": "Assets/Sprites/Buttons/SkillButtonBG.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Buttons/SkillButtonBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Buttons/SkillButtonBG.png"
+      ],
+      "fileId": "vp527gybpr-mincvg4z-pp4iuvf2pc",
+      "output": "./assets/ui-sprites/shop/Buttons__SkillButtonBG.png",
+      "missing": false,
+      "references": [
+        "Shop/ShopButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 152,
+      "height": 152
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/T_36_JH_WS_SHOPFRONT.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/T_36_JH_WS_SHOPFRONT.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/T_36_JH_WS_SHOPFRONT.png"
+      ],
+      "fileId": "7b7a4864e6c4ce38ec39f312d8b5eb1f",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/ShopButton/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Backgrounds/BG.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Backgrounds/BG.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Backgrounds/BG.png",
+        "Assets/Sprites/Backgrounds/BG.png"
+      ],
+      "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+      "output": "./assets/ui-sprites/shop/Backgrounds__BG.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop",
+        "Shop/Shop/BG/BG"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 8,
+        "right": 8,
+        "top": 8,
+        "bottom": 8
+      },
+      "width": 26,
+      "height": 26
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/TitleBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/TitleBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/TitleBG.png"
+      ],
+      "fileId": "zkfpx1yzvtc-mu6xhq5y-nv8ey9h3kfj",
+      "output": "./assets/ui-sprites/shop/NewAssets__TitleBG.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/Title"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 113,
+        "right": 12,
+        "top": 48,
+        "bottom": 18
+      },
+      "width": 752,
+      "height": 126
+    },
+    {
+      "key": "Assets/Sprites/Icons/CloseIcon.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/CloseIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/CloseIcon.png"
+      ],
+      "fileId": "f9euyqwxbow-minctbvv-qqbidtvn9l",
+      "output": "./assets/ui-sprites/shop/Icons__CloseIcon.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/Title/CloseButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 44,
+      "height": 44
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/ContainerBG.png",
+      "declaredKey": "Assets/_Test/NewUI/Assets/Img_bg02_BG.png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Img_bg02_BG.png"
+      ],
+      "fileId": "gszc833692p-mu6veyfp-g1yynwpple7",
+      "output": "./assets/ui-sprites/shop/NewAssets__ContainerBG.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/BG"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 34,
+        "right": 33,
+        "top": 32,
+        "bottom": 39
+      },
+      "width": 106,
+      "height": 118
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/DecorateIcon1.png",
+      "declaredKey": "Assets/_Test/NewUI/Assets/Img_decorate01.png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Img_decorate01.png"
+      ],
+      "fileId": "ouansc8n289-mu6xhpqu-centw2ek0ns",
+      "output": "./assets/ui-sprites/shop/NewAssets__DecorateIcon1.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/BG/DecorLeft"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 68,
+      "height": 104
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/DecorateIcon2.png",
+      "declaredKey": "Assets/_Test/NewUI/Assets/Img_decorate02.png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Img_decorate02.png"
+      ],
+      "fileId": "z3itg018ujr-mu6xhpvo-cnfqx0exhhp",
+      "output": "./assets/ui-sprites/shop/NewAssets__DecorateIcon2.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/BG/DecorRight"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 114,
+      "height": 52
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png"
+      ],
+      "fileId": "4fea53c19488f972a3e911c826b1bea7",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Shop/BG/PreventButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/HuntingGroun d_BG_Bag_Delete01.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/HuntingGroun d_BG_Bag_Delete01.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/HuntingGroun d_BG_Bag_Delete01.png"
+      ],
+      "fileId": "d5a137d8b5a2cde5cc6406a7f41f7b99",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Shop/Scroll View/RotationItems/Line",
+        "Shop/Shop/Scroll View/RebirthPets/Line",
+        "Shop/Shop/Scroll View/NormalItems/Line"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Backgrounds/SelectingBox.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Backgrounds/SelectingBox.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Backgrounds/SelectingBox.png"
+      ],
+      "fileId": "xdywdrcryc-minctbfj-f4q3t7wxzug",
+      "output": "./assets/ui-sprites/shop/Backgrounds__SelectingBox.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/Scroll View/RotationItems/RotationItemsLayout/Item (1)/Select",
+        "Shop/Shop/Scroll View/RebirthPets/RebirthPetsLayout/Item (1)/Select",
+        "Shop/Shop/Scroll View/NormalItems/NormalItemsLayout/Item (1)/Select"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 10,
+        "right": 10,
+        "top": 10,
+        "bottom": 10
+      },
+      "width": 44,
+      "height": 44
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/ShopItemBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/ShopItemBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/ShopItemBG.png"
+      ],
+      "fileId": "e4ea2am4nbh-mu9bpkes-beszxuyebu7",
+      "output": "./assets/ui-sprites/shop/NewAssets__ShopItemBG.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/Scroll View/RotationItems/RotationItemsLayout/Item (1)/SelectButton",
+        "Shop/Shop/Scroll View/RebirthPets/RebirthPetsLayout/Item (1)/SelectButton",
+        "Shop/Shop/Scroll View/NormalItems/NormalItemsLayout/Item (1)/SelectButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 15,
+        "right": 15,
+        "top": 15,
+        "bottom": 15
+      },
+      "width": 38,
+      "height": 38
+    },
+    {
+      "key": "Assets/Sprites/Backgrounds/HeaderBG.png",
+      "declaredKey": "Assets/Sprites/Backgrounds/HeaderBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Backgrounds/HeaderBG.png"
+      ],
+      "fileId": "qgnl32w2u1-mu9bpka2-3ls6yf8up3y",
+      "output": "./assets/ui-sprites/shop/Backgrounds__HeaderBG.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/Scroll View/RotationItems/RotationItemsLayout/Item (1)/SelectButton/Header",
+        "Shop/Shop/Scroll View/RebirthPets/RebirthPetsLayout/Item (1)/SelectButton/Header",
+        "Shop/Shop/Scroll View/NormalItems/NormalItemsLayout/Item (1)/SelectButton/Header"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 8,
+        "right": 8,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 30,
+      "height": 28
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/RarityBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/RarityBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/RarityBG.png"
+      ],
+      "fileId": "rqpomo66vjg-mu6vezgl-j2m6wc8co4",
+      "output": "./assets/ui-sprites/shop/NewAssets__RarityBG.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/Scroll View/RotationItems/RotationItemsLayout/Item (1)/SelectButton/Rarity",
+        "Shop/Shop/Scroll View/RebirthPets/RebirthPetsLayout/Item (1)/SelectButton/Rarity",
+        "Shop/Shop/Scroll View/NormalItems/NormalItemsLayout/Item (1)/SelectButton/Rarity"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 10,
+        "right": 10,
+        "top": 0,
+        "bottom": 3
+      },
+      "width": 62,
+      "height": 10
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Sequin.png",
+      "declaredKey": "Assets/Sprites/Mutations/Sequin.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Sequin.png"
+      ],
+      "fileId": "ljiri4sl9hj-mror961a-pqwno8dlhw",
+      "output": "./assets/ui-sprites/shop/Mutations__Sequin.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/Scroll View/RotationItems/RotationItemsLayout/Item (1)/Thumbnail",
+        "runtime:Shop:Sequin"
+      ],
+      "origins": [
+        ".ui",
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Golden.png",
+      "declaredKey": "Assets/Sprites/Mutations/Golden.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Golden.png"
+      ],
+      "fileId": "0wp8iz05lsm-mkwi46cs-73hyb35ojli",
+      "output": "./assets/ui-sprites/shop/Mutations__Golden.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/Scroll View/RotationItems/RotationItemsLayout/Item (1)/Thumbnail/MutationIcon",
+        "runtime:Shop:Golden"
+      ],
+      "origins": [
+        ".ui",
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Frost.png",
+      "declaredKey": "Assets/Sprites/Mutations/Frost.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Frost.png"
+      ],
+      "fileId": "4ai48vv9fa5-mklu5ftt-syv5mb304or",
+      "output": "./assets/ui-sprites/shop/Mutations__Frost.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/Scroll View/RotationItems/RotationItemsLayout/Item (1)/Thumbnail/WeatherIcon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Icons/PetCoinIcon.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/PetCoinIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/PetCoinIcon.png"
+      ],
+      "fileId": "bju08pkwxav-mincvh54-3nkt79t4vxw",
+      "output": "./assets/ui-sprites/shop/Icons__PetCoinIcon.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/Scroll View/RotationItems/RotationItemsLayout/Item (1)/Price",
+        "Shop/Shop/Scroll View/NormalItems/NormalItemsLayout/Item (1)/Price",
+        "Shop/Shop/Wallet/Icon",
+        "runtime:Shop:PetCoinIcon"
+      ],
+      "origins": [
+        ".ui",
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 96,
+      "height": 96
+    },
+    {
+      "key": "Assets/Sprites/Backgrounds/DarkBG.png",
+      "declaredKey": "Assets/Sprites/Backgrounds/DarkBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Backgrounds/DarkBG.png"
+      ],
+      "fileId": "amqbaf0ix1n-mincvgtv-gm0n5ept0bj",
+      "output": "./assets/ui-sprites/shop/Backgrounds__DarkBG.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/Scroll View/RotationItems/RotationItemsLayout/Item (1)/LockBG"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 12,
+        "right": 12,
+        "top": 12,
+        "bottom": 12
+      },
+      "width": 40,
+      "height": 40
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/LockIcon.png",
+      "declaredKey": "Assets/Sprites/NewAssets/LockIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/LockIcon.png"
+      ],
+      "fileId": "sy1q97qlcti-mu2oi0b4-gn66ltah5xn",
+      "output": "./assets/ui-sprites/shop/NewAssets__LockIcon.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/Scroll View/RotationItems/RotationItemsLayout/Item (1)/LockBG/LockIcon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 26,
+      "height": 34
+    },
+    {
+      "key": "Assets/Sprites/Pets/PENGUIN.png",
+      "declaredKey": "Assets/Sprites/Pets/PENGUIN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/PENGUIN.png"
+      ],
+      "fileId": "63tf7u5p89f-mir2uppa-kquuyta6oll",
+      "output": "./assets/ui-sprites/shop/Pets__PENGUIN.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/Scroll View/RebirthPets/RebirthPetsLayout/Item (1)/Thumbnail",
+        "Shop/Shop/Scroll View/NormalItems/NormalItemsLayout/Item (1)/Thumbnail"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Icons/MoneyIcon.png",
+      "declaredKey": "Assets/Sprites/Icons/MoneyIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/MoneyIcon.png",
+        "Assets/Sprites/UIComponents/Icons/MoneyIcon.png"
+      ],
+      "fileId": "1ev4vbb6r81-mincvh0q-an2r8ytn9ao",
+      "output": "./assets/ui-sprites/shop/Icons__MoneyIcon.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/Scroll View/RebirthPets/RebirthPetsLayout/Item (1)/Price",
+        "runtime:Shop:MoneyIcon"
+      ],
+      "origins": [
+        ".ui",
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 96,
+      "height": 96
+    },
+    {
+      "key": "Assets/Sprites/Shapes/SquareRounded100.png",
+      "declaredKey": "Assets/Sprites/Shapes/SquareRounded100.png",
+      "declaredKeys": [
+        "Assets/Sprites/Shapes/SquareRounded100.png"
+      ],
+      "fileId": "l8c4cr6s3nf-mbq68mwy-pxhc7b7pxi9",
+      "output": "./assets/ui-sprites/shop/Shapes__SquareRounded100.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/Scroll View/NormalItems/NormalItemsLayout/Item (1)/CooldownBG"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 7,
+        "right": 7,
+        "top": 7,
+        "bottom": 7
+      },
+      "width": 100,
+      "height": 100
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/YellowButton.png",
+      "declaredKey": "Assets/Sprites/NewAssets/YellowButton.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/YellowButton.png"
+      ],
+      "fileId": "155t2glvvdq-mu6vewp3-o48sy8osfsn",
+      "output": "./assets/ui-sprites/shop/NewAssets__YellowButton.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/BuyButton",
+        "runtime:Shop:YellowButton"
+      ],
+      "origins": [
+        ".ui",
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 50,
+        "right": 20,
+        "top": 20,
+        "bottom": 25
+      },
+      "width": 160,
+      "height": 66
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/NormalTabBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/NormalTabBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/NormalTabBG.png"
+      ],
+      "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+      "output": "./assets/ui-sprites/shop/NewAssets__NormalTabBG.png",
+      "missing": false,
+      "references": [
+        "Shop/ItemDetails"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 20,
+        "right": 20,
+        "top": 20,
+        "bottom": 20
+      },
+      "width": 96,
+      "height": 98
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png"
+      ],
+      "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/ItemDetails/Title/Line"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/BlueButton.png",
+      "declaredKey": "Assets/Sprites/NewAssets/BlueButton.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/BlueButton.png"
+      ],
+      "fileId": "mgcae4djxp-mu6vevy5-j3m6yz6bep",
+      "output": "./assets/ui-sprites/shop/NewAssets__BlueButton.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:GrayButton"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 50,
+        "right": 20,
+        "top": 20,
+        "bottom": 25
+      },
+      "width": 160,
+      "height": 66
+    },
+    {
+      "key": "Assets/Sprites/Pets/RACOON.png",
+      "declaredKey": "Assets/Sprites/Pets/RACOON.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/RACOON.png"
+      ],
+      "fileId": "7a4islqpsmg-mggb0eze-gbznekfdw",
+      "output": "./assets/ui-sprites/shop/Pets__RACOON.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:RACOON"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SQUIRREL.png",
+      "declaredKey": "Assets/Sprites/Pets/SQUIRREL.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SQUIRREL.png"
+      ],
+      "fileId": "fl0bskxkpvv-mggb0eh4-lb2m9xuuxuf",
+      "output": "./assets/ui-sprites/shop/Pets__SQUIRREL.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:SQUIRREL"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/TURTLE.png",
+      "declaredKey": "Assets/Sprites/Pets/TURTLE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/TURTLE.png"
+      ],
+      "fileId": "bpsesy0jovs-mggb0eax-fa0qfdzj3wc",
+      "output": "./assets/ui-sprites/shop/Pets__TURTLE.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:TURTLE"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/BISON.png",
+      "declaredKey": "Assets/Sprites/Pets/BISON.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/BISON.png"
+      ],
+      "fileId": "927mdzvzpuh-mh4kvmmf-gc8cgd0zibi",
+      "output": "./assets/ui-sprites/shop/Pets__BISON.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:BISON"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/HORSE.png",
+      "declaredKey": "Assets/Sprites/Pets/HORSE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/HORSE.png"
+      ],
+      "fileId": "8np9tor8ak7-mggb0gek-ss7w1ay0tbq",
+      "output": "./assets/ui-sprites/shop/Pets__HORSE.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:HORSE"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/ZEBRA.png",
+      "declaredKey": "Assets/Sprites/Pets/ZEBRA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/ZEBRA.png"
+      ],
+      "fileId": "vnt9g7pgocs-mh4kvmiv-o1z6fxyy6gk",
+      "output": "./assets/ui-sprites/shop/Pets__ZEBRA.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:ZEBRA"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/JELLYFISH.png",
+      "declaredKey": "Assets/Sprites/Pets/JELLYFISH.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/JELLYFISH.png"
+      ],
+      "fileId": "l3zn1x8e06-mggb0gbe-488m9zd8qec",
+      "output": "./assets/ui-sprites/shop/Pets__JELLYFISH.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:JELLYFISH"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SEALION.png",
+      "declaredKey": "Assets/Sprites/Pets/SEALION.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SEALION.png"
+      ],
+      "fileId": "o1wai7vdcv-mggb0eq5-ifa5e5loku",
+      "output": "./assets/ui-sprites/shop/Pets__SEALION.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:SEALION"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/FENNECFOX.png",
+      "declaredKey": "Assets/Sprites/Pets/FENNECFOX.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/FENNECFOX.png"
+      ],
+      "fileId": "gwg29fiaqq-micz8y8b-brlnd3f9ly",
+      "output": "./assets/ui-sprites/shop/Pets__FENNECFOX.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:FENNECFOX"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/PARROT.png",
+      "declaredKey": "Assets/Sprites/Pets/PARROT.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/PARROT.png"
+      ],
+      "fileId": "6g6q31qwxw-mjs36efe-usd5ntwd779",
+      "output": "./assets/ui-sprites/shop/Pets__PARROT.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:PARROT"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/MOOSE.png",
+      "declaredKey": "Assets/Sprites/Pets/MOOSE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MOOSE.png"
+      ],
+      "fileId": "awi4tygkool-mggb0fx9-9bc739j4nyv",
+      "output": "./assets/ui-sprites/shop/Pets__MOOSE.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:MOOSE"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/GIRAFFE.png",
+      "declaredKey": "Assets/Sprites/Pets/GIRAFFE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/GIRAFFE.png"
+      ],
+      "fileId": "60aavd32vqr-mggb0guf-ad65eb611a",
+      "output": "./assets/ui-sprites/shop/Pets__GIRAFFE.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:GIRAFFE"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SNOWOWL.png",
+      "declaredKey": "Assets/Sprites/Pets/SNOWOWL.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SNOWOWL.png"
+      ],
+      "fileId": "i6q7oz7cmec-mggb0ek2-dlu7cxh9s3m",
+      "output": "./assets/ui-sprites/shop/Pets__SNOWOWL.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:SNOWOWL"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/ALIGATOR.png",
+      "declaredKey": "Assets/Sprites/Pets/ALIGATOR.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/ALIGATOR.png"
+      ],
+      "fileId": "z68uw5uyp4-mggb0i95-t7410a0isc",
+      "output": "./assets/ui-sprites/shop/Pets__ALIGATOR.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:ALIGATOR"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/TIGER.png",
+      "declaredKey": "Assets/Sprites/Pets/TIGER.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/TIGER.png"
+      ],
+      "fileId": "30fs8c8y3kt-mggb0ee3-a53g7spf65c",
+      "output": "./assets/ui-sprites/shop/Pets__TIGER.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:TIGER"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/ELEPHANT.png",
+      "declaredKey": "Assets/Sprites/Pets/ELEPHANT.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/ELEPHANT.png"
+      ],
+      "fileId": "b48jygs8tke-mggb0h17-yhdf0nczmv",
+      "output": "./assets/ui-sprites/shop/Pets__ELEPHANT.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:ELEPHANT"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/PANDA.png",
+      "declaredKey": "Assets/Sprites/Pets/PANDA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/PANDA.png"
+      ],
+      "fileId": "40xapfmsn4p-mggb0fjx-kgc08yypygd",
+      "output": "./assets/ui-sprites/shop/Pets__PANDA.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:PANDA"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/EAGLE.png",
+      "declaredKey": "Assets/Sprites/Pets/EAGLE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/EAGLE.png"
+      ],
+      "fileId": "fylzkverh7o-mggb0h4g-ba3y76sndd",
+      "output": "./assets/ui-sprites/shop/Pets__EAGLE.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:EAGLE"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SNOWLEOPARD.png",
+      "declaredKey": "Assets/Sprites/Pets/SNOWLEOPARD.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SNOWLEOPARD.png"
+      ],
+      "fileId": "cawargijt3g-mir2upt7-qcctmz9ff3",
+      "output": "./assets/ui-sprites/shop/Pets__SNOWLEOPARD.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:SNOWLEOPARD"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/POLARBEAR.png",
+      "declaredKey": "Assets/Sprites/Pets/POLARBEAR.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/POLARBEAR.png"
+      ],
+      "fileId": "6euz1q9ndla-mggb0f6h-fi84jwcfrx4",
+      "output": "./assets/ui-sprites/shop/Pets__POLARBEAR.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:POLARBEAR"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/RHINO.png",
+      "declaredKey": "Assets/Sprites/Pets/RHINO.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/RHINO.png"
+      ],
+      "fileId": "3peplzr50vl-mggb0ew7-udimrm238e",
+      "output": "./assets/ui-sprites/shop/Pets__RHINO.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:RHINO"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/WOLF.png",
+      "declaredKey": "Assets/Sprites/Pets/WOLF.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/WOLF.png"
+      ],
+      "fileId": "18g63zgudrz-mh4kvmq4-tcic58og6bh",
+      "output": "./assets/ui-sprites/shop/Pets__WOLF.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:WOLF"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/HORNBILL.png",
+      "declaredKey": "Assets/Sprites/Pets/HORNBILL.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/HORNBILL.png"
+      ],
+      "fileId": "746y68oztc3-mggb0dv6-9kw9xm95dns",
+      "output": "./assets/ui-sprites/shop/Pets__HORNBILL.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:HORNBILL"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/HIPPO.png",
+      "declaredKey": "Assets/Sprites/Pets/HIPPO.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/HIPPO.png"
+      ],
+      "fileId": "1acgc8jgii4-mggb0ghw-vdw7drowm6h",
+      "output": "./assets/ui-sprites/shop/Pets__HIPPO.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:HIPPO"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/BROWNBEAR.png",
+      "declaredKey": "Assets/Sprites/Pets/BROWNBEAR.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/BROWNBEAR.png"
+      ],
+      "fileId": "crsqp70eev-mggb0dnx-e0k0w5xl5xu",
+      "output": "./assets/ui-sprites/shop/Pets__BROWNBEAR.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:BROWNBEAR"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/MANATEE.png",
+      "declaredKey": "Assets/Sprites/Pets/MANATEE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MANATEE.png"
+      ],
+      "fileId": "tyhnwkt3chq-mhbsv9ee-dz4v0vlabc4",
+      "output": "./assets/ui-sprites/shop/Pets__MANATEE.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:MANATEE"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/OSTRICH.png",
+      "declaredKey": "Assets/Sprites/Pets/OSTRICH.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/OSTRICH.png"
+      ],
+      "fileId": "rk88g0rysa-mggb0del-45nfv3y15be",
+      "output": "./assets/ui-sprites/shop/Pets__OSTRICH.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:OSTRICH"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SMALLWHALE.png",
+      "declaredKey": "Assets/Sprites/Pets/SMALLWHALE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SMALLWHALE.png"
+      ],
+      "fileId": "rdbyw5x2woq-mhbsxp7p-i4agr52n6o",
+      "output": "./assets/ui-sprites/shop/Pets__SMALLWHALE.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:SMALLWHALE"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/GORILLA.png",
+      "declaredKey": "Assets/Sprites/Pets/GORILLA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/GORILLA.png"
+      ],
+      "fileId": "9cy6my0ir4f-mggb0d4k-ub8n3z3y9",
+      "output": "./assets/ui-sprites/shop/Pets__GORILLA.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:GORILLA"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/BELUGA.png",
+      "declaredKey": "Assets/Sprites/Pets/BELUGA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/BELUGA.png"
+      ],
+      "fileId": "vu7mzez9kir-mggb0dhn-p0azt1pc8mb",
+      "output": "./assets/ui-sprites/shop/Pets__BELUGA.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:BELUGA"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/NARWHAL.png",
+      "declaredKey": "Assets/Sprites/Pets/NARWHAL.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/NARWHAL.png"
+      ],
+      "fileId": "1ndxyn7ljdc-mggb0ds2-rl4gjyuxtl",
+      "output": "./assets/ui-sprites/shop/Pets__NARWHAL.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:NARWHAL"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/HUSKY.png",
+      "declaredKey": "Assets/Sprites/Pets/HUSKY.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/HUSKY.png"
+      ],
+      "fileId": "ad91i1v2385-mh92zex6-pr945opazuf",
+      "output": "./assets/ui-sprites/shop/Pets__HUSKY.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:HUSKY"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/PLATYPUS.png",
+      "declaredKey": "Assets/Sprites/Pets/PLATYPUS.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/PLATYPUS.png"
+      ],
+      "fileId": "oxazkt4r1ti-mhucubbs-76m3tg14nhp",
+      "output": "./assets/ui-sprites/shop/Pets__PLATYPUS.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:PLATYPUS"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/JAGUAR.png",
+      "declaredKey": "Assets/Sprites/Pets/JAGUAR.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/JAGUAR.png"
+      ],
+      "fileId": "30rcq3tjjr7-mhucubg6-qbzcj7g3vij",
+      "output": "./assets/ui-sprites/shop/Pets__JAGUAR.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:JAGUAR"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/REINDEER.png",
+      "declaredKey": "Assets/Sprites/Pets/REINDEER.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/REINDEER.png"
+      ],
+      "fileId": "qved57h6sys-micxcfas-p8hu7dw7j1",
+      "output": "./assets/ui-sprites/shop/Pets__REINDEER.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:REINDEER"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/ARTICFOX.png",
+      "declaredKey": "Assets/Sprites/Pets/ARTICFOX.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/ARTICFOX.png"
+      ],
+      "fileId": "0bp17wr6rbf-mir2uq10-v8e0shodvm",
+      "output": "./assets/ui-sprites/shop/Pets__ARTICFOX.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:ARCTICFOX"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/COW.png",
+      "declaredKey": "Assets/Sprites/Pets/COW.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/COW.png"
+      ],
+      "fileId": "pedx85vhf2q-mkf6t5lc-jtiydfx8db",
+      "output": "./assets/ui-sprites/shop/Pets__COW.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:COW"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/Ox.png",
+      "declaredKey": "Assets/Sprites/Pets/Ox.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/Ox.png"
+      ],
+      "fileId": "dhtk6e2lwbm-mkv1zrur-xnh0xm7xt7",
+      "output": "./assets/ui-sprites/shop/Pets__Ox.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:OX"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/TURKEY.png",
+      "declaredKey": "Assets/Sprites/Pets/TURKEY.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/TURKEY.png"
+      ],
+      "fileId": "azr0np46z9t-mhucub7t-0rm5kdaafjba",
+      "output": "./assets/ui-sprites/shop/Pets__TURKEY.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:TURKEY"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/FrillNeckedLizard.png",
+      "declaredKey": "Assets/Sprites/Pets/FrillNeckedLizard.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/FrillNeckedLizard.png"
+      ],
+      "fileId": "8mzoimcs098-mkv1zrlu-kndqdkkk93s",
+      "output": "./assets/ui-sprites/shop/Pets__FrillNeckedLizard.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:FRILLNECKEDLIZARD"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/TORTOISE.png",
+      "declaredKey": "Assets/Sprites/Pets/TORTOISE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/TORTOISE.png"
+      ],
+      "fileId": "yccrq0r5cvh-mkxykan7-11fok9y4hcd",
+      "output": "./assets/ui-sprites/shop/Pets__TORTOISE.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:TORTOISE"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SEAHORSE.png",
+      "declaredKey": "Assets/Sprites/Pets/SEAHORSE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SEAHORSE.png"
+      ],
+      "fileId": "z2gec5o4q5j-mkxykae9-9k0xek0yqx9",
+      "output": "./assets/ui-sprites/shop/Pets__SEAHORSE.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:SEAHORSE"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/ALPACA.png",
+      "declaredKey": "Assets/Sprites/Pets/ALPACA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/ALPACA.png"
+      ],
+      "fileId": "l3kqso1qmv-mkxyka1y-bcz9b41x53u",
+      "output": "./assets/ui-sprites/shop/Pets__ALPACA.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:ALPACA"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/COYOTE.png",
+      "declaredKey": "Assets/Sprites/Pets/COYOTE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/COYOTE.png"
+      ],
+      "fileId": "3j1m9mk1uw3-mkxyka93-6trte1s335k",
+      "output": "./assets/ui-sprites/shop/Pets__COYOTE.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:COYOTE"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/CATFISH.png",
+      "declaredKey": "Assets/Sprites/Pets/CATFISH.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/CATFISH.png"
+      ],
+      "fileId": "fuu4da8h5x8-mlhvgh9q-h63zbv0avuw",
+      "output": "./assets/ui-sprites/shop/Pets__CATFISH.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:CATFISH"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SLOTH.png",
+      "declaredKey": "Assets/Sprites/Pets/SLOTH.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SLOTH.png"
+      ],
+      "fileId": "x35jumkb79j-mlhuurw9-22z1dgxitr1",
+      "output": "./assets/ui-sprites/shop/Pets__SLOTH.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:SLOTH"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/MALLARD.png",
+      "declaredKey": "Assets/Sprites/Pets/MALLARD.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MALLARD.png"
+      ],
+      "fileId": "1fku85arfb2-ml0aiq89-8dlv48bjl0a",
+      "output": "./assets/ui-sprites/shop/Pets__MALLARD.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:MALLARD"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/ARMADILLO.png",
+      "declaredKey": "Assets/Sprites/Pets/ARMADILLO.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/ARMADILLO.png"
+      ],
+      "fileId": "u3qn0wijlx-mm94ud6j-qoj2ea3obo",
+      "output": "./assets/ui-sprites/shop/Pets__ARMADILLO.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:ARMADILLO"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/AXOLOTLBLUE.png",
+      "declaredKey": "Assets/Sprites/Pets/AXOLOTLBLUE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/AXOLOTLBLUE.png"
+      ],
+      "fileId": "fh8kbzl4knc-mm9zn8ok-9riujcvb07",
+      "output": "./assets/ui-sprites/shop/Pets__AXOLOTLBLUE.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:AXOLOTLBLUE"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/AXOLOTLPINK.png",
+      "declaredKey": "Assets/Sprites/Pets/AXOLOTLPINK.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/AXOLOTLPINK.png"
+      ],
+      "fileId": "vnx6reebt7h-mm9zn8zj-9ev4le6ifo",
+      "output": "./assets/ui-sprites/shop/Pets__AXOLOTLPINK.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:AXOLOTLPINK"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/AXOLOTLGREEN.png",
+      "declaredKey": "Assets/Sprites/Pets/AXOLOTLGREEN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/AXOLOTLGREEN.png"
+      ],
+      "fileId": "v2q15hhtk6-mm9zn8jq-r57tvygy4e",
+      "output": "./assets/ui-sprites/shop/Pets__AXOLOTLGREEN.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:AXOLOTLGREEN"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/AXOLOTLORANGE.png",
+      "declaredKey": "Assets/Sprites/Pets/AXOLOTLORANGE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/AXOLOTLORANGE.png"
+      ],
+      "fileId": "a4s55ggztb-mm9zn8sx-k9ffxgbme6",
+      "output": "./assets/ui-sprites/shop/Pets__AXOLOTLORANGE.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:AXOLOTLORANGE"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/AXOLOTLWHITE.png",
+      "declaredKey": "Assets/Sprites/Pets/AXOLOTLWHITE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/AXOLOTLWHITE.png"
+      ],
+      "fileId": "97y42atcqd-mm9zn93y-jdg8veva33",
+      "output": "./assets/ui-sprites/shop/Pets__AXOLOTLWHITE.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:AXOLOTLWHITE"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/LLAMA.png",
+      "declaredKey": "Assets/Sprites/Pets/LLAMA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/LLAMA.png"
+      ],
+      "fileId": "tafjn3xsgis-mmbgcbuh-k1uee1i94ia",
+      "output": "./assets/ui-sprites/shop/Pets__LLAMA.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:LLAMA"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/BABOON.png",
+      "declaredKey": "Assets/Sprites/Pets/BABOON.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/BABOON.png"
+      ],
+      "fileId": "gdr3pa9oyko-mmbgcbpn-25emffl3y2k",
+      "output": "./assets/ui-sprites/shop/Pets__BABOON.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:BABOON"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/MOODENG.png",
+      "declaredKey": "Assets/Sprites/Pets/MOODENG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MOODENG.png"
+      ],
+      "fileId": "o1r825gq6l8-micxi0sy-1v3gpl596h5",
+      "output": "./assets/ui-sprites/shop/Pets__MOODENG.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:MOODENG"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/ui_icon_skill_RunSpeedUp.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/ui_icon_skill_RunSpeedUp.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/ui_icon_skill_RunSpeedUp.png"
+      ],
+      "fileId": "ef39c5c7b4095aec32bed8256ae14ce1",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:Shop:RiseSpeed"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_MONEY.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_MONEY.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_MONEY.png"
+      ],
+      "fileId": "79ed553ce8b38be0c2bd27fac5014dbc",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:Shop:DoubleCost"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/Icon_HUD_Hammer.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/Icon_HUD_Hammer.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/Icon_HUD_Hammer.png"
+      ],
+      "fileId": "bb99773aa3ebcf9cc27827cbeded305e",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:Shop:SuperWeapon"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Summon/LEGENDARY.png",
+      "declaredKey": "Assets/Sprites/Summon/LEGENDARY.png",
+      "declaredKeys": [
+        "Assets/Sprites/Summon/LEGENDARY.png"
+      ],
+      "fileId": "x181t1mmjpi-mscub10r-98qx5j43qo",
+      "output": "./assets/ui-sprites/shop/Summon__LEGENDARY.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:SummonLEGENDARY"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 64,
+      "height": 64
+    },
+    {
+      "key": "Assets/Sprites/Summon/MYTHIC.png",
+      "declaredKey": "Assets/Sprites/Summon/MYTHIC.png",
+      "declaredKeys": [
+        "Assets/Sprites/Summon/MYTHIC.png"
+      ],
+      "fileId": "06h4h5c3ta7r-mscub0ol-y40qp6b37ip",
+      "output": "./assets/ui-sprites/shop/Summon__MYTHIC.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:SummonMYTHIC"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 64,
+      "height": 64
+    },
+    {
+      "key": "Assets/Sprites/Weather/Rainy.png",
+      "declaredKey": "Assets/Sprites/Weather/Rainy.png",
+      "declaredKeys": [
+        "Assets/Sprites/Weather/Rainy.png"
+      ],
+      "fileId": "y4csnr45j8k-mk6m3uau-mpdubuwfik",
+      "output": "./assets/ui-sprites/shop/Weather__Rainy.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:SummonRainy",
+        "runtime:Shop:RainyWeather"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Weather/Snowy.png",
+      "declaredKey": "Assets/Sprites/Weather/Snowy.png",
+      "declaredKeys": [
+        "Assets/Sprites/Weather/Snowy.png"
+      ],
+      "fileId": "i3081qth5qq-mk6m3u7i-qgqj842po6p",
+      "output": "./assets/ui-sprites/shop/Weather__Snowy.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:SummonSnowy",
+        "runtime:Shop:SnowyWeather"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Weather/Windy.png",
+      "declaredKey": "Assets/Sprites/Weather/Windy.png",
+      "declaredKeys": [
+        "Assets/Sprites/Weather/Windy.png"
+      ],
+      "fileId": "dwjj77zpyo4-mk6m3u3y-g1n1obj0ix",
+      "output": "./assets/ui-sprites/shop/Weather__Windy.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:SummonWindy",
+        "runtime:Shop:WindyWeather"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Frozen.png",
+      "declaredKey": "Assets/Sprites/Mutations/Frozen.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Frozen.png"
+      ],
+      "fileId": "8ajnvme4rqx-mkwi46iv-16h95sigbk9",
+      "output": "./assets/ui-sprites/shop/Mutations__Frozen.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:Frozen"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Magma.png",
+      "declaredKey": "Assets/Sprites/Mutations/Magma.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Magma.png"
+      ],
+      "fileId": "iw06sij8s9a-mkwi468g-mru8fexp3w9",
+      "output": "./assets/ui-sprites/shop/Mutations__Magma.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:Magma"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Clover.png",
+      "declaredKey": "Assets/Sprites/Mutations/Clover.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Clover.png"
+      ],
+      "fileId": "dk4horsud8-mkwi46ob-1ukdaa3inuh",
+      "output": "./assets/ui-sprites/shop/Mutations__Clover.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:Clover"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Fossilized.png",
+      "declaredKey": "Assets/Sprites/Mutations/Fossilized.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Fossilized.png"
+      ],
+      "fileId": "4ill2f6tqa-mkz71zq1-vqfxbwne47",
+      "output": "./assets/ui-sprites/shop/Mutations__Fossilized.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:Fossilized"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Sweetheart.png",
+      "declaredKey": "Assets/Sprites/Mutations/Sweetheart.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Sweetheart.png"
+      ],
+      "fileId": "9efwlko3er-mm949s3c-pmvogx7rwop",
+      "output": "./assets/ui-sprites/shop/Mutations__Sweetheart.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:Sweetheart"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Crystalline.png",
+      "declaredKey": "Assets/Sprites/Mutations/Crystalline.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Crystalline.png"
+      ],
+      "fileId": "com2azpkhkm-mm949z9v-0iru8kg7qigk",
+      "output": "./assets/ui-sprites/shop/Mutations__Crystalline.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:Crystalline"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Webbed.png",
+      "declaredKey": "Assets/Sprites/Mutations/Webbed.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Webbed.png"
+      ],
+      "fileId": "8b5aiihdx2y-mnqy3rvf-hv9jatw114a",
+      "output": "./assets/ui-sprites/shop/Mutations__Webbed.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:Webbed"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Rainy.png",
+      "declaredKey": "Assets/Sprites/Mutations/Rainy.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Rainy.png"
+      ],
+      "fileId": "dos1munflui-mklu5g2n-r7adzl6iw2",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:Shop:Soaked"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Snowy.png",
+      "declaredKey": "Assets/Sprites/Mutations/Snowy.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Snowy.png"
+      ],
+      "fileId": "4ai48vv9fa5-mklu5ftt-syv5mb304or",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:Shop:Frost"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Windy.png",
+      "declaredKey": "Assets/Sprites/Mutations/Windy.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Windy.png"
+      ],
+      "fileId": "em5lvk6bucw-mklu5g6z-fca2qooka18",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:Shop:Gale"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Thundered.png",
+      "declaredKey": "Assets/Sprites/Mutations/Thundered.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Thundered.png"
+      ],
+      "fileId": "eww7txe9ss-mkwhuvbu-mmdkdu7b9wo",
+      "output": "./assets/ui-sprites/shop/Mutations__Thundered.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:Thundered"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Eclipse.png",
+      "declaredKey": "Assets/Sprites/Mutations/Eclipse.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Eclipse.png"
+      ],
+      "fileId": "aq7ej17myzf-mknuf12q-ndfu386akd",
+      "output": "./assets/ui-sprites/shop/Mutations__Eclipse.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:Eclipse"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Prismatic.png",
+      "declaredKey": "Assets/Sprites/Mutations/Prismatic.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Prismatic.png"
+      ],
+      "fileId": "1r8flxy8y5x-mmbyoww6-gt7ufbuw2vn",
+      "output": "./assets/ui-sprites/shop/Mutations__Prismatic.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:Prismatic"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Football.png",
+      "declaredKey": "Assets/Sprites/Mutations/Football.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Football.png"
+      ],
+      "fileId": "wzo5fnsjofr-mpnrcjk6-xr3fr83ymzd",
+      "output": "./assets/ui-sprites/shop/Mutations__Football.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:Football"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Weather/Shadowfall.png",
+      "declaredKey": "Assets/Sprites/Weather/Shadowfall.png",
+      "declaredKeys": [
+        "Assets/Sprites/Weather/Shadowfall.png"
+      ],
+      "fileId": "ia1mxo7zxs-mknujm8x-ae1x6ze7soa",
+      "output": "./assets/ui-sprites/shop/Weather__Shadowfall.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:ShadowfallWeather"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "key": "Assets/Sprites/Weather/Rainbow.png",
+      "declaredKey": "Assets/Sprites/Weather/Rainbow.png",
+      "declaredKeys": [
+        "Assets/Sprites/Weather/Rainbow.png"
+      ],
+      "fileId": "h7bwvf6uaz-muywxwcc-a7j3y48liqb",
+      "output": "./assets/ui-sprites/shop/Weather__Rainbow.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:RainbowWeather"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Vortex.png",
+      "declaredKey": "Assets/Sprites/Mutations/Vortex.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Vortex.png"
+      ],
+      "fileId": "893kw7zap0f-mp3xbar2-nsn2o450oo",
+      "output": "./assets/ui-sprites/shop/Mutations__Vortex.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:Vortex"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Sparkle.png",
+      "declaredKey": "Assets/Sprites/Mutations/Sparkle.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Sparkle.png"
+      ],
+      "fileId": "34x0s5qc1hg-mtlj1smy-301zg0sx90w",
+      "output": "./assets/ui-sprites/shop/Mutations__Sparkle.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:Sparkle"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Aurora.png",
+      "declaredKey": "Assets/Sprites/Mutations/Aurora.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Aurora.png"
+      ],
+      "fileId": "oyrxy5yuvza-mv9bqapn-6icxn0n4uc2",
+      "output": "./assets/ui-sprites/shop/Mutations__Aurora.png",
+      "missing": false,
+      "references": [
+        "runtime:Shop:Aurora"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "missing": [
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/T_36_JH_WS_SHOPFRONT.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/T_36_JH_WS_SHOPFRONT.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/T_36_JH_WS_SHOPFRONT.png"
+      ],
+      "fileId": "7b7a4864e6c4ce38ec39f312d8b5eb1f",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/ShopButton/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png"
+      ],
+      "fileId": "4fea53c19488f972a3e911c826b1bea7",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Shop/BG/PreventButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/HuntingGroun d_BG_Bag_Delete01.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/HuntingGroun d_BG_Bag_Delete01.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/HuntingGroun d_BG_Bag_Delete01.png"
+      ],
+      "fileId": "d5a137d8b5a2cde5cc6406a7f41f7b99",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Shop/Scroll View/RotationItems/Line",
+        "Shop/Shop/Scroll View/RebirthPets/Line",
+        "Shop/Shop/Scroll View/NormalItems/Line"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png"
+      ],
+      "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/ItemDetails/Title/Line"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/ui_icon_skill_RunSpeedUp.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/ui_icon_skill_RunSpeedUp.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/ui_icon_skill_RunSpeedUp.png"
+      ],
+      "fileId": "ef39c5c7b4095aec32bed8256ae14ce1",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:Shop:RiseSpeed"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_MONEY.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_MONEY.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_MONEY.png"
+      ],
+      "fileId": "79ed553ce8b38be0c2bd27fac5014dbc",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:Shop:DoubleCost"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/Icon_HUD_Hammer.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/Icon_HUD_Hammer.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/Icon_HUD_Hammer.png"
+      ],
+      "fileId": "bb99773aa3ebcf9cc27827cbeded305e",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:Shop:SuperWeapon"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Rainy.png",
+      "declaredKey": "Assets/Sprites/Mutations/Rainy.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Rainy.png"
+      ],
+      "fileId": "dos1munflui-mklu5g2n-r7adzl6iw2",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:Shop:Soaked"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Snowy.png",
+      "declaredKey": "Assets/Sprites/Mutations/Snowy.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Snowy.png"
+      ],
+      "fileId": "4ai48vv9fa5-mklu5ftt-syv5mb304or",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:Shop:Frost"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Windy.png",
+      "declaredKey": "Assets/Sprites/Mutations/Windy.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Windy.png"
+      ],
+      "fileId": "em5lvk6bucw-mklu5g6z-fca2qooka18",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:Shop:Gale"
+      ],
+      "origins": [
+        "HudShop/config + ResourceRegisteration.asset"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "unsupported": [
+    {
+      "path": "Shop/ShopButton/Icon",
+      "id": "P7xvRKtW",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "Shop/ShopButton/Text",
+      "id": "JxGuclVn",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "Shop/ShopButton",
+      "id": "rsnKGyWA",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "_filters"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Title/CloseButton",
+      "id": "CjkKexWC",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/BG/BG",
+      "id": "SPLcquNu",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/BG/DecorLeft",
+      "id": "mIq4YM4g",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/BG/DecorRight",
+      "id": "Nak8SW5t",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/BG/PreventButton",
+      "id": "RFWPyGUh",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/RotationItems/Line",
+      "id": "sFOA75Qn",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/RotationItems/RotationItemsLayout/Item (1)/SelectButton/Header",
+      "id": "fz95IAhk",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/RotationItems/RotationItemsLayout/Item (1)/SelectButton/Rarity",
+      "id": "LtghLF1v",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/RotationItems/RotationItemsLayout/Item (1)/SelectButton",
+      "id": "BCcnBpgg",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/RebirthPets/Line",
+      "id": "m9GgCLdu",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/RebirthPets/RebirthPetsLayout/Item (1)/SelectButton/Header",
+      "id": "B10BNXTH",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/RebirthPets/RebirthPetsLayout/Item (1)/SelectButton/Rarity",
+      "id": "NDa8Swhp",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/RebirthPets/RebirthPetsLayout/Item (1)/SelectButton",
+      "id": "OHSbZksZ",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/NormalItems/Line",
+      "id": "kLtePMuB",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/NormalItems/NormalItemsLayout/Item (1)/SelectButton/Header",
+      "id": "FA0DG0XE",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/NormalItems/NormalItemsLayout/Item (1)/SelectButton/Rarity",
+      "id": "Suw4jcIf",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View/NormalItems/NormalItemsLayout/Item (1)/SelectButton",
+      "id": "bIxGdXJG",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Scroll View",
+      "id": "jLw5nGAz",
+      "fields": [
+        "propsData.panel",
+        "propsData.scrollView"
+      ]
+    },
+    {
+      "path": "Shop/Shop/BuyButton",
+      "id": "IQuBI9UG",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop",
+      "id": "zBXLQ3ne",
+      "fields": [
+        "ecaScripts"
+      ]
+    }
+  ]
+}

@@ -58,7 +58,7 @@ async function updateUiPreviewPage(selectedId = null) {
     document.getElementById("ui-preview-aspect").value = uiPreview.aspect;
     document.getElementById("ui-preview-meta").textContent = `${screen.entityCount} entity · ${manifest.missing.length} sprite thiếu · root ${uiPreview.width}×${uiPreview.height} từ .ui · khung ${uiPreview.aspect}; scaler và safe area chưa xác minh`;
     scaleUiPreview();
-    uiPreview.controller = entry.id === "activities" ? initActivitiesPreview(screen, rules, rendered) : initCollectionPreview(screen, rules, rendered);
+    uiPreview.controller = entry.id === "shop" ? initShopPreview(screen, rules, rendered) : entry.id === "activities" ? initActivitiesPreview(screen, rules, rendered) : initCollectionPreview(screen, rules, rendered);
     renderUiResourcePanel();
     const audit = auditUiPreviewDom(screen.tree, rendered.canvas);
     document.getElementById("ui-preview-meta").dataset.uiAudit = JSON.stringify(audit);

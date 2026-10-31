@@ -2,6 +2,21 @@
 
 Private design dashboard generated from the checked-in StealAPet config snapshot and source references.
 
+## Shop · UI Preview
+
+Mở `#uipreview/shop` hoặc chọn Shop cạnh Collection/Activities. Pipeline đọc
+`Shop.ui` và HudShop/config, giữ đủ 70 entity, raw props/callback, sprite
+identity/9-grid và runtime override trong Inspector. Có ba nhóm hàng, chọn
+món/chi tiết, hai loại ví, giá bạn bè, pet theo Rebirth, stock và cooldown.
+Ví/wave/mua thử là mô phỏng RAM; không chạy gameplay UseItem hay server.
+
+Sync riêng: `node tools/sync-ui-preview.mjs --project-root "C:\_Code\craftland\StealAPet" --screen shop`.
+Audit: `node tools/audit-ui-shop.mjs --project-root "C:\_Code\craftland\StealAPet"`.
+Nguồn có 110 sprite tham chiếu: 100 PNG đã kiểm hash/metadata, 7 sprite
+thư viện `lib://` và 3 đường dẫn thời tiết chưa resolve được theo fileId.
+Không thay bằng PNG cùng tên khi identity khác. Font/shader/scaler và pixel
+parity engine chưa xác minh; xem `plans/PLAN-ui-shop.md` và `shop-audit.json`.
+
 ## Activities · UI Preview
 
 Mở `#uipreview/activities` hoặc chọn Activities bên cạnh Collection. Snapshot

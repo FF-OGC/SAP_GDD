@@ -2,6 +2,16 @@
 
 Đọc file này trước khi sửa project.
 
+## Đăng ký UI Shop (2026-11-01)
+
+Theo yêu cầu adapt Shop vào UI Preview, cho phép đọc `Assets/HUDs/Shop.ui`,
+các controller/config `.fcg` và CSV liên quan, đúng localization key và sprite
+tĩnh/runtime mà Shop dùng, cùng `.png.meta` để lấy identity/9-grid. Được đọc
+bảng texture và đăng ký widget Shop trong ResourceRegisteration.asset, enum
+RSItemType trong EditorGenLib.fcc; resolve fileId trong NewAssets và đường
+dẫn bỏ tiền tố UIComponents khi metadata xác nhận. Không bao gồm ShopEvent.ui
+hay RotationShop.ui; không mở rộng quyền giftcode/Compensate. Game chỉ đọc.
+
 ## Đăng ký UI Activities (2026-10-31)
 
 Theo yêu cầu người dùng adapt Activities vào UI Preview: cho phép đọc
@@ -19,7 +29,7 @@ hay dữ liệu giftcode ngoài phép chiếu ID/Reward hiện hành. Game vẫn
 ## Quy tắc cứng
 
 - Site chạy tĩnh trong `dist/`: không thêm Express, server ứng dụng, framework hay build step.
-- `C:\_Code\craftland\StealAPet` là project game chỉ đọc. Chỉ đọc CSV trong `Assets/CSV/**`, file `.fcg`, `Assets/HUDs/<UI đã đăng ký>.ui`, các sprite mà UI tham chiếu hoặc code Collection gán lúc chạy, và `.png.meta` tương ứng của đúng các sprite UI đó để lấy 9-grid. Đã đăng ký `PetsCollection.ui` và `Activities.ui` (scope Activities bổ sung ở trên). Được đọc `Assets/Localization/key.csv` nhưng chỉ trích các key UI đã đăng ký thực sự dùng vào dữ liệu dẫn xuất; không mirror toàn bộ file. Được đọc file/bảng định nghĩa `EResSprite`/`Res.Sprite` để ánh xạ sprite runtime cho UI này. Không chạy Studio/build, không tạo file, không dùng lệnh Git ghi ở repo game.
+- `C:\_Code\craftland\StealAPet` là project game chỉ đọc. Chỉ đọc CSV trong `Assets/CSV/**`, file `.fcg`, `Assets/HUDs/<UI đã đăng ký>.ui`, các sprite mà UI tham chiếu hoặc code Collection gán lúc chạy, và `.png.meta` tương ứng của đúng các sprite UI đó để lấy 9-grid. Đã đăng ký `PetsCollection.ui`, `Activities.ui` và `Shop.ui` (scope bổ sung ở trên). Được đọc `Assets/Localization/key.csv` nhưng chỉ trích các key UI đã đăng ký thực sự dùng vào dữ liệu dẫn xuất; không mirror toàn bộ file. Được đọc file/bảng định nghĩa `EResSprite`/`Res.Sprite` để ánh xạ sprite runtime cho UI này. Không chạy Studio/build, không tạo file, không dùng lệnh Git ghi ở repo game.
 - Mọi script sync chỉ ghi trong project GDD; giữ guard đích output. `giftcode.csv` là dữ liệu vận hành: chỉ được chiếu các cột `ID` và `Reward` cho Gift ID đang được config hiển thị tham chiếu; không ghi hoặc render Code, Name, Limit, Start, End, Reuse hay Rebirth. Không đọc `Compensate/**` hoặc asset game ngoài sprite được `.ui` đã đăng ký hoặc code Collection tham chiếu làm nguồn sync.
 - Với sprite Collection đã move/rename, được tra `fileId` trong `.png.meta` của `Assets/Sprites/NewAssets/` theo thư mục người dùng xác nhận. Chỉ copy PNG có ID khớp tham chiếu Collection; giữ đường dẫn khai báo cũ để truy vết, không mirror metadata/asset không liên quan.
 - Commit message bắt buộc theo Conventional Commits 1.0.0 (`type(scope): description`); chi tiết ở `AGENTS.md`.
