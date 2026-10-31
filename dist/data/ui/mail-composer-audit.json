@@ -1,0 +1,28 @@
+{
+  "source": "pass",
+  "example": {
+    "IsConfig": "0",
+    "GiftId": "1",
+    "RewardTypes": "3,7",
+    "RewardValues": "{5:10}{5:500}",
+    "RewardAmounts": "10,500"
+  },
+  "gmtInputRoundTrip": "pass",
+  "sourcePersistence": "source serializer separates RV maps with semicolons; outer parser truncates after first map",
+  "supportedTypes": [
+    "PetCoin",
+    "Dust",
+    "Money",
+    "MoneyTime",
+    "Pet",
+    "RandomPet",
+    "Mutagen",
+    "WeatherGen",
+    "Spin",
+    "DuplicateTicket"
+  ],
+  "invalidCases": 15,
+  "maxRewards": 5,
+  "browser": "see mail-composer-browser-audit.json",
+  "runtimeDelivery": "not executed"
+}

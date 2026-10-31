@@ -1,5 +1,18 @@
 # Việc kỹ thuật còn mở
 
+## GMT Mail composer (2026-11-01)
+
+- Source serialize/parse RV nhiều quà không khép kín: MailsManager.fcg:410
+  dùng DataUtils.ListKeyValueToJsonString (chèn `;` giữa map), trong khi
+  DataUtils.JsonStringToKeyValueV3 tách field mail tại `;` depth 0. QA port
+  parser tái hiện RV 5 map còn 1 map sau source-style save. Bộ xuất GMT dùng
+  map liền nhau để input ban đầu đọc đủ; cảnh báo chưa kiểm delivery sau
+  save/reconnect. Cần sửa/kiểm riêng trong repo game; GDD không ghi game.
+- RandomPet claim bỏ qua RA, cấp một pet/mục; MoneyTime mail đọc RA bằng
+  int; WeatherGen Value parse thành string trước cast int. Bộ soạn giới
+  hạn input và ghi cảnh báo tương ứng. Không đưa loại claim no-op vào menu.
+- Chi tiết, source và lệnh QA: `plans/PLAN-mail-composer.md`.
+
 ## Activities Preview (2026-10-31)
 
 - Theo yêu cầu hiển thị thanh tiến độ chung 5 milestone, track/fill thiếu

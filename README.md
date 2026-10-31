@@ -4,6 +4,14 @@ Private design dashboard generated from the checked-in StealAPet config snapshot
 
 ## Mail · UI Preview
 
+Công cụ **Soạn quà → GMT Mails Manager** bên dưới canvas cho chọn tối đa
+5 quà, tự sinh IsConfig/GiftId/RewardTypes/RewardValues/RewardAmounts,
+sao chép từng field hoặc tất cả và xem mail tự soạn trên canvas. Mặc định
+là ví dụ 10 Pet Coin + 500 Dust; draft lưu trong trình duyệt.
+Không gửi mail thật. Dùng Update Pending Mails trong GMT; source có giới
+hạn parse/lưu RV nhiều quà được cảnh báo trong tool.
+Xem [hợp đồng field và kiểm chứng](plans/PLAN-mail-composer.md).
+
 Mở `#uipreview/mail` hoặc chọn Mail cạnh Collection/Activities/Shop.
 Mail dựng từ 128 entity của project: hai tab Thông báo/Hệ thống, chọn thư,
 nội dung localization, phần thưởng và nhận thử. Panel có hộp thư trống,

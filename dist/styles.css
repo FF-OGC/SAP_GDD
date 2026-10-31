@@ -762,3 +762,25 @@ button.ui-entity[data-ui-hit-target="false"]{pointer-events:none}
 @media(max-width:700px){.uic-table,.uic-table tbody,.uic-table tr,.uic-table td{display:block;width:100%;box-sizing:border-box}.uic-table thead{display:none}.uic-table tr{margin-bottom:14px;border:1px solid #344256;border-radius:6px}.uic-table td::before{content:attr(data-label);display:block;font-weight:600;color:#c5d4e8;margin-bottom:6px}}
 
 .uic-card[hidden],.uic-empty[hidden]{display:none}
+.mail-composer{margin:24px 0;padding:22px;border:1px solid #3c4c65;border-radius:14px;background:#101d30;color:#eaf2ff}
+.mail-composer[hidden]{display:none}
+.mail-composer h2{margin:0 0 8px}.mail-composer h3{margin:0 0 10px}.mail-composer p{color:#aec2d8;font-size:13px;line-height:1.6}
+.mail-composer-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}
+.mail-composer label{display:flex;flex-direction:column;gap:6px;font-size:13px;min-width:0}
+.mail-composer input,.mail-composer select,.mail-composer textarea{width:100%;min-width:0;box-sizing:border-box;padding:9px;border:1px solid #435974;border-radius:7px;color:#eaf2ff;background:#17283e;font:inherit}
+.mail-composer textarea{font-family:Consolas,monospace;font-size:13px;resize:vertical;overflow-wrap:anywhere}
+.mail-composer button{border:1px solid #435974;border-radius:7px;padding:9px 12px;background:#223d5c;color:#eaf2ff;cursor:pointer;font:inherit;font-size:13px}
+.mail-composer button:disabled{opacity:.45;cursor:default}
+.mail-composer-reward{min-width:0;border:1px solid #364d68;border-radius:10px;padding:14px;margin:16px 0}
+.mail-composer-reward legend{padding:0 6px;color:#9ddbbf;font-size:13px;font-weight:700}
+.mail-composer-row-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:end}
+.mail-composer-inputs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}
+.mail-composer-inputs>label:has(select[data-field="value"]),.mail-composer-weathers,.mail-composer-inputs>p{grid-column:1/-1}
+.mail-composer-weathers{display:flex;flex-wrap:wrap;gap:10px;border:1px solid #364d68;border-radius:6px;padding:10px;min-width:0}
+.mail-composer-weathers legend{font-weight:400;color:#aec2d8}.mail-composer-weathers label{display:flex;flex-direction:row;align-items:center;font-size:12px}.mail-composer-weathers input{width:auto}
+.mail-composer-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:12px 0;font-size:13px;color:#aec2d8}
+.mail-composer-field{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:end;margin:12px 0}
+.mail-composer-output{min-width:0}.mail-composer details{margin-top:20px;font-size:13px}.mail-composer details p{overflow-wrap:anywhere}
+#mail-compose-errors p{color:#ffb5b5}#mail-compose-warnings p{color:#f5d58f}#mail-compose-status{color:#a6e8c9}
+@media(max-width:900px){.mail-composer-columns{grid-template-columns:1fr}.mail-composer{padding:16px}}
+@media(max-width:480px){.mail-composer-inputs{grid-template-columns:1fr}.mail-composer-field{grid-template-columns:1fr}.mail-composer-field button{justify-self:start}}

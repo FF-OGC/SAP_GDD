@@ -14,12 +14,15 @@ function uiPreviewPage() {
     '<div id="ui-preview-tabs" class="ui-preview-tabs"></div>' +
     uiStageToolbar() +
     '<div id="ui-preview-workspace" class="ui-preview-workspace"><div id="ui-preview-stage" class="ui-preview-stage"></div><aside id="ui-player-panel" class="ui-player-panel"></aside></div>' +
+    '<section id="mail-composer" class="mail-composer" hidden></section>' +
     '<section id="ui-resource-panel" class="ui-resource-panel"><h2>Resource đang dùng</h2><label>Tìm entity/path <input id="ui-resource-search" type="search" placeholder="Tên hoặc đường dẫn"></label><div class="ui-resource-scroll"><table><thead><tr><th>Entity / path</th><th>Sprite</th><th>Trạng thái</th><th>Alpha .ui / web</th><th>Image / màu</th><th>Text / localization</th></tr></thead><tbody id="ui-resource-rows"></tbody></table></div></section></div>';
 }
 
 async function updateUiPreviewPage(selectedId = null) {
   const tabs = document.getElementById("ui-preview-tabs");
   if (!tabs) return;
+  const composer = document.getElementById("mail-composer");
+  composer.hidden = true; composer.replaceChildren(); composer.oninput = composer.onchange = composer.onclick = null;
   const loadToken = uiPreview.loadToken = (uiPreview.loadToken || 0) + 1;
   try {
     uiPreview.registry ||= await fetchUiResource("./data/ui/registry.json").then(checkUiJson);
@@ -63,6 +66,7 @@ async function updateUiPreviewPage(selectedId = null) {
     const audit = auditUiPreviewDom(screen.tree, rendered.canvas);
     document.getElementById("ui-preview-meta").dataset.uiAudit = JSON.stringify(audit);
     document.getElementById("ui-preview-meta").textContent += ` · DOM ${audit.actual}/${audit.expected}, lệch ${audit.mismatches}`;
+    if (entry.id === "mail") initMailComposer(uiPreview.controller, loadToken);
   } catch (error) {
     if (loadToken !== uiPreview.loadToken || s.page !== "uipreview") return;
     document.getElementById("ui-preview-stage").textContent = "Không tải được UI Preview: " + error.message;

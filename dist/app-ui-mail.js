@@ -2,6 +2,8 @@
 
 function initMailPreview(screen, rules, rendered) {
   const state = { tab: "notice", selected: 0, mails: [], ready: true }, c = rules.constants;
+  const sourceManifest = uiPreview.manifest;
+  let simulationSpriteKeys = {};
   const nodes = new Map();
   (function walk(n) { nodes.set(n.id, n); n.children.forEach(walk); })(screen.tree);
   const byKey = key => rendered.byId.get(rules.widgetIds[key]);
@@ -33,7 +35,7 @@ function initMailPreview(screen, rules, rendered) {
   function color(el, value, source = at("RefreshMailTitles")) { if (!el) return; node(el)?.text ? uiRenderer.setTextColor(el, value) : uiRenderer.tint(el, value); record(el, "Color", value, source); }
   function image(el, name, source = at("RefreshMailTitles")) {
     if (!el) return;
-    const key = rules.spriteKeys[name], props = node(el)?.image || node(el)?.button || {};
+    const key = simulationSpriteKeys[name] || rules.spriteKeys[name], props = node(el)?.image || node(el)?.button || {};
     if (key) uiRenderer.setSprite(el, key, { ...props, color: "#FFFFFF" }, uiPreview.manifest);
     else uiRenderer.setImage(el, "", props);
     record(el, "SpriteName", { name, key }, source);
@@ -126,7 +128,9 @@ function initMailPreview(screen, rules, rendered) {
   const panel = document.getElementById("ui-player-panel");
   panel.innerHTML = `<h2>Mô phỏng Mail</h2><p>Thư Hệ thống là dữ liệu thử tổng hợp; nhận thử chỉ xóa thư trong RAM.</p><label>Hộp thư <select id="mail-fixture"><option value="empty">Trống</option><option value="sample">${rules.fixtures.length} thư thử</option><option value="full">Đầy ${c.MAX_MAILS} thư</option></select></label><label>Ô trống trong nhà (thử) <input id="mail-slots" type="number" min="0" value="10"></label><label>Thu nhập Money/s (thử) <input id="mail-income" type="number" value="100" min="0"></label><label><input type="checkbox" id="mail-ready" checked> Database sẵn sàng (thử trạng thái tải)</label><button id="mail-reset" type="button">Khôi phục mô phỏng</button><p id="mail-result" aria-live="polite"></p>`;
   function load() {
+    uiPreview.manifest = sourceManifest; simulationSpriteKeys = {};
     const mode = panel.querySelector("#mail-fixture").value;
+    if (mode === "custom") panel.querySelector("#mail-fixture").value = "sample";
     state.mails = mode === "empty" ? [] : Array.from({ length: mode === "full" ? c.MAX_MAILS : rules.fixtures.length }, (_, i) => structuredClone(rules.fixtures[i % rules.fixtures.length]));
     state.selected = 0; panel.querySelector("#mail-result").textContent = ""; refresh();
   }
@@ -150,5 +154,18 @@ function initMailPreview(screen, rules, rendered) {
     }
   }
   rendered.canvas.addEventListener("click", click); refresh();
-  return { state, refresh, dispose() { rendered.canvas.removeEventListener("click", click); panel.onchange = panel.onclick = null; } };
+  return { state, refresh, setSimulatedMail(mail, resources) {
+    if (mail && mail.rewards.length > 5) throw new Error("Mail simulation supports at most five rewards");
+    simulationSpriteKeys = resources.spriteKeys;
+    uiPreview.manifest = { ...sourceManifest, sprites: [...sourceManifest.sprites, ...resources.sprites] };
+    state.mails = mail ? [structuredClone(mail)] : []; state.tab = "system"; state.selected = 0; state.ready = true;
+    panel.querySelector("#mail-ready").checked = true;
+    const select = panel.querySelector("#mail-fixture");
+    if (!select.querySelector('[value="custom"]')) { const option = new Option("Mail tự soạn (GMT)", "custom"); option.disabled = true; select.add(option); }
+    select.value = "custom";
+    rendered.canvas.classList.remove("ui-closed"); uiPreview.open = true;
+    document.getElementById("ui-open-toggle").textContent = "Đóng UI";
+    panel.querySelector("#mail-result").textContent = mail ? "Đang xem mail tự soạn. Field GMT ở công cụ bên dưới." : "Mail tự soạn chưa hợp lệ.";
+    refresh();
+  }, dispose() { uiPreview.manifest = sourceManifest; rendered.canvas.removeEventListener("click", click); panel.onchange = panel.onclick = null; } };
 }

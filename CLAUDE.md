@@ -14,6 +14,15 @@ Compensate/** hay mở rộng quyền giftcode. Dữ liệu thư người chơi/
 không được mirror; tình huống thử trên web phải ghi rõ là mô phỏng.
 Game vẫn chỉ đọc. Đây là scope bổ sung theo yêu cầu Mail của người dùng.
 
+Theo yêu cầu tạo bộ soạn quà/GMT ngày 2026-11-01, cho phép đọc controller
+`Assets/GMT/Scripts/HudMailsManager.fcg`, UtilsGMTMails, MailsManager,
+RewardManager, DataUtils và enum TypeReward/RewardValue/DataKey trong
+EditorGenLib.fcc để xuất field GMT. Catalog chỉ chiếu ID/tên/rarity và
+thuộc tính cần chọn từ CSV Pet, mutation, weatherEffects, Mutagen,
+WeatherGen, MailDetails; tái dùng sprite snapshot GDD. Không đọc UID/map
+presets, dữ liệu mailbox thật, giftcode hay Compensate; không gửi mail.
+Bộ soạn là công cụ ngoài canvas; không thay thiết kế game Preview/Proposal.
+
 ## Đăng ký UI Shop (2026-11-01)
 
 Theo yêu cầu adapt Shop vào UI Preview, cho phép đọc `Assets/HUDs/Shop.ui`,

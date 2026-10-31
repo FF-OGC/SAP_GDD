@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-01",
+  "cases": [
+    {
+      "case": "user-example",
+      "fields": {
+        "GiftId": "1",
+        "IsConfig": "0",
+        "RewardAmounts": "10,500",
+        "RewardTypes": "3,7",
+        "RewardValues": "{5:10}{5:500}"
+      }
+    },
+    {
+      "case": "invalid-zero",
+      "fields": {
+        "GiftId": "",
+        "IsConfig": "",
+        "RewardAmounts": "",
+        "RewardTypes": "",
+        "RewardValues": ""
+      }
+    },
+    {
+      "case": "max-five",
+      "count": "5/5 quà"
+    },
+    {
+      "case": "nested-five-rewards",
+      "fields": {
+        "GiftId": "1",
+        "IsConfig": "0",
+        "RewardAmounts": "2,1,1,1,2",
+        "RewardTypes": "1,10,16,4,5",
+        "RewardValues": "{0:1;1:2;2:1}{7:0}{12:0}{1:1;4:COMMON}{6:2}"
+      }
+    },
+    {
+      "case": "money-rank-10m",
+      "fields": {
+        "GiftId": "1",
+        "IsConfig": "0",
+        "RewardAmounts": "30100,1",
+        "RewardTypes": "2,10",
+        "RewardValues": "{5:30100}{7:0}"
+      }
+    },
+    {
+      "case": "copy-field",
+      "value": "{5:10}{5:500}"
+    },
+    {
+      "case": "copy-all",
+      "status": "Đã sao chép tất cả field."
+    },
+    {
+      "case": "desktop-1440",
+      "overflow": -15
+    },
+    {
+      "case": "mobile-390",
+      "overflow": -15,
+      "fields": {
+        "GiftId": "1",
+        "IsConfig": "0",
+        "RewardAmounts": "10,500",
+        "RewardTypes": "3,7",
+        "RewardValues": "{5:10}{5:500}"
+      }
+    },
+    {
+      "case": "regression-collection",
+      "meta": "107 entity · 2 sprite thiếu · root 1500×750 từ .ui · khung 18:9; scaler và safe area chưa xác minh · DOM 107/107, lệch 0",
+      "composerVisible": false
+    },
+    {
+      "case": "regression-activities",
+      "meta": "286 entity · 4 sprite thiếu · root 1500×750 từ .ui · khung 18:9; scaler và safe area chưa xác minh · DOM 286/286, lệch 0",
+      "composerVisible": false
+    },
+    {
+      "case": "regression-shop",
+      "meta": "70 entity · 10 sprite thiếu · root 1500×750 từ .ui · khung 18:9; scaler và safe area chưa xác minh · DOM 70/70, lệch 0",
+      "composerVisible": false
+    },
+    {
+      "case": "regression-mail",
+      "meta": "128 entity · 5 sprite thiếu · root 1500×750 từ .ui · khung 18:9; scaler và safe area chưa xác minh · DOM 128/128, lệch 0",
+      "composerVisible": true
+    },
+    {
+      "case": "rare-summon-resource",
+      "fields": {
+        "GiftId": "1",
+        "IsConfig": "0",
+        "RewardAmounts": "1,500",
+        "RewardTypes": "4,7",
+        "RewardValues": "{1:1;4:RARE}{5:500}"
+      },
+      "sprite": "gdd://mail-composer/random:RARE"
+    },
+    {
+      "case": "mail-template",
+      "id": "3"
+    }
+  ],
+  "console": [],
+  "delivery": "not executed; local fields/preview only"
+}
