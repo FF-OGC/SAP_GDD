@@ -29,6 +29,13 @@
       "rules": "./data/ui/mail-rules.json"
     },
     {
+      "id": "shop-event",
+      "name": "Shop Event",
+      "status": "ready",
+      "data": "./data/ui/shop-event.json",
+      "rules": "./data/ui/shop-event-rules.json"
+    },
+    {
       "id": "mission",
       "name": "Mission",
       "status": "planned"

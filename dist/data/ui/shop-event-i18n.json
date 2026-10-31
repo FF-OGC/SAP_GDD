@@ -1,0 +1,354 @@
+{
+  "source": "Assets/Localization/key.csv",
+  "entries": {
+    "CHICK": {
+      "en": "Chick",
+      "vi": "Gà Con"
+    },
+    "BROWNBEAR": {
+      "en": "Brown Bear",
+      "vi": "Gấu Nâu"
+    },
+    "MANATEE": {
+      "en": "Manatee",
+      "vi": "Bò Biển"
+    },
+    "OSTRICH": {
+      "en": "Ostrich",
+      "vi": "Đà Điểu"
+    },
+    "SMALLWHALE": {
+      "en": "Baby Whale",
+      "vi": "Cá Voi Con"
+    },
+    "GORILLA": {
+      "en": "Gorilla",
+      "vi": "Khỉ Đột"
+    },
+    "BELUGA": {
+      "en": "Beluga",
+      "vi": "Cá Voi Trắng"
+    },
+    "NARWHAL": {
+      "en": "Narwhal",
+      "vi": "Kỳ Lân Biển"
+    },
+    "HUSKY": {
+      "en": "Husky",
+      "vi": "Chó Husky"
+    },
+    "PLATYPUS": {
+      "en": "Platypus",
+      "vi": "Thú Mỏ Vịt"
+    },
+    "JAGUAR": {
+      "en": "Jaguar",
+      "vi": "Báo Đen"
+    },
+    "REINDEER": {
+      "en": "Reindeer",
+      "vi": "Tuần Lộc"
+    },
+    "SNOWMAN": {
+      "en": "Snowman",
+      "vi": "Người Tuyết"
+    },
+    "MOODENG": {
+      "en": "Moo Deng",
+      "vi": "Moo Deng"
+    },
+    "ARCTICFOX": {
+      "en": "Arctic Fox",
+      "vi": "Cáo Tuyết"
+    },
+    "PENGUIN": {
+      "en": "Penguin",
+      "vi": "Chim Cánh Cụt"
+    },
+    "KANGAROO": {
+      "en": "Kangaroo",
+      "vi": "Chuột Túi"
+    },
+    "PEACOCK": {
+      "en": "Peacock",
+      "vi": "Công"
+    },
+    "COW": {
+      "en": "Cow",
+      "vi": "Bò Sữa"
+    },
+    "SHARK": {
+      "en": "Shark",
+      "vi": "Cá Mập"
+    },
+    "BULL": {
+      "en": "Bull",
+      "vi": "Bò Đực"
+    },
+    "OX": {
+      "en": "Ox",
+      "vi": "Trâu"
+    },
+    "TURKEY": {
+      "en": "Turkey",
+      "vi": "Gà Tây"
+    },
+    "FRILLNECKEDLIZARD": {
+      "en": "Frill Necked Lizard",
+      "vi": "Thằn Lằn Cổ Diềm"
+    },
+    "TORTOISE": {
+      "en": "Tortoise",
+      "vi": "Rùa Cạn"
+    },
+    "IGUANA": {
+      "en": "Iguana",
+      "vi": "Rồng Nam Mỹ"
+    },
+    "WOMBAT": {
+      "en": "Wombat",
+      "vi": "Gấu Mũi Trần"
+    },
+    "GOLDFISH": {
+      "en": "Goldfish",
+      "vi": "Cá Vàng"
+    },
+    "LUCKYBOXLEGENDARY": {
+      "en": "Lucky Box",
+      "vi": "Túi mù"
+    },
+    "LUCKYBOXMYTHIC": {
+      "en": "Lucky Box",
+      "vi": "Túi mù"
+    },
+    "RARITY_COMMON": {
+      "en": "COMMON",
+      "vi": "THƯỜNG"
+    },
+    "RARITY_LEGENDARY": {
+      "en": "LEGENDARY",
+      "vi": "HUYỀN THOẠI"
+    },
+    "RARITY_MYTHIC": {
+      "en": "MYTHIC",
+      "vi": "THẦN THOẠI"
+    },
+    "RARITY_APEX": {
+      "en": "APEX",
+      "vi": "TỐI THƯỢNG"
+    },
+    "MUTATION_PRISMATIC": {
+      "en": "Prismatic",
+      "vi": "Đa sắc"
+    },
+    "MUTATION_SPARKLE": {
+      "en": "Sparkle",
+      "vi": "Lấp Lánh"
+    },
+    "HUD_REBIRTH_MULTI": {
+      "en": "Income",
+      "vi": "Thu nhập"
+    },
+    "HUD_SHOP_BUY_BUTTON": {
+      "en": "BUY",
+      "vi": "MUA"
+    },
+    "HUD_SHOP_LIMIT": {
+      "en": "Limit: {0}/{1}",
+      "vi": "Giới hạn: {0}/{1}"
+    },
+    "HUD_TITLE_SHOP_EVENT": {
+      "en": "SHOP EVENT",
+      "vi": "CỬA HÀNG SỰ KIỆN "
+    },
+    "HUD_EVENT_TOOLTIP_REWARD_COLLECTOR": {
+      "en": "List of obtainable rewards",
+      "vi": "Danh sách quà có thể nhận"
+    },
+    "HUD_EVENT_RARITY_CONTRACT_LIMIT": {
+      "en": "Completed: {0} / {1}",
+      "vi": "Hoàn Thành: {0} / {1}"
+    },
+    "HUD_SHOP_EVENT_ITEM_RANDOMITEM": {
+      "en": "Random Item",
+      "vi": "Vật phẩm ngẫu nhiên"
+    },
+    "HUD_SHOP_EVENT_ITEM_RANDOMPET": {
+      "en": "Random Pet",
+      "vi": "Thú cưng ngẫu nhiên"
+    },
+    "HUD_SHOP_EVENT_DETAILS_RANDOMITEM": {
+      "en": "You will have chance to receive Money, Pet coin or Dust.",
+      "vi": "Bạn sẽ có cơ hội nhận một trong các vật phẩm: tiền, xu thú cưng hoặc mây."
+    },
+    "HUD_SHOP_EVENT_DETAILS_RANDOMPET": {
+      "en": "You will receive a random Mythic Pet.",
+      "vi": "Bạn sẽ được nhận một Thú cưng Thần Thoại ngẫu nhiên."
+    },
+    "HUD_SHOP_EVENT_DETAILS_SPECIALPET": {
+      "en": "You will receive special Pet of this event.",
+      "vi": "Bạn sẽ được nhận Thú cưng đặc biệt của sự kiện này."
+    },
+    "HUD_SHOP_EVENT_ITEM_DAILY_SHARD": {
+      "en": "Badge Free",
+      "vi": "Huy hiệu miễn phí"
+    },
+    "HUD_SHOP_EVENT_DETAILS_DAILY_SHARD": {
+      "en": "You will receive 10 free badges every day.",
+      "vi": "Bạn sẽ nhận được 10 huy hiệu miễn phí mỗi ngày."
+    },
+    "HUD_SHOP_EVENT_DETAILS_PET_LIMITED": {
+      "en": "The pet is exclusively available in this event only.",
+      "vi": "Thú cưng chỉ xuất hiện độc quyền trong sự kiện lần này."
+    },
+    "HUD_SHOP_EVENT_END_LABEL": {
+      "en": "End:",
+      "vi": "Kết thúc sau:"
+    },
+    "HUD_SHOP_EVENT_DETAILS_BASECOLOR": {
+      "en": "Unlock ARCANE base in house decoration",
+      "vi": "Mở khóa nhà HUYỄN THUẬT trong trang trí nhà"
+    },
+    "HUD_SHOP_EVENT_RECOMMENDED_ITEMS_TITLE": {
+      "en": "EXCLUSIVE ITEMS",
+      "vi": "VẬT PHẨM ĐỘC QUYỀN"
+    },
+    "HUD_SHOP_EVENT_GENERAL_ITEMS_TITLE": {
+      "en": "GENERAL ITEMS",
+      "vi": "VẬT PHẨM KHÁC"
+    },
+    "HUD_SHOP_EVENT_SUBMIT_PET": {
+      "en": "Select Pets To Submit",
+      "vi": "Chọn Thú Cưng Để Nộp"
+    },
+    "HUD_SHOP_EVENT_TAB_SHOP": {
+      "en": "SHOP",
+      "vi": "CỬA HÀNG"
+    },
+    "HUD_SHOP_EVENT_TAB_TASK": {
+      "en": "TASK",
+      "vi": "NHIỆM VỤ"
+    },
+    "HUD_SHOP_EVENT_DIALOG_OPEN_SHOP": {
+      "en": "I want to shop!",
+      "vi": "Tôi muốn đổi quà!"
+    },
+    "HUD_SHOP_EVENT_DIALOG_OPEN_TASK": {
+      "en": "What should I do?",
+      "vi": "Tôi cần làm gì?"
+    },
+    "HUD_SHOP_EVENT_DIALOG_SUBMIT_PETS": {
+      "en": "I want to submit Pets!",
+      "vi": "Tôi muốn nộp Thú cưng!"
+    },
+    "HUD_SHOP_EVENT_TASK_SUBMISSION_TITLE": {
+      "en": "SUBMISSION TASK REQUIREMENTS",
+      "vi": "YÊU CẦU NHIỆM VỤ"
+    },
+    "HUD_SHOP_EVENT_TASK_REWARD_TITLE": {
+      "en": "REWARD",
+      "vi": "PHẦN THƯỞNG"
+    },
+    "HUD_ACTIVITIES_CLAIMED": {
+      "en": "CLAIMED",
+      "vi": "ĐÃ NHẬN"
+    },
+    "HUD_FLOOR": {
+      "en": "Floor {0}",
+      "vi": "Tầng {0}"
+    },
+    "HUD_REWARD_DETAIL_PET": {
+      "en": "Price: {0}\r\nValue: {1}/s",
+      "vi": "Giá tiền: {0}\r\nGiá trị: {1}/s"
+    },
+    "HUD_EVENT_METEORITE_HIT_CAP": {
+      "en": "Meteorite gems left today\r\n{0}/{1}",
+      "vi": "Gem đánh thiên thạch còn lại hôm nay\r\n{0}/{1}"
+    },
+    "HUD_ITEM_WEATHERGEN": {
+      "en": "Weather Drop",
+      "vi": "Tinh chất"
+    },
+    "HUD_CLAIM": {
+      "en": "CLAIM",
+      "vi": "NHẬN"
+    },
+    "HUD_CLAIM_REWARD": {
+      "en": "CLAIM",
+      "vi": "NHẬN THƯỞNG"
+    },
+    "HUD_DO": {
+      "en": "DO",
+      "vi": "TỚI LUÔN"
+    },
+    "HUD_SUBMIT": {
+      "en": "SUBMIT",
+      "vi": "NỘP"
+    },
+    "ANY_RARITY": {
+      "en": "Any {0}",
+      "vi": "{0} bất kỳ"
+    },
+    "TIME_YEARS": {
+      "en": "{0} years",
+      "vi": "{0} năm"
+    },
+    "TIME_YEAR": {
+      "en": "{0} year",
+      "vi": "{0} năm"
+    },
+    "TIME_MONTHS": {
+      "en": "{0} months",
+      "vi": "{0} tháng"
+    },
+    "TIME_MONTH": {
+      "en": "{0} month",
+      "vi": "{0} tháng"
+    },
+    "TIME_DAYS": {
+      "en": "{0} days",
+      "vi": "{0} ngày"
+    },
+    "TIME_DAY": {
+      "en": "{0} day",
+      "vi": "{0} ngày"
+    },
+    "TIME_HOURS": {
+      "en": "{0} hours",
+      "vi": "{0} giờ"
+    },
+    "TIME_HOUR": {
+      "en": "{0} hour",
+      "vi": "{0} giờ"
+    },
+    "TIME_MINUTES": {
+      "en": "{0} minutes",
+      "vi": "{0} phút"
+    },
+    "TIME_MINUTE": {
+      "en": "{0} minute",
+      "vi": "{0} phút"
+    },
+    "TIME_SECONDS": {
+      "en": "{0} seconds",
+      "vi": "{0} giây"
+    },
+    "TIME_SECOND": {
+      "en": "{0} second",
+      "vi": "{0} giây"
+    },
+    "HUD_EVENT_RARITY_DAILY_TASK_LOGIN": {
+      "en": "Log in",
+      "vi": "Đăng nhập"
+    },
+    "HUD_EVENT_RARITY_DAILY_TASK_FISH": {
+      "en": "Fish",
+      "vi": "Câu cá"
+    },
+    "HUD_EVENT_RARITY_DAILY_TASK_DIG": {
+      "en": "Dig",
+      "vi": "Đào kho báu"
+    }
+  },
+  "missing": []
+}

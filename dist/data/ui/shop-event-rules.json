@@ -1,0 +1,2679 @@
+{
+  "sourceCommit": "471a62bb8a55ad735cfeebf5a0a315730df90daa",
+  "uiSha256": "27541d71b8773318b8d311ab619d69dc40f802ebfcae43a9d1a4ebbbe9c4a6a3",
+  "controller": "Assets/Scripts/Events/HUD/HudShopEvent.fcg",
+  "sourceFiles": [
+    {
+      "file": "Assets/Scripts/Events/HUD/HudShopEvent.fcg",
+      "sha256": "bc1df3c230458dd612f61c47edb60086c90c7a50f3b244d17ce20d937a1b48e4"
+    },
+    {
+      "file": "Assets/Scripts/Events/Core/EventShopConfigs.fcg",
+      "sha256": "59442b731c26479bf10a7bf073e349b7e6258b5cede8a5e48d79e3588753f97f"
+    },
+    {
+      "file": "Assets/Scripts/Events/Core/EventShopManager.fcg",
+      "sha256": "584e9a9255a3f6f0089be899a49612f2d0840f1ff4c9a4b897091afad0c8900a"
+    },
+    {
+      "file": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg",
+      "sha256": "2f68108aa1b677f5dbbf8423d612a5d8282f746aaaaf43858d76dff3c0a94fc0"
+    },
+    {
+      "file": "Assets/Scripts/Events/Core/EventSettings.fcg",
+      "sha256": "73f4c331f8f54416cc32bbb715823621729ded741b2e466f264a3bf1f491530f"
+    },
+    {
+      "file": "Assets/Scripts/Configs/PetConfigs.fcg",
+      "sha256": "b8b9da79606e10c84027fefcb364682b3d97cc82b4fd534d83860125f528d19c"
+    },
+    {
+      "file": "Assets/Scripts/Configs/MutationConfigs.fcg",
+      "sha256": "ad07f8876fb30048ae88e296530edbeba6e574531173aba4d9ba129cb5123155"
+    },
+    {
+      "file": "Assets/Scripts/Configs/WeatherConfigs.fcg",
+      "sha256": "0964865f0c17d7f73ff738d6fa792fa64cc0b187ac10b5ede4028fd29755b7db"
+    },
+    {
+      "file": "Assets/Scripts/Configs/WeatherGenConfigs.fcg",
+      "sha256": "a54800edd9de4ffc167cca6b2098c5de1837c31c33e4aa79262bb4b00335f404"
+    },
+    {
+      "file": "Assets/Scripts/Configs/MutagenConfigs.fcg",
+      "sha256": "c4b6990f03d0337411279a6d592fedb54236145a3a91ae4f6e16725ac7d016d6"
+    },
+    {
+      "file": "Assets/Scripts/Configs/BaseColorConfigs.fcg",
+      "sha256": "25643649269b575fc0624d8dfca1aad4e3267764d4486e57b038d1656d571f71"
+    },
+    {
+      "file": "Assets/Scripts/Configs/MailConfigs.fcg",
+      "sha256": "c313554b773aa781e5c6844ef4368af059bc175ca7fafafb47e12b5b729c1289"
+    },
+    {
+      "file": "Assets/Scripts/Configs/RewardRandomConfig.fcg",
+      "sha256": "ac1d8690640082b713c1874c1aac7075489ef5bb9ac1eedaf805b6fd5113cf2d"
+    },
+    {
+      "file": "Assets/Scripts/Configs/ItemConfigs.fcg",
+      "sha256": "b1414e65a378db22c96858e53485a60fed2b96a6bdfa56afbb1a34b4369ee135"
+    },
+    {
+      "file": "Assets/Scripts/Events/RarityContract/EventRarityContractConfigs.fcg",
+      "sha256": "07e3d553b78aa5d10644013f0429615f2a41584726d3e4b930eaece8ca81033a"
+    },
+    {
+      "file": "Assets/Scripts/Events/Meteorite/EventMeteoriteConfig.fcg",
+      "sha256": "3d1e91553f06c71e1ac28783588cb0a5f5a9f3eab331c552487783b5f2d517a8"
+    },
+    {
+      "file": "Assets/Scripts/Utils/BigNumberHandler.fcg",
+      "sha256": "404cdbc68440f4654a085a7adc2cbc5ae462b008fd3cac7397409bca1249f46e"
+    },
+    {
+      "file": "Assets/Scripts/Utils/UIUtils.fcg",
+      "sha256": "e97b481d8ac790acf5651808c7421d4393c6be7d7264154fad95cfeee15ebcfe"
+    },
+    {
+      "file": "ProjectSettings/ResourceRegisteration.asset",
+      "sha256": "9166b4e138c086e0cb2c13b2bb2cc205fc7c682fcb3e0bd23e0f9e0fc0f2a01b"
+    },
+    {
+      "file": "Assets/CSV/Event/shopEventItems.csv",
+      "sha256": "536ff19a7c338cac8f96f435ed07012abea4bb1064e1a7a0aeb098dc7eecccba"
+    },
+    {
+      "file": "Assets/CSV/Event/EventSchedule.csv",
+      "sha256": "e0cd1ee0c57a4e203b58c76fc6a64cf7a32bd9d3fde3fabde390d07e05a3031f"
+    },
+    {
+      "file": "Assets/CSV/Pet.csv",
+      "sha256": "f3cf8ccfe62493c72bc05195e90c83c8bc886cb0c7aa7bf2cf2a53b7e054488a"
+    },
+    {
+      "file": "Assets/CSV/mutation.csv",
+      "sha256": "8c496bb4a5e197ece437c9e7334c2e75e5ff5154714e3c7a8e6a29784077141e"
+    },
+    {
+      "file": "Assets/CSV/weatherEffects.csv",
+      "sha256": "27525f5578e82fd8eedd8d643f12b83a0ff9fbe5947447199d4590de0ad9fd3e"
+    },
+    {
+      "file": "Assets/CSV/Mutagen.csv",
+      "sha256": "ddf349123d94d80e4d04c65c166adf9f152b15225875ca276f624f51e93e5b71"
+    },
+    {
+      "file": "Assets/CSV/WeatherGen.csv",
+      "sha256": "5e93cb75758105453c08750976a150c6ae8a086b44cbed6f961ad49e91edd644"
+    },
+    {
+      "file": "Assets/CSV/reward.csv",
+      "sha256": "8c205ba5d83dea07ded5cdb9aaf671aec7f85027d006bc5f51a3a35f59df6348"
+    },
+    {
+      "file": "Temp/UGCLanguage/editorGen/EditorGenLib.fcc",
+      "sha256": "9a3eeef2b3509b10cf16d0bf1c841dde458bf7c33b9c72e6abfe6e180c8898ba"
+    },
+    {
+      "file": "Assets/CSV/poolRewardSecret.csv",
+      "sha256": "cd384aeccdcc5f349ab4ffff7df963e69222aadb6c5c35e6c012974cb54013b3"
+    },
+    {
+      "file": "Assets/CSV/PoolRandomItem.csv",
+      "sha256": "0ac8813bb5168c84a60be16548ecd21ade6d3df8b8009295338e64757c850fbc"
+    },
+    {
+      "file": "Assets/CSV/Event/RarityContract/RarityDailyTask.csv",
+      "sha256": "b516798945fc9748c8cdfeb9cc7eac642b6faa07baba39a973ec9cac2a87f961"
+    }
+  ],
+  "projections": [
+    {
+      "source": "Assets/CSV/giftcode.csv",
+      "fields": [
+        "ID",
+        "Reward"
+      ],
+      "sha256": "4ed5597ceefc4d5c5737b16fc8372997b7f3a8d01d693eaf38215a83bce47917"
+    }
+  ],
+  "widgetIds": {
+    "ShopWidget": "LGP7B8P1",
+    "BalanceLabel": "GqpX4B1B",
+    "ExclusiveItem": "vQHmZp1e",
+    "RecommendedItems": "uFqDXaFg",
+    "GeneralItems": "nIquT0o9",
+    "BuyButton": "IjhiH9ZZ",
+    "ItemDetails": "TO9m2S8z",
+    "RewardsLayout": "EdZMik7g",
+    "CostLabel": "nJ7Uo8Yj",
+    "WalletGemIcon": "xzVXWkcF",
+    "CostGemIcon": "BwdLf41a",
+    "CountdownLabel": "CUOmNim5",
+    "TabsLayout": "tPbI8cCW",
+    "ShopView": "KcvH0Qtz",
+    "TaskView": "Na0Z8Lfd",
+    "SubmitPets": "sd1gRIUX",
+    "Dialog": "lItbanUZ",
+    "ItemDetailsNameLabel": "KgPQtx0P"
+  },
+  "constants": {
+    "COLOR_NOT_ENOUGH_GEMSTONE": "#FE3232",
+    "COLOR_ENOUGH_GEMSTONE": "#00C2FF",
+    "BUY_BUTTON_ENOUGH_COLOR": "#FFFFFF",
+    "BUY_BUTTON_LABEL_ENOUGH_COLOR": "#65401B",
+    "COST_LABEL_ENOUGH_COLOR": "#324765",
+    "BUY_BUTTON_NOT_ENOUGH_COLOR": "#999999",
+    "BUY_BUTTON_LABEL_NOT_ENOUGH_COLOR": "#333333",
+    "COST_LABEL_NOT_ENOUGH_COLOR": "#FF0000",
+    "TAB_SELECTED_COLOR": "#FFFFFF",
+    "TAB_NORMAL_COLOR": "#1F64C4",
+    "DAILY_TASK_ITEM_COLOR": "#85B1EE",
+    "ITEM_LOCKED_COLOR": "#121213",
+    "ITEM_AVAILABLE_COLOR": "#FFFFFF",
+    "SUBMIT_PETS_PER_FLOOR": 6,
+    "SUBMIT_MAX_FLOORS": 4,
+    "SUBMIT_FIRST_FLOOR": 1,
+    "SUBMIT_PET_ENABLED_COLOR": "#FFFFFF",
+    "SUBMIT_PET_ENABLED_ALPHA": 1,
+    "SUBMIT_PET_DISABLED_COLOR": "#000000",
+    "SUBMIT_PET_DISABLED_ALPHA": 0.4,
+    "TASK_BUTTON_DO_LABEL_COLOR": "#FFFFFF",
+    "TASK_DETAILS_TEXT_FORMAT": "[324765]{0}[-]",
+    "TASK_ALPHA_ACTIVE": 1,
+    "TASK_ALPHA_COMPLETED": 0.5,
+    "PRIORITY_LOGIN": 0,
+    "PRIORITY_MISSION": 100,
+    "PRIORITY_ACTIVITY": 200,
+    "PRIORITY_COMPLETED_OFFSET": 1000,
+    "PRIORITY_HIDDEN": 2000,
+    "SHOP_TAB_INDEX": 0,
+    "TASK_TAB_INDEX": 1,
+    "METEORITE_HIT_CAP_ROW_INDEX": 0,
+    "METEORITE_DAILY_TASK_ROW_OFFSET": 1,
+    "FOOTER_DEFAULT_COLOR": "#8DA6B6",
+    "RECOMMENDED_ITEMS_COUNT": 2,
+    "EXCLUSIVE_SHOP_ITEM_COUNT": 1,
+    "NO_SELECTED_SHOP_ITEM_ID": -1,
+    "NO_SHOP_DETAIL_ITEM_ID": 0,
+    "NO_SHOP_COOLDOWN_REMAINING_MS": 0,
+    "WEATHER_GEN_THUMBNAIL_SCALE": 0.7,
+    "recommendedCount": 0,
+    "generalCount": 0,
+    "_SubmitCurrentFloor": 0,
+    "prompt": "PROMPT_EVENT_RARITY_COMPLETE_SUBMISSION"
+  },
+  "bindings": {
+    "HandleAwake": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:136",
+    "InitShopHUD": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:151",
+    "ShowShopEventHUD": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:207",
+    "HideShopEventHUD": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:218",
+    "IsShowing": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:223",
+    "CheckOnGoingEvent": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:231",
+    "SetCurrentEvent": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:235",
+    "GetCurrentEvent": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:243",
+    "IsCurrentEvent": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:251",
+    "OpenShopEvent": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:255",
+    "HideShopEvent": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:277",
+    "CloseShopEvent": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:281",
+    "EnsureItemWidgetCount": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:288",
+    "CacheThumbnailDefaultSize": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:321",
+    "UpdateItemThumbnailSize": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:327",
+    "UpdateShopItems": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:339",
+    "UpdateGemIcons": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:386",
+    "UpdateItemGemIcon": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:406",
+    "RenderItemWidget": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:413",
+    "SetItemFooterColor": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:457",
+    "AvailableItem": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:484",
+    "SetItemPrice": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:510",
+    "SetItemLimitLabel": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:515",
+    "SetBaseColorUnlock": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:527",
+    "SetLimitDailyShard": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:535",
+    "SetPriceByTypeEvent": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:542",
+    "GetStringLimitByTypeEvent": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:546",
+    "SetLabelLimitByTypeEvent": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:550",
+    "SetSpecialPetDetailsLabel": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:560",
+    "GetLockByTypeEvent": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:594",
+    "SetLimitSpecialEvent": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:598",
+    "UpdateGem": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:622",
+    "UpdateGemForEvent": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:630",
+    "GetAllItemWidgets": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:639",
+    "UpdateEnoughGemstoneColor": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:651",
+    "UpdateSelectedItemCost": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:664",
+    "TurnOffSelect": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:678",
+    "TurnOffAllSelect": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:702",
+    "HandleBuyButton": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:711",
+    "FindItemForCoolDown": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:724",
+    "FindItemForCoolDownById": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:728",
+    "CoolDownItem": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:756",
+    "TurnOnDetailItem": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:778",
+    "SetDetailDescItem": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:787",
+    "SetButtonCanBuy": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:809",
+    "UpdateObtainableRewards": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:826",
+    "RenderRewardWidget": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:850",
+    "SelectTab": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:868",
+    "HasTaskTab": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:879",
+    "HasSubmitPetTab": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:883",
+    "UpdateTaskTabVisibility": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:887",
+    "UpdateTaskView": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:898",
+    "UpdateMeteoriteTaskView": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:955",
+    "RenderMeteoriteHitCapRow": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:994",
+    "RenderMeteoriteDailyTaskRow": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1008",
+    "SetTaskRowAlpha": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1037",
+    "RenderDailyTaskRow": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1060",
+    "RenderMissionRow": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1098",
+    "RenderTaskButton": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1134",
+    "RenderTab": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1149",
+    "ShowTimeCoolDown": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1163",
+    "IsOpenShopEventWidget": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1176",
+    "IsInShopTrigger": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1180",
+    "UpdateDialogVisibility": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1184",
+    "SetIsInShopTrigger": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1194",
+    "OpenSubmitPets": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1203",
+    "CloseSubmitPets": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1226",
+    "UpdateSubmitPetsOnFloor": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1236",
+    "HandleSelectSubmitPet": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1259",
+    "HandleSubmitPets": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1292",
+    "RefreshSubmitPets": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1303",
+    "HandleShopEventButton": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1314",
+    "HandleOpenShopEvent": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1375",
+    "HandleTaskButton": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1401",
+    "HandleMeteoriteTaskButton": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1430",
+    "InitShopEventConfig": "Assets/Scripts/Events/Core/EventShopConfigs.fcg:39",
+    "LoadShopEventConfig": "Assets/Scripts/Events/Core/EventShopConfigs.fcg:50",
+    "GetShopItemsConfigFromCSV": "Assets/Scripts/Events/Core/EventShopConfigs.fcg:58",
+    "IsSupportedItem": "Assets/Scripts/Events/Core/EventShopConfigs.fcg:91",
+    "GetItemBehavior": "Assets/Scripts/Events/Core/EventShopConfigs.fcg:114",
+    "GetItemKind": "Assets/Scripts/Events/Core/EventShopConfigs.fcg:118",
+    "GetItemRewardType": "Assets/Scripts/Events/Core/EventShopConfigs.fcg:126",
+    "GetItemNameLocalization": "Assets/Scripts/Events/Core/EventShopConfigs.fcg:130",
+    "GetItemIconResource": "Assets/Scripts/Events/Core/EventShopConfigs.fcg:157",
+    "GetItemDetail": "Assets/Scripts/Events/Core/EventShopConfigs.fcg:176",
+    "GetItemCost": "Assets/Scripts/Events/Core/EventShopConfigs.fcg:196",
+    "GetItemTimeLock": "Assets/Scripts/Events/Core/EventShopConfigs.fcg:199",
+    "GetItemGiftID": "Assets/Scripts/Events/Core/EventShopConfigs.fcg:202",
+    "GetItemMaxPurchase": "Assets/Scripts/Events/Core/EventShopConfigs.fcg:205",
+    "IsUnlimitedSpecialPet": "Assets/Scripts/Events/Core/EventShopConfigs.fcg:208",
+    "GetListSortedIDItem": "Assets/Scripts/Events/Core/EventShopConfigs.fcg:211",
+    "GetItemShopId": "Assets/Scripts/Events/Core/EventShopConfigs.fcg:217",
+    "IsAvailableTime": "Assets/Scripts/Events/Core/EventShopConfigs.fcg:223",
+    "GetTimeAvailable": "Assets/Scripts/Events/Core/EventShopConfigs.fcg:226",
+    "GetItemPrice": "Assets/Scripts/Events/Core/EventShopManager.fcg:44",
+    "RequestBuyItem": "Assets/Scripts/Events/Core/EventShopManager.fcg:48",
+    "CheckConditionBuyItem": "Assets/Scripts/Events/Core/EventShopManager.fcg:61",
+    "NotifyError": "Assets/Scripts/Events/Core/EventShopManager.fcg:126",
+    "ProcessBuyItem": "Assets/Scripts/Events/Core/EventShopManager.fcg:143",
+    "RandomItemPool": "Assets/Scripts/Events/Core/EventShopManager.fcg:192",
+    "RandomPetPool": "Assets/Scripts/Events/Core/EventShopManager.fcg:211",
+    "SpecialPet": "Assets/Scripts/Events/Core/EventShopManager.fcg:225",
+    "UnLockBaseColor": "Assets/Scripts/Events/Core/EventShopManager.fcg:244",
+    "GetCurNumberOfPet": "Assets/Scripts/Events/Core/EventShopManager.fcg:255",
+    "GetPetEventCountSafe": "Assets/Scripts/Events/Core/EventShopManager.fcg:259",
+    "GetSpecialPetCounts": "Assets/Scripts/Events/Core/EventShopManager.fcg:268",
+    "EnsurePetEventCapacity": "Assets/Scripts/Events/Core/EventShopManager.fcg:273",
+    "SetSpecialPetCounts": "Assets/Scripts/Events/Core/EventShopManager.fcg:281",
+    "SetNumberPetEvent": "Assets/Scripts/Events/Core/EventShopManager.fcg:285",
+    "IsLockSpecialPet": "Assets/Scripts/Events/Core/EventShopManager.fcg:292",
+    "GetStringLimit": "Assets/Scripts/Events/Core/EventShopManager.fcg:296",
+    "IsLoginNewDate": "Assets/Scripts/Events/Core/EventShopManager.fcg:307",
+    "IsItemTimeLocked": "Assets/Scripts/Events/Core/EventShopManager.fcg:311",
+    "SetItemTimeLock": "Assets/Scripts/Events/Core/EventShopManager.fcg:322",
+    "GetItemTimeLockKey": "Assets/Scripts/Events/Core/EventShopManager.fcg:330",
+    "IncViewShopCount": "Assets/Scripts/Events/Core/EventShopManager.fcg:334",
+    "AddCurrency": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:23",
+    "SpendCurrency": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:46",
+    "HasEnoughCurrency": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:62",
+    "GetCurrencyBalance": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:70",
+    "GetHighestCurrencyBalance": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:74",
+    "GetGemPerDate": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:78",
+    "UpdateEventParticipationProgress": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:89",
+    "RequestClaimDailyShard": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:118",
+    "CheckConditionClaimDailyShard": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:131",
+    "ProcessClaimDailyShard": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:152",
+    "ClaimDailyShard": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:157",
+    "CanClaimDailyShard": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:174",
+    "GetDailyShardIcon": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:180",
+    "GetEventGemIcon": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:184",
+    "NotifyClaimDailyShardError": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:200",
+    "InitPetConfigs": "Assets/Scripts/Configs/PetConfigs.fcg:172",
+    "LoadPetConfigs": "Assets/Scripts/Configs/PetConfigs.fcg:198",
+    "GetPetConfigFromCSV": "Assets/Scripts/Configs/PetConfigs.fcg:207",
+    "GetLuckyBoxConfigFromCSV": "Assets/Scripts/Configs/PetConfigs.fcg:243",
+    "GetSecretFusionPetConfigFromCSV": "Assets/Scripts/Configs/PetConfigs.fcg:280",
+    "BuildPetSkinConfigs": "Assets/Scripts/Configs/PetConfigs.fcg:318",
+    "SortPetIdsByRank": "Assets/Scripts/Configs/PetConfigs.fcg:336",
+    "GetPetCount": "Assets/Scripts/Configs/PetConfigs.fcg:357",
+    "GetSecretFusionPetCount": "Assets/Scripts/Configs/PetConfigs.fcg:361",
+    "GetRoadSpawnPetIds": "Assets/Scripts/Configs/PetConfigs.fcg:365",
+    "GetPetCountByRarity": "Assets/Scripts/Configs/PetConfigs.fcg:369",
+    "GetPetId2Name": "Assets/Scripts/Configs/PetConfigs.fcg:383",
+    "GetPetName": "Assets/Scripts/Configs/PetConfigs.fcg:387",
+    "IsSkinPetId": "Assets/Scripts/Configs/PetConfigs.fcg:395",
+    "GetBasePetId": "Assets/Scripts/Configs/PetConfigs.fcg:399",
+    "GetPetSkinKey": "Assets/Scripts/Configs/PetConfigs.fcg:407",
+    "GetPetSkinPrefabKey": "Assets/Scripts/Configs/PetConfigs.fcg:415",
+    "GetPetSkinPosition": "Assets/Scripts/Configs/PetConfigs.fcg:423",
+    "GetPetSkinRotation": "Assets/Scripts/Configs/PetConfigs.fcg:431",
+    "GetPetSkinScale": "Assets/Scripts/Configs/PetConfigs.fcg:439",
+    "GetPetNameLocalization": "Assets/Scripts/Configs/PetConfigs.fcg:447",
+    "GetPetNameLocalizationColor": "Assets/Scripts/Configs/PetConfigs.fcg:451",
+    "GetPetNameLocalizationLightColor": "Assets/Scripts/Configs/PetConfigs.fcg:474",
+    "GetPetRarityIndex": "Assets/Scripts/Configs/PetConfigs.fcg:497",
+    "GetPetRarity": "Assets/Scripts/Configs/PetConfigs.fcg:501",
+    "GetPetRarityLocalization": "Assets/Scripts/Configs/PetConfigs.fcg:505",
+    "GetPetRarityLocalizationColor": "Assets/Scripts/Configs/PetConfigs.fcg:509",
+    "GetPetValue": "Assets/Scripts/Configs/PetConfigs.fcg:532",
+    "GetPetPrice": "Assets/Scripts/Configs/PetConfigs.fcg:536",
+    "GetPetRank": "Assets/Scripts/Configs/PetConfigs.fcg:540",
+    "GetPetDustCap": "Assets/Scripts/Configs/PetConfigs.fcg:544",
+    "CanFusePet": "Assets/Scripts/Configs/PetConfigs.fcg:548",
+    "GetPetWeightByRebirthLevel": "Assets/Scripts/Configs/PetConfigs.fcg:555",
+    "GetPetWeightByUserType": "Assets/Scripts/Configs/PetConfigs.fcg:569",
+    "GetPetMeshKey": "Assets/Scripts/Configs/PetConfigs.fcg:585",
+    "GetPetThumbnailKey": "Assets/Scripts/Configs/PetConfigs.fcg:589",
+    "IsNormalPetId": "Assets/Scripts/Configs/PetConfigs.fcg:593",
+    "IsSecretFusionPetId": "Assets/Scripts/Configs/PetConfigs.fcg:601",
+    "IsLuckyBoxPetId": "Assets/Scripts/Configs/PetConfigs.fcg:609",
+    "GetLuckyBoxRewardBoxId": "Assets/Scripts/Configs/PetConfigs.fcg:613",
+    "IsPetSpawnOnRoad": "Assets/Scripts/Configs/PetConfigs.fcg:621",
+    "IsLimitedEventPetId": "Assets/Scripts/Configs/PetConfigs.fcg:625",
+    "GetPetObtainSource": "Assets/Scripts/Configs/PetConfigs.fcg:630",
+    "GetPetObtainIcon": "Assets/Scripts/Configs/PetConfigs.fcg:655",
+    "GetPetObtainBadgeIcon": "Assets/Scripts/Configs/PetConfigs.fcg:672",
+    "GetPetObtainLocalization": "Assets/Scripts/Configs/PetConfigs.fcg:679",
+    "IsValidPetId": "Assets/Scripts/Configs/PetConfigs.fcg:696",
+    "GetPetsByRarity": "Assets/Scripts/Configs/PetConfigs.fcg:701",
+    "GetTopTierPetsOnRoad": "Assets/Scripts/Configs/PetConfigs.fcg:714",
+    "GetPetPriceWithWeather": "Assets/Scripts/Configs/PetConfigs.fcg:734",
+    "GetPetValueWithMutation": "Assets/Scripts/Configs/PetConfigs.fcg:743",
+    "GetPetIdByRank": "Assets/Scripts/Configs/PetConfigs.fcg:752",
+    "GetPetSecretRank": "Assets/Scripts/Configs/PetConfigs.fcg:760",
+    "GetPetIdWithPrevRank": "Assets/Scripts/Configs/PetConfigs.fcg:768",
+    "GetSecretIdWithNextRank": "Assets/Scripts/Configs/PetConfigs.fcg:783",
+    "GetSecretIdWithPrevRank": "Assets/Scripts/Configs/PetConfigs.fcg:800",
+    "GetMaxRank": "Assets/Scripts/Configs/PetConfigs.fcg:813",
+    "GetGuaranteePetId2Weight": "Assets/Scripts/Configs/PetConfigs.fcg:818",
+    "GetGuaranteePetsByRarity": "Assets/Scripts/Configs/PetConfigs.fcg:822",
+    "GetRarityCount": "Assets/Scripts/Configs/PetConfigs.fcg:835",
+    "GetRarities": "Assets/Scripts/Configs/PetConfigs.fcg:839",
+    "GetRarityIndex": "Assets/Scripts/Configs/PetConfigs.fcg:843",
+    "GetRarityByIndex": "Assets/Scripts/Configs/PetConfigs.fcg:847",
+    "GetRarityColor": "Assets/Scripts/Configs/PetConfigs.fcg:857",
+    "GetRarityLocalization": "Assets/Scripts/Configs/PetConfigs.fcg:861",
+    "GetRarityLocalizationColor": "Assets/Scripts/Configs/PetConfigs.fcg:869",
+    "GetRarityLocalizationLightColor": "Assets/Scripts/Configs/PetConfigs.fcg:890",
+    "GetPetExceptionRegions": "Assets/Scripts/Configs/PetConfigs.fcg:911",
+    "InitMutationConfigs": "Assets/Scripts/Configs/MutationConfigs.fcg:50",
+    "LoadMutationConfigs": "Assets/Scripts/Configs/MutationConfigs.fcg:61",
+    "GetMutationConfigFromCSV": "Assets/Scripts/Configs/MutationConfigs.fcg:67",
+    "GetMutationCount": "Assets/Scripts/Configs/MutationConfigs.fcg:85",
+    "GetMutationId2Name": "Assets/Scripts/Configs/MutationConfigs.fcg:89",
+    "GetMutationName": "Assets/Scripts/Configs/MutationConfigs.fcg:93",
+    "GetMutationNameLocalization": "Assets/Scripts/Configs/MutationConfigs.fcg:97",
+    "GetMutationNameLocalizationColor": "Assets/Scripts/Configs/MutationConfigs.fcg:105",
+    "GetMutationColor": "Assets/Scripts/Configs/MutationConfigs.fcg:136",
+    "GetMutationMaterialKey": "Assets/Scripts/Configs/MutationConfigs.fcg:162",
+    "GetMutationEffectKey": "Assets/Scripts/Configs/MutationConfigs.fcg:221",
+    "GetMutationMultiplier": "Assets/Scripts/Configs/MutationConfigs.fcg:225",
+    "GetMutationWeight": "Assets/Scripts/Configs/MutationConfigs.fcg:229",
+    "GetMutationFusionWeight": "Assets/Scripts/Configs/MutationConfigs.fcg:233",
+    "GetMutationTier": "Assets/Scripts/Configs/MutationConfigs.fcg:237",
+    "GetMutationLevelUpCostMultiplier": "Assets/Scripts/Configs/MutationConfigs.fcg:241",
+    "GetMutationIconKey": "Assets/Scripts/Configs/MutationConfigs.fcg:245",
+    "IsValidMutationId": "Assets/Scripts/Configs/MutationConfigs.fcg:249",
+    "InitWeatherConfigs": "Assets/Scripts/Configs/WeatherConfigs.fcg:62",
+    "LoadWeatherConfigs": "Assets/Scripts/Configs/WeatherConfigs.fcg:79",
+    "GetWeatherConfigFromCSV": "Assets/Scripts/Configs/WeatherConfigs.fcg:87",
+    "GetWeatherEffectsConfigFromCSV": "Assets/Scripts/Configs/WeatherConfigs.fcg:102",
+    "GetWeatherWavesConfigFromCSV": "Assets/Scripts/Configs/WeatherConfigs.fcg:116",
+    "GetWeatherCount": "Assets/Scripts/Configs/WeatherConfigs.fcg:135",
+    "GetWeatherName": "Assets/Scripts/Configs/WeatherConfigs.fcg:139",
+    "GetWeatherNameLocalization": "Assets/Scripts/Configs/WeatherConfigs.fcg:143",
+    "GetWeatherIcon": "Assets/Scripts/Configs/WeatherConfigs.fcg:147",
+    "GetWeatherEffects": "Assets/Scripts/Configs/WeatherConfigs.fcg:151",
+    "GetWeatherEffectId2Name": "Assets/Scripts/Configs/WeatherConfigs.fcg:163",
+    "GetWeatherEffectName": "Assets/Scripts/Configs/WeatherConfigs.fcg:167",
+    "GetWeatherMutationEffectLocalization": "Assets/Scripts/Configs/WeatherConfigs.fcg:171",
+    "GetWeatherEffectNameLocalizationColor": "Assets/Scripts/Configs/WeatherConfigs.fcg:175",
+    "GetWeatherColor": "Assets/Scripts/Configs/WeatherConfigs.fcg:203",
+    "GetWeatherEffectIcon": "Assets/Scripts/Configs/WeatherConfigs.fcg:229",
+    "GetWeatherEffectChance": "Assets/Scripts/Configs/WeatherConfigs.fcg:233",
+    "GetWeatherEffectMultiplierPrice": "Assets/Scripts/Configs/WeatherConfigs.fcg:237",
+    "GetWeatherEffectLevelUpCostMultiplier": "Assets/Scripts/Configs/WeatherConfigs.fcg:245",
+    "GetWeatherEffectCount": "Assets/Scripts/Configs/WeatherConfigs.fcg:253",
+    "IsValidWeatherId": "Assets/Scripts/Configs/WeatherConfigs.fcg:257",
+    "GetWeatherWaveType": "Assets/Scripts/Configs/WeatherConfigs.fcg:264",
+    "GetWeatherWaveDuration": "Assets/Scripts/Configs/WeatherConfigs.fcg:268",
+    "GetWeatherWaveDurationSeconds": "Assets/Scripts/Configs/WeatherConfigs.fcg:273",
+    "GetTotalWaves": "Assets/Scripts/Configs/WeatherConfigs.fcg:277",
+    "GetTotalWavesDuration": "Assets/Scripts/Configs/WeatherConfigs.fcg:281",
+    "GetTotalWavesDurationSeconds": "Assets/Scripts/Configs/WeatherConfigs.fcg:286",
+    "InitWeatherGenConfigs": "Assets/Scripts/Configs/WeatherGenConfigs.fcg:46",
+    "LoadWeatherGenConfigs": "Assets/Scripts/Configs/WeatherGenConfigs.fcg:53",
+    "GetMutateCostConfigFromCSV": "Assets/Scripts/Configs/WeatherGenConfigs.fcg:64",
+    "GetBaseCostLevel1": "Assets/Scripts/Configs/WeatherGenConfigs.fcg:79",
+    "GetMutateCost": "Assets/Scripts/Configs/WeatherGenConfigs.fcg:87",
+    "GetWeatherGenConfigFromCSV": "Assets/Scripts/Configs/WeatherGenConfigs.fcg:101",
+    "GetWeatherGenWeatherEffect": "Assets/Scripts/Configs/WeatherGenConfigs.fcg:117",
+    "GetWeatherGenRarity": "Assets/Scripts/Configs/WeatherGenConfigs.fcg:125",
+    "GetWeatherGenChance": "Assets/Scripts/Configs/WeatherGenConfigs.fcg:133",
+    "GetWeatherGenChanceByPet": "Assets/Scripts/Configs/WeatherGenConfigs.fcg:141",
+    "GetWeatherGenLocalizationNameColor": "Assets/Scripts/Configs/WeatherGenConfigs.fcg:152",
+    "InitMutagenConfigs": "Assets/Scripts/Configs/MutagenConfigs.fcg:46",
+    "LoadMutagenConfigs": "Assets/Scripts/Configs/MutagenConfigs.fcg:53",
+    "GetMutagenConfigFromCSV": "Assets/Scripts/Configs/MutagenConfigs.fcg:101",
+    "GetMutagenMutation": "Assets/Scripts/Configs/MutagenConfigs.fcg:117",
+    "GetMutagenRarity": "Assets/Scripts/Configs/MutagenConfigs.fcg:125",
+    "GetMutagenChance": "Assets/Scripts/Configs/MutagenConfigs.fcg:133",
+    "GetMutagenChanceByPet": "Assets/Scripts/Configs/MutagenConfigs.fcg:141",
+    "GetMutagenLocalizationNameColor": "Assets/Scripts/Configs/MutagenConfigs.fcg:152",
+    "InitBaseColorConfigs": "Assets/Scripts/Configs/BaseColorConfigs.fcg:42",
+    "LoadBaseColorConfigs": "Assets/Scripts/Configs/BaseColorConfigs.fcg:51",
+    "GetBaseColorConfigFromCSV": "Assets/Scripts/Configs/BaseColorConfigs.fcg:57",
+    "GetBaseColorCount": "Assets/Scripts/Configs/BaseColorConfigs.fcg:73",
+    "GetBaseColorName": "Assets/Scripts/Configs/BaseColorConfigs.fcg:77",
+    "GetBaseColorCost": "Assets/Scripts/Configs/BaseColorConfigs.fcg:81",
+    "GetBaseColorMaterial": "Assets/Scripts/Configs/BaseColorConfigs.fcg:85",
+    "GetBaseColorSprite": "Assets/Scripts/Configs/BaseColorConfigs.fcg:89",
+    "IsBaseColorValid": "Assets/Scripts/Configs/BaseColorConfigs.fcg:93",
+    "IsLockBase": "Assets/Scripts/Configs/BaseColorConfigs.fcg:97",
+    "GetTag": "Assets/Scripts/Configs/BaseColorConfigs.fcg:101",
+    "GetSwitchColorMaterial": "Assets/Scripts/Configs/BaseColorConfigs.fcg:105",
+    "InitMailConfigs": "Assets/Scripts/Configs/MailConfigs.fcg:40",
+    "LoadMailConfigs": "Assets/Scripts/Configs/MailConfigs.fcg:58",
+    "GetMailDetailConfigFromCSV": "Assets/Scripts/Configs/MailConfigs.fcg:66",
+    "GetRewardConfigFromCSV": "Assets/Scripts/Configs/MailConfigs.fcg:78",
+    "GetGiftConfigFromCSV": "Assets/Scripts/Configs/MailConfigs.fcg:91",
+    "GetMailTitleById": "Assets/Scripts/Configs/MailConfigs.fcg:113",
+    "GetMailContentById": "Assets/Scripts/Configs/MailConfigs.fcg:121",
+    "GetItemTypeById": "Assets/Scripts/Configs/MailConfigs.fcg:133",
+    "GetRewardQuantityById": "Assets/Scripts/Configs/MailConfigs.fcg:137",
+    "GetRewardValueById": "Assets/Scripts/Configs/MailConfigs.fcg:141",
+    "GetGiftCodeById": "Assets/Scripts/Configs/MailConfigs.fcg:149",
+    "GetGiftIdByCode": "Assets/Scripts/Configs/MailConfigs.fcg:153",
+    "GetGiftNameById": "Assets/Scripts/Configs/MailConfigs.fcg:162",
+    "GetGiftLimitById": "Assets/Scripts/Configs/MailConfigs.fcg:166",
+    "GetGiftStartById": "Assets/Scripts/Configs/MailConfigs.fcg:170",
+    "GetGiftEndById": "Assets/Scripts/Configs/MailConfigs.fcg:174",
+    "GetGiftReuseById": "Assets/Scripts/Configs/MailConfigs.fcg:178",
+    "GetGiftRebirthById": "Assets/Scripts/Configs/MailConfigs.fcg:182",
+    "GetGiftRewardsById": "Assets/Scripts/Configs/MailConfigs.fcg:186",
+    "GetRewardValueByIndex": "Assets/Scripts/Configs/MailConfigs.fcg:190",
+    "IsValidGiftId": "Assets/Scripts/Configs/MailConfigs.fcg:194",
+    "InitRewardRandomConfig": "Assets/Scripts/Configs/RewardRandomConfig.fcg:35",
+    "LoadRewardRandomConfig": "Assets/Scripts/Configs/RewardRandomConfig.fcg:49",
+    "GetDataPoolPetConfigFromCSV": "Assets/Scripts/Configs/RewardRandomConfig.fcg:56",
+    "GetDataPoolItemFromCSV": "Assets/Scripts/Configs/RewardRandomConfig.fcg:73",
+    "GetListIntPetReward": "Assets/Scripts/Configs/RewardRandomConfig.fcg:90",
+    "GetLisFloatWeight": "Assets/Scripts/Configs/RewardRandomConfig.fcg:102",
+    "GetLisIntPoolGift": "Assets/Scripts/Configs/RewardRandomConfig.fcg:114",
+    "GetPoolPetByID": "Assets/Scripts/Configs/RewardRandomConfig.fcg:126",
+    "GetWeightPetByID": "Assets/Scripts/Configs/RewardRandomConfig.fcg:130",
+    "GetPoolGiftByID": "Assets/Scripts/Configs/RewardRandomConfig.fcg:134",
+    "GetTypeRewardItemByID": "Assets/Scripts/Configs/RewardRandomConfig.fcg:138",
+    "GetWeightItemByID": "Assets/Scripts/Configs/RewardRandomConfig.fcg:142",
+    "GetGiftItemByID": "Assets/Scripts/Configs/RewardRandomConfig.fcg:146",
+    "GetValueItemByID": "Assets/Scripts/Configs/RewardRandomConfig.fcg:150",
+    "GetListIDItemReward": "Assets/Scripts/Configs/RewardRandomConfig.fcg:154",
+    "GetTotalWeight": "Assets/Scripts/Configs/RewardRandomConfig.fcg:158",
+    "GetAllTypeItemReward": "Assets/Scripts/Configs/RewardRandomConfig.fcg:162",
+    "GetPetCurEvent": "Assets/Scripts/Configs/RewardRandomConfig.fcg:166",
+    "GetItemEvent": "Assets/Scripts/Configs/RewardRandomConfig.fcg:170",
+    "GetItemRarityColor": "Assets/Scripts/Configs/ItemConfigs.fcg:59",
+    "GetItemRarityColorV2": "Assets/Scripts/Configs/ItemConfigs.fcg:82",
+    "GetItemDescription": "Assets/Scripts/Configs/ItemConfigs.fcg:100",
+    "GetItemIcon": "Assets/Scripts/Configs/ItemConfigs.fcg:129",
+    "GetItemAmountLabel": "Assets/Scripts/Configs/ItemConfigs.fcg:160",
+    "GetItemIconV2": "Assets/Scripts/Configs/ItemConfigs.fcg:191",
+    "GetItemAmount": "Assets/Scripts/Configs/ItemConfigs.fcg:222",
+    "GetItemAmountDisplay": "Assets/Scripts/Configs/ItemConfigs.fcg:258",
+    "GetFirstIntRewardValue": "Assets/Scripts/Configs/ItemConfigs.fcg:285",
+    "InitEventRarityContractConfigs": "Assets/Scripts/Events/RarityContract/EventRarityContractConfigs.fcg:51",
+    "LoadEventRarityContractConfigs": "Assets/Scripts/Events/RarityContract/EventRarityContractConfigs.fcg:59",
+    "GetDataDailyTasks": "Assets/Scripts/Events/RarityContract/EventRarityContractConfigs.fcg:66",
+    "GetDailyTaskCount": "Assets/Scripts/Events/RarityContract/EventRarityContractConfigs.fcg:82",
+    "GetDailyTaskType": "Assets/Scripts/Events/RarityContract/EventRarityContractConfigs.fcg:86",
+    "GetDailyTaskTarget": "Assets/Scripts/Events/RarityContract/EventRarityContractConfigs.fcg:90",
+    "GetDailyTaskReward": "Assets/Scripts/Events/RarityContract/EventRarityContractConfigs.fcg:94",
+    "GetDailyTaskIndexByType": "Assets/Scripts/Events/RarityContract/EventRarityContractConfigs.fcg:98",
+    "GetDataRarityBonus": "Assets/Scripts/Events/RarityContract/EventRarityContractConfigs.fcg:107",
+    "GetRarityGem": "Assets/Scripts/Events/RarityContract/EventRarityContractConfigs.fcg:125",
+    "GetRawMissionToday": "Assets/Scripts/Events/RarityContract/EventRarityContractConfigs.fcg:129",
+    "AddModulo": "Assets/Scripts/Events/RarityContract/EventRarityContractConfigs.fcg:137",
+    "MultiplyModulo": "Assets/Scripts/Events/RarityContract/EventRarityContractConfigs.fcg:144",
+    "GetMissionRand": "Assets/Scripts/Events/RarityContract/EventRarityContractConfigs.fcg:158",
+    "GetPoolPet": "Assets/Scripts/Events/RarityContract/EventRarityContractConfigs.fcg:164",
+    "PickMissionSlot": "Assets/Scripts/Events/RarityContract/EventRarityContractConfigs.fcg:169",
+    "BuildMissionForDay": "Assets/Scripts/Events/RarityContract/EventRarityContractConfigs.fcg:178",
+    "GetMissionTodayPet": "Assets/Scripts/Events/RarityContract/EventRarityContractConfigs.fcg:201",
+    "GetMissionLimitsToday": "Assets/Scripts/Events/RarityContract/EventRarityContractConfigs.fcg:227",
+    "CheckPetCanCollectToday": "Assets/Scripts/Events/RarityContract/EventRarityContractConfigs.fcg:237",
+    "GetMissionIndicesForPet": "Assets/Scripts/Events/RarityContract/EventRarityContractConfigs.fcg:246",
+    "InitEventMeteoriteConfig": "Assets/Scripts/Events/Meteorite/EventMeteoriteConfig.fcg:40",
+    "LoadEventMeteoriteConfig": "Assets/Scripts/Events/Meteorite/EventMeteoriteConfig.fcg:53",
+    "GetWaveMeteoriteFromCSV": "Assets/Scripts/Events/Meteorite/EventMeteoriteConfig.fcg:60",
+    "GetRewardFromCSV": "Assets/Scripts/Events/Meteorite/EventMeteoriteConfig.fcg:76",
+    "GetTypeRewardByID": "Assets/Scripts/Events/Meteorite/EventMeteoriteConfig.fcg:90",
+    "GetWeightByID": "Assets/Scripts/Events/Meteorite/EventMeteoriteConfig.fcg:94",
+    "GetQuantityByID": "Assets/Scripts/Events/Meteorite/EventMeteoriteConfig.fcg:98",
+    "GetListIDReward": "Assets/Scripts/Events/Meteorite/EventMeteoriteConfig.fcg:102",
+    "GetMeteoriteWaveType": "Assets/Scripts/Events/Meteorite/EventMeteoriteConfig.fcg:113",
+    "GetMeteoriteWaveDuration": "Assets/Scripts/Events/Meteorite/EventMeteoriteConfig.fcg:117",
+    "GetMeteoriteWaveDurationSeconds": "Assets/Scripts/Events/Meteorite/EventMeteoriteConfig.fcg:122",
+    "GetHitDailyGemCap": "Assets/Scripts/Events/Meteorite/EventMeteoriteConfig.fcg:165",
+    "MultiplyListIntByFloat": "Assets/Scripts/Utils/BigNumberHandler.fcg:68",
+    "ConvertIntToList": "Assets/Scripts/Utils/BigNumberHandler.fcg:107",
+    "ConvertListToInt": "Assets/Scripts/Utils/BigNumberHandler.fcg:123",
+    "ConvertFloatToList": "Assets/Scripts/Utils/BigNumberHandler.fcg:133",
+    "ShortenNumber": "Assets/Scripts/Utils/BigNumberHandler.fcg:142",
+    "CleanNumber": "Assets/Scripts/Utils/BigNumberHandler.fcg:163",
+    "AddNumber": "Assets/Scripts/Utils/BigNumberHandler.fcg:172",
+    "SubtractNumber": "Assets/Scripts/Utils/BigNumberHandler.fcg:203",
+    "MultiplyNumber": "Assets/Scripts/Utils/BigNumberHandler.fcg:239",
+    "MultiplierNumber": "Assets/Scripts/Utils/BigNumberHandler.fcg:273",
+    "FixBlankList": "Assets/Scripts/Utils/BigNumberHandler.fcg:282",
+    "GetMaxLength2Num": "Assets/Scripts/Utils/BigNumberHandler.fcg:289",
+    "CompareListNum": "Assets/Scripts/Utils/BigNumberHandler.fcg:298",
+    "ConvertStringToListNum": "Assets/Scripts/Utils/BigNumberHandler.fcg:319",
+    "ConvertListNumToString": "Assets/Scripts/Utils/BigNumberHandler.fcg:345",
+    "ToDisplayFormat": "Assets/Scripts/Utils/BigNumberHandler.fcg:364",
+    "ToDisplayFormatHasComma": "Assets/Scripts/Utils/BigNumberHandler.fcg:450",
+    "DivideListNumToFloat": "Assets/Scripts/Utils/BigNumberHandler.fcg:457",
+    "MultiplyListIntByFloatV2": "Assets/Scripts/Utils/BigNumberHandler.fcg:485",
+    "ConvertStringLikeToFormatString": "Assets/Scripts/Utils/BigNumberHandler.fcg:530",
+    "ConvertMoneyRankValueToMoneyFormat": "Assets/Scripts/Utils/BigNumberHandler.fcg:547",
+    "ConvertMoneyRankValueToListNum": "Assets/Scripts/Utils/BigNumberHandler.fcg:562",
+    "GetMaxListNum": "Assets/Scripts/Utils/BigNumberHandler.fcg:583",
+    "GetMinListNum": "Assets/Scripts/Utils/BigNumberHandler.fcg:591",
+    "DivideNumberByInt": "Assets/Scripts/Utils/BigNumberHandler.fcg:599",
+    "MultiplyListIntByFloatV3": "Assets/Scripts/Utils/BigNumberHandler.fcg:621",
+    "ExponentiationListInt": "Assets/Scripts/Utils/BigNumberHandler.fcg:631",
+    "GetHUDWidget": "Assets/Scripts/Utils/UIUtils.fcg:39",
+    "UpdatePetObtainWayButton": "Assets/Scripts/Utils/UIUtils.fcg:43",
+    "UpdatePetObtainBadge": "Assets/Scripts/Utils/UIUtils.fcg:59",
+    "UpdatePetWidget": "Assets/Scripts/Utils/UIUtils.fcg:74",
+    "UpdatePetWidgetV2": "Assets/Scripts/Utils/UIUtils.fcg:137",
+    "UpdateShopItemWidget": "Assets/Scripts/Utils/UIUtils.fcg:172",
+    "UpdatePetWidgetV3": "Assets/Scripts/Utils/UIUtils.fcg:206",
+    "UpdatePassiveWidget": "Assets/Scripts/Utils/UIUtils.fcg:369",
+    "GetPassiveDisplayValue": "Assets/Scripts/Utils/UIUtils.fcg:401",
+    "FormatTimeUnit": "Assets/Scripts/Utils/UIUtils.fcg:424",
+    "AppendTimeUnit": "Assets/Scripts/Utils/UIUtils.fcg:433",
+    "FormatTime": "Assets/Scripts/Utils/UIUtils.fcg:444",
+    "FormatTimeWithColon": "Assets/Scripts/Utils/UIUtils.fcg:513",
+    "SetUIRewardByType": "Assets/Scripts/Utils/UIUtils.fcg:573",
+    "SetUiReward": "Assets/Scripts/Utils/UIUtils.fcg:613",
+    "UpdateRewardWidgetV2": "Assets/Scripts/Utils/UIUtils.fcg:638",
+    "UpdateRewardWidgetV3": "Assets/Scripts/Utils/UIUtils.fcg:685",
+    "UpdateMilestoneWidget": "Assets/Scripts/Utils/UIUtils.fcg:724",
+    "GetMilestoneSlotProgress": "Assets/Scripts/Utils/UIUtils.fcg:742",
+    "UpdateMilestoneProgress": "Assets/Scripts/Utils/UIUtils.fcg:767",
+    "UpdateMilestones": "Assets/Scripts/Utils/UIUtils.fcg:781",
+    "UpdateMilestoneLayout": "Assets/Scripts/Utils/UIUtils.fcg:811"
+  },
+  "runtimeAssignments": [
+    {
+      "target": "_ShopEventHUD",
+      "property": "Depth",
+      "expression": "HudDepth.Shop",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:158"
+    },
+    {
+      "target": "_SubmitPetsWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:175"
+    },
+    {
+      "target": "_ShopEventHUD",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:215"
+    },
+    {
+      "target": "_ShopEventHUD",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:220"
+    },
+    {
+      "target": "_ShopWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:268"
+    },
+    {
+      "target": "_ShopWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:282"
+    },
+    {
+      "target": "thumbnail",
+      "property": "SizeDelta",
+      "expression": "defaultSize",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:333"
+    },
+    {
+      "target": "thumbnail",
+      "property": "SizeDelta",
+      "expression": "defaultSize * WEATHER_GEN_THUMBNAIL_SCALE",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:335"
+    },
+    {
+      "target": "_ExclusiveItemWidget",
+      "property": "IsVisible",
+      "expression": "itemCount > 0",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:346"
+    },
+    {
+      "target": "_RecommendedItemsLayout",
+      "property": "IsVisible",
+      "expression": "recommendedCount > 0",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:358"
+    },
+    {
+      "target": "itemWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:364"
+    },
+    {
+      "target": "_GeneralItemsLayout",
+      "property": "IsVisible",
+      "expression": "generalCount > 0",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:374"
+    },
+    {
+      "target": "itemWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:380"
+    },
+    {
+      "target": "if _BuyButtonIcon != nil && _BuyButtonIcon",
+      "property": "SpriteName",
+      "expression": "= previousGemSprite {",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:392"
+    },
+    {
+      "target": "_BuyButtonIcon",
+      "property": "SpriteName",
+      "expression": "gemSprite",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:393"
+    },
+    {
+      "target": "_BalanceIcon",
+      "property": "SpriteName",
+      "expression": "gemSprite",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:395"
+    },
+    {
+      "target": "_CostIcon",
+      "property": "SpriteName",
+      "expression": "gemSprite",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:396"
+    },
+    {
+      "target": "gemIcon",
+      "property": "SpriteName",
+      "expression": "EventCurrencyManager.GetEventGemIcon(_CurrentEvent)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:409"
+    },
+    {
+      "target": "itemWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:429"
+    },
+    {
+      "target": "selectBorder",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:430"
+    },
+    {
+      "target": "itemData",
+      "property": "ID",
+      "expression": "itemId",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:431"
+    },
+    {
+      "target": "itemData",
+      "property": "type",
+      "expression": "ShopEventConfig.GetItemKind(itemId) as TypeItemDetail",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:432"
+    },
+    {
+      "target": "// itemHeader",
+      "property": "Color",
+      "expression": "itemFooter<UIWidgetImage>.Color",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:435"
+    },
+    {
+      "target": "itemNameLabel",
+      "property": "Color",
+      "expression": "itemFooter<UIWidgetImage>.Color",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:436"
+    },
+    {
+      "target": "if (itemData",
+      "property": "type",
+      "expression": "= TypeItemDetail.SpecialPet) {",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:440"
+    },
+    {
+      "target": "if (itemData",
+      "property": "type",
+      "expression": "= TypeItemDetail.DailyShard) {",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:443"
+    },
+    {
+      "target": "} else if (itemData",
+      "property": "type",
+      "expression": "= TypeItemDetail.BaseColor) {",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:445"
+    },
+    {
+      "target": "itemData",
+      "property": "maxTimeCoolDown",
+      "expression": "ShopEventConfig.GetItemTimeLock(itemId)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:449"
+    },
+    {
+      "target": "itemNameLabel",
+      "property": "Content",
+      "expression": "itemName//ToUpper(itemName)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:451"
+    },
+    {
+      "target": "itemThumbnail",
+      "property": "SpriteName",
+      "expression": "Res.Sprite[itemIconKey as EResKeySprite]",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:452"
+    },
+    {
+      "target": "itemFooter",
+      "property": "Color",
+      "expression": "FOOTER_DEFAULT_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:462"
+    },
+    {
+      "target": "itemFooter",
+      "property": "Color",
+      "expression": "PetConfigs.GetRarityColor(PetConfigs.GetPetRarity(valueId))",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:475"
+    },
+    {
+      "target": "itemFooter",
+      "property": "Color",
+      "expression": "PetConfigs.GetRarityColor(WeatherGenConfigs.GetWeatherGenRarity(valueId))",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:477"
+    },
+    {
+      "target": "itemFooter",
+      "property": "Color",
+      "expression": "PetConfigs.GetRarityColor(MutagenConfigs.GetMutagenRarity(valueId))",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:479"
+    },
+    {
+      "target": "thumbnail",
+      "property": "Color",
+      "expression": "ITEM_LOCKED_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:489"
+    },
+    {
+      "target": "btnLock",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:490"
+    },
+    {
+      "target": "iconLock",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:492"
+    },
+    {
+      "target": "detailsLabel",
+      "property": "Content",
+      "expression": "UIUtils.FormatTime(duration / EventSettings.MILLISECONDS_PER_SECOND, EventSettings.TIME_FORMAT_MODE_FULL)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:496"
+    },
+    {
+      "target": "thumbnail",
+      "property": "Color",
+      "expression": "ITEM_AVAILABLE_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:500"
+    },
+    {
+      "target": "btnLock",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:501"
+    },
+    {
+      "target": "iconLock",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:502"
+    },
+    {
+      "target": "itemData",
+      "property": "price",
+      "expression": "EventShopManager.GetItemPrice(thisEntity<Player>, _CurrentEvent, itemId)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:511"
+    },
+    {
+      "target": "itemPriceLabel",
+      "property": "Content",
+      "expression": "ToString(itemData<TypeItem>.price)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:512"
+    },
+    {
+      "target": "labelLimit",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:517"
+    },
+    {
+      "target": "labelLimit",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:522"
+    },
+    {
+      "target": "labelLimit",
+      "property": "Content",
+      "expression": "\"\"",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:523"
+    },
+    {
+      "target": "btnLock",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:531"
+    },
+    {
+      "target": "btnLock",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:538"
+    },
+    {
+      "target": "itemData",
+      "property": "price",
+      "expression": "EventShopManager.GetItemPrice(thisEntity<Player>, _CurrentEvent, itemID)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:543"
+    },
+    {
+      "target": "labelLimit",
+      "property": "Content",
+      "expression": "\"\"",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:553"
+    },
+    {
+      "target": "labelLimit",
+      "property": "Content",
+      "expression": "limit + \"/\" + ShopEventConfig.GetItemMaxPurchase(itemID)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:557"
+    },
+    {
+      "target": "label",
+      "property": "Content",
+      "expression": "ShopEventConfig.GetItemNameLocalization(itemID)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:566"
+    },
+    {
+      "target": "label",
+      "property": "Content",
+      "expression": "income",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:584"
+    },
+    {
+      "target": "label",
+      "property": "Content",
+      "expression": "LocString{\"{0}\\n[1F64C4]{1}[-]\", {income, limit}}",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:591"
+    },
+    {
+      "target": "labelLimit",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:608"
+    },
+    {
+      "target": "itemPriceLabel",
+      "property": "Content",
+      "expression": "ToString(itemData<TypeItem>.price)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:612"
+    },
+    {
+      "target": "btnLock",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:617"
+    },
+    {
+      "target": "itemPriceLabel",
+      "property": "Content",
+      "expression": "\"\"",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:618"
+    },
+    {
+      "target": "_BalanceLabel",
+      "property": "Content",
+      "expression": "ToString(currentGemstone)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:623"
+    },
+    {
+      "target": "itemPriceLabel",
+      "property": "Color",
+      "expression": "COLOR_NOT_ENOUGH_GEMSTONE",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:657"
+    },
+    {
+      "target": "itemPriceLabel",
+      "property": "Color",
+      "expression": "COLOR_ENOUGH_GEMSTONE",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:659"
+    },
+    {
+      "target": "if itemData",
+      "property": "ID",
+      "expression": "= _SelectedItemId {",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:671"
+    },
+    {
+      "target": "curSelect",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:690"
+    },
+    {
+      "target": "_CostIcon",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:693"
+    },
+    {
+      "target": "curSelect",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:697"
+    },
+    {
+      "target": "curSelect",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:707"
+    },
+    {
+      "target": "if curButton",
+      "property": "ID",
+      "expression": "= itemId {",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:739"
+    },
+    {
+      "target": "curSelect",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:740"
+    },
+    {
+      "target": "if curButton",
+      "property": "type",
+      "expression": "= TypeItemDetail.SpecialPet {",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:741"
+    },
+    {
+      "target": "} else if (curButton",
+      "property": "type",
+      "expression": "= TypeItemDetail.DailyShard) {",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:744"
+    },
+    {
+      "target": "} else if (curButton",
+      "property": "type",
+      "expression": "= TypeItemDetail.BaseColor) {",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:746"
+    },
+    {
+      "target": "button",
+      "property": "curTimeCoolDown",
+      "expression": "button<TypeItem>.maxTimeCoolDown",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:757"
+    },
+    {
+      "target": "curBGCoolDown",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:762"
+    },
+    {
+      "target": "curTextCoolDown",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:763"
+    },
+    {
+      "target": "curBGCoolDown",
+      "property": "FillAmount",
+      "expression": "IntToFloat(curTime) / IntToFloat(maxTime)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:767"
+    },
+    {
+      "target": "curTextCoolDown",
+      "property": "Content",
+      "expression": "curTime / EventSettings.MILLISECONDS_PER_SECOND",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:768"
+    },
+    {
+      "target": "curBGCoolDown",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:773"
+    },
+    {
+      "target": "curTextCoolDown",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:774"
+    },
+    {
+      "target": "button",
+      "property": "curTimeCoolDown",
+      "expression": "NO_SHOP_COOLDOWN_REMAINING_MS",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:775"
+    },
+    {
+      "target": "_ItemDetailsWidget",
+      "property": "IsVisible",
+      "expression": "isOn",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:779"
+    },
+    {
+      "target": "_ObtainableRewardsWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:781"
+    },
+    {
+      "target": "_ItemDetailsNameLabel",
+      "property": "Content",
+      "expression": "ShopEventConfig.GetItemNameLocalization(idItem)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:788"
+    },
+    {
+      "target": "_ItemDetailsLabel",
+      "property": "Content",
+      "expression": "ShopEventConfig.GetItemDetail(idItem)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:789"
+    },
+    {
+      "target": "if exclusiveItemData",
+      "property": "ID",
+      "expression": "= idItem {",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:792"
+    },
+    {
+      "target": "_ItemDetailsLabel",
+      "property": "Content",
+      "expression": "content",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:803"
+    },
+    {
+      "target": "_CostLabel",
+      "property": "Content",
+      "expression": "ToString(itemPrice)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:810"
+    },
+    {
+      "target": "_BuyButton",
+      "property": "SpriteResource",
+      "expression": "EResSprite.YellowButton",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:812"
+    },
+    {
+      "target": "_BuyButton",
+      "property": "Color",
+      "expression": "BUY_BUTTON_ENOUGH_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:813"
+    },
+    {
+      "target": "_BuyButtonLabel",
+      "property": "Color",
+      "expression": "BUY_BUTTON_LABEL_ENOUGH_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:814"
+    },
+    {
+      "target": "_BuyButtonIcon",
+      "property": "Color",
+      "expression": "BUY_BUTTON_LABEL_ENOUGH_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:815"
+    },
+    {
+      "target": "_CostLabel",
+      "property": "Color",
+      "expression": "COST_LABEL_ENOUGH_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:816"
+    },
+    {
+      "target": "_BuyButton",
+      "property": "SpriteResource",
+      "expression": "EResSprite.BlueButton",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:818"
+    },
+    {
+      "target": "_BuyButton",
+      "property": "Color",
+      "expression": "BUY_BUTTON_NOT_ENOUGH_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:819"
+    },
+    {
+      "target": "_BuyButtonLabel",
+      "property": "Color",
+      "expression": "BUY_BUTTON_LABEL_NOT_ENOUGH_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:820"
+    },
+    {
+      "target": "_BuyButtonIcon",
+      "property": "Color",
+      "expression": "BUY_BUTTON_LABEL_NOT_ENOUGH_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:821"
+    },
+    {
+      "target": "_CostLabel",
+      "property": "Color",
+      "expression": "COST_LABEL_NOT_ENOUGH_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:822"
+    },
+    {
+      "target": "_ObtainableRewardsWidget",
+      "property": "IsVisible",
+      "expression": "isPet || type == TypeItemDetail.RandomItem",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:828"
+    },
+    {
+      "target": "rewardWidget",
+      "property": "IsVisible",
+      "expression": "index < rewardCount",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:843"
+    },
+    {
+      "target": "amount",
+      "property": "IsVisible",
+      "expression": "!isPet",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:854"
+    },
+    {
+      "target": "rarity",
+      "property": "Color",
+      "expression": "PetConfigs.GetRarityColor(PetConfigs.GetPetRarity(rewardId))",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:856"
+    },
+    {
+      "target": "thumbnail",
+      "property": "SpriteName",
+      "expression": "Res.Sprite[PetConfigs.GetPetThumbnailKey(rewardId) as EResKeySprite]",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:857"
+    },
+    {
+      "target": "rarity",
+      "property": "Color",
+      "expression": "ItemConfigs.GetItemRarityColor(rewardType as ItemType, rewardValue)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:862"
+    },
+    {
+      "target": "thumbnail",
+      "property": "SpriteName",
+      "expression": "ItemConfigs.GetItemIcon(rewardType as TypeReward, rewardValue)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:863"
+    },
+    {
+      "target": "amount",
+      "property": "Content",
+      "expression": "\"x\" + rewardValue",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:864"
+    },
+    {
+      "target": "_ShopView",
+      "property": "IsVisible",
+      "expression": "_SelectedTab == SHOP_TAB_INDEX",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:870"
+    },
+    {
+      "target": "_TaskView",
+      "property": "IsVisible",
+      "expression": "_SelectedTab == TASK_TAB_INDEX && !_SubmitPetsWidget<UIWidget>.IsVisible",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:871"
+    },
+    {
+      "target": "_TaskTabButton",
+      "property": "IsVisible",
+      "expression": "hasTaskTab",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:892"
+    },
+    {
+      "target": "row",
+      "property": "IsVisible",
+      "expression": "index < rowCount",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:918"
+    },
+    {
+      "target": "row",
+      "property": "Priority",
+      "expression": "priority",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:935"
+    },
+    {
+      "target": "row",
+      "property": "Priority",
+      "expression": "PRIORITY_MISSION + missionIndex",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:942"
+    },
+    {
+      "target": "row",
+      "property": "Priority",
+      "expression": "PRIORITY_HIDDEN + index",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:949"
+    },
+    {
+      "target": "row",
+      "property": "IsVisible",
+      "expression": "index < rowCount",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:963"
+    },
+    {
+      "target": "row",
+      "property": "Priority",
+      "expression": "PRIORITY_LOGIN",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:966"
+    },
+    {
+      "target": "row",
+      "property": "Priority",
+      "expression": "PRIORITY_ACTIVITY + taskIndex",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:981"
+    },
+    {
+      "target": "row",
+      "property": "Priority",
+      "expression": "PRIORITY_HIDDEN + index",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:988"
+    },
+    {
+      "target": "(GetChildByName(item, \"Rarity\") as entity<UIWidgetImage>)",
+      "property": "Color",
+      "expression": "DAILY_TASK_ITEM_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:998"
+    },
+    {
+      "target": "(GetChildByName(item, \"Thumbnail\") as entity<UIWidgetImage>)",
+      "property": "SpriteName",
+      "expression": "gemIcon",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:999"
+    },
+    {
+      "target": "(GetChildByName(row, \"Details\") as entity<UIWidgetLabel>)",
+      "property": "Content",
+      "expression": "LocString{TASK_DETAILS_TEXT_FORMAT, {LocString{\"HUD_EVENT_METEORITE_HIT_CAP\", {remaining, cap}}}}",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1000"
+    },
+    {
+      "target": "(GetChildByName(rewardWidget, \"Rarity\") as entity<UIWidgetImage>)",
+      "property": "Color",
+      "expression": "DAILY_TASK_ITEM_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1001"
+    },
+    {
+      "target": "(GetChildByName(rewardWidget, \"Thumbnail\") as entity<UIWidgetImage>)",
+      "property": "SpriteName",
+      "expression": "gemIcon",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1002"
+    },
+    {
+      "target": "(GetChildByName(rewardWidget, \"Amount\") as entity<UIWidgetLabel>)",
+      "property": "Content",
+      "expression": "LocString{\"{0}\", {remaining}}",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1003"
+    },
+    {
+      "target": "(GetChildByName(row, \"ClaimButton\") as entity<UIWidget>)",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1004"
+    },
+    {
+      "target": "(GetChildByName(row, \"Completed\") as entity<UIWidget>)",
+      "property": "IsVisible",
+      "expression": "remaining <= 0",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1005"
+    },
+    {
+      "target": "itemThumbnail",
+      "property": "SpriteName",
+      "expression": "EResSprite.FishIcon",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1021"
+    },
+    {
+      "target": "itemThumbnail",
+      "property": "SpriteName",
+      "expression": "EResSprite.DigIcon",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1023"
+    },
+    {
+      "target": "itemRarity",
+      "property": "Color",
+      "expression": "DAILY_TASK_ITEM_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1026"
+    },
+    {
+      "target": "details",
+      "property": "Content",
+      "expression": "LocString{TASK_DETAILS_TEXT_FORMAT, {detailsText}}",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1028"
+    },
+    {
+      "target": "rewardRarity",
+      "property": "Color",
+      "expression": "DAILY_TASK_ITEM_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1029"
+    },
+    {
+      "target": "rewardThumbnail",
+      "property": "SpriteName",
+      "expression": "EventCurrencyManager.GetEventGemIcon(EventType.EventDigMeteorite)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1030"
+    },
+    {
+      "target": "rewardAmount",
+      "property": "Content",
+      "expression": "LocString{\"+{0}\", {reward}}",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1031"
+    },
+    {
+      "target": "claimButton",
+      "property": "IsVisible",
+      "expression": "!isClaimed",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1033"
+    },
+    {
+      "target": "completed",
+      "property": "IsVisible",
+      "expression": "isClaimed",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1034"
+    },
+    {
+      "target": "row",
+      "property": "Alpha",
+      "expression": "alpha",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1045"
+    },
+    {
+      "target": "item",
+      "property": "Alpha",
+      "expression": "alpha",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1046"
+    },
+    {
+      "target": "(GetChildByName(item, \"Rarity\") as entity<UIWidgetImage>)",
+      "property": "Alpha",
+      "expression": "alpha",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1047"
+    },
+    {
+      "target": "(GetChildByName(item, \"Thumbnail\") as entity<UIWidgetImage>)",
+      "property": "Alpha",
+      "expression": "alpha",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1048"
+    },
+    {
+      "target": "(GetChildByName(row, \"Details\") as entity<UIWidgetLabel>)",
+      "property": "Alpha",
+      "expression": "alpha",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1049"
+    },
+    {
+      "target": "rewardWidget",
+      "property": "Alpha",
+      "expression": "alpha",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1050"
+    },
+    {
+      "target": "(GetChildByName(rewardWidget, \"Rarity\") as entity<UIWidgetImage>)",
+      "property": "Alpha",
+      "expression": "alpha",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1051"
+    },
+    {
+      "target": "(GetChildByName(rewardWidget, \"Thumbnail\") as entity<UIWidgetImage>)",
+      "property": "Alpha",
+      "expression": "alpha",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1052"
+    },
+    {
+      "target": "(GetChildByName(rewardWidget, \"Amount\") as entity<UIWidgetLabel>)",
+      "property": "Alpha",
+      "expression": "alpha",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1053"
+    },
+    {
+      "target": "(GetChildByName(row, \"Line\") as entity<UIWidgetImage>)",
+      "property": "Alpha",
+      "expression": "alpha",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1054"
+    },
+    {
+      "target": "claimButton",
+      "property": "Alpha",
+      "expression": "alpha",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1055"
+    },
+    {
+      "target": "(GetChildByName(claimButton, \"Label\") as entity<UIWidgetLabel>)",
+      "property": "Alpha",
+      "expression": "alpha",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1056"
+    },
+    {
+      "target": "(GetChildByName(row, \"Completed\") as entity<UIWidgetLabel>)",
+      "property": "Alpha",
+      "expression": "alpha",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1057"
+    },
+    {
+      "target": "itemThumbnail",
+      "property": "SpriteName",
+      "expression": "EResSprite.RarityContractGem",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1075"
+    },
+    {
+      "target": "itemThumbnail",
+      "property": "SpriteName",
+      "expression": "EResSprite.FishIcon",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1077"
+    },
+    {
+      "target": "itemThumbnail",
+      "property": "SpriteName",
+      "expression": "EResSprite.DigIcon",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1080"
+    },
+    {
+      "target": "itemRarity",
+      "property": "Color",
+      "expression": "DAILY_TASK_ITEM_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1084"
+    },
+    {
+      "target": "details",
+      "property": "Content",
+      "expression": "LocString{TASK_DETAILS_TEXT_FORMAT, {detailsText}}",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1089"
+    },
+    {
+      "target": "rewardRarity",
+      "property": "Color",
+      "expression": "DAILY_TASK_ITEM_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1090"
+    },
+    {
+      "target": "rewardThumbnail",
+      "property": "SpriteName",
+      "expression": "EResSprite.RarityContractGem",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1091"
+    },
+    {
+      "target": "rewardAmount",
+      "property": "Content",
+      "expression": "LocString{\"+{0}\", {reward}}",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1092"
+    },
+    {
+      "target": "claimButton",
+      "property": "IsVisible",
+      "expression": "!isClaimed",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1094"
+    },
+    {
+      "target": "completed",
+      "property": "IsVisible",
+      "expression": "isClaimed",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1095"
+    },
+    {
+      "target": "itemThumbnail",
+      "property": "SpriteName",
+      "expression": "Res.Sprite[PetConfigs.GetPetThumbnailKey(petId) as EResKeySprite]",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1115"
+    },
+    {
+      "target": "itemThumbnail",
+      "property": "SpriteName",
+      "expression": "Res.Sprite[(\"Summon\" + rarity) as EResKeySprite]",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1119"
+    },
+    {
+      "target": "itemRarity",
+      "property": "Color",
+      "expression": "PetConfigs.GetRarityColor(rarity)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1123"
+    },
+    {
+      "target": "details",
+      "property": "Content",
+      "expression": "LocString{TASK_DETAILS_TEXT_FORMAT, {detailsText}}",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1125"
+    },
+    {
+      "target": "rewardRarity",
+      "property": "Color",
+      "expression": "PetConfigs.GetRarityColor(rarity)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1126"
+    },
+    {
+      "target": "rewardThumbnail",
+      "property": "SpriteName",
+      "expression": "EResSprite.RarityContractGem",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1127"
+    },
+    {
+      "target": "rewardAmount",
+      "property": "Content",
+      "expression": "LocString{\"+{0}\", {EventRarityContractConfigs.GetRarityGem(rarity)}}",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1128"
+    },
+    {
+      "target": "claimButton",
+      "property": "IsVisible",
+      "expression": "submitted < mission[PetValue.Count] as int",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1130"
+    },
+    {
+      "target": "completed",
+      "property": "IsVisible",
+      "expression": "submitted >= mission[PetValue.Count] as int",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1131"
+    },
+    {
+      "target": "claimButton",
+      "property": "SpriteResource",
+      "expression": "EResSprite.YellowButton",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1137"
+    },
+    {
+      "target": "claimButton",
+      "property": "Color",
+      "expression": "BUY_BUTTON_ENOUGH_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1138"
+    },
+    {
+      "target": "label",
+      "property": "Color",
+      "expression": "BUY_BUTTON_LABEL_ENOUGH_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1139"
+    },
+    {
+      "target": "label",
+      "property": "Content",
+      "expression": "LocString{\"HUD_CLAIM_REWARD\", {}}",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1140"
+    },
+    {
+      "target": "claimButton",
+      "property": "SpriteResource",
+      "expression": "EResSprite.BlueButton",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1142"
+    },
+    {
+      "target": "claimButton",
+      "property": "Color",
+      "expression": "BUY_BUTTON_NOT_ENOUGH_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1143"
+    },
+    {
+      "target": "label",
+      "property": "Color",
+      "expression": "TASK_BUTTON_DO_LABEL_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1144"
+    },
+    {
+      "target": "label",
+      "property": "Content",
+      "expression": "LocString{\"HUD_DO\", {}}",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1145"
+    },
+    {
+      "target": "tabButton",
+      "property": "SpriteResource",
+      "expression": "EResSprite.SelectTabBG",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1153"
+    },
+    {
+      "target": "icon",
+      "property": "Color",
+      "expression": "TAB_SELECTED_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1154"
+    },
+    {
+      "target": "label",
+      "property": "Color",
+      "expression": "TAB_SELECTED_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1155"
+    },
+    {
+      "target": "tabButton",
+      "property": "SpriteResource",
+      "expression": "EResSprite.NormalTabBG",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1157"
+    },
+    {
+      "target": "icon",
+      "property": "Color",
+      "expression": "TAB_NORMAL_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1158"
+    },
+    {
+      "target": "label",
+      "property": "Color",
+      "expression": "TAB_NORMAL_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1159"
+    },
+    {
+      "target": "_CountdownLabel",
+      "property": "Content",
+      "expression": "LocString{\"{0} {1}\", {LocString{\"HUD_SHOP_EVENT_END_LABEL\", {}}, UIUtils.FormatTime(remainSeconds, EventSettings.TIME_FORMAT_MODE_FULL)}}",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1171"
+    },
+    {
+      "target": "_DialogWidget",
+      "property": "IsVisible",
+      "expression": "IsInShopTrigger() && !_ShopWidget<UIWidget>.IsVisible && !_SubmitPetsWidget<UIWidget>.IsVisible",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1188"
+    },
+    {
+      "target": "_DialogTaskButton",
+      "property": "IsVisible",
+      "expression": "hasTaskTab",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1190"
+    },
+    {
+      "target": "_DialogSubmitPetButton",
+      "property": "IsVisible",
+      "expression": "HasSubmitPetTab(GetCurrentEvent())",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1191"
+    },
+    {
+      "target": "_SubmitPetsWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1221"
+    },
+    {
+      "target": "_TaskView",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1222"
+    },
+    {
+      "target": "_SubmitPetsWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1230"
+    },
+    {
+      "target": "_TaskView",
+      "property": "IsVisible",
+      "expression": "_ShopWidget<UIWidget>.IsVisible && _SelectedTab == TASK_TAB_INDEX && HasTaskTab(_CurrentEvent)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1232"
+    },
+    {
+      "target": "petWidget",
+      "property": "Color",
+      "expression": "SUBMIT_PET_ENABLED_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1246"
+    },
+    {
+      "target": "petWidget",
+      "property": "Alpha",
+      "expression": "SUBMIT_PET_ENABLED_ALPHA",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1247"
+    },
+    {
+      "target": "petWidget",
+      "property": "Color",
+      "expression": "SUBMIT_PET_DISABLED_COLOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1249"
+    },
+    {
+      "target": "petWidget",
+      "property": "Alpha",
+      "expression": "SUBMIT_PET_DISABLED_ALPHA",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1250"
+    },
+    {
+      "target": "_SubmitPetSelectBorders[index]",
+      "property": "IsVisible",
+      "expression": "List.Contain(_SubmitSelectedSlots, petSlot)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1252"
+    },
+    {
+      "target": "_SubmitFloorLabel",
+      "property": "Content",
+      "expression": "LocString{\"HUD_FLOOR\", {_SubmitCurrentFloor}}",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1254"
+    },
+    {
+      "target": "_SubmitUpFloorButton",
+      "property": "IsVisible",
+      "expression": "_SubmitCurrentFloor < SUBMIT_MAX_FLOORS",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1255"
+    },
+    {
+      "target": "_SubmitDownFloorButton",
+      "property": "IsVisible",
+      "expression": "_SubmitCurrentFloor > SUBMIT_FIRST_FLOOR",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1256"
+    },
+    {
+      "target": "_SubmitPetSelectBorders[index]",
+      "property": "IsVisible",
+      "expression": "List.Contain(_SubmitSelectedSlots, petSlot)",
+      "source": "Assets/Scripts/Events/HUD/HudShopEvent.fcg:1289"
+    }
+  ],
+  "spriteKeys": {
+    "YellowButton": "Assets/Sprites/NewAssets/YellowButton.png",
+    "BlueButton": "Assets/Sprites/NewAssets/BlueButton.png",
+    "FishIcon": "Assets/Sprites/Icons/FishIcon.png",
+    "DigIcon": "Assets/Sprites/Icons/DigIcon.png",
+    "RarityContractGem": "Assets/Sprites/Icons/RarityContractGem.png",
+    "SelectTabBG": "Assets/Sprites/NewAssets/SelectTabBG.png",
+    "NormalTabBG": "Assets/Sprites/NewAssets/NormalTabBG.png",
+    "MoleGemIcon": "Assets/Sprites/Icons/MoleGemIcon.png",
+    "GemstoneIcon": "Assets/Sprites/Icons/Gemstone.png",
+    "BallGemIcon": "Assets/Sprites/Icons/BallGemIcon.png",
+    "GoldenBootsIcon": "Assets/Sprites/Icons/GoldenBootsIcon.png",
+    "CHICK_PUMPKIN": "Assets/Sprites/Pets/CHICK_PUMPKIN.png",
+    "GOLDFISH": "Assets/Sprites/Pets/GOLDFISH.png",
+    "IGUANA": "Assets/Sprites/Pets/IGUANA.png",
+    "LUCKYBOXLEGENDARY": "Assets/Sprites/Pets/LUCKYBOXLEGENDARY.png",
+    "LUCKYBOXMYTHIC": "Assets/Sprites/Pets/LUCKYBOXMYTHIC.png",
+    "RandomPet": "Assets/Sprites/Icons/RandomPet.png",
+    "RandomItem": "Assets/Sprites/Icons/RandomItem.png",
+    "SHARK_SPIDERLEGS": "Assets/Sprites/Pets/SHARK_SPIDERLEGS.png",
+    "BULL_PUMPKIN": "Assets/Sprites/Pets/BULL_PUMPKIN.png",
+    "Sparkle": "Assets/Sprites/Mutations/Sparkle.png",
+    "WOMBAT": "Assets/Sprites/Pets/WOMBAT.png",
+    "Prismatic": "Assets/Sprites/Mutations/Prismatic.png",
+    "BROWNBEAR": "Assets/Sprites/Pets/BROWNBEAR.png",
+    "MANATEE": "Assets/Sprites/Pets/MANATEE.png",
+    "OSTRICH": "Assets/Sprites/Pets/OSTRICH.png",
+    "SMALLWHALE": "Assets/Sprites/Pets/SMALLWHALE.png",
+    "GORILLA": "Assets/Sprites/Pets/GORILLA.png",
+    "BELUGA": "Assets/Sprites/Pets/BELUGA.png",
+    "NARWHAL": "Assets/Sprites/Pets/NARWHAL.png",
+    "HUSKY": "Assets/Sprites/Pets/HUSKY.png",
+    "PLATYPUS": "Assets/Sprites/Pets/PLATYPUS.png",
+    "JAGUAR": "Assets/Sprites/Pets/JAGUAR.png",
+    "REINDEER": "Assets/Sprites/Pets/REINDEER.png",
+    "ARCTICFOX": "Assets/Sprites/Pets/ARTICFOX.png",
+    "COW": "Assets/Sprites/Pets/COW.png",
+    "OX": "Assets/Sprites/Pets/Ox.png",
+    "TURKEY": "Assets/Sprites/Pets/TURKEY.png",
+    "FRILLNECKEDLIZARD": "Assets/Sprites/Pets/FrillNeckedLizard.png",
+    "TORTOISE": "Assets/Sprites/Pets/TORTOISE.png",
+    "SNOWMAN": "Assets/Sprites/Pets/SNOWMAN.png",
+    "PENGUIN": "Assets/Sprites/Pets/PENGUIN.png",
+    "KANGAROO": "Assets/Sprites/Pets/KANGAROO.png",
+    "MOODENG": "Assets/Sprites/Pets/MOODENG.png",
+    "PEACOCK": "Assets/Sprites/Pets/PEACOCK.png",
+    "SHARK": "Assets/Sprites/Pets/SHARK.png",
+    "MoneyIcon": "Assets/Sprites/Icons/MoneyIcon.png",
+    "PetCoinIcon": "Assets/Sprites/Icons/PetCoinIcon.png",
+    "DustIcon": "Assets/Sprites/Icons/DustIconTemp.png"
+  },
+  "rarityColors": {
+    "COMMON": "#8CFF91",
+    "RARE": "#4CC8FE",
+    "EPIC": "#EA70FF",
+    "LEGENDARY": "#FED868",
+    "MYTHIC": "#FF6F6F",
+    "APEX": "#FF9F43",
+    "LIMITED": "#B3CA1F"
+  },
+  "suffixes": {
+    "1": "",
+    "2": "k",
+    "3": "m",
+    "4": "B",
+    "5": "T",
+    "6": "Q",
+    "7": "Qi",
+    "8": "Sx",
+    "9": "Sp",
+    "10": "Oc",
+    "11": "No",
+    "12": "De",
+    "13": "Ud",
+    "14": "Dd",
+    "15": "Td",
+    "16": "Qad",
+    "17": "Qid",
+    "18": "Sxd",
+    "19": "Spd",
+    "20": "Ocd",
+    "21": "Nod",
+    "22": "Vg",
+    "23": "Uvg",
+    "24": "Dvg",
+    "25": "Tvg",
+    "26": "Qavg",
+    "27": "Qivg",
+    "28": "Sxvg",
+    "29": "Spvg",
+    "30": "Ocvg",
+    "31": "Novg",
+    "32": "Tg",
+    "33": "Utg",
+    "34": "Dtg",
+    "35": "Ttg",
+    "36": "Qatg",
+    "37": "Qitg",
+    "38": "Sxtg",
+    "39": "Sptg",
+    "40": "Octg",
+    "41": "Notg",
+    "42": "Qag",
+    "43": "Uqag",
+    "44": "Dqag",
+    "45": "Tqag",
+    "46": "Qaqag",
+    "47": "Qiqag",
+    "48": "Sxqag",
+    "49": "Spqag",
+    "50": "Ocqag"
+  },
+  "items": [
+    {
+      "ID": "1",
+      "ShopId": "12",
+      "GiftId": "51054",
+      "Behavior": "",
+      "Cost": "400",
+      "MaxPurchase": "1",
+      "TimeLock": "10000",
+      "TimeAvailable": "0",
+      "kind": "SpecialPet",
+      "reward": {
+        "ID": "51054",
+        "TypeReward": "1",
+        "Value": "1054;1",
+        "Quantity": "1"
+      },
+      "rewardType": "Pet",
+      "pet": {
+        "id": "1054",
+        "icon": "CHICK_PUMPKIN",
+        "nameKey": "CHICK",
+        "rarity": "APEX",
+        "value": "6250000000000",
+        "price": "27700000000000000000"
+      },
+      "icon": "CHICK_PUMPKIN",
+      "nameKey": "CHICK",
+      "rarity": "APEX"
+    },
+    {
+      "ID": "2",
+      "ShopId": "12",
+      "GiftId": "50107",
+      "Behavior": "",
+      "Cost": "250",
+      "MaxPurchase": "1",
+      "TimeLock": "10000",
+      "TimeAvailable": "0",
+      "kind": "SpecialPet",
+      "reward": {
+        "ID": "50107",
+        "TypeReward": "1",
+        "Value": "107;1",
+        "Quantity": "1"
+      },
+      "rewardType": "Pet",
+      "pet": {
+        "id": "107",
+        "icon": "GOLDFISH",
+        "nameKey": "GOLDFISH",
+        "rarity": "APEX",
+        "value": "2747567195649",
+        "price": "6231640060802330000"
+      },
+      "icon": "GOLDFISH",
+      "nameKey": "GOLDFISH",
+      "rarity": "APEX"
+    },
+    {
+      "ID": "3",
+      "ShopId": "12",
+      "GiftId": "51028",
+      "Behavior": "",
+      "Cost": "150",
+      "MaxPurchase": "1",
+      "TimeLock": "10000",
+      "TimeAvailable": "0",
+      "kind": "SpecialPet",
+      "reward": {
+        "ID": "51028",
+        "TypeReward": "1",
+        "Value": "1028;1",
+        "Quantity": "1"
+      },
+      "rewardType": "Pet",
+      "pet": {
+        "id": "1028",
+        "icon": "IGUANA",
+        "nameKey": "IGUANA",
+        "rarity": "APEX",
+        "value": "1618844947384",
+        "price": "2178345437745210000"
+      },
+      "icon": "IGUANA",
+      "nameKey": "IGUANA",
+      "rarity": "APEX"
+    },
+    {
+      "ID": "4",
+      "ShopId": "12",
+      "GiftId": "56002",
+      "Behavior": "",
+      "Cost": "15",
+      "MaxPurchase": "0",
+      "TimeLock": "10000",
+      "TimeAvailable": "0",
+      "kind": "SpecialPet",
+      "reward": {
+        "ID": "56002",
+        "TypeReward": "1",
+        "Value": "6002;1",
+        "Quantity": "1"
+      },
+      "rewardType": "Pet",
+      "pet": {
+        "id": "6002",
+        "icon": "LUCKYBOXLEGENDARY",
+        "nameKey": "LUCKYBOXLEGENDARY",
+        "rarity": "LEGENDARY",
+        "value": "0",
+        "price": "2100000000000000"
+      },
+      "icon": "LUCKYBOXLEGENDARY",
+      "nameKey": "LUCKYBOXLEGENDARY",
+      "rarity": "LEGENDARY"
+    },
+    {
+      "ID": "5",
+      "ShopId": "12",
+      "GiftId": "56003",
+      "Behavior": "",
+      "Cost": "20",
+      "MaxPurchase": "0",
+      "TimeLock": "10000",
+      "TimeAvailable": "0",
+      "kind": "SpecialPet",
+      "reward": {
+        "ID": "56003",
+        "TypeReward": "1",
+        "Value": "6003;1",
+        "Quantity": "1"
+      },
+      "rewardType": "Pet",
+      "pet": {
+        "id": "6003",
+        "icon": "LUCKYBOXMYTHIC",
+        "nameKey": "LUCKYBOXMYTHIC",
+        "rarity": "MYTHIC",
+        "value": "0",
+        "price": "500000000000000000"
+      },
+      "icon": "LUCKYBOXMYTHIC",
+      "nameKey": "LUCKYBOXMYTHIC",
+      "rarity": "MYTHIC"
+    },
+    {
+      "ID": "6",
+      "ShopId": "12",
+      "GiftId": "",
+      "Behavior": "RandomPet",
+      "Cost": "10",
+      "MaxPurchase": "0",
+      "TimeLock": "10000",
+      "TimeAvailable": "0",
+      "kind": "RandomPet",
+      "reward": null,
+      "icon": "RandomPet",
+      "nameKey": "HUD_SHOP_EVENT_ITEM_RANDOMPET",
+      "detailKey": "HUD_SHOP_EVENT_DETAILS_RANDOMPET"
+    },
+    {
+      "ID": "7",
+      "ShopId": "12",
+      "GiftId": "",
+      "Behavior": "RandomItem",
+      "Cost": "10",
+      "MaxPurchase": "0",
+      "TimeLock": "10000",
+      "TimeAvailable": "0",
+      "kind": "RandomItem",
+      "reward": null,
+      "icon": "RandomItem",
+      "nameKey": "HUD_SHOP_EVENT_ITEM_RANDOMITEM",
+      "detailKey": "HUD_SHOP_EVENT_DETAILS_RANDOMITEM"
+    },
+    {
+      "ID": "8",
+      "ShopId": "13",
+      "GiftId": "51061",
+      "Behavior": "",
+      "Cost": "400",
+      "MaxPurchase": "1",
+      "TimeLock": "10000",
+      "TimeAvailable": "0",
+      "kind": "SpecialPet",
+      "reward": {
+        "ID": "51061",
+        "TypeReward": "1",
+        "Value": "1061;1",
+        "Quantity": "1"
+      },
+      "rewardType": "Pet",
+      "pet": {
+        "id": "1061",
+        "icon": "SHARK_SPIDERLEGS",
+        "nameKey": "SHARK",
+        "rarity": "APEX",
+        "value": "6250000000000",
+        "price": "27700000000000000000"
+      },
+      "icon": "SHARK_SPIDERLEGS",
+      "nameKey": "SHARK",
+      "rarity": "APEX"
+    },
+    {
+      "ID": "9",
+      "ShopId": "13",
+      "GiftId": "51054",
+      "Behavior": "",
+      "Cost": "400",
+      "MaxPurchase": "1",
+      "TimeLock": "10000",
+      "TimeAvailable": "0",
+      "kind": "SpecialPet",
+      "reward": {
+        "ID": "51054",
+        "TypeReward": "1",
+        "Value": "1054;1",
+        "Quantity": "1"
+      },
+      "rewardType": "Pet",
+      "pet": {
+        "id": "1054",
+        "icon": "CHICK_PUMPKIN",
+        "nameKey": "CHICK",
+        "rarity": "APEX",
+        "value": "6250000000000",
+        "price": "27700000000000000000"
+      },
+      "icon": "CHICK_PUMPKIN",
+      "nameKey": "CHICK",
+      "rarity": "APEX"
+    },
+    {
+      "ID": "10",
+      "ShopId": "13",
+      "GiftId": "51047",
+      "Behavior": "",
+      "Cost": "250",
+      "MaxPurchase": "1",
+      "TimeLock": "10000",
+      "TimeAvailable": "0",
+      "kind": "SpecialPet",
+      "reward": {
+        "ID": "51047",
+        "TypeReward": "1",
+        "Value": "1047;1",
+        "Quantity": "1"
+      },
+      "rewardType": "Pet",
+      "pet": {
+        "id": "1047",
+        "icon": "BULL_PUMPKIN",
+        "nameKey": "BULL",
+        "rarity": "APEX",
+        "value": "5900000000000",
+        "price": "24600000000000000000"
+      },
+      "icon": "BULL_PUMPKIN",
+      "nameKey": "BULL",
+      "rarity": "APEX"
+    },
+    {
+      "ID": "11",
+      "ShopId": "13",
+      "GiftId": "16088",
+      "Behavior": "",
+      "Cost": "100",
+      "MaxPurchase": "0",
+      "TimeLock": "10000",
+      "TimeAvailable": "0",
+      "kind": "SpecialPet",
+      "reward": {
+        "ID": "16088",
+        "TypeReward": "16",
+        "Value": "24",
+        "Quantity": "5"
+      },
+      "rewardType": "WeatherGen",
+      "icon": "Sparkle",
+      "nameKey": "MUTATION_SPARKLE",
+      "namePrefix": "HUD_ITEM_WEATHERGEN",
+      "nameColor": "C8C8C8",
+      "rarity": "COMMON"
+    },
+    {
+      "ID": "12",
+      "ShopId": "13",
+      "GiftId": "51035",
+      "Behavior": "",
+      "Cost": "75",
+      "MaxPurchase": "0",
+      "TimeLock": "10000",
+      "TimeAvailable": "0",
+      "kind": "SpecialPet",
+      "reward": {
+        "ID": "51035",
+        "TypeReward": "1",
+        "Value": "1035;1",
+        "Quantity": "1"
+      },
+      "rewardType": "Pet",
+      "pet": {
+        "id": "1035",
+        "icon": "WOMBAT",
+        "nameKey": "WOMBAT",
+        "rarity": "APEX",
+        "value": "2259391104162",
+        "price": "5389552427254850000"
+      },
+      "icon": "WOMBAT",
+      "nameKey": "WOMBAT",
+      "rarity": "APEX"
+    },
+    {
+      "ID": "13",
+      "ShopId": "13",
+      "GiftId": "16089",
+      "Behavior": "",
+      "Cost": "20",
+      "MaxPurchase": "0",
+      "TimeLock": "10000",
+      "TimeAvailable": "0",
+      "kind": "SpecialPet",
+      "reward": {
+        "ID": "16089",
+        "TypeReward": "16",
+        "Value": "15",
+        "Quantity": "5"
+      },
+      "rewardType": "WeatherGen",
+      "icon": "Prismatic",
+      "nameKey": "MUTATION_PRISMATIC",
+      "namePrefix": "HUD_ITEM_WEATHERGEN",
+      "nameColor": "FF0FA7",
+      "rarity": "COMMON"
+    },
+    {
+      "ID": "14",
+      "ShopId": "13",
+      "GiftId": "56003",
+      "Behavior": "",
+      "Cost": "20",
+      "MaxPurchase": "0",
+      "TimeLock": "10000",
+      "TimeAvailable": "0",
+      "kind": "SpecialPet",
+      "reward": {
+        "ID": "56003",
+        "TypeReward": "1",
+        "Value": "6003;1",
+        "Quantity": "1"
+      },
+      "rewardType": "Pet",
+      "pet": {
+        "id": "6003",
+        "icon": "LUCKYBOXMYTHIC",
+        "nameKey": "LUCKYBOXMYTHIC",
+        "rarity": "MYTHIC",
+        "value": "0",
+        "price": "500000000000000000"
+      },
+      "icon": "LUCKYBOXMYTHIC",
+      "nameKey": "LUCKYBOXMYTHIC",
+      "rarity": "MYTHIC"
+    },
+    {
+      "ID": "15",
+      "ShopId": "13",
+      "GiftId": "56002",
+      "Behavior": "",
+      "Cost": "15",
+      "MaxPurchase": "0",
+      "TimeLock": "10000",
+      "TimeAvailable": "0",
+      "kind": "SpecialPet",
+      "reward": {
+        "ID": "56002",
+        "TypeReward": "1",
+        "Value": "6002;1",
+        "Quantity": "1"
+      },
+      "rewardType": "Pet",
+      "pet": {
+        "id": "6002",
+        "icon": "LUCKYBOXLEGENDARY",
+        "nameKey": "LUCKYBOXLEGENDARY",
+        "rarity": "LEGENDARY",
+        "value": "0",
+        "price": "2100000000000000"
+      },
+      "icon": "LUCKYBOXLEGENDARY",
+      "nameKey": "LUCKYBOXLEGENDARY",
+      "rarity": "LEGENDARY"
+    },
+    {
+      "ID": "16",
+      "ShopId": "13",
+      "GiftId": "",
+      "Behavior": "RandomPet",
+      "Cost": "10",
+      "MaxPurchase": "0",
+      "TimeLock": "10000",
+      "TimeAvailable": "0",
+      "kind": "RandomPet",
+      "reward": null,
+      "icon": "RandomPet",
+      "nameKey": "HUD_SHOP_EVENT_ITEM_RANDOMPET",
+      "detailKey": "HUD_SHOP_EVENT_DETAILS_RANDOMPET"
+    },
+    {
+      "ID": "17",
+      "ShopId": "13",
+      "GiftId": "",
+      "Behavior": "RandomItem",
+      "Cost": "10",
+      "MaxPurchase": "0",
+      "TimeLock": "10000",
+      "TimeAvailable": "0",
+      "kind": "RandomItem",
+      "reward": null,
+      "icon": "RandomItem",
+      "nameKey": "HUD_SHOP_EVENT_ITEM_RANDOMITEM",
+      "detailKey": "HUD_SHOP_EVENT_DETAILS_RANDOMITEM"
+    }
+  ],
+  "randomPetPool": [
+    {
+      "id": "46",
+      "icon": "BROWNBEAR",
+      "nameKey": "BROWNBEAR",
+      "rarity": "MYTHIC",
+      "value": "16862745",
+      "price": "70000000000"
+    },
+    {
+      "id": "47",
+      "icon": "MANATEE",
+      "nameKey": "MANATEE",
+      "rarity": "MYTHIC",
+      "value": "15432099",
+      "price": "175000000000"
+    },
+    {
+      "id": "48",
+      "icon": "OSTRICH",
+      "nameKey": "OSTRICH",
+      "rarity": "MYTHIC",
+      "value": "36111111",
+      "price": "455000000000"
+    },
+    {
+      "id": "44",
+      "icon": "SMALLWHALE",
+      "nameKey": "SMALLWHALE",
+      "rarity": "MYTHIC",
+      "value": "87925608",
+      "price": "1229200000000"
+    },
+    {
+      "id": "49",
+      "icon": "GORILLA",
+      "nameKey": "GORILLA",
+      "rarity": "MYTHIC",
+      "value": "213209418",
+      "price": "3441200000000"
+    },
+    {
+      "id": "50",
+      "icon": "BELUGA",
+      "nameKey": "BELUGA",
+      "rarity": "MYTHIC",
+      "value": "534790997",
+      "price": "9979200000000"
+    },
+    {
+      "id": "51",
+      "icon": "NARWHAL",
+      "nameKey": "NARWHAL",
+      "rarity": "MYTHIC",
+      "value": "1436011080",
+      "price": "31104000000000"
+    },
+    {
+      "id": "56",
+      "icon": "HUSKY",
+      "nameKey": "HUSKY",
+      "rarity": "MYTHIC",
+      "value": "8391366906",
+      "price": "279936000000000"
+    },
+    {
+      "id": "60",
+      "icon": "PLATYPUS",
+      "nameKey": "PLATYPUS",
+      "rarity": "MYTHIC",
+      "value": "43300232019",
+      "price": "3359230000000000"
+    },
+    {
+      "id": "61",
+      "icon": "JAGUAR",
+      "nameKey": "JAGUAR",
+      "rarity": "MYTHIC",
+      "value": "121817000000",
+      "price": "50388500000000000"
+    },
+    {
+      "id": "62",
+      "icon": "REINDEER",
+      "nameKey": "REINDEER",
+      "rarity": "MYTHIC",
+      "value": "233561000000",
+      "price": "151165000000000000"
+    },
+    {
+      "id": "63",
+      "icon": "ARCTICFOX",
+      "nameKey": "ARCTICFOX",
+      "rarity": "MYTHIC",
+      "value": "732604000000",
+      "price": "604662000000000000"
+    },
+    {
+      "id": "64",
+      "icon": "COW",
+      "nameKey": "COW",
+      "rarity": "MYTHIC",
+      "value": "769623200000",
+      "price": "651165000000000000"
+    },
+    {
+      "id": "66",
+      "icon": "OX",
+      "nameKey": "OX",
+      "rarity": "MYTHIC",
+      "value": "777777777777",
+      "price": "620768395000000000"
+    },
+    {
+      "id": "67",
+      "icon": "TURKEY",
+      "nameKey": "TURKEY",
+      "rarity": "MYTHIC",
+      "value": "795808153000",
+      "price": "680567389120000000"
+    },
+    {
+      "id": "68",
+      "icon": "FRILLNECKEDLIZARD",
+      "nameKey": "FRILLNECKEDLIZARD",
+      "rarity": "MYTHIC",
+      "value": "888888888888",
+      "price": "650689015000000000"
+    },
+    {
+      "id": "69",
+      "icon": "TORTOISE",
+      "nameKey": "TORTOISE",
+      "rarity": "MYTHIC",
+      "value": "740230745982",
+      "price": "662796007000500000"
+    },
+    {
+      "id": "1005",
+      "icon": "SNOWMAN",
+      "nameKey": "SNOWMAN",
+      "rarity": "MYTHIC",
+      "value": "273884758",
+      "price": "4420500000000"
+    },
+    {
+      "id": "1011",
+      "icon": "PENGUIN",
+      "nameKey": "PENGUIN",
+      "rarity": "MYTHIC",
+      "value": "229452000000",
+      "price": "94910500000000000"
+    },
+    {
+      "id": "1016",
+      "icon": "KANGAROO",
+      "nameKey": "KANGAROO",
+      "rarity": "MYTHIC",
+      "value": "791432666667",
+      "price": "199999999999000000"
+    },
+    {
+      "id": "1006",
+      "icon": "MOODENG",
+      "nameKey": "MOODENG",
+      "rarity": "MYTHIC",
+      "value": "611606000000",
+      "price": "395844000000000000"
+    },
+    {
+      "id": "1021",
+      "icon": "PEACOCK",
+      "nameKey": "PEACOCK",
+      "rarity": "MYTHIC",
+      "value": "832455316546",
+      "price": "608000670000350000"
+    },
+    {
+      "id": "1023",
+      "icon": "SHARK",
+      "nameKey": "SHARK",
+      "rarity": "MYTHIC",
+      "value": "878787878787",
+      "price": "676767676700000000"
+    }
+  ],
+  "randomItemPool": [
+    {
+      "id": "1",
+      "type": "Money",
+      "icon": "MoneyIcon",
+      "rarity": "RARE",
+      "value": "100.0k"
+    },
+    {
+      "id": "2",
+      "type": "Money",
+      "icon": "MoneyIcon",
+      "rarity": "RARE",
+      "value": "1.0m"
+    },
+    {
+      "id": "3",
+      "type": "MoneyTime",
+      "icon": "MoneyIcon",
+      "rarity": "RARE",
+      "value": "0.5h"
+    },
+    {
+      "id": "4",
+      "type": "PetCoin",
+      "icon": "PetCoinIcon",
+      "rarity": "LEGENDARY",
+      "value": "5"
+    },
+    {
+      "id": "5",
+      "type": "PetCoin",
+      "icon": "PetCoinIcon",
+      "rarity": "LEGENDARY",
+      "value": "20"
+    },
+    {
+      "id": "6",
+      "type": "Dust",
+      "icon": "DustIcon",
+      "rarity": "EPIC",
+      "value": "10"
+    },
+    {
+      "id": "7",
+      "type": "Dust",
+      "icon": "DustIcon",
+      "rarity": "EPIC",
+      "value": "50"
+    }
+  ],
+  "currentPool": "4",
+  "rarityNames": {
+    "COMMON": "RARITY_COMMON",
+    "RARE": "RARITY_RARE",
+    "EPIC": "RARITY_EPIC",
+    "LEGENDARY": "RARITY_LEGENDARY",
+    "MYTHIC": "RARITY_MYTHIC",
+    "APEX": "RARITY_APEX",
+    "LIMITED": "RARITY_LIMITED"
+  },
+  "rarityTextColors": {
+    "COMMON": "4CAF50",
+    "RARE": "00B2FF",
+    "EPIC": "9C27B0",
+    "LEGENDARY": "FFC107",
+    "MYTHIC": "E91E1E",
+    "APEX": "FF8900",
+    "LIMITED": "B3CA1F"
+  },
+  "specialIncomeFormat": "[1F64C4]{0}:[-] [FF5F00]{1}/s[-]",
+  "itemNameFormat": "[324765]{0}[-] {1} [324765]-[-] {2}",
+  "timeUnits": [
+    {
+      "unit": "YEAR",
+      "seconds": 31536000
+    },
+    {
+      "unit": "MONTH",
+      "seconds": 2592000
+    },
+    {
+      "unit": "DAY",
+      "seconds": 86400
+    },
+    {
+      "unit": "HOUR",
+      "seconds": 3600
+    },
+    {
+      "unit": "MINUTE",
+      "seconds": 60
+    },
+    {
+      "unit": "SECOND",
+      "seconds": 1
+    }
+  ],
+  "timeParts": 2,
+  "shopExtendSeconds": 0,
+  "rarityTasks": [
+    {
+      "ID": "1",
+      "TaskType": "0",
+      "Target": "1",
+      "Reward": "10"
+    },
+    {
+      "ID": "2",
+      "TaskType": "1",
+      "Target": "5",
+      "Reward": "5"
+    },
+    {
+      "ID": "3",
+      "TaskType": "2",
+      "Target": "5",
+      "Reward": "5"
+    }
+  ],
+  "meteoriteTasks": [
+    {
+      "ID": "fish",
+      "TaskType": "1",
+      "Target": 5,
+      "Reward": 5
+    },
+    {
+      "ID": "dig",
+      "TaskType": "2",
+      "Target": 5,
+      "Reward": 5
+    }
+  ],
+  "hitCap": 90,
+  "schedules": [
+    {
+      "ID": "1",
+      "EventType": "6",
+      "SeasonId": "12",
+      "Start": "1791910800",
+      "End": "1793034000",
+      "Priority": "10",
+      "CurrencyType": "6",
+      "ShopId": "12",
+      "MilestoneId": "0",
+      "eventName": "EventRarityContract",
+      "currencyIcon": "RarityContractGem"
+    },
+    {
+      "ID": "2",
+      "EventType": "2",
+      "SeasonId": "13",
+      "Start": "1793034000",
+      "End": "1795046400",
+      "Priority": "10",
+      "CurrencyType": "3",
+      "ShopId": "13",
+      "MilestoneId": "0",
+      "eventName": "EventDigMeteorite",
+      "currencyIcon": "GemstoneIcon"
+    }
+  ],
+  "gaps": [
+    "Task server progress, dynamic rarity missions, reward draws, BaseColor unlocks and submit validation are not executed; daily task progress is an explicit local scenario",
+    "No engine screenshots; font/shader/scaler, hit order, safe area and scroll inertia unverified; player state is a local simulation"
+  ]
+}

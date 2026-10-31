@@ -4,8 +4,13 @@ import { fileURLToPath } from "node:url";
 import { mailRules } from "./ui-mail-source.mjs";
 import { shopRules } from "./ui-shop-source.mjs";
 import { activitiesRules } from "./ui-activities-source.mjs";
+import { sourceScreenRules } from "./ui-source-screen.mjs";
+import { shopEventSpec } from "./ui-shop-event-source.mjs";
+
+const SOURCE_SCREENS = [shopEventSpec];
 
 const UI_FILES = [{ id: "collection", name: "Collection", file: "PetsCollection.ui", status: "ready" }, { id: "activities", name: "Activities", file: "Activities.ui", status: "ready" }, { id: "shop", name: "Shop", file: "Shop.ui", status: "ready" }, { id: "mail", name: "Mail", file: "Mail.ui", status: "ready" }];
+UI_FILES.push(...SOURCE_SCREENS.map(spec => ({ id: spec.id, name: spec.name || "Shop Event", file: spec.ui, status: "ready" })));
 const PLANNED = ["Mission", "Leaderboard"].map(name => ({ id: name.toLowerCase(), name, status: "planned" }));
 const PROP_FIELDS = {
   image: ["source", "color", "reverse", "fillType", "slicedBorder", "tiledBorder", "centerInvisible", "fillDir", "fillAmount", "invertFill", "flip", "gradient", "gradientTop", "gradientBottom", "isApplyAnimation", "animationAtlasID", "animationFrameRate", "animationLoop"],
@@ -62,7 +67,7 @@ export function syncUiPreview(sourceRoot, gddRoot, screenId = null) {
     // serialized filePath values in older HUDs can still point to its old name.
     // Only index metadata in the relocation directory confirmed for this HUD.
     const relocatedById = new Map();
-    if (["activities", "shop", "mail"].includes(ui.id)) {
+    if (ui.id !== "collection") {
       const registration = readFileSync(source("ProjectSettings/ResourceRegisteration.asset"), "utf8");
       const resources = JSON.parse(registration.includes("\n//") ? registration.slice(0, registration.lastIndexOf("\n//")) : registration).Resource.texture;
       (function walk(node) {
@@ -100,7 +105,7 @@ export function syncUiPreview(sourceRoot, gddRoot, screenId = null) {
       let key = declaredKey;
       if (declaredKey.startsWith("Assets/") && !existsSync(source(declaredKey))) {
         const candidates = ref.fileId ? relocatedById.get(ref.fileId) || [] : [];
-        if (["activities", "shop", "mail"].includes(ui.id) && declaredKey.includes("/UIComponents/")) {
+        if (ui.id !== "collection" && declaredKey.includes("/UIComponents/")) {
           const candidate = declaredKey.replace("/UIComponents/", "/");
           if (existsSync(source(candidate)) && existsSync(source(candidate + ".meta")) && JSON.parse(readFileSync(source(candidate + ".meta"), "utf8")).fileId === ref.fileId && !candidates.includes(candidate)) candidates.push(candidate);
         }
@@ -152,7 +157,7 @@ export function syncUiPreview(sourceRoot, gddRoot, screenId = null) {
         image: null, button: null, text: null, layout: null,
         propsData: props, ecaProps: node.ecaProps || {}, unsupported: [], children: []
       };
-      if (["shop", "mail"].includes(ui.id)) result.sourceFields = Object.fromEntries(Object.entries(node).filter(([key]) => !["children", "propsData", "ecaProps"].includes(key)));
+      if (!["collection", "activities"].includes(ui.id)) result.sourceFields = Object.fromEntries(Object.entries(node).filter(([key]) => !["children", "propsData", "ecaProps"].includes(key)));
       for (const kind of Object.keys(PROP_FIELDS)) if (props[kind]) {
         const value = props[kind];
         result[kind] = Object.fromEntries(PROP_FIELDS[kind].filter(key => key in value).map(key => [key, value[key]]));
@@ -170,6 +175,12 @@ export function syncUiPreview(sourceRoot, gddRoot, screenId = null) {
       return result;
     }
     const tree = normalize(parsed);
+    const spec = SOURCE_SCREENS.find(spec => spec.id === ui.id);
+    if (spec) {
+      const { rules, i18n } = sourceScreenRules(spec, source, tree, sprite, parseCsv);
+      json(["data", "ui", `${ui.id}-rules.json`], rules);
+      json(["data", "ui", `${ui.id}-i18n.json`], i18n);
+    }
     json(["data", "ui", `${ui.id}.json`], {
       id: ui.id, source: uiRel.replaceAll("\\", "/"), entityCount,
       referenceSize: { width: tree.transform?.sizeDelta?.x || null, height: tree.transform?.sizeDelta?.y || null },

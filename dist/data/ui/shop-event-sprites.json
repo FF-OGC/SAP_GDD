@@ -1,0 +1,2974 @@
+{
+  "sprites": [
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/UI_TakePhoto_bg_Name_01.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/UI_TakePhoto_bg_Name_01.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/UI_TakePhoto_bg_Name_01.png"
+      ],
+      "fileId": "7e1525f6c1123df379224f4aa5be0acd",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Dialog/OpenShopButton",
+        "Shop/Dialog/OpenTaskButton",
+        "Shop/Dialog/SubmitPetButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/FF_WS_MinShop.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/FF_WS_MinShop.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/FF_WS_MinShop.png"
+      ],
+      "fileId": "7b7a4864e6c4ce38ec39f312d8b5eb1f",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Dialog/OpenShopButton/Icon",
+        "Shop/Shop/TabsLayout/ShopTabButton/Icon",
+        "Shop/Shop/ShopView/ScrollView/GeneralIcon",
+        "Shop/Shop/ShopView/BuyButton/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_DIALOGUE.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_DIALOGUE.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_DIALOGUE.png"
+      ],
+      "fileId": "bf44fd9130c051056468107e0d2a5210",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Dialog/OpenTaskButton/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/FF_PetTabBG.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/FF_PetTabBG.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/FF_PetTabBG.png"
+      ],
+      "fileId": "a3db0f229629acb1c29bb4e99e23f85d",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Dialog/SubmitPetButton/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png"
+      ],
+      "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Shop",
+        "Shop/Shop/ShopView/ScrollView/RecommendIcon/Label/LineIcon",
+        "Shop/Shop/ShopView/ScrollView/GeneralIcon/Label/LineIcon",
+        "Shop/Shop/TaskView/Title/Line",
+        "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/Line"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png"
+      ],
+      "fileId": "4fea53c19488f972a3e911c826b1bea7",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Shop/PreventCloseButton",
+        "Shop/Shop/BG/PreventButton",
+        "Shop/Shop/ShopView/ScrollView/ExclusiveItem/SelectButton",
+        "Shop/Shop/ShopView/ScrollView/RecommendedItems/Item/SelectButton",
+        "Shop/Shop/ShopView/ScrollView/GeneralItems/Item/SelectButton",
+        "Shop/SubmitPets/PreventCloseButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/TitleBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/TitleBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/TitleBG.png"
+      ],
+      "fileId": "zkfpx1yzvtc-mu6xhq5y-nv8ey9h3kfj",
+      "output": "./assets/ui-sprites/shop-event/NewAssets__TitleBG.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/Title",
+        "Shop/SubmitPets/Title"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 113,
+        "right": 12,
+        "top": 48,
+        "bottom": 18
+      },
+      "width": 752,
+      "height": 126
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/CloseButton.png",
+      "declaredKey": "Assets/Sprites/NewAssets/CloseButton.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/CloseButton.png"
+      ],
+      "fileId": "ub3ok34eqnr-mu6xhog5-q0tv8gncefb",
+      "output": "./assets/ui-sprites/shop-event/NewAssets__CloseButton.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/Title/CloseButton",
+        "Shop/SubmitPets/Title/CloseButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 38,
+      "height": 40
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/ContainerBG.png",
+      "declaredKey": "Assets/_Test/NewUI/Assets/Img_bg02_BG.png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Img_bg02_BG.png",
+        "Assets/Sprites/NewAssets/ContainerBG.png"
+      ],
+      "fileId": "gszc833692p-mu6veyfp-g1yynwpple7",
+      "output": "./assets/ui-sprites/shop-event/NewAssets__ContainerBG.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/BG",
+        "Shop/Shop/ShopView/Tooltip/ObtainableRewards",
+        "Shop/SubmitPets/BG"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 34,
+        "right": 33,
+        "top": 32,
+        "bottom": 39
+      },
+      "width": 106,
+      "height": 118
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/HalfContainerBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/HalfContainerBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/HalfContainerBG.png"
+      ],
+      "fileId": "earvmnoqs6p-mu2oi0z2-k994sun5yc",
+      "output": "./assets/ui-sprites/shop-event/NewAssets__HalfContainerBG.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/BG/BG"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 20,
+        "right": 4,
+        "top": 20,
+        "bottom": 18
+      },
+      "width": 28,
+      "height": 52
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/DecorateIcon1.png",
+      "declaredKey": "Assets/_Test/NewUI/Assets/Img_decorate01.png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Img_decorate01.png"
+      ],
+      "fileId": "ouansc8n289-mu6xhpqu-centw2ek0ns",
+      "output": "./assets/ui-sprites/shop-event/NewAssets__DecorateIcon1.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/BG/DecorLeft",
+        "Shop/SubmitPets/BG/DecorLeft"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 68,
+      "height": 104
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/DecorateIcon2.png",
+      "declaredKey": "Assets/_Test/NewUI/Assets/Img_decorate02.png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Img_decorate02.png"
+      ],
+      "fileId": "z3itg018ujr-mu6xhpvo-cnfqx0exhhp",
+      "output": "./assets/ui-sprites/shop-event/NewAssets__DecorateIcon2.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/BG/DecorRight",
+        "Shop/SubmitPets/BG/DecorRight"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 114,
+      "height": 52
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/SelectTabBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/SelectTabBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/SelectTabBG.png",
+        "Assets/Sprites/NewAssets/SelectTab.png"
+      ],
+      "fileId": "f2arxt0zsis-mu9bpuhj-5tki52jlbcn",
+      "output": "./assets/ui-sprites/shop-event/NewAssets__SelectTabBG.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/TabsLayout/ShopTabButton",
+        "runtime:shop-event:SelectTabBG"
+      ],
+      "origins": [
+        ".ui",
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 10,
+        "right": 10,
+        "top": 10,
+        "bottom": 10
+      },
+      "width": 96,
+      "height": 96
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/NormalTabBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/NormalTabBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/NormalTabBG.png"
+      ],
+      "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+      "output": "./assets/ui-sprites/shop-event/NewAssets__NormalTabBG.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/TabsLayout/TaskTabButton",
+        "runtime:shop-event:NormalTabBG"
+      ],
+      "origins": [
+        ".ui",
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 20,
+        "right": 20,
+        "top": 20,
+        "bottom": 20
+      },
+      "width": 96,
+      "height": 98
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/FF_WS_Reservation.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/FF_WS_Reservation.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/FF_WS_Reservation.png"
+      ],
+      "fileId": "2363a41c74fec889551541773f971d9c",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Shop/TabsLayout/TaskTabButton/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/ItemBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/ItemBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/ItemBG.png"
+      ],
+      "fileId": "uxm85o6u4w-mu6xhq1i-eqcetnq7xhd",
+      "output": "./assets/ui-sprites/shop-event/NewAssets__ItemBG.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/Wallet",
+        "Shop/Shop/ShopView/Tooltip/ObtainableRewards/Scroll View/RewardsLayout/Reward",
+        "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/Item",
+        "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/Reward",
+        "Shop/SubmitPets/PetsLayout/Pet (1)",
+        "Shop/SubmitPets/PetsLayout/Pet (2)",
+        "Shop/SubmitPets/PetsLayout/Pet (3)",
+        "Shop/SubmitPets/PetsLayout/Pet (4)",
+        "Shop/SubmitPets/PetsLayout/Pet (5)",
+        "Shop/SubmitPets/PetsLayout/Pet (6)"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 20,
+        "right": 20,
+        "top": 20,
+        "bottom": 20
+      },
+      "width": 90,
+      "height": 90
+    },
+    {
+      "key": "Assets/Sprites/Icons/RarityContractGem.png",
+      "declaredKey": "Assets/Sprites/Icons/RarityContractGem.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/RarityContractGem.png"
+      ],
+      "fileId": "ol3ighrq0s-mrep2ii3-lbtfsei04f",
+      "output": "./assets/ui-sprites/shop-event/Icons__RarityContractGem.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/Wallet/WalletGemIcon",
+        "Shop/Shop/ShopView/ScrollView/ExclusiveItem/GemIcon",
+        "Shop/Shop/ShopView/ScrollView/RecommendedItems/Item/GemIcon",
+        "Shop/Shop/ShopView/ScrollView/GeneralItems/Item/GemIcon",
+        "Shop/Shop/ShopView/BuyButton/CostGemIcon",
+        "runtime:shop-event:RarityContractGem"
+      ],
+      "origins": [
+        ".ui",
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Icons/LikeIconTemp.png",
+      "declaredKey": "Assets/Sprites/Icons/LikeIconTemp.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/LikeIconTemp.png"
+      ],
+      "fileId": "a9pz7nv2xeq-mivjh7qb-71mdkdin6lj",
+      "output": "./assets/ui-sprites/shop-event/Icons__LikeIconTemp.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/ShopView/ScrollView/RecommendIcon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 48,
+      "height": 48
+    },
+    {
+      "key": "Assets/Sprites/Backgrounds/SelectingBox.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Backgrounds/SelectingBox.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Backgrounds/SelectingBox.png",
+        "Assets/Sprites/Backgrounds/SelectingBox.png"
+      ],
+      "fileId": "xdywdrcryc-minctbfj-f4q3t7wxzug",
+      "output": "./assets/ui-sprites/shop-event/Backgrounds__SelectingBox.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/ShopView/ScrollView/ExclusiveItem/SelectBorder",
+        "Shop/Shop/ShopView/ScrollView/RecommendedItems/Item/SelectBorder",
+        "Shop/Shop/ShopView/ScrollView/GeneralItems/Item/SelectBorder",
+        "Shop/SubmitPets/PetsLayout/Pet (1)/SelectBorder",
+        "Shop/SubmitPets/PetsLayout/Pet (2)/SelectBorder",
+        "Shop/SubmitPets/PetsLayout/Pet (3)/SelectBorder",
+        "Shop/SubmitPets/PetsLayout/Pet (4)/SelectBorder",
+        "Shop/SubmitPets/PetsLayout/Pet (5)/SelectBorder",
+        "Shop/SubmitPets/PetsLayout/Pet (6)/SelectBorder"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 10,
+        "right": 10,
+        "top": 10,
+        "bottom": 10
+      },
+      "width": 44,
+      "height": 44
+    },
+    {
+      "key": "Assets/Sprites/Backgrounds/BG.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Backgrounds/BG.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Backgrounds/BG.png",
+        "Assets/Sprites/Backgrounds/BG.png"
+      ],
+      "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+      "output": "./assets/ui-sprites/shop-event/Backgrounds__BG.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/ShopView/ScrollView/ExclusiveItem/BG",
+        "Shop/Shop/ShopView/ScrollView/RecommendedItems/Item/BG",
+        "Shop/Shop/ShopView/ScrollView/GeneralItems/Item/BG",
+        "Shop/Shop/ShopView/Tooltip/ItemDetails/BG",
+        "Shop/SubmitPets"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 8,
+        "right": 8,
+        "top": 8,
+        "bottom": 8
+      },
+      "width": 26,
+      "height": 26
+    },
+    {
+      "key": "Assets/Sprites/Backgrounds/TeaseBG.png",
+      "declaredKey": "Assets/Sprites/Backgrounds/TeaseBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Backgrounds/TeaseBG.png"
+      ],
+      "fileId": "6wpp8i2ei8s-mqas84u7-tg56dab07dn",
+      "output": "./assets/ui-sprites/shop-event/Backgrounds__TeaseBG.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/ShopView/ScrollView/ExclusiveItem/HighlightBG"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 334,
+      "height": 200
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png"
+      ],
+      "fileId": "7a7299163551335f237b94854eb60438",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Shop/ShopView/ScrollView/ExclusiveItem/GlowIcon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Steal A Pet_RoadsideShop/Img_Itemtitle01.png",
+      "declaredKey": "Assets/Steal A Pet_RoadsideShop/Img_Itemtitle01.png",
+      "declaredKeys": [
+        "Assets/Steal A Pet_RoadsideShop/Img_Itemtitle01.png"
+      ],
+      "fileId": "qgnl32w2u1-mu9bpka2-3ls6yf8up3y",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Shop/ShopView/ScrollView/ExclusiveItem/Header"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Steal A Pet_RoadsideShop/Img_Quality.png",
+      "declaredKey": "Assets/Steal A Pet_RoadsideShop/Img_Quality.png",
+      "declaredKeys": [
+        "Assets/Steal A Pet_RoadsideShop/Img_Quality.png"
+      ],
+      "fileId": "8oagva2mluk-mu9e1hed-k43jfqms4n",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Shop/ShopView/ScrollView/ExclusiveItem/Footer",
+        "Shop/Shop/ShopView/ScrollView/RecommendedItems/Item/Footer",
+        "Shop/Shop/ShopView/ScrollView/GeneralItems/Item/Footer"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Pets/PENGUIN.png",
+      "declaredKey": "Assets/Sprites/Pets/PENGUIN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/PENGUIN.png"
+      ],
+      "fileId": "63tf7u5p89f-mir2uppa-kquuyta6oll",
+      "output": "./assets/ui-sprites/shop-event/Pets__PENGUIN.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/ShopView/ScrollView/ExclusiveItem/Thumbnail",
+        "Shop/Shop/ShopView/ScrollView/RecommendedItems/Item/Thumbnail",
+        "Shop/Shop/ShopView/ScrollView/GeneralItems/Item/Thumbnail",
+        "Shop/Shop/ShopView/Tooltip/ObtainableRewards/Scroll View/RewardsLayout/Reward/Thumbnail",
+        "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/Item/Thumbnail",
+        "Shop/SubmitPets/PetsLayout/Pet (1)/Thumbnail",
+        "Shop/SubmitPets/PetsLayout/Pet (2)/Thumbnail",
+        "Shop/SubmitPets/PetsLayout/Pet (3)/Thumbnail",
+        "Shop/SubmitPets/PetsLayout/Pet (4)/Thumbnail",
+        "Shop/SubmitPets/PetsLayout/Pet (5)/Thumbnail",
+        "Shop/SubmitPets/PetsLayout/Pet (6)/Thumbnail",
+        "runtime:shop-event:PENGUIN"
+      ],
+      "origins": [
+        ".ui",
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Shapes/SquareRounded100.png",
+      "declaredKey": "Assets/Sprites/Shapes/SquareRounded100.png",
+      "declaredKeys": [
+        "Assets/Sprites/Shapes/SquareRounded100.png"
+      ],
+      "fileId": "l8c4cr6s3nf-mbq68mwy-pxhc7b7pxi9",
+      "output": "./assets/ui-sprites/shop-event/Shapes__SquareRounded100.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/ShopView/ScrollView/ExclusiveItem/CoolDown",
+        "Shop/Shop/ShopView/ScrollView/RecommendedItems/Item/CoolDown",
+        "Shop/Shop/ShopView/ScrollView/GeneralItems/Item/CoolDown"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 7,
+        "right": 7,
+        "top": 7,
+        "bottom": 7
+      },
+      "width": 100,
+      "height": 100
+    },
+    {
+      "key": "Assets/Sprites/Backgrounds/DarkBG.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Backgrounds/DarkBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Backgrounds/DarkBG.png"
+      ],
+      "fileId": "amqbaf0ix1n-mincvgtv-gm0n5ept0bj",
+      "output": "./assets/ui-sprites/shop-event/Backgrounds__DarkBG.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/ShopView/ScrollView/ExclusiveItem/LockButton",
+        "Shop/Shop/ShopView/ScrollView/RecommendedItems/Item/LockButton",
+        "Shop/Shop/ShopView/ScrollView/GeneralItems/Item/LockButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 12,
+        "right": 12,
+        "top": 12,
+        "bottom": 12
+      },
+      "width": 40,
+      "height": 40
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_LOCK.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_LOCK.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_LOCK.png"
+      ],
+      "fileId": "827d005120eec60a3f385c104766e78d",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Shop/ShopView/ScrollView/ExclusiveItem/LockButton/LockIcon",
+        "Shop/Shop/ShopView/ScrollView/RecommendedItems/Item/LockButton/LockIcon",
+        "Shop/Shop/ShopView/ScrollView/GeneralItems/Item/LockButton/LockIcon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/_Test/Steal A Pet_RoadsideShop/Img_Itemtitle01.png",
+      "declaredKey": "Assets/_Test/Steal A Pet_RoadsideShop/Img_Itemtitle01.png",
+      "declaredKeys": [
+        "Assets/_Test/Steal A Pet_RoadsideShop/Img_Itemtitle01.png"
+      ],
+      "fileId": "qgnl32w2u1-mu9bpka2-3ls6yf8up3y",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Shop/ShopView/ScrollView/RecommendedItems/Item/Header",
+        "Shop/Shop/ShopView/ScrollView/GeneralItems/Item/Header",
+        "Shop/Shop/ShopView/Tooltip/ItemDetails/Title"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/YellowButton.png",
+      "declaredKey": "Assets/Sprites/NewAssets/YellowButton.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/YellowButton.png"
+      ],
+      "fileId": "155t2glvvdq-mu6vewp3-o48sy8osfsn",
+      "output": "./assets/ui-sprites/shop-event/NewAssets__YellowButton.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/ShopView/BuyButton",
+        "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/ClaimButton",
+        "Shop/SubmitPets/SubmitButton",
+        "runtime:shop-event:YellowButton"
+      ],
+      "origins": [
+        ".ui",
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 50,
+        "right": 20,
+        "top": 20,
+        "bottom": 25
+      },
+      "width": 160,
+      "height": 66
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/RarityBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/RarityBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/RarityBG.png"
+      ],
+      "fileId": "rqpomo66vjg-mu6vezgl-j2m6wc8co4",
+      "output": "./assets/ui-sprites/shop-event/NewAssets__RarityBG.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/ShopView/Tooltip/ObtainableRewards/Scroll View/RewardsLayout/Reward/Rarity",
+        "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/Item/Rarity",
+        "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/Reward/Rarity",
+        "Shop/SubmitPets/PetsLayout/Pet (1)/Rarity",
+        "Shop/SubmitPets/PetsLayout/Pet (2)/Rarity",
+        "Shop/SubmitPets/PetsLayout/Pet (3)/Rarity",
+        "Shop/SubmitPets/PetsLayout/Pet (4)/Rarity",
+        "Shop/SubmitPets/PetsLayout/Pet (5)/Rarity",
+        "Shop/SubmitPets/PetsLayout/Pet (6)/Rarity"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 10,
+        "right": 10,
+        "top": 0,
+        "bottom": 3
+      },
+      "width": 62,
+      "height": 10
+    },
+    {
+      "key": "Assets/Sprites/Backgrounds/SubTitleBG.png",
+      "declaredKey": "Assets/Sprites/Backgrounds/SubTitleBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Backgrounds/SubTitleBG.png"
+      ],
+      "fileId": "dhjrxrqsae-minctbj0-6m5g28gtv1j",
+      "output": "./assets/ui-sprites/shop-event/Backgrounds__SubTitleBG.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/TaskView/Title",
+        "Shop/SubmitPets/Floor"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 8,
+        "right": 8,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 38,
+      "height": 36
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/TaskBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/TaskBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/TaskBG.png"
+      ],
+      "fileId": "my2o5w5qwk-mus99lug-h2opk4w1uv8",
+      "output": "./assets/ui-sprites/shop-event/NewAssets__TaskBG.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/TaskView/ScrollView/TasksLayout/Task"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 50,
+        "right": 110,
+        "top": 5,
+        "bottom": 10
+      },
+      "width": 278,
+      "height": 119
+    },
+    {
+      "key": "Assets/Sprites/Icons/Gemstone.png",
+      "declaredKey": "Assets/Sprites/Icons/Gemstone.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/Gemstone.png",
+        "Assets/Sprites/UIComponents/Icons/Gemstone.png"
+      ],
+      "fileId": "nx4wslsl78p-mmwziig7-xi2e4n8c0w",
+      "output": "./assets/ui-sprites/shop-event/Icons__Gemstone.png",
+      "missing": false,
+      "references": [
+        "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/Reward/Thumbnail",
+        "runtime:shop-event:GemstoneIcon"
+      ],
+      "origins": [
+        ".ui",
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/HasMWIcon.png",
+      "declaredKey": "Assets/_Test/NewAssets/Assets/Icon_mutation.png",
+      "declaredKeys": [
+        "Assets/_Test/NewAssets/Assets/Icon_mutation.png"
+      ],
+      "fileId": "b9hti3lr6oq-mu9dppgj-r0zg509ivmi",
+      "output": "./assets/ui-sprites/shop-event/NewAssets__HasMWIcon.png",
+      "missing": false,
+      "references": [
+        "Shop/SubmitPets/PetsLayout/Pet (1)/HasMW",
+        "Shop/SubmitPets/PetsLayout/Pet (2)/HasMW",
+        "Shop/SubmitPets/PetsLayout/Pet (3)/HasMW",
+        "Shop/SubmitPets/PetsLayout/Pet (4)/HasMW",
+        "Shop/SubmitPets/PetsLayout/Pet (5)/HasMW",
+        "Shop/SubmitPets/PetsLayout/Pet (6)/HasMW"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 50,
+      "height": 48
+    },
+    {
+      "key": "Assets/Sprites/Shapes/ShadowSquareRounded.png",
+      "declaredKey": "Assets/Sprites/Shapes/ShadowSquareRounded.png",
+      "declaredKeys": [
+        "Assets/Sprites/Shapes/ShadowSquareRounded.png"
+      ],
+      "fileId": "3cf4tu5o4v5-mbhqq60r-mcgu54jdbo",
+      "output": "./assets/ui-sprites/shop-event/Shapes__ShadowSquareRounded.png",
+      "missing": false,
+      "references": [
+        "Shop/SubmitPets/PetsLayout/Pet (1)/SelectPetButton",
+        "Shop/SubmitPets/PetsLayout/Pet (2)/SelectPetButton",
+        "Shop/SubmitPets/PetsLayout/Pet (3)/SelectPetButton",
+        "Shop/SubmitPets/PetsLayout/Pet (4)/SelectPetButton",
+        "Shop/SubmitPets/PetsLayout/Pet (5)/SelectPetButton",
+        "Shop/SubmitPets/PetsLayout/Pet (6)/SelectPetButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 18,
+        "right": 25,
+        "top": 18,
+        "bottom": 25
+      },
+      "width": 175,
+      "height": 175
+    },
+    {
+      "key": "Assets/Sprites/Shapes/ShadowTriangleRounded.png",
+      "declaredKey": "Assets/Sprites/Shapes/ShadowTriangleRounded.png",
+      "declaredKeys": [
+        "Assets/Sprites/Shapes/ShadowTriangleRounded.png"
+      ],
+      "fileId": "2dwx88lny2t-mgctluht-todfgsnoa3q",
+      "output": "./assets/ui-sprites/shop-event/Shapes__ShadowTriangleRounded.png",
+      "missing": false,
+      "references": [
+        "Shop/SubmitPets/UpFloorButton",
+        "Shop/SubmitPets/DownFloorButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/BlueButton.png",
+      "declaredKey": "Assets/Sprites/NewAssets/BlueButton.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/BlueButton.png"
+      ],
+      "fileId": "mgcae4djxp-mu6vevy5-j3m6yz6bep",
+      "output": "./assets/ui-sprites/shop-event/NewAssets__BlueButton.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:BlueButton"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 50,
+        "right": 20,
+        "top": 20,
+        "bottom": 25
+      },
+      "width": 160,
+      "height": 66
+    },
+    {
+      "key": "Assets/Sprites/Icons/FishIcon.png",
+      "declaredKey": "Assets/Sprites/Icons/FishIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/FishIcon.png"
+      ],
+      "fileId": "4rmnocgrmp-mt1fr9q2-t5ucsp4gh6c",
+      "output": "./assets/ui-sprites/shop-event/Icons__FishIcon.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:FishIcon"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Icons/DigIcon.png",
+      "declaredKey": "Assets/Sprites/Icons/DigIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/DigIcon.png"
+      ],
+      "fileId": "15lhsvfhx9q-msvz2uog-xeu9tqybawa",
+      "output": "./assets/ui-sprites/shop-event/Icons__DigIcon.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:DigIcon"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 96,
+      "height": 96
+    },
+    {
+      "key": "Assets/Sprites/Icons/MoleGemIcon.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/MoleGemIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/MoleGemIcon.png"
+      ],
+      "fileId": "pdivwikleqp-moux9b29-9b6d0dnfwr",
+      "output": "./assets/ui-sprites/shop-event/Icons__MoleGemIcon.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:MoleGemIcon"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Icons/BallGemIcon.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/BallGemIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/BallGemIcon.png"
+      ],
+      "fileId": "r2bk25e9il-mpgp864n-7s98bmfkf0u",
+      "output": "./assets/ui-sprites/shop-event/Icons__BallGemIcon.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:BallGemIcon"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Icons/GoldenBootsIcon.png",
+      "declaredKey": "Assets/Sprites/Icons/GoldenBootsIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/GoldenBootsIcon.png"
+      ],
+      "fileId": "fekpq50r8s9-mqhtty07-irc9z33yf6r",
+      "output": "./assets/ui-sprites/shop-event/Icons__GoldenBootsIcon.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:GoldenBootsIcon"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 100,
+      "height": 100
+    },
+    {
+      "key": "Assets/Sprites/Pets/CHICK_PUMPKIN.png",
+      "declaredKey": "Assets/Sprites/Pets/CHICK_PUMPKIN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/CHICK_PUMPKIN.png"
+      ],
+      "fileId": "tbe90spy5kb-mv9270t1-9jlejwb6gbm",
+      "output": "./assets/ui-sprites/shop-event/Pets__CHICK_PUMPKIN.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:CHICK_PUMPKIN"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/GOLDFISH.png",
+      "declaredKey": "Assets/Sprites/Pets/GOLDFISH.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/GOLDFISH.png"
+      ],
+      "fileId": "wflitya0s4r-msei7uky-htdlr3p0zat",
+      "output": "./assets/ui-sprites/shop-event/Pets__GOLDFISH.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:GOLDFISH"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/IGUANA.png",
+      "declaredKey": "Assets/Sprites/Pets/IGUANA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/IGUANA.png"
+      ],
+      "fileId": "3kmivok1fbo-mmbgcb4j-gxq405y7wvb",
+      "output": "./assets/ui-sprites/shop-event/Pets__IGUANA.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:IGUANA"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/LUCKYBOXLEGENDARY.png",
+      "declaredKey": "Assets/Sprites/Pets/LUCKYBOXLEGENDARY.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/LUCKYBOXLEGENDARY.png"
+      ],
+      "fileId": "zttm0yykmjb-mt9w4v7i-y6yjw07wsjm",
+      "output": "./assets/ui-sprites/shop-event/Pets__LUCKYBOXLEGENDARY.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:LUCKYBOXLEGENDARY"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Pets/LUCKYBOXMYTHIC.png",
+      "declaredKey": "Assets/Sprites/Pets/LUCKYBOXMYTHIC.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/LUCKYBOXMYTHIC.png"
+      ],
+      "fileId": "xrrs81jtszm-mt9w4usb-u6xxez17ju9",
+      "output": "./assets/ui-sprites/shop-event/Pets__LUCKYBOXMYTHIC.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:LUCKYBOXMYTHIC"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Icons/RandomPet.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/RandomPet.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/RandomPet.png"
+      ],
+      "fileId": "bd82dwyddb-mmyedas2-cqv6mlfj6bi",
+      "output": "./assets/ui-sprites/shop-event/Icons__RandomPet.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:RandomPet"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Icons/RandomItem.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/RandomItem.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/RandomItem.png"
+      ],
+      "fileId": "bvbadjvgv0i-mmyed8ra-tg1d5y7bwrj",
+      "output": "./assets/ui-sprites/shop-event/Icons__RandomItem.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:RandomItem"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Pets/SHARK_SPIDERLEGS.png",
+      "declaredKey": "Assets/Sprites/Pets/SHARK_SPIDERLEGS.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SHARK_SPIDERLEGS.png"
+      ],
+      "fileId": "fmvptjo1wb4-mvsvalje-fpyo9skh2iu",
+      "output": "./assets/ui-sprites/shop-event/Pets__SHARK_SPIDERLEGS.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:SHARK_SPIDERLEGS"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/BULL_PUMPKIN.png",
+      "declaredKey": "Assets/Sprites/Pets/BULL_PUMPKIN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/BULL_PUMPKIN.png"
+      ],
+      "fileId": "kk14mnzh0wk-mv9270jt-kgp87y7qm68",
+      "output": "./assets/ui-sprites/shop-event/Pets__BULL_PUMPKIN.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:BULL_PUMPKIN"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Sparkle.png",
+      "declaredKey": "Assets/Sprites/Mutations/Sparkle.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Sparkle.png"
+      ],
+      "fileId": "34x0s5qc1hg-mtlj1smy-301zg0sx90w",
+      "output": "./assets/ui-sprites/shop-event/Mutations__Sparkle.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:Sparkle"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Pets/WOMBAT.png",
+      "declaredKey": "Assets/Sprites/Pets/WOMBAT.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/WOMBAT.png"
+      ],
+      "fileId": "u6ehtb3x0wn-movcw5lt-54jwh4xbcz4",
+      "output": "./assets/ui-sprites/shop-event/Pets__WOMBAT.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:WOMBAT"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Prismatic.png",
+      "declaredKey": "Assets/Sprites/Mutations/Prismatic.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Prismatic.png"
+      ],
+      "fileId": "1r8flxy8y5x-mmbyoww6-gt7ufbuw2vn",
+      "output": "./assets/ui-sprites/shop-event/Mutations__Prismatic.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:Prismatic"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Pets/BROWNBEAR.png",
+      "declaredKey": "Assets/Sprites/Pets/BROWNBEAR.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/BROWNBEAR.png"
+      ],
+      "fileId": "crsqp70eev-mggb0dnx-e0k0w5xl5xu",
+      "output": "./assets/ui-sprites/shop-event/Pets__BROWNBEAR.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:BROWNBEAR"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/MANATEE.png",
+      "declaredKey": "Assets/Sprites/Pets/MANATEE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MANATEE.png"
+      ],
+      "fileId": "tyhnwkt3chq-mhbsv9ee-dz4v0vlabc4",
+      "output": "./assets/ui-sprites/shop-event/Pets__MANATEE.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:MANATEE"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/OSTRICH.png",
+      "declaredKey": "Assets/Sprites/Pets/OSTRICH.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/OSTRICH.png"
+      ],
+      "fileId": "rk88g0rysa-mggb0del-45nfv3y15be",
+      "output": "./assets/ui-sprites/shop-event/Pets__OSTRICH.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:OSTRICH"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SMALLWHALE.png",
+      "declaredKey": "Assets/Sprites/Pets/SMALLWHALE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SMALLWHALE.png"
+      ],
+      "fileId": "rdbyw5x2woq-mhbsxp7p-i4agr52n6o",
+      "output": "./assets/ui-sprites/shop-event/Pets__SMALLWHALE.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:SMALLWHALE"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/GORILLA.png",
+      "declaredKey": "Assets/Sprites/Pets/GORILLA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/GORILLA.png"
+      ],
+      "fileId": "9cy6my0ir4f-mggb0d4k-ub8n3z3y9",
+      "output": "./assets/ui-sprites/shop-event/Pets__GORILLA.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:GORILLA"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/BELUGA.png",
+      "declaredKey": "Assets/Sprites/Pets/BELUGA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/BELUGA.png"
+      ],
+      "fileId": "vu7mzez9kir-mggb0dhn-p0azt1pc8mb",
+      "output": "./assets/ui-sprites/shop-event/Pets__BELUGA.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:BELUGA"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/NARWHAL.png",
+      "declaredKey": "Assets/Sprites/Pets/NARWHAL.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/NARWHAL.png"
+      ],
+      "fileId": "1ndxyn7ljdc-mggb0ds2-rl4gjyuxtl",
+      "output": "./assets/ui-sprites/shop-event/Pets__NARWHAL.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:NARWHAL"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/HUSKY.png",
+      "declaredKey": "Assets/Sprites/Pets/HUSKY.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/HUSKY.png"
+      ],
+      "fileId": "ad91i1v2385-mh92zex6-pr945opazuf",
+      "output": "./assets/ui-sprites/shop-event/Pets__HUSKY.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:HUSKY"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/PLATYPUS.png",
+      "declaredKey": "Assets/Sprites/Pets/PLATYPUS.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/PLATYPUS.png"
+      ],
+      "fileId": "oxazkt4r1ti-mhucubbs-76m3tg14nhp",
+      "output": "./assets/ui-sprites/shop-event/Pets__PLATYPUS.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:PLATYPUS"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/JAGUAR.png",
+      "declaredKey": "Assets/Sprites/Pets/JAGUAR.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/JAGUAR.png"
+      ],
+      "fileId": "30rcq3tjjr7-mhucubg6-qbzcj7g3vij",
+      "output": "./assets/ui-sprites/shop-event/Pets__JAGUAR.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:JAGUAR"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/REINDEER.png",
+      "declaredKey": "Assets/Sprites/Pets/REINDEER.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/REINDEER.png"
+      ],
+      "fileId": "qved57h6sys-micxcfas-p8hu7dw7j1",
+      "output": "./assets/ui-sprites/shop-event/Pets__REINDEER.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:REINDEER"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/ARTICFOX.png",
+      "declaredKey": "Assets/Sprites/Pets/ARTICFOX.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/ARTICFOX.png"
+      ],
+      "fileId": "0bp17wr6rbf-mir2uq10-v8e0shodvm",
+      "output": "./assets/ui-sprites/shop-event/Pets__ARTICFOX.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:ARCTICFOX"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/COW.png",
+      "declaredKey": "Assets/Sprites/Pets/COW.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/COW.png"
+      ],
+      "fileId": "pedx85vhf2q-mkf6t5lc-jtiydfx8db",
+      "output": "./assets/ui-sprites/shop-event/Pets__COW.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:COW"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/Ox.png",
+      "declaredKey": "Assets/Sprites/Pets/Ox.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/Ox.png"
+      ],
+      "fileId": "dhtk6e2lwbm-mkv1zrur-xnh0xm7xt7",
+      "output": "./assets/ui-sprites/shop-event/Pets__Ox.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:OX"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/TURKEY.png",
+      "declaredKey": "Assets/Sprites/Pets/TURKEY.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/TURKEY.png"
+      ],
+      "fileId": "azr0np46z9t-mhucub7t-0rm5kdaafjba",
+      "output": "./assets/ui-sprites/shop-event/Pets__TURKEY.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:TURKEY"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/FrillNeckedLizard.png",
+      "declaredKey": "Assets/Sprites/Pets/FrillNeckedLizard.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/FrillNeckedLizard.png"
+      ],
+      "fileId": "8mzoimcs098-mkv1zrlu-kndqdkkk93s",
+      "output": "./assets/ui-sprites/shop-event/Pets__FrillNeckedLizard.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:FRILLNECKEDLIZARD"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/TORTOISE.png",
+      "declaredKey": "Assets/Sprites/Pets/TORTOISE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/TORTOISE.png"
+      ],
+      "fileId": "yccrq0r5cvh-mkxykan7-11fok9y4hcd",
+      "output": "./assets/ui-sprites/shop-event/Pets__TORTOISE.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:TORTOISE"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SNOWMAN.png",
+      "declaredKey": "Assets/Sprites/Pets/SNOWMAN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SNOWMAN.png"
+      ],
+      "fileId": "uy8ktknvjrg-mie2k46i-ksnctpo51an",
+      "output": "./assets/ui-sprites/shop-event/Pets__SNOWMAN.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:SNOWMAN"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/KANGAROO.png",
+      "declaredKey": "Assets/Sprites/Pets/KANGAROO.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/KANGAROO.png"
+      ],
+      "fileId": "sn73ih8a84-mjgwduuf-8b7pa6roh3n",
+      "output": "./assets/ui-sprites/shop-event/Pets__KANGAROO.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:KANGAROO"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/MOODENG.png",
+      "declaredKey": "Assets/Sprites/Pets/MOODENG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MOODENG.png"
+      ],
+      "fileId": "o1r825gq6l8-micxi0sy-1v3gpl596h5",
+      "output": "./assets/ui-sprites/shop-event/Pets__MOODENG.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:MOODENG"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/PEACOCK.png",
+      "declaredKey": "Assets/Sprites/Pets/PEACOCK.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/PEACOCK.png"
+      ],
+      "fileId": "d2swnrip0st-mjs385qx-tp2f9e7s2id",
+      "output": "./assets/ui-sprites/shop-event/Pets__PEACOCK.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:PEACOCK"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SHARK.png",
+      "declaredKey": "Assets/Sprites/Pets/SHARK.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SHARK.png"
+      ],
+      "fileId": "2l1nxhcbgrm-mkf6t5oq-96o07njnnaf",
+      "output": "./assets/ui-sprites/shop-event/Pets__SHARK.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:SHARK"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Icons/MoneyIcon.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/MoneyIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/MoneyIcon.png"
+      ],
+      "fileId": "1ev4vbb6r81-mincvh0q-an2r8ytn9ao",
+      "output": "./assets/ui-sprites/shop-event/Icons__MoneyIcon.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:MoneyIcon"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 96,
+      "height": 96
+    },
+    {
+      "key": "Assets/Sprites/Icons/PetCoinIcon.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/PetCoinIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/PetCoinIcon.png"
+      ],
+      "fileId": "bju08pkwxav-mincvh54-3nkt79t4vxw",
+      "output": "./assets/ui-sprites/shop-event/Icons__PetCoinIcon.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:PetCoinIcon"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 96,
+      "height": 96
+    },
+    {
+      "key": "Assets/Sprites/Icons/DustIconTemp.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/DustIconTemp.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/DustIconTemp.png"
+      ],
+      "fileId": "hz9mied1b6f-mjcak9ea-mr1we4jeytf",
+      "output": "./assets/ui-sprites/shop-event/Icons__DustIconTemp.png",
+      "missing": false,
+      "references": [
+        "runtime:shop-event:DustIcon"
+      ],
+      "origins": [
+        "Assets/Scripts/Events/HUD/HudShopEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 96,
+      "height": 96
+    }
+  ],
+  "missing": [
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/UI_TakePhoto_bg_Name_01.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/UI_TakePhoto_bg_Name_01.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/UI_TakePhoto_bg_Name_01.png"
+      ],
+      "fileId": "7e1525f6c1123df379224f4aa5be0acd",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Dialog/OpenShopButton",
+        "Shop/Dialog/OpenTaskButton",
+        "Shop/Dialog/SubmitPetButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/FF_WS_MinShop.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/FF_WS_MinShop.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/FF_WS_MinShop.png"
+      ],
+      "fileId": "7b7a4864e6c4ce38ec39f312d8b5eb1f",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Dialog/OpenShopButton/Icon",
+        "Shop/Shop/TabsLayout/ShopTabButton/Icon",
+        "Shop/Shop/ShopView/ScrollView/GeneralIcon",
+        "Shop/Shop/ShopView/BuyButton/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_DIALOGUE.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_DIALOGUE.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_DIALOGUE.png"
+      ],
+      "fileId": "bf44fd9130c051056468107e0d2a5210",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Dialog/OpenTaskButton/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/FF_PetTabBG.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/FF_PetTabBG.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/FF_PetTabBG.png"
+      ],
+      "fileId": "a3db0f229629acb1c29bb4e99e23f85d",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Dialog/SubmitPetButton/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png"
+      ],
+      "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Shop",
+        "Shop/Shop/ShopView/ScrollView/RecommendIcon/Label/LineIcon",
+        "Shop/Shop/ShopView/ScrollView/GeneralIcon/Label/LineIcon",
+        "Shop/Shop/TaskView/Title/Line",
+        "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/Line"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png"
+      ],
+      "fileId": "4fea53c19488f972a3e911c826b1bea7",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Shop/PreventCloseButton",
+        "Shop/Shop/BG/PreventButton",
+        "Shop/Shop/ShopView/ScrollView/ExclusiveItem/SelectButton",
+        "Shop/Shop/ShopView/ScrollView/RecommendedItems/Item/SelectButton",
+        "Shop/Shop/ShopView/ScrollView/GeneralItems/Item/SelectButton",
+        "Shop/SubmitPets/PreventCloseButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/FF_WS_Reservation.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/FF_WS_Reservation.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/FF_WS_Reservation.png"
+      ],
+      "fileId": "2363a41c74fec889551541773f971d9c",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Shop/TabsLayout/TaskTabButton/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png"
+      ],
+      "fileId": "7a7299163551335f237b94854eb60438",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Shop/ShopView/ScrollView/ExclusiveItem/GlowIcon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Steal A Pet_RoadsideShop/Img_Itemtitle01.png",
+      "declaredKey": "Assets/Steal A Pet_RoadsideShop/Img_Itemtitle01.png",
+      "declaredKeys": [
+        "Assets/Steal A Pet_RoadsideShop/Img_Itemtitle01.png"
+      ],
+      "fileId": "qgnl32w2u1-mu9bpka2-3ls6yf8up3y",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Shop/ShopView/ScrollView/ExclusiveItem/Header"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Steal A Pet_RoadsideShop/Img_Quality.png",
+      "declaredKey": "Assets/Steal A Pet_RoadsideShop/Img_Quality.png",
+      "declaredKeys": [
+        "Assets/Steal A Pet_RoadsideShop/Img_Quality.png"
+      ],
+      "fileId": "8oagva2mluk-mu9e1hed-k43jfqms4n",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Shop/ShopView/ScrollView/ExclusiveItem/Footer",
+        "Shop/Shop/ShopView/ScrollView/RecommendedItems/Item/Footer",
+        "Shop/Shop/ShopView/ScrollView/GeneralItems/Item/Footer"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_LOCK.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_LOCK.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_LOCK.png"
+      ],
+      "fileId": "827d005120eec60a3f385c104766e78d",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Shop/ShopView/ScrollView/ExclusiveItem/LockButton/LockIcon",
+        "Shop/Shop/ShopView/ScrollView/RecommendedItems/Item/LockButton/LockIcon",
+        "Shop/Shop/ShopView/ScrollView/GeneralItems/Item/LockButton/LockIcon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/_Test/Steal A Pet_RoadsideShop/Img_Itemtitle01.png",
+      "declaredKey": "Assets/_Test/Steal A Pet_RoadsideShop/Img_Itemtitle01.png",
+      "declaredKeys": [
+        "Assets/_Test/Steal A Pet_RoadsideShop/Img_Itemtitle01.png"
+      ],
+      "fileId": "qgnl32w2u1-mu9bpka2-3ls6yf8up3y",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Shop/Shop/ShopView/ScrollView/RecommendedItems/Item/Header",
+        "Shop/Shop/ShopView/ScrollView/GeneralItems/Item/Header",
+        "Shop/Shop/ShopView/Tooltip/ItemDetails/Title"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "unsupported": [
+    {
+      "path": "Shop/Dialog/OpenShopButton/Icon",
+      "id": "Az9dWW4U",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Dialog/OpenShopButton",
+      "id": "ug3uKAe6",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Dialog/OpenTaskButton/Icon",
+      "id": "W6fMSBv8",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Dialog/OpenTaskButton",
+      "id": "MgnWJw25",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Dialog/SubmitPetButton/Icon",
+      "id": "Ia8fFpCN",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Dialog/SubmitPetButton",
+      "id": "ApSCntqc",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/PreventCloseButton",
+      "id": "X7jxIKDL",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Title/CloseButton",
+      "id": "Xz73qx77",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/BG/BG",
+      "id": "jXXI9754",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/BG/DecorLeft",
+      "id": "d2IxTlHp",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/BG/DecorRight",
+      "id": "BRZ1VXU2",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/BG/PreventButton",
+      "id": "B25QcF1l",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TabsLayout/ShopTabButton/Icon",
+      "id": "TcrGj4VY",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TabsLayout/ShopTabButton",
+      "id": "APEKcxMy",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TabsLayout/TaskTabButton/Icon",
+      "id": "MhFHOEJL",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TabsLayout/TaskTabButton",
+      "id": "OfKloEYl",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/RecommendIcon/Label/LineIcon",
+      "id": "gKsAhAhO",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/RecommendIcon",
+      "id": "mWhacD9v",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/ExclusiveItem/HighlightBG",
+      "id": "VLxwunMy",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/ExclusiveItem/GlowIcon",
+      "id": "rkM4NIzm",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/ExclusiveItem/Header",
+      "id": "gIm9q0zO",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/ExclusiveItem/Footer",
+      "id": "CrGgFRKq",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/ExclusiveItem/SelectButton",
+      "id": "miUuaPuD",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/ExclusiveItem/LockButton",
+      "id": "RjXDcpsZ",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/RecommendedItems/Item/Header",
+      "id": "znQSCqc2",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/RecommendedItems/Item/Footer",
+      "id": "R96qnM8B",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/RecommendedItems/Item/SelectButton",
+      "id": "HhKwbVnT",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/RecommendedItems/Item/LockButton",
+      "id": "LUFK2pns",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/GeneralIcon/Label/LineIcon",
+      "id": "sjUBWUYY",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/GeneralIcon",
+      "id": "Hh4fGr1r",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/GeneralItems/Item/Header",
+      "id": "vVxLBTcf",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/GeneralItems/Item/Footer",
+      "id": "vGCiPz0N",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/GeneralItems/Item/SelectButton",
+      "id": "rS8KV6cn",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/GeneralItems/Item/LockButton",
+      "id": "c1X9jChj",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView",
+      "id": "lIAvGKoV",
+      "fields": [
+        "propsData.panel",
+        "propsData.scrollView"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/BuyButton",
+      "id": "IjhiH9ZZ",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/Tooltip/ItemDetails/BG",
+      "id": "UPdIapBy",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/Tooltip/ItemDetails/Title",
+      "id": "FdTrwoZs",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/Tooltip/ObtainableRewards/Scroll View/RewardsLayout/Reward/Rarity",
+      "id": "iO4OGo6p",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/Tooltip/ObtainableRewards/Scroll View/RewardsLayout/Reward/Thumbnail",
+      "id": "IFm55cfY",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/Tooltip/ObtainableRewards/Scroll View/RewardsLayout/Reward",
+      "id": "lqC33I9B",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/Tooltip/ObtainableRewards/Scroll View",
+      "id": "Zv3OQ0ZM",
+      "fields": [
+        "propsData.panel",
+        "propsData.scrollView"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/Tooltip/ObtainableRewards",
+      "id": "DNdpiDNU",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/Title/Line",
+      "id": "jADc1hUm",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/Title",
+      "id": "t0nNyRKc",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/Item/Rarity",
+      "id": "V9ykNAC3",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/Item/Thumbnail",
+      "id": "MtHuT9Ts",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/Item",
+      "id": "w3XwOk7f",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/Reward/Rarity",
+      "id": "zJSl18j3",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/Reward/Thumbnail",
+      "id": "FGfmvt6Y",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/Reward",
+      "id": "M5oVXOHp",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/Line",
+      "id": "p3ENUMw4",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/ClaimButton",
+      "id": "GQsVDsFE",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/ScrollView/TasksLayout/Task",
+      "id": "YoOZCVfo",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/ScrollView",
+      "id": "mArJ3ufZ",
+      "fields": [
+        "propsData.panel",
+        "propsData.scrollView"
+      ]
+    },
+    {
+      "path": "Shop/Shop",
+      "id": "LGP7B8P1",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PreventCloseButton",
+      "id": "igs9CgMQ",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/Title/CloseButton",
+      "id": "rGFNR8yF",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/BG/DecorLeft",
+      "id": "Yv6Zl1qv",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/BG/DecorRight",
+      "id": "xnvrCMIe",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/Floor",
+      "id": "v9KEp8tp",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (1)/Rarity",
+      "id": "XYrSCsBn",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (1)/Thumbnail",
+      "id": "BptqHIsJ",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (1)/HasMW",
+      "id": "ARyGG1Ek",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (1)/SelectBorder",
+      "id": "ORZ9Gxlj",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (1)/SelectPetButton",
+      "id": "j4J72OLA",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (1)",
+      "id": "I78y2xu0",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (2)/Rarity",
+      "id": "hmXHs4YG",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (2)/Thumbnail",
+      "id": "bm1kXBmh",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (2)/HasMW",
+      "id": "oAfGskcJ",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (2)/SelectBorder",
+      "id": "x87tbms4",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (2)/SelectPetButton",
+      "id": "kl5eP1VD",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (2)",
+      "id": "swRBy2ti",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (3)/Rarity",
+      "id": "oFT0A56a",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (3)/Thumbnail",
+      "id": "vTElsnU7",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (3)/HasMW",
+      "id": "XOld80uq",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (3)/SelectBorder",
+      "id": "XzwtiPa4",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (3)/SelectPetButton",
+      "id": "OYPK8Eyh",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (3)",
+      "id": "oxkQIKCa",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (4)/Rarity",
+      "id": "u3W5pD93",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (4)/Thumbnail",
+      "id": "b7ppRJqG",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (4)/HasMW",
+      "id": "DK41x7bT",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (4)/SelectBorder",
+      "id": "Tp6t78PE",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (4)/SelectPetButton",
+      "id": "B3bcoue1",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (4)",
+      "id": "kGSzVNvw",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (5)/Rarity",
+      "id": "It9d9fJS",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (5)/Thumbnail",
+      "id": "mbpkpyVS",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (5)/HasMW",
+      "id": "Vxsv0Dgq",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (5)/SelectBorder",
+      "id": "J6BS1A5c",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (5)/SelectPetButton",
+      "id": "cA0js6mr",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (5)",
+      "id": "hpbAEOBL",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (6)/Rarity",
+      "id": "F7eFqHX4",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (6)/Thumbnail",
+      "id": "IWesWJpL",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (6)/HasMW",
+      "id": "rwNrIUUd",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (6)/SelectBorder",
+      "id": "tKMDYrF8",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (6)/SelectPetButton",
+      "id": "d0EK9MDt",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (6)",
+      "id": "VViM1dkR",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout",
+      "id": "DEjkpVdA",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/UpFloorButton",
+      "id": "wliUPOeK",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/DownFloorButton",
+      "id": "ipFADTHm",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/SubmitButton",
+      "id": "P3BS4z7Y",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets",
+      "id": "sd1gRIUX",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop",
+      "id": "zBXLQ3ne",
+      "fields": [
+        "ecaScripts"
+      ]
+    }
+  ]
+}

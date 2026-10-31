@@ -1,0 +1,785 @@
+{
+  "source": "pass",
+  "sourceCommit": "471a62bb8a55ad735cfeebf5a0a315730df90daa",
+  "entities": 185,
+  "sprites": 80,
+  "missingSprites": [
+    "lib://fftextures/WorkshopIconLibrary/UI_TakePhoto_bg_Name_01.png",
+    "lib://fftextures/WorkshopIconLibrary/FF_WS_MinShop.png",
+    "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_DIALOGUE.png",
+    "lib://fftextures/WorkshopIconLibrary/FF_PetTabBG.png",
+    "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+    "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+    "lib://fftextures/WorkshopIconLibrary/FF_WS_Reservation.png",
+    "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png",
+    "Assets/Steal A Pet_RoadsideShop/Img_Itemtitle01.png",
+    "Assets/Steal A Pet_RoadsideShop/Img_Quality.png",
+    "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_LOCK.png",
+    "Assets/_Test/Steal A Pet_RoadsideShop/Img_Itemtitle01.png"
+  ],
+  "missingLocalization": [],
+  "unresolvedRegistrations": [],
+  "unsupported": [
+    {
+      "path": "Shop/Dialog/OpenShopButton/Icon",
+      "id": "Az9dWW4U",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Dialog/OpenShopButton",
+      "id": "ug3uKAe6",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Dialog/OpenTaskButton/Icon",
+      "id": "W6fMSBv8",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Dialog/OpenTaskButton",
+      "id": "MgnWJw25",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Dialog/SubmitPetButton/Icon",
+      "id": "Ia8fFpCN",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Dialog/SubmitPetButton",
+      "id": "ApSCntqc",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/PreventCloseButton",
+      "id": "X7jxIKDL",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/Title/CloseButton",
+      "id": "Xz73qx77",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/BG/BG",
+      "id": "jXXI9754",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/BG/DecorLeft",
+      "id": "d2IxTlHp",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/BG/DecorRight",
+      "id": "BRZ1VXU2",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/BG/PreventButton",
+      "id": "B25QcF1l",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TabsLayout/ShopTabButton/Icon",
+      "id": "TcrGj4VY",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TabsLayout/ShopTabButton",
+      "id": "APEKcxMy",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TabsLayout/TaskTabButton/Icon",
+      "id": "MhFHOEJL",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TabsLayout/TaskTabButton",
+      "id": "OfKloEYl",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/RecommendIcon/Label/LineIcon",
+      "id": "gKsAhAhO",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/RecommendIcon",
+      "id": "mWhacD9v",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/ExclusiveItem/HighlightBG",
+      "id": "VLxwunMy",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/ExclusiveItem/GlowIcon",
+      "id": "rkM4NIzm",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/ExclusiveItem/Header",
+      "id": "gIm9q0zO",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/ExclusiveItem/Footer",
+      "id": "CrGgFRKq",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/ExclusiveItem/SelectButton",
+      "id": "miUuaPuD",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/ExclusiveItem/LockButton",
+      "id": "RjXDcpsZ",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/RecommendedItems/Item/Header",
+      "id": "znQSCqc2",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/RecommendedItems/Item/Footer",
+      "id": "R96qnM8B",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/RecommendedItems/Item/SelectButton",
+      "id": "HhKwbVnT",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/RecommendedItems/Item/LockButton",
+      "id": "LUFK2pns",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/GeneralIcon/Label/LineIcon",
+      "id": "sjUBWUYY",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/GeneralIcon",
+      "id": "Hh4fGr1r",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/GeneralItems/Item/Header",
+      "id": "vVxLBTcf",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/GeneralItems/Item/Footer",
+      "id": "vGCiPz0N",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/GeneralItems/Item/SelectButton",
+      "id": "rS8KV6cn",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView/GeneralItems/Item/LockButton",
+      "id": "c1X9jChj",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/ScrollView",
+      "id": "lIAvGKoV",
+      "fields": [
+        "propsData.panel",
+        "propsData.scrollView"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/BuyButton",
+      "id": "IjhiH9ZZ",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/Tooltip/ItemDetails/BG",
+      "id": "UPdIapBy",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/Tooltip/ItemDetails/Title",
+      "id": "FdTrwoZs",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/Tooltip/ObtainableRewards/Scroll View/RewardsLayout/Reward/Rarity",
+      "id": "iO4OGo6p",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/Tooltip/ObtainableRewards/Scroll View/RewardsLayout/Reward/Thumbnail",
+      "id": "IFm55cfY",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/Tooltip/ObtainableRewards/Scroll View/RewardsLayout/Reward",
+      "id": "lqC33I9B",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/Tooltip/ObtainableRewards/Scroll View",
+      "id": "Zv3OQ0ZM",
+      "fields": [
+        "propsData.panel",
+        "propsData.scrollView"
+      ]
+    },
+    {
+      "path": "Shop/Shop/ShopView/Tooltip/ObtainableRewards",
+      "id": "DNdpiDNU",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/Title/Line",
+      "id": "jADc1hUm",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/Title",
+      "id": "t0nNyRKc",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/Item/Rarity",
+      "id": "V9ykNAC3",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/Item/Thumbnail",
+      "id": "MtHuT9Ts",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/Item",
+      "id": "w3XwOk7f",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/Reward/Rarity",
+      "id": "zJSl18j3",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/Reward/Thumbnail",
+      "id": "FGfmvt6Y",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/Reward",
+      "id": "M5oVXOHp",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/Line",
+      "id": "p3ENUMw4",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/ScrollView/TasksLayout/Task/ClaimButton",
+      "id": "GQsVDsFE",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/ScrollView/TasksLayout/Task",
+      "id": "YoOZCVfo",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/Shop/TaskView/ScrollView",
+      "id": "mArJ3ufZ",
+      "fields": [
+        "propsData.panel",
+        "propsData.scrollView"
+      ]
+    },
+    {
+      "path": "Shop/Shop",
+      "id": "LGP7B8P1",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PreventCloseButton",
+      "id": "igs9CgMQ",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/Title/CloseButton",
+      "id": "rGFNR8yF",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/BG/DecorLeft",
+      "id": "Yv6Zl1qv",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/BG/DecorRight",
+      "id": "xnvrCMIe",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/Floor",
+      "id": "v9KEp8tp",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (1)/Rarity",
+      "id": "XYrSCsBn",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (1)/Thumbnail",
+      "id": "BptqHIsJ",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (1)/HasMW",
+      "id": "ARyGG1Ek",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (1)/SelectBorder",
+      "id": "ORZ9Gxlj",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (1)/SelectPetButton",
+      "id": "j4J72OLA",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (1)",
+      "id": "I78y2xu0",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (2)/Rarity",
+      "id": "hmXHs4YG",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (2)/Thumbnail",
+      "id": "bm1kXBmh",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (2)/HasMW",
+      "id": "oAfGskcJ",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (2)/SelectBorder",
+      "id": "x87tbms4",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (2)/SelectPetButton",
+      "id": "kl5eP1VD",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (2)",
+      "id": "swRBy2ti",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (3)/Rarity",
+      "id": "oFT0A56a",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (3)/Thumbnail",
+      "id": "vTElsnU7",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (3)/HasMW",
+      "id": "XOld80uq",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (3)/SelectBorder",
+      "id": "XzwtiPa4",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (3)/SelectPetButton",
+      "id": "OYPK8Eyh",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (3)",
+      "id": "oxkQIKCa",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (4)/Rarity",
+      "id": "u3W5pD93",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (4)/Thumbnail",
+      "id": "b7ppRJqG",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (4)/HasMW",
+      "id": "DK41x7bT",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (4)/SelectBorder",
+      "id": "Tp6t78PE",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (4)/SelectPetButton",
+      "id": "B3bcoue1",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (4)",
+      "id": "kGSzVNvw",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (5)/Rarity",
+      "id": "It9d9fJS",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (5)/Thumbnail",
+      "id": "mbpkpyVS",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (5)/HasMW",
+      "id": "Vxsv0Dgq",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (5)/SelectBorder",
+      "id": "J6BS1A5c",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (5)/SelectPetButton",
+      "id": "cA0js6mr",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (5)",
+      "id": "hpbAEOBL",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (6)/Rarity",
+      "id": "F7eFqHX4",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (6)/Thumbnail",
+      "id": "IWesWJpL",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (6)/HasMW",
+      "id": "rwNrIUUd",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (6)/SelectBorder",
+      "id": "tKMDYrF8",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (6)/SelectPetButton",
+      "id": "d0EK9MDt",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout/Pet (6)",
+      "id": "VViM1dkR",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/PetsLayout",
+      "id": "DEjkpVdA",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/UpFloorButton",
+      "id": "wliUPOeK",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/DownFloorButton",
+      "id": "ipFADTHm",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets/SubmitButton",
+      "id": "P3BS4z7Y",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Shop/SubmitPets",
+      "id": "sd1gRIUX",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Shop",
+      "id": "zBXLQ3ne",
+      "fields": [
+        "ecaScripts"
+      ]
+    }
+  ],
+  "runtimeAssignments": 195,
+  "gaps": [
+    "Task server progress, dynamic rarity missions, reward draws, BaseColor unlocks and submit validation are not executed; daily task progress is an explicit local scenario",
+    "No engine screenshots; font/shader/scaler, hit order, safe area and scroll inertia unverified; player state is a local simulation"
+  ],
+  "browser": "separate CUA verification in screen plan",
+  "engineParity": "unverified; no runtime game screenshots"
+}

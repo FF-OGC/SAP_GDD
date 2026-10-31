@@ -2,6 +2,21 @@
 
 Đọc file này trước khi sửa project.
 
+## Đăng ký batch UI Preview (2026-11-01)
+
+Theo yêu cầu người dùng adapt Shop Event, Rebirth, Lobby, Fusion (confirm,
+result), Leaderboard, Permanent Event (Dig/Fish) và Storage: cho phép đọc
+đúng các `.ui` tương ứng trong `Assets/HUDs`, controller/config `.fcg`
+liên quan, CSV được các controller tham chiếu, localization key thực sự dùng,
+sprite tĩnh/runtime và `.png.meta` tương ứng. Được đọc đăng ký widget/texture
+của các màn này trong ResourceRegisteration.asset, enum liên quan trong
+EditorGenLib.fcc và PermanentEventTypes.fcc; resolve fileId trong NewAssets
+và đường dẫn bỏ tiền tố UIComponents khi metadata xác nhận identity.
+Không đọc dữ liệu người chơi/server; dữ liệu thử phải ghi rõ mô phỏng.
+Không mở rộng quyền giftcode/Compensate; game chỉ đọc, không chạy Studio.
+Mỗi UI commit riêng; Fusion confirm/result cùng một UI, Permanent Event
+Dig/Fish cùng một UI với hai type riêng. Chỉ thêm UI Preview, giữ Proposal.
+
 ## Đăng ký UI Mail (2026-11-01)
 
 Theo yêu cầu adapt Mail vào UI Preview, cho phép đọc `Assets/HUDs/Mail.ui`,
