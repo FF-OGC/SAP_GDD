@@ -78,6 +78,13 @@
       "rules": "./data/ui/permanent-event-rules.json"
     },
     {
+      "id": "storage",
+      "name": "Storage",
+      "status": "ready",
+      "data": "./data/ui/storage.json",
+      "rules": "./data/ui/storage-rules.json"
+    },
+    {
       "id": "mission",
       "name": "Mission",
       "status": "planned"

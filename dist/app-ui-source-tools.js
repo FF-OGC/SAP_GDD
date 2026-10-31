@@ -8,7 +8,7 @@ function uiSourceTools(screen, rules, rendered) {
   const child = (el, name) => [...(el?.children || [])].find(e => e.dataset.uiName === name);
   const find = name => [...rendered.byId.values()].find(el => el.dataset.uiName === name);
   const key = name => rendered.byId.get(rules.widgetIds?.[name]) || find(name);
-  const at = name => rules.bindings?.[name] || rules.controller;
+  const at = name => rules.bindings?.[name] || (/[/:]/.test(name || "") ? name : rules.controller);
   function record(el, property, value, source) {
     if (!el) return;
     const values = JSON.parse(el.dataset.uiRuntimeValues || "{}");

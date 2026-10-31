@@ -1,0 +1,330 @@
+{
+  "source": "pass",
+  "sourceCommit": "471a62bb8a55ad735cfeebf5a0a315730df90daa",
+  "entities": 75,
+  "sprites": 228,
+  "missingSprites": [
+    "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+    "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_YES.png",
+    "Assets/Sprites/Egg.png",
+    "Assets/Sprites/Pets/MR.FOOTBALL.png",
+    "Assets/Sprites/Mutations/Rainy.png",
+    "Assets/Sprites/Mutations/Snowy.png",
+    "Assets/Sprites/Mutations/Windy.png"
+  ],
+  "missingLocalization": [],
+  "unresolvedRegistrations": [
+    {
+      "name": "PetWidget",
+      "id": "JadyfFxD"
+    }
+  ],
+  "unsupported": [
+    {
+      "path": "PetInteract/StoreButton/Icon",
+      "id": "Z70ht2pP",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "PetInteract/StoreButton/Label",
+      "id": "wmTPpFPz",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "PetInteract/StoreButton",
+      "id": "vQlJyWd0",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "_filters"
+      ]
+    },
+    {
+      "path": "PetInteract/OpenStorageButton/Icon",
+      "id": "oXZpzR4D",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "PetInteract/OpenStorageButton/Label",
+      "id": "C4sVSt9f",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "PetInteract/OpenStorageButton",
+      "id": "WtTS7a6W",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "_filters"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/DarkBG",
+      "id": "uaSzhBqd",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/PreventCloseButton",
+      "id": "ZlhRS3HQ",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/Title/Label",
+      "id": "XvlJWEYW",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/Title/CloseButton",
+      "id": "suTx6h1z",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/Title",
+      "id": "WRSq2qVT",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/BG/DecorLeft",
+      "id": "iXYaitgw",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/BG/DecorRight",
+      "id": "GlBB1os2",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/PetsLayout/Pet/Rarity",
+      "id": "LJE8oRQK",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/PetsLayout/Pet/Thumbnail",
+      "id": "k1mlSaGl",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/PetsLayout/Pet/HasMW",
+      "id": "e1SeoO5V",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/PetsLayout/Pet/SelectBorder",
+      "id": "Hfy8aVFN",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/PetsLayout/Pet/SelectPetButton",
+      "id": "qWn2zil6",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/PetsLayout/Pet",
+      "id": "wuxa3fo6",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/PetsLayout",
+      "id": "Jh2aAUOp",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/PetDetails/PetWidget/Rarity",
+      "id": "xzSbm3SG",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/PetDetails/PetWidget/Thumbnail",
+      "id": "kSPonnJ2",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/PetDetails/PetWidget",
+      "id": "ALKewujI",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/PetDetails/RetrievePetButton/Icon",
+      "id": "Fq0kloF3",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/PetDetails/RetrievePetButton/Label",
+      "id": "ztB2co8i",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/PetDetails/RetrievePetButton/Locked/LockIcon",
+      "id": "Sy4Mnez9",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/PetDetails/RetrievePetButton/Locked",
+      "id": "eALhYZtX",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/PetDetails/RetrievePetButton",
+      "id": "IHBoLby9",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/Paging/PrevPageButton",
+      "id": "oASfAe3o",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PetInteract/Storage/Paging/NextPageButton",
+      "id": "dl1dWgju",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PetInteract/Confirm/DarkBG",
+      "id": "tJ04hWwK",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PetInteract/Confirm/Title/CloseButton",
+      "id": "jZrc0x4v",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PetInteract/Confirm/BG/DecorLeft",
+      "id": "BC2elxaS",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PetInteract/Confirm/BG/DecorRight",
+      "id": "sSJVsRM5",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PetInteract/Confirm/NoButton",
+      "id": "vceXvRgq",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PetInteract/Confirm/YesButton",
+      "id": "QbRLdl1C",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PetInteract/Confirm/NotRemindLabel/NotRemindButton",
+      "id": "QtdE6Fjv",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PetInteract/Confirm/NotRemindLabel/BoxIcon",
+      "id": "mJHls0hc",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PetInteract/Confirm/NotRemindLabel/CheckRemindIcon",
+      "id": "outCBoTL",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PetInteract",
+      "id": "hZvyjYGb",
+      "fields": [
+        "ecaScripts"
+      ]
+    }
+  ],
+  "runtimeAssignments": 35,
+  "gaps": [
+    "Fixtures cover Pet.csv normal pets at level 1; secret fusion pets, lucky boxes and special eggs are not exercised",
+    "Level-one income is derived from CSV value and additive mutation/weather multipliers; higher-level BigNumber growth/rounding is not simulated",
+    "Store/retrieve and lock age are local scenarios; no database writes or gameplay rewards",
+    "Capacity above current Rebirth.csv maximum is an explicit synthetic QA override for pagination",
+    "No engine screenshots; font/shader/scaler, hit order, safe area and scroll inertia unverified; player state is a local simulation"
+  ],
+  "browser": "separate CUA verification in screen plan",
+  "engineParity": "unverified; no runtime game screenshots"
+}

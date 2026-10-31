@@ -1,0 +1,2806 @@
+{
+  "sourceCommit": "471a62bb8a55ad735cfeebf5a0a315730df90daa",
+  "uiSha256": "9aa4e45eeb8ca61dd2392c8135a800a6ad8a8b5e2715911d6d4d9808e51867e1",
+  "controller": "Assets/Scripts/HUDs/HudPetStorage.fcg",
+  "sourceFiles": [
+    {
+      "file": "Assets/Scripts/HUDs/HudPetStorage.fcg",
+      "sha256": "53b0fd6736cb211fb5f836767dd3d33c30ff60ac6a4fd857795332126a4a1510"
+    },
+    {
+      "file": "Assets/Scripts/Configs/PetConfigs.fcg",
+      "sha256": "b8b9da79606e10c84027fefcb364682b3d97cc82b4fd534d83860125f528d19c"
+    },
+    {
+      "file": "Assets/Scripts/Configs/MutationConfigs.fcg",
+      "sha256": "ad07f8876fb30048ae88e296530edbeba6e574531173aba4d9ba129cb5123155"
+    },
+    {
+      "file": "Assets/Scripts/Configs/WeatherConfigs.fcg",
+      "sha256": "0964865f0c17d7f73ff738d6fa792fa64cc0b187ac10b5ede4028fd29755b7db"
+    },
+    {
+      "file": "Assets/Scripts/Configs/RebirthConfigs.fcg",
+      "sha256": "11fd76273e3e7061806b967934b022fd1ab6c03eaf1262b859eeec38b16ccd73"
+    },
+    {
+      "file": "Assets/Scripts/Utils/BigNumberHandler.fcg",
+      "sha256": "404cdbc68440f4654a085a7adc2cbc5ae462b008fd3cac7397409bca1249f46e"
+    },
+    {
+      "file": "ProjectSettings/ResourceRegisteration.asset",
+      "sha256": "9166b4e138c086e0cb2c13b2bb2cc205fc7c682fcb3e0bd23e0f9e0fc0f2a01b"
+    },
+    {
+      "file": "Assets/CSV/Pet.csv",
+      "sha256": "f3cf8ccfe62493c72bc05195e90c83c8bc886cb0c7aa7bf2cf2a53b7e054488a"
+    },
+    {
+      "file": "Assets/CSV/mutation.csv",
+      "sha256": "8c496bb4a5e197ece437c9e7334c2e75e5ff5154714e3c7a8e6a29784077141e"
+    },
+    {
+      "file": "Assets/CSV/weatherEffects.csv",
+      "sha256": "27525f5578e82fd8eedd8d643f12b83a0ff9fbe5947447199d4590de0ad9fd3e"
+    },
+    {
+      "file": "Assets/CSV/Rebirth.csv",
+      "sha256": "af4a38b73a00c049bf6eb63db0ab64709087351fd5b25fac882c5a8e876ae0c5"
+    },
+    {
+      "file": "Assets/Scripts/Utils/UIUtils.fcg",
+      "sha256": "e97b481d8ac790acf5651808c7421d4393c6be7d7264154fad95cfeee15ebcfe"
+    },
+    {
+      "file": "Assets/Scripts/Manager/StorageManager.fcg",
+      "sha256": "132fa8b6f3809516fd5931d2f4b275ae31d5b648b1d523219beeaea644414757"
+    }
+  ],
+  "projections": [],
+  "widgetIds": {
+    "MutationIcon": "BH7YBhoa",
+    "WeathersLayout": "NkQ83CYb",
+    "PriceLabel": "npye6iIc",
+    "IncomeLabel": "Dn0nqqLN",
+    "PetWidget": "JadyfFxD",
+    "LevelLabel": "dTaZ0aJG",
+    "PetsLayout": "Jh2aAUOp",
+    "PrevPageButton": "oASfAe3o",
+    "PageLabel": "MO0DOEm5",
+    "NextPageButton": "dl1dWgju",
+    "RetrievePetButton": "IHBoLby9",
+    "CheckRemindIcon": "outCBoTL",
+    "PetDetails": "hGUBPRux"
+  },
+  "constants": {
+    "MAX_PETS_PER_PAGE": 15,
+    "FIRST_PAGE": 1,
+    "_CurrentPage": 0,
+    "widgetsNeeded": 0
+  },
+  "bindings": {
+    "InitPetStorageHUD": "Assets/Scripts/HUDs/HudPetStorage.fcg:70",
+    "ShowPetStorageHUD": "Assets/Scripts/HUDs/HudPetStorage.fcg:105",
+    "HidePetStorageHUD": "Assets/Scripts/HUDs/HudPetStorage.fcg:117",
+    "IsShowing": "Assets/Scripts/HUDs/HudPetStorage.fcg:121",
+    "OpenStorage": "Assets/Scripts/HUDs/HudPetStorage.fcg:129",
+    "CloseStorage": "Assets/Scripts/HUDs/HudPetStorage.fcg:143",
+    "OpenConfirmWidget": "Assets/Scripts/HUDs/HudPetStorage.fcg:148",
+    "CloseConfirmWidget": "Assets/Scripts/HUDs/HudPetStorage.fcg:153",
+    "ToggleAllowRemindConfirm": "Assets/Scripts/HUDs/HudPetStorage.fcg:158",
+    "SwitchPage": "Assets/Scripts/HUDs/HudPetStorage.fcg:164",
+    "UpdatePetsLayout": "Assets/Scripts/HUDs/HudPetStorage.fcg:187",
+    "UpdatePetDetails": "Assets/Scripts/HUDs/HudPetStorage.fcg:236",
+    "UpdatePaging": "Assets/Scripts/HUDs/HudPetStorage.fcg:290",
+    "UpdateSelectPetWidget": "Assets/Scripts/HUDs/HudPetStorage.fcg:296",
+    "HandleStorageButton": "Assets/Scripts/HUDs/HudPetStorage.fcg:312",
+    "HandleStorePet": "Assets/Scripts/HUDs/HudPetStorage.fcg:386",
+    "HandleSelectStoragePet": "Assets/Scripts/HUDs/HudPetStorage.fcg:413",
+    "HandleRetrievePet": "Assets/Scripts/HUDs/HudPetStorage.fcg:444",
+    "SetIsInTrigger": "Assets/Scripts/HUDs/HudPetStorage.fcg:467",
+    "InitPetConfigs": "Assets/Scripts/Configs/PetConfigs.fcg:172",
+    "LoadPetConfigs": "Assets/Scripts/Configs/PetConfigs.fcg:198",
+    "GetPetConfigFromCSV": "Assets/Scripts/Configs/PetConfigs.fcg:207",
+    "GetLuckyBoxConfigFromCSV": "Assets/Scripts/Configs/PetConfigs.fcg:243",
+    "GetSecretFusionPetConfigFromCSV": "Assets/Scripts/Configs/PetConfigs.fcg:280",
+    "BuildPetSkinConfigs": "Assets/Scripts/Configs/PetConfigs.fcg:318",
+    "SortPetIdsByRank": "Assets/Scripts/Configs/PetConfigs.fcg:336",
+    "GetPetCount": "Assets/Scripts/Configs/PetConfigs.fcg:357",
+    "GetSecretFusionPetCount": "Assets/Scripts/Configs/PetConfigs.fcg:361",
+    "GetRoadSpawnPetIds": "Assets/Scripts/Configs/PetConfigs.fcg:365",
+    "GetPetCountByRarity": "Assets/Scripts/Configs/PetConfigs.fcg:369",
+    "GetPetId2Name": "Assets/Scripts/Configs/PetConfigs.fcg:383",
+    "GetPetName": "Assets/Scripts/Configs/PetConfigs.fcg:387",
+    "IsSkinPetId": "Assets/Scripts/Configs/PetConfigs.fcg:395",
+    "GetBasePetId": "Assets/Scripts/Configs/PetConfigs.fcg:399",
+    "GetPetSkinKey": "Assets/Scripts/Configs/PetConfigs.fcg:407",
+    "GetPetSkinPrefabKey": "Assets/Scripts/Configs/PetConfigs.fcg:415",
+    "GetPetSkinPosition": "Assets/Scripts/Configs/PetConfigs.fcg:423",
+    "GetPetSkinRotation": "Assets/Scripts/Configs/PetConfigs.fcg:431",
+    "GetPetSkinScale": "Assets/Scripts/Configs/PetConfigs.fcg:439",
+    "GetPetNameLocalization": "Assets/Scripts/Configs/PetConfigs.fcg:447",
+    "GetPetNameLocalizationColor": "Assets/Scripts/Configs/PetConfigs.fcg:451",
+    "GetPetNameLocalizationLightColor": "Assets/Scripts/Configs/PetConfigs.fcg:474",
+    "GetPetRarityIndex": "Assets/Scripts/Configs/PetConfigs.fcg:497",
+    "GetPetRarity": "Assets/Scripts/Configs/PetConfigs.fcg:501",
+    "GetPetRarityLocalization": "Assets/Scripts/Configs/PetConfigs.fcg:505",
+    "GetPetRarityLocalizationColor": "Assets/Scripts/Configs/PetConfigs.fcg:509",
+    "GetPetValue": "Assets/Scripts/Configs/PetConfigs.fcg:532",
+    "GetPetPrice": "Assets/Scripts/Configs/PetConfigs.fcg:536",
+    "GetPetRank": "Assets/Scripts/Configs/PetConfigs.fcg:540",
+    "GetPetDustCap": "Assets/Scripts/Configs/PetConfigs.fcg:544",
+    "CanFusePet": "Assets/Scripts/Configs/PetConfigs.fcg:548",
+    "GetPetWeightByRebirthLevel": "Assets/Scripts/Configs/PetConfigs.fcg:555",
+    "GetPetWeightByUserType": "Assets/Scripts/Configs/PetConfigs.fcg:569",
+    "GetPetMeshKey": "Assets/Scripts/Configs/PetConfigs.fcg:585",
+    "GetPetThumbnailKey": "Assets/Scripts/Configs/PetConfigs.fcg:589",
+    "IsNormalPetId": "Assets/Scripts/Configs/PetConfigs.fcg:593",
+    "IsSecretFusionPetId": "Assets/Scripts/Configs/PetConfigs.fcg:601",
+    "IsLuckyBoxPetId": "Assets/Scripts/Configs/PetConfigs.fcg:609",
+    "GetLuckyBoxRewardBoxId": "Assets/Scripts/Configs/PetConfigs.fcg:613",
+    "IsPetSpawnOnRoad": "Assets/Scripts/Configs/PetConfigs.fcg:621",
+    "IsLimitedEventPetId": "Assets/Scripts/Configs/PetConfigs.fcg:625",
+    "GetPetObtainSource": "Assets/Scripts/Configs/PetConfigs.fcg:630",
+    "GetPetObtainIcon": "Assets/Scripts/Configs/PetConfigs.fcg:655",
+    "GetPetObtainBadgeIcon": "Assets/Scripts/Configs/PetConfigs.fcg:672",
+    "GetPetObtainLocalization": "Assets/Scripts/Configs/PetConfigs.fcg:679",
+    "IsValidPetId": "Assets/Scripts/Configs/PetConfigs.fcg:696",
+    "GetPetsByRarity": "Assets/Scripts/Configs/PetConfigs.fcg:701",
+    "GetTopTierPetsOnRoad": "Assets/Scripts/Configs/PetConfigs.fcg:714",
+    "GetPetPriceWithWeather": "Assets/Scripts/Configs/PetConfigs.fcg:734",
+    "GetPetValueWithMutation": "Assets/Scripts/Configs/PetConfigs.fcg:743",
+    "GetPetIdByRank": "Assets/Scripts/Configs/PetConfigs.fcg:752",
+    "GetPetSecretRank": "Assets/Scripts/Configs/PetConfigs.fcg:760",
+    "GetPetIdWithPrevRank": "Assets/Scripts/Configs/PetConfigs.fcg:768",
+    "GetSecretIdWithNextRank": "Assets/Scripts/Configs/PetConfigs.fcg:783",
+    "GetSecretIdWithPrevRank": "Assets/Scripts/Configs/PetConfigs.fcg:800",
+    "GetMaxRank": "Assets/Scripts/Configs/PetConfigs.fcg:813",
+    "GetGuaranteePetId2Weight": "Assets/Scripts/Configs/PetConfigs.fcg:818",
+    "GetGuaranteePetsByRarity": "Assets/Scripts/Configs/PetConfigs.fcg:822",
+    "GetRarityCount": "Assets/Scripts/Configs/PetConfigs.fcg:835",
+    "GetRarities": "Assets/Scripts/Configs/PetConfigs.fcg:839",
+    "GetRarityIndex": "Assets/Scripts/Configs/PetConfigs.fcg:843",
+    "GetRarityByIndex": "Assets/Scripts/Configs/PetConfigs.fcg:847",
+    "GetRarityColor": "Assets/Scripts/Configs/PetConfigs.fcg:857",
+    "GetRarityLocalization": "Assets/Scripts/Configs/PetConfigs.fcg:861",
+    "GetRarityLocalizationColor": "Assets/Scripts/Configs/PetConfigs.fcg:869",
+    "GetRarityLocalizationLightColor": "Assets/Scripts/Configs/PetConfigs.fcg:890",
+    "GetPetExceptionRegions": "Assets/Scripts/Configs/PetConfigs.fcg:911",
+    "InitMutationConfigs": "Assets/Scripts/Configs/MutationConfigs.fcg:50",
+    "LoadMutationConfigs": "Assets/Scripts/Configs/MutationConfigs.fcg:61",
+    "GetMutationConfigFromCSV": "Assets/Scripts/Configs/MutationConfigs.fcg:67",
+    "GetMutationCount": "Assets/Scripts/Configs/MutationConfigs.fcg:85",
+    "GetMutationId2Name": "Assets/Scripts/Configs/MutationConfigs.fcg:89",
+    "GetMutationName": "Assets/Scripts/Configs/MutationConfigs.fcg:93",
+    "GetMutationNameLocalization": "Assets/Scripts/Configs/MutationConfigs.fcg:97",
+    "GetMutationNameLocalizationColor": "Assets/Scripts/Configs/MutationConfigs.fcg:105",
+    "GetMutationColor": "Assets/Scripts/Configs/MutationConfigs.fcg:136",
+    "GetMutationMaterialKey": "Assets/Scripts/Configs/MutationConfigs.fcg:162",
+    "GetMutationEffectKey": "Assets/Scripts/Configs/MutationConfigs.fcg:221",
+    "GetMutationMultiplier": "Assets/Scripts/Configs/MutationConfigs.fcg:225",
+    "GetMutationWeight": "Assets/Scripts/Configs/MutationConfigs.fcg:229",
+    "GetMutationFusionWeight": "Assets/Scripts/Configs/MutationConfigs.fcg:233",
+    "GetMutationTier": "Assets/Scripts/Configs/MutationConfigs.fcg:237",
+    "GetMutationLevelUpCostMultiplier": "Assets/Scripts/Configs/MutationConfigs.fcg:241",
+    "GetMutationIconKey": "Assets/Scripts/Configs/MutationConfigs.fcg:245",
+    "IsValidMutationId": "Assets/Scripts/Configs/MutationConfigs.fcg:249",
+    "InitWeatherConfigs": "Assets/Scripts/Configs/WeatherConfigs.fcg:62",
+    "LoadWeatherConfigs": "Assets/Scripts/Configs/WeatherConfigs.fcg:79",
+    "GetWeatherConfigFromCSV": "Assets/Scripts/Configs/WeatherConfigs.fcg:87",
+    "GetWeatherEffectsConfigFromCSV": "Assets/Scripts/Configs/WeatherConfigs.fcg:102",
+    "GetWeatherWavesConfigFromCSV": "Assets/Scripts/Configs/WeatherConfigs.fcg:116",
+    "GetWeatherCount": "Assets/Scripts/Configs/WeatherConfigs.fcg:135",
+    "GetWeatherName": "Assets/Scripts/Configs/WeatherConfigs.fcg:139",
+    "GetWeatherNameLocalization": "Assets/Scripts/Configs/WeatherConfigs.fcg:143",
+    "GetWeatherIcon": "Assets/Scripts/Configs/WeatherConfigs.fcg:147",
+    "GetWeatherEffects": "Assets/Scripts/Configs/WeatherConfigs.fcg:151",
+    "GetWeatherEffectId2Name": "Assets/Scripts/Configs/WeatherConfigs.fcg:163",
+    "GetWeatherEffectName": "Assets/Scripts/Configs/WeatherConfigs.fcg:167",
+    "GetWeatherMutationEffectLocalization": "Assets/Scripts/Configs/WeatherConfigs.fcg:171",
+    "GetWeatherEffectNameLocalizationColor": "Assets/Scripts/Configs/WeatherConfigs.fcg:175",
+    "GetWeatherColor": "Assets/Scripts/Configs/WeatherConfigs.fcg:203",
+    "GetWeatherEffectIcon": "Assets/Scripts/Configs/WeatherConfigs.fcg:229",
+    "GetWeatherEffectChance": "Assets/Scripts/Configs/WeatherConfigs.fcg:233",
+    "GetWeatherEffectMultiplierPrice": "Assets/Scripts/Configs/WeatherConfigs.fcg:237",
+    "GetWeatherEffectLevelUpCostMultiplier": "Assets/Scripts/Configs/WeatherConfigs.fcg:245",
+    "GetWeatherEffectCount": "Assets/Scripts/Configs/WeatherConfigs.fcg:253",
+    "IsValidWeatherId": "Assets/Scripts/Configs/WeatherConfigs.fcg:257",
+    "GetWeatherWaveType": "Assets/Scripts/Configs/WeatherConfigs.fcg:264",
+    "GetWeatherWaveDuration": "Assets/Scripts/Configs/WeatherConfigs.fcg:268",
+    "GetWeatherWaveDurationSeconds": "Assets/Scripts/Configs/WeatherConfigs.fcg:273",
+    "GetTotalWaves": "Assets/Scripts/Configs/WeatherConfigs.fcg:277",
+    "GetTotalWavesDuration": "Assets/Scripts/Configs/WeatherConfigs.fcg:281",
+    "GetTotalWavesDurationSeconds": "Assets/Scripts/Configs/WeatherConfigs.fcg:286",
+    "InitRebirthConfigs": "Assets/Scripts/Configs/RebirthConfigs.fcg:40",
+    "LoadRebirthConfigs": "Assets/Scripts/Configs/RebirthConfigs.fcg:58",
+    "GetRebirthConfigFromCSV": "Assets/Scripts/Configs/RebirthConfigs.fcg:64",
+    "ConvertStringToListInt": "Assets/Scripts/Configs/RebirthConfigs.fcg:96",
+    "GetRebirthCount": "Assets/Scripts/Configs/RebirthConfigs.fcg:117",
+    "GetRebirthBaseLockTime": "Assets/Scripts/Configs/RebirthConfigs.fcg:121",
+    "GetRebirthUnlockCooldown": "Assets/Scripts/Configs/RebirthConfigs.fcg:125",
+    "GetRebirthMoneyMultiplier": "Assets/Scripts/Configs/RebirthConfigs.fcg:129",
+    "GetRebirthFloorsCount": "Assets/Scripts/Configs/RebirthConfigs.fcg:133",
+    "GetRebirthPetAmount": "Assets/Scripts/Configs/RebirthConfigs.fcg:137",
+    "GetRebirthNextLevelMoney": "Assets/Scripts/Configs/RebirthConfigs.fcg:141",
+    "GetRebirthNextLevelPets": "Assets/Scripts/Configs/RebirthConfigs.fcg:145",
+    "GetRebirthMaxMoneyRank": "Assets/Scripts/Configs/RebirthConfigs.fcg:149",
+    "GetRebirthMaxMoney": "Assets/Scripts/Configs/RebirthConfigs.fcg:153",
+    "GetRebirthMaxDust": "Assets/Scripts/Configs/RebirthConfigs.fcg:160",
+    "GetRebirthStorage": "Assets/Scripts/Configs/RebirthConfigs.fcg:164",
+    "GetUnlockFloor2Level": "Assets/Scripts/Configs/RebirthConfigs.fcg:168",
+    "GetUnlockFloor3Level": "Assets/Scripts/Configs/RebirthConfigs.fcg:172",
+    "GetUnlockFloor4Level": "Assets/Scripts/Configs/RebirthConfigs.fcg:176",
+    "MultiplyListIntByFloat": "Assets/Scripts/Utils/BigNumberHandler.fcg:68",
+    "ConvertIntToList": "Assets/Scripts/Utils/BigNumberHandler.fcg:107",
+    "ConvertListToInt": "Assets/Scripts/Utils/BigNumberHandler.fcg:123",
+    "ConvertFloatToList": "Assets/Scripts/Utils/BigNumberHandler.fcg:133",
+    "ShortenNumber": "Assets/Scripts/Utils/BigNumberHandler.fcg:142",
+    "CleanNumber": "Assets/Scripts/Utils/BigNumberHandler.fcg:163",
+    "AddNumber": "Assets/Scripts/Utils/BigNumberHandler.fcg:172",
+    "SubtractNumber": "Assets/Scripts/Utils/BigNumberHandler.fcg:203",
+    "MultiplyNumber": "Assets/Scripts/Utils/BigNumberHandler.fcg:239",
+    "MultiplierNumber": "Assets/Scripts/Utils/BigNumberHandler.fcg:273",
+    "FixBlankList": "Assets/Scripts/Utils/BigNumberHandler.fcg:282",
+    "GetMaxLength2Num": "Assets/Scripts/Utils/BigNumberHandler.fcg:289",
+    "CompareListNum": "Assets/Scripts/Utils/BigNumberHandler.fcg:298",
+    "ConvertStringToListNum": "Assets/Scripts/Utils/BigNumberHandler.fcg:319",
+    "ConvertListNumToString": "Assets/Scripts/Utils/BigNumberHandler.fcg:345",
+    "ToDisplayFormat": "Assets/Scripts/Utils/BigNumberHandler.fcg:364",
+    "ToDisplayFormatHasComma": "Assets/Scripts/Utils/BigNumberHandler.fcg:450",
+    "DivideListNumToFloat": "Assets/Scripts/Utils/BigNumberHandler.fcg:457",
+    "MultiplyListIntByFloatV2": "Assets/Scripts/Utils/BigNumberHandler.fcg:485",
+    "ConvertStringLikeToFormatString": "Assets/Scripts/Utils/BigNumberHandler.fcg:530",
+    "ConvertMoneyRankValueToMoneyFormat": "Assets/Scripts/Utils/BigNumberHandler.fcg:547",
+    "ConvertMoneyRankValueToListNum": "Assets/Scripts/Utils/BigNumberHandler.fcg:562",
+    "GetMaxListNum": "Assets/Scripts/Utils/BigNumberHandler.fcg:583",
+    "GetMinListNum": "Assets/Scripts/Utils/BigNumberHandler.fcg:591",
+    "DivideNumberByInt": "Assets/Scripts/Utils/BigNumberHandler.fcg:599",
+    "MultiplyListIntByFloatV3": "Assets/Scripts/Utils/BigNumberHandler.fcg:621",
+    "ExponentiationListInt": "Assets/Scripts/Utils/BigNumberHandler.fcg:631",
+    "GetHUDWidget": "Assets/Scripts/Utils/UIUtils.fcg:39",
+    "UpdatePetObtainWayButton": "Assets/Scripts/Utils/UIUtils.fcg:43",
+    "UpdatePetObtainBadge": "Assets/Scripts/Utils/UIUtils.fcg:59",
+    "UpdatePetWidget": "Assets/Scripts/Utils/UIUtils.fcg:74",
+    "UpdatePetWidgetV2": "Assets/Scripts/Utils/UIUtils.fcg:137",
+    "UpdateShopItemWidget": "Assets/Scripts/Utils/UIUtils.fcg:172",
+    "UpdatePetWidgetV3": "Assets/Scripts/Utils/UIUtils.fcg:206",
+    "UpdatePassiveWidget": "Assets/Scripts/Utils/UIUtils.fcg:369",
+    "GetPassiveDisplayValue": "Assets/Scripts/Utils/UIUtils.fcg:401",
+    "FormatTimeUnit": "Assets/Scripts/Utils/UIUtils.fcg:424",
+    "AppendTimeUnit": "Assets/Scripts/Utils/UIUtils.fcg:433",
+    "FormatTime": "Assets/Scripts/Utils/UIUtils.fcg:444",
+    "FormatTimeWithColon": "Assets/Scripts/Utils/UIUtils.fcg:513",
+    "SetUIRewardByType": "Assets/Scripts/Utils/UIUtils.fcg:573",
+    "SetUiReward": "Assets/Scripts/Utils/UIUtils.fcg:613",
+    "UpdateRewardWidgetV2": "Assets/Scripts/Utils/UIUtils.fcg:638",
+    "UpdateRewardWidgetV3": "Assets/Scripts/Utils/UIUtils.fcg:685",
+    "UpdateMilestoneWidget": "Assets/Scripts/Utils/UIUtils.fcg:724",
+    "GetMilestoneSlotProgress": "Assets/Scripts/Utils/UIUtils.fcg:742",
+    "UpdateMilestoneProgress": "Assets/Scripts/Utils/UIUtils.fcg:767",
+    "UpdateMilestones": "Assets/Scripts/Utils/UIUtils.fcg:781",
+    "UpdateMilestoneLayout": "Assets/Scripts/Utils/UIUtils.fcg:811"
+  },
+  "runtimeAssignments": [
+    {
+      "target": "_StorageHUD",
+      "property": "Depth",
+      "expression": "HudDepth.Storage",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:77"
+    },
+    {
+      "target": "_StorageHUD",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:111"
+    },
+    {
+      "target": "_OpenStorageButton",
+      "property": "IsVisible",
+      "expression": "_IsInStorageTrigger",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:113"
+    },
+    {
+      "target": "_StoreButton",
+      "property": "IsVisible",
+      "expression": "(PlayerStateController.GetPlayerActionState(thisEntity<Player>.UserUID) == PlayerState.Selecting) && _IsInStorageTrigger",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:114"
+    },
+    {
+      "target": "_StorageHUD",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:118"
+    },
+    {
+      "target": "_StorageWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:140"
+    },
+    {
+      "target": "_OpenStorageButton",
+      "property": "IsVisible",
+      "expression": "_IsInStorageTrigger",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:144"
+    },
+    {
+      "target": "_StorageWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:145"
+    },
+    {
+      "target": "_ConfirmWidget",
+      "property": "IsVisible",
+      "expression": "_CanShowConfirm",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:150"
+    },
+    {
+      "target": "_OpenStorageButton",
+      "property": "IsVisible",
+      "expression": "_IsInStorageTrigger",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:154"
+    },
+    {
+      "target": "_ConfirmWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:155"
+    },
+    {
+      "target": "_CheckRemindIcon",
+      "property": "IsVisible",
+      "expression": "!_CanShowConfirm",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:161"
+    },
+    {
+      "target": "clonedPetWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:210"
+    },
+    {
+      "target": "petWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:218"
+    },
+    {
+      "target": "_PetDetails",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:239"
+    },
+    {
+      "target": "_RetrievePetButton",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:240"
+    },
+    {
+      "target": "_PetDetails",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:244"
+    },
+    {
+      "target": "rarityName",
+      "property": "Content",
+      "expression": "PetConfigs.GetRarityLocalizationColor(PetConfigs.GetPetRarity(petId))",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:254"
+    },
+    {
+      "target": "_MutationIcon",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:257"
+    },
+    {
+      "target": "_MutationIcon",
+      "property": "SpriteName",
+      "expression": "Res.Sprite[MutationConfigs.GetMutationIconKey(mutationId) as EResKeySprite]",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:258"
+    },
+    {
+      "target": "_MutationIcon",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:260"
+    },
+    {
+      "target": "weatherIcon",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:265"
+    },
+    {
+      "target": "weatherIcon",
+      "property": "SpriteName",
+      "expression": "Res.Sprite[WeatherConfigs.GetWeatherEffectIcon(weatherIds[key]) as EResKeySprite]",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:266"
+    },
+    {
+      "target": "weatherIcon",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:268"
+    },
+    {
+      "target": "_LevelLabel",
+      "property": "Content",
+      "expression": "LocString{\"HUD_BASE_LEVEL\", {petLevel}}",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:272"
+    },
+    {
+      "target": "_PriceLabel",
+      "property": "Content",
+      "expression": "\"$\" + BigNumberHandler.ToDisplayFormat(PetConfigs.GetPetPrice(petId), 1)",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:273"
+    },
+    {
+      "target": "_IncomeLabel",
+      "property": "Content",
+      "expression": "\"$\" + BigNumberHandler.ToDisplayFormat(LevelUpPetManager.GetPetValueByLevelV2(petValue), 1) + \"/s\"",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:274"
+    },
+    {
+      "target": "_RetrievePetButton",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:279"
+    },
+    {
+      "target": "lockedWidget",
+      "property": "IsVisible",
+      "expression": "!StorageManager.CanRetrievePet(playerUID, slot)",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:280"
+    },
+    {
+      "target": "retrieveTimerLabel",
+      "property": "Content",
+      "expression": "LocString{\"HUD_STORAGE_RETRIEVE_TIMER\", {timeLeftFormat}}",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:286"
+    },
+    {
+      "target": "_PrevPageButton",
+      "property": "IsVisible",
+      "expression": "_CurrentPage > 1",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:291"
+    },
+    {
+      "target": "_NextPageButton",
+      "property": "IsVisible",
+      "expression": "_CurrentPage < _TotalPages",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:292"
+    },
+    {
+      "target": "_PageLabel",
+      "property": "Content",
+      "expression": "_CurrentPage + \" / \" + _TotalPages",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:293"
+    },
+    {
+      "target": "selectedBorder",
+      "property": "IsVisible",
+      "expression": "isSelected",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:304"
+    },
+    {
+      "target": "_StoreButton",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPetStorage.fcg:402"
+    }
+  ],
+  "spriteKeys": {
+    "EmptyItemBG": "Assets/Sprites/NewAssets/EmptyItemBG.png",
+    "ItemBG": "Assets/Sprites/NewAssets/ItemBG.png",
+    "Egg": "Assets/Sprites/Egg.png",
+    "CHICK": "Assets/Sprites/Pets/CHICK.png",
+    "ROOSTER": "Assets/Sprites/Pets/ROOSTER.png",
+    "RABBIT": "Assets/Sprites/Pets/RABBIT.png",
+    "PIG": "Assets/Sprites/Pets/PIG.png",
+    "SHEEP": "Assets/Sprites/Pets/SHEEP.png",
+    "GOAT": "Assets/Sprites/Pets/GOAT.png",
+    "GOOSE": "Assets/Sprites/Pets/GOOSE.png",
+    "DOG": "Assets/Sprites/Pets/DOG.png",
+    "SHRIMP": "Assets/Sprites/Pets/SHRIMP.png",
+    "MOLE": "Assets/Sprites/Pets/MOLE.png",
+    "SNOWRABBIT": "Assets/Sprites/Pets/SNOWRABBIT.png",
+    "MUDSKIPPER": "Assets/Sprites/Pets/MUDSKIPPER.png",
+    "KINGFISHER": "Assets/Sprites/Pets/KINGFISHER.png",
+    "CAT": "Assets/Sprites/Pets/CAT.png",
+    "HAMSTER": "Assets/Sprites/Pets/HAMSTER.png",
+    "MONKEY": "Assets/Sprites/Pets/MONKEY.png",
+    "CRAB": "Assets/Sprites/Pets/CRAB.png",
+    "CLOWNFISH": "Assets/Sprites/Pets/CLOWNFISH.png",
+    "CAPYBARA": "Assets/Sprites/Pets/CAPYBARA.png",
+    "RACOON": "Assets/Sprites/Pets/RACOON.png",
+    "SQUIRREL": "Assets/Sprites/Pets/SQUIRREL.png",
+    "TURTLE": "Assets/Sprites/Pets/TURTLE.png",
+    "SNAKE": "Assets/Sprites/Pets/SNAKE.png",
+    "SQUID": "Assets/Sprites/Pets/SQUID.png",
+    "POSSUM": "Assets/Sprites/Pets/POSSUM.png",
+    "BAT": "Assets/Sprites/Pets/BAT.png",
+    "CARDINAL": "Assets/Sprites/Pets/CARDINAL.png",
+    "OWL": "Assets/Sprites/Pets/OWL.png",
+    "FLAMINGO": "Assets/Sprites/Pets/FLAMINGO.png",
+    "BISON": "Assets/Sprites/Pets/BISON.png",
+    "HORSE": "Assets/Sprites/Pets/HORSE.png",
+    "ZEBRA": "Assets/Sprites/Pets/ZEBRA.png",
+    "OCTOPUS": "Assets/Sprites/Pets/OCTOPUS.png",
+    "JELLYFISH": "Assets/Sprites/Pets/JELLYFISH.png",
+    "DOLPHIN": "Assets/Sprites/Pets/DOLPHIN.png",
+    "SEALION": "Assets/Sprites/Pets/SEALION.png",
+    "WALRUS": "Assets/Sprites/Pets/WALRUS.png",
+    "GAZELLE": "Assets/Sprites/Pets/GAZELLE.png",
+    "LOBSTER": "Assets/Sprites/Pets/LOBSTER.png",
+    "FENNECFOX": "Assets/Sprites/Pets/FENNECFOX.png",
+    "SNOWWEASEL": "Assets/Sprites/Pets/SNOWWEASEL.png",
+    "SKUNK": "Assets/Sprites/Pets/SKUNK.png",
+    "PARROT": "Assets/Sprites/Pets/PARROT.png",
+    "MOOSE": "Assets/Sprites/Pets/MOOSE.png",
+    "CAMEL": "Assets/Sprites/Pets/CAMEL.png",
+    "GIRAFFE": "Assets/Sprites/Pets/GIRAFFE.png",
+    "CHEETAH": "Assets/Sprites/Pets/CHEETAH.png",
+    "SNOWOWL": "Assets/Sprites/Pets/SNOWOWL.png",
+    "ALIGATOR": "Assets/Sprites/Pets/ALIGATOR.png",
+    "LION": "Assets/Sprites/Pets/LION.png",
+    "TIGER": "Assets/Sprites/Pets/TIGER.png",
+    "ELEPHANT": "Assets/Sprites/Pets/ELEPHANT.png",
+    "ORCA": "Assets/Sprites/Pets/ORCA.png",
+    "PANDA": "Assets/Sprites/Pets/PANDA.png",
+    "EAGLE": "Assets/Sprites/Pets/EAGLE.png",
+    "SHOEBILL": "Assets/Sprites/Pets/SHOEBILL.png",
+    "SWAN": "Assets/Sprites/Pets/SWAN.png",
+    "VULTURE": "Assets/Sprites/Pets/VULTURE.png",
+    "BULL": "Assets/Sprites/Pets/Bull.png",
+    "KIWI": "Assets/Sprites/Pets/KIWI.png",
+    "SNOWLEOPARD": "Assets/Sprites/Pets/SNOWLEOPARD.png",
+    "RATTLESNAKE": "Assets/Sprites/Pets/RATTLESNAKE.png",
+    "WOODPECKER": "Assets/Sprites/Pets/WOODPECKER.png",
+    "LAMB": "Assets/Sprites/Pets/LAMB.png",
+    "POLARBEAR": "Assets/Sprites/Pets/POLARBEAR.png",
+    "RHINO": "Assets/Sprites/Pets/RHINO.png",
+    "WOLF": "Assets/Sprites/Pets/WOLF.png",
+    "HORNBILL": "Assets/Sprites/Pets/HORNBILL.png",
+    "HIPPO": "Assets/Sprites/Pets/HIPPO.png",
+    "BROWNBEAR": "Assets/Sprites/Pets/BROWNBEAR.png",
+    "MANATEE": "Assets/Sprites/Pets/MANATEE.png",
+    "OSTRICH": "Assets/Sprites/Pets/OSTRICH.png",
+    "SMALLWHALE": "Assets/Sprites/Pets/SMALLWHALE.png",
+    "GORILLA": "Assets/Sprites/Pets/GORILLA.png",
+    "BELUGA": "Assets/Sprites/Pets/BELUGA.png",
+    "NARWHAL": "Assets/Sprites/Pets/NARWHAL.png",
+    "HUSKY": "Assets/Sprites/Pets/HUSKY.png",
+    "PLATYPUS": "Assets/Sprites/Pets/PLATYPUS.png",
+    "JAGUAR": "Assets/Sprites/Pets/JAGUAR.png",
+    "REINDEER": "Assets/Sprites/Pets/REINDEER.png",
+    "ARCTICFOX": "Assets/Sprites/Pets/ARTICFOX.png",
+    "COW": "Assets/Sprites/Pets/COW.png",
+    "OX": "Assets/Sprites/Pets/Ox.png",
+    "TURKEY": "Assets/Sprites/Pets/TURKEY.png",
+    "FRILLNECKEDLIZARD": "Assets/Sprites/Pets/FrillNeckedLizard.png",
+    "TORTOISE": "Assets/Sprites/Pets/TORTOISE.png",
+    "SEAHORSE": "Assets/Sprites/Pets/SEAHORSE.png",
+    "ALPACA": "Assets/Sprites/Pets/ALPACA.png",
+    "COYOTE": "Assets/Sprites/Pets/COYOTE.png",
+    "CATFISH": "Assets/Sprites/Pets/CATFISH.png",
+    "SLOTH": "Assets/Sprites/Pets/SLOTH.png",
+    "MALLARD": "Assets/Sprites/Pets/MALLARD.png",
+    "ARMADILLO": "Assets/Sprites/Pets/ARMADILLO.png",
+    "AXOLOTLBLUE": "Assets/Sprites/Pets/AXOLOTLBLUE.png",
+    "AXOLOTLPINK": "Assets/Sprites/Pets/AXOLOTLPINK.png",
+    "AXOLOTLGREEN": "Assets/Sprites/Pets/AXOLOTLGREEN.png",
+    "AXOLOTLORANGE": "Assets/Sprites/Pets/AXOLOTLORANGE.png",
+    "AXOLOTLWHITE": "Assets/Sprites/Pets/AXOLOTLWHITE.png",
+    "LLAMA": "Assets/Sprites/Pets/LLAMA.png",
+    "BABOON": "Assets/Sprites/Pets/BABOON.png",
+    "SNOWMAN": "Assets/Sprites/Pets/SNOWMAN.png",
+    "PENGUIN": "Assets/Sprites/Pets/PENGUIN.png",
+    "KANGAROO": "Assets/Sprites/Pets/KANGAROO.png",
+    "MOODENG": "Assets/Sprites/Pets/MOODENG.png",
+    "PEACOCK": "Assets/Sprites/Pets/PEACOCK.png",
+    "SHARK": "Assets/Sprites/Pets/SHARK.png",
+    "KOALA": "Assets/Sprites/Pets/KOALA.png",
+    "FOX": "Assets/Sprites/Pets/FOX.png",
+    "PORCUPINE": "Assets/Sprites/Pets/PORCUPINE.png",
+    "DINGO": "Assets/Sprites/Pets/DINGO.png",
+    "MOUSE": "Assets/Sprites/Pets/MOUSE.png",
+    "FROG": "Assets/Sprites/Pets/FROG.png",
+    "TASMANIANDEVIL": "Assets/Sprites/Pets/TASMANIANDEVIL.png",
+    "KOMODO": "Assets/Sprites/Pets/KOMODO.png",
+    "SERVAL": "Assets/Sprites/Pets/SERVAL.png",
+    "JAVELINA": "Assets/Sprites/Pets/JAVELINA.png",
+    "REDPANDA": "Assets/Sprites/Pets/REDPANDA.png",
+    "MEERKAT": "Assets/Sprites/Pets/MEERKAT.png",
+    "PYTHON": "Assets/Sprites/Pets/PYTHON.png",
+    "MARTEN": "Assets/Sprites/Pets/MARTEN.png",
+    "HEDGEHOG": "Assets/Sprites/Pets/HEDGEHOG.png",
+    "WILDBOAR": "Assets/Sprites/Pets/WILDBOAR.png",
+    "HYENA": "Assets/Sprites/Pets/HYENA.png",
+    "JERBOA": "Assets/Sprites/Pets/JERBOA.png",
+    "MOUSEDEER": "Assets/Sprites/Pets/MOUSEDEER.png",
+    "BANDICOOT": "Assets/Sprites/Pets/BANDICOOT.png",
+    "JACKAL": "Assets/Sprites/Pets/JACKAL.png",
+    "DONKEY": "Assets/Sprites/Pets/DONKEY.png",
+    "ANTELOPE": "Assets/Sprites/Pets/ANTELOPE.png",
+    "BADGER": "Assets/Sprites/Pets/BADGER.png",
+    "PIRANHA": "Assets/Sprites/Pets/PIRANHA.png",
+    "BEAVER": "Assets/Sprites/Pets/BEAVER.png",
+    "NUMBAT": "Assets/Sprites/Pets/NUMBAT.png",
+    "QUOKKA": "Assets/Sprites/Pets/QUOKKA.png",
+    "FERRET": "Assets/Sprites/Pets/FERRET.png",
+    "LEMUR": "Assets/Sprites/Pets/LEMUR.png",
+    "GOLDFISH": "Assets/Sprites/Pets/GOLDFISH.png",
+    "BASS": "Assets/Sprites/Pets/BASS.png",
+    "TUNA": "Assets/Sprites/Pets/TUNA.png",
+    "ECHIDNA": "Assets/Sprites/Pets/ECHIDNA.png",
+    "CHIPMUNK": "Assets/Sprites/Pets/CHIPMUNK.png",
+    "COBRA": "Assets/Sprites/Pets/COBRA.png",
+    "JACKRABBIT": "Assets/Sprites/Pets/JACKRABBIT.png",
+    "GOLDENMOLE": "Assets/Sprites/Pets/GOLDENMOLE.png",
+    "LIONESS": "Assets/Sprites/Pets/LIONESS.png",
+    "BUFFALO": "Assets/Sprites/Pets/BUFFALO.png",
+    "SALMON": "Assets/Sprites/Pets/SALMON.png",
+    "EMU": "Assets/Sprites/Pets/EMU.png",
+    "BIGHORN": "Assets/Sprites/Pets/BIGHORN.png",
+    "ARAPAIMA": "Assets/Sprites/Pets/ARAPAIMA.png",
+    "IGUANA": "Assets/Sprites/Pets/IGUANA.png",
+    "GEMSBOK": "Assets/Sprites/Pets/GEMSBOK.png",
+    "ORANGUTAN": "Assets/Sprites/Pets/ORANGUTAN.png",
+    "CARP": "Assets/Sprites/Pets/CARP.png",
+    "WOMBAT": "Assets/Sprites/Pets/WOMBAT.png",
+    "KAKAPO": "Assets/Sprites/Pets/KAKAPO.png",
+    "GILAMONSTER": "Assets/Sprites/Pets/GILAMONSTER.png",
+    "HORNEDLIZARD": "Assets/Sprites/Pets/HORNEDLIZARD.png",
+    "LYNX": "Assets/Sprites/Pets/LYNX.png",
+    "PRONGHORN": "Assets/Sprites/Pets/PRONGHORN.png",
+    "OTTER": "Assets/Sprites/Pets/OTTER.png",
+    "BULL_PUMPKIN": "Assets/Sprites/Pets/BULL_PUMPKIN.png",
+    "WILDBOAR_PUMPKIN": "Assets/Sprites/Pets/WILDBOAR_PUMPKIN.png",
+    "GORILLA_PUMPKIN": "Assets/Sprites/Pets/GORILLA_PUMPKIN.png",
+    "SQUID_PUMPKIN": "Assets/Sprites/Pets/SQUID_PUMPKIN.png",
+    "JELLYFISH_PUMPKIN": "Assets/Sprites/Pets/JELLYFISH_PUMPKIN.png",
+    "GIRAFFE_PUMPKIN": "Assets/Sprites/Pets/GIRAFFE_PUMPKIN.png",
+    "PENGUIN_PUMPKIN": "Assets/Sprites/Pets/PENGUIN_PUMPKIN.png",
+    "CHICK_PUMPKIN": "Assets/Sprites/Pets/CHICK_PUMPKIN.png",
+    "HUSKY_SPIDERLEGS": "Assets/Sprites/Pets/HUSKY_SPIDERLEGS.png",
+    "MUDSKIPPER_SPIDERLEGS": "Assets/Sprites/Pets/MUDSKIPPER_SPIDERLEGS.png",
+    "HORNEDLIZARD_SPIDERLEGS": "Assets/Sprites/Pets/HORNEDLIZARD_SPIDERLEGS.png",
+    "OCTOPUS_SPIDERLEGS": "Assets/Sprites/Pets/OCTOPUS_SPIDERLEGS.png",
+    "ALIGATOR_SPIDERLEGS": "Assets/Sprites/Pets/ALIGATOR_SPIDERLEGS.png",
+    "PENGUIN_SPIDERLEGS": "Assets/Sprites/Pets/PENGUIN_SPIDERLEGS.png",
+    "SHARK_SPIDERLEGS": "Assets/Sprites/Pets/SHARK_SPIDERLEGS.png",
+    "MRFOOTBALL": "Assets/Sprites/Pets/MR.FOOTBALL.png",
+    "DRAGON": "Assets/Sprites/Pets/DRAGON.png",
+    "PEGASUS": "Assets/Sprites/Pets/PEGASUS.png",
+    "KIRIN": "Assets/Sprites/Pets/KIRIN.png",
+    "LUCKYBOXEPIC": "Assets/Sprites/Pets/LUCKYBOXEPIC.png",
+    "LUCKYBOXLEGENDARY": "Assets/Sprites/Pets/LUCKYBOXLEGENDARY.png",
+    "LUCKYBOXMYTHIC": "Assets/Sprites/Pets/LUCKYBOXMYTHIC.png",
+    "Golden": "Assets/Sprites/Mutations/Golden.png",
+    "Frozen": "Assets/Sprites/Mutations/Frozen.png",
+    "Magma": "Assets/Sprites/Mutations/Magma.png",
+    "Clover": "Assets/Sprites/Mutations/Clover.png",
+    "Fossilized": "Assets/Sprites/Mutations/Fossilized.png",
+    "Sweetheart": "Assets/Sprites/Mutations/Sweetheart.png",
+    "Crystalline": "Assets/Sprites/Mutations/Crystalline.png",
+    "Webbed": "Assets/Sprites/Mutations/Webbed.png",
+    "Football": "Assets/Sprites/Mutations/Football.png",
+    "Radioactive": "Assets/Sprites/Mutations/Radioactive.png",
+    "Soaked": "Assets/Sprites/Mutations/Rainy.png",
+    "Frost": "Assets/Sprites/Mutations/Snowy.png",
+    "Gale": "Assets/Sprites/Mutations/Windy.png",
+    "Thundered": "Assets/Sprites/Mutations/Thundered.png",
+    "Eclipse": "Assets/Sprites/Mutations/Eclipse.png",
+    "Prismatic": "Assets/Sprites/Mutations/Prismatic.png",
+    "Vortex": "Assets/Sprites/Mutations/Vortex.png",
+    "Sequin": "Assets/Sprites/Mutations/Sequin.png",
+    "Sparkle": "Assets/Sprites/Mutations/Sparkle.png",
+    "Aurora": "Assets/Sprites/Mutations/Aurora.png"
+  },
+  "rarityColors": {
+    "COMMON": "#8CFF91",
+    "RARE": "#4CC8FE",
+    "EPIC": "#EA70FF",
+    "LEGENDARY": "#FED868",
+    "MYTHIC": "#FF6F6F",
+    "APEX": "#FF9F43",
+    "LIMITED": "#B3CA1F"
+  },
+  "suffixes": {
+    "1": "",
+    "2": "k",
+    "3": "m",
+    "4": "B",
+    "5": "T",
+    "6": "Q",
+    "7": "Qi",
+    "8": "Sx",
+    "9": "Sp",
+    "10": "Oc",
+    "11": "No",
+    "12": "De",
+    "13": "Ud",
+    "14": "Dd",
+    "15": "Td",
+    "16": "Qad",
+    "17": "Qid",
+    "18": "Sxd",
+    "19": "Spd",
+    "20": "Ocd",
+    "21": "Nod",
+    "22": "Vg",
+    "23": "Uvg",
+    "24": "Dvg",
+    "25": "Tvg",
+    "26": "Qavg",
+    "27": "Qivg",
+    "28": "Sxvg",
+    "29": "Spvg",
+    "30": "Ocvg",
+    "31": "Novg",
+    "32": "Tg",
+    "33": "Utg",
+    "34": "Dtg",
+    "35": "Ttg",
+    "36": "Qatg",
+    "37": "Qitg",
+    "38": "Sxtg",
+    "39": "Sptg",
+    "40": "Octg",
+    "41": "Notg",
+    "42": "Qag",
+    "43": "Uqag",
+    "44": "Dqag",
+    "45": "Tqag",
+    "46": "Qaqag",
+    "47": "Qiqag",
+    "48": "Sxqag",
+    "49": "Spqag",
+    "50": "Ocqag"
+  },
+  "pets": [
+    {
+      "ID": "1",
+      "Name": "CHICK",
+      "Rarity": "COMMON",
+      "Value": "1",
+      "Price": "10",
+      "Rank": "1",
+      "nameKey": "CHICK"
+    },
+    {
+      "ID": "2",
+      "Name": "ROOSTER",
+      "Rarity": "COMMON",
+      "Value": "2",
+      "Price": "30",
+      "Rank": "2",
+      "nameKey": "ROOSTER"
+    },
+    {
+      "ID": "3",
+      "Name": "RABBIT",
+      "Rarity": "COMMON",
+      "Value": "7",
+      "Price": "60",
+      "Rank": "3",
+      "nameKey": "RABBIT"
+    },
+    {
+      "ID": "4",
+      "Name": "PIG",
+      "Rarity": "COMMON",
+      "Value": "4",
+      "Price": "110",
+      "Rank": "4",
+      "nameKey": "PIG"
+    },
+    {
+      "ID": "5",
+      "Name": "SHEEP",
+      "Rarity": "COMMON",
+      "Value": "5",
+      "Price": "190",
+      "Rank": "5",
+      "nameKey": "SHEEP"
+    },
+    {
+      "ID": "6",
+      "Name": "GOAT",
+      "Rarity": "COMMON",
+      "Value": "15",
+      "Price": "290",
+      "Rank": "6",
+      "nameKey": "GOAT"
+    },
+    {
+      "ID": "7",
+      "Name": "GOOSE",
+      "Rarity": "COMMON",
+      "Value": "8",
+      "Price": "380",
+      "Rank": "7",
+      "nameKey": "GOOSE"
+    },
+    {
+      "ID": "8",
+      "Name": "DOG",
+      "Rarity": "COMMON",
+      "Value": "9",
+      "Price": "460",
+      "Rank": "8",
+      "nameKey": "DOG"
+    },
+    {
+      "ID": "52",
+      "Name": "SHRIMP",
+      "Rarity": "COMMON",
+      "Value": "11",
+      "Price": "550",
+      "Rank": "9",
+      "nameKey": "SHRIMP"
+    },
+    {
+      "ID": "1001",
+      "Name": "MOLE",
+      "Rarity": "COMMON",
+      "Value": "17",
+      "Price": "840",
+      "Rank": "10",
+      "nameKey": "MOLE"
+    },
+    {
+      "ID": "1007",
+      "Name": "SNOWRABBIT",
+      "Rarity": "COMMON",
+      "Value": "1106",
+      "Price": "15279",
+      "Rank": "11",
+      "nameKey": "SNOWRABBIT"
+    },
+    {
+      "ID": "1012",
+      "Name": "MUDSKIPPER",
+      "Rarity": "COMMON",
+      "Value": "1290",
+      "Price": "22222",
+      "Rank": "12",
+      "nameKey": "MUDSKIPPER"
+    },
+    {
+      "ID": "1017",
+      "Name": "KINGFISHER",
+      "Rarity": "COMMON",
+      "Value": "1589",
+      "Price": "29579",
+      "Rank": "13",
+      "nameKey": "KINGFISHER"
+    },
+    {
+      "ID": "9",
+      "Name": "CAT",
+      "Rarity": "RARE",
+      "Value": "13",
+      "Price": "800",
+      "Rank": "21",
+      "nameKey": "CAT"
+    },
+    {
+      "ID": "10",
+      "Name": "HAMSTER",
+      "Rarity": "RARE",
+      "Value": "23",
+      "Price": "1600",
+      "Rank": "22",
+      "nameKey": "HAMSTER"
+    },
+    {
+      "ID": "11",
+      "Name": "MONKEY",
+      "Rarity": "RARE",
+      "Value": "250",
+      "Price": "3200",
+      "Rank": "23",
+      "nameKey": "MONKEY"
+    },
+    {
+      "ID": "12",
+      "Name": "CRAB",
+      "Rarity": "RARE",
+      "Value": "56",
+      "Price": "5600",
+      "Rank": "24",
+      "nameKey": "CRAB"
+    },
+    {
+      "ID": "13",
+      "Name": "CLOWNFISH",
+      "Rarity": "RARE",
+      "Value": "80",
+      "Price": "9600",
+      "Rank": "25",
+      "nameKey": "CLOWNFISH"
+    },
+    {
+      "ID": "14",
+      "Name": "CAPYBARA",
+      "Rarity": "RARE",
+      "Value": "101",
+      "Price": "15200",
+      "Rank": "26",
+      "nameKey": "CAPYBARA"
+    },
+    {
+      "ID": "15",
+      "Name": "RACOON",
+      "Rarity": "RARE",
+      "Value": "229",
+      "Price": "23200",
+      "Rank": "27",
+      "nameKey": "RACOON"
+    },
+    {
+      "ID": "16",
+      "Name": "SQUIRREL",
+      "Rarity": "RARE",
+      "Value": "143",
+      "Price": "32800",
+      "Rank": "28",
+      "nameKey": "SQUIRREL"
+    },
+    {
+      "ID": "17",
+      "Name": "TURTLE",
+      "Rarity": "RARE",
+      "Value": "151",
+      "Price": "42400",
+      "Rank": "29",
+      "nameKey": "TURTLE"
+    },
+    {
+      "ID": "53",
+      "Name": "SNAKE",
+      "Rarity": "RARE",
+      "Value": "162",
+      "Price": "55200",
+      "Rank": "30",
+      "nameKey": "SNAKE"
+    },
+    {
+      "ID": "1002",
+      "Name": "SQUID",
+      "Rarity": "RARE",
+      "Value": "883",
+      "Price": "326592",
+      "Rank": "31",
+      "nameKey": "SQUID"
+    },
+    {
+      "ID": "1008",
+      "Name": "POSSUM",
+      "Rarity": "RARE",
+      "Value": "3998",
+      "Price": "1479270",
+      "Rank": "32",
+      "nameKey": "POSSUM"
+    },
+    {
+      "ID": "1013",
+      "Name": "BAT",
+      "Rarity": "RARE",
+      "Value": "6789",
+      "Price": "2396050",
+      "Rank": "33",
+      "nameKey": "BAT"
+    },
+    {
+      "ID": "1018",
+      "Name": "CARDINAL",
+      "Rarity": "RARE",
+      "Value": "7724",
+      "Price": "3479124",
+      "Rank": "34",
+      "nameKey": "CARDINAL"
+    },
+    {
+      "ID": "18",
+      "Name": "OWL",
+      "Rarity": "EPIC",
+      "Value": "200",
+      "Price": "80000",
+      "Rank": "41",
+      "nameKey": "OWL"
+    },
+    {
+      "ID": "19",
+      "Name": "FLAMINGO",
+      "Rarity": "EPIC",
+      "Value": "320",
+      "Price": "160000",
+      "Rank": "42",
+      "nameKey": "FLAMINGO"
+    },
+    {
+      "ID": "20",
+      "Name": "BISON",
+      "Rarity": "EPIC",
+      "Value": "1500",
+      "Price": "320000",
+      "Rank": "43",
+      "nameKey": "BISON"
+    },
+    {
+      "ID": "21",
+      "Name": "HORSE",
+      "Rarity": "EPIC",
+      "Value": "700",
+      "Price": "560000",
+      "Rank": "44",
+      "nameKey": "HORSE"
+    },
+    {
+      "ID": "22",
+      "Name": "ZEBRA",
+      "Rarity": "EPIC",
+      "Value": "941",
+      "Price": "960000",
+      "Rank": "45",
+      "nameKey": "ZEBRA"
+    },
+    {
+      "ID": "23",
+      "Name": "OCTOPUS",
+      "Rarity": "EPIC",
+      "Value": "9267",
+      "Price": "1520000",
+      "Rank": "46",
+      "nameKey": "OCTOPUS"
+    },
+    {
+      "ID": "24",
+      "Name": "JELLYFISH",
+      "Rarity": "EPIC",
+      "Value": "1681",
+      "Price": "2320000",
+      "Rank": "47",
+      "nameKey": "JELLYFISH"
+    },
+    {
+      "ID": "25",
+      "Name": "DOLPHIN",
+      "Rarity": "EPIC",
+      "Value": "2050",
+      "Price": "3280000",
+      "Rank": "48",
+      "nameKey": "DOLPHIN"
+    },
+    {
+      "ID": "26",
+      "Name": "SEALION",
+      "Rarity": "EPIC",
+      "Value": "2280",
+      "Price": "4240000",
+      "Rank": "49",
+      "nameKey": "SEALION"
+    },
+    {
+      "ID": "27",
+      "Name": "WALRUS",
+      "Rarity": "EPIC",
+      "Value": "8370",
+      "Price": "5120000",
+      "Rank": "50",
+      "nameKey": "WALRUS"
+    },
+    {
+      "ID": "54",
+      "Name": "GAZELLE",
+      "Rarity": "EPIC",
+      "Value": "2446",
+      "Price": "5920000",
+      "Rank": "51",
+      "nameKey": "GAZELLE"
+    },
+    {
+      "ID": "57",
+      "Name": "LOBSTER",
+      "Rarity": "EPIC",
+      "Value": "2709",
+      "Price": "6880000",
+      "Rank": "52",
+      "nameKey": "LOBSTER"
+    },
+    {
+      "ID": "1003",
+      "Name": "FENNECFOX",
+      "Rarity": "EPIC",
+      "Value": "19935",
+      "Price": "59804444",
+      "Rank": "53",
+      "nameKey": "FENNECFOX"
+    },
+    {
+      "ID": "1009",
+      "Name": "SNOWWEASEL",
+      "Rarity": "EPIC",
+      "Value": "81801",
+      "Price": "245404444",
+      "Rank": "54",
+      "nameKey": "SNOWWEASEL"
+    },
+    {
+      "ID": "1014",
+      "Name": "SKUNK",
+      "Rarity": "EPIC",
+      "Value": "270250",
+      "Price": "784996120",
+      "Rank": "55",
+      "nameKey": "SKUNK"
+    },
+    {
+      "ID": "1019",
+      "Name": "PARROT",
+      "Rarity": "EPIC",
+      "Value": "324745",
+      "Price": "389345686",
+      "Rank": "56",
+      "nameKey": "PARROT"
+    },
+    {
+      "ID": "28",
+      "Name": "MOOSE",
+      "Rarity": "LEGENDARY",
+      "Value": "3750",
+      "Price": "9000000",
+      "Rank": "71",
+      "nameKey": "MOOSE"
+    },
+    {
+      "ID": "29",
+      "Name": "CAMEL",
+      "Rarity": "LEGENDARY",
+      "Value": "5068",
+      "Price": "15000000",
+      "Rank": "72",
+      "nameKey": "CAMEL"
+    },
+    {
+      "ID": "30",
+      "Name": "GIRAFFE",
+      "Rarity": "LEGENDARY",
+      "Value": "9494",
+      "Price": "30000000",
+      "Rank": "73",
+      "nameKey": "GIRAFFE"
+    },
+    {
+      "ID": "31",
+      "Name": "CHEETAH",
+      "Rarity": "LEGENDARY",
+      "Value": "15441",
+      "Price": "52500000",
+      "Rank": "74",
+      "nameKey": "CHEETAH"
+    },
+    {
+      "ID": "32",
+      "Name": "SNOWOWL",
+      "Rarity": "LEGENDARY",
+      "Value": "45568",
+      "Price": "90000000",
+      "Rank": "75",
+      "nameKey": "SNOWOWL"
+    },
+    {
+      "ID": "33",
+      "Name": "ALIGATOR",
+      "Rarity": "LEGENDARY",
+      "Value": "39148",
+      "Price": "142500000",
+      "Rank": "76",
+      "nameKey": "ALIGATOR"
+    },
+    {
+      "ID": "34",
+      "Name": "LION",
+      "Rarity": "LEGENDARY",
+      "Value": "57846",
+      "Price": "217500000",
+      "Rank": "77",
+      "nameKey": "LION"
+    },
+    {
+      "ID": "35",
+      "Name": "TIGER",
+      "Rarity": "LEGENDARY",
+      "Value": "79253",
+      "Price": "307500000",
+      "Rank": "78",
+      "nameKey": "TIGER"
+    },
+    {
+      "ID": "36",
+      "Name": "ELEPHANT",
+      "Rarity": "LEGENDARY",
+      "Value": "98391",
+      "Price": "397500000",
+      "Rank": "79",
+      "nameKey": "ELEPHANT"
+    },
+    {
+      "ID": "37",
+      "Name": "ORCA",
+      "Rarity": "LEGENDARY",
+      "Value": "115385",
+      "Price": "480000000",
+      "Rank": "80",
+      "nameKey": "ORCA"
+    },
+    {
+      "ID": "38",
+      "Name": "PANDA",
+      "Rarity": "LEGENDARY",
+      "Value": "134930",
+      "Price": "577500000",
+      "Rank": "81",
+      "nameKey": "PANDA"
+    },
+    {
+      "ID": "39",
+      "Name": "EAGLE",
+      "Rarity": "LEGENDARY",
+      "Value": "156818",
+      "Price": "690000000",
+      "Rank": "82",
+      "nameKey": "EAGLE"
+    },
+    {
+      "ID": "55",
+      "Name": "SHOEBILL",
+      "Rarity": "LEGENDARY",
+      "Value": "182522",
+      "Price": "825000000",
+      "Rank": "83",
+      "nameKey": "SHOEBILL"
+    },
+    {
+      "ID": "58",
+      "Name": "SWAN",
+      "Rarity": "LEGENDARY",
+      "Value": "211538",
+      "Price": "990000000",
+      "Rank": "84",
+      "nameKey": "SWAN"
+    },
+    {
+      "ID": "59",
+      "Name": "VULTURE",
+      "Rarity": "LEGENDARY",
+      "Value": "246875",
+      "Price": "1185000000",
+      "Rank": "85",
+      "nameKey": "VULTURE"
+    },
+    {
+      "ID": "65",
+      "Name": "BULL",
+      "Rarity": "LEGENDARY",
+      "Value": "289456",
+      "Price": "1523000000",
+      "Rank": "87",
+      "nameKey": "BULL"
+    },
+    {
+      "ID": "1004",
+      "Name": "KIWI",
+      "Rarity": "LEGENDARY",
+      "Value": "1606913",
+      "Price": "9641475224",
+      "Rank": "90",
+      "nameKey": "KIWI"
+    },
+    {
+      "ID": "1010",
+      "Name": "SNOWLEOPARD",
+      "Rarity": "LEGENDARY",
+      "Value": "8271363",
+      "Price": "49628176000",
+      "Rank": "91",
+      "nameKey": "SNOWLEOPARD"
+    },
+    {
+      "ID": "1015",
+      "Name": "RATTLESNAKE",
+      "Rarity": "LEGENDARY",
+      "Value": "25007300",
+      "Price": "283798000000",
+      "Rank": "92",
+      "nameKey": "RATTLESNAKE"
+    },
+    {
+      "ID": "1020",
+      "Name": "WOODPECKER",
+      "Rarity": "LEGENDARY",
+      "Value": "21465796",
+      "Price": "245633500000",
+      "Rank": "93",
+      "nameKey": "WOODPECKER"
+    },
+    {
+      "ID": "1022",
+      "Name": "LAMB",
+      "Rarity": "LEGENDARY",
+      "Value": "27340966",
+      "Price": "269783310000",
+      "Rank": "94",
+      "nameKey": "LAMB"
+    },
+    {
+      "ID": "40",
+      "Name": "POLARBEAR",
+      "Rarity": "MYTHIC",
+      "Value": "330969",
+      "Price": "1400000000",
+      "Rank": "121",
+      "nameKey": "POLARBEAR"
+    },
+    {
+      "ID": "41",
+      "Name": "RHINO",
+      "Rarity": "MYTHIC",
+      "Value": "427481",
+      "Price": "2800000000",
+      "Rank": "122",
+      "nameKey": "RHINO"
+    },
+    {
+      "ID": "42",
+      "Name": "WOLF",
+      "Rarity": "MYTHIC",
+      "Value": "1727273",
+      "Price": "5600000000",
+      "Rank": "123",
+      "nameKey": "WOLF"
+    },
+    {
+      "ID": "45",
+      "Name": "HORNBILL",
+      "Rarity": "MYTHIC",
+      "Value": "1400000",
+      "Price": "12600000000",
+      "Rank": "124",
+      "nameKey": "HORNBILL"
+    },
+    {
+      "ID": "43",
+      "Name": "HIPPO",
+      "Rarity": "MYTHIC",
+      "Value": "3062500",
+      "Price": "29400000000",
+      "Rank": "125",
+      "nameKey": "HIPPO"
+    },
+    {
+      "ID": "46",
+      "Name": "BROWNBEAR",
+      "Rarity": "MYTHIC",
+      "Value": "16862745",
+      "Price": "70000000000",
+      "Rank": "126",
+      "nameKey": "BROWNBEAR"
+    },
+    {
+      "ID": "47",
+      "Name": "MANATEE",
+      "Rarity": "MYTHIC",
+      "Value": "15432099",
+      "Price": "175000000000",
+      "Rank": "127",
+      "nameKey": "MANATEE"
+    },
+    {
+      "ID": "48",
+      "Name": "OSTRICH",
+      "Rarity": "MYTHIC",
+      "Value": "36111111",
+      "Price": "455000000000",
+      "Rank": "128",
+      "nameKey": "OSTRICH"
+    },
+    {
+      "ID": "44",
+      "Name": "SMALLWHALE",
+      "Rarity": "MYTHIC",
+      "Value": "87925608",
+      "Price": "1229200000000",
+      "Rank": "129",
+      "nameKey": "SMALLWHALE"
+    },
+    {
+      "ID": "49",
+      "Name": "GORILLA",
+      "Rarity": "MYTHIC",
+      "Value": "213209418",
+      "Price": "3441200000000",
+      "Rank": "130",
+      "nameKey": "GORILLA"
+    },
+    {
+      "ID": "50",
+      "Name": "BELUGA",
+      "Rarity": "MYTHIC",
+      "Value": "534790997",
+      "Price": "9979200000000",
+      "Rank": "131",
+      "nameKey": "BELUGA"
+    },
+    {
+      "ID": "51",
+      "Name": "NARWHAL",
+      "Rarity": "MYTHIC",
+      "Value": "1436011080",
+      "Price": "31104000000000",
+      "Rank": "132",
+      "nameKey": "NARWHAL"
+    },
+    {
+      "ID": "56",
+      "Name": "HUSKY",
+      "Rarity": "MYTHIC",
+      "Value": "8391366906",
+      "Price": "279936000000000",
+      "Rank": "133",
+      "nameKey": "HUSKY"
+    },
+    {
+      "ID": "60",
+      "Name": "PLATYPUS",
+      "Rarity": "MYTHIC",
+      "Value": "43300232019",
+      "Price": "3359230000000000",
+      "Rank": "134",
+      "nameKey": "PLATYPUS"
+    },
+    {
+      "ID": "61",
+      "Name": "JAGUAR",
+      "Rarity": "MYTHIC",
+      "Value": "121817000000",
+      "Price": "50388500000000000",
+      "Rank": "135",
+      "nameKey": "JAGUAR"
+    },
+    {
+      "ID": "62",
+      "Name": "REINDEER",
+      "Rarity": "MYTHIC",
+      "Value": "233561000000",
+      "Price": "151165000000000000",
+      "Rank": "136",
+      "nameKey": "REINDEER"
+    },
+    {
+      "ID": "63",
+      "Name": "ARCTICFOX",
+      "Rarity": "MYTHIC",
+      "Value": "732604000000",
+      "Price": "604662000000000000",
+      "Rank": "140",
+      "nameKey": "ARCTICFOX"
+    },
+    {
+      "ID": "64",
+      "Name": "COW",
+      "Rarity": "MYTHIC",
+      "Value": "769623200000",
+      "Price": "651165000000000000",
+      "Rank": "139",
+      "nameKey": "COW"
+    },
+    {
+      "ID": "66",
+      "Name": "OX",
+      "Rarity": "MYTHIC",
+      "Value": "777777777777",
+      "Price": "620768395000000000",
+      "Rank": "137",
+      "nameKey": "OX"
+    },
+    {
+      "ID": "67",
+      "Name": "TURKEY",
+      "Rarity": "MYTHIC",
+      "Value": "795808153000",
+      "Price": "680567389120000000",
+      "Rank": "138",
+      "nameKey": "TURKEY"
+    },
+    {
+      "ID": "68",
+      "Name": "FRILLNECKEDLIZARD",
+      "Rarity": "MYTHIC",
+      "Value": "888888888888",
+      "Price": "650689015000000000",
+      "Rank": "143",
+      "nameKey": "FRILLNECKEDLIZARD"
+    },
+    {
+      "ID": "69",
+      "Name": "TORTOISE",
+      "Rarity": "MYTHIC",
+      "Value": "740230745982",
+      "Price": "662796007000500000",
+      "Rank": "141",
+      "nameKey": "TORTOISE"
+    },
+    {
+      "ID": "70",
+      "Name": "SEAHORSE",
+      "Rarity": "MYTHIC",
+      "Value": "740230745982",
+      "Price": "692796800000500000",
+      "Rank": "142",
+      "nameKey": "SEAHORSE"
+    },
+    {
+      "ID": "71",
+      "Name": "ALPACA",
+      "Rarity": "MYTHIC",
+      "Value": "790230745982",
+      "Price": "602796007000500000",
+      "Rank": "144",
+      "nameKey": "ALPACA"
+    },
+    {
+      "ID": "72",
+      "Name": "COYOTE",
+      "Rarity": "MYTHIC",
+      "Value": "853396324657",
+      "Price": "670573564520000000",
+      "Rank": "145",
+      "nameKey": "COYOTE"
+    },
+    {
+      "ID": "73",
+      "Name": "CATFISH",
+      "Rarity": "MYTHIC",
+      "Value": "891668721630",
+      "Price": "703679674830050000",
+      "Rank": "146",
+      "nameKey": "CATFISH"
+    },
+    {
+      "ID": "74",
+      "Name": "SLOTH",
+      "Rarity": "MYTHIC",
+      "Value": "1100872213000",
+      "Price": "916796766993000000",
+      "Rank": "147",
+      "nameKey": "SLOTH"
+    },
+    {
+      "ID": "75",
+      "Name": "MALLARD",
+      "Rarity": "MYTHIC",
+      "Value": "931668030630",
+      "Price": "837630920972000000",
+      "Rank": "148",
+      "nameKey": "MALLARD"
+    },
+    {
+      "ID": "77",
+      "Name": "ARMADILLO",
+      "Rarity": "MYTHIC",
+      "Value": "1083579830630",
+      "Price": "1337630920972000000",
+      "Rank": "149",
+      "nameKey": "ARMADILLO"
+    },
+    {
+      "ID": "78",
+      "Name": "AXOLOTLBLUE",
+      "Rarity": "MYTHIC",
+      "Value": "1321716540000",
+      "Price": "1547261695368320000",
+      "Rank": "150",
+      "nameKey": "AXOLOTLBLUE"
+    },
+    {
+      "ID": "79",
+      "Name": "AXOLOTLPINK",
+      "Rarity": "MYTHIC",
+      "Value": "942327640000",
+      "Price": "850261695261520000",
+      "Rank": "151",
+      "nameKey": "AXOLOTLPINK"
+    },
+    {
+      "ID": "80",
+      "Name": "AXOLOTLGREEN",
+      "Rarity": "MYTHIC",
+      "Value": "1242327640000",
+      "Price": "1650261695261520000",
+      "Rank": "152",
+      "nameKey": "AXOLOTLGREEN"
+    },
+    {
+      "ID": "81",
+      "Name": "AXOLOTLORANGE",
+      "Rarity": "MYTHIC",
+      "Value": "1242327640000",
+      "Price": "1650261695261520000",
+      "Rank": "153",
+      "nameKey": "AXOLOTLORANGE"
+    },
+    {
+      "ID": "82",
+      "Name": "AXOLOTLWHITE",
+      "Rarity": "MYTHIC",
+      "Value": "1442917100000",
+      "Price": "1650261695261520000",
+      "Rank": "154",
+      "nameKey": "AXOLOTLWHITE"
+    },
+    {
+      "ID": "83",
+      "Name": "LLAMA",
+      "Rarity": "MYTHIC",
+      "Value": "1470034700000",
+      "Price": "1723957653443760000",
+      "Rank": "155",
+      "nameKey": "LLAMA"
+    },
+    {
+      "ID": "84",
+      "Name": "BABOON",
+      "Rarity": "MYTHIC",
+      "Value": "1517100083600",
+      "Price": "1776842651098400000",
+      "Rank": "156",
+      "nameKey": "BABOON"
+    },
+    {
+      "ID": "1005",
+      "Name": "SNOWMAN",
+      "Rarity": "MYTHIC",
+      "Value": "273884758",
+      "Price": "4420500000000",
+      "Rank": "201",
+      "nameKey": "SNOWMAN"
+    },
+    {
+      "ID": "1011",
+      "Name": "PENGUIN",
+      "Rarity": "MYTHIC",
+      "Value": "229452000000",
+      "Price": "94910500000000000",
+      "Rank": "202",
+      "nameKey": "PENGUIN"
+    },
+    {
+      "ID": "1016",
+      "Name": "KANGAROO",
+      "Rarity": "MYTHIC",
+      "Value": "791432666667",
+      "Price": "199999999999000000",
+      "Rank": "203",
+      "nameKey": "KANGAROO"
+    },
+    {
+      "ID": "1006",
+      "Name": "MOODENG",
+      "Rarity": "MYTHIC",
+      "Value": "611606000000",
+      "Price": "395844000000000000",
+      "Rank": "204",
+      "nameKey": "MOODENG"
+    },
+    {
+      "ID": "1021",
+      "Name": "PEACOCK",
+      "Rarity": "MYTHIC",
+      "Value": "832455316546",
+      "Price": "608000670000350000",
+      "Rank": "205",
+      "nameKey": "PEACOCK"
+    },
+    {
+      "ID": "1023",
+      "Name": "SHARK",
+      "Rarity": "MYTHIC",
+      "Value": "878787878787",
+      "Price": "676767676700000000",
+      "Rank": "206",
+      "nameKey": "SHARK"
+    },
+    {
+      "ID": "1024",
+      "Name": "KOALA",
+      "Rarity": "MYTHIC",
+      "Value": "788234017740",
+      "Price": "556890100009800000",
+      "Rank": "207",
+      "nameKey": "KOALA"
+    },
+    {
+      "ID": "1025",
+      "Name": "FOX",
+      "Rarity": "MYTHIC",
+      "Value": "898234017740",
+      "Price": "690459310333000000",
+      "Rank": "208",
+      "nameKey": "FOX"
+    },
+    {
+      "ID": "1027",
+      "Name": "PORCUPINE",
+      "Rarity": "MYTHIC",
+      "Value": "1512939203163",
+      "Price": "1605844000000000000",
+      "Rank": "209",
+      "nameKey": "PORCUPINE"
+    },
+    {
+      "ID": "1029",
+      "Name": "DINGO",
+      "Rarity": "MYTHIC",
+      "Value": "1530316384327",
+      "Price": "1874126000064730000",
+      "Rank": "210",
+      "nameKey": "DINGO"
+    },
+    {
+      "ID": "1030",
+      "Name": "MOUSE",
+      "Rarity": "MYTHIC",
+      "Value": "1604494784457",
+      "Price": "2178345437745210000",
+      "Rank": "211",
+      "nameKey": "MOUSE"
+    },
+    {
+      "ID": "1043",
+      "Name": "FROG",
+      "Rarity": "MYTHIC",
+      "Value": "1780964092180",
+      "Price": "3007570377446300000",
+      "Rank": "212",
+      "nameKey": "FROG"
+    },
+    {
+      "ID": "1033",
+      "Name": "TASMANIANDEVIL",
+      "Rarity": "APEX",
+      "Value": "1393561000000",
+      "Price": "1250198253986000000",
+      "Rank": "401",
+      "nameKey": "TASMANIANDEVIL"
+    },
+    {
+      "ID": "76",
+      "Name": "KOMODO",
+      "Rarity": "APEX",
+      "Value": "1393561000000",
+      "Price": "1250198253986000000",
+      "Rank": "402",
+      "nameKey": "KOMODO"
+    },
+    {
+      "ID": "85",
+      "Name": "SERVAL",
+      "Rarity": "APEX",
+      "Value": "1558350468000",
+      "Price": "1846720600000000000",
+      "Rank": "403",
+      "nameKey": "SERVAL"
+    },
+    {
+      "ID": "86",
+      "Name": "JAVELINA",
+      "Rarity": "APEX",
+      "Value": "1636645688000",
+      "Price": "2290983687880000000",
+      "Rank": "404",
+      "nameKey": "JAVELINA"
+    },
+    {
+      "ID": "87",
+      "Name": "REDPANDA",
+      "Rarity": "APEX",
+      "Value": "1656927472429",
+      "Price": "2512456663318670000",
+      "Rank": "405",
+      "nameKey": "REDPANDA"
+    },
+    {
+      "ID": "88",
+      "Name": "MEERKAT",
+      "Rarity": "APEX",
+      "Value": "1699768728440",
+      "Price": "2634687335780000000",
+      "Rank": "406",
+      "nameKey": "MEERKAT"
+    },
+    {
+      "ID": "89",
+      "Name": "PYTHON",
+      "Rarity": "APEX",
+      "Value": "1673745800511",
+      "Price": "2864010083440000000",
+      "Rank": "407",
+      "nameKey": "PYTHON"
+    },
+    {
+      "ID": "90",
+      "Name": "MARTEN",
+      "Rarity": "APEX",
+      "Value": "1817036645688",
+      "Price": "2978390983680000000",
+      "Rank": "408",
+      "nameKey": "MARTEN"
+    },
+    {
+      "ID": "91",
+      "Name": "HEDGEHOG",
+      "Rarity": "APEX",
+      "Value": "1871547745059",
+      "Price": "3131184837180000000",
+      "Rank": "409",
+      "nameKey": "HEDGEHOG"
+    },
+    {
+      "ID": "92",
+      "Name": "WILDBOAR",
+      "Rarity": "APEX",
+      "Value": "1944229210886",
+      "Price": "3245780227305000000",
+      "Rank": "410",
+      "nameKey": "WILDBOAR"
+    },
+    {
+      "ID": "93",
+      "Name": "HYENA",
+      "Rarity": "APEX",
+      "Value": "1953497243730",
+      "Price": "3261252681675000000",
+      "Rank": "411",
+      "nameKey": "HYENA"
+    },
+    {
+      "ID": "94",
+      "Name": "JERBOA",
+      "Rarity": "APEX",
+      "Value": "1998427680336",
+      "Price": "3404747799668700000",
+      "Rank": "412",
+      "nameKey": "JERBOA"
+    },
+    {
+      "ID": "95",
+      "Name": "MOUSEDEER",
+      "Rarity": "APEX",
+      "Value": "2044391516984",
+      "Price": "3554556702854120000",
+      "Rank": "413",
+      "nameKey": "MOUSEDEER"
+    },
+    {
+      "ID": "96",
+      "Name": "BANDICOOT",
+      "Rarity": "APEX",
+      "Value": "2091412521875",
+      "Price": "3710957197779700000",
+      "Rank": "414",
+      "nameKey": "BANDICOOT"
+    },
+    {
+      "ID": "97",
+      "Name": "JACKAL",
+      "Rarity": "APEX",
+      "Value": "2188723855105",
+      "Price": "4044705844319220000",
+      "Rank": "415",
+      "nameKey": "JACKAL"
+    },
+    {
+      "ID": "98",
+      "Name": "DONKEY",
+      "Rarity": "APEX",
+      "Value": "2239064503772",
+      "Price": "4222672901469270000",
+      "Rank": "416",
+      "nameKey": "DONKEY"
+    },
+    {
+      "ID": "99",
+      "Name": "ANTELOPE",
+      "Rarity": "APEX",
+      "Value": "2290562987359",
+      "Price": "4408470509133910000",
+      "Rank": "417",
+      "nameKey": "ANTELOPE"
+    },
+    {
+      "ID": "100",
+      "Name": "BADGER",
+      "Rarity": "APEX",
+      "Value": "2343245936068",
+      "Price": "4602443211535810000",
+      "Rank": "418",
+      "nameKey": "BADGER"
+    },
+    {
+      "ID": "101",
+      "Name": "PIRANHA",
+      "Rarity": "APEX",
+      "Value": "2397140592598",
+      "Price": "4804950712843380000",
+      "Rank": "419",
+      "nameKey": "PIRANHA"
+    },
+    {
+      "ID": "102",
+      "Name": "BEAVER",
+      "Rarity": "APEX",
+      "Value": "2452280743222",
+      "Price": "5017247163895450000",
+      "Rank": "420",
+      "nameKey": "BEAVER"
+    },
+    {
+      "ID": "103",
+      "Name": "NUMBAT",
+      "Rarity": "APEX",
+      "Value": "2508683199316",
+      "Price": "5239515432559180000",
+      "Rank": "421",
+      "nameKey": "NUMBAT"
+    },
+    {
+      "ID": "104",
+      "Name": "QUOKKA",
+      "Rarity": "APEX",
+      "Value": "2566382713900",
+      "Price": "5471643616961390000",
+      "Rank": "422",
+      "nameKey": "QUOKKA"
+    },
+    {
+      "ID": "105",
+      "Name": "FERRET",
+      "Rarity": "APEX",
+      "Value": "2625409515300",
+      "Price": "5714063658772070000",
+      "Rank": "423",
+      "nameKey": "FERRET"
+    },
+    {
+      "ID": "106",
+      "Name": "LEMUR",
+      "Rarity": "APEX",
+      "Value": "2685793934152",
+      "Price": "5967234740356090000",
+      "Rank": "424",
+      "nameKey": "LEMUR"
+    },
+    {
+      "ID": "107",
+      "Name": "GOLDFISH",
+      "Rarity": "APEX",
+      "Value": "2747567195649",
+      "Price": "6231640060802330000",
+      "Rank": "425",
+      "nameKey": "GOLDFISH"
+    },
+    {
+      "ID": "108",
+      "Name": "BASS",
+      "Rarity": "APEX",
+      "Value": "2810761040750",
+      "Price": "6507788627126980000",
+      "Rank": "426",
+      "nameKey": "BASS"
+    },
+    {
+      "ID": "109",
+      "Name": "TUNA",
+      "Rarity": "APEX",
+      "Value": "2875408545686",
+      "Price": "6796214082380920000",
+      "Rank": "427",
+      "nameKey": "TUNA"
+    },
+    {
+      "ID": "110",
+      "Name": "ECHIDNA",
+      "Rarity": "APEX",
+      "Value": "2941532942237",
+      "Price": "7097478420434020000",
+      "Rank": "428",
+      "nameKey": "ECHIDNA"
+    },
+    {
+      "ID": "111",
+      "Name": "CHIPMUNK",
+      "Rarity": "APEX",
+      "Value": "3009178199888",
+      "Price": "7411171804340970000",
+      "Rank": "429",
+      "nameKey": "CHIPMUNK"
+    },
+    {
+      "ID": "112",
+      "Name": "COBRA",
+      "Rarity": "APEX",
+      "Value": "3076687143884",
+      "Price": "9571111237688220000",
+      "Rank": "430",
+      "nameKey": "COBRA"
+    },
+    {
+      "ID": "113",
+      "Name": "JACKRABBIT",
+      "Rarity": "APEX",
+      "Value": "3219820673880",
+      "Price": "10475891953775200000",
+      "Rank": "431",
+      "nameKey": "JACKRABBIT"
+    },
+    {
+      "ID": "114",
+      "Name": "GOLDENMOLE",
+      "Rarity": "APEX",
+      "Value": "3371152245553",
+      "Price": "11468081097733100000",
+      "Rank": "432",
+      "nameKey": "GOLDENMOLE"
+    },
+    {
+      "ID": "115",
+      "Name": "LIONESS",
+      "Rarity": "APEX",
+      "Value": "5550000000000",
+      "Price": "26350000000000000000",
+      "Rank": "434",
+      "nameKey": "LIONESS"
+    },
+    {
+      "ID": "116",
+      "Name": "BUFFALO",
+      "Rarity": "APEX",
+      "Value": "5650000000000",
+      "Price": "26820000000000000000",
+      "Rank": "435",
+      "nameKey": "BUFFALO"
+    },
+    {
+      "ID": "117",
+      "Name": "SALMON",
+      "Rarity": "APEX",
+      "Value": "4600000000000",
+      "Price": "17900000000000000000",
+      "Rank": "436",
+      "nameKey": "SALMON"
+    },
+    {
+      "ID": "118",
+      "Name": "EMU",
+      "Rarity": "APEX",
+      "Value": "5000000000000",
+      "Price": "21600000000000000000",
+      "Rank": "437",
+      "nameKey": "EMU"
+    },
+    {
+      "ID": "119",
+      "Name": "BIGHORN",
+      "Rarity": "APEX",
+      "Value": "5750000000000",
+      "Price": "27300000000000000000",
+      "Rank": "438",
+      "nameKey": "BIGHORN"
+    },
+    {
+      "ID": "1026",
+      "Name": "ARAPAIMA",
+      "Rarity": "APEX",
+      "Value": "993561000000",
+      "Price": "805844000000000000",
+      "Rank": "501",
+      "nameKey": "ARAPAIMA"
+    },
+    {
+      "ID": "1028",
+      "Name": "IGUANA",
+      "Rarity": "APEX",
+      "Value": "1618844947384",
+      "Price": "2178345437745210000",
+      "Rank": "502",
+      "nameKey": "IGUANA"
+    },
+    {
+      "ID": "1031",
+      "Name": "GEMSBOK",
+      "Rarity": "APEX",
+      "Value": "1719478675000",
+      "Price": "2839760697567800000",
+      "Rank": "503",
+      "nameKey": "GEMSBOK"
+    },
+    {
+      "ID": "1032",
+      "Name": "ORANGUTAN",
+      "Rarity": "APEX",
+      "Value": "1839787194754",
+      "Price": "3283978690680000000",
+      "Rank": "504",
+      "nameKey": "ORANGUTAN"
+    },
+    {
+      "ID": "1034",
+      "Name": "CARP",
+      "Rarity": "APEX",
+      "Value": "1968572298387",
+      "Price": "4104973363350000000",
+      "Rank": "505",
+      "nameKey": "CARP"
+    },
+    {
+      "ID": "1035",
+      "Name": "WOMBAT",
+      "Rarity": "APEX",
+      "Value": "2259391104162",
+      "Price": "5389552427254850000",
+      "Rank": "506",
+      "nameKey": "WOMBAT"
+    },
+    {
+      "ID": "1036",
+      "Name": "KAKAPO",
+      "Rarity": "APEX",
+      "Value": "2357966670642",
+      "Price": "4921965686990730000",
+      "Rank": "507",
+      "nameKey": "KAKAPO"
+    },
+    {
+      "ID": "1038",
+      "Name": "GILAMONSTER",
+      "Rarity": "APEX",
+      "Value": "2365582486058",
+      "Price": "5901559907844060000",
+      "Rank": "508",
+      "nameKey": "GILAMONSTER"
+    },
+    {
+      "ID": "1039",
+      "Name": "HORNEDLIZARD",
+      "Rarity": "APEX",
+      "Value": "2476764862903",
+      "Price": "6462208099089250000",
+      "Rank": "509",
+      "nameKey": "HORNEDLIZARD"
+    },
+    {
+      "ID": "1040",
+      "Name": "LYNX",
+      "Rarity": "APEX",
+      "Value": "2684290923314",
+      "Price": "7299020110366100000",
+      "Rank": "510",
+      "nameKey": "LYNX"
+    },
+    {
+      "ID": "1041",
+      "Name": "PRONGHORN",
+      "Rarity": "APEX",
+      "Value": "2809188181371",
+      "Price": "7989144076180710000",
+      "Rank": "511",
+      "nameKey": "PRONGHORN"
+    },
+    {
+      "ID": "1044",
+      "Name": "OTTER",
+      "Rarity": "APEX",
+      "Value": "3076687143884",
+      "Price": "9571111237688220000",
+      "Rank": "512",
+      "nameKey": "OTTER"
+    },
+    {
+      "ID": "1047",
+      "Name": "BULL_PUMPKIN",
+      "Rarity": "APEX",
+      "Value": "5900000000000",
+      "Price": "24600000000000000000",
+      "Rank": "1000",
+      "nameKey": "BULL"
+    },
+    {
+      "ID": "1048",
+      "Name": "WILDBOAR_PUMPKIN",
+      "Rarity": "APEX",
+      "Value": "6200000000000",
+      "Price": "27300000000000000000",
+      "Rank": "1001",
+      "nameKey": "WILDBOAR"
+    },
+    {
+      "ID": "1049",
+      "Name": "GORILLA_PUMPKIN",
+      "Rarity": "APEX",
+      "Value": "6100000000000",
+      "Price": "26400000000000000000",
+      "Rank": "1002",
+      "nameKey": "GORILLA"
+    },
+    {
+      "ID": "1050",
+      "Name": "SQUID_PUMPKIN",
+      "Rarity": "APEX",
+      "Value": "6000000000000",
+      "Price": "25500000000000000000",
+      "Rank": "1003",
+      "nameKey": "SQUID"
+    },
+    {
+      "ID": "1051",
+      "Name": "JELLYFISH_PUMPKIN",
+      "Rarity": "APEX",
+      "Value": "5950000000000",
+      "Price": "25000000000000000000",
+      "Rank": "1004",
+      "nameKey": "JELLYFISH"
+    },
+    {
+      "ID": "1052",
+      "Name": "GIRAFFE_PUMPKIN",
+      "Rarity": "APEX",
+      "Value": "6050000000000",
+      "Price": "25900000000000000000",
+      "Rank": "1005",
+      "nameKey": "GIRAFFE"
+    },
+    {
+      "ID": "1053",
+      "Name": "PENGUIN_PUMPKIN",
+      "Rarity": "APEX",
+      "Value": "6150000000000",
+      "Price": "26800000000000000000",
+      "Rank": "1006",
+      "nameKey": "PENGUIN"
+    },
+    {
+      "ID": "1054",
+      "Name": "CHICK_PUMPKIN",
+      "Rarity": "APEX",
+      "Value": "6250000000000",
+      "Price": "27700000000000000000",
+      "Rank": "1007",
+      "nameKey": "CHICK"
+    },
+    {
+      "ID": "1055",
+      "Name": "HUSKY_SPIDERLEGS",
+      "Rarity": "APEX",
+      "Value": "6250000000000",
+      "Price": "27700000000000000000",
+      "Rank": "1008",
+      "nameKey": "HUSKY"
+    },
+    {
+      "ID": "1056",
+      "Name": "MUDSKIPPER_SPIDERLEGS",
+      "Rarity": "APEX",
+      "Value": "6250000000000",
+      "Price": "27700000000000000000",
+      "Rank": "1009",
+      "nameKey": "MUDSKIPPER"
+    },
+    {
+      "ID": "1057",
+      "Name": "HORNEDLIZARD_SPIDERLEGS",
+      "Rarity": "APEX",
+      "Value": "6250000000000",
+      "Price": "27700000000000000000",
+      "Rank": "1010",
+      "nameKey": "HORNEDLIZARD"
+    },
+    {
+      "ID": "1058",
+      "Name": "OCTOPUS_SPIDERLEGS",
+      "Rarity": "APEX",
+      "Value": "6250000000000",
+      "Price": "27700000000000000000",
+      "Rank": "1011",
+      "nameKey": "OCTOPUS"
+    },
+    {
+      "ID": "1059",
+      "Name": "ALIGATOR_SPIDERLEGS",
+      "Rarity": "APEX",
+      "Value": "6250000000000",
+      "Price": "27700000000000000000",
+      "Rank": "1012",
+      "nameKey": "ALIGATOR"
+    },
+    {
+      "ID": "1060",
+      "Name": "PENGUIN_SPIDERLEGS",
+      "Rarity": "APEX",
+      "Value": "6250000000000",
+      "Price": "27700000000000000000",
+      "Rank": "1013",
+      "nameKey": "PENGUIN"
+    },
+    {
+      "ID": "1061",
+      "Name": "SHARK_SPIDERLEGS",
+      "Rarity": "APEX",
+      "Value": "6250000000000",
+      "Price": "27700000000000000000",
+      "Rank": "1014",
+      "nameKey": "SHARK"
+    },
+    {
+      "ID": "1037",
+      "Name": "MRFOOTBALL",
+      "Rarity": "LIMITED",
+      "Value": "5200000000000",
+      "Price": "23500000000000000000",
+      "Rank": "2001",
+      "nameKey": "MRFOOTBALL"
+    },
+    {
+      "ID": "1042",
+      "Name": "DRAGON",
+      "Rarity": "LIMITED",
+      "Value": "5465252260520",
+      "Price": "25945898875200000000",
+      "Rank": "2002",
+      "nameKey": "DRAGON"
+    },
+    {
+      "ID": "1045",
+      "Name": "PEGASUS",
+      "Rarity": "LIMITED",
+      "Value": "5850000000000",
+      "Price": "27800000000000000000",
+      "Rank": "2003",
+      "nameKey": "PEGASUS"
+    },
+    {
+      "ID": "1046",
+      "Name": "KIRIN",
+      "Rarity": "LIMITED",
+      "Value": "6300000000000",
+      "Price": "24500000000000000000",
+      "Rank": "2004",
+      "nameKey": "KIRIN"
+    },
+    {
+      "ID": "6001",
+      "Name": "LUCKYBOXEPIC",
+      "Rarity": "EPIC",
+      "Value": "0",
+      "Price": "6000000",
+      "Rank": "3001",
+      "nameKey": "LUCKYBOXEPIC"
+    },
+    {
+      "ID": "6002",
+      "Name": "LUCKYBOXLEGENDARY",
+      "Rarity": "LEGENDARY",
+      "Value": "0",
+      "Price": "2100000000000000",
+      "Rank": "3002",
+      "nameKey": "LUCKYBOXLEGENDARY"
+    },
+    {
+      "ID": "6003",
+      "Name": "LUCKYBOXMYTHIC",
+      "Rarity": "MYTHIC",
+      "Value": "0",
+      "Price": "500000000000000000",
+      "Rank": "3003",
+      "nameKey": "LUCKYBOXMYTHIC"
+    }
+  ],
+  "mutations": [
+    {
+      "ID": "1",
+      "Name": "Normal",
+      "MaterialKey": "None",
+      "EffectKey": "None",
+      "Multiplier": "1",
+      "Weight": "3550",
+      "FusionWeight": "2500",
+      "Tier": "0",
+      "LvUpCostMultiplier": "1"
+    },
+    {
+      "ID": "2",
+      "Name": "Golden",
+      "MaterialKey": "GoldenMat",
+      "EffectKey": "goldenEffect",
+      "Multiplier": "1.33",
+      "Weight": "700",
+      "FusionWeight": "2000",
+      "Tier": "1",
+      "LvUpCostMultiplier": "1.15"
+    },
+    {
+      "ID": "3",
+      "Name": "Frozen",
+      "MaterialKey": "IceMat",
+      "EffectKey": "frozenEffect",
+      "Multiplier": "1.66",
+      "Weight": "420",
+      "FusionWeight": "1750",
+      "Tier": "2",
+      "LvUpCostMultiplier": "1.3"
+    },
+    {
+      "ID": "4",
+      "Name": "Magma",
+      "MaterialKey": "MagmaMat",
+      "EffectKey": "magmaEffect",
+      "Multiplier": "2",
+      "Weight": "210",
+      "FusionWeight": "1420",
+      "Tier": "3",
+      "LvUpCostMultiplier": "1.45"
+    },
+    {
+      "ID": "5",
+      "Name": "Clover",
+      "MaterialKey": "CloverMat",
+      "EffectKey": "cloverEffect",
+      "Multiplier": "2.13",
+      "Weight": "76",
+      "FusionWeight": "1200",
+      "Tier": "4",
+      "LvUpCostMultiplier": "1.5"
+    },
+    {
+      "ID": "6",
+      "Name": "Fossilized",
+      "MaterialKey": "FossilizedMat",
+      "EffectKey": "fossilizedEffect",
+      "Multiplier": "2.25",
+      "Weight": "20",
+      "FusionWeight": "730",
+      "Tier": "5",
+      "LvUpCostMultiplier": "1.6"
+    },
+    {
+      "ID": "7",
+      "Name": "Sweetheart",
+      "MaterialKey": "SweetheartMat",
+      "EffectKey": "sweetheartEffect",
+      "Multiplier": "2.3",
+      "Weight": "10",
+      "FusionWeight": "200",
+      "Tier": "6",
+      "LvUpCostMultiplier": "1.65"
+    },
+    {
+      "ID": "8",
+      "Name": "Crystalline",
+      "MaterialKey": "CrystallineMat",
+      "EffectKey": "crystallineEffect",
+      "Multiplier": "2.37",
+      "Weight": "5",
+      "FusionWeight": "70",
+      "Tier": "7",
+      "LvUpCostMultiplier": "1.85"
+    },
+    {
+      "ID": "9",
+      "Name": "Webbed",
+      "MaterialKey": "WebbedMat",
+      "EffectKey": "webbedEffect",
+      "Multiplier": "2.4",
+      "Weight": "3",
+      "FusionWeight": "50",
+      "Tier": "8",
+      "LvUpCostMultiplier": "2.05"
+    },
+    {
+      "ID": "10",
+      "Name": "Football",
+      "MaterialKey": "FootballMat",
+      "EffectKey": "footballEffect",
+      "Multiplier": "2.37",
+      "Weight": "5",
+      "FusionWeight": "70",
+      "Tier": "7",
+      "LvUpCostMultiplier": "1.65"
+    },
+    {
+      "ID": "11",
+      "Name": "Radioactive",
+      "MaterialKey": "RadioactiveMat",
+      "EffectKey": "RadioactiveEffect",
+      "Multiplier": "2.5",
+      "Weight": "1",
+      "FusionWeight": "10",
+      "Tier": "9",
+      "LvUpCostMultiplier": "2.15"
+    }
+  ],
+  "effects": [
+    {
+      "ID": "1",
+      "Name": "Soaked",
+      "Icon": "Soaked",
+      "Chance": "0.0400",
+      "MultiplierPrice": "0.05",
+      "LvUpCostMultiplier": "1.03"
+    },
+    {
+      "ID": "2",
+      "Name": "Frost",
+      "Icon": "Frost",
+      "Chance": "0.0200",
+      "MultiplierPrice": "0.09",
+      "LvUpCostMultiplier": "1.05"
+    },
+    {
+      "ID": "3",
+      "Name": "Gale",
+      "Icon": "Gale",
+      "Chance": "0.0500",
+      "MultiplierPrice": "0.08",
+      "LvUpCostMultiplier": "1.05"
+    },
+    {
+      "ID": "4",
+      "Name": "Thundered",
+      "Icon": "Thundered",
+      "Chance": "0.0090",
+      "MultiplierPrice": "0.12",
+      "LvUpCostMultiplier": "1.07"
+    },
+    {
+      "ID": "5",
+      "Name": "Eclipse",
+      "Icon": "Eclipse",
+      "Chance": "0.0077",
+      "MultiplierPrice": "0.15",
+      "LvUpCostMultiplier": "1.08"
+    },
+    {
+      "ID": "6",
+      "Name": "Prismatic",
+      "Icon": "Prismatic",
+      "Chance": "0.0082",
+      "MultiplierPrice": "0.14",
+      "LvUpCostMultiplier": "1.08"
+    },
+    {
+      "ID": "7",
+      "Name": "Vortex",
+      "Icon": "Vortex",
+      "Chance": "0.0082",
+      "MultiplierPrice": "0.16",
+      "LvUpCostMultiplier": "1.09"
+    },
+    {
+      "ID": "8",
+      "Name": "Sequin",
+      "Icon": "Sequin",
+      "Chance": "0.0082",
+      "MultiplierPrice": "0.17",
+      "LvUpCostMultiplier": "1.10"
+    },
+    {
+      "ID": "9",
+      "Name": "Sparkle",
+      "Icon": "Sparkle",
+      "Chance": "0",
+      "MultiplierPrice": "0.20",
+      "LvUpCostMultiplier": "1.30"
+    },
+    {
+      "ID": "10",
+      "Name": "Aurora",
+      "Icon": "Aurora",
+      "Chance": "0.0082",
+      "MultiplierPrice": "0.18",
+      "LvUpCostMultiplier": "1.11"
+    }
+  ],
+  "rebirth": [
+    {
+      "ID": "1",
+      "Storage": "0"
+    },
+    {
+      "ID": "2",
+      "Storage": "0"
+    },
+    {
+      "ID": "3",
+      "Storage": "0"
+    },
+    {
+      "ID": "4",
+      "Storage": "0"
+    },
+    {
+      "ID": "5",
+      "Storage": "0"
+    },
+    {
+      "ID": "6",
+      "Storage": "0"
+    },
+    {
+      "ID": "7",
+      "Storage": "0"
+    },
+    {
+      "ID": "8",
+      "Storage": "0"
+    },
+    {
+      "ID": "9",
+      "Storage": "0"
+    },
+    {
+      "ID": "10",
+      "Storage": "0"
+    },
+    {
+      "ID": "11",
+      "Storage": "0"
+    },
+    {
+      "ID": "12",
+      "Storage": "0"
+    },
+    {
+      "ID": "13",
+      "Storage": "0"
+    },
+    {
+      "ID": "14",
+      "Storage": "2"
+    },
+    {
+      "ID": "15",
+      "Storage": "2"
+    },
+    {
+      "ID": "16",
+      "Storage": "4"
+    },
+    {
+      "ID": "17",
+      "Storage": "4"
+    },
+    {
+      "ID": "18",
+      "Storage": "6"
+    },
+    {
+      "ID": "19",
+      "Storage": "6"
+    },
+    {
+      "ID": "20",
+      "Storage": "8"
+    },
+    {
+      "ID": "21",
+      "Storage": "8"
+    },
+    {
+      "ID": "22",
+      "Storage": "10"
+    },
+    {
+      "ID": "23",
+      "Storage": "10"
+    },
+    {
+      "ID": "24",
+      "Storage": "12"
+    },
+    {
+      "ID": "25",
+      "Storage": "12"
+    },
+    {
+      "ID": "26",
+      "Storage": "14"
+    },
+    {
+      "ID": "27",
+      "Storage": "14"
+    }
+  ],
+  "rarityNames": {
+    "COMMON": "RARITY_COMMON",
+    "RARE": "RARITY_RARE",
+    "EPIC": "RARITY_EPIC",
+    "LEGENDARY": "RARITY_LEGENDARY",
+    "MYTHIC": "RARITY_MYTHIC",
+    "APEX": "RARITY_APEX",
+    "LIMITED": "RARITY_LIMITED"
+  },
+  "rarityTextColors": {
+    "COMMON": "#4CAF50",
+    "RARE": "#00B2FF",
+    "EPIC": "#9C27B0",
+    "LEGENDARY": "#FFC107",
+    "MYTHIC": "#E91E1E",
+    "APEX": "#FF8900",
+    "LIMITED": "#B3CA1F"
+  },
+  "lockDuration": 28800,
+  "fixtures": [
+    {
+      "petId": "1017",
+      "level": 1,
+      "mutationId": "1",
+      "weatherIds": [],
+      "locked": false
+    },
+    {
+      "petId": "1018",
+      "level": 1,
+      "mutationId": "1",
+      "weatherIds": [],
+      "locked": false
+    },
+    {
+      "petId": "6001",
+      "level": 1,
+      "mutationId": "1",
+      "weatherIds": [],
+      "locked": false
+    },
+    {
+      "petId": "6002",
+      "level": 1,
+      "mutationId": "1",
+      "weatherIds": [],
+      "locked": false
+    },
+    {
+      "petId": "6003",
+      "level": 1,
+      "mutationId": "1",
+      "weatherIds": [],
+      "locked": false
+    },
+    {
+      "petId": "1061",
+      "level": 1,
+      "mutationId": "1",
+      "weatherIds": [],
+      "locked": false
+    },
+    {
+      "petId": "1046",
+      "level": 1,
+      "mutationId": "1",
+      "weatherIds": [],
+      "locked": false
+    }
+  ],
+  "fixturePolicy": "Synthetic local storage, level-one pets sampled from each Pet.csv rarity; no player storage read. Capacity override is QA only, source capacity comes from Rebirth.csv",
+  "gaps": [
+    "Fixtures cover Pet.csv normal pets at level 1; secret fusion pets, lucky boxes and special eggs are not exercised",
+    "Level-one income is derived from CSV value and additive mutation/weather multipliers; higher-level BigNumber growth/rounding is not simulated",
+    "Store/retrieve and lock age are local scenarios; no database writes or gameplay rewards",
+    "Capacity above current Rebirth.csv maximum is an explicit synthetic QA override for pagination",
+    "No engine screenshots; font/shader/scaler, hit order, safe area and scroll inertia unverified; player state is a local simulation"
+  ]
+}

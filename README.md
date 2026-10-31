@@ -2,6 +2,33 @@
 
 Private design dashboard generated from the checked-in StealAPet config snapshot and source references.
 
+## UI Preview · batch 2026-11-01
+
+Đã adapt từ cây UI/controller/config/sprite nguồn; mỗi nhóm UI một commit local:
+
+| UI | Route | Ghi chú |
+|---|---|---|
+| Shop Event | `#uipreview/shop-event` | shop, tasks, dialog, submit; reward catalogs |
+| Rebirth | `#uipreview/rebirth` | requirements/rewards, max level, UnlockContent |
+| Lobby | `#uipreview/lobby` | weather/event/weekend và Details |
+| Fusion | `#uipreview/fusion-confirm`, `#uipreview/fusion-result` | dust, chances, result/retrieve/weekend |
+| Leaderboard | `#uipreview/leaderboard` | bốn tab, loading/empty, top10/current rank |
+| Permanent Event | `#uipreview/permanent-event` | chọn type Dig/Fish trong bảng mô phỏng |
+| Storage | `#uipreview/storage` | capacity, paging, details, confirm, lock/retrieve |
+
+Mỗi UI có `plans/PLAN-ui-*.md` ghi phạm vi và kết quả kiểm. Sync riêng bằng
+`node tools/sync-ui-preview.mjs --project-root "C:\_Code\craftland\StealAPet" --screen <id>`;
+audit bằng `node tools/audit-ui-source-screen.mjs --project-root "C:\_Code\craftland\StealAPet" --screen <id>`.
+Fusion có thêm `node tools/audit-ui-fusion-model.mjs`.
+
+Người chơi là mô phỏng cục bộ. Một số sprite lib/asset cũ chưa có đúng bytes,
+native UIProfile chưa dựng avatar/tên tài khoản; ConfirmWidget Rebirth đã
+vắng trong cây nguồn nên nút QA nằm ngoài canvas. Fusion giữ transform nguồn
+cho non-grid `fill` vì engine algorithm chưa xác minh. Các gap chi tiết nằm
+trong manifest/audit/plan; chưa có ảnh game để kết luận pixel parity.
+Giữ nguyên Proposal và snapshot Collection cũ; hai audit cũ hiện báo source
+alpha/binding drift với checkout game, không regenerate ngoài phạm vi batch.
+
 ## Mail · UI Preview
 
 Công cụ **Soạn quà → GMT Mails Manager** bên dưới canvas cho chọn tối đa
@@ -188,7 +215,7 @@ node tools/audit-ui-preview.mjs --project-root "C:\_Code\craftland\StealAPet"
 python -m http.server 8080 --directory dist
 ```
 
-Mở **UI Preview → Collection** hoặc `http://localhost:8080/#uipreview/collection`. Sub-tab Shop, Mail, Mission, Leaderboard hiện “Sắp có”. Trang đọc cây entity từ `PetsCollection.ui`, rule từ `HudCollection.fcg`/`CollectionManager.fcg`/`PetConfigs.fcg`, và dữ liệu pet/effect từ snapshot GDD hiện có. Có thể xem rarity, phân trang, chọn pet, ba tab chi tiết, bật debug/inactive và giả lập sở hữu; đây không phải dữ liệu người chơi thật. Nếu snapshot GDD cũ, cập nhật snapshot theo runbook riêng trước khi đối chiếu dữ liệu.
+Mở **UI Preview → Collection** hoặc `http://localhost:8080/#uipreview/collection`. Mission còn “Sắp có”; các màn đã adapt được liệt kê ở đầu README. Trang đọc cây entity từ `PetsCollection.ui`, rule từ `HudCollection.fcg`/`CollectionManager.fcg`/`PetConfigs.fcg`, và dữ liệu pet/effect từ snapshot GDD hiện có. Có thể xem rarity, phân trang, chọn pet, ba tab chi tiết, bật debug/inactive và giả lập sở hữu; đây không phải dữ liệu người chơi thật. Nếu snapshot GDD cũ, cập nhật snapshot theo runbook riêng trước khi đối chiếu dữ liệu.
 
 Collection có bộ chọn **Tiếng Việt / English** (mặc định tiếng Việt), bảng **Resource đang dùng** và trạng thái sở hữu mô phỏng. Bảng cho xem đường dẫn entity, sprite hiện dùng, kích thước/border 9-grid, màu button, loại image và localization; có thể lọc theo path. Bảng chỉ hiển thị, không chọn/scroll/focus từ preview; hàng được giữ theo ID và chỉ cập nhật ô thay đổi. Không có hiệu ứng hover trong UI Preview; widget dùng trạng thái normal/pressed/disabled. Chuột phải trên canvas mở **Widget Inspector** với danh sách widget chồng nhau, source/runtime props và nút sao chép JSON. Cột alpha ghi giá trị gốc .ui và alpha cộng dồn web; cascade/raycast engine chưa xác minh (DA-009). Button alpha 0 vẫn có vùng click RectTransform; disableCollider tắt vùng click. Sync trích key Collection từ Assets/Localization/key.csv vào dist/data/ui/collection-i18n.json; sprite .ui và icon Obtain gán bằng code nằm trong manifest riêng. dist/data/ui/collection-audit.json ghi sprite/key còn thiếu và đối chiếu border với .png.meta.
 

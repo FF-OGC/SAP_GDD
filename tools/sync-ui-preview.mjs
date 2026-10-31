@@ -11,8 +11,9 @@ import { lobbySpec } from "./ui-lobby-source.mjs";
 import { fusionConfirmSpec, fusionResultSpec } from "./ui-fusion-source.mjs";
 import { leaderboardSpec } from "./ui-leaderboard-source.mjs";
 import { permanentSpec } from "./ui-permanent-source.mjs";
+import { storageSpec } from "./ui-storage-source.mjs";
 
-const SOURCE_SCREENS = [shopEventSpec, rebirthSpec, lobbySpec, fusionConfirmSpec, fusionResultSpec, leaderboardSpec, permanentSpec];
+const SOURCE_SCREENS = [shopEventSpec, rebirthSpec, lobbySpec, fusionConfirmSpec, fusionResultSpec, leaderboardSpec, permanentSpec, storageSpec];
 
 const UI_FILES = [{ id: "collection", name: "Collection", file: "PetsCollection.ui", status: "ready" }, { id: "activities", name: "Activities", file: "Activities.ui", status: "ready" }, { id: "shop", name: "Shop", file: "Shop.ui", status: "ready" }, { id: "mail", name: "Mail", file: "Mail.ui", status: "ready" }];
 UI_FILES.push(...SOURCE_SCREENS.map(spec => ({ id: spec.id, name: spec.name || "Shop Event", file: spec.ui, status: "ready" })));
