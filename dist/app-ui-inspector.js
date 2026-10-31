@@ -21,6 +21,10 @@
       if (root) (function walk(node) { if (node.id === id) found = node; node.children.forEach(walk); })(root);
       if (found) return found;
     }
+    const id = element.dataset.uiId || element.dataset.uiSourceEntityId;
+    let found = null;
+    if (id && uiPreview.screen?.tree) (function walk(node) { if (node.id === id) found = node; node.children.forEach(walk); })(uiPreview.screen.tree);
+    if (found) return found;
     const path = element.dataset.uiPath || element.dataset.uiClonePath;
     return sourceIndex().get(path) || null;
   }
@@ -78,7 +82,7 @@
     const rawSize = element.dataset.uiRuntimeSize ? JSON.parse(element.dataset.uiRuntimeSize) : null;
     if (rawSize && !values.Size) values.Size = { value: rawSize, source: element.dataset.uiRuntimeSizeSource || "dist/app-ui-renderer.js" };
     if (!values.IsVisible) values.IsVisible = { value: visibleForInspector(element), source: "DOM visibility in preview" };
-    if (!values.Alpha) values.Alpha = { value: element.dataset.uiAlpha, source: "PetsCollection.ui" };
+    if (!values.Alpha) values.Alpha = { value: element.dataset.uiAlpha, source: uiPreview.screen?.source || "source .ui" };
     if (spriteKey && !values.SpriteName && element.dataset.uiRuntimeSpriteKey) values.SpriteName = { value: spriteKey, source: "dist/app-ui-collection.js (preview simulation)" };
     if (element.dataset.uiRuntimeColor && !values.Color) values.Color = { value: element.dataset.uiRuntimeColor, source: "dist/app-ui-collection.js (preview simulation)" };
     if (element.dataset.uiRuntimeContent != null && !values.Content) values.Content = { value: element.dataset.uiRuntimeContent, source: "dist/app-ui-collection.js (preview simulation)" };
@@ -95,7 +99,7 @@
     };
     const layout = parentLayout(element);
     const parentNodePath = node?.path?.split("/").slice(0, -1).join("/") || "";
-    const parentNode = sourceIndex().get(parentNodePath);
+    const parentNode = sourceNode(element.parentElement) || sourceIndex().get(parentNodePath);
     const rawFile = sourceFilePath(node?.propsData?.image || node?.propsData?.button || {});
     const entry = sprite || uiPreview.manifest?.sprites?.find(item => item.key === sourceImage.spriteKey);
     const fillNames = { 0: "Simple", 1: "Sliced / 9-grid", 2: "Tiled", 3: "Filled", 5: "Fit" };
@@ -246,7 +250,7 @@
       ["Content hiện tại", payload.runtime.renderedText], ["Runtime values và nguồn", payload.runtime.values],
       ["Sprite / file / kích thước / border / mode", payload.runtime.sprite]
     ]);
-    const sourceHeading = document.createElement("h4"); sourceHeading.textContent = "Các assignment HudCollection.fcg cùng property"; runtime.append(sourceHeading);
+    const sourceHeading = document.createElement("h4"); sourceHeading.textContent = "Các assignment FCG cùng property"; runtime.append(sourceHeading);
     if (payload.runtime.hudCollectionAssignmentsForTheseProperties.length) {
       const assignments = document.createElement("div"); assignments.className = "ui-inspector-assignments";
       for (const item of payload.runtime.hudCollectionAssignmentsForTheseProperties.slice(0, 18)) {

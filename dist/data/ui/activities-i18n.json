@@ -1,0 +1,234 @@
+{
+  "source": "Assets/Localization/key.csv",
+  "entries": {
+    "SMALLWHALE": {
+      "en": "Baby Whale",
+      "vi": "Cá Voi Con"
+    },
+    "ARCTICFOX": {
+      "en": "Arctic Fox",
+      "vi": "Cáo Tuyết"
+    },
+    "KOMODO": {
+      "en": "Komodo",
+      "vi": "Komodo"
+    },
+    "AXOLOTLWHITE": {
+      "en": "Axolotl-Pearl",
+      "vi": "Axolotl-Kim"
+    },
+    "MEERKAT": {
+      "en": "Meerkat",
+      "vi": "Chồn Đất"
+    },
+    "MOUSEDEER": {
+      "en": "Mouse Deer",
+      "vi": "Cheo Cheo"
+    },
+    "RARITY_COMMON": {
+      "en": "COMMON",
+      "vi": "THƯỜNG"
+    },
+    "RARITY_RARE": {
+      "en": "RARE",
+      "vi": "HIẾM"
+    },
+    "RARITY_EPIC": {
+      "en": "EPIC",
+      "vi": "SỬ THI"
+    },
+    "RARITY_LEGENDARY": {
+      "en": "LEGENDARY",
+      "vi": "HUYỀN THOẠI"
+    },
+    "RARITY_MYTHIC": {
+      "en": "MYTHIC",
+      "vi": "THẦN THOẠI"
+    },
+    "RARITY_APEX": {
+      "en": "APEX",
+      "vi": "TỐI THƯỢNG"
+    },
+    "RARITY_LIMITED": {
+      "en": "LIMITED",
+      "vi": "LIMITED "
+    },
+    "MUTATION_GOLDEN": {
+      "en": "Golden",
+      "vi": "Hoàng Kim"
+    },
+    "MUTATION_FROZEN": {
+      "en": "Frozen",
+      "vi": "Băng Giá"
+    },
+    "MUTATION_MAGMA": {
+      "en": "Magma",
+      "vi": "Dung Nham"
+    },
+    "MUTATION_THUNDERED": {
+      "en": "Thundered",
+      "vi": "Lôi Điện"
+    },
+    "MUTATION_SPARKLE": {
+      "en": "Sparkle",
+      "vi": "Lấp Lánh"
+    },
+    "HUD_LUCKY_SPIN_TITLE": {
+      "en": "DAILY SPIN",
+      "vi": "VÒNG QUAY HẰNG NGÀY"
+    },
+    "HUD_LUCKY_NUMBEROF_SPIN": {
+      "en": "Spins: {0}",
+      "vi": "Lượt quay: {0}"
+    },
+    "HUD_ACTIVITIES_TITLE": {
+      "en": "ACTIVITIES",
+      "vi": "HOẠT ĐỘNG"
+    },
+    "HUD_ACTIVITIES_TAB_REWARDS": {
+      "en": "DAILY REWARDS",
+      "vi": "QUÀ ĐĂNG NHẬP"
+    },
+    "HUD_ACTIVITIES_TAB_MISSIONS": {
+      "en": "DAILY MISSIONS",
+      "vi": "NHIỆM VỤ"
+    },
+    "HUD_ACTIVITIES_TAB_EVENT": {
+      "en": "EVENT REWARD",
+      "vi": "QUÀ SỰ KIỆN"
+    },
+    "HUD_ACTIVITIES_CLAIM": {
+      "en": "CLAIM",
+      "vi": "NHẬN"
+    },
+    "HUD_ACTIVITIES_CLAIM_ALL": {
+      "en": "CLAIM ALL",
+      "vi": "NHẬN TẤT CẢ"
+    },
+    "HUD_ACTIVITIES_CLAIMED": {
+      "en": "CLAIMED",
+      "vi": "ĐÃ NHẬN"
+    },
+    "HUD_ACTIVITIES_DAY": {
+      "en": "DAY {0}",
+      "vi": "NGÀY {0}"
+    },
+    "HUD_ACTIVITIES_PET_POINTS": {
+      "en": "{0}\r\nPoints",
+      "vi": "{0}\r\nĐiểm"
+    },
+    "HUD_ACTIVITIES_MISSION_TIMES": {
+      "en": "{0} times",
+      "vi": "{0} lần"
+    },
+    "HUD_ACTIVITIES_SPIN": {
+      "en": "Tap to spin now",
+      "vi": "Nhấn để quay"
+    },
+    "HUD_ACTIVITIES_EVENT_TITLE": {
+      "en": "3-DAY LOGIN EVENT",
+      "vi": "SỰ KIỆN ĐĂNG NHẬP 3 NGÀY"
+    },
+    "HUD_ACTIVITIES_EVENT_NOTE": {
+      "en": "One reward per daily login. Missing a day may prevent you from claiming all rewards.",
+      "vi": "Mỗi ngày nhận 1 phần thưởng. Bỏ lỡ một ngày có thể khiến bạn không nhận đủ toàn bộ phần thưởng."
+    },
+    "HUD_ACTIVITIES_EVENT_PERIOD": {
+      "en": "EVENT PERIOD",
+      "vi": "THỜI GIAN SỰ KIỆN"
+    },
+    "HUD_ACTIVITIES_EVENT_TIMELINE": {
+      "en": "[1052D3]04 July (00:00) -[-] [FF671A]06 July (23:59)[-]",
+      "vi": "[1052D3]04/07 (00:00) -[-] [FF671A]06/07 (23:59)[-]"
+    },
+    "HUD_COMING_SOON": {
+      "en": "This feature will be available soon",
+      "vi": "Tính năng này sẽ sớm được mở trong thời gian tới"
+    },
+    "HUD_TITLE_MONEY": {
+      "en": "Money",
+      "vi": "Tiền"
+    },
+    "HUD_REWARD_TITLE_PET_COIN": {
+      "en": "Pet coin",
+      "vi": "Xu thú cưng"
+    },
+    "HUD_REWARD_TITLE_MONEY_TIME": {
+      "en": "Hourly income",
+      "vi": "Tiền theo giờ"
+    },
+    "HUD_REWARD_TITLE_RANDOM_PET": {
+      "en": "Random pet: {0}",
+      "vi": "Ngẫu nhiên thú: {0}"
+    },
+    "HUD_TITLE_DUST": {
+      "en": "Dust",
+      "vi": "Mây"
+    },
+    "HUD_ITEM_SPIN": {
+      "en": "Spin turn",
+      "vi": "Lượt quay"
+    },
+    "HUD_ITEM_MUTAGEN": {
+      "en": "Mutagen",
+      "vi": "Tinh chất"
+    },
+    "HUD_ITEM_WEATHERGEN": {
+      "en": "Weather Drop",
+      "vi": "Tinh chất"
+    },
+    "MISSION_BUY_PET": {
+      "en": "Buy {0} Pets {1}",
+      "vi": "Mua {0} Thú cưng {1}"
+    },
+    "MISSION_CLAIM_PET_INCOME": {
+      "en": "Claim Pet's income",
+      "vi": "Nhận thu nhập từ Thú cưng"
+    },
+    "MISSION_LOCK_BASE": {
+      "en": "Lock your Base to protect your pets",
+      "vi": "Khóa nhà"
+    },
+    "MISSION_GET_PETS": {
+      "en": "Get {0} Pets {1}",
+      "vi": "Có thêm {0} Thú cưng {1}"
+    },
+    "MISSION_FUSION": {
+      "en": "Perform a Fusion Pets",
+      "vi": "Thực hiện Dung hợp Thú cưng"
+    },
+    "MISSION_STEAL": {
+      "en": "Successfully steal {0} Pets",
+      "vi": "Cướp thành công {0} Thú cưng"
+    },
+    "MISSION_HIT": {
+      "en": "Hit other players {0} times",
+      "vi": "Đánh người chơi khác {0} lần"
+    },
+    "MISSION_SHOP": {
+      "en": "Buy {0} items from Shop",
+      "vi": "Mua {0} vật phẩm ở Cửa hàng thường"
+    },
+    "MISSION_LUCKY_SPIN": {
+      "en": "Play daily spin",
+      "vi": "Quay Vòng quay Hằng ngày"
+    },
+    "MISSION_LOGIN": {
+      "en": "Login",
+      "vi": "Đăng nhập"
+    },
+    "MISSION_CONDITION_MUTATION": {
+      "en": "have Mutation",
+      "vi": "có Đột biến"
+    },
+    "MISSION_CONDITION_WEATHER": {
+      "en": "have Weather",
+      "vi": "có Thời tiết"
+    },
+    "MISSION_SPEND_PET_COIN": {
+      "en": "Spend {0} Pet Coins",
+      "vi": "Sử dụng {0} Xu Thú Cưng"
+    }
+  },
+  "missing": []
+}

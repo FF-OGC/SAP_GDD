@@ -17,21 +17,26 @@ function uiPreviewPage() {
     '<section id="ui-resource-panel" class="ui-resource-panel"><h2>Resource đang dùng</h2><label>Tìm entity/path <input id="ui-resource-search" type="search" placeholder="Tên hoặc đường dẫn"></label><div class="ui-resource-scroll"><table><thead><tr><th>Entity / path</th><th>Sprite</th><th>Trạng thái</th><th>Alpha .ui / web</th><th>Image / màu</th><th>Text / localization</th></tr></thead><tbody id="ui-resource-rows"></tbody></table></div></section></div>';
 }
 
-async function updateUiPreviewPage() {
+async function updateUiPreviewPage(selectedId = null) {
   const tabs = document.getElementById("ui-preview-tabs");
   if (!tabs) return;
+  const loadToken = uiPreview.loadToken = (uiPreview.loadToken || 0) + 1;
   try {
     uiPreview.registry ||= await fetchUiResource("./data/ui/registry.json").then(checkUiJson);
-    tabs.innerHTML = uiPreview.registry.screens.map(item => `<button type="button" data-ui-screen="${item.id}" ${item.status === "ready" ? "" : "disabled"} class="${item.id === "collection" ? "active" : ""}">${item.name}${item.status === "ready" ? "" : " · Sắp có"}</button>`).join("");
-    const entry = uiPreview.registry.screens.find(item => item.id === "collection");
-    if (!entry) throw new Error("Collection chưa có trong registry");
+    if (s.page !== "uipreview" || loadToken !== uiPreview.loadToken) return;
+    const routeId = location.hash.match(/^#uipreview\/([^/]+)/)?.[1];
+    let savedId; try { savedId = localStorage.getItem("uiPreviewScreen"); } catch {}
+    const id = selectedId || routeId || savedId || "collection";
+    const entry = uiPreview.registry.screens.find(item => item.id === id && item.status === "ready") || uiPreview.registry.screens.find(item => item.id === "collection");
+    tabs.innerHTML = uiPreview.registry.screens.map(item => `<button type="button" data-ui-screen="${item.id}" ${item.status === "ready" ? "" : "disabled"} class="${item.id === entry.id ? "active" : ""}">${item.name}${item.status === "ready" ? "" : " · Sắp có"}</button>`).join("");
     const [screen, manifest, rules, i18n] = await Promise.all([
       fetchUiResource(entry.data).then(checkUiJson),
-      fetchUiResource("./data/ui/collection-sprites.json").then(checkUiJson),
+      fetchUiResource(`./data/ui/${entry.id}-sprites.json`).then(checkUiJson),
       fetchUiResource(entry.rules).then(checkUiJson),
-      fetchUiResource("./data/ui/collection-i18n.json").then(checkUiJson)
+      fetchUiResource(`./data/ui/${entry.id}-i18n.json`).then(checkUiJson)
     ]);
-    if (s.page !== "uipreview") return;
+    if (s.page !== "uipreview" || loadToken !== uiPreview.loadToken) return;
+    uiPreview.controller?.dispose?.();
     uiPreview.screen = screen;
     uiPreview.manifest = manifest;
     uiPreview.rules = rules;
@@ -39,19 +44,27 @@ async function updateUiPreviewPage() {
     document.getElementById("ui-language").value = uiPreview.language;
     uiPreview.width = screen.referenceSize?.width || 1280;
     uiPreview.height = screen.referenceSize?.height || 720;
-    try { localStorage.setItem("uiPreviewScreen", "collection"); } catch {}
+    try { localStorage.setItem("uiPreviewScreen", entry.id); } catch {}
+    uiPreview.screenId = entry.id;
+    uiPreview.open = true;
+    document.getElementById("ui-open-toggle").textContent = "Đóng UI";
+    document.getElementById("ui-player-panel").replaceChildren();
+    document.getElementById("ui-resource-rows").replaceChildren();
     const stage = document.getElementById("ui-preview-stage");
     const rendered = uiStageMount(stage, uiPreview);
     uiPreview.rendered = rendered;
+    rendered.canvas.classList.toggle("ui-debug", document.getElementById("ui-debug").checked);
+    rendered.canvas.classList.toggle("ui-show-inactive", document.getElementById("ui-show-inactive").checked);
     document.getElementById("ui-preview-aspect").value = uiPreview.aspect;
     document.getElementById("ui-preview-meta").textContent = `${screen.entityCount} entity · ${manifest.missing.length} sprite thiếu · root ${uiPreview.width}×${uiPreview.height} từ .ui · khung ${uiPreview.aspect}; scaler và safe area chưa xác minh`;
     scaleUiPreview();
-    if (typeof initCollectionPreview === "function") initCollectionPreview(screen, rules, rendered);
+    uiPreview.controller = entry.id === "activities" ? initActivitiesPreview(screen, rules, rendered) : initCollectionPreview(screen, rules, rendered);
     renderUiResourcePanel();
     const audit = auditUiPreviewDom(screen.tree, rendered.canvas);
     document.getElementById("ui-preview-meta").dataset.uiAudit = JSON.stringify(audit);
     document.getElementById("ui-preview-meta").textContent += ` · DOM ${audit.actual}/${audit.expected}, lệch ${audit.mismatches}`;
   } catch (error) {
+    if (loadToken !== uiPreview.loadToken || s.page !== "uipreview") return;
     document.getElementById("ui-preview-stage").textContent = "Không tải được UI Preview: " + error.message;
   }
 }
@@ -102,11 +115,20 @@ function scaleUiPreview() {
 window.addEventListener("resize", scaleUiPreview);
 document.addEventListener("click", event => {
   if (s.page !== "uipreview") return;
+  const screenButton = event.target.closest("[data-ui-screen]");
+  if (screenButton && !screenButton.disabled) {
+    history.replaceState(null, "", `#uipreview/${screenButton.dataset.uiScreen}`);
+    updateUiPreviewPage(screenButton.dataset.uiScreen);
+    return;
+  }
   if (event.target.id === "ui-open-toggle") {
     uiPreview.open = !uiPreview.open;
     uiPreview.rendered.canvas.classList.toggle("ui-closed", !uiPreview.open);
     event.target.textContent = uiPreview.open ? "Đóng UI" : "Mở UI";
   }
+});
+window.addEventListener("hashchange", () => {
+  if (s.page === "uipreview" && location.hash.startsWith("#uipreview/") && location.hash.split("/")[1] !== uiPreview.screenId) updateUiPreviewPage();
 });
 document.addEventListener("change", event => {
   if (s.page !== "uipreview" || !uiPreview.rendered) return;

@@ -9,8 +9,7 @@ import { GDD_ROOT } from './sync-ui-components.mjs';
 
 // This ref precedes all UI Components implementation commits. Only the three
 // existing shell files changed by this feature need HTTP substitution.
-export async function auditUnchangedConsumers(browser, url, viewport, baselineRef = '4787ee6') {
-  const files = ['index.html','styles.css','app-router.js'];
+export async function auditUnchangedConsumers(browser, url, viewport, baselineRef = '4787ee6', files = ['index.html','styles.css','app-router.js'], strictPixels = true) {
   const baseline = new Map(files.map(file=>[file,execFileSync('git',['show',`${baselineRef}:dist/${file}`],{cwd:GDD_ROOT,encoding:'utf8'})]));
   const context = await browser.newContext({viewport}), old = await context.newPage(), current = await context.newPage();
   const oldErrors=[], currentErrors=[];
@@ -40,7 +39,8 @@ export async function auditUnchangedConsumers(browser, url, viewport, baselineRe
     });
     const dom=await page.locator('#ui-preview-stage').evaluate(el=>[...el.querySelectorAll('[data-ui-path]')].map(n=>[n.dataset.uiPath,n.dataset.uiId,n.dataset.uiSpriteKey,n.className,n.style.cssText,n.querySelector(':scope > .ui-text')?.textContent]));
     const pixels=await page.locator('#ui-preview-stage').screenshot();
-    return {dom,pixels};
+    const geometry = await page.locator('#ui-preview-stage').evaluate(el=>{const r=el.getBoundingClientRect();return {x:r.x,y:r.y,width:r.width,height:r.height,scrollY};});
+    return {dom,pixels,geometry};
   }
   try {
     for(const screen of screens)for(const mode of screen.modes){
@@ -48,15 +48,25 @@ export async function auditUnchangedConsumers(browser, url, viewport, baselineRe
       const before=await capture(old,screen.hash,mode),after=await capture(current,screen.hash,mode);
       assert.deepEqual(after.dom,before.dom,screen.hash+' '+mode+' DOM changed');
       const hash=buffer=>createHash('sha256').update(buffer).digest('hex');
-      if(hash(after.pixels)!==hash(before.pixels)) {
+      const cropIdentical=hash(after.pixels)===hash(before.pixels);
+      let pixelDifference=null;
+      if(!cropIdentical && !strictPixels){
+        const require=createRequire(import.meta.url),{PNG}=require('pngjs');
+        const a=PNG.sync.read(before.pixels),b=PNG.sync.read(after.pixels);
+        assert.equal(a.width,b.width);assert.equal(a.height,b.height);
+        let changedPixels=0,maxChannelDifference=0;
+        for(let i=0;i<a.data.length;i+=4){let changed=false;for(let channel=0;channel<4;channel++){const delta=Math.abs(a.data[i+channel]-b.data[i+channel]);changed ||= delta>0;maxChannelDifference=Math.max(maxChannelDifference,delta);}if(changed)changedPixels++;}
+        pixelDifference={changedPixels,maxChannelDifference,exactPixelEquality:'fail; diagnostic only, no tolerance applied'};
+      }
+      if(!cropIdentical && strictPixels) {
         const name=`regression-${viewport.width}-${screen.hash.split('/').at(-1)}-${mode}`;
         for(const [label,pixels] of [['before',before.pixels],['after',after.pixels]])writeFileSync(path.join(GDD_ROOT,'dist/data/ui/components',`${name}-${label}.png`),pixels);
       }
-      assert.equal(hash(after.pixels),hash(before.pixels),screen.hash+' '+mode+' stage crop changed');
+      if(strictPixels)assert.equal(hash(after.pixels),hash(before.pixels),screen.hash+' '+mode+' stage crop changed '+JSON.stringify({before:before.geometry,after:after.geometry}));
       assert.deepEqual(currentErrors,oldErrors,screen.hash+' '+mode+' new JavaScript errors');
-      captures.push({route:screen.hash,mode,entities:after.dom.length,domIdentical:true,cropIdentical:true,inheritedPageErrors:[...oldErrors],sha256:createHash('sha256').update(after.pixels).digest('hex')});
+      captures.push({route:screen.hash,mode,entities:after.dom.length,domIdentical:true,cropIdentical,...(pixelDifference?{pixelDifference}:{}),inheritedPageErrors:[...oldErrors],sha256:createHash('sha256').update(after.pixels).digest('hex')});
     }
-    return {baselineRef,viewport,captures};
+    return {baselineRef,viewport,...(!strictPixels?{pixelComparison:'diagnostic: exact inequality is reported as fail, never treated as a tolerance pass'}:{}),captures};
   } finally {await context.close();}
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(path.resolve(process.argv[1])).href){

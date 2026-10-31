@@ -2,6 +2,26 @@
 
 Private design dashboard generated from the checked-in StealAPet config snapshot and source references.
 
+## Activities · UI Preview
+
+Mở `#uipreview/activities` hoặc chọn Activities bên cạnh Collection. Snapshot
+Activities có 286 entity, 54 sprite trong manifest; 50 có PNG cục bộ, 4 sprite
+`lib://` chưa có file. Giữ nguyên entity ID, raw props và callback để Inspect.
+Controller/config, localization và sprite runtime lấy từ source có hash.
+
+Hỗ trợ quà đăng nhập theo UserType/Rebirth, nhiệm vụ theo ngày cycle, tiến độ,
+nhận thưởng/mốc Pet Points và vòng quay theo weight/angle config. Panel người
+chơi là mô phỏng cục bộ. Tab Event giữ inactive theo `.ui`; công cụ trong panel
+cho xem riêng nội dung Event và thử trạng thái nhận, không mở tab game.
+
+Chạy `node tools/sync-ui-preview.mjs --project-root "C:\_Code\craftland\StealAPet" --screen activities`
+và `node tools/audit-ui-activities.mjs --project-root "C:\_Code\craftland\StealAPet" --browser-url http://localhost:8080`.
+Report/ảnh ở `dist/data/ui/activities-*`; kế hoạch ở `plans/PLAN-ui-activities.md`.
+Không regenerate Collection/Proposal khi chỉ sync Activities. Chưa có ảnh
+engine để xác nhận pixel parity; font/shader/scaler, inertia, tooltip/effect và
+server/database chưa được mô phỏng đầy đủ. MoneyTime dùng thu nhập base nhập
+trong panel. Website vẫn static; thay đổi này chỉ commit local, không publish.
+
 ## UI Components
 
 Thư viện riêng ở `#uicomponents`, ngay dưới UI Proposal, theo

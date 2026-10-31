@@ -1,0 +1,73 @@
+{
+  "sourceCommit": "471a62bb8a55ad735cfeebf5a0a315730df90daa",
+  "entities": 286,
+  "sprites": 54,
+  "missing": [
+    "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+    "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png",
+    "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_YES.png",
+    "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png"
+  ],
+  "source": "pass",
+  "browser": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1100
+      },
+      "profiles": 13,
+      "clicks": 18,
+      "states": [
+        "all configured user/Rebirth tiers and boundaries",
+        "7 login claims",
+        "7 mission cycle days",
+        "mission claim and sorting",
+        "milestone claim",
+        "vertical scrolling",
+        "spin and zero spins",
+        "3 Event claims via inspection panel with source tab still hidden",
+        "VI/EN",
+        "Collection roundtrip",
+        "close/reopen"
+      ],
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "profiles": 13,
+      "clicks": 18,
+      "states": [
+        "all configured user/Rebirth tiers and boundaries",
+        "7 login claims",
+        "7 mission cycle days",
+        "mission claim and sorting",
+        "milestone claim",
+        "vertical scrolling",
+        "spin and zero spins",
+        "3 Event claims via inspection panel with source tab still hidden",
+        "VI/EN",
+        "Collection roundtrip",
+        "close/reopen"
+      ],
+      "errors": []
+    }
+  ],
+  "runtimeGameParity": "no engine screenshots supplied",
+  "gaps": [
+    "Registered widget Activities (KVOVUcWb) is stale; not used by binder",
+    "No engine screenshots for parity; browser fallback font, shader/scaler and hit order unverified",
+    "MoneyTime uses explicit simulated base income, never live player data",
+    "Event tab remains inactive as serialized; its content can be inspected through the simulation panel",
+    "Reward tooltip/effect, database gating and server requests are not executed",
+    "Vertical scroll uses native web scrolling; engine inertia and scroll origin unverified",
+    "Spin easing is a web approximation of the source tween curve"
+  ],
+  "lifecycle": {
+    "leaveDuringSpinForProposal": true,
+    "rapidScreenSwitches": true,
+    "errors": []
+  }
+}

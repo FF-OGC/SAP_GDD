@@ -1,8 +1,9 @@
 import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { activitiesRules } from "./ui-activities-source.mjs";
 
-const UI_FILES = [{ id: "collection", name: "Collection", file: "PetsCollection.ui", status: "ready" }];
+const UI_FILES = [{ id: "collection", name: "Collection", file: "PetsCollection.ui", status: "ready" }, { id: "activities", name: "Activities", file: "Activities.ui", status: "ready" }];
 const PLANNED = ["Shop", "Mail", "Mission", "Leaderboard"].map(name => ({ id: name.toLowerCase(), name, status: "planned" }));
 const PROP_FIELDS = {
   image: ["source", "color", "reverse", "fillType", "slicedBorder", "tiledBorder", "centerInvisible", "fillDir", "fillAmount", "invertFill", "flip", "gradient", "gradientTop", "gradientBottom", "isApplyAnimation", "animationAtlasID", "animationFrameRate", "animationLoop"],
@@ -29,7 +30,8 @@ function isWithin(parent, candidate) {
   return relative === "" || (relative !== ".." && !relative.startsWith(".." + path.sep) && !path.isAbsolute(relative));
 }
 
-export function syncUiPreview(sourceRoot, gddRoot) {
+export function syncUiPreview(sourceRoot, gddRoot, screenId = null) {
+  if (screenId && !UI_FILES.some(ui => ui.id === screenId)) throw new Error("Unregistered UI: " + screenId);
   const dist = path.resolve(gddRoot, "dist");
   const game = path.resolve(sourceRoot);
   if (isWithin(game, dist)) throw new Error("UI output cannot be inside game checkout");
@@ -48,7 +50,7 @@ export function syncUiPreview(sourceRoot, gddRoot) {
   const registry = { screens: [...UI_FILES.map(({ id, name, status }) => ({ id, name, status, data: `./data/ui/${id}.json`, rules: `./data/ui/${id}-rules.json` })), ...PLANNED] };
   json(["data", "ui", "registry.json"], registry);
 
-  for (const ui of UI_FILES) {
+  for (const ui of UI_FILES.filter(ui => !screenId || ui.id === screenId)) {
     const uiRel = path.join("Assets", "HUDs", ui.file);
     const raw = readFileSync(source(uiRel), "utf8");
     const commentAt = raw.lastIndexOf("\n//");
@@ -58,6 +60,19 @@ export function syncUiPreview(sourceRoot, gddRoot) {
     // serialized filePath values in older HUDs can still point to its old name.
     // Only index metadata in the relocation directory confirmed for this HUD.
     const relocatedById = new Map();
+    if (ui.id === "activities") {
+      const registration = readFileSync(source("ProjectSettings/ResourceRegisteration.asset"), "utf8");
+      const resources = JSON.parse(registration.includes("\n//") ? registration.slice(0, registration.lastIndexOf("\n//")) : registration).Resource.texture;
+      (function walk(node) {
+        const ref = node.refer, key = ref?.filePath?.replaceAll("\\", "/");
+        if (key?.startsWith("Assets/") && key.endsWith(".png") && existsSync(source(key))) {
+          const candidates = relocatedById.get(ref.fileId) || [];
+          if (!candidates.includes(key)) candidates.push(key);
+          relocatedById.set(ref.fileId, candidates);
+        }
+        (node.children || []).forEach(walk);
+      })(resources);
+    }
     const relocationDirectory = "Assets/Sprites/NewAssets";
     for (const name of readdirSync(source(relocationDirectory)).sort()) {
       if (!name.toLowerCase().endsWith(".png.meta")) continue;
@@ -65,12 +80,13 @@ export function syncUiPreview(sourceRoot, gddRoot) {
       const metadata = JSON.parse(readFileSync(source(key + ".meta"), "utf8"));
       if (!metadata.fileId) continue;
       const candidates = relocatedById.get(metadata.fileId) || [];
-      candidates.push(key);
+      if (!candidates.includes(key)) candidates.push(key);
       relocatedById.set(metadata.fileId, candidates);
     }
     const legacySpritePaths = {
       "Assets/Sprites/UIComponents/Backgrounds/BG.png": "Assets/Sprites/Backgrounds/BG.png",
-      "Assets/Sprites/ShadowTriangleRounded.png": "Assets/Sprites/Shapes/ShadowTriangleRounded.png"
+      "Assets/Sprites/ShadowTriangleRounded.png": "Assets/Sprites/Shapes/ShadowTriangleRounded.png",
+      ...(ui.id === "activities" ? { "Assets/Sprites/Icons/PetPointIcon.png": "Assets/Sprites/Icons/DMMPointIcon.png" } : {})
     };
     const unsupported = [];
     let entityCount = 0;
@@ -82,6 +98,10 @@ export function syncUiPreview(sourceRoot, gddRoot) {
       let key = declaredKey;
       if (declaredKey.startsWith("Assets/") && !existsSync(source(declaredKey))) {
         const candidates = ref.fileId ? relocatedById.get(ref.fileId) || [] : [];
+        if (ui.id === "activities" && declaredKey.includes("/UIComponents/")) {
+          const candidate = declaredKey.replace("/UIComponents/", "/");
+          if (existsSync(source(candidate)) && existsSync(source(candidate + ".meta")) && JSON.parse(readFileSync(source(candidate + ".meta"), "utf8")).fileId === ref.fileId && !candidates.includes(candidate)) candidates.push(candidate);
+        }
         if (candidates.length > 1) throw new Error(`Ambiguous sprite fileId ${ref.fileId}: ${candidates.join(", ")}`);
         if (candidates.length === 1) key = candidates[0];
         else if (legacySpritePaths[declaredKey]) {
@@ -154,7 +174,7 @@ export function syncUiPreview(sourceRoot, gddRoot) {
       renderingPolicy: {
         alpha: "subtree-composite", alphaStatus: "existing web approximation retained; runtime cascade unverified",
         hitTest: "button-rect-unless-disableCollider", hitTestStatus: "DisableCollider documented; alpha threshold and image blocking unverified",
-        stacking: "source-tree-order", stackingStatus: "all source priorities are zero; engine depth ordering unverified",
+        stacking: "source-tree-order", stackingStatus: ui.id === "activities" ? "runtime mission priority is applied by the source grid sortType; engine depth ordering unverified" : "all source priorities are zero; engine depth ordering unverified",
         tint: "per-pixel RGB multiplication by Color with source sprite alpha retained",
         tintStatus: "matches requested blend model; Craftland runtime pixel output not verified",
         imageGradient: "vertical interpolation from GradientTop to GradientBottom when gradient is nonzero",
@@ -167,12 +187,17 @@ export function syncUiPreview(sourceRoot, gddRoot) {
         flip: "reverse.x/reverse.y map to visual axis flips; numeric flip is retained",
         flipStatus: "all source flip values are zero; numeric FlipType behavior is not documented",
         rotation: "CSS rotation uses the RectTransform pivot as transform origin",
-        rotationStatus: "all source rotations are zero; angle sign in nonzero runtime cases is unverified",
+        rotationStatus: ui.id === "activities" ? "serialized spin reward rotations use negative CSS angles; engine sign and tween easing unverified" : "all source rotations are zero; angle sign in nonzero runtime cases is unverified",
         viewport: "root sizeDelta and selectable viewport aspect frame; cover-crop preview",
         viewportStatus: "Editor docs describe root adaptation to device aspect ratio; reference resolution, match mode, and safe area are not specified"
       },
       tree
     });
+    if (ui.id === "activities") {
+      const { rules, i18n } = activitiesRules(source, tree, sprite, parseCsv);
+      json(["data", "ui", "activities-rules.json"], rules);
+      json(["data", "ui", "activities-i18n.json"], i18n);
+    }
     if (ui.id === "collection") {
       const rules = collectionRules(source);
       deriveCollectionPets(source, rules);
@@ -415,5 +440,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const args = process.argv.slice(2);
   const at = args.indexOf("--project-root");
   if (at < 0 || !args[at + 1]) throw new Error("Usage: node tools/sync-ui-preview.mjs --project-root <StealAPet checkout>");
-  syncUiPreview(args[at + 1], path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".."));
+  const screenAt = args.indexOf("--screen");
+  if (screenAt >= 0 && (!args[screenAt + 1] || args[screenAt + 1].startsWith("--"))) throw new Error("--screen requires a registered screen ID");
+  syncUiPreview(args[at + 1], path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".."), screenAt < 0 ? null : args[screenAt + 1]);
 }

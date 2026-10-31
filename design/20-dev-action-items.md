@@ -1,5 +1,41 @@
 # Việc kỹ thuật còn mở
 
+## Activities Preview (2026-10-31)
+
+- Source Activities: game HEAD `471a62bb8a55ad735cfeebf5a0a315730df90daa`,
+  kèm hash từng file `.ui`/controller/resource/enum trong activities-rules.json.
+  286 entity được giữ đủ props/eca, 54 sprite, 4 `lib://` thiếu. Các PNG có
+  đường dẫn cũ được resolve qua fileId; không vẽ ảnh thay thế.
+- Registration key Activities trỏ ID `KVOVUcWb` đã cũ, không có trong cây;
+  binder dùng TabsLayout và các widget có ID khớp. Không sửa game.
+- Event tab inactive từ `.ui` và controller không bật lại; giữ nguyên.
+  Panel công cụ cho kiểm nội dung và trạng thái claim tách khỏi lịch sự kiện.
+- ScrollView dùng native web scroll, extent theo cell/space/ignoreInactive;
+  engine origin/inertia còn thiếu bằng chứng. 66 entity có field ngoài lớp
+  normalize (gồm callback/animation/panel/scroll); raw props được giữ. Binder
+  xử lý scroll/clipping và nút Activities; không thực thi callback graph,
+  animation atlas, tooltip, hiệu ứng thưởng hoặc server/database game.
+- Chưa có ảnh runtime game cùng state/resolution: font fallback, raster,
+  rich-text/shader, alpha/hit order, scaler và easing vòng quay là giới hạn
+  đối chiếu. Không coi DOM/source audit pass là pixel parity game.
+- Collection static audit với checkout game hiện tại dừng ở chênh lệch có sẵn:
+  `PetsCollection/Container/PreventCloseButton` alpha snapshot=100, game=0.
+  Task Activities không regenerate baseline Collection hoặc Proposal đã sửa.
+  Browser regression Collection kiểm riêng trên snapshot website hiện hành.
+- Activities source/browser audit: 13 cấu hình và biên UserType/Rebirth,
+  18 click theo tọa độ ở mỗi viewport 1440×1100/390×844, không lỗi console;
+  đủ 7 ngày quà, 7 cycle nhiệm vụ, claim/milestone/scroll/spin, 3 quà Event
+  qua panel kiểm tra, VI/EN, chuyển màn và dispose khi rời vòng quay.
+  Inspector xác nhận ID/raw props của 8 icon trùng path và clone nhiệm vụ.
+  Collection browser regression: 214 click, 173 pet ở mỗi viewport, pass.
+  Sync Activities idempotent; 30 file baseline/Proposal giữ nguyên nội dung.
+- So sánh pixel before/after với c1bb1bc: giữ tiêu chí hash trùng tuyệt đối;
+  các capture có sai khác được ghi `cropIdentical=false` cùng số pixel và
+  maxChannelDifference trong activities-consumer-regression.json, không gọi
+  là pass pixel. DOM và lỗi JavaScript được kiểm độc lập, phải giữ nguyên.
+  Kết quả: 26/26 capture giữ nguyên DOM; 24/26 trùng hash ảnh. Hai capture
+  desktop của Proposal lệch tối đa 1 mỗi kênh RGB; mobile trùng 13/13 ảnh.
+
 ## UI Components (2026-10-26)
 
 - DA-016: `op: addComponent` và đưa template ngược vào Proposal cũ cần quyết

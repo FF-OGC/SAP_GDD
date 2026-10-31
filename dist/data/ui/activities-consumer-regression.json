@@ -1,0 +1,266 @@
+[
+  {
+    "baselineRef": "c1bb1bc",
+    "viewport": {
+      "width": 1440,
+      "height": 1100
+    },
+    "pixelComparison": "diagnostic: exact inequality is reported as fail, never treated as a tolerance pass",
+    "captures": [
+      {
+        "route": "#uipreview/collection",
+        "mode": null,
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "2558c9ef710386eefddbb1db89b2cb2bd779707a331da46b6e2225c4fe824de7"
+      },
+      {
+        "route": "#uiproposal/collection/collection-pipeline-example",
+        "mode": "current",
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "9a491d71d5ae253f96ad1d99ed6e43f6e437484fa4e3bacd13038a8a08dbf29e"
+      },
+      {
+        "route": "#uiproposal/collection/collection-pipeline-example",
+        "mode": "proposed",
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": false,
+        "pixelDifference": {
+          "changedPixels": 9396,
+          "maxChannelDifference": 1,
+          "exactPixelEquality": "fail; diagnostic only, no tolerance applied"
+        },
+        "inheritedPageErrors": [],
+        "sha256": "0dd34e9fb1d13ef25eb18910c51ec1860fa958cc20eea8b499f54f32e946ed33"
+      },
+      {
+        "route": "#uiproposal/collection/collection-pipeline-example",
+        "mode": "overlay",
+        "entities": 214,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "61b0aec3f60bef3d8c42904b511f9174121fd1d49e65ae856e1b1e5ae9e32e03"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-inline",
+        "mode": "current",
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": false,
+        "pixelDifference": {
+          "changedPixels": 15243,
+          "maxChannelDifference": 1,
+          "exactPixelEquality": "fail; diagnostic only, no tolerance applied"
+        },
+        "inheritedPageErrors": [],
+        "sha256": "817e5c89af11cbb99c7966aa89af5f444c2efb23f590fdb02c776ab75f835ac1"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-inline",
+        "mode": "proposed",
+        "entities": 159,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "3f72d4cf2e41adcfb107fc743cbde44928c70f14548fd34d20d206eafb94cc7f"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-inline",
+        "mode": "overlay",
+        "entities": 266,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "10bb7bd24ff83c8d3bcbad5affc582049eacb185372fb94ee513a36601cbddc7"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-overview",
+        "mode": "current",
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "01f2e74960781ecae85e667cc80cc0cf642654dd0b84c2452d393733ee06fc8d"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-overview",
+        "mode": "proposed",
+        "entities": 165,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "87edec4543f0c0ee88bba173b0c3288f957284bf7cabf4b51baa6990bae31578"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-overview",
+        "mode": "overlay",
+        "entities": 272,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "c53d4b00be5f6a17a49e55ae45b600729174f3fd3d1ac7989348f2c9420fa490"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-roadmap",
+        "mode": "current",
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "2dfc342e2cefb6174ad831200dfa6d3b8e8109b06a5826497c61ea98e6600cc9"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-roadmap",
+        "mode": "proposed",
+        "entities": 152,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "c29b26f1f853da5899493a4bfebc19ba8619b8a3b6e9b039e99e8ed15f3ccb44"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-roadmap",
+        "mode": "overlay",
+        "entities": 259,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "a6c826f134b636576a9956617db8375c36f0e593cfa60c47990f934fc6be12b0"
+      }
+    ]
+  },
+  {
+    "baselineRef": "c1bb1bc",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "pixelComparison": "diagnostic: exact inequality is reported as fail, never treated as a tolerance pass",
+    "captures": [
+      {
+        "route": "#uipreview/collection",
+        "mode": null,
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "bb04e864225b9a078177b0f250f0bc083c25d21479c7ce31f37953106d205d7f"
+      },
+      {
+        "route": "#uiproposal/collection/collection-pipeline-example",
+        "mode": "current",
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "b1d83c68b2713ff0345e52064bf2f273fe40081ca596b7204c129a6c8c17002b"
+      },
+      {
+        "route": "#uiproposal/collection/collection-pipeline-example",
+        "mode": "proposed",
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "0178e3fce95ba09716e30938551cb564d8aeb614a9b5f594c5aa73e05f26a2bf"
+      },
+      {
+        "route": "#uiproposal/collection/collection-pipeline-example",
+        "mode": "overlay",
+        "entities": 214,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "c98d638443130f013f721db7c1376c20fca8b47dcc917dea659c80134965f550"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-inline",
+        "mode": "current",
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "b2ac3d29467e325eff3d56b7270bcb79e19f82935f17c645ebe3ab64a8802450"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-inline",
+        "mode": "proposed",
+        "entities": 159,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "ff82140eca3f403c7143ff9c21087cdc97eba47b322bf103e303f352a535a1cf"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-inline",
+        "mode": "overlay",
+        "entities": 266,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "33a442e2c531d5534b822e11e90b1458ab6141656b5a258433c106f71396ae71"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-overview",
+        "mode": "current",
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "a7511c511c0fddedbaef35a6f02c3c1bea0444c8f476f7aa054024540d388ce4"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-overview",
+        "mode": "proposed",
+        "entities": 165,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "21c6d6274c3d95d9dfb38867fa134f6c640fa679850436d3b8a197f4aaef71ab"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-overview",
+        "mode": "overlay",
+        "entities": 272,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "ab3cc72fa71eb71c2b1aa351a1e51962338e67dff5286b57d965e1dcb376cffd"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-roadmap",
+        "mode": "current",
+        "entities": 107,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "99668fa4206402d8bd09ef6e734bdc8b6e9c5922be62042050dc80f0dc7424fb"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-roadmap",
+        "mode": "proposed",
+        "entities": 152,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "73c4a3e4ee014f42477eb74f1fc91abcac7819bc25266b646287a8cdc317747c"
+      },
+      {
+        "route": "#uiproposal/collection/collection-rewards-roadmap",
+        "mode": "overlay",
+        "entities": 259,
+        "domIdentical": true,
+        "cropIdentical": true,
+        "inheritedPageErrors": [],
+        "sha256": "df0a1b5ba20a4807401b36d71fdd887e976e3af9fb33b929a071ca491a49e8dd"
+      }
+    ]
+  }
+]

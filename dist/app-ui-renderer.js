@@ -464,7 +464,7 @@ const uiRenderer = (() => {
     function walk(node, element) {
       applyLayout(element, node);
       for (const child of [...element.children].filter(item => item.classList.contains("ui-entity"))) {
-        const childNode = byId.get(child.dataset.uiId) || byPath.get(child.dataset.uiPath || child.dataset.uiClonePath);
+        const childNode = byId.get(child.dataset.uiId || child.dataset.uiSourceEntityId) || byPath.get(child.dataset.uiPath || child.dataset.uiClonePath);
         if (childNode) walk(childNode, child);
       }
     }

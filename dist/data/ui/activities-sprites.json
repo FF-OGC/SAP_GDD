@@ -1,0 +1,2132 @@
+{
+  "sprites": [
+    {
+      "key": "Assets/Sprites/Backgrounds/DarkBG.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Backgrounds/DarkBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Backgrounds/DarkBG.png",
+        "Assets/Sprites/Backgrounds/DarkBG.png"
+      ],
+      "fileId": "amqbaf0ix1n-mincvgtv-gm0n5ept0bj",
+      "output": "./assets/ui-sprites/activities/Backgrounds__DarkBG.png",
+      "missing": false,
+      "references": [
+        "Activities/DarkBG",
+        "Activities/Activities/Container/Rewards/Reward/ClaimButton",
+        "Activities/Activities/Container/Rewards/Reward/ClaimedButton",
+        "Activities/Activities/Container/Rewards/Reward (1)/ClaimButton",
+        "Activities/Activities/Container/Rewards/Reward (1)/ClaimedButton",
+        "Activities/Activities/Container/Rewards/Reward (2)/ClaimButton",
+        "Activities/Activities/Container/Rewards/Reward (2)/ClaimedButton",
+        "Activities/Activities/Container/Rewards/Reward (3)/ClaimButton",
+        "Activities/Activities/Container/Rewards/Reward (3)/ClaimedButton",
+        "Activities/Activities/Container/Rewards/Reward (4)/ClaimButton",
+        "Activities/Activities/Container/Rewards/Reward (4)/ClaimedButton",
+        "Activities/Activities/Container/Rewards/Reward (5)/ClaimButton",
+        "Activities/Activities/Container/Rewards/Reward (5)/ClaimedButton",
+        "Activities/Activities/Container/Rewards/Reward (6)/ClaimButton",
+        "Activities/Activities/Container/Rewards/Reward (6)/ClaimedButton",
+        "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail/ClaimedMask",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail/ClaimedMask",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail/ClaimedMask",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail/ClaimedMask",
+        "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/ClaimedMask",
+        "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/ClaimedMask",
+        "Activities/Activities/Container/Event/EventLayout/Reward/ClaimButton",
+        "Activities/Activities/Container/Event/EventLayout/Reward/ClaimedButton",
+        "Activities/Activities/Container/Event/EventLayout/Reward/ClaimButton",
+        "Activities/Activities/Container/Event/EventLayout/Reward/ClaimedButton",
+        "Activities/Activities/Container/Event/EventLayout/Reward/ClaimButton",
+        "Activities/Activities/Container/Event/EventLayout/Reward/ClaimedButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 12,
+        "right": 12,
+        "top": 12,
+        "bottom": 12
+      },
+      "width": 40,
+      "height": 40
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png"
+      ],
+      "fileId": "4fea53c19488f972a3e911c826b1bea7",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Activities/Activities",
+        "Activities/Activities/Container/Rewards/Reward/TooltipButton",
+        "Activities/Activities/Container/Rewards/Reward (1)/TooltipButton",
+        "Activities/Activities/Container/Rewards/Reward (2)/TooltipButton",
+        "Activities/Activities/Container/Rewards/Reward (3)/TooltipButton",
+        "Activities/Activities/Container/Rewards/Reward (4)/TooltipButton",
+        "Activities/Activities/Container/Rewards/Reward (5)/TooltipButton",
+        "Activities/Activities/Container/Rewards/Reward (6)/TooltipButton",
+        "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail/TooltipButton",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail/TooltipButton",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail/TooltipButton",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail/TooltipButton",
+        "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/TooltipButton",
+        "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/TooltipButton",
+        "Activities/Activities/Container/Event/EventLayout/Reward/TooltipButton",
+        "Activities/Activities/Container/Event/EventLayout/Reward/TooltipButton",
+        "Activities/Activities/Container/Event/EventLayout/Reward/TooltipButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/TitleBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/TitleBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/TitleBG.png"
+      ],
+      "fileId": "zkfpx1yzvtc-mu6xhq5y-nv8ey9h3kfj",
+      "output": "./assets/ui-sprites/activities/NewAssets__TitleBG.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Title"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 113,
+        "right": 12,
+        "top": 48,
+        "bottom": 18
+      },
+      "width": 752,
+      "height": 126
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/CloseButton.png",
+      "declaredKey": "Assets/Sprites/NewAssets/CloseButton.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/CloseButton.png"
+      ],
+      "fileId": "ub3ok34eqnr-mu6xhog5-q0tv8gncefb",
+      "output": "./assets/ui-sprites/activities/NewAssets__CloseButton.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Title/CloseButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 38,
+      "height": 40
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/ContainerBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/ContainerBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/ContainerBG.png"
+      ],
+      "fileId": "gszc833692p-mu6veyfp-g1yynwpple7",
+      "output": "./assets/ui-sprites/activities/NewAssets__ContainerBG.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/BG"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 34,
+        "right": 33,
+        "top": 32,
+        "bottom": 39
+      },
+      "width": 106,
+      "height": 118
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/DecorateIcon1.png",
+      "declaredKey": "Assets/Sprites/NewAssets/DecorateIcon1.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/DecorateIcon1.png"
+      ],
+      "fileId": "ouansc8n289-mu6xhpqu-centw2ek0ns",
+      "output": "./assets/ui-sprites/activities/NewAssets__DecorateIcon1.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/BG/DecorLeft"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 68,
+      "height": 104
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/DecorateIcon2.png",
+      "declaredKey": "Assets/Sprites/NewAssets/DecorateIcon2.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/DecorateIcon2.png"
+      ],
+      "fileId": "z3itg018ujr-mu6xhpvo-cnfqx0exhhp",
+      "output": "./assets/ui-sprites/activities/NewAssets__DecorateIcon2.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/BG/DecorRight"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 114,
+      "height": 52
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/LongSelectTabBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/LongSelectTabBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/LongSelectTabBG.png"
+      ],
+      "fileId": "8ildizw7xxo-mu2ohzc9-rtkaiq296jo",
+      "output": "./assets/ui-sprites/activities/NewAssets__LongSelectTabBG.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/TabsLayout/DailyRewardsTabButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 70,
+        "right": 70,
+        "top": 20,
+        "bottom": 20
+      },
+      "width": 200,
+      "height": 54
+    },
+    {
+      "key": "Assets/Sprites/Icons/GiftboxIcon.png",
+      "declaredKey": "Assets/Sprites/Icons/GiftboxIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/GiftboxIcon.png"
+      ],
+      "fileId": "xlsgouu7nr-mq6dqtxs-1joo2w562be",
+      "output": "./assets/ui-sprites/activities/Icons__GiftboxIcon.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/TabsLayout/DailyRewardsTabButton/AlertIcon",
+        "Activities/Activities/TabsLayout/DailyMissionsTabButton/AlertIcon",
+        "Activities/Activities/TabsLayout/DailySpinTabButton/AlertIcon",
+        "Activities/Activities/TabsLayout/DailyEventTabButton/AlertIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail/ClaimButton/GiftboxIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail/ClaimButton/GiftboxIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail/ClaimButton/GiftboxIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail/ClaimButton/GiftboxIcon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 64,
+      "height": 64
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png"
+      ],
+      "fileId": "7a7299163551335f237b94854eb60438",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Activities/Activities/TabsLayout/DailyRewardsTabButton/AlertIcon/GlowIcon",
+        "Activities/Activities/TabsLayout/DailyMissionsTabButton/AlertIcon/GlowIcon",
+        "Activities/Activities/TabsLayout/DailySpinTabButton/AlertIcon/GlowIcon",
+        "Activities/Activities/TabsLayout/DailyEventTabButton/AlertIcon/GlowIcon",
+        "Activities/Activities/Container/Rewards/Reward/GlowIcon",
+        "Activities/Activities/Container/Rewards/Reward (1)/GlowIcon",
+        "Activities/Activities/Container/Rewards/Reward (2)/GlowIcon",
+        "Activities/Activities/Container/Rewards/Reward (3)/GlowIcon",
+        "Activities/Activities/Container/Rewards/Reward (4)/GlowIcon",
+        "Activities/Activities/Container/Rewards/Reward (5)/GlowIcon",
+        "Activities/Activities/Container/Rewards/Reward (6)/GlowIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon",
+        "Activities/Activities/Container/Event/EventLayout/Reward/GlowIcon",
+        "Activities/Activities/Container/Event/EventLayout/Reward/GlowIcon",
+        "Activities/Activities/Container/Event/EventLayout/Reward/GlowIcon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/NormalTabBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/NormalTabBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/NormalTabBG.png"
+      ],
+      "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+      "output": "./assets/ui-sprites/activities/NewAssets__NormalTabBG.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/TabsLayout/DailyMissionsTabButton",
+        "Activities/Activities/TabsLayout/DailySpinTabButton",
+        "Activities/Activities/TabsLayout/DailyEventTabButton",
+        "runtime:Activities:NormalTabBG"
+      ],
+      "origins": [
+        ".ui",
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 20,
+        "right": 20,
+        "top": 20,
+        "bottom": 20
+      },
+      "width": 96,
+      "height": 98
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/HalfContainerBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/HalfContainerBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/HalfContainerBG.png"
+      ],
+      "fileId": "earvmnoqs6p-mu2oi0z2-k994sun5yc",
+      "output": "./assets/ui-sprites/activities/NewAssets__HalfContainerBG.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Container"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 20,
+        "right": 4,
+        "top": 20,
+        "bottom": 18
+      },
+      "width": 28,
+      "height": 52
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/ItemBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/ItemBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/ItemBG.png"
+      ],
+      "fileId": "uxm85o6u4w-mu6xhq1i-eqcetnq7xhd",
+      "output": "./assets/ui-sprites/activities/NewAssets__ItemBG.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Container/Rewards/Reward",
+        "Activities/Activities/Container/Rewards/Reward (1)",
+        "Activities/Activities/Container/Rewards/Reward (2)",
+        "Activities/Activities/Container/Rewards/Reward (3)",
+        "Activities/Activities/Container/Rewards/Reward (4)",
+        "Activities/Activities/Container/Rewards/Reward (5)",
+        "Activities/Activities/Container/Rewards/Reward (6)",
+        "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail",
+        "Activities/Activities/Container/Missions/Scroll View/Missions/Mission",
+        "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward",
+        "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 20,
+        "right": 20,
+        "top": 20,
+        "bottom": 20
+      },
+      "width": 90,
+      "height": 90
+    },
+    {
+      "key": "Assets/Sprites/Backgrounds/HeaderBG.png",
+      "declaredKey": "Assets/Sprites/Backgrounds/HeaderBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Backgrounds/HeaderBG.png"
+      ],
+      "fileId": "qgnl32w2u1-mu9bpka2-3ls6yf8up3y",
+      "output": "./assets/ui-sprites/activities/Backgrounds__HeaderBG.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Container/Rewards/Reward/Day",
+        "Activities/Activities/Container/Rewards/Reward/RewardDetails",
+        "Activities/Activities/Container/Rewards/Reward (1)/Day",
+        "Activities/Activities/Container/Rewards/Reward (1)/RewardDetails",
+        "Activities/Activities/Container/Rewards/Reward (2)/Day",
+        "Activities/Activities/Container/Rewards/Reward (2)/RewardDetails",
+        "Activities/Activities/Container/Rewards/Reward (3)/Day",
+        "Activities/Activities/Container/Rewards/Reward (3)/RewardDetails",
+        "Activities/Activities/Container/Rewards/Reward (4)/Day",
+        "Activities/Activities/Container/Rewards/Reward (4)/RewardDetails",
+        "Activities/Activities/Container/Rewards/Reward (5)/Day",
+        "Activities/Activities/Container/Rewards/Reward (5)/RewardDetails",
+        "Activities/Activities/Container/Rewards/Reward (6)/Day",
+        "Activities/Activities/Container/Rewards/Reward (6)/RewardDetails"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 8,
+        "right": 8,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 30,
+      "height": 28
+    },
+    {
+      "key": "Assets/Sprites/Pets/PENGUIN.png",
+      "declaredKey": "Assets/Sprites/Pets/PENGUIN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/PENGUIN.png"
+      ],
+      "fileId": "63tf7u5p89f-mir2uppa-kquuyta6oll",
+      "output": "./assets/ui-sprites/activities/Pets__PENGUIN.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Container/Rewards/Reward/RewardIcon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_YES.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_YES.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_YES.png"
+      ],
+      "fileId": "a5b23c33df0caacdc38f928a09edb4b5",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Activities/Activities/Container/Rewards/Reward/ClaimedButton/Image",
+        "Activities/Activities/Container/Rewards/Reward (1)/ClaimedButton/Image",
+        "Activities/Activities/Container/Rewards/Reward (2)/ClaimedButton/Image",
+        "Activities/Activities/Container/Rewards/Reward (3)/ClaimedButton/Image",
+        "Activities/Activities/Container/Rewards/Reward (4)/ClaimedButton/Image",
+        "Activities/Activities/Container/Rewards/Reward (5)/ClaimedButton/Image",
+        "Activities/Activities/Container/Rewards/Reward (6)/ClaimedButton/Image",
+        "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail/ClaimedMask/CheckIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail/ClaimedMask/CheckIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail/ClaimedMask/CheckIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail/ClaimedMask/CheckIcon",
+        "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/ClaimedMask/CheckIcon",
+        "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/ClaimedMask/CheckIcon",
+        "Activities/Activities/Container/Event/EventLayout/Reward/ClaimedButton/Image",
+        "Activities/Activities/Container/Event/EventLayout/Reward/ClaimedButton/Image",
+        "Activities/Activities/Container/Event/EventLayout/Reward/ClaimedButton/Image"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Icons/PetCoinIcon.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/PetCoinIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/PetCoinIcon.png",
+        "Assets/Sprites/Icons/PetCoinIcon.png"
+      ],
+      "fileId": "bju08pkwxav-mincvh54-3nkt79t4vxw",
+      "output": "./assets/ui-sprites/activities/Icons__PetCoinIcon.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Container/Rewards/Reward (1)/RewardIcon",
+        "Activities/Activities/Container/Rewards/Reward (2)/RewardIcon",
+        "Activities/Activities/Container/Rewards/Reward (3)/RewardIcon",
+        "Activities/Activities/Container/Rewards/Reward (4)/RewardIcon",
+        "Activities/Activities/Container/Rewards/Reward (5)/RewardIcon",
+        "Activities/Activities/Container/Rewards/Reward (6)/RewardIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail/RewardIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail/RewardIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail/RewardIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail/RewardIcon",
+        "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/RewardIcon",
+        "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/RewardIcon",
+        "Activities/Activities/Container/Spin/SpinLayout/Reward/RewardIcon",
+        "Activities/Activities/Container/Spin/SpinLayout/Reward/RewardIcon",
+        "Activities/Activities/Container/Spin/SpinLayout/Reward/RewardIcon",
+        "Activities/Activities/Container/Event/EventLayout/Reward/RewardIcon",
+        "Activities/Activities/Container/Event/EventLayout/Reward/RewardIcon",
+        "Activities/Activities/Container/Event/EventLayout/Reward/RewardIcon",
+        "runtime:Activities:PetCoinIcon"
+      ],
+      "origins": [
+        ".ui",
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 96,
+      "height": 96
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/DecorateIcon4.png",
+      "declaredKey": "Assets/Sprites/NewAssets/DecorateIcon4.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/DecorateIcon4.png"
+      ],
+      "fileId": "058qt1gskw1o-mu2oi1q0-f81v9jct7y",
+      "output": "./assets/ui-sprites/activities/NewAssets__DecorateIcon4.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Container/Rewards/Reward (6)/GlowIcon/Decoration"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 70,
+      "height": 56
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/DecorateIcon6.png",
+      "declaredKey": "Assets/Sprites/NewAssets/DecorateIcon6.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/DecorateIcon6.png"
+      ],
+      "fileId": "nhnozvvj76j-mu2oi22i-ssmhg8hvxjp",
+      "output": "./assets/ui-sprites/activities/NewAssets__DecorateIcon6.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Container/Rewards/Reward (6)/GlowIcon/Decoration"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 62,
+      "height": 90
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/DecorateIcon5.png",
+      "declaredKey": "Assets/Sprites/NewAssets/DecorateIcon5.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/DecorateIcon5.png"
+      ],
+      "fileId": "h5xqad16ta-mu2oi1w5-iiuxegfn4d",
+      "output": "./assets/ui-sprites/activities/NewAssets__DecorateIcon5.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Container/Rewards/Reward (6)/GlowIcon/Decoration"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 98,
+      "height": 126
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/DecorateIcon3.png",
+      "declaredKey": "Assets/Sprites/NewAssets/DecorateIcon3.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/DecorateIcon3.png"
+      ],
+      "fileId": "r8t5u61jnjr-mu2oi1iy-oghn9iypa9",
+      "output": "./assets/ui-sprites/activities/NewAssets__DecorateIcon3.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Container/Rewards/Reward (6)/GlowIcon/Decoration"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 90,
+      "height": 64
+    },
+    {
+      "key": "Assets/Sprites/Icons/DMMPointIcon.png",
+      "declaredKey": "Assets/Sprites/Icons/PetPointIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/PetPointIcon.png"
+      ],
+      "fileId": "n2oq5sa0gg-mpu0gl2w-13fqf3yx4h0b",
+      "output": "./assets/ui-sprites/activities/Icons__DMMPointIcon.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Container/Missions/PetPoints",
+        "runtime:Activities:DMMPointIcon"
+      ],
+      "origins": [
+        ".ui",
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 64,
+      "height": 64
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png"
+      ],
+      "fileId": "5d250edc7ccde0be5ccab1e2cf53b57f",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Activities/Activities/Container/Missions/MilestoneBar",
+        "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Backgrounds/BG.png",
+      "declaredKey": "Assets/Sprites/Backgrounds/BG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Backgrounds/BG.png"
+      ],
+      "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+      "output": "./assets/ui-sprites/activities/Backgrounds__BG.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Container/Missions/Milestones/Milestone",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (1)",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (2)",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (3)",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (4)",
+        "Activities/Activities/Container/Event/Timeline",
+        "Activities/Activities/Container/Event/Timeline/TitleBG",
+        "Activities/Activities/Container/Event/EventLayout/Reward/Day",
+        "Activities/Activities/Container/Event/EventLayout/Reward/RewardDetails",
+        "Activities/Activities/Container/Event/EventLayout/Reward/Day",
+        "Activities/Activities/Container/Event/EventLayout/Reward/RewardDetails",
+        "Activities/Activities/Container/Event/EventLayout/Reward/Day",
+        "Activities/Activities/Container/Event/EventLayout/Reward/RewardDetails"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 8,
+        "right": 8,
+        "top": 8,
+        "bottom": 8
+      },
+      "width": 26,
+      "height": 26
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/RarityBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/RarityBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/RarityBG.png"
+      ],
+      "fileId": "rqpomo66vjg-mu6vezgl-j2m6wc8co4",
+      "output": "./assets/ui-sprites/activities/NewAssets__RarityBG.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail/Rarity",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail/Rarity",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail/Rarity",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail/Rarity",
+        "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/Rarity",
+        "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/Rarity"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 10,
+        "right": 10,
+        "top": 0,
+        "bottom": 3
+      },
+      "width": 62,
+      "height": 10
+    },
+    {
+      "key": "Assets/Sprites/Guides/GuideBox.png",
+      "declaredKey": "Assets/Sprites/Guides/GuideBox.png",
+      "declaredKeys": [
+        "Assets/Sprites/Guides/GuideBox.png"
+      ],
+      "fileId": "njceqxhqj39-mg4z1yf2-51xpaq2j1ly",
+      "output": "./assets/ui-sprites/activities/Guides__GuideBox.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail/ClaimButton",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail/ClaimButton",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail/ClaimButton",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail/ClaimButton",
+        "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/ClaimButton",
+        "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/ClaimButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 8,
+        "right": 8,
+        "top": 8,
+        "bottom": 8
+      },
+      "width": 32,
+      "height": 32
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/BlueButton.png",
+      "declaredKey": "Assets/Sprites/NewAssets/BlueButton.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/BlueButton.png"
+      ],
+      "fileId": "mgcae4djxp-mu6vevy5-j3m6yz6bep",
+      "output": "./assets/ui-sprites/activities/NewAssets__BlueButton.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton",
+        "runtime:Activities:BlueButton"
+      ],
+      "origins": [
+        ".ui",
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 50,
+        "right": 20,
+        "top": 20,
+        "bottom": 25
+      },
+      "width": 160,
+      "height": 66
+    },
+    {
+      "key": "Assets/Sprites/Backgrounds/SpinBG.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Backgrounds/SpinBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Backgrounds/SpinBG.png"
+      ],
+      "fileId": "om7ni4vr9kp-mj6r5r8g-wyygom8nrnr",
+      "output": "./assets/ui-sprites/activities/Backgrounds__SpinBG.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Container/Spin/SpinLayout"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "key": "Assets/Sprites/Summon/MYTHIC.png",
+      "declaredKey": "Assets/Sprites/Summon/MYTHIC.png",
+      "declaredKeys": [
+        "Assets/Sprites/Summon/MYTHIC.png"
+      ],
+      "fileId": "06h4h5c3ta7r-mscub0ol-y40qp6b37ip",
+      "output": "./assets/ui-sprites/activities/Summon__MYTHIC.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Container/Spin/SpinLayout/Reward/RewardIcon",
+        "runtime:Activities:SummonMYTHIC"
+      ],
+      "origins": [
+        ".ui",
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 64,
+      "height": 64
+    },
+    {
+      "key": "Assets/Sprites/Icons/MoneyIcon.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/MoneyIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/MoneyIcon.png"
+      ],
+      "fileId": "1ev4vbb6r81-mincvh0q-an2r8ytn9ao",
+      "output": "./assets/ui-sprites/activities/Icons__MoneyIcon.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Container/Spin/SpinLayout/Reward/RewardIcon",
+        "Activities/Activities/Container/Spin/SpinLayout/Reward/RewardIcon",
+        "Activities/Activities/Container/Spin/SpinLayout/Reward/RewardIcon",
+        "runtime:Activities:MoneyIcon"
+      ],
+      "origins": [
+        ".ui",
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 96,
+      "height": 96
+    },
+    {
+      "key": "Assets/Sprites/Pets/ROOSTER.png",
+      "declaredKey": "Assets/Sprites/Pets/ROOSTER.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/ROOSTER.png"
+      ],
+      "fileId": "9yihlikpa9g-mggb0et8-eo6pxlq6m4v",
+      "output": "./assets/ui-sprites/activities/Pets__ROOSTER.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Container/Spin/SpinLayout/Reward/RewardIcon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Backgrounds/SpinArrow.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Backgrounds/SpinArrow.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Backgrounds/SpinArrow.png"
+      ],
+      "fileId": "w6lslbrk2k-mj6r5r4f-7uk6m3nj0jy",
+      "output": "./assets/ui-sprites/activities/Backgrounds__SpinArrow.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Container/Spin/Arrow"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "key": "Assets/Sprites/Buttons/YellowButton.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Buttons/YellowButton.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Buttons/YellowButton.png"
+      ],
+      "fileId": "y6h2esu1a4r-minctbbv-l0h8c6ul12r",
+      "output": "./assets/ui-sprites/activities/Buttons__YellowButton.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Container/Spin/SpinButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 280,
+      "height": 71
+    },
+    {
+      "key": "Assets/Sprites/Guides/GuideArrow1.png",
+      "declaredKey": "Assets/Sprites/Guides/GuideArrow1.png",
+      "declaredKeys": [
+        "Assets/Sprites/Guides/GuideArrow1.png"
+      ],
+      "fileId": "9nkee82zumi-mg4z1yhg-ois4fazoqcc",
+      "output": "./assets/ui-sprites/activities/Guides__GuideArrow1.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Container/Event/ArrowIcon",
+        "Activities/Activities/Container/Event/ArrowIcon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 34,
+      "height": 40
+    },
+    {
+      "key": "Assets/Sprites/Shapes/SquareRounded100.png",
+      "declaredKey": "Assets/Sprites/Shapes/SquareRounded100.png",
+      "declaredKeys": [
+        "Assets/Sprites/Shapes/SquareRounded100.png"
+      ],
+      "fileId": "l8c4cr6s3nf-mbq68mwy-pxhc7b7pxi9",
+      "output": "./assets/ui-sprites/activities/Shapes__SquareRounded100.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/Container/Event/EventLayout/Reward",
+        "Activities/Activities/Container/Event/EventLayout/Reward",
+        "Activities/Activities/Container/Event/EventLayout/Reward"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 7,
+        "right": 7,
+        "top": 7,
+        "bottom": 7
+      },
+      "width": 100,
+      "height": 100
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/YellowButton.png",
+      "declaredKey": "Assets/Sprites/NewAssets/YellowButton.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/YellowButton.png"
+      ],
+      "fileId": "155t2glvvdq-mu6vewp3-o48sy8osfsn",
+      "output": "./assets/ui-sprites/activities/NewAssets__YellowButton.png",
+      "missing": false,
+      "references": [
+        "Activities/Activities/ClaimAllButton",
+        "runtime:Activities:YellowButton"
+      ],
+      "origins": [
+        ".ui",
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 50,
+        "right": 20,
+        "top": 20,
+        "bottom": 25
+      },
+      "width": 160,
+      "height": 66
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/SelectTabBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/SelectTab.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/SelectTab.png"
+      ],
+      "fileId": "f2arxt0zsis-mu9bpuhj-5tki52jlbcn",
+      "output": "./assets/ui-sprites/activities/NewAssets__SelectTabBG.png",
+      "missing": false,
+      "references": [
+        "runtime:Activities:SelectTabBG"
+      ],
+      "origins": [
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 10,
+        "right": 10,
+        "top": 10,
+        "bottom": 10
+      },
+      "width": 96,
+      "height": 96
+    },
+    {
+      "key": "Assets/Sprites/Icons/DustIconTemp.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/DustIconTemp.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/DustIconTemp.png"
+      ],
+      "fileId": "hz9mied1b6f-mjcak9ea-mr1we4jeytf",
+      "output": "./assets/ui-sprites/activities/Icons__DustIconTemp.png",
+      "missing": false,
+      "references": [
+        "runtime:Activities:DustIcon"
+      ],
+      "origins": [
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 96,
+      "height": 96
+    },
+    {
+      "key": "Assets/Sprites/Pets/MOODENG.png",
+      "declaredKey": "Assets/Sprites/Pets/MOODENG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MOODENG.png"
+      ],
+      "fileId": "o1r825gq6l8-micxi0sy-1v3gpl596h5",
+      "output": "./assets/ui-sprites/activities/Pets__MOODENG.png",
+      "missing": false,
+      "references": [
+        "runtime:Activities:MOODENG"
+      ],
+      "origins": [
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Icons/SpinIcon.png",
+      "declaredKey": "Assets/Sprites/Icons/SpinIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/SpinIcon.png"
+      ],
+      "fileId": "k6vdeu0bq7f-mj6r5x6s-nfie5asuuz",
+      "output": "./assets/ui-sprites/activities/Icons__SpinIcon.png",
+      "missing": false,
+      "references": [
+        "runtime:Activities:SpinIcon"
+      ],
+      "origins": [
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "key": "Assets/Sprites/Icons/DuplicateTicket.png",
+      "declaredKey": "Assets/Sprites/Icons/DuplicateTicket.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/DuplicateTicket.png"
+      ],
+      "fileId": "msz3s8y5ph-muap3h6f-lmvzjgr4kio",
+      "output": "./assets/ui-sprites/activities/Icons__DuplicateTicket.png",
+      "missing": false,
+      "references": [
+        "runtime:Activities:DuplicateTicket"
+      ],
+      "origins": [
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Pets/SMALLWHALE.png",
+      "declaredKey": "Assets/Sprites/Pets/SMALLWHALE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SMALLWHALE.png"
+      ],
+      "fileId": "rdbyw5x2woq-mhbsxp7p-i4agr52n6o",
+      "output": "./assets/ui-sprites/activities/Pets__SMALLWHALE.png",
+      "missing": false,
+      "references": [
+        "runtime:Activities:SMALLWHALE"
+      ],
+      "origins": [
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Summon/LEGENDARY.png",
+      "declaredKey": "Assets/Sprites/Summon/LEGENDARY.png",
+      "declaredKeys": [
+        "Assets/Sprites/Summon/LEGENDARY.png"
+      ],
+      "fileId": "x181t1mmjpi-mscub10r-98qx5j43qo",
+      "output": "./assets/ui-sprites/activities/Summon__LEGENDARY.png",
+      "missing": false,
+      "references": [
+        "runtime:Activities:SummonLEGENDARY"
+      ],
+      "origins": [
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 64,
+      "height": 64
+    },
+    {
+      "key": "Assets/Sprites/Summon/EPIC.png",
+      "declaredKey": "Assets/Sprites/Summon/EPIC.png",
+      "declaredKeys": [
+        "Assets/Sprites/Summon/EPIC.png"
+      ],
+      "fileId": "z8b1jykfac-mscub0us-gxmoscaanhe",
+      "output": "./assets/ui-sprites/activities/Summon__EPIC.png",
+      "missing": false,
+      "references": [
+        "runtime:Activities:SummonEPIC"
+      ],
+      "origins": [
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 64,
+      "height": 64
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Magma.png",
+      "declaredKey": "Assets/Sprites/Mutations/Magma.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Magma.png"
+      ],
+      "fileId": "iw06sij8s9a-mkwi468g-mru8fexp3w9",
+      "output": "./assets/ui-sprites/activities/Mutations__Magma.png",
+      "missing": false,
+      "references": [
+        "runtime:Activities:Magma"
+      ],
+      "origins": [
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Golden.png",
+      "declaredKey": "Assets/Sprites/Mutations/Golden.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Golden.png"
+      ],
+      "fileId": "0wp8iz05lsm-mkwi46cs-73hyb35ojli",
+      "output": "./assets/ui-sprites/activities/Mutations__Golden.png",
+      "missing": false,
+      "references": [
+        "runtime:Activities:Golden"
+      ],
+      "origins": [
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Frozen.png",
+      "declaredKey": "Assets/Sprites/Mutations/Frozen.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Frozen.png"
+      ],
+      "fileId": "8ajnvme4rqx-mkwi46iv-16h95sigbk9",
+      "output": "./assets/ui-sprites/activities/Mutations__Frozen.png",
+      "missing": false,
+      "references": [
+        "runtime:Activities:Frozen"
+      ],
+      "origins": [
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Sparkle.png",
+      "declaredKey": "Assets/Sprites/Mutations/Sparkle.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Sparkle.png"
+      ],
+      "fileId": "34x0s5qc1hg-mtlj1smy-301zg0sx90w",
+      "output": "./assets/ui-sprites/activities/Mutations__Sparkle.png",
+      "missing": false,
+      "references": [
+        "runtime:Activities:Sparkle"
+      ],
+      "origins": [
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Thundered.png",
+      "declaredKey": "Assets/Sprites/Mutations/Thundered.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Thundered.png"
+      ],
+      "fileId": "eww7txe9ss-mkwhuvbu-mmdkdu7b9wo",
+      "output": "./assets/ui-sprites/activities/Mutations__Thundered.png",
+      "missing": false,
+      "references": [
+        "runtime:Activities:Thundered"
+      ],
+      "origins": [
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Pets/ARTICFOX.png",
+      "declaredKey": "Assets/Sprites/Pets/ARTICFOX.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/ARTICFOX.png"
+      ],
+      "fileId": "0bp17wr6rbf-mir2uq10-v8e0shodvm",
+      "output": "./assets/ui-sprites/activities/Pets__ARTICFOX.png",
+      "missing": false,
+      "references": [
+        "runtime:Activities:ARCTICFOX"
+      ],
+      "origins": [
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/KOMODO.png",
+      "declaredKey": "Assets/Sprites/Pets/KOMODO.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/KOMODO.png"
+      ],
+      "fileId": "dyhloflumt4-mlhv52ez-3fhpbwjd4gq",
+      "output": "./assets/ui-sprites/activities/Pets__KOMODO.png",
+      "missing": false,
+      "references": [
+        "runtime:Activities:KOMODO"
+      ],
+      "origins": [
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/AXOLOTLWHITE.png",
+      "declaredKey": "Assets/Sprites/Pets/AXOLOTLWHITE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/AXOLOTLWHITE.png"
+      ],
+      "fileId": "97y42atcqd-mm9zn93y-jdg8veva33",
+      "output": "./assets/ui-sprites/activities/Pets__AXOLOTLWHITE.png",
+      "missing": false,
+      "references": [
+        "runtime:Activities:AXOLOTLWHITE"
+      ],
+      "origins": [
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/MEERKAT.png",
+      "declaredKey": "Assets/Sprites/Pets/MEERKAT.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MEERKAT.png"
+      ],
+      "fileId": "3i66dg2rfui-mncmij9e-khms28psube",
+      "output": "./assets/ui-sprites/activities/Pets__MEERKAT.png",
+      "missing": false,
+      "references": [
+        "runtime:Activities:MEERKAT"
+      ],
+      "origins": [
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/MOUSEDEER.png",
+      "declaredKey": "Assets/Sprites/Pets/MOUSEDEER.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MOUSEDEER.png"
+      ],
+      "fileId": "td8x65i0ea-movcw5go-cle6cr84x5",
+      "output": "./assets/ui-sprites/activities/Pets__MOUSEDEER.png",
+      "missing": false,
+      "references": [
+        "runtime:Activities:MOUSEDEER"
+      ],
+      "origins": [
+        "runtime-code + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    }
+  ],
+  "missing": [
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png"
+      ],
+      "fileId": "4fea53c19488f972a3e911c826b1bea7",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Activities/Activities",
+        "Activities/Activities/Container/Rewards/Reward/TooltipButton",
+        "Activities/Activities/Container/Rewards/Reward (1)/TooltipButton",
+        "Activities/Activities/Container/Rewards/Reward (2)/TooltipButton",
+        "Activities/Activities/Container/Rewards/Reward (3)/TooltipButton",
+        "Activities/Activities/Container/Rewards/Reward (4)/TooltipButton",
+        "Activities/Activities/Container/Rewards/Reward (5)/TooltipButton",
+        "Activities/Activities/Container/Rewards/Reward (6)/TooltipButton",
+        "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail/TooltipButton",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail/TooltipButton",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail/TooltipButton",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail/TooltipButton",
+        "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/TooltipButton",
+        "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/TooltipButton",
+        "Activities/Activities/Container/Event/EventLayout/Reward/TooltipButton",
+        "Activities/Activities/Container/Event/EventLayout/Reward/TooltipButton",
+        "Activities/Activities/Container/Event/EventLayout/Reward/TooltipButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png"
+      ],
+      "fileId": "7a7299163551335f237b94854eb60438",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Activities/Activities/TabsLayout/DailyRewardsTabButton/AlertIcon/GlowIcon",
+        "Activities/Activities/TabsLayout/DailyMissionsTabButton/AlertIcon/GlowIcon",
+        "Activities/Activities/TabsLayout/DailySpinTabButton/AlertIcon/GlowIcon",
+        "Activities/Activities/TabsLayout/DailyEventTabButton/AlertIcon/GlowIcon",
+        "Activities/Activities/Container/Rewards/Reward/GlowIcon",
+        "Activities/Activities/Container/Rewards/Reward (1)/GlowIcon",
+        "Activities/Activities/Container/Rewards/Reward (2)/GlowIcon",
+        "Activities/Activities/Container/Rewards/Reward (3)/GlowIcon",
+        "Activities/Activities/Container/Rewards/Reward (4)/GlowIcon",
+        "Activities/Activities/Container/Rewards/Reward (5)/GlowIcon",
+        "Activities/Activities/Container/Rewards/Reward (6)/GlowIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon",
+        "Activities/Activities/Container/Event/EventLayout/Reward/GlowIcon",
+        "Activities/Activities/Container/Event/EventLayout/Reward/GlowIcon",
+        "Activities/Activities/Container/Event/EventLayout/Reward/GlowIcon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_YES.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_YES.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_YES.png"
+      ],
+      "fileId": "a5b23c33df0caacdc38f928a09edb4b5",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Activities/Activities/Container/Rewards/Reward/ClaimedButton/Image",
+        "Activities/Activities/Container/Rewards/Reward (1)/ClaimedButton/Image",
+        "Activities/Activities/Container/Rewards/Reward (2)/ClaimedButton/Image",
+        "Activities/Activities/Container/Rewards/Reward (3)/ClaimedButton/Image",
+        "Activities/Activities/Container/Rewards/Reward (4)/ClaimedButton/Image",
+        "Activities/Activities/Container/Rewards/Reward (5)/ClaimedButton/Image",
+        "Activities/Activities/Container/Rewards/Reward (6)/ClaimedButton/Image",
+        "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail/ClaimedMask/CheckIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail/ClaimedMask/CheckIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail/ClaimedMask/CheckIcon",
+        "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail/ClaimedMask/CheckIcon",
+        "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/ClaimedMask/CheckIcon",
+        "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/ClaimedMask/CheckIcon",
+        "Activities/Activities/Container/Event/EventLayout/Reward/ClaimedButton/Image",
+        "Activities/Activities/Container/Event/EventLayout/Reward/ClaimedButton/Image",
+        "Activities/Activities/Container/Event/EventLayout/Reward/ClaimedButton/Image"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png"
+      ],
+      "fileId": "5d250edc7ccde0be5ccab1e2cf53b57f",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Activities/Activities/Container/Missions/MilestoneBar",
+        "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "unsupported": [
+    {
+      "path": "Activities/DarkBG",
+      "id": "EWsunuaA",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Title/CloseButton",
+      "id": "hYkubPql",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/BG/DecorLeft",
+      "id": "ofE4A2oG",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Activities/Activities/BG/DecorRight",
+      "id": "TKn0VNjY",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Activities/Activities/TabsLayout/DailyRewardsTabButton",
+      "id": "gvZA4BXM",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/TabsLayout/DailyMissionsTabButton",
+      "id": "bzcXn7Xq",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/TabsLayout/DailySpinTabButton",
+      "id": "jZj4nddI",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/TabsLayout/DailyEventTabButton",
+      "id": "g5tSpCk3",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward/TooltipButton",
+      "id": "IuIVVCyU",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward/ClaimButton",
+      "id": "wsiMfDwi",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward/ClaimedButton",
+      "id": "kr5TqDPE",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward (1)/TooltipButton",
+      "id": "OasHUkEW",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward (1)/ClaimButton",
+      "id": "cnz51R3h",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward (1)/ClaimedButton",
+      "id": "noSHK9xz",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward (2)/TooltipButton",
+      "id": "tVGi6k2J",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward (2)/ClaimButton",
+      "id": "xf2LO9XD",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward (2)/ClaimedButton",
+      "id": "vCXcCIoH",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward (3)/TooltipButton",
+      "id": "bNXwAVrk",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward (3)/ClaimButton",
+      "id": "Fqrvxtof",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward (3)/ClaimedButton",
+      "id": "xnwNEqKZ",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward (4)/TooltipButton",
+      "id": "Dxq0nTCd",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward (4)/ClaimButton",
+      "id": "DCeGQv0Q",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward (4)/ClaimedButton",
+      "id": "F4UmBEJT",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward (5)/TooltipButton",
+      "id": "x5kX6RW2",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward (5)/ClaimButton",
+      "id": "Xocmj8zt",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward (5)/ClaimedButton",
+      "id": "FDmOvSdU",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward (6)/GlowIcon/Decoration",
+      "id": "VUZgOAQy",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward (6)/GlowIcon/Decoration",
+      "id": "ewc4hGY6",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward (6)/GlowIcon/Decoration",
+      "id": "kdd4Iw1H",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward (6)/GlowIcon/Decoration",
+      "id": "kjmG4B6G",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward (6)/TooltipButton",
+      "id": "eaFEkQuA",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward (6)/ClaimButton",
+      "id": "I6tSkzy1",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Rewards/Reward (6)/ClaimedButton",
+      "id": "Uv4B4TGI",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton",
+      "id": "dKkio1k4",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton",
+      "id": "SVXgozSk",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail/TooltipButton",
+      "id": "iQnGalCh",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail/ClaimButton",
+      "id": "bCydafH1",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail/TooltipButton",
+      "id": "HcLkn34H",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail/ClaimButton",
+      "id": "cBJ0L4jB",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail/TooltipButton",
+      "id": "NeK2MLNI",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail/ClaimButton",
+      "id": "DwCJtGNg",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail/TooltipButton",
+      "id": "RFu22DsY",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail/ClaimButton",
+      "id": "HhuDGv3N",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/Rarity",
+      "id": "xegGtJr5",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/TooltipButton",
+      "id": "raNjNuSP",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/ClaimButton",
+      "id": "hnmBVXN9",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/Rarity",
+      "id": "XthWB6Eu",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/TooltipButton",
+      "id": "BWfk12gi",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/ClaimButton",
+      "id": "D48v6LkE",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton",
+      "id": "UaEwmJ0H",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Missions/Scroll View",
+      "id": "AL05wNcq",
+      "fields": [
+        "propsData.panel",
+        "propsData.scrollView"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Spin/SpinButton",
+      "id": "HboRjZYy",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Event/Timeline/TitleBG",
+      "id": "fhQ2uin2",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Event/Timeline",
+      "id": "XRpecMDw",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Event/EventLayout/Reward/TooltipButton",
+      "id": "Ul1QS9kX",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Event/EventLayout/Reward/ClaimButton",
+      "id": "Zx7spsMJ",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Event/EventLayout/Reward/ClaimedButton",
+      "id": "XWIpOoRt",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Event/EventLayout/Reward/TooltipButton",
+      "id": "c6NnoZBl",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Event/EventLayout/Reward/ClaimButton",
+      "id": "dhRTEM8T",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Event/EventLayout/Reward/ClaimedButton",
+      "id": "biYcz3Ls",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Event/EventLayout/Reward/TooltipButton",
+      "id": "EAR3dSn5",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Event/EventLayout/Reward/ClaimButton",
+      "id": "LApwJWlZ",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/Container/Event/EventLayout/Reward/ClaimedButton",
+      "id": "HjWO9EC6",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities/ClaimAllButton",
+      "id": "qzbF8eIY",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities/Activities",
+      "id": "hFAlt8Vw",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Activities",
+      "id": "CFlcLwrb",
+      "fields": [
+        "ecaScripts"
+      ]
+    }
+  ]
+}

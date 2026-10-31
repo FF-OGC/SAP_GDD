@@ -2,10 +2,24 @@
 
 Đọc file này trước khi sửa project.
 
+## Đăng ký UI Activities (2026-10-31)
+
+Theo yêu cầu người dùng adapt Activities vào UI Preview: cho phép đọc
+`Assets/HUDs/Activities.ui`, các `.fcg` điều khiển/binding Activities,
+CSV được controller tham chiếu, đúng key localization và sprite tĩnh/runtime
+của màn hình cùng `.png.meta` tương ứng. Được đọc đúng bảng đăng ký sprite/widget
+trong `ProjectSettings/ResourceRegisteration.asset` và enum ItemType trong
+`Temp/UGCLanguage/editorGen/EditorGenLib.fcc`. Cho phép resolve sprite Activities
+theo fileId trong `Assets/Sprites/NewAssets/`, giữ đường dẫn khai báo để truy vết.
+Sprite Activities có tiền tố UIComponents cũ được resolve ở đường dẫn bỏ tiền tố
+đó; PetPointIcon → DMMPointIcon chỉ khi metadata xác nhận cùng fileId.
+Đây là scope bổ sung cho Activities; không cấp quyền đọc HUD khác, Compensate,
+hay dữ liệu giftcode ngoài phép chiếu ID/Reward hiện hành. Game vẫn chỉ đọc.
+
 ## Quy tắc cứng
 
 - Site chạy tĩnh trong `dist/`: không thêm Express, server ứng dụng, framework hay build step.
-- `C:\_Code\craftland\StealAPet` là project game chỉ đọc. Chỉ đọc CSV trong `Assets/CSV/**`, file `.fcg`, `Assets/HUDs/<UI đã đăng ký>.ui`, các sprite mà UI tham chiếu hoặc code Collection gán lúc chạy, và `.png.meta` tương ứng của đúng các sprite UI đó để lấy 9-grid. Phase hiện tại chỉ đăng ký `PetsCollection.ui`. Được đọc `Assets/Localization/key.csv` nhưng chỉ trích các key UI Collection thực sự dùng vào dữ liệu dẫn xuất; không mirror toàn bộ file. Được đọc file/bảng định nghĩa `EResSprite`/`Res.Sprite` để ánh xạ sprite runtime cho UI này. Không chạy Studio/build, không tạo file, không dùng lệnh Git ghi ở repo game.
+- `C:\_Code\craftland\StealAPet` là project game chỉ đọc. Chỉ đọc CSV trong `Assets/CSV/**`, file `.fcg`, `Assets/HUDs/<UI đã đăng ký>.ui`, các sprite mà UI tham chiếu hoặc code Collection gán lúc chạy, và `.png.meta` tương ứng của đúng các sprite UI đó để lấy 9-grid. Đã đăng ký `PetsCollection.ui` và `Activities.ui` (scope Activities bổ sung ở trên). Được đọc `Assets/Localization/key.csv` nhưng chỉ trích các key UI đã đăng ký thực sự dùng vào dữ liệu dẫn xuất; không mirror toàn bộ file. Được đọc file/bảng định nghĩa `EResSprite`/`Res.Sprite` để ánh xạ sprite runtime cho UI này. Không chạy Studio/build, không tạo file, không dùng lệnh Git ghi ở repo game.
 - Mọi script sync chỉ ghi trong project GDD; giữ guard đích output. `giftcode.csv` là dữ liệu vận hành: chỉ được chiếu các cột `ID` và `Reward` cho Gift ID đang được config hiển thị tham chiếu; không ghi hoặc render Code, Name, Limit, Start, End, Reuse hay Rebirth. Không đọc `Compensate/**` hoặc asset game ngoài sprite được `.ui` đã đăng ký hoặc code Collection tham chiếu làm nguồn sync.
 - Với sprite Collection đã move/rename, được tra `fileId` trong `.png.meta` của `Assets/Sprites/NewAssets/` theo thư mục người dùng xác nhận. Chỉ copy PNG có ID khớp tham chiếu Collection; giữ đường dẫn khai báo cũ để truy vết, không mirror metadata/asset không liên quan.
 - Commit message bắt buộc theo Conventional Commits 1.0.0 (`type(scope): description`); chi tiết ở `AGENTS.md`.
@@ -44,11 +58,11 @@ Mở `http://localhost:8080`. Sync chỉ đọc allowlist CSV và `.fcg` từ ch
 - `design/00-decisions.md`: quyết định đã chốt và trạng thái nguồn.
 - `design/20-dev-action-items.md`: việc kỹ thuật còn mở có bằng chứng.
 - `tools/sync-source-data.mjs`: đọc config được allowlist, tạo snapshot và JSON dẫn xuất.
-- `tools/sync-ui-preview.mjs`: chỉ đọc `PetsCollection.ui`, `.fcg` liên quan, key localization Collection, sprite UI/runtime và `.png.meta` tương ứng trong allowlist; tạo dữ liệu UI Preview tách riêng, không đọc giftcode/compensation.
+- `tools/sync-ui-preview.mjs`: xuất các UI đã đăng ký theo allowlist; `--screen activities` chỉ sync Activities. Collection không đọc giftcode; Activities chỉ chiếu ID/Reward cho Gift đang được config tham chiếu. Không đọc compensation.
 - `plans/PLAN-ui-proposal.md`: spec chính của UI Proposal. Nguồn patch do GDD sở hữu ở `design/ui-proposals/<screen>/<id>.json`; PNG mới ở `assets/` cùng screen, border 9-grid phải khai báo.
 - `tools/sync-ui-proposals.mjs`: validate toàn bộ batch trước khi ghi, áp patch lên snapshot UI; output cây/diff/resource/prompt/registry và sprite chỉ trong `dist/`. Không mở rộng allowlist game.
 - `tools/templates/ui-proposal-prompt.md`: template prompt cho phiên Codex riêng tại repo game; GDD chỉ sinh văn bản, không thực thi thay đổi game.
-- `dist/app-ui-shared.js`, `dist/app-uiproposal.js`: stage/resource dùng chung và trang so sánh đề xuất; chỉ Collection được đăng ký.
+- `dist/app-ui-shared.js`, `dist/app-uiproposal.js`: stage/resource dùng chung và trang so sánh đề xuất; Collection và Activities được đăng ký trong Preview; Proposal hiện chỉ Collection.
 - `dist/index.html`, `dist/styles.css`: shell, sidebar và layout.
 - `dist/app-core.js`: helper và các trang tổng quan/progression/roster/cadence.
 - `dist/app-*.js`: module theo trang hoặc nhóm trang liên quan; router ở `app-router.js`.
@@ -59,7 +73,7 @@ Mở `http://localhost:8080`. Sync chỉ đọc allowlist CSV và `.fcg` từ ch
 Khi mapping UI game sang website hoặc sửa parity, đọc skill
 [`map-game-ui`](design/skills/map-game-ui/SKILL.md) và các reference phù hợp.
 Skill ghi rule mapping, regression từ commit Collection và acceptance gates;
-không tự mở rộng allowlist nguồn. UI mới ngoài Collection vẫn cần đăng ký
+không tự mở rộng allowlist nguồn. UI ngoài các màn đã đăng ký vẫn cần đăng ký
 phạm vi trước khi đọc nguồn game tương ứng.
 
 1. Đọc plan, README và các module/trang liên quan.

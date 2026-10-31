@@ -8,6 +8,13 @@
       "rules": "./data/ui/collection-rules.json"
     },
     {
+      "id": "activities",
+      "name": "Activities",
+      "status": "ready",
+      "data": "./data/ui/activities.json",
+      "rules": "./data/ui/activities-rules.json"
+    },
+    {
       "id": "shop",
       "name": "Shop",
       "status": "planned"

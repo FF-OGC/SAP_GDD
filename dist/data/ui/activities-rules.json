@@ -1,0 +1,2618 @@
+{
+  "sourceCommit": "471a62bb8a55ad735cfeebf5a0a315730df90daa",
+  "sourceFiles": [
+    {
+      "file": "Assets/Scripts/HUDs/HudActivities.fcg",
+      "sha256": "533a3880df0c79beda57b9133adcebe72f0cc36e55107342ddab1e23fe5ac38b"
+    },
+    {
+      "file": "Assets/Scripts/Manager/ActivitiesManager.fcg",
+      "sha256": "78e1f97a2a4fa640479cd2ecbaa3f6b09a9d958a3a0219aa6abbc2154dd9e761"
+    },
+    {
+      "file": "Assets/Scripts/Configs/ActivitiesConfigs.fcg",
+      "sha256": "1bdcf713175bf08bb5dabc849edf054ef776057455990eb800a833ec41a0770c"
+    },
+    {
+      "file": "Assets/Scripts/Configs/DailyRewardConfigs.fcg",
+      "sha256": "2926b382e5ab238eea420b0414cd3d7db1534579c63ba18c2222aea26a59920f"
+    },
+    {
+      "file": "Assets/Scripts/Manager/DailyRewardManager.fcg",
+      "sha256": "b389e6953d8b349817a30b33680cb1ef7f07bc7f5e586804a9e23c53397bbcde"
+    },
+    {
+      "file": "Assets/Scripts/Configs/MilestoneConfig.fcg",
+      "sha256": "0af2ea3b3a0b51c725f1f6f6153f88b8b65651cec701e882ab9c89e668a82920"
+    },
+    {
+      "file": "Assets/Scripts/Configs/MailConfigs.fcg",
+      "sha256": "c313554b773aa781e5c6844ef4368af059bc175ca7fafafb47e12b5b729c1289"
+    },
+    {
+      "file": "Assets/Scripts/Configs/ItemConfigs.fcg",
+      "sha256": "b1414e65a378db22c96858e53485a60fed2b96a6bdfa56afbb1a34b4369ee135"
+    },
+    {
+      "file": "Assets/Scripts/Utils/UIUtils.fcg",
+      "sha256": "e97b481d8ac790acf5651808c7421d4393c6be7d7264154fad95cfeee15ebcfe"
+    },
+    {
+      "file": "Assets/Scripts/Utils/BigNumberHandler.fcg",
+      "sha256": "404cdbc68440f4654a085a7adc2cbc5ae462b008fd3cac7397409bca1249f46e"
+    },
+    {
+      "file": "Assets/Scripts/Utils/WeightedRandom.fcg",
+      "sha256": "09880ba181a1f40c29f20cee8b053760a2a3888e5ffcf9acc9927ef27be88b43"
+    },
+    {
+      "file": "Assets/Scripts/Configs/PetConfigs.fcg",
+      "sha256": "b8b9da79606e10c84027fefcb364682b3d97cc82b4fd534d83860125f528d19c"
+    },
+    {
+      "file": "Assets/Scripts/Configs/MutationConfigs.fcg",
+      "sha256": "ad07f8876fb30048ae88e296530edbeba6e574531173aba4d9ba129cb5123155"
+    },
+    {
+      "file": "Assets/Scripts/Configs/WeatherConfigs.fcg",
+      "sha256": "0964865f0c17d7f73ff738d6fa792fa64cc0b187ac10b5ede4028fd29755b7db"
+    },
+    {
+      "file": "Assets/Scripts/Configs/MutagenConfigs.fcg",
+      "sha256": "c4b6990f03d0337411279a6d592fedb54236145a3a91ae4f6e16725ac7d016d6"
+    },
+    {
+      "file": "Assets/Scripts/Configs/WeatherGenConfigs.fcg",
+      "sha256": "a54800edd9de4ffc167cca6b2098c5de1837c31c33e4aa79262bb4b00335f404"
+    },
+    {
+      "file": "ProjectSettings/ResourceRegisteration.asset",
+      "sha256": "9166b4e138c086e0cb2c13b2bb2cc205fc7c682fcb3e0bd23e0f9e0fc0f2a01b"
+    },
+    {
+      "file": "Temp/UGCLanguage/editorGen/EditorGenLib.fcc",
+      "sha256": "9a3eeef2b3509b10cf16d0bf1c841dde458bf7c33b9c72e6abfe6e180c8898ba"
+    }
+  ],
+  "uiSha256": "77c688b6a79bff88416a28ee92774cbd9341945930c9d67cca0aba0087a2306a",
+  "constants": {
+    "REWARD_BG_TOP_DEFAULT_COLOR": "#CFF5FB",
+    "REWARD_BG_BOT_DEFAULT_COLOR": "#F1FAFF",
+    "REWARD_TITLE_DEFAULT_COLOR": "#E5FAFE",
+    "REWARD_TAG_TOP_DEFAULT_COLOR": "#216ABD",
+    "REWARD_TAG_BOT_DEFAULT_COLOR": "#457FDF",
+    "REWARD_AMOUNT_DEFAULT_COLOR": "#1F64C4",
+    "REWARD_DETAILS_DEFAULT_COLOR": "#B9DCF2",
+    "REWARD_DETAILS_SHADOW_DEFAULT_COLOR": "#1F64C4",
+    "REWARD_BG_TOP_CLAIM_COLOR": "#FBF3CF",
+    "REWARD_BG_BOT_CLAIM_COLOR": "#FFFDF1",
+    "REWARD_TITLE_CLAIM_COLOR": "#780016",
+    "REWARD_TAG_TOP_CLAIM_COLOR": "#FFBE00",
+    "REWARD_TAG_BOT_CLAIM_COLOR": "#FFA600",
+    "REWARD_AMOUNT_CLAIM_COLOR": "#C4691F",
+    "REWARD_DETAILS_CLAIM_COLOR": "#FADC91",
+    "REWARD_DETAILS_SHADOW_CLAIM_COLOR": "#C4901F",
+    "REWARD_BG_TOP_SPECIAL_COLOR": "#FBDCCF",
+    "REWARD_BG_BOT_SPECIAL_COLOR": "#FFF5F1",
+    "REWARD_TITLE_SPECIAL_COLOR": "#FEF0E5",
+    "REWARD_TAG_TOP_SPECIAL_COLOR": "#FF9F43",
+    "REWARD_TAG_BOT_SPECIAL_COLOR": "#DF4545",
+    "REWARD_AMOUNT_SPECIAL_COLOR": "#C4491F",
+    "REWARD_DETAILS_SPECIAL_COLOR": "#F2C9B9",
+    "REWARD_DETAILS_SHADOW_SPECIAL_COLOR": "#C41F1F",
+    "DAILY_REWARD_CLAIMABLE_WIDGET_COLOR": "#D7FFE3",
+    "DAILY_REWARD_CLAIMABLE_DAY_TOP_COLOR": "#04F730",
+    "DAILY_REWARD_CLAIMABLE_DAY_BOTTOM_COLOR": "#0FD100",
+    "DAILY_REWARD_CLAIMABLE_DAY_LABEL_COLOR": "#E5FAFE",
+    "DAILY_REWARD_CLAIMABLE_AMOUNT_COLOR": "#2EC41F",
+    "DAILY_REWARD_CLAIMABLE_DETAILS_TOP_COLOR": "#0FD100",
+    "DAILY_REWARD_CLAIMABLE_DETAILS_BOTTOM_COLOR": "#04F730",
+    "DAILY_REWARD_CLAIMABLE_DETAILS_SHADOW_COLOR": "#0F7C04",
+    "DAILY_REWARD_DEFAULT_WIDGET_COLOR": "#FFFFFF",
+    "DAILY_REWARD_DEFAULT_DAY_TOP_COLOR": "#5B91EA",
+    "DAILY_REWARD_DEFAULT_DAY_BOTTOM_COLOR": "#4F7DB0",
+    "DAILY_REWARD_DEFAULT_DAY_LABEL_COLOR": "#E5FAFE",
+    "DAILY_REWARD_DEFAULT_AMOUNT_COLOR": "#1F64C4",
+    "DAILY_REWARD_DEFAULT_DETAILS_TOP_COLOR": "#4F7DB0",
+    "DAILY_REWARD_DEFAULT_DETAILS_BOTTOM_COLOR": "#5B91EA",
+    "DAILY_REWARD_DEFAULT_DETAILS_SHADOW_COLOR": "#0D4289",
+    "DAILY_REWARD_FINAL_WIDGET_COLOR": "#D7FFFF",
+    "DAILY_REWARD_FINAL_DAY_TOP_COLOR": "#00FFFF",
+    "DAILY_REWARD_FINAL_DAY_BOTTOM_COLOR": "#0081FF",
+    "DAILY_REWARD_FINAL_DAY_LABEL_COLOR": "#FEF0E5",
+    "DAILY_REWARD_FINAL_AMOUNT_COLOR": "#1F64C4",
+    "DAILY_REWARD_FINAL_DETAILS_TOP_COLOR": "#0081FF",
+    "DAILY_REWARD_FINAL_DETAILS_BOTTOM_COLOR": "#00FFFF",
+    "DAILY_REWARD_FINAL_DETAILS_SHADOW_COLOR": "#0D4289",
+    "ACTIVE_TEXT_COLOR": "#FFFFFF",
+    "DEFAULT_TEXT_COLOR": "#1F64C4",
+    "DEFAULT_REWARD_COLOR": "#FFFFFF",
+    "DMMPOINT_BG_COLOR": "#EA70FF",
+    "DEFAULT_BG_REWARD_COLOR": "#00A2FF",
+    "DEFAULT_MILESTONE_COLOR": "#1F64C4",
+    "RECEIVE_MILESTONE_COLOR": "#FFD515",
+    "DEFAULT_REWARD_ICON_SIZE": 90,
+    "PET_REWARD_ICON_SIZE": 120,
+    "DAILY_REWARD_FINAL_ICON_SIZE": 190,
+    "DAILY_REWARD_FINAL_PET_ICON_SIZE": 290,
+    "PRIORITY_CLAIMABLE": 1,
+    "PRIORITY_INPROGRESS": 2,
+    "PRIORITY_CLAIMED": 3,
+    "MISSION_RENDER_BATCH_SIZE": 5,
+    "TAB_DAILY_REWARDS": 0,
+    "TAB_DAILY_MISSIONS": 1,
+    "TAB_DAILY_SPIN": 2,
+    "TAB_DAILY_EVENT": 3,
+    "DAILY_MISSION_MILESTONE_ID": 11,
+    "MIN_GIFT_MONEY_TIME": 30100,
+    "MAX_GIFT_MONEY_TIME": 80020,
+    "MAX_SPINNING_WHEEL": 10,
+    "ROTATE_DURATION": 7000,
+    "_MissionsRenderToken": 0
+  },
+  "managerConstants": {
+    "MAX_LOGIN_REWARD_DAY": 7,
+    "MAX_LOGIN_REWARD_EVENT_DAY": 3
+  },
+  "maxCycleDays": 7,
+  "runtimeAssignments": [
+    {
+      "target": "// _DailyEventTabButton",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "ActivitiesManager.IsTimeAvailableDailyEvent()",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:227"
+    },
+    {
+      "target": "_ActivitiesHUD",
+      "widgetType": "CustomUI",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:229"
+    },
+    {
+      "target": "_ActivitiesHUD",
+      "widgetType": "CustomUI",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:243"
+    },
+    {
+      "target": "_ActivitiesWidget",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:252"
+    },
+    {
+      "target": "_ActivitiesWidget",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:262"
+    },
+    {
+      "target": "_RewardsContent",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "tabIndex == TAB_DAILY_REWARDS",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:298"
+    },
+    {
+      "target": "_MissionsContent",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "tabIndex == TAB_DAILY_MISSIONS",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:299"
+    },
+    {
+      "target": "_SpinContent",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "tabIndex == TAB_DAILY_SPIN",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:300"
+    },
+    {
+      "target": "_EventContent",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "tabIndex == TAB_DAILY_EVENT",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:301"
+    },
+    {
+      "target": "_ClaimAllButton",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "false // tabIndex == TAB_DAILY_MISSIONS",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:303"
+    },
+    {
+      "target": "_ComingSoonLabel",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:304"
+    },
+    {
+      "target": "tabButton",
+      "widgetType": "UIWidgetButton",
+      "property": "SpriteResource",
+      "expression": "EResSprite.SelectTabBG",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:326"
+    },
+    {
+      "target": "text",
+      "widgetType": "UIWidgetLabel",
+      "property": "Color",
+      "expression": "ACTIVE_TEXT_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:327"
+    },
+    {
+      "target": "tabButton",
+      "widgetType": "UIWidgetButton",
+      "property": "SpriteResource",
+      "expression": "EResSprite.NormalTabBG",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:331"
+    },
+    {
+      "target": "text",
+      "widgetType": "UIWidgetLabel",
+      "property": "Color",
+      "expression": "DEFAULT_TEXT_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:332"
+    },
+    {
+      "target": "icon",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:343"
+    },
+    {
+      "target": "icon",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:347"
+    },
+    {
+      "target": "icon",
+      "widgetType": "UIWidget",
+      "property": "SizeDelta",
+      "expression": "Vector2 {iconSize, iconSize}",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:353"
+    },
+    {
+      "target": "icon",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:371"
+    },
+    {
+      "target": "rewardDetail",
+      "widgetType": "UIWidgetImage",
+      "property": "Color",
+      "expression": "DEFAULT_BG_REWARD_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:376"
+    },
+    {
+      "target": "icon",
+      "widgetType": "UIWidgetImage",
+      "property": "Color",
+      "expression": "DEFAULT_REWARD_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:378"
+    },
+    {
+      "target": "icon",
+      "widgetType": "UIWidgetImage",
+      "property": "SpriteName",
+      "expression": "EResSprite.MoneyIcon",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:381"
+    },
+    {
+      "target": "amountLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Content",
+      "expression": "BigNumberHandler.ConvertMoneyRankValueToMoneyFormat(value)",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:383"
+    },
+    {
+      "target": "icon",
+      "widgetType": "UIWidgetImage",
+      "property": "SpriteName",
+      "expression": "EResSprite.PetCoinIcon",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:385"
+    },
+    {
+      "target": "amountLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Content",
+      "expression": "\"x\" + rewardQuantity * value",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:387"
+    },
+    {
+      "target": "icon",
+      "widgetType": "UIWidgetImage",
+      "property": "SpriteName",
+      "expression": "EResSprite.DustIcon",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:389"
+    },
+    {
+      "target": "amountLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Content",
+      "expression": "\"x\" + rewardQuantity * value",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:391"
+    },
+    {
+      "target": "icon",
+      "widgetType": "UIWidgetImage",
+      "property": "SpriteName",
+      "expression": "EResSprite.MoneyIcon",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:393"
+    },
+    {
+      "target": "// amountLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Content",
+      "expression": "\"x\" + FormatStr(\"%.1f\", List<object>{hours}) + \"H\"",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:395"
+    },
+    {
+      "target": "amountLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Content",
+      "expression": "BigNumberHandler.ToDisplayFormat(claimMoney, 1)",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:409"
+    },
+    {
+      "target": "icon",
+      "widgetType": "UIWidgetImage",
+      "property": "SpriteName",
+      "expression": "Res.Sprite[PetConfigs.GetPetThumbnailKey(petId) as EResKeySprite]",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:412"
+    },
+    {
+      "target": "// icon",
+      "widgetType": "UIWidgetImage",
+      "property": "Color",
+      "expression": "PetConfigs.GetRarityColor(PetConfigs.GetPetRarity(petId))",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:413"
+    },
+    {
+      "target": "amountLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Content",
+      "expression": "\"x\" + rewardQuantity",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:414"
+    },
+    {
+      "target": "icon",
+      "widgetType": "UIWidgetImage",
+      "property": "SpriteName",
+      "expression": "Res.Sprite[spriteName as EResKeySprite]",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:417"
+    },
+    {
+      "target": "amountLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Content",
+      "expression": "\"x\" + rewardQuantity",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:418"
+    },
+    {
+      "target": "icon",
+      "widgetType": "UIWidgetImage",
+      "property": "SpriteName",
+      "expression": "EResSprite.MOODENG",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:420"
+    },
+    {
+      "target": "icon",
+      "widgetType": "UIWidgetImage",
+      "property": "Color",
+      "expression": "#111111",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:421"
+    },
+    {
+      "target": "amountLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Content",
+      "expression": "\"x\" + rewardQuantity",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:422"
+    },
+    {
+      "target": "icon",
+      "widgetType": "UIWidgetImage",
+      "property": "SpriteName",
+      "expression": "EResSprite.SpinIcon",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:424"
+    },
+    {
+      "target": "amountLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Content",
+      "expression": "\"x\" + rewardQuantity * value",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:426"
+    },
+    {
+      "target": "icon",
+      "widgetType": "UIWidgetImage",
+      "property": "SpriteName",
+      "expression": "Res.Sprite[MutationConfigs.GetMutationIconKey(mutationId) as EResKeySprite]",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:430"
+    },
+    {
+      "target": "amountLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Content",
+      "expression": "\"x\" + rewardQuantity",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:431"
+    },
+    {
+      "target": "icon",
+      "widgetType": "UIWidgetImage",
+      "property": "SpriteName",
+      "expression": "Res.Sprite[WeatherConfigs.GetWeatherEffectIcon(weather) as EResKeySprite]",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:435"
+    },
+    {
+      "target": "amountLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Content",
+      "expression": "\"x\" + rewardQuantity",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:436"
+    },
+    {
+      "target": "icon",
+      "widgetType": "UIWidgetImage",
+      "property": "SpriteName",
+      "expression": "EResSprite.DuplicateTicket",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:438"
+    },
+    {
+      "target": "amountLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Content",
+      "expression": "\"x\" + rewardQuantity * value",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:440"
+    },
+    {
+      "target": "amountLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Content",
+      "expression": "\"\"",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:442"
+    },
+    {
+      "target": "glowIcon",
+      "widgetType": "UIWidgetImage",
+      "property": "Color",
+      "expression": "ItemConfigs.GetItemRarityColor(itemType, rewardValue[0])",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:447"
+    },
+    {
+      "target": "contentLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Content",
+      "expression": "ItemConfigs.GetItemDescription(itemType, rewardValue[0])",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:457"
+    },
+    {
+      "target": "_DailyRewardsAlertIcon",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "_CanClaimDailyRewards",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:481"
+    },
+    {
+      "target": "_DailyMissionsAlertIcon",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "_CanClaimDailyMissions",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:482"
+    },
+    {
+      "target": "_DailySpinAlertIcon",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "_CanClaimDailySpin",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:483"
+    },
+    {
+      "target": "_DailyEventIcon",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "_CanClaimDailyEvent",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:484"
+    },
+    {
+      "target": "rewardItem",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:501"
+    },
+    {
+      "target": "rewardItem",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:505"
+    },
+    {
+      "target": "rewardWidget",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:515"
+    },
+    {
+      "target": "dayLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Content",
+      "expression": "LocString{\"HUD_ACTIVITIES_DAY\", {day}}",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:556"
+    },
+    {
+      "target": "claimedButton",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "isClaimed",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:571"
+    },
+    {
+      "target": "rewardWidget",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:574"
+    },
+    {
+      "target": "rewardIcon",
+      "widgetType": "UIWidget",
+      "property": "SizeDelta",
+      "expression": "Vector2 {iconSize, iconSize}",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:599"
+    },
+    {
+      "target": "rewardWidget",
+      "widgetType": "UIWidgetImage",
+      "property": "Color",
+      "expression": "DAILY_REWARD_CLAIMABLE_WIDGET_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:611"
+    },
+    {
+      "target": "dayWidget",
+      "widgetType": "UIWidgetImage",
+      "property": "GradientTop",
+      "expression": "DAILY_REWARD_CLAIMABLE_DAY_TOP_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:612"
+    },
+    {
+      "target": "dayWidget",
+      "widgetType": "UIWidgetImage",
+      "property": "GradientBottom",
+      "expression": "DAILY_REWARD_CLAIMABLE_DAY_BOTTOM_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:613"
+    },
+    {
+      "target": "dayLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Color",
+      "expression": "DAILY_REWARD_CLAIMABLE_DAY_LABEL_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:614"
+    },
+    {
+      "target": "rewardAmountLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Color",
+      "expression": "DAILY_REWARD_CLAIMABLE_AMOUNT_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:615"
+    },
+    {
+      "target": "rewardDetails",
+      "widgetType": "UIWidgetImage",
+      "property": "Color",
+      "expression": "#FFFFFF",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:616"
+    },
+    {
+      "target": "rewardDetails",
+      "widgetType": "UIWidgetImage",
+      "property": "GradientTop",
+      "expression": "DAILY_REWARD_CLAIMABLE_DETAILS_TOP_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:617"
+    },
+    {
+      "target": "rewardDetails",
+      "widgetType": "UIWidgetImage",
+      "property": "GradientBottom",
+      "expression": "DAILY_REWARD_CLAIMABLE_DETAILS_BOTTOM_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:618"
+    },
+    {
+      "target": "contentLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "ShadowColor",
+      "expression": "DAILY_REWARD_CLAIMABLE_DETAILS_SHADOW_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:619"
+    },
+    {
+      "target": "rewardWidget",
+      "widgetType": "UIWidgetImage",
+      "property": "Color",
+      "expression": "DAILY_REWARD_FINAL_WIDGET_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:621"
+    },
+    {
+      "target": "dayWidget",
+      "widgetType": "UIWidgetImage",
+      "property": "GradientTop",
+      "expression": "DAILY_REWARD_FINAL_DAY_TOP_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:622"
+    },
+    {
+      "target": "dayWidget",
+      "widgetType": "UIWidgetImage",
+      "property": "GradientBottom",
+      "expression": "DAILY_REWARD_FINAL_DAY_BOTTOM_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:623"
+    },
+    {
+      "target": "dayLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Color",
+      "expression": "DAILY_REWARD_FINAL_DAY_LABEL_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:624"
+    },
+    {
+      "target": "rewardAmountLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Color",
+      "expression": "DAILY_REWARD_FINAL_AMOUNT_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:625"
+    },
+    {
+      "target": "rewardDetails",
+      "widgetType": "UIWidgetImage",
+      "property": "Color",
+      "expression": "#FFFFFF",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:626"
+    },
+    {
+      "target": "rewardDetails",
+      "widgetType": "UIWidgetImage",
+      "property": "GradientTop",
+      "expression": "DAILY_REWARD_FINAL_DETAILS_TOP_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:627"
+    },
+    {
+      "target": "rewardDetails",
+      "widgetType": "UIWidgetImage",
+      "property": "GradientBottom",
+      "expression": "DAILY_REWARD_FINAL_DETAILS_BOTTOM_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:628"
+    },
+    {
+      "target": "contentLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "ShadowColor",
+      "expression": "DAILY_REWARD_FINAL_DETAILS_SHADOW_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:629"
+    },
+    {
+      "target": "rewardWidget",
+      "widgetType": "UIWidgetImage",
+      "property": "Color",
+      "expression": "DAILY_REWARD_DEFAULT_WIDGET_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:631"
+    },
+    {
+      "target": "dayWidget",
+      "widgetType": "UIWidgetImage",
+      "property": "GradientTop",
+      "expression": "DAILY_REWARD_DEFAULT_DAY_TOP_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:632"
+    },
+    {
+      "target": "dayWidget",
+      "widgetType": "UIWidgetImage",
+      "property": "GradientBottom",
+      "expression": "DAILY_REWARD_DEFAULT_DAY_BOTTOM_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:633"
+    },
+    {
+      "target": "dayLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Color",
+      "expression": "DAILY_REWARD_DEFAULT_DAY_LABEL_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:634"
+    },
+    {
+      "target": "rewardAmountLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Color",
+      "expression": "DAILY_REWARD_DEFAULT_AMOUNT_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:635"
+    },
+    {
+      "target": "rewardDetails",
+      "widgetType": "UIWidgetImage",
+      "property": "Color",
+      "expression": "#FFFFFF",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:636"
+    },
+    {
+      "target": "rewardDetails",
+      "widgetType": "UIWidgetImage",
+      "property": "GradientTop",
+      "expression": "DAILY_REWARD_DEFAULT_DETAILS_TOP_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:637"
+    },
+    {
+      "target": "rewardDetails",
+      "widgetType": "UIWidgetImage",
+      "property": "GradientBottom",
+      "expression": "DAILY_REWARD_DEFAULT_DETAILS_BOTTOM_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:638"
+    },
+    {
+      "target": "contentLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "ShadowColor",
+      "expression": "DAILY_REWARD_DEFAULT_DETAILS_SHADOW_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:639"
+    },
+    {
+      "target": "missionWidget",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:796"
+    },
+    {
+      "target": "missionWidget",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:819"
+    },
+    {
+      "target": "missionWidget",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:845"
+    },
+    {
+      "target": "detailsLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Content",
+      "expression": "missionInfo[\"Description\"] as string",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:912"
+    },
+    {
+      "target": "progressLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Content",
+      "expression": "GetMissionProgressText(currentProgress, targetProgress, missionAction)",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:924"
+    },
+    {
+      "target": "claimButton",
+      "widgetType": "UIWidget",
+      "property": "Priority",
+      "expression": "missionInfo[\"ID\"] as int",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:928"
+    },
+    {
+      "target": "missionWidget",
+      "widgetType": "UIWidget",
+      "property": "Priority",
+      "expression": "missionPriority + missionsCount * PRIORITY_CLAIMABLE",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:938"
+    },
+    {
+      "target": "missionWidget",
+      "widgetType": "UIWidget",
+      "property": "Priority",
+      "expression": "missionPriority + missionsCount * PRIORITY_CLAIMED",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:940"
+    },
+    {
+      "target": "missionWidget",
+      "widgetType": "UIWidget",
+      "property": "Priority",
+      "expression": "missionPriority + missionsCount * PRIORITY_INPROGRESS",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:942"
+    },
+    {
+      "target": "rewardWidget",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:960"
+    },
+    {
+      "target": "rewardWidget",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:972"
+    },
+    {
+      "target": "rewardWidget",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:981"
+    },
+    {
+      "target": "rewardWidget",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:985"
+    },
+    {
+      "target": "_MilestonePointsLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Content",
+      "expression": "LocString{\"HUD_ACTIVITIES_PET_POINTS\", {points}}",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1027"
+    },
+    {
+      "target": "_MilestoneBar",
+      "widgetType": "UIWidgetImage",
+      "property": "FillAmount",
+      "expression": "GetMilestoneFill(points)",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1028"
+    },
+    {
+      "target": "milestoneWidget",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1068"
+    },
+    {
+      "target": "milestoneWidget",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1072"
+    },
+    {
+      "target": "milestoneWidget",
+      "widgetType": "UIWidgetImage",
+      "property": "Color",
+      "expression": "RECEIVE_MILESTONE_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1081"
+    },
+    {
+      "target": "milestoneWidget",
+      "widgetType": "UIWidgetImage",
+      "property": "Color",
+      "expression": "DEFAULT_MILESTONE_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1083"
+    },
+    {
+      "target": "milestoneLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Content",
+      "expression": "\"\" + milestonePoint",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1087"
+    },
+    {
+      "target": "progressLabel",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "!isClaimed",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1140"
+    },
+    {
+      "target": "claimedLabel",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "isClaimed",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1141"
+    },
+    {
+      "target": "button",
+      "widgetType": "UIWidgetButton",
+      "property": "SpriteResource",
+      "expression": "EResSprite.YellowButton",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1157"
+    },
+    {
+      "target": "button",
+      "widgetType": "UIWidgetButton",
+      "property": "Color",
+      "expression": "#FFFFFF",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1158"
+    },
+    {
+      "target": "button",
+      "widgetType": "UIWidgetButton",
+      "property": "SpriteResource",
+      "expression": "EResSprite.BlueButton",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1162"
+    },
+    {
+      "target": "button",
+      "widgetType": "UIWidgetButton",
+      "property": "Color",
+      "expression": "#777777",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1163"
+    },
+    {
+      "target": "label",
+      "widgetType": "UIWidgetLabel",
+      "property": "Content",
+      "expression": "LocString{\"HUD_LUCKY_NUMBEROF_SPIN\", {spinCount}}",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1217"
+    },
+    {
+      "target": "rewardWidget",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1244"
+    },
+    {
+      "target": "dayLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Content",
+      "expression": "LocString{\"HUD_ACTIVITIES_DAY\", {day}}",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1272"
+    },
+    {
+      "target": "rewardWidget",
+      "widgetType": "UIWidgetImage",
+      "property": "Color",
+      "expression": "REWARD_BG_TOP_DEFAULT_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1276"
+    },
+    {
+      "target": "dayWidget",
+      "widgetType": "UIWidgetImage",
+      "property": "GradientTop",
+      "expression": "REWARD_TAG_TOP_DEFAULT_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1277"
+    },
+    {
+      "target": "dayWidget",
+      "widgetType": "UIWidgetImage",
+      "property": "GradientBottom",
+      "expression": "REWARD_TAG_BOT_DEFAULT_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1278"
+    },
+    {
+      "target": "dayLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Color",
+      "expression": "REWARD_TITLE_DEFAULT_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1279"
+    },
+    {
+      "target": "rewardAmountLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Color",
+      "expression": "REWARD_AMOUNT_DEFAULT_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1280"
+    },
+    {
+      "target": "rewardDetails",
+      "widgetType": "UIWidgetImage",
+      "property": "Color",
+      "expression": "REWARD_DETAILS_DEFAULT_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1281"
+    },
+    {
+      "target": "contentLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "ShadowColor",
+      "expression": "REWARD_DETAILS_SHADOW_DEFAULT_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1282"
+    },
+    {
+      "target": "rewardWidget",
+      "widgetType": "UIWidgetImage",
+      "property": "Color",
+      "expression": "REWARD_BG_TOP_CLAIM_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1288"
+    },
+    {
+      "target": "dayWidget",
+      "widgetType": "UIWidgetImage",
+      "property": "GradientTop",
+      "expression": "REWARD_TAG_TOP_CLAIM_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1289"
+    },
+    {
+      "target": "dayWidget",
+      "widgetType": "UIWidgetImage",
+      "property": "GradientBottom",
+      "expression": "REWARD_TAG_BOT_CLAIM_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1290"
+    },
+    {
+      "target": "dayLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Color",
+      "expression": "REWARD_TITLE_CLAIM_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1291"
+    },
+    {
+      "target": "rewardAmountLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Color",
+      "expression": "REWARD_AMOUNT_CLAIM_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1292"
+    },
+    {
+      "target": "rewardDetails",
+      "widgetType": "UIWidgetImage",
+      "property": "Color",
+      "expression": "REWARD_DETAILS_CLAIM_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1293"
+    },
+    {
+      "target": "contentLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "ShadowColor",
+      "expression": "REWARD_DETAILS_SHADOW_CLAIM_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1294"
+    },
+    {
+      "target": "rewardWidget",
+      "widgetType": "UIWidgetImage",
+      "property": "Color",
+      "expression": "REWARD_BG_TOP_SPECIAL_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1298"
+    },
+    {
+      "target": "dayWidget",
+      "widgetType": "UIWidgetImage",
+      "property": "GradientTop",
+      "expression": "REWARD_TAG_TOP_SPECIAL_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1299"
+    },
+    {
+      "target": "dayWidget",
+      "widgetType": "UIWidgetImage",
+      "property": "GradientBottom",
+      "expression": "REWARD_TAG_BOT_SPECIAL_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1300"
+    },
+    {
+      "target": "dayLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Color",
+      "expression": "REWARD_TITLE_SPECIAL_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1301"
+    },
+    {
+      "target": "rewardAmountLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "Color",
+      "expression": "REWARD_AMOUNT_SPECIAL_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1302"
+    },
+    {
+      "target": "rewardDetails",
+      "widgetType": "UIWidgetImage",
+      "property": "Color",
+      "expression": "REWARD_DETAILS_SPECIAL_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1303"
+    },
+    {
+      "target": "contentLabel",
+      "widgetType": "UIWidgetLabel",
+      "property": "ShadowColor",
+      "expression": "REWARD_DETAILS_SHADOW_SPECIAL_COLOR",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1304"
+    },
+    {
+      "target": "claimedButton",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1308"
+    },
+    {
+      "target": "rewardWidget",
+      "widgetType": "UIWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:1311"
+    }
+  ],
+  "itemTypes": {
+    "1": "Pet",
+    "2": "Money",
+    "3": "PetCoin",
+    "4": "RandomPet",
+    "5": "MoneyTime",
+    "6": "RandomSecretPool",
+    "7": "Dust",
+    "8": "DMMPoint",
+    "9": "Spin",
+    "10": "Mutagen",
+    "11": "Meteorite",
+    "12": "Mole",
+    "13": "Ball1",
+    "14": "Ball2",
+    "15": "RarityGem",
+    "16": "WeatherGen",
+    "17": "DuplicateTicket"
+  },
+  "itemIcons": {
+    "Money": "MoneyIcon",
+    "PetCoin": "PetCoinIcon",
+    "Dust": "DustIcon",
+    "MoneyTime": "MoneyIcon",
+    "Spin": "SpinIcon",
+    "DMMPoint": "DMMPointIcon",
+    "RandomSecretPool": "RandomPet",
+    "Meteorite": "GemstoneIcon",
+    "Mole": "MoleGemIcon",
+    "Ball1": "BallGemIcon",
+    "Ball2": "GoldenBootsIcon",
+    "RarityGem": "RarityContractGem",
+    "DuplicateTicket": "DuplicateTicket"
+  },
+  "itemRarities": {
+    "Money": "RARE",
+    "Dust": "EPIC",
+    "PetCoin": "LEGENDARY",
+    "Meteorite": "EPIC",
+    "MoneyTime": "RARE",
+    "Spin": "RARE",
+    "Mutagen": "LEGENDARY",
+    "DMMPoint": "EPIC",
+    "WeatherGen": "LEGENDARY",
+    "DuplicateTicket": "MYTHIC"
+  },
+  "rarityColors": {
+    "COMMON": "#8CFF91",
+    "RARE": "#4CC8FE",
+    "EPIC": "#EA70FF",
+    "LEGENDARY": "#FED868",
+    "MYTHIC": "#FF6F6F",
+    "APEX": "#FF9F43",
+    "LIMITED": "#B3CA1F"
+  },
+  "descriptions": {
+    "Money": "HUD_TITLE_MONEY",
+    "PetCoin": "HUD_REWARD_TITLE_PET_COIN",
+    "Dust": "HUD_TITLE_DUST",
+    "MoneyTime": "HUD_REWARD_TITLE_MONEY_TIME",
+    "RandomPet": "HUD_REWARD_TITLE_RANDOM_PET",
+    "Spin": "HUD_ITEM_SPIN",
+    "Mutagen": "HUD_ITEM_MUTAGEN",
+    "WeatherGen": "HUD_ITEM_WEATHERGEN"
+  },
+  "suffixes": {
+    "1": "",
+    "2": "k",
+    "3": "m",
+    "4": "B",
+    "5": "T",
+    "6": "Q",
+    "7": "Qi",
+    "8": "Sx",
+    "9": "Sp",
+    "10": "Oc",
+    "11": "No",
+    "12": "De",
+    "13": "Ud",
+    "14": "Dd",
+    "15": "Td",
+    "16": "Qad",
+    "17": "Qid",
+    "18": "Sxd",
+    "19": "Spd",
+    "20": "Ocd",
+    "21": "Nod",
+    "22": "Vg",
+    "23": "Uvg",
+    "24": "Dvg",
+    "25": "Tvg",
+    "26": "Qavg",
+    "27": "Qivg",
+    "28": "Sxvg",
+    "29": "Spvg",
+    "30": "Ocvg",
+    "31": "Novg",
+    "32": "Tg",
+    "33": "Utg",
+    "34": "Dtg",
+    "35": "Ttg",
+    "36": "Qatg",
+    "37": "Qitg",
+    "38": "Sxtg",
+    "39": "Sptg",
+    "40": "Octg",
+    "41": "Notg",
+    "42": "Qag",
+    "43": "Uqag",
+    "44": "Dqag",
+    "45": "Tqag",
+    "46": "Qaqag",
+    "47": "Qiqag",
+    "48": "Sxqag",
+    "49": "Spqag",
+    "50": "Ocqag"
+  },
+  "widgetIds": {
+    "Activities": "KVOVUcWb",
+    "ClaimAllButton": "qzbF8eIY",
+    "TabsLayout": "bgQhRCYk",
+    "Rewards": "uxYN1C9y",
+    "Missions": "HwYBIuCN",
+    "MilestonePoints": "UdYpC6ko",
+    "MilestoneBar": "RvVwJCGc",
+    "MilestoneRewardsLayout": "GXCy3HDA",
+    "MissionsLayout": "pMpCSMrt",
+    "ComingSoonLabel": "RTAvwj3e",
+    "Spin": "sVkFISMk",
+    "Event": "je6QGcwK"
+  },
+  "textColors": {
+    "base": "#E5FAFE",
+    "rarity": {
+      "COMMON": "#4CAF50",
+      "RARE": "#00B2FF",
+      "EPIC": "#9C27B0",
+      "LEGENDARY": "#FFC107",
+      "MYTHIC": "#E91E1E",
+      "APEX": "#FF8900",
+      "LIMITED": "#B3CA1F"
+    },
+    "mutation": {
+      "GOLDEN": "#FABF00",
+      "FROZEN": "#80C0FF",
+      "MAGMA": "#FF6650",
+      "CLOVER": "#009E60",
+      "FOSSILIZED": "#A17A57",
+      "SWEETHEART": "#F7B3CD",
+      "CRYSTALLINE": "#8080FF",
+      "WEBBED": "#808080",
+      "FOOTBALL": "#AFAFB0",
+      "RADIOACTIVE": "#79FFC9",
+      "AURORA": "#66FFCC"
+    },
+    "weather": {
+      "SOAKED": "#A5B4FC",
+      "FROST": "#A3E7FC",
+      "GALE": "#A7F3D0",
+      "THUNDERED": "#FFC857",
+      "ECLIPSE": "#B23A3A",
+      "PRISMATIC": "#FF0FA7",
+      "VORTEX": "#52ADAE",
+      "SEQUIN": "#7337FD",
+      "SPARKLE": "#C8C8C8",
+      "AURORA": "#66FFCC"
+    }
+  },
+  "spriteKeys": {
+    "SelectTabBG": "Assets/Sprites/NewAssets/SelectTabBG.png",
+    "NormalTabBG": "Assets/Sprites/NewAssets/NormalTabBG.png",
+    "MoneyIcon": "Assets/Sprites/Icons/MoneyIcon.png",
+    "PetCoinIcon": "Assets/Sprites/Icons/PetCoinIcon.png",
+    "DustIcon": "Assets/Sprites/Icons/DustIconTemp.png",
+    "MOODENG": "Assets/Sprites/Pets/MOODENG.png",
+    "SpinIcon": "Assets/Sprites/Icons/SpinIcon.png",
+    "DuplicateTicket": "Assets/Sprites/Icons/DuplicateTicket.png",
+    "YellowButton": "Assets/Sprites/NewAssets/YellowButton.png",
+    "BlueButton": "Assets/Sprites/NewAssets/BlueButton.png",
+    "SMALLWHALE": "Assets/Sprites/Pets/SMALLWHALE.png",
+    "SummonMYTHIC": "Assets/Sprites/Summon/MYTHIC.png",
+    "SummonLEGENDARY": "Assets/Sprites/Summon/LEGENDARY.png",
+    "SummonEPIC": "Assets/Sprites/Summon/EPIC.png",
+    "Magma": "Assets/Sprites/Mutations/Magma.png",
+    "Golden": "Assets/Sprites/Mutations/Golden.png",
+    "Frozen": "Assets/Sprites/Mutations/Frozen.png",
+    "Sparkle": "Assets/Sprites/Mutations/Sparkle.png",
+    "Thundered": "Assets/Sprites/Mutations/Thundered.png",
+    "ARCTICFOX": "Assets/Sprites/Pets/ARTICFOX.png",
+    "KOMODO": "Assets/Sprites/Pets/KOMODO.png",
+    "AXOLOTLWHITE": "Assets/Sprites/Pets/AXOLOTLWHITE.png",
+    "MEERKAT": "Assets/Sprites/Pets/MEERKAT.png",
+    "MOUSEDEER": "Assets/Sprites/Pets/MOUSEDEER.png",
+    "DMMPointIcon": "Assets/Sprites/Icons/DMMPointIcon.png"
+  },
+  "pets": {
+    "44": {
+      "ID": "44",
+      "Name": "SMALLWHALE",
+      "Rarity": "MYTHIC",
+      "Value": "87925608",
+      "Price": "1229200000000",
+      "Rank": "129",
+      "DustCap": "",
+      "CanFuse": "1",
+      "ExceptionRegion": "",
+      "ReplaceName": "",
+      "GuaranteeWeight": "",
+      "Weight1": "413",
+      "Weight2": "541",
+      "Weight3": "854",
+      "Weight4": "1238",
+      "Weight5": "1451",
+      "Day 1": "SKIP",
+      "Day 2": "SKIP",
+      "Day 3": "SKIP",
+      "Day 4": "SKIP",
+      "Day 5": "SKIP",
+      "Day 6": "SKIP",
+      "Day 7": "SKIP"
+    },
+    "63": {
+      "ID": "63",
+      "Name": "ARCTICFOX",
+      "Rarity": "MYTHIC",
+      "Value": "732604000000",
+      "Price": "604662000000000000",
+      "Rank": "140",
+      "DustCap": "",
+      "CanFuse": "1",
+      "ExceptionRegion": "",
+      "ReplaceName": "",
+      "GuaranteeWeight": "",
+      "Weight1": "412",
+      "Weight2": "541",
+      "Weight3": "854",
+      "Weight4": "1238",
+      "Weight5": "1451",
+      "Day 1": "SKIP",
+      "Day 2": "SKIP",
+      "Day 3": "SKIP",
+      "Day 4": "SKIP",
+      "Day 5": "SKIP",
+      "Day 6": "SKIP",
+      "Day 7": "SKIP"
+    },
+    "76": {
+      "ID": "76",
+      "Name": "KOMODO",
+      "Rarity": "APEX",
+      "Value": "1393561000000",
+      "Price": "1250198253986000000",
+      "Rank": "402",
+      "DustCap": "",
+      "CanFuse": "1",
+      "ExceptionRegion": "",
+      "ReplaceName": "",
+      "GuaranteeWeight": "400",
+      "Weight1": "29",
+      "Weight2": "63",
+      "Weight3": "316",
+      "Weight4": "407",
+      "Weight5": "568",
+      "Day 1": "SKIP",
+      "Day 2": "SKIP",
+      "Day 3": "SKIP",
+      "Day 4": "SKIP",
+      "Day 5": "SKIP",
+      "Day 6": "SKIP",
+      "Day 7": "SKIP"
+    },
+    "82": {
+      "ID": "82",
+      "Name": "AXOLOTLWHITE",
+      "Rarity": "MYTHIC",
+      "Value": "1442917100000",
+      "Price": "1650261695261520000",
+      "Rank": "154",
+      "DustCap": "",
+      "CanFuse": "1",
+      "ExceptionRegion": "",
+      "ReplaceName": "",
+      "GuaranteeWeight": "2",
+      "Weight1": "31",
+      "Weight2": "40",
+      "Weight3": "63",
+      "Weight4": "92",
+      "Weight5": "108",
+      "Day 1": "DOWN",
+      "Day 2": "UP",
+      "Day 3": "UP",
+      "Day 4": "NORMAL",
+      "Day 5": "NORMAL",
+      "Day 6": "NORMAL",
+      "Day 7": "DOWN"
+    },
+    "88": {
+      "ID": "88",
+      "Name": "MEERKAT",
+      "Rarity": "APEX",
+      "Value": "1699768728440",
+      "Price": "2634687335780000000",
+      "Rank": "406",
+      "DustCap": "",
+      "CanFuse": "1",
+      "ExceptionRegion": "",
+      "ReplaceName": "",
+      "GuaranteeWeight": "99",
+      "Weight1": "29",
+      "Weight2": "63",
+      "Weight3": "315",
+      "Weight4": "407",
+      "Weight5": "568",
+      "Day 1": "SKIP",
+      "Day 2": "SKIP",
+      "Day 3": "SKIP",
+      "Day 4": "SKIP",
+      "Day 5": "SKIP",
+      "Day 6": "SKIP",
+      "Day 7": "SKIP"
+    },
+    "95": {
+      "ID": "95",
+      "Name": "MOUSEDEER",
+      "Rarity": "APEX",
+      "Value": "2044391516984",
+      "Price": "3554556702854120000",
+      "Rank": "413",
+      "DustCap": "",
+      "CanFuse": "1",
+      "ExceptionRegion": "",
+      "ReplaceName": "",
+      "GuaranteeWeight": "0",
+      "Weight1": "29",
+      "Weight2": "63",
+      "Weight3": "315",
+      "Weight4": "407",
+      "Weight5": "567",
+      "Day 1": "NORMAL",
+      "Day 2": "DOWN",
+      "Day 3": "DOWN",
+      "Day 4": "UP",
+      "Day 5": "UP",
+      "Day 6": "NORMAL",
+      "Day 7": "NORMAL"
+    }
+  },
+  "dynamicRewards": {
+    "10019": {
+      "icon": "Magma",
+      "rarity": "COMMON",
+      "nameKey": "MUTATION_MAGMA",
+      "textColor": "#FF6650"
+    },
+    "10023": {
+      "icon": "Golden",
+      "rarity": "RARE",
+      "nameKey": "MUTATION_GOLDEN",
+      "textColor": "#FABF00"
+    },
+    "10028": {
+      "icon": "Frozen",
+      "rarity": "RARE",
+      "nameKey": "MUTATION_FROZEN",
+      "textColor": "#80C0FF"
+    },
+    "10029": {
+      "icon": "Sparkle",
+      "rarity": "EPIC",
+      "nameKey": "MUTATION_SPARKLE",
+      "textColor": "#C8C8C8"
+    },
+    "10030": {
+      "icon": "Sparkle",
+      "rarity": "EPIC",
+      "nameKey": "MUTATION_SPARKLE",
+      "textColor": "#C8C8C8"
+    },
+    "10033": {
+      "icon": "Thundered",
+      "rarity": "RARE",
+      "nameKey": "MUTATION_THUNDERED",
+      "textColor": "#FFC857"
+    },
+    "10034": {
+      "icon": "Thundered",
+      "rarity": "RARE",
+      "nameKey": "MUTATION_THUNDERED",
+      "textColor": "#FFC857"
+    },
+    "10035": {
+      "icon": "Thundered",
+      "rarity": "RARE",
+      "nameKey": "MUTATION_THUNDERED",
+      "textColor": "#FFC857"
+    },
+    "10036": {
+      "icon": "Thundered",
+      "rarity": "RARE",
+      "nameKey": "MUTATION_THUNDERED",
+      "textColor": "#FFC857"
+    },
+    "10037": {
+      "icon": "Thundered",
+      "rarity": "RARE",
+      "nameKey": "MUTATION_THUNDERED",
+      "textColor": "#FFC857"
+    }
+  },
+  "dailyRewards": [
+    {
+      "ID": "1",
+      "Day": "1",
+      "UserType": "New",
+      "RebirthLevel": "1",
+      "Gift": "10017"
+    },
+    {
+      "ID": "2",
+      "Day": "2",
+      "UserType": "New",
+      "RebirthLevel": "1",
+      "Gift": "10016"
+    },
+    {
+      "ID": "3",
+      "Day": "3",
+      "UserType": "New",
+      "RebirthLevel": "1",
+      "Gift": "10018"
+    },
+    {
+      "ID": "4",
+      "Day": "4",
+      "UserType": "New",
+      "RebirthLevel": "1",
+      "Gift": "10019"
+    },
+    {
+      "ID": "5",
+      "Day": "5",
+      "UserType": "New",
+      "RebirthLevel": "1",
+      "Gift": "10020"
+    },
+    {
+      "ID": "6",
+      "Day": "6",
+      "UserType": "New",
+      "RebirthLevel": "1",
+      "Gift": "10021"
+    },
+    {
+      "ID": "7",
+      "Day": "7",
+      "UserType": "New",
+      "RebirthLevel": "1",
+      "Gift": "10022"
+    },
+    {
+      "ID": "29",
+      "Day": "1",
+      "UserType": "Active",
+      "RebirthLevel": "1",
+      "Gift": "10025"
+    },
+    {
+      "ID": "30",
+      "Day": "2",
+      "UserType": "Active",
+      "RebirthLevel": "1",
+      "Gift": "10049"
+    },
+    {
+      "ID": "31",
+      "Day": "3",
+      "UserType": "Active",
+      "RebirthLevel": "1",
+      "Gift": "10024"
+    },
+    {
+      "ID": "32",
+      "Day": "4",
+      "UserType": "Active",
+      "RebirthLevel": "1",
+      "Gift": "10026"
+    },
+    {
+      "ID": "33",
+      "Day": "5",
+      "UserType": "Active",
+      "RebirthLevel": "1",
+      "Gift": "10023"
+    },
+    {
+      "ID": "34",
+      "Day": "6",
+      "UserType": "Active",
+      "RebirthLevel": "1",
+      "Gift": "10028"
+    },
+    {
+      "ID": "35",
+      "Day": "7",
+      "UserType": "Active",
+      "RebirthLevel": "1",
+      "Gift": "10050"
+    },
+    {
+      "ID": "8",
+      "Day": "1",
+      "UserType": "Revival",
+      "RebirthLevel": "1",
+      "Gift": "10030"
+    },
+    {
+      "ID": "9",
+      "Day": "2",
+      "UserType": "Revival",
+      "RebirthLevel": "1",
+      "Gift": "10031"
+    },
+    {
+      "ID": "10",
+      "Day": "3",
+      "UserType": "Revival",
+      "RebirthLevel": "1",
+      "Gift": "10032"
+    },
+    {
+      "ID": "11",
+      "Day": "4",
+      "UserType": "Revival",
+      "RebirthLevel": "1",
+      "Gift": "10033"
+    },
+    {
+      "ID": "12",
+      "Day": "5",
+      "UserType": "Revival",
+      "RebirthLevel": "1",
+      "Gift": "10034"
+    },
+    {
+      "ID": "13",
+      "Day": "6",
+      "UserType": "Revival",
+      "RebirthLevel": "1",
+      "Gift": "10036"
+    },
+    {
+      "ID": "14",
+      "Day": "7",
+      "UserType": "Revival",
+      "RebirthLevel": "1",
+      "Gift": "10035"
+    },
+    {
+      "ID": "15",
+      "Day": "1",
+      "UserType": "Revival",
+      "RebirthLevel": "8",
+      "Gift": "10051"
+    },
+    {
+      "ID": "16",
+      "Day": "2",
+      "UserType": "Revival",
+      "RebirthLevel": "8",
+      "Gift": "10052"
+    },
+    {
+      "ID": "17",
+      "Day": "3",
+      "UserType": "Revival",
+      "RebirthLevel": "8",
+      "Gift": "10053"
+    },
+    {
+      "ID": "18",
+      "Day": "4",
+      "UserType": "Revival",
+      "RebirthLevel": "8",
+      "Gift": "10054"
+    },
+    {
+      "ID": "19",
+      "Day": "5",
+      "UserType": "Revival",
+      "RebirthLevel": "8",
+      "Gift": "10055"
+    },
+    {
+      "ID": "20",
+      "Day": "6",
+      "UserType": "Revival",
+      "RebirthLevel": "8",
+      "Gift": "10057"
+    },
+    {
+      "ID": "21",
+      "Day": "7",
+      "UserType": "Revival",
+      "RebirthLevel": "8",
+      "Gift": "10056"
+    },
+    {
+      "ID": "22",
+      "Day": "1",
+      "UserType": "Revival",
+      "RebirthLevel": "16",
+      "Gift": "10058"
+    },
+    {
+      "ID": "23",
+      "Day": "2",
+      "UserType": "Revival",
+      "RebirthLevel": "16",
+      "Gift": "10059"
+    },
+    {
+      "ID": "24",
+      "Day": "3",
+      "UserType": "Revival",
+      "RebirthLevel": "16",
+      "Gift": "10060"
+    },
+    {
+      "ID": "25",
+      "Day": "4",
+      "UserType": "Revival",
+      "RebirthLevel": "16",
+      "Gift": "10061"
+    },
+    {
+      "ID": "26",
+      "Day": "5",
+      "UserType": "Revival",
+      "RebirthLevel": "16",
+      "Gift": "10062"
+    },
+    {
+      "ID": "27",
+      "Day": "6",
+      "UserType": "Revival",
+      "RebirthLevel": "16",
+      "Gift": "10064"
+    },
+    {
+      "ID": "28",
+      "Day": "7",
+      "UserType": "Revival",
+      "RebirthLevel": "16",
+      "Gift": "10063"
+    }
+  ],
+  "missions": [
+    {
+      "ID": "1",
+      "Day": "0",
+      "Type": "All",
+      "Description": "MISSION_STEAL",
+      "Action": "StealPet",
+      "TargetValue": "1",
+      "TargetCondition": "",
+      "RewardType": "7|8",
+      "RewardValue": "10|5",
+      "Priority": "12"
+    },
+    {
+      "ID": "2",
+      "Day": "0",
+      "Type": "All",
+      "Description": "MISSION_STEAL",
+      "Action": "StealPet",
+      "TargetValue": "3",
+      "TargetCondition": "",
+      "RewardType": "7|8",
+      "RewardValue": "50|20",
+      "Priority": "13"
+    },
+    {
+      "ID": "3",
+      "Day": "0",
+      "Type": "All",
+      "Description": "MISSION_HIT",
+      "Action": "HitPlayer",
+      "TargetValue": "10",
+      "TargetCondition": "",
+      "RewardType": "2|8",
+      "RewardValue": "20050|5",
+      "Priority": "9"
+    },
+    {
+      "ID": "4",
+      "Day": "0",
+      "Type": "All",
+      "Description": "MISSION_BUY_PET",
+      "Action": "BuyPets",
+      "TargetValue": "1",
+      "TargetCondition": "",
+      "RewardType": "2|8",
+      "RewardValue": "20020|5",
+      "Priority": "10"
+    },
+    {
+      "ID": "5",
+      "Day": "0",
+      "Type": "All",
+      "Description": "MISSION_BUY_PET",
+      "Action": "BuyPets",
+      "TargetValue": "5",
+      "TargetCondition": "",
+      "RewardType": "2|8",
+      "RewardValue": "30050|10",
+      "Priority": "11"
+    },
+    {
+      "ID": "6",
+      "Day": "0",
+      "Type": "All",
+      "Description": "MISSION_FUSION",
+      "Action": "FusionPets",
+      "TargetValue": "1",
+      "TargetCondition": "",
+      "RewardType": "7|8",
+      "RewardValue": "10|5",
+      "Priority": "14"
+    },
+    {
+      "ID": "7",
+      "Day": "0",
+      "Type": "All",
+      "Description": "MISSION_FUSION",
+      "Action": "FusionPets",
+      "TargetValue": "3",
+      "TargetCondition": "",
+      "RewardType": "7|8",
+      "RewardValue": "20|15",
+      "Priority": "15"
+    },
+    {
+      "ID": "8",
+      "Day": "0",
+      "Type": "All",
+      "Description": "MISSION_GET_PETS",
+      "Action": "GetPets",
+      "TargetValue": "1",
+      "TargetCondition": "Mutation",
+      "RewardType": "7|8",
+      "RewardValue": "25|5",
+      "Priority": "16"
+    },
+    {
+      "ID": "9",
+      "Day": "0",
+      "Type": "All",
+      "Description": "MISSION_GET_PETS",
+      "Action": "GetPets",
+      "TargetValue": "5",
+      "TargetCondition": "Mutation",
+      "RewardType": "7|8",
+      "RewardValue": "75|20",
+      "Priority": "17"
+    },
+    {
+      "ID": "10",
+      "Day": "0",
+      "Type": "All",
+      "Description": "MISSION_SHOP",
+      "Action": "BuyItem",
+      "TargetValue": "1",
+      "TargetCondition": "",
+      "RewardType": "2|8",
+      "RewardValue": "30050|10",
+      "Priority": "21"
+    },
+    {
+      "ID": "11",
+      "Day": "0",
+      "Type": "All",
+      "Description": "MISSION_LUCKY_SPIN",
+      "Action": "LuckySpin",
+      "TargetValue": "1",
+      "TargetCondition": "",
+      "RewardType": "2|8",
+      "RewardValue": "20020|10",
+      "Priority": "3"
+    },
+    {
+      "ID": "12",
+      "Day": "0",
+      "Type": "All",
+      "Description": "MISSION_CLAIM_PET_INCOME",
+      "Action": "ClaimIncome",
+      "TargetValue": "10",
+      "TargetCondition": "",
+      "RewardType": "7|8",
+      "RewardValue": "10|5",
+      "Priority": "4"
+    },
+    {
+      "ID": "13",
+      "Day": "0",
+      "Type": "All",
+      "Description": "MISSION_CLAIM_PET_INCOME",
+      "Action": "ClaimIncome",
+      "TargetValue": "20",
+      "TargetCondition": "",
+      "RewardType": "7|8",
+      "RewardValue": "10|10",
+      "Priority": "5"
+    },
+    {
+      "ID": "14",
+      "Day": "0",
+      "Type": "All",
+      "Description": "MISSION_LOCK_BASE",
+      "Action": "LockBase",
+      "TargetValue": "2",
+      "TargetCondition": "",
+      "RewardType": "2|8",
+      "RewardValue": "20020|5",
+      "Priority": "6"
+    },
+    {
+      "ID": "15",
+      "Day": "0",
+      "Type": "All",
+      "Description": "MISSION_LOCK_BASE",
+      "Action": "LockBase",
+      "TargetValue": "5",
+      "TargetCondition": "",
+      "RewardType": "2|8",
+      "RewardValue": "20050|10",
+      "Priority": "7"
+    },
+    {
+      "ID": "16",
+      "Day": "0",
+      "Type": "All",
+      "Description": "MISSION_GET_PETS",
+      "Action": "GetPets",
+      "TargetValue": "1",
+      "TargetCondition": "Weather",
+      "RewardType": "2|8",
+      "RewardValue": "30050|15",
+      "Priority": "18"
+    },
+    {
+      "ID": "17",
+      "Day": "0",
+      "Type": "All",
+      "Description": "MISSION_GET_PETS",
+      "Action": "GetPets",
+      "TargetValue": "5",
+      "TargetCondition": "Weather",
+      "RewardType": "2|8",
+      "RewardValue": "30500|20",
+      "Priority": "19"
+    },
+    {
+      "ID": "18",
+      "Day": "0",
+      "Type": "All",
+      "Description": "MISSION_LOGIN",
+      "Action": "Login",
+      "TargetValue": "1",
+      "TargetCondition": "",
+      "RewardType": "2|8",
+      "RewardValue": "20020|10",
+      "Priority": "1"
+    },
+    {
+      "ID": "19",
+      "Day": "1",
+      "Type": "All",
+      "Description": "MISSION_HIT",
+      "Action": "HitPlayer",
+      "TargetValue": "1",
+      "TargetCondition": "",
+      "RewardType": "2|8",
+      "RewardValue": "20020|5",
+      "Priority": "8"
+    },
+    {
+      "ID": "20",
+      "Day": "2",
+      "Type": "All",
+      "Description": "MISSION_CLAIM_PET_INCOME",
+      "Action": "ClaimIncome",
+      "TargetValue": "1",
+      "TargetCondition": "",
+      "RewardType": "2|8",
+      "RewardValue": "20020|5",
+      "Priority": "2"
+    },
+    {
+      "ID": "21",
+      "Day": "0",
+      "Type": "All",
+      "Description": "MISSION_SPEND_PET_COIN",
+      "Action": "SpendPetCoins",
+      "TargetValue": "1",
+      "TargetCondition": "",
+      "RewardType": "7|8",
+      "RewardValue": "20|5",
+      "Priority": "4"
+    },
+    {
+      "ID": "22",
+      "Day": "0",
+      "Type": "All",
+      "Description": "MISSION_SPEND_PET_COIN",
+      "Action": "SpendPetCoins",
+      "TargetValue": "20",
+      "TargetCondition": "",
+      "RewardType": "7|8",
+      "RewardValue": "50|20",
+      "Priority": "5"
+    }
+  ],
+  "events": [
+    {
+      "ID": "1",
+      "Day": "1",
+      "Gift": "10046"
+    },
+    {
+      "ID": "2",
+      "Day": "2",
+      "Gift": "10047"
+    },
+    {
+      "ID": "3",
+      "Day": "3",
+      "Gift": "10048"
+    }
+  ],
+  "spin": [
+    {
+      "ID": "1",
+      "Weight": "3",
+      "MinAngle": "339",
+      "MaxAngle": "381",
+      "RewardId": "10040"
+    },
+    {
+      "ID": "2",
+      "Weight": "17",
+      "MinAngle": "24",
+      "MaxAngle": "65",
+      "RewardId": "10008"
+    },
+    {
+      "ID": "3",
+      "Weight": "10",
+      "MinAngle": "68",
+      "MaxAngle": "111",
+      "RewardId": "10001"
+    },
+    {
+      "ID": "4",
+      "Weight": "15",
+      "MinAngle": "114",
+      "MaxAngle": "155",
+      "RewardId": "10039"
+    },
+    {
+      "ID": "5",
+      "Weight": "18",
+      "MinAngle": "158",
+      "MaxAngle": "201",
+      "RewardId": "10004"
+    },
+    {
+      "ID": "6",
+      "Weight": "7",
+      "MinAngle": "204",
+      "MaxAngle": "245",
+      "RewardId": "10038"
+    },
+    {
+      "ID": "7",
+      "Weight": "17",
+      "MinAngle": "248",
+      "MaxAngle": "293",
+      "RewardId": "10037"
+    },
+    {
+      "ID": "8",
+      "Weight": "13",
+      "MinAngle": "295",
+      "MaxAngle": "337",
+      "RewardId": "10002"
+    }
+  ],
+  "spins": [
+    {
+      "Day": "1",
+      "Spin": "1"
+    },
+    {
+      "Day": "2",
+      "Spin": "1"
+    },
+    {
+      "Day": "3",
+      "Spin": "1"
+    },
+    {
+      "Day": "4",
+      "Spin": "2"
+    },
+    {
+      "Day": "5",
+      "Spin": "2"
+    },
+    {
+      "Day": "6",
+      "Spin": "2"
+    },
+    {
+      "Day": "7",
+      "Spin": "2"
+    }
+  ],
+  "milestone": {
+    "ID": "11",
+    "Type": "5",
+    "Milestone": "20;40;60;80;100",
+    "Gift": "10041;10042;10043;10044;10049"
+  },
+  "gifts": {
+    "10001": {
+      "ID": "10001",
+      "Reward": "15"
+    },
+    "10002": {
+      "ID": "10002",
+      "Reward": "3"
+    },
+    "10004": {
+      "ID": "10004",
+      "Reward": "18"
+    },
+    "10008": {
+      "ID": "10008",
+      "Reward": "16"
+    },
+    "10016": {
+      "ID": "10016",
+      "Reward": "10026"
+    },
+    "10017": {
+      "ID": "10017",
+      "Reward": "10027"
+    },
+    "10018": {
+      "ID": "10018",
+      "Reward": "19"
+    },
+    "10019": {
+      "ID": "10019",
+      "Reward": "10017"
+    },
+    "10020": {
+      "ID": "10020",
+      "Reward": "18"
+    },
+    "10021": {
+      "ID": "10021",
+      "Reward": "39"
+    },
+    "10022": {
+      "ID": "10022",
+      "Reward": "15"
+    },
+    "10023": {
+      "ID": "10023",
+      "Reward": "50082"
+    },
+    "10024": {
+      "ID": "10024",
+      "Reward": "21006"
+    },
+    "10025": {
+      "ID": "10025",
+      "Reward": "15"
+    },
+    "10026": {
+      "ID": "10026",
+      "Reward": "21003"
+    },
+    "10028": {
+      "ID": "10028",
+      "Reward": "10018"
+    },
+    "10030": {
+      "ID": "10030",
+      "Reward": "7"
+    },
+    "10031": {
+      "ID": "10031",
+      "Reward": "10033"
+    },
+    "10032": {
+      "ID": "10032",
+      "Reward": "10017"
+    },
+    "10033": {
+      "ID": "10033",
+      "Reward": "10016"
+    },
+    "10034": {
+      "ID": "10034",
+      "Reward": "16"
+    },
+    "10035": {
+      "ID": "10035",
+      "Reward": "50076"
+    },
+    "10036": {
+      "ID": "10036",
+      "Reward": "10035"
+    },
+    "10037": {
+      "ID": "10037",
+      "Reward": "17"
+    },
+    "10038": {
+      "ID": "10038",
+      "Reward": "10019"
+    },
+    "10039": {
+      "ID": "10039",
+      "Reward": "21002"
+    },
+    "10040": {
+      "ID": "10040",
+      "Reward": "10023"
+    },
+    "10041": {
+      "ID": "10041",
+      "Reward": "11"
+    },
+    "10042": {
+      "ID": "10042",
+      "Reward": "10017"
+    },
+    "10043": {
+      "ID": "10043",
+      "Reward": "17"
+    },
+    "10044": {
+      "ID": "10044",
+      "Reward": "10016"
+    },
+    "10046": {
+      "ID": "10046",
+      "Reward": "21002"
+    },
+    "10047": {
+      "ID": "10047",
+      "Reward": "10028"
+    },
+    "10048": {
+      "ID": "10048",
+      "Reward": "50095"
+    },
+    "10049": {
+      "ID": "10049",
+      "Reward": "10029"
+    },
+    "10050": {
+      "ID": "10050",
+      "Reward": "10030"
+    },
+    "10051": {
+      "ID": "10051",
+      "Reward": "50063"
+    },
+    "10052": {
+      "ID": "10052",
+      "Reward": "10034"
+    },
+    "10053": {
+      "ID": "10053",
+      "Reward": "10018"
+    },
+    "10054": {
+      "ID": "10054",
+      "Reward": "10040"
+    },
+    "10055": {
+      "ID": "10055",
+      "Reward": "16"
+    },
+    "10056": {
+      "ID": "10056",
+      "Reward": "50076"
+    },
+    "10057": {
+      "ID": "10057",
+      "Reward": "10036"
+    },
+    "10058": {
+      "ID": "10058",
+      "Reward": "50076"
+    },
+    "10059": {
+      "ID": "10059",
+      "Reward": "10035"
+    },
+    "10060": {
+      "ID": "10060",
+      "Reward": "10038"
+    },
+    "10061": {
+      "ID": "10061",
+      "Reward": "21006"
+    },
+    "10062": {
+      "ID": "10062",
+      "Reward": "11"
+    },
+    "10063": {
+      "ID": "10063",
+      "Reward": "50088"
+    },
+    "10064": {
+      "ID": "10064",
+      "Reward": "10037"
+    }
+  },
+  "rewards": [
+    {
+      "ID": "3",
+      "TypeReward": "3",
+      "Value": "10",
+      "Quantity": "1"
+    },
+    {
+      "ID": "7",
+      "TypeReward": "1",
+      "Value": "44;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "11",
+      "TypeReward": "5",
+      "Value": "1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "15",
+      "TypeReward": "4",
+      "Value": "MYTHIC;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "16",
+      "TypeReward": "5",
+      "Value": "0.5",
+      "Quantity": "1"
+    },
+    {
+      "ID": "17",
+      "TypeReward": "5",
+      "Value": "2",
+      "Quantity": "1"
+    },
+    {
+      "ID": "18",
+      "TypeReward": "4",
+      "Value": "LEGENDARY;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "19",
+      "TypeReward": "4",
+      "Value": "EPIC;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "39",
+      "TypeReward": "7",
+      "Value": "50",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10016",
+      "TypeReward": "7",
+      "Value": "100",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10017",
+      "TypeReward": "9",
+      "Value": "2",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10018",
+      "TypeReward": "9",
+      "Value": "3",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10019",
+      "TypeReward": "10",
+      "Value": "6",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10023",
+      "TypeReward": "10",
+      "Value": "1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10026",
+      "TypeReward": "1",
+      "Value": "44;3",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10027",
+      "TypeReward": "2",
+      "Value": "30050",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10028",
+      "TypeReward": "10",
+      "Value": "4",
+      "Quantity": "5"
+    },
+    {
+      "ID": "10029",
+      "TypeReward": "16",
+      "Value": "26",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10030",
+      "TypeReward": "16",
+      "Value": "26",
+      "Quantity": "4"
+    },
+    {
+      "ID": "10033",
+      "TypeReward": "16",
+      "Value": "10",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10034",
+      "TypeReward": "16",
+      "Value": "10",
+      "Quantity": "2"
+    },
+    {
+      "ID": "10035",
+      "TypeReward": "16",
+      "Value": "10",
+      "Quantity": "3"
+    },
+    {
+      "ID": "10036",
+      "TypeReward": "16",
+      "Value": "10",
+      "Quantity": "4"
+    },
+    {
+      "ID": "10037",
+      "TypeReward": "16",
+      "Value": "10",
+      "Quantity": "5"
+    },
+    {
+      "ID": "10038",
+      "TypeReward": "9",
+      "Value": "4",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10040",
+      "TypeReward": "7",
+      "Value": "300",
+      "Quantity": "1"
+    },
+    {
+      "ID": "21002",
+      "TypeReward": "7",
+      "Value": "200",
+      "Quantity": "1"
+    },
+    {
+      "ID": "21003",
+      "TypeReward": "5",
+      "Value": "2",
+      "Quantity": "1"
+    },
+    {
+      "ID": "21006",
+      "TypeReward": "7",
+      "Value": "500",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50063",
+      "TypeReward": "1",
+      "Value": "63;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50076",
+      "TypeReward": "1",
+      "Value": "76;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50082",
+      "TypeReward": "1",
+      "Value": "82;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50088",
+      "TypeReward": "1",
+      "Value": "88;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50095",
+      "TypeReward": "1",
+      "Value": "95;1",
+      "Quantity": "1"
+    }
+  ],
+  "tabs": [
+    {
+      "content": "Rewards",
+      "index": 0,
+      "button": "DailyRewardsTabButton",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:282"
+    },
+    {
+      "content": "Missions",
+      "index": 1,
+      "button": "DailyMissionsTabButton",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:282"
+    },
+    {
+      "content": "Spin",
+      "index": 2,
+      "button": "DailySpinTabButton",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:282"
+    },
+    {
+      "content": "Event",
+      "index": 3,
+      "button": "DailyEventTabButton",
+      "source": "Assets/Scripts/HUDs/HudActivities.fcg:282"
+    }
+  ],
+  "bindings": {
+    "daily": "Assets/Scripts/HUDs/HudActivities.fcg:551",
+    "colors": "Assets/Scripts/HUDs/HudActivities.fcg:602",
+    "mission": "Assets/Scripts/HUDs/HudActivities.fcg:909",
+    "milestone": "Assets/Scripts/HUDs/HudActivities.fcg:1053",
+    "spin": "Assets/Scripts/HUDs/HudActivities.fcg:1194",
+    "event": "Assets/Scripts/HUDs/HudActivities.fcg:1263",
+    "reward": "Assets/Scripts/HUDs/HudActivities.fcg:358"
+  },
+  "gaps": [
+    "Registered widget Activities (KVOVUcWb) is stale; not used by binder",
+    "No engine screenshots for parity; browser fallback font, shader/scaler and hit order unverified",
+    "MoneyTime uses explicit simulated base income, never live player data",
+    "Event tab remains inactive as serialized; its content can be inspected through the simulation panel",
+    "Reward tooltip/effect, database gating and server requests are not executed",
+    "Vertical scroll uses native web scrolling; engine inertia and scroll origin unverified",
+    "Spin easing is a web approximation of the source tween curve"
+  ]
+}
