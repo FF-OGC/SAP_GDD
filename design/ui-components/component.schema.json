@@ -85,7 +85,11 @@
             "minLength": 1
           },
           "default": {},
-          "sample": {}
+          "sample": {},
+          "sourceId": {
+            "type": "string",
+            "minLength": 1
+          }
         }
       }
     },
@@ -132,7 +136,11 @@
                   "type": "string",
                   "minLength": 1
                 },
-                "value": {}
+                "value": {},
+                "sourceId": {
+                  "type": "string",
+                  "minLength": 1
+                }
               }
             }
           }
@@ -175,6 +183,34 @@
       "items": {
         "type": "string",
         "minLength": 1
+      }
+    },
+    "sourceScreen": {
+      "enum": [
+        "collection",
+        "activities"
+      ]
+    },
+    "previewFallbacks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "sourceId",
+          "kind"
+        ],
+        "properties": {
+          "sourceId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "solid-color"
+            ]
+          }
+        }
       }
     }
   },

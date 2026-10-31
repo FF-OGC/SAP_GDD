@@ -1,0 +1,36 @@
+[
+  {
+    "viewport": {
+      "width": 1440,
+      "height": 1100
+    },
+    "sourceFilterCounts": {
+      "activities": 11,
+      "collection": 16
+    },
+    "duplicatePathIds": [
+      "THNRBdX4",
+      "hzxJLsX2"
+    ],
+    "slotAndExportIsolation": true,
+    "declaredBarFallbacks": 2,
+    "errors": []
+  },
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "sourceFilterCounts": {
+      "activities": 11,
+      "collection": 16
+    },
+    "duplicatePathIds": [
+      "THNRBdX4",
+      "hzxJLsX2"
+    ],
+    "slotAndExportIsolation": true,
+    "declaredBarFallbacks": 2,
+    "errors": []
+  }
+]

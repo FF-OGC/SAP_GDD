@@ -1,0 +1,129 @@
+{
+  "id": "activities-milestone",
+  "name": "Activities · Mốc thưởng",
+  "sourceScreen": "activities",
+  "sourcePath": "Activities/Activities/Container/Missions/Milestones/Milestone",
+  "sourceId": "vcMK3Alh",
+  "group": "Ghép",
+  "status": "runtime",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "Activities/Activities/Container/Missions/Milestones/Milestone",
+      "sourceId": "vcMK3Alh",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "threshold",
+      "type": "text",
+      "path": "Activities/Activities/Container/Missions/Milestones/Milestone/MilestoneLabel",
+      "sourceId": "ZB6lMV8i",
+      "field": "text.value",
+      "default": "100",
+      "sample": "60 (mẫu)"
+    },
+    {
+      "name": "rewardArt",
+      "type": "sprite",
+      "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon",
+      "sourceId": "xQuFhSJs",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/Icons/PetCoinIcon.png"
+    },
+    {
+      "name": "amount",
+      "type": "text",
+      "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardAmount",
+      "sourceId": "VrTcXCKK",
+      "field": "text.value",
+      "default": "x4h",
+      "sample": "x3 (mẫu)"
+    }
+  ],
+  "states": [
+    {
+      "name": "Có thể nhận",
+      "when": "points >= milestone && !isClaimed",
+      "ruleSource": "bindings.milestone",
+      "overrides": [
+        {
+          "path": "Activities/Activities/Container/Missions/Milestones/Milestone",
+          "sourceId": "vcMK3Alh",
+          "field": "image.color",
+          "value": "#FFD515"
+        },
+        {
+          "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton",
+          "sourceId": "SVXgozSk",
+          "field": "active",
+          "value": true
+        },
+        {
+          "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask",
+          "sourceId": "fsIbZlK3",
+          "field": "active",
+          "value": false
+        }
+      ]
+    },
+    {
+      "name": "Đã nhận",
+      "when": "isClaimed=true",
+      "ruleSource": "bindings.milestone",
+      "overrides": [
+        {
+          "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton",
+          "sourceId": "SVXgozSk",
+          "field": "active",
+          "value": false
+        },
+        {
+          "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask",
+          "sourceId": "fsIbZlK3",
+          "field": "active",
+          "value": true
+        }
+      ]
+    },
+    {
+      "name": "Chưa đạt",
+      "when": "points < milestone",
+      "ruleSource": "bindings.milestone",
+      "overrides": [
+        {
+          "path": "Activities/Activities/Container/Missions/Milestones/Milestone",
+          "sourceId": "vcMK3Alh",
+          "field": "image.color",
+          "value": "#1F64C4"
+        },
+        {
+          "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton",
+          "sourceId": "SVXgozSk",
+          "field": "active",
+          "value": false
+        },
+        {
+          "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask",
+          "sourceId": "fsIbZlK3",
+          "field": "active",
+          "value": false
+        }
+      ]
+    }
+  ],
+  "usedIn": [
+    {
+      "screen": "activities",
+      "note": "Subtree thật từ Activities.ui; không chạy binder trong template"
+    }
+  ],
+  "composedOf": [
+    "activities-reward-item"
+  ],
+  "notes": [
+    "Bản mặc định giữ snapshot .ui. Tham số mẫu chỉ dùng xem thử, không phải config game.",
+    "RewardDetail cùng cấu trúc ô thưởng; vùng nguồn chỉ 35×25 nhưng icon nhô ra ngoài theo source."
+  ]
+}

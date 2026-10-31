@@ -1,0 +1,101 @@
+{
+  "id": "activities-reward-card",
+  "name": "Activities · Thẻ quà đăng nhập",
+  "sourceScreen": "activities",
+  "sourcePath": "Activities/Activities/Container/Rewards/Reward",
+  "sourceId": "hilWu5yB",
+  "group": "Hiển thị dữ liệu",
+  "status": "runtime",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "Activities/Activities/Container/Rewards/Reward",
+      "sourceId": "hilWu5yB",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "dayLabel",
+      "type": "text",
+      "path": "Activities/Activities/Container/Rewards/Reward/Day/DayLabel",
+      "sourceId": "NLHO3vWT",
+      "field": "text.value",
+      "default": "Day 1",
+      "sample": "Ngày mẫu"
+    },
+    {
+      "name": "rewardArt",
+      "type": "sprite",
+      "path": "Activities/Activities/Container/Rewards/Reward/RewardIcon",
+      "sourceId": "BRA0MOzI",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/Pets/PENGUIN.png"
+    },
+    {
+      "name": "amount",
+      "type": "text",
+      "path": "Activities/Activities/Container/Rewards/Reward/RewardAmount",
+      "sourceId": "OZ7i9nM8",
+      "field": "text.value",
+      "default": "$5.0 m",
+      "sample": "x99 (mẫu)"
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "path": "Activities/Activities/Container/Rewards/Reward/RewardDetails/Content",
+      "sourceId": "Zm5pCRYi",
+      "field": "text.value",
+      "default": "Pet Coins",
+      "sample": "Quà mẫu"
+    },
+    {
+      "name": "cardTint",
+      "type": "tint",
+      "path": "Activities/Activities/Container/Rewards/Reward",
+      "sourceId": "hilWu5yB",
+      "field": "image.color",
+      "default": "#D7FFE3"
+    }
+  ],
+  "states": [
+    {
+      "name": "Đã nhận",
+      "when": "claimedDates chứa ngày này",
+      "ruleSource": "bindings.daily",
+      "overrides": [
+        {
+          "path": "Activities/Activities/Container/Rewards/Reward/ClaimedButton",
+          "sourceId": "kr5TqDPE",
+          "field": "active",
+          "value": true
+        }
+      ]
+    },
+    {
+      "name": "Chưa nhận",
+      "when": "claimedDates không chứa ngày này",
+      "ruleSource": "bindings.daily",
+      "overrides": [
+        {
+          "path": "Activities/Activities/Container/Rewards/Reward/ClaimedButton",
+          "sourceId": "kr5TqDPE",
+          "field": "active",
+          "value": false
+        }
+      ]
+    }
+  ],
+  "usedIn": [
+    {
+      "screen": "activities",
+      "note": "Subtree thật từ Activities.ui; không chạy binder trong template"
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ snapshot .ui. Tham số mẫu chỉ dùng xem thử, không phải config game.",
+    "State chỉ bật/tắt lớp đã nhận; không bind quà/ngày/gradient runtime. Icon checkmark lib thiếu vẫn được liệt kê."
+  ]
+}

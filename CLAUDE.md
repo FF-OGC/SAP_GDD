@@ -33,7 +33,7 @@ hay dữ liệu giftcode ngoài phép chiếu ID/Reward hiện hành. Game vẫn
 UI Components là tính năng riêng theo `plans/PLAN-ui-components.md`, không
 đổi Preview/Proposal và không mở rộng allowlist. Định nghĩa ở
 `design/ui-components/`; `tools/sync-ui-components.mjs` chỉ đọc snapshot
-Collection trong GDD, không nhận `--project-root`. Trang ở
+Collection và Activities trong GDD, không nhận `--project-root`. Trang ở
 `dist/app-uicomponents.js`, output ở `dist/data/ui/components/`.
 Chạy `node tools/sync-ui-components.mjs` rồi
 `node tools/audit-ui-components.mjs` (thêm `--browser-url http://localhost:8080`

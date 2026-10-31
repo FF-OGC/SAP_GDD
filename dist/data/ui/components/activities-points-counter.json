@@ -1,0 +1,777 @@
+{
+  "id": "activities-points-counter",
+  "name": "Activities · Bộ đếm Pet Points",
+  "sourceScreen": "activities",
+  "sourcePath": "Activities/Activities/Container/Missions/PetPoints",
+  "sourceId": "FBnDavKh",
+  "group": "Hiển thị dữ liệu",
+  "status": "real",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "Activities/Activities/Container/Missions/PetPoints",
+      "sourceId": "FBnDavKh",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "pointsLabel",
+      "type": "text",
+      "path": "Activities/Activities/Container/Missions/PetPoints/Points",
+      "sourceId": "UdYpC6ko",
+      "field": "text.value",
+      "default": "[b]80[/b]\nPoints",
+      "sample": "60 điểm (mẫu)"
+    },
+    {
+      "name": "icon",
+      "type": "sprite",
+      "path": "Activities/Activities/Container/Missions/PetPoints",
+      "sourceId": "FBnDavKh",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/Icons/DMMPointIcon.png"
+    }
+  ],
+  "states": [],
+  "usedIn": [
+    {
+      "screen": "activities",
+      "note": "Subtree thật từ Activities.ui; không chạy binder trong template"
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ snapshot .ui. Tham số mẫu chỉ dùng xem thử, không phải config game."
+  ],
+  "source": "Assets/HUDs/Activities.ui",
+  "sourceRect": {
+    "left": 20,
+    "top": 30,
+    "width": 70,
+    "height": 70
+  },
+  "referenceSize": {
+    "width": 70,
+    "height": 70
+  },
+  "tree": {
+    "path": "Activities/Activities/Container/Missions/PetPoints",
+    "id": "FBnDavKh",
+    "name": "PetPoints",
+    "type": "UIImageEntity",
+    "active": true,
+    "transform": {
+      "rotate": 0,
+      "anchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchoredPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sizeDelta": {
+        "x": 70,
+        "y": 70
+      }
+    },
+    "alpha": 100,
+    "priority": 0,
+    "image": {
+      "source": {
+        "fileId": "n2oq5sa0gg-mpu0gl2w-13fqf3yx4h0b",
+        "filePath": "Assets\\Sprites\\Icons\\PetPointIcon.png",
+        "_tag": {
+          "type": "GFileRefer"
+        },
+        "fileType": "texture"
+      },
+      "color": "#ffffff",
+      "reverse": {
+        "x": false,
+        "y": false
+      },
+      "fillType": 1,
+      "slicedBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "tiledBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "centerInvisible": false,
+      "fillDir": 0,
+      "fillAmount": 0,
+      "invertFill": false,
+      "flip": 0,
+      "gradient": 1,
+      "gradientTop": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "gradientBottom": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "isApplyAnimation": false,
+      "animationAtlasID": null,
+      "animationFrameRate": 30,
+      "animationLoop": true,
+      "spriteKey": "Assets/Sprites/Icons/DMMPointIcon.png"
+    },
+    "button": null,
+    "text": null,
+    "layout": null,
+    "propsData": {
+      "activeSelf": true,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0,
+          "y": 1
+        },
+        "anchorMax": {
+          "x": 0,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 1
+        },
+        "anchoredPosition": {
+          "x": 20,
+          "y": -30
+        },
+        "sizeDelta": {
+          "x": 70,
+          "y": 70
+        }
+      },
+      "alpha": 100,
+      "priority": 0,
+      "image": {
+        "source": {
+          "fileId": "n2oq5sa0gg-mpu0gl2w-13fqf3yx4h0b",
+          "filePath": "Assets\\Sprites\\Icons\\PetPointIcon.png",
+          "_tag": {
+            "type": "GFileRefer"
+          },
+          "fileType": "texture"
+        },
+        "color": "#ffffff",
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "fillType": 1,
+        "slicedBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "tiledBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "flip": 0,
+        "gradient": 1,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "isApplyAnimation": false,
+        "animationAtlasID": null,
+        "animationFrameRate": 30,
+        "animationLoop": true
+      }
+    },
+    "ecaProps": {
+      "HudImageWidget": {},
+      "HudWidget": {},
+      "Entity": {}
+    },
+    "unsupported": [],
+    "children": [
+      {
+        "path": "Activities/Activities/Container/Missions/PetPoints/Points",
+        "id": "UdYpC6ko",
+        "name": "Points",
+        "type": "UITextEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchorMax": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 76,
+            "y": 10
+          },
+          "sizeDelta": {
+            "x": 60,
+            "y": 70
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": null,
+        "button": null,
+        "text": {
+          "value": "[b]80[/b]\nPoints",
+          "key": "",
+          "font": "Default",
+          "fontSize": 32,
+          "fontStyle": {
+            "bold": false,
+            "italic": false,
+            "underline": false
+          },
+          "color": "#1F64C4",
+          "alignment": {
+            "h": "center",
+            "v": "middle"
+          },
+          "lineSpacing": 0,
+          "background": false,
+          "backgroundColor": "#e7b200",
+          "overflow": 0,
+          "backgroundRGBA": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0
+          },
+          "shadow": false,
+          "shadowColor": "#1F64C4",
+          "shadowOffset": {
+            "x": 1,
+            "y": 1
+          },
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "outline": false,
+          "outlineColor": "#000000",
+          "outlineAlpha": 1,
+          "outlineOffset": 1,
+          "shadowAlpha": 1
+        },
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 76,
+              "y": 10
+            },
+            "sizeDelta": {
+              "x": 60,
+              "y": 70
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "text": {
+            "value": "[b]80[/b]\nPoints",
+            "key": "",
+            "font": "Default",
+            "fontSize": 32,
+            "fontStyle": {
+              "bold": false,
+              "italic": false,
+              "underline": false
+            },
+            "color": "#1F64C4",
+            "alignment": {
+              "h": "center",
+              "v": "middle"
+            },
+            "lineSpacing": 0,
+            "background": false,
+            "backgroundColor": "#e7b200",
+            "overflow": 0,
+            "backgroundRGBA": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0
+            },
+            "shadow": false,
+            "shadowColor": "#1F64C4",
+            "shadowOffset": {
+              "x": 1,
+              "y": 1
+            },
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "outline": false,
+            "outlineColor": "#000000",
+            "outlineAlpha": 1,
+            "outlineOffset": 1,
+            "shadowAlpha": 1
+          }
+        },
+        "ecaProps": {
+          "HudLabelWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [],
+        "children": []
+      }
+    ]
+  },
+  "entityCount": 2,
+  "spec": {
+    "nodes": [
+      {
+        "id": "FBnDavKh",
+        "path": "Activities/Activities/Container/Missions/PetPoints",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 20,
+          "top": 30,
+          "width": 70,
+          "height": 70
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "UdYpC6ko",
+        "path": "Activities/Activities/Container/Missions/PetPoints/Points",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 81,
+          "top": -10,
+          "width": 60,
+          "height": 70
+        },
+        "active": true,
+        "alpha": 100
+      }
+    ],
+    "images": [
+      {
+        "id": "FBnDavKh",
+        "path": "Activities/Activities/Container/Missions/PetPoints",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 20,
+          "top": 30,
+          "width": 70,
+          "height": 70
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/Icons/DMMPointIcon.png",
+        "sprite": {
+          "key": "Assets/Sprites/Icons/DMMPointIcon.png",
+          "declaredKey": "Assets/Sprites/Icons/PetPointIcon.png",
+          "declaredKeys": [
+            "Assets/Sprites/Icons/PetPointIcon.png"
+          ],
+          "fileId": "n2oq5sa0gg-mpu0gl2w-13fqf3yx4h0b",
+          "output": "./assets/ui-sprites/activities/Icons__DMMPointIcon.png",
+          "missing": false,
+          "references": [
+            "Activities/Activities/Container/Missions/PetPoints",
+            "runtime:Activities:DMMPointIcon"
+          ],
+          "origins": [
+            ".ui",
+            "runtime-code + ResourceRegisteration.asset"
+          ],
+          "border": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "width": 64,
+          "height": 64
+        },
+        "image": {
+          "source": {
+            "fileId": "n2oq5sa0gg-mpu0gl2w-13fqf3yx4h0b",
+            "filePath": "Assets\\Sprites\\Icons\\PetPointIcon.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/Icons/DMMPointIcon.png"
+        },
+        "tint": "#ffffff"
+      }
+    ],
+    "shapes": [
+      {
+        "id": "FBnDavKh",
+        "path": "Activities/Activities/Container/Missions/PetPoints",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 20,
+          "top": 30,
+          "width": 70,
+          "height": 70
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#ffffff",
+        "background": null
+      },
+      {
+        "id": "UdYpC6ko",
+        "path": "Activities/Activities/Container/Missions/PetPoints/Points",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 81,
+          "top": -10,
+          "width": 60,
+          "height": 70
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#e7b200",
+        "background": false
+      }
+    ],
+    "texts": [
+      {
+        "id": "UdYpC6ko",
+        "path": "Activities/Activities/Container/Missions/PetPoints/Points",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 81,
+          "top": -10,
+          "width": 60,
+          "height": 70
+        },
+        "active": true,
+        "alpha": 100,
+        "value": "[b]80[/b]\nPoints",
+        "key": "",
+        "font": "Default",
+        "fontSize": 32,
+        "fontStyle": {
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        "color": "#1F64C4",
+        "alignment": {
+          "h": "center",
+          "v": "middle"
+        },
+        "lineSpacing": 0,
+        "background": false,
+        "backgroundColor": "#e7b200",
+        "overflow": 0,
+        "backgroundRGBA": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "shadow": false,
+        "shadowColor": "#1F64C4",
+        "shadowOffset": {
+          "x": 1,
+          "y": 1
+        },
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "outline": false,
+        "outlineColor": "#000000",
+        "outlineAlpha": 1,
+        "outlineOffset": 1,
+        "shadowAlpha": 1,
+        "localization": null
+      }
+    ]
+  },
+  "template": {
+    "op": "add",
+    "parent": "Activities",
+    "parentId": "CFlcLwrb",
+    "reason": "Template activities-points-counter; slot: visible = Activities/Activities/Container/Missions/PetPoints [FBnDavKh].active; pointsLabel = Activities/Activities/Container/Missions/PetPoints/Points [UdYpC6ko].text.value; icon = Activities/Activities/Container/Missions/PetPoints [FBnDavKh].image.spriteKey",
+    "entity": {
+      "id": "uic-activities-points-counter-FBnDavKh",
+      "name": "Component_activities-points-counter",
+      "type": "UIImageEntity",
+      "children": [
+        {
+          "id": "uic-activities-points-counter-UdYpC6ko",
+          "name": "Points",
+          "type": "UITextEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchorMax": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 76,
+              "y": 10
+            },
+            "sizeDelta": {
+              "x": 60,
+              "y": 70
+            }
+          },
+          "text": {
+            "value": "[b]80[/b]\nPoints",
+            "key": "",
+            "fontSize": 32,
+            "fontStyle": {
+              "bold": false,
+              "italic": false,
+              "underline": false
+            },
+            "color": "#1F64C4",
+            "alignment": {
+              "h": "center",
+              "v": "middle"
+            },
+            "lineSpacing": 0,
+            "background": false,
+            "backgroundColor": "#e7b200",
+            "shadow": false,
+            "shadowColor": "#1F64C4",
+            "shadowOffset": {
+              "x": 1,
+              "y": 1
+            },
+            "outline": false,
+            "outlineColor": "#000000",
+            "outlineAlpha": 1,
+            "outlineOffset": 1,
+            "shadowAlpha": 1
+          }
+        }
+      ],
+      "active": true,
+      "alpha": 100,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchorMax": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchoredPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "sizeDelta": {
+          "x": 70,
+          "y": 70
+        }
+      },
+      "image": {
+        "color": "#ffffff",
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "fillType": 1,
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "spriteKey": "Assets/Sprites/Icons/DMMPointIcon.png"
+      }
+    }
+  },
+  "templateOmitted": [
+    "Activities/Activities/Container/Missions/PetPoints/Points: text.font",
+    "Activities/Activities/Container/Missions/PetPoints/Points: text.overflow",
+    "Activities/Activities/Container/Missions/PetPoints/Points: text.backgroundRGBA.r",
+    "Activities/Activities/Container/Missions/PetPoints/Points: text.backgroundRGBA.g",
+    "Activities/Activities/Container/Missions/PetPoints/Points: text.backgroundRGBA.b",
+    "Activities/Activities/Container/Missions/PetPoints/Points: text.backgroundRGBA.a",
+    "Activities/Activities/Container/Missions/PetPoints/Points: text.gradient",
+    "Activities/Activities/Container/Missions/PetPoints/Points: text.gradientTop.r",
+    "Activities/Activities/Container/Missions/PetPoints/Points: text.gradientTop.g",
+    "Activities/Activities/Container/Missions/PetPoints/Points: text.gradientTop.b",
+    "Activities/Activities/Container/Missions/PetPoints/Points: text.gradientTop.a",
+    "Activities/Activities/Container/Missions/PetPoints/Points: text.gradientBottom.r",
+    "Activities/Activities/Container/Missions/PetPoints/Points: text.gradientBottom.g",
+    "Activities/Activities/Container/Missions/PetPoints/Points: text.gradientBottom.b",
+    "Activities/Activities/Container/Missions/PetPoints/Points: text.gradientBottom.a",
+    "Activities/Activities/Container/Missions/PetPoints: image.source.fileId",
+    "Activities/Activities/Container/Missions/PetPoints: image.source.filePath",
+    "Activities/Activities/Container/Missions/PetPoints: image.source._tag.type",
+    "Activities/Activities/Container/Missions/PetPoints: image.source.fileType",
+    "Activities/Activities/Container/Missions/PetPoints: image.slicedBorder.left",
+    "Activities/Activities/Container/Missions/PetPoints: image.slicedBorder.right",
+    "Activities/Activities/Container/Missions/PetPoints: image.slicedBorder.top",
+    "Activities/Activities/Container/Missions/PetPoints: image.slicedBorder.bottom",
+    "Activities/Activities/Container/Missions/PetPoints: image.tiledBorder.left",
+    "Activities/Activities/Container/Missions/PetPoints: image.tiledBorder.right",
+    "Activities/Activities/Container/Missions/PetPoints: image.tiledBorder.top",
+    "Activities/Activities/Container/Missions/PetPoints: image.tiledBorder.bottom",
+    "Activities/Activities/Container/Missions/PetPoints: image.flip",
+    "Activities/Activities/Container/Missions/PetPoints: image.gradient",
+    "Activities/Activities/Container/Missions/PetPoints: image.gradientTop.r",
+    "Activities/Activities/Container/Missions/PetPoints: image.gradientTop.g",
+    "Activities/Activities/Container/Missions/PetPoints: image.gradientTop.b",
+    "Activities/Activities/Container/Missions/PetPoints: image.gradientTop.a",
+    "Activities/Activities/Container/Missions/PetPoints: image.gradientBottom.r",
+    "Activities/Activities/Container/Missions/PetPoints: image.gradientBottom.g",
+    "Activities/Activities/Container/Missions/PetPoints: image.gradientBottom.b",
+    "Activities/Activities/Container/Missions/PetPoints: image.gradientBottom.a",
+    "Activities/Activities/Container/Missions/PetPoints: image.isApplyAnimation",
+    "Activities/Activities/Container/Missions/PetPoints: image.animationAtlasID",
+    "Activities/Activities/Container/Missions/PetPoints: image.animationFrameRate",
+    "Activities/Activities/Container/Missions/PetPoints: image.animationLoop"
+  ],
+  "stateEvidence": [],
+  "usedBy": []
+}

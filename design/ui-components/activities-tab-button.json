@@ -1,0 +1,94 @@
+{
+  "id": "activities-tab-button",
+  "name": "Activities · Nút tab",
+  "sourceScreen": "activities",
+  "sourcePath": "Activities/Activities/TabsLayout/DailyRewardsTabButton",
+  "sourceId": "gvZA4BXM",
+  "group": "Điều khiển",
+  "status": "runtime",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "Activities/Activities/TabsLayout/DailyRewardsTabButton",
+      "sourceId": "gvZA4BXM",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "path": "Activities/Activities/TabsLayout/DailyRewardsTabButton/Text",
+      "sourceId": "zDsvvYFP",
+      "field": "text.key",
+      "default": "HUD_ACTIVITIES_TAB_REWARDS",
+      "sample": "Tab mẫu"
+    },
+    {
+      "name": "art",
+      "type": "sprite",
+      "path": "Activities/Activities/TabsLayout/DailyRewardsTabButton",
+      "sourceId": "gvZA4BXM",
+      "field": "button.spriteKey",
+      "default": "Assets/Sprites/NewAssets/LongSelectTabBG.png"
+    },
+    {
+      "name": "alert",
+      "type": "active",
+      "path": "Activities/Activities/TabsLayout/DailyRewardsTabButton/AlertIcon",
+      "sourceId": "DPZZDixw",
+      "field": "active",
+      "default": false
+    }
+  ],
+  "states": [
+    {
+      "name": "Không chọn",
+      "when": "tabIndex khác tab này",
+      "ruleSource": "tabs.0.source",
+      "overrides": [
+        {
+          "path": "Activities/Activities/TabsLayout/DailyRewardsTabButton",
+          "sourceId": "gvZA4BXM",
+          "field": "button.spriteKey",
+          "value": "Assets/Sprites/NewAssets/NormalTabBG.png"
+        },
+        {
+          "path": "Activities/Activities/TabsLayout/DailyRewardsTabButton/Text",
+          "sourceId": "zDsvvYFP",
+          "field": "text.color",
+          "value": "#1F64C4"
+        }
+      ]
+    },
+    {
+      "name": "Đang chọn",
+      "when": "tabIndex là tab này",
+      "ruleSource": "tabs.0.source",
+      "overrides": [
+        {
+          "path": "Activities/Activities/TabsLayout/DailyRewardsTabButton",
+          "sourceId": "gvZA4BXM",
+          "field": "button.spriteKey",
+          "value": "Assets/Sprites/NewAssets/SelectTabBG.png"
+        },
+        {
+          "path": "Activities/Activities/TabsLayout/DailyRewardsTabButton/Text",
+          "sourceId": "zDsvvYFP",
+          "field": "text.color",
+          "value": "#FFFFFF"
+        }
+      ]
+    }
+  ],
+  "usedIn": [
+    {
+      "screen": "activities",
+      "note": "Subtree thật từ Activities.ui; không chạy binder trong template"
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ snapshot .ui. Tham số mẫu chỉ dùng xem thử, không phải config game."
+  ]
+}

@@ -27,6 +27,12 @@ trong panel. Website vẫn static; thay đổi này chỉ commit local, không p
 
 ## UI Components
 
+Đã thêm 11 template Activities (27 component tổng cộng). Lọc **Nguồn →
+Activities** để xem thẻ quà, dòng nhiệm vụ, ô thưởng, mốc/thanh điểm, tab và
+vòng quay. Mỗi component có slot/state, spec và nút Sao chép template JSON.
+Nguồn định nghĩa: `design/ui-components/activities-*.json`; kế hoạch ở
+`plans/PLAN-ui-components-activities.md`. Không đổi UI Preview/Proposal.
+
 Thư viện riêng ở `#uicomponents`, ngay dưới UI Proposal, theo
 `plans/PLAN-ui-components.md`. Nguồn duy nhất là snapshot Collection và sprite
 đã sync trong GDD. Không đổi allowlist, UI Preview hoặc nội dung UI Proposal.

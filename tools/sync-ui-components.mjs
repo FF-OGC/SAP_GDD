@@ -11,13 +11,20 @@ const encode = value => JSON.stringify(value, null, 2) + '\n';
 
 export function loadInputs(root = GDD_ROOT) {
   const ui = path.join(root, 'dist/data/ui'), definitionsDir = path.join(root, 'design/ui-components');
-  return { screen: read(path.join(ui, 'collection.json')), manifest: read(path.join(ui, 'collection-sprites.json')),
+  const inputs = { screen: read(path.join(ui, 'collection.json')), manifest: read(path.join(ui, 'collection-sprites.json')),
     rules: read(path.join(ui, 'collection-rules.json')), i18n: read(path.join(ui, 'collection-i18n.json')),
     schema: read(path.join(definitionsDir, 'component.schema.json')),
     definitions: readdirSync(definitionsDir).filter(f => f.endsWith('.json') && f !== 'component.schema.json').sort().map(f => {
       const def = read(path.join(definitionsDir, f)); if (f !== `${def.id}.json`) throw Error('Definition filename/id mismatch: ' + f); return def;
     }) };
+  inputs.screens = {};
+  for (const id of new Set(inputs.definitions.map(def => def.sourceScreen).filter(Boolean))) {
+    if (!['collection', 'activities'].includes(id)) throw Error('Unregistered component source: ' + id);
+    inputs.screens[id] = { screen: read(path.join(ui, `${id}.json`)), manifest: read(path.join(ui, `${id}-sprites.json`)), rules: read(path.join(ui, `${id}-rules.json`)), i18n: read(path.join(ui, `${id}-i18n.json`)) };
+  }
+  return inputs;
 }
+export const componentInputs = (inputs, def) => def.sourceScreen ? inputs.screens[def.sourceScreen] : inputs;
 // Export only fields accepted by Proposal add; retain all original fields in tree/spec.
 export function proposalEntity(tree, manifest, prefix, omitted = []) {
   const entity = { id: `${prefix}-${tree.id}`, name: tree.name, type: tree.type, children: tree.children.map(n => proposalEntity(n, manifest, prefix, omitted)) };
@@ -38,16 +45,17 @@ export function proposalEntity(tree, manifest, prefix, omitted = []) {
   return entity;
 }
 export function deriveComponents(inputs, root = GDD_ROOT) {
-  const { screen, manifest, rules, definitions, schema, i18n } = inputs;
+  const { definitions } = inputs;
   validateDefinitions(definitions, inputs);
   // Run the existing geometry helper verbatim; no second geometry implementation.
   const context = vm.createContext({ ResizeObserver: class { observe() {} } });
   vm.runInContext(readFileSync(path.join(root, 'dist/app-ui-renderer.js'), 'utf8') + '\nglobalThis.sourceRect = uiRenderer.rect;', context);
-  const rects = new Map();
-  function measure(node, parent) { const r = context.sourceRect(node.transform, parent); rects.set(node.id, JSON.parse(JSON.stringify(r))); node.children.forEach(n => measure(n, r)); }
-  measure(screen.tree, screen.referenceSize);
-  const all = walk(screen.tree);
   return definitions.map(def => {
+    const { screen, manifest, rules, i18n } = componentInputs(inputs, def);
+    const rects = new Map();
+    function measure(node, parent) { const r = context.sourceRect(node.transform, parent); rects.set(node.id, JSON.parse(JSON.stringify(r))); node.children.forEach(n => measure(n, r)); }
+    measure(screen.tree, screen.referenceSize);
+    const all = walk(screen.tree);
     const source = all.find(n => n.id === def.sourceId), sourceRect = rects.get(source.id), tree = structuredClone(source);
     const width = sourceRect.width, height = sourceRect.height;
     if (!(width > 0 && height > 0)) throw Error('Nonpositive component frame: ' + def.id);
@@ -66,7 +74,7 @@ export function deriveComponents(inputs, root = GDD_ROOT) {
     }
     const omitted = [], entity = proposalEntity(tree, manifest, `uic-${def.id}`, omitted);
     entity.name = `Component_${def.id}`;
-    const template = { op: 'add', parent: screen.tree.path, parentId: screen.tree.id, reason: `Template ${def.id}; slot: ${def.slots.map(s => `${s.name} = ${s.path}.${s.field}`).join('; ') || 'chưa có dữ liệu'}`, entity };
+    const template = { op: 'add', parent: screen.tree.path, parentId: screen.tree.id, reason: `Template ${def.id}; slot: ${def.slots.map(s => `${s.name} = ${s.path}${s.sourceId ? ` [${s.sourceId}]` : ''}.${s.field}`).join('; ') || 'chưa có dữ liệu'}`, entity };
     return { ...def, source: screen.source, sourceRect, referenceSize: { width, height }, tree, entityCount: spec.nodes.length, spec, template, templateOmitted: omitted,
       stateEvidence: def.states.map(s => ({ name: s.name, ruleSource: s.ruleSource, rule: get(rules, s.ruleSource) })),
       usedBy: definitions.filter(d => d.composedOf.includes(def.id)).map(d => d.id) };
@@ -74,7 +82,8 @@ export function deriveComponents(inputs, root = GDD_ROOT) {
 }
 export function syncUiComponents({ root = GDD_ROOT, dryRun = false, inputs = loadInputs(root) } = {}) {
   const components = deriveComponents(inputs, root), outputs = new Map();
-  const registry = { source: inputs.screen.source, groups: [...new Set(components.map(c => c.group))], components: components.map(c => ({ id: c.id, name: c.name, group: c.group, status: c.status, sourcePath: c.sourcePath, sourceId: c.sourceId, entityCount: c.entityCount, usedCount: c.usedIn.filter(u => !u.planned).length, plannedCount: c.usedIn.filter(u => u.planned).length, data: `./data/ui/components/${c.id}.json` })) };
+  const sourceIds = [...new Set(components.map(c => c.sourceScreen || 'collection'))];
+  const registry = { source: inputs.screen.source, sources: Object.fromEntries(sourceIds.map(id => [id, { manifest: `./data/ui/${id}-sprites.json`, i18n: `./data/ui/${id}-i18n.json` }])), groups: [...new Set(components.map(c => c.group))], components: components.map(c => ({ id: c.id, name: c.name, sourceScreen: c.sourceScreen || 'collection', group: c.group, status: c.status, sourcePath: c.sourcePath, sourceId: c.sourceId, entityCount: c.entityCount, usedCount: c.usedIn.filter(u => !u.planned).length, plannedCount: c.usedIn.filter(u => u.planned).length, data: `./data/ui/components/${c.id}.json` })) };
   for (const c of components) outputs.set(`${c.id}.json`, encode(c));
   outputs.set('registry.json', encode(registry));
   outputs.set('components-audit.json', encode({ components: components.length, entityInstances: components.reduce((n, c) => n + c.entityCount, 0), validated: true, source: inputs.screen.source, gameReads: false }));

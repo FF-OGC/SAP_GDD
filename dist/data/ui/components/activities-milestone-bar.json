@@ -1,0 +1,847 @@
+{
+  "id": "activities-milestone-bar",
+  "name": "Activities · Thanh tiến độ tổng",
+  "sourceScreen": "activities",
+  "sourcePath": "Activities/Activities/Container/Missions/MilestoneBar",
+  "sourceId": "SblHi5BT",
+  "group": "Hiển thị dữ liệu",
+  "status": "runtime",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "Activities/Activities/Container/Missions/MilestoneBar",
+      "sourceId": "SblHi5BT",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "progress",
+      "type": "count",
+      "path": "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar",
+      "sourceId": "RvVwJCGc",
+      "field": "image.fillAmount",
+      "default": 0.15,
+      "sample": 0.6
+    },
+    {
+      "name": "trackTint",
+      "type": "tint",
+      "path": "Activities/Activities/Container/Missions/MilestoneBar",
+      "sourceId": "SblHi5BT",
+      "field": "image.color",
+      "default": "#1f64c4"
+    },
+    {
+      "name": "fillTint",
+      "type": "tint",
+      "path": "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar",
+      "sourceId": "RvVwJCGc",
+      "field": "image.color",
+      "default": "#FFD515"
+    }
+  ],
+  "states": [
+    {
+      "name": "Chưa có điểm",
+      "when": "points <= 0",
+      "ruleSource": "bindings.milestone",
+      "overrides": [
+        {
+          "path": "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar",
+          "sourceId": "RvVwJCGc",
+          "field": "image.fillAmount",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "name": "Đủ điểm",
+      "when": "points >= mốc cuối",
+      "ruleSource": "bindings.milestone",
+      "overrides": [
+        {
+          "path": "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar",
+          "sourceId": "RvVwJCGc",
+          "field": "image.fillAmount",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "usedIn": [
+    {
+      "screen": "activities",
+      "note": "Subtree thật từ Activities.ui; không chạy binder trong template"
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ snapshot .ui. Tham số mẫu chỉ dùng xem thử, không phải config game.",
+    "Nền màu tạm cho hai sprite white lib thiếu, theo yêu cầu hiển thị thanh Preview. Bản xem thử ghi fallback; export vẫn liệt kê sprite thiếu và không xuất ảnh giả."
+  ],
+  "previewFallbacks": [
+    {
+      "sourceId": "SblHi5BT",
+      "kind": "solid-color"
+    },
+    {
+      "sourceId": "RvVwJCGc",
+      "kind": "solid-color"
+    }
+  ],
+  "source": "Assets/HUDs/Activities.ui",
+  "sourceRect": {
+    "left": 105,
+    "top": 86,
+    "width": 660,
+    "height": 5
+  },
+  "referenceSize": {
+    "width": 660,
+    "height": 5
+  },
+  "tree": {
+    "path": "Activities/Activities/Container/Missions/MilestoneBar",
+    "id": "SblHi5BT",
+    "name": "MilestoneBar",
+    "type": "UIImageEntity",
+    "active": true,
+    "transform": {
+      "rotate": 0,
+      "anchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchoredPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sizeDelta": {
+        "x": 660,
+        "y": 5
+      }
+    },
+    "alpha": 100,
+    "priority": 0,
+    "image": {
+      "source": {
+        "fileId": "5d250edc7ccde0be5ccab1e2cf53b57f",
+        "filePath": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+        "_tag": {
+          "type": "GFileRefer"
+        },
+        "fileType": "texture"
+      },
+      "color": "#1f64c4",
+      "reverse": {
+        "x": false,
+        "y": false
+      },
+      "fillType": 3,
+      "slicedBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "tiledBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "centerInvisible": false,
+      "fillDir": 0,
+      "fillAmount": 1,
+      "invertFill": false,
+      "flip": 0,
+      "gradient": 1,
+      "gradientTop": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "gradientBottom": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "isApplyAnimation": false,
+      "animationAtlasID": null,
+      "animationFrameRate": 30,
+      "animationLoop": true,
+      "spriteKey": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png"
+    },
+    "button": null,
+    "text": null,
+    "layout": null,
+    "propsData": {
+      "activeSelf": true,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0.5,
+          "y": 1
+        },
+        "anchorMax": {
+          "x": 0.5,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 1
+        },
+        "anchoredPosition": {
+          "x": 20,
+          "y": -86
+        },
+        "sizeDelta": {
+          "x": 660,
+          "y": 5
+        }
+      },
+      "alpha": 100,
+      "priority": 0,
+      "image": {
+        "source": {
+          "fileId": "5d250edc7ccde0be5ccab1e2cf53b57f",
+          "filePath": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+          "_tag": {
+            "type": "GFileRefer"
+          },
+          "fileType": "texture"
+        },
+        "color": "#1f64c4",
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "fillType": 3,
+        "slicedBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "tiledBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 1,
+        "invertFill": false,
+        "flip": 0,
+        "gradient": 1,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "isApplyAnimation": false,
+        "animationAtlasID": null,
+        "animationFrameRate": 30,
+        "animationLoop": true
+      }
+    },
+    "ecaProps": {
+      "HudImageWidget": {},
+      "HudWidget": {},
+      "Entity": {}
+    },
+    "unsupported": [],
+    "children": [
+      {
+        "path": "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar",
+        "id": "RvVwJCGc",
+        "name": "ProgressBar",
+        "type": "UIImageEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sizeDelta": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": {
+          "source": {
+            "fileId": "5d250edc7ccde0be5ccab1e2cf53b57f",
+            "filePath": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#FFD515",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 3,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0.15,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png"
+        },
+        "button": null,
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 0,
+              "y": 0
+            },
+            "sizeDelta": {
+              "x": 0,
+              "y": 2
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "image": {
+            "source": {
+              "fileId": "5d250edc7ccde0be5ccab1e2cf53b57f",
+              "filePath": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "color": "#FFD515",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "fillType": 3,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0.15,
+            "invertFill": false,
+            "flip": 0,
+            "gradient": 1,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "isApplyAnimation": false,
+            "animationAtlasID": null,
+            "animationFrameRate": 30,
+            "animationLoop": true
+          }
+        },
+        "ecaProps": {
+          "HudImageWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [],
+        "children": []
+      }
+    ]
+  },
+  "entityCount": 2,
+  "spec": {
+    "nodes": [
+      {
+        "id": "SblHi5BT",
+        "path": "Activities/Activities/Container/Missions/MilestoneBar",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 105,
+          "top": 86,
+          "width": 660,
+          "height": 5
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "RvVwJCGc",
+        "path": "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 0,
+          "top": -1,
+          "width": 660,
+          "height": 7
+        },
+        "active": true,
+        "alpha": 100
+      }
+    ],
+    "images": [
+      {
+        "id": "SblHi5BT",
+        "path": "Activities/Activities/Container/Missions/MilestoneBar",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 105,
+          "top": 86,
+          "width": 660,
+          "height": 5
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+        "sprite": {
+          "key": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+          "declaredKey": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+          "declaredKeys": [
+            "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png"
+          ],
+          "fileId": "5d250edc7ccde0be5ccab1e2cf53b57f",
+          "output": null,
+          "missing": true,
+          "references": [
+            "Activities/Activities/Container/Missions/MilestoneBar",
+            "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": null,
+          "width": null,
+          "height": null
+        },
+        "image": {
+          "source": {
+            "fileId": "5d250edc7ccde0be5ccab1e2cf53b57f",
+            "filePath": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#1f64c4",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 3,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 1,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png"
+        },
+        "tint": "#1f64c4"
+      },
+      {
+        "id": "RvVwJCGc",
+        "path": "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 0,
+          "top": -1,
+          "width": 660,
+          "height": 7
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+        "sprite": {
+          "key": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+          "declaredKey": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+          "declaredKeys": [
+            "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png"
+          ],
+          "fileId": "5d250edc7ccde0be5ccab1e2cf53b57f",
+          "output": null,
+          "missing": true,
+          "references": [
+            "Activities/Activities/Container/Missions/MilestoneBar",
+            "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": null,
+          "width": null,
+          "height": null
+        },
+        "image": {
+          "source": {
+            "fileId": "5d250edc7ccde0be5ccab1e2cf53b57f",
+            "filePath": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#FFD515",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 3,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0.15,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png"
+        },
+        "tint": "#FFD515"
+      }
+    ],
+    "shapes": [
+      {
+        "id": "SblHi5BT",
+        "path": "Activities/Activities/Container/Missions/MilestoneBar",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 105,
+          "top": 86,
+          "width": 660,
+          "height": 5
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#1f64c4",
+        "background": null
+      },
+      {
+        "id": "RvVwJCGc",
+        "path": "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 0,
+          "top": -1,
+          "width": 660,
+          "height": 7
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#FFD515",
+        "background": null
+      }
+    ],
+    "texts": []
+  },
+  "template": {
+    "op": "add",
+    "parent": "Activities",
+    "parentId": "CFlcLwrb",
+    "reason": "Template activities-milestone-bar; slot: visible = Activities/Activities/Container/Missions/MilestoneBar [SblHi5BT].active; progress = Activities/Activities/Container/Missions/MilestoneBar/ProgressBar [RvVwJCGc].image.fillAmount; trackTint = Activities/Activities/Container/Missions/MilestoneBar [SblHi5BT].image.color; fillTint = Activities/Activities/Container/Missions/MilestoneBar/ProgressBar [RvVwJCGc].image.color",
+    "entity": {
+      "id": "uic-activities-milestone-bar-SblHi5BT",
+      "name": "Component_activities-milestone-bar",
+      "type": "UIImageEntity",
+      "children": [
+        {
+          "id": "uic-activities-milestone-bar-RvVwJCGc",
+          "name": "ProgressBar",
+          "type": "UIImageEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 0,
+              "y": 0
+            },
+            "sizeDelta": {
+              "x": 0,
+              "y": 2
+            }
+          },
+          "image": {
+            "color": "#FFD515",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "fillType": 3,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0.15,
+            "invertFill": false
+          }
+        }
+      ],
+      "active": true,
+      "alpha": 100,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchorMax": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchoredPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "sizeDelta": {
+          "x": 660,
+          "y": 5
+        }
+      },
+      "image": {
+        "color": "#1f64c4",
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "fillType": 3,
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 1,
+        "invertFill": false
+      }
+    }
+  },
+  "templateOmitted": [
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.source.fileId",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.source.filePath",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.source._tag.type",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.source.fileType",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.slicedBorder.left",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.slicedBorder.right",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.slicedBorder.top",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.slicedBorder.bottom",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.tiledBorder.left",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.tiledBorder.right",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.tiledBorder.top",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.tiledBorder.bottom",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.flip",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.gradient",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.gradientTop.r",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.gradientTop.g",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.gradientTop.b",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.gradientTop.a",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.gradientBottom.r",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.gradientBottom.g",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.gradientBottom.b",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.gradientBottom.a",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.isApplyAnimation",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.animationAtlasID",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.animationFrameRate",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.animationLoop",
+    "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar: image.spriteKey (thiếu sprite)",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.source.fileId",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.source.filePath",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.source._tag.type",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.source.fileType",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.slicedBorder.left",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.slicedBorder.right",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.slicedBorder.top",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.slicedBorder.bottom",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.tiledBorder.left",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.tiledBorder.right",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.tiledBorder.top",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.tiledBorder.bottom",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.flip",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.gradient",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.gradientTop.r",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.gradientTop.g",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.gradientTop.b",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.gradientTop.a",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.gradientBottom.r",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.gradientBottom.g",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.gradientBottom.b",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.gradientBottom.a",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.isApplyAnimation",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.animationAtlasID",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.animationFrameRate",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.animationLoop",
+    "Activities/Activities/Container/Missions/MilestoneBar: image.spriteKey (thiếu sprite)"
+  ],
+  "stateEvidence": [
+    {
+      "name": "Chưa có điểm",
+      "ruleSource": "bindings.milestone",
+      "rule": "Assets/Scripts/HUDs/HudActivities.fcg:1053"
+    },
+    {
+      "name": "Đủ điểm",
+      "ruleSource": "bindings.milestone",
+      "rule": "Assets/Scripts/HUDs/HudActivities.fcg:1053"
+    }
+  ],
+  "usedBy": []
+}

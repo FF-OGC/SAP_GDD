@@ -1,0 +1,93 @@
+{
+  "id": "activities-milestone-bar",
+  "name": "Activities · Thanh tiến độ tổng",
+  "sourceScreen": "activities",
+  "sourcePath": "Activities/Activities/Container/Missions/MilestoneBar",
+  "sourceId": "SblHi5BT",
+  "group": "Hiển thị dữ liệu",
+  "status": "runtime",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "Activities/Activities/Container/Missions/MilestoneBar",
+      "sourceId": "SblHi5BT",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "progress",
+      "type": "count",
+      "path": "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar",
+      "sourceId": "RvVwJCGc",
+      "field": "image.fillAmount",
+      "default": 0.15,
+      "sample": 0.6
+    },
+    {
+      "name": "trackTint",
+      "type": "tint",
+      "path": "Activities/Activities/Container/Missions/MilestoneBar",
+      "sourceId": "SblHi5BT",
+      "field": "image.color",
+      "default": "#1f64c4"
+    },
+    {
+      "name": "fillTint",
+      "type": "tint",
+      "path": "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar",
+      "sourceId": "RvVwJCGc",
+      "field": "image.color",
+      "default": "#FFD515"
+    }
+  ],
+  "states": [
+    {
+      "name": "Chưa có điểm",
+      "when": "points <= 0",
+      "ruleSource": "bindings.milestone",
+      "overrides": [
+        {
+          "path": "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar",
+          "sourceId": "RvVwJCGc",
+          "field": "image.fillAmount",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "name": "Đủ điểm",
+      "when": "points >= mốc cuối",
+      "ruleSource": "bindings.milestone",
+      "overrides": [
+        {
+          "path": "Activities/Activities/Container/Missions/MilestoneBar/ProgressBar",
+          "sourceId": "RvVwJCGc",
+          "field": "image.fillAmount",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "usedIn": [
+    {
+      "screen": "activities",
+      "note": "Subtree thật từ Activities.ui; không chạy binder trong template"
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ snapshot .ui. Tham số mẫu chỉ dùng xem thử, không phải config game.",
+    "Nền màu tạm cho hai sprite white lib thiếu, theo yêu cầu hiển thị thanh Preview. Bản xem thử ghi fallback; export vẫn liệt kê sprite thiếu và không xuất ảnh giả."
+  ],
+  "previewFallbacks": [
+    {
+      "sourceId": "SblHi5BT",
+      "kind": "solid-color"
+    },
+    {
+      "sourceId": "RvVwJCGc",
+      "kind": "solid-color"
+    }
+  ]
+}

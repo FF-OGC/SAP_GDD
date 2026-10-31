@@ -1,0 +1,33 @@
+{
+  "id": "activities-tab-bar",
+  "name": "Activities · Nhóm tab",
+  "sourceScreen": "activities",
+  "sourcePath": "Activities/Activities/TabsLayout",
+  "sourceId": "bgQhRCYk",
+  "group": "Điều khiển",
+  "status": "real",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "Activities/Activities/TabsLayout",
+      "sourceId": "bgQhRCYk",
+      "field": "active",
+      "default": true
+    }
+  ],
+  "states": [],
+  "usedIn": [
+    {
+      "screen": "activities",
+      "note": "Subtree thật từ Activities.ui; không chạy binder trong template"
+    }
+  ],
+  "composedOf": [
+    "activities-tab-button"
+  ],
+  "notes": [
+    "Bản mặc định giữ snapshot .ui. Tham số mẫu chỉ dùng xem thử, không phải config game.",
+    "Tab Event giữ inactive theo source. Chỉ là layout tab, không chạy điều hướng Activities."
+  ]
+}

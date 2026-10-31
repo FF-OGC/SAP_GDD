@@ -1,0 +1,104 @@
+{
+  "id": "activities-spin-wheel",
+  "name": "Activities · Vòng quay thưởng",
+  "sourceScreen": "activities",
+  "sourcePath": "Activities/Activities/Container/Spin/SpinLayout",
+  "sourceId": "B7mTjiH4",
+  "group": "Ghép",
+  "status": "real",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "Activities/Activities/Container/Spin/SpinLayout",
+      "sourceId": "B7mTjiH4",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "rotation",
+      "type": "count",
+      "path": "Activities/Activities/Container/Spin/SpinLayout",
+      "sourceId": "B7mTjiH4",
+      "field": "transform.rotate",
+      "default": 0,
+      "sample": 45
+    },
+    {
+      "name": "reward1Art",
+      "type": "sprite",
+      "path": "Activities/Activities/Container/Spin/SpinLayout/Reward/RewardIcon",
+      "sourceId": "O8hHEulq",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/Summon/MYTHIC.png"
+    },
+    {
+      "name": "reward2Art",
+      "type": "sprite",
+      "path": "Activities/Activities/Container/Spin/SpinLayout/Reward/RewardIcon",
+      "sourceId": "GXNdWIZp",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/Icons/PetCoinIcon.png"
+    },
+    {
+      "name": "reward3Art",
+      "type": "sprite",
+      "path": "Activities/Activities/Container/Spin/SpinLayout/Reward/RewardIcon",
+      "sourceId": "WkFdukSm",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/Icons/MoneyIcon.png"
+    },
+    {
+      "name": "reward4Art",
+      "type": "sprite",
+      "path": "Activities/Activities/Container/Spin/SpinLayout/Reward/RewardIcon",
+      "sourceId": "tLZpAAt6",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/Icons/PetCoinIcon.png"
+    },
+    {
+      "name": "reward5Art",
+      "type": "sprite",
+      "path": "Activities/Activities/Container/Spin/SpinLayout/Reward/RewardIcon",
+      "sourceId": "I1EOdMh6",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/Pets/ROOSTER.png"
+    },
+    {
+      "name": "reward6Art",
+      "type": "sprite",
+      "path": "Activities/Activities/Container/Spin/SpinLayout/Reward/RewardIcon",
+      "sourceId": "p0g2Ea9v",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/Icons/MoneyIcon.png"
+    },
+    {
+      "name": "reward7Art",
+      "type": "sprite",
+      "path": "Activities/Activities/Container/Spin/SpinLayout/Reward/RewardIcon",
+      "sourceId": "jIBXFbnx",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/Icons/PetCoinIcon.png"
+    },
+    {
+      "name": "reward8Art",
+      "type": "sprite",
+      "path": "Activities/Activities/Container/Spin/SpinLayout/Reward/RewardIcon",
+      "sourceId": "Xfr8SLOt",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/Icons/MoneyIcon.png"
+    }
+  ],
+  "states": [],
+  "usedIn": [
+    {
+      "screen": "activities",
+      "note": "Subtree thật từ Activities.ui; không chạy binder trong template"
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ snapshot .ui. Tham số mẫu chỉ dùng xem thử, không phải config game.",
+    "8 phần thưởng giữ vị trí/góc serialize. Rotation là tham số xem thử; không tự quay hoặc bốc thưởng. Các Reward trùng path dùng entity ID."
+  ]
+}

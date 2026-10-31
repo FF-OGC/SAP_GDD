@@ -3,7 +3,7 @@ import { createRequire } from 'node:module';
 import { writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { GDD_ROOT, syncUiComponents, loadInputs } from './sync-ui-components.mjs';
+import { GDD_ROOT, syncUiComponents, loadInputs, componentInputs } from './sync-ui-components.mjs';
 import { applyProposal } from './sync-ui-proposals.mjs';
 import { auditUnchangedConsumers } from './audit-ui-components-regressions.mjs';
 
@@ -54,11 +54,12 @@ export async function auditComponentsBrowser(url, components = syncUiComponents(
         // A source snapshot mounted with the exact UI Preview renderer, without
         // runtime binder mutations. Full path/id match, not a copied subtree.
         await page.evaluate(async () => {
-          const source = await fetchUiResource('./data/ui/collection.json').then(checkUiJson);
+          const source = await fetchUiResource(`./data/ui/${uiComponents.selected.sourceScreen || 'collection'}.json`).then(checkUiJson);
+          const resources = uicResources(uiComponents.selected);
           const host = document.createElement('div');host.id='uic-source-fixture';
           Object.assign(host.style,{position:'absolute',left:'-10000px',top:'0',width:source.referenceSize.width+'px',height:source.referenceSize.height+'px',overflow:'hidden'});
           document.body.appendChild(host);
-          const rendered=uiRenderer.render({tree:uicTranslatedTree(source.tree)},uiComponents.manifest,source.referenceSize.width,source.referenceSize.height);
+          const rendered=uiRenderer.render({tree:uicTranslatedTree(source.tree,resources.i18n)},resources.manifest,source.referenceSize.width,source.referenceSize.height);
           host.appendChild(rendered.canvas); window.uicSourceRendered=rendered;
         });
         await settle(page);
@@ -90,7 +91,7 @@ export async function auditComponentsBrowser(url, components = syncUiComponents(
           const changes=await page.evaluate(() => {
             const state=uiComponents.selected.states.find(st=>st.name===uiComponents.state),tree=uicWalk(uiComponents.instance);
             return state.overrides.map(change=>{
-              const n=tree.find(n=>n.path===change.path),el=uiComponents.rendered.byId.get(n.id);
+              const n=uicTarget(tree,change),el=uiComponents.rendered.byId.get(n.id);
               return {actual:uicGet(n,change.field),expected:change.value,domActive:!el.classList.contains('ui-inactive'),modelActive:n.active,sprite:el.dataset.uiSpriteKey,field:change.field};
             });
           });
@@ -106,12 +107,12 @@ export async function auditComponentsBrowser(url, components = syncUiComponents(
           const selector=`#uic-slot-${index}`;
           let value;
           if(slot.type==='active'){value=!slot.default;await page.locator(selector).setChecked(value);}
-          else if(slot.type==='sprite'){value=inputs.manifest.sprites.find(sp=>sp.output&&!sp.missing&&sp.key!==slot.default).key;await page.selectOption(selector,value);}
+          else if(slot.type==='sprite'){value=componentInputs(inputs,component).manifest.sprites.find(sp=>sp.output&&!sp.missing&&sp.key!==slot.default).key;await page.selectOption(selector,value);}
           else if(slot.type==='count'){value=.25;await page.fill(selector,String(value));}
           else {value=slot.type==='tint'?'#123456':'Nội dung mẫu QA';await page.fill(selector,value);}
           await settle(page);
           const actual=await page.evaluate(({slot,value})=>{
-            const node=uicWalk(uiComponents.instance).find(n=>n.path===slot.path),el=uiComponents.rendered.byId.get(node.id);
+            const node=uicTarget(uicWalk(uiComponents.instance),slot),el=uiComponents.rendered.byId.get(node.id);
             return {value:uicGet(node,slot.field),active:!el.classList.contains('ui-inactive'),sprite:el.dataset.uiSpriteKey,text:el.querySelector(':scope > .ui-text')?.textContent,color:el.querySelector(':scope > .ui-visual > .ui-sprite')?.dataset.uiRenderData,mask:el.style.maskImage||el.style.clipPath};
           },{slot,value});
           assert.deepEqual(actual.value,value,component.id+' '+slot.name);
@@ -127,7 +128,9 @@ export async function auditComponentsBrowser(url, components = syncUiComponents(
         await page.locator('#uic-detail details').evaluateAll(elements=>elements.forEach(el=>el.open=true));
         await page.locator('#uic-copy').click();await page.waitForFunction(()=>document.getElementById('uic-copy-status').textContent==='Đã sao chép template');
         const op=JSON.parse(await page.evaluate(()=>navigator.clipboard.readText()));
-        const patched=applyProposal(inputs.screen,inputs.manifest,{id:'browser-template',screen:'collection',title:'QA',author:'QA',status:'draft',summary:'Clipboard validation',ops:[op],newAssets:[]});
+        const sourceInputs=componentInputs(inputs,component);
+        const manifest={...inputs.manifest,sprites:[...inputs.manifest.sprites,...sourceInputs.manifest.sprites.filter(sp=>!inputs.manifest.sprites.some(base=>base.key===sp.key))]};
+        const patched=applyProposal(inputs.screen,manifest,{id:'browser-template',screen:'collection',title:'QA',author:'QA',status:'draft',summary:'Clipboard validation',ops:[{...op,parent:inputs.screen.tree.path,parentId:inputs.screen.tree.id}],newAssets:[]});
         assert.equal(patched.screen.entityCount,inputs.screen.entityCount+component.entityCount);
         const overflow=await page.evaluate(()=>({page:document.documentElement.scrollWidth,viewport:innerWidth,tables:[...document.querySelectorAll('.uic-table')].map(el=>({scroll:el.scrollWidth,width:el.clientWidth}))}));
         assert.ok(overflow.page<=overflow.viewport,component.id+' page overflow '+JSON.stringify(overflow));

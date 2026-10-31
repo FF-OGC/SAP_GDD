@@ -1,10 +1,10 @@
 {
-  "cases": 219,
-  "components": 16,
-  "entityInstances": 180,
+  "cases": 360,
+  "components": 27,
+  "entityInstances": 303,
   "idempotent": true,
   "invalidBatchWritesNothing": true,
-  "invalidCases": 16,
+  "invalidCases": 18,
   "proposalTemplateSemanticValidation": true,
   "gameReads": false,
   "browser": null

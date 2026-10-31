@@ -1,5 +1,15 @@
 {
   "source": "Assets/HUDs/PetsCollection.ui",
+  "sources": {
+    "activities": {
+      "manifest": "./data/ui/activities-sprites.json",
+      "i18n": "./data/ui/activities-i18n.json"
+    },
+    "collection": {
+      "manifest": "./data/ui/collection-sprites.json",
+      "i18n": "./data/ui/collection-i18n.json"
+    }
+  },
   "groups": [
     "Điều khiển",
     "Hiển thị dữ liệu",
@@ -8,8 +18,152 @@
   ],
   "components": [
     {
+      "id": "activities-claim-button",
+      "name": "Activities · Nút nhận thưởng",
+      "sourceScreen": "activities",
+      "group": "Điều khiển",
+      "status": "runtime",
+      "sourcePath": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton",
+      "sourceId": "UaEwmJ0H",
+      "entityCount": 2,
+      "usedCount": 1,
+      "plannedCount": 0,
+      "data": "./data/ui/components/activities-claim-button.json"
+    },
+    {
+      "id": "activities-featured-reward",
+      "name": "Activities · Thẻ quà ngày cuối",
+      "sourceScreen": "activities",
+      "group": "Hiển thị dữ liệu",
+      "status": "runtime",
+      "sourcePath": "Activities/Activities/Container/Rewards/Reward (6)",
+      "sourceId": "cWXjwJoo",
+      "entityCount": 16,
+      "usedCount": 1,
+      "plannedCount": 0,
+      "data": "./data/ui/components/activities-featured-reward.json"
+    },
+    {
+      "id": "activities-milestone-bar",
+      "name": "Activities · Thanh tiến độ tổng",
+      "sourceScreen": "activities",
+      "group": "Hiển thị dữ liệu",
+      "status": "runtime",
+      "sourcePath": "Activities/Activities/Container/Missions/MilestoneBar",
+      "sourceId": "SblHi5BT",
+      "entityCount": 2,
+      "usedCount": 1,
+      "plannedCount": 0,
+      "data": "./data/ui/components/activities-milestone-bar.json"
+    },
+    {
+      "id": "activities-milestone",
+      "name": "Activities · Mốc thưởng",
+      "sourceScreen": "activities",
+      "group": "Ghép",
+      "status": "runtime",
+      "sourcePath": "Activities/Activities/Container/Missions/Milestones/Milestone",
+      "sourceId": "vcMK3Alh",
+      "entityCount": 12,
+      "usedCount": 1,
+      "plannedCount": 0,
+      "data": "./data/ui/components/activities-milestone.json"
+    },
+    {
+      "id": "activities-mission-row",
+      "name": "Activities · Dòng nhiệm vụ",
+      "sourceScreen": "activities",
+      "group": "Ghép",
+      "status": "runtime",
+      "sourcePath": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission",
+      "sourceId": "VTImbXdy",
+      "entityCount": 23,
+      "usedCount": 1,
+      "plannedCount": 0,
+      "data": "./data/ui/components/activities-mission-row.json"
+    },
+    {
+      "id": "activities-points-counter",
+      "name": "Activities · Bộ đếm Pet Points",
+      "sourceScreen": "activities",
+      "group": "Hiển thị dữ liệu",
+      "status": "real",
+      "sourcePath": "Activities/Activities/Container/Missions/PetPoints",
+      "sourceId": "FBnDavKh",
+      "entityCount": 2,
+      "usedCount": 1,
+      "plannedCount": 0,
+      "data": "./data/ui/components/activities-points-counter.json"
+    },
+    {
+      "id": "activities-reward-card",
+      "name": "Activities · Thẻ quà đăng nhập",
+      "sourceScreen": "activities",
+      "group": "Hiển thị dữ liệu",
+      "status": "runtime",
+      "sourcePath": "Activities/Activities/Container/Rewards/Reward",
+      "sourceId": "hilWu5yB",
+      "entityCount": 12,
+      "usedCount": 1,
+      "plannedCount": 0,
+      "data": "./data/ui/components/activities-reward-card.json"
+    },
+    {
+      "id": "activities-reward-item",
+      "name": "Activities · Ô phần thưởng",
+      "sourceScreen": "activities",
+      "group": "Hiển thị dữ liệu",
+      "status": "real",
+      "sourcePath": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward",
+      "sourceId": "hmbSCP9M",
+      "entityCount": 8,
+      "usedCount": 1,
+      "plannedCount": 0,
+      "data": "./data/ui/components/activities-reward-item.json"
+    },
+    {
+      "id": "activities-spin-wheel",
+      "name": "Activities · Vòng quay thưởng",
+      "sourceScreen": "activities",
+      "group": "Ghép",
+      "status": "real",
+      "sourcePath": "Activities/Activities/Container/Spin/SpinLayout",
+      "sourceId": "B7mTjiH4",
+      "entityCount": 25,
+      "usedCount": 1,
+      "plannedCount": 0,
+      "data": "./data/ui/components/activities-spin-wheel.json"
+    },
+    {
+      "id": "activities-tab-bar",
+      "name": "Activities · Nhóm tab",
+      "sourceScreen": "activities",
+      "group": "Điều khiển",
+      "status": "real",
+      "sourcePath": "Activities/Activities/TabsLayout",
+      "sourceId": "bgQhRCYk",
+      "entityCount": 17,
+      "usedCount": 1,
+      "plannedCount": 0,
+      "data": "./data/ui/components/activities-tab-bar.json"
+    },
+    {
+      "id": "activities-tab-button",
+      "name": "Activities · Nút tab",
+      "sourceScreen": "activities",
+      "group": "Điều khiển",
+      "status": "runtime",
+      "sourcePath": "Activities/Activities/TabsLayout/DailyRewardsTabButton",
+      "sourceId": "gvZA4BXM",
+      "entityCount": 4,
+      "usedCount": 1,
+      "plannedCount": 0,
+      "data": "./data/ui/components/activities-tab-button.json"
+    },
+    {
       "id": "close-button",
       "name": "Nút đóng",
+      "sourceScreen": "collection",
       "group": "Điều khiển",
       "status": "real",
       "sourcePath": "PetsCollection/Container/Title/CloseButton",
@@ -22,6 +176,7 @@
     {
       "id": "detail-card",
       "name": "Thẻ chi tiết",
+      "sourceScreen": "collection",
       "group": "Hiển thị dữ liệu",
       "status": "real",
       "sourcePath": "PetsCollection/Container/PetDetails/Pet",
@@ -34,6 +189,7 @@
     {
       "id": "detail-tab-button",
       "name": "Tab chi tiết",
+      "sourceScreen": "collection",
       "group": "Điều khiển",
       "status": "runtime",
       "sourcePath": "PetsCollection/Container/DetailsTabsLayout/InfoTabButton",
@@ -46,6 +202,7 @@
     {
       "id": "info-row",
       "name": "Dòng thông tin",
+      "sourceScreen": "collection",
       "group": "Hiển thị dữ liệu",
       "status": "real",
       "sourcePath": "PetsCollection/Container/Info/Value",
@@ -58,6 +215,7 @@
     {
       "id": "item-cell",
       "name": "Ô vật phẩm",
+      "sourceScreen": "collection",
       "group": "Hiển thị dữ liệu",
       "status": "real",
       "sourcePath": "PetsCollection/Container/PetsLayout/Pet (1)",
@@ -70,6 +228,7 @@
     {
       "id": "item-grid",
       "name": "Lưới vật phẩm",
+      "sourceScreen": "collection",
       "group": "Ghép",
       "status": "real",
       "sourcePath": "PetsCollection/Container/PetsLayout",
@@ -82,6 +241,7 @@
     {
       "id": "list-popup",
       "name": "Popup lưới và chi tiết",
+      "sourceScreen": "collection",
       "group": "Ghép",
       "status": "real",
       "sourcePath": "PetsCollection/Container",
@@ -94,6 +254,7 @@
     {
       "id": "pagination",
       "name": "Phân trang",
+      "sourceScreen": "collection",
       "group": "Điều khiển",
       "status": "real",
       "sourcePath": "PetsCollection/Container/PageBtns",
@@ -106,6 +267,7 @@
     {
       "id": "popup-frame",
       "name": "Khung trang trí popup",
+      "sourceScreen": "collection",
       "group": "Khung",
       "status": "real",
       "sourcePath": "PetsCollection/Container/BG",
@@ -118,6 +280,7 @@
     {
       "id": "progress-counter",
       "name": "Bộ đếm tiến độ",
+      "sourceScreen": "collection",
       "group": "Hiển thị dữ liệu",
       "status": "real",
       "sourcePath": "PetsCollection/Container/PetsCount",
@@ -130,6 +293,7 @@
     {
       "id": "rarity-badge",
       "name": "Nhãn rarity",
+      "sourceScreen": "collection",
       "group": "Hiển thị dữ liệu",
       "status": "runtime",
       "sourcePath": "PetsCollection/Container/PetDetails/Pet/RarityBG",
@@ -142,6 +306,7 @@
     {
       "id": "scrim",
       "name": "Nền chặn modal",
+      "sourceScreen": "collection",
       "group": "Khung",
       "status": "real",
       "sourcePath": "PetsCollection/DarkBG",
@@ -154,6 +319,7 @@
     {
       "id": "tab-bar",
       "name": "Dải tab rarity",
+      "sourceScreen": "collection",
       "group": "Ghép",
       "status": "real",
       "sourcePath": "PetsCollection/Container/RarityTabsLayout",
@@ -166,6 +332,7 @@
     {
       "id": "tab-button",
       "name": "Tab rarity",
+      "sourceScreen": "collection",
       "group": "Điều khiển",
       "status": "runtime",
       "sourcePath": "PetsCollection/Container/RarityTabsLayout/AllTabButton",
@@ -178,6 +345,7 @@
     {
       "id": "title-bar",
       "name": "Thanh tiêu đề",
+      "sourceScreen": "collection",
       "group": "Khung",
       "status": "real",
       "sourcePath": "PetsCollection/Container/Title",
@@ -190,6 +358,7 @@
     {
       "id": "unlock-banner",
       "name": "Dải nguồn mở khoá",
+      "sourceScreen": "collection",
       "group": "Hiển thị dữ liệu",
       "status": "real",
       "sourcePath": "PetsCollection/Container/UnlockObtain",

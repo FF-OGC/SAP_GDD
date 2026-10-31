@@ -1,0 +1,109 @@
+{
+  "id": "activities-mission-row",
+  "name": "Activities · Dòng nhiệm vụ",
+  "sourceScreen": "activities",
+  "sourcePath": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission",
+  "sourceId": "VTImbXdy",
+  "group": "Ghép",
+  "status": "runtime",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission",
+      "sourceId": "VTImbXdy",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Details",
+      "sourceId": "Xpg6bOoq",
+      "field": "text.value",
+      "default": "Login",
+      "sample": "Nhiệm vụ mẫu"
+    },
+    {
+      "name": "progressText",
+      "type": "text",
+      "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress",
+      "sourceId": "yWfkfcly",
+      "field": "text.value",
+      "default": "0/3",
+      "sample": "2/3 (mẫu)"
+    },
+    {
+      "name": "firstRewardAmount",
+      "type": "text",
+      "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/RewardAmount",
+      "sourceId": "THNRBdX4",
+      "field": "text.value",
+      "default": "x4h",
+      "sample": "x10 (mẫu)"
+    },
+    {
+      "name": "secondRewardAmount",
+      "type": "text",
+      "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/RewardAmount",
+      "sourceId": "hzxJLsX2",
+      "field": "text.value",
+      "default": "x4h",
+      "sample": "x20 (mẫu)"
+    }
+  ],
+  "states": [
+    {
+      "name": "Đã nhận",
+      "when": "HasClaimedDailyMissionReward=true",
+      "ruleSource": "bindings.mission",
+      "overrides": [
+        {
+          "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress",
+          "sourceId": "yWfkfcly",
+          "field": "active",
+          "value": false
+        },
+        {
+          "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Claimed",
+          "sourceId": "o79VlDqC",
+          "field": "active",
+          "value": true
+        }
+      ]
+    },
+    {
+      "name": "Đang làm",
+      "when": "HasClaimedDailyMissionReward=false",
+      "ruleSource": "bindings.mission",
+      "overrides": [
+        {
+          "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress",
+          "sourceId": "yWfkfcly",
+          "field": "active",
+          "value": true
+        },
+        {
+          "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Claimed",
+          "sourceId": "o79VlDqC",
+          "field": "active",
+          "value": false
+        }
+      ]
+    }
+  ],
+  "usedIn": [
+    {
+      "screen": "activities",
+      "note": "Subtree thật từ Activities.ui; không chạy binder trong template"
+    }
+  ],
+  "composedOf": [
+    "activities-reward-item",
+    "activities-claim-button"
+  ],
+  "notes": [
+    "Bản mặc định giữ snapshot .ui. Tham số mẫu chỉ dùng xem thử, không phải config game.",
+    "Hai ô Reward trùng path được bind theo sourceId. Progress là text theo source, không thêm thanh riêng cho từng dòng."
+  ]
+}

@@ -1,0 +1,4639 @@
+{
+  "id": "activities-milestone",
+  "name": "Activities · Mốc thưởng",
+  "sourceScreen": "activities",
+  "sourcePath": "Activities/Activities/Container/Missions/Milestones/Milestone",
+  "sourceId": "vcMK3Alh",
+  "group": "Ghép",
+  "status": "runtime",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "Activities/Activities/Container/Missions/Milestones/Milestone",
+      "sourceId": "vcMK3Alh",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "threshold",
+      "type": "text",
+      "path": "Activities/Activities/Container/Missions/Milestones/Milestone/MilestoneLabel",
+      "sourceId": "ZB6lMV8i",
+      "field": "text.value",
+      "default": "100",
+      "sample": "60 (mẫu)"
+    },
+    {
+      "name": "rewardArt",
+      "type": "sprite",
+      "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon",
+      "sourceId": "xQuFhSJs",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/Icons/PetCoinIcon.png"
+    },
+    {
+      "name": "amount",
+      "type": "text",
+      "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardAmount",
+      "sourceId": "VrTcXCKK",
+      "field": "text.value",
+      "default": "x4h",
+      "sample": "x3 (mẫu)"
+    }
+  ],
+  "states": [
+    {
+      "name": "Có thể nhận",
+      "when": "points >= milestone && !isClaimed",
+      "ruleSource": "bindings.milestone",
+      "overrides": [
+        {
+          "path": "Activities/Activities/Container/Missions/Milestones/Milestone",
+          "sourceId": "vcMK3Alh",
+          "field": "image.color",
+          "value": "#FFD515"
+        },
+        {
+          "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton",
+          "sourceId": "SVXgozSk",
+          "field": "active",
+          "value": true
+        },
+        {
+          "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask",
+          "sourceId": "fsIbZlK3",
+          "field": "active",
+          "value": false
+        }
+      ]
+    },
+    {
+      "name": "Đã nhận",
+      "when": "isClaimed=true",
+      "ruleSource": "bindings.milestone",
+      "overrides": [
+        {
+          "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton",
+          "sourceId": "SVXgozSk",
+          "field": "active",
+          "value": false
+        },
+        {
+          "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask",
+          "sourceId": "fsIbZlK3",
+          "field": "active",
+          "value": true
+        }
+      ]
+    },
+    {
+      "name": "Chưa đạt",
+      "when": "points < milestone",
+      "ruleSource": "bindings.milestone",
+      "overrides": [
+        {
+          "path": "Activities/Activities/Container/Missions/Milestones/Milestone",
+          "sourceId": "vcMK3Alh",
+          "field": "image.color",
+          "value": "#1F64C4"
+        },
+        {
+          "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton",
+          "sourceId": "SVXgozSk",
+          "field": "active",
+          "value": false
+        },
+        {
+          "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask",
+          "sourceId": "fsIbZlK3",
+          "field": "active",
+          "value": false
+        }
+      ]
+    }
+  ],
+  "usedIn": [
+    {
+      "screen": "activities",
+      "note": "Subtree thật từ Activities.ui; không chạy binder trong template"
+    }
+  ],
+  "composedOf": [
+    "activities-reward-item"
+  ],
+  "notes": [
+    "Bản mặc định giữ snapshot .ui. Tham số mẫu chỉ dùng xem thử, không phải config game.",
+    "RewardDetail cùng cấu trúc ô thưởng; vùng nguồn chỉ 35×25 nhưng icon nhô ra ngoài theo source."
+  ],
+  "source": "Assets/HUDs/Activities.ui",
+  "sourceRect": {
+    "left": 0,
+    "top": 35.5,
+    "width": 35,
+    "height": 25
+  },
+  "referenceSize": {
+    "width": 35,
+    "height": 25
+  },
+  "tree": {
+    "path": "Activities/Activities/Container/Missions/Milestones/Milestone",
+    "id": "vcMK3Alh",
+    "name": "Milestone",
+    "type": "UIImageEntity",
+    "active": true,
+    "transform": {
+      "rotate": 0,
+      "anchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchoredPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sizeDelta": {
+        "x": 35,
+        "y": 25
+      }
+    },
+    "alpha": 100,
+    "priority": 0,
+    "image": {
+      "source": {
+        "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+        "filePath": "Assets\\Sprites\\Backgrounds\\BG.png",
+        "_tag": {
+          "type": "GFileRefer"
+        },
+        "fileType": "texture"
+      },
+      "color": "#1f64c4",
+      "reverse": {
+        "x": false,
+        "y": false
+      },
+      "fillType": 1,
+      "slicedBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "tiledBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "centerInvisible": false,
+      "fillDir": 0,
+      "fillAmount": 0,
+      "invertFill": false,
+      "flip": 0,
+      "gradient": 1,
+      "gradientTop": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "gradientBottom": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "isApplyAnimation": false,
+      "animationAtlasID": null,
+      "animationFrameRate": 30,
+      "animationLoop": true,
+      "spriteKey": "Assets/Sprites/Backgrounds/BG.png"
+    },
+    "button": null,
+    "text": null,
+    "layout": null,
+    "propsData": {
+      "activeSelf": true,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchorMax": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchoredPosition": {
+          "x": -270.5,
+          "y": -15.5
+        },
+        "sizeDelta": {
+          "x": 35,
+          "y": 25
+        }
+      },
+      "alpha": 100,
+      "priority": 0,
+      "image": {
+        "source": {
+          "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+          "filePath": "Assets\\Sprites\\Backgrounds\\BG.png",
+          "_tag": {
+            "type": "GFileRefer"
+          },
+          "fileType": "texture"
+        },
+        "color": "#1f64c4",
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "fillType": 1,
+        "slicedBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "tiledBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "flip": 0,
+        "gradient": 1,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "isApplyAnimation": false,
+        "animationAtlasID": null,
+        "animationFrameRate": 30,
+        "animationLoop": true
+      }
+    },
+    "ecaProps": {
+      "HudImageWidget": {},
+      "HudWidget": {},
+      "Entity": {}
+    },
+    "unsupported": [],
+    "children": [
+      {
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/MilestoneLabel",
+        "id": "ZB6lMV8i",
+        "name": "MilestoneLabel",
+        "type": "UITextEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sizeDelta": {
+            "x": -8,
+            "y": -4
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": null,
+        "button": null,
+        "text": {
+          "value": "100",
+          "key": "",
+          "font": "Default",
+          "fontSize": 18,
+          "fontStyle": {
+            "bold": false,
+            "italic": false,
+            "underline": false
+          },
+          "color": "#FFFFFF",
+          "alignment": {
+            "h": "center",
+            "v": "middle"
+          },
+          "lineSpacing": 0,
+          "background": false,
+          "backgroundColor": "#e7b200",
+          "overflow": 0,
+          "backgroundRGBA": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0
+          },
+          "shadow": true,
+          "shadowColor": "#ffffff",
+          "shadowOffset": {
+            "x": 1,
+            "y": 1
+          },
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "outline": false,
+          "outlineColor": "#000000",
+          "outlineAlpha": 1,
+          "outlineOffset": 1,
+          "shadowAlpha": 1
+        },
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 0,
+              "y": 0
+            },
+            "sizeDelta": {
+              "x": -8,
+              "y": -4
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "text": {
+            "value": "100",
+            "key": "",
+            "font": "Default",
+            "fontSize": 18,
+            "fontStyle": {
+              "bold": false,
+              "italic": false,
+              "underline": false
+            },
+            "color": "#FFFFFF",
+            "alignment": {
+              "h": "center",
+              "v": "middle"
+            },
+            "lineSpacing": 0,
+            "background": false,
+            "backgroundColor": "#e7b200",
+            "overflow": 0,
+            "backgroundRGBA": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0
+            },
+            "shadow": true,
+            "shadowColor": "#ffffff",
+            "shadowOffset": {
+              "x": 1,
+              "y": 1
+            },
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "outline": false,
+            "outlineColor": "#000000",
+            "outlineAlpha": 1,
+            "outlineOffset": 1,
+            "shadowAlpha": 1
+          }
+        },
+        "ecaProps": {
+          "HudLabelWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [],
+        "children": []
+      },
+      {
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail",
+        "id": "L5ulzj3p",
+        "name": "RewardDetail",
+        "type": "UIImageEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "anchorMax": {
+            "x": 0.5,
+            "y": 1
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0
+          },
+          "anchoredPosition": {
+            "x": 0,
+            "y": 2
+          },
+          "sizeDelta": {
+            "x": 56,
+            "y": 56
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": {
+          "source": {
+            "fileId": "uxm85o6u4w-mu6xhq1i-eqcetnq7xhd",
+            "filePath": "Assets\\Sprites\\NewAssets\\ItemBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 119,
+            "g": 119,
+            "b": 119,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/ItemBG.png"
+        },
+        "button": null,
+        "text": null,
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0.5,
+              "y": 1
+            },
+            "anchorMax": {
+              "x": 0.5,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0
+            },
+            "anchoredPosition": {
+              "x": 0,
+              "y": 2
+            },
+            "sizeDelta": {
+              "x": 56,
+              "y": 56
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "image": {
+            "source": {
+              "fileId": "uxm85o6u4w-mu6xhq1i-eqcetnq7xhd",
+              "filePath": "Assets\\Sprites\\NewAssets\\ItemBG.png",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "texture"
+            },
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "fillType": 1,
+            "slicedBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "tiledBorder": {
+              "left": 0,
+              "right": 0,
+              "top": 0,
+              "bottom": 0
+            },
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "flip": 0,
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 119,
+              "g": 119,
+              "b": 119,
+              "a": 1
+            },
+            "isApplyAnimation": false,
+            "animationAtlasID": null,
+            "animationFrameRate": 30,
+            "animationLoop": true
+          }
+        },
+        "ecaProps": {
+          "HudImageWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [],
+        "children": [
+          {
+            "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity",
+            "id": "tfv628it",
+            "name": "Rarity",
+            "type": "UIImageEntity",
+            "active": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0.5,
+                "y": 0
+              },
+              "anchorMax": {
+                "x": 0.5,
+                "y": 0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0
+              },
+              "anchoredPosition": {
+                "x": 0,
+                "y": 1
+              },
+              "sizeDelta": {
+                "x": 52,
+                "y": 10
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "image": {
+              "source": {
+                "fileId": "rqpomo66vjg-mu6vezgl-j2m6wc8co4",
+                "filePath": "Assets\\Sprites\\NewAssets\\RarityBG.png",
+                "_tag": {
+                  "type": "GFileRefer"
+                },
+                "fileType": "texture"
+              },
+              "color": "#ffffff",
+              "reverse": {
+                "x": false,
+                "y": false
+              },
+              "fillType": 1,
+              "slicedBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "tiledBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "centerInvisible": false,
+              "fillDir": 0,
+              "fillAmount": 0,
+              "invertFill": false,
+              "flip": 0,
+              "gradient": 1,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "isApplyAnimation": false,
+              "animationAtlasID": null,
+              "animationFrameRate": 30,
+              "animationLoop": true,
+              "spriteKey": "Assets/Sprites/NewAssets/RarityBG.png"
+            },
+            "button": null,
+            "text": null,
+            "layout": null,
+            "propsData": {
+              "activeSelf": true,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0.5,
+                  "y": 0
+                },
+                "anchorMax": {
+                  "x": 0.5,
+                  "y": 0
+                },
+                "pivot": {
+                  "x": 0.5,
+                  "y": 0
+                },
+                "anchoredPosition": {
+                  "x": 0,
+                  "y": 1
+                },
+                "sizeDelta": {
+                  "x": 52,
+                  "y": 10
+                }
+              },
+              "alpha": 100,
+              "priority": 0,
+              "image": {
+                "source": {
+                  "fileId": "rqpomo66vjg-mu6vezgl-j2m6wc8co4",
+                  "filePath": "Assets\\Sprites\\NewAssets\\RarityBG.png",
+                  "_tag": {
+                    "type": "GFileRefer"
+                  },
+                  "fileType": "texture"
+                },
+                "color": "#ffffff",
+                "reverse": {
+                  "x": false,
+                  "y": false
+                },
+                "fillType": 1,
+                "slicedBorder": {
+                  "left": 0,
+                  "right": 0,
+                  "top": 0,
+                  "bottom": 0
+                },
+                "tiledBorder": {
+                  "left": 0,
+                  "right": 0,
+                  "top": 0,
+                  "bottom": 0
+                },
+                "centerInvisible": false,
+                "fillDir": 0,
+                "fillAmount": 0,
+                "invertFill": false,
+                "flip": 0,
+                "gradient": 1,
+                "gradientTop": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "gradientBottom": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "isApplyAnimation": false,
+                "animationAtlasID": null,
+                "animationFrameRate": 30,
+                "animationLoop": true
+              }
+            },
+            "ecaProps": {
+              "HudImageWidget": {},
+              "HudWidget": {},
+              "Entity": {}
+            },
+            "unsupported": [],
+            "children": []
+          },
+          {
+            "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon",
+            "id": "xQuFhSJs",
+            "name": "RewardIcon",
+            "type": "UIImageEntity",
+            "active": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchorMax": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 0,
+                "y": 4
+              },
+              "sizeDelta": {
+                "x": 40,
+                "y": 40
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "image": {
+              "source": {
+                "fileId": "bju08pkwxav-mincvh54-3nkt79t4vxw",
+                "filePath": "Assets\\Sprites\\UIComponents\\Icons\\PetCoinIcon.png",
+                "_tag": {
+                  "type": "GFileRefer"
+                },
+                "fileType": "texture"
+              },
+              "color": "#ffffff",
+              "reverse": {
+                "x": false,
+                "y": false
+              },
+              "fillType": 1,
+              "slicedBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "tiledBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "centerInvisible": false,
+              "fillDir": 0,
+              "fillAmount": 0,
+              "invertFill": false,
+              "flip": 0,
+              "gradient": 1,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "isApplyAnimation": false,
+              "animationAtlasID": null,
+              "animationFrameRate": 30,
+              "animationLoop": true,
+              "spriteKey": "Assets/Sprites/Icons/PetCoinIcon.png"
+            },
+            "button": null,
+            "text": null,
+            "layout": null,
+            "propsData": {
+              "activeSelf": true,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "anchorMax": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 0,
+                  "y": 4
+                },
+                "sizeDelta": {
+                  "x": 40,
+                  "y": 40
+                }
+              },
+              "alpha": 100,
+              "priority": 0,
+              "image": {
+                "source": {
+                  "fileId": "bju08pkwxav-mincvh54-3nkt79t4vxw",
+                  "filePath": "Assets\\Sprites\\UIComponents\\Icons\\PetCoinIcon.png",
+                  "_tag": {
+                    "type": "GFileRefer"
+                  },
+                  "fileType": "texture"
+                },
+                "color": "#ffffff",
+                "reverse": {
+                  "x": false,
+                  "y": false
+                },
+                "fillType": 1,
+                "slicedBorder": {
+                  "left": 0,
+                  "right": 0,
+                  "top": 0,
+                  "bottom": 0
+                },
+                "tiledBorder": {
+                  "left": 0,
+                  "right": 0,
+                  "top": 0,
+                  "bottom": 0
+                },
+                "centerInvisible": false,
+                "fillDir": 0,
+                "fillAmount": 0,
+                "invertFill": false,
+                "flip": 0,
+                "gradient": 1,
+                "gradientTop": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "gradientBottom": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "isApplyAnimation": false,
+                "animationAtlasID": null,
+                "animationFrameRate": 30,
+                "animationLoop": true
+              }
+            },
+            "ecaProps": {
+              "HudImageWidget": {},
+              "HudWidget": {},
+              "Entity": {}
+            },
+            "unsupported": [],
+            "children": []
+          },
+          {
+            "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton",
+            "id": "dKkio1k4",
+            "name": "TooltipButton",
+            "type": "UIButtonEntity",
+            "active": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchorMax": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 0,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 60,
+                "y": 60
+              }
+            },
+            "alpha": 0,
+            "priority": 0,
+            "image": null,
+            "button": {
+              "spriteName": {
+                "fileId": "4fea53c19488f972a3e911c826b1bea7",
+                "filePath": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+                "_tag": {
+                  "type": "GFileRefer"
+                },
+                "fileType": "texture"
+              },
+              "normal": "#FFFFFF",
+              "highlight": "#e2a222",
+              "pressed": "#C5C5C5",
+              "disabled": "#494949",
+              "enableBorderImage": true,
+              "disableCollider": false,
+              "fillType": 1,
+              "slicedBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "tiledBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "centerInvisible": false,
+              "fillDir": 0,
+              "fillAmount": 0,
+              "invertFill": false,
+              "reverse": {
+                "x": false,
+                "y": false
+              },
+              "flip": 0,
+              "gradient": 1,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "spriteKey": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png"
+            },
+            "text": null,
+            "layout": null,
+            "propsData": {
+              "activeSelf": true,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "anchorMax": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 0,
+                  "y": 0
+                },
+                "sizeDelta": {
+                  "x": 60,
+                  "y": 60
+                }
+              },
+              "alpha": 0,
+              "priority": 0,
+              "button": {
+                "spriteName": {
+                  "fileId": "4fea53c19488f972a3e911c826b1bea7",
+                  "filePath": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+                  "_tag": {
+                    "type": "GFileRefer"
+                  },
+                  "fileType": "texture"
+                },
+                "normal": "#FFFFFF",
+                "highlight": "#e2a222",
+                "pressed": "#C5C5C5",
+                "disabled": "#494949",
+                "onClicks": [],
+                "enableBorderImage": true,
+                "clickHandlers": [],
+                "disableCollider": false,
+                "fillType": 1,
+                "slicedBorder": {
+                  "left": 0,
+                  "right": 0,
+                  "top": 0,
+                  "bottom": 0
+                },
+                "tiledBorder": {
+                  "left": 0,
+                  "right": 0,
+                  "top": 0,
+                  "bottom": 0
+                },
+                "centerInvisible": false,
+                "fillDir": 0,
+                "fillAmount": 0,
+                "invertFill": false,
+                "reverse": {
+                  "x": false,
+                  "y": false
+                },
+                "flip": 0,
+                "gradient": 1,
+                "gradientTop": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "gradientBottom": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                }
+              }
+            },
+            "ecaProps": {
+              "HudButtonWidget": {
+                "PROP_45691568": {
+                  "type": "CustomEnum90516480",
+                  "value": "E83738128"
+                }
+              },
+              "HudWidget": {},
+              "Entity": {},
+              "CustomComponent60719762": {
+                "PROP_67849619": {
+                  "type": "CustomEnum31606359",
+                  "value": "E29418266"
+                },
+                "PROP_14559980": true,
+                "PROP_18515399": false,
+                "PROP_38970829": false,
+                "PROP_97911502": true,
+                "PROP_43765547": "",
+                "PROP_98550933": "",
+                "PROP_21696224": null,
+                "PROP_88719701": "",
+                "PROP_71237636": {
+                  "x": -70,
+                  "y": 180,
+                  "z": 0
+                },
+                "PROP_94494852": {
+                  "r": 176,
+                  "g": 175,
+                  "b": 175,
+                  "a": 1
+                }
+              }
+            },
+            "unsupported": [
+              "button.onClicks",
+              "button.clickHandlers",
+              "componentList"
+            ],
+            "children": []
+          },
+          {
+            "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton",
+            "id": "SVXgozSk",
+            "name": "ClaimButton",
+            "type": "UIButtonEntity",
+            "active": false,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0,
+                "y": 0
+              },
+              "anchorMax": {
+                "x": 1,
+                "y": 1
+              },
+              "pivot": {
+                "x": 1,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 2,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 4,
+                "y": 4
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "image": null,
+            "button": {
+              "spriteName": {
+                "fileId": "njceqxhqj39-mg4z1yf2-51xpaq2j1ly",
+                "filePath": "Assets\\Sprites\\Guides\\GuideBox.png",
+                "_tag": {
+                  "type": "GFileRefer"
+                },
+                "fileType": "texture"
+              },
+              "normal": "#ffffff",
+              "highlight": "#e2a222",
+              "pressed": "#C5C5C5",
+              "disabled": "#494949",
+              "enableBorderImage": true,
+              "disableCollider": false,
+              "fillType": 1,
+              "slicedBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "tiledBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "centerInvisible": false,
+              "fillDir": 0,
+              "fillAmount": 0,
+              "invertFill": false,
+              "reverse": {
+                "x": false,
+                "y": false
+              },
+              "flip": 0,
+              "gradient": 1,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "spriteKey": "Assets/Sprites/Guides/GuideBox.png"
+            },
+            "text": null,
+            "layout": null,
+            "propsData": {
+              "activeSelf": false,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0,
+                  "y": 0
+                },
+                "anchorMax": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 1,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 2,
+                  "y": 0
+                },
+                "sizeDelta": {
+                  "x": 4,
+                  "y": 4
+                }
+              },
+              "alpha": 100,
+              "priority": 0,
+              "button": {
+                "spriteName": {
+                  "fileId": "njceqxhqj39-mg4z1yf2-51xpaq2j1ly",
+                  "filePath": "Assets\\Sprites\\Guides\\GuideBox.png",
+                  "_tag": {
+                    "type": "GFileRefer"
+                  },
+                  "fileType": "texture"
+                },
+                "normal": "#ffffff",
+                "highlight": "#e2a222",
+                "pressed": "#C5C5C5",
+                "disabled": "#494949",
+                "onClicks": [],
+                "enableBorderImage": true,
+                "clickHandlers": [],
+                "disableCollider": false,
+                "fillType": 1,
+                "slicedBorder": {
+                  "left": 0,
+                  "right": 0,
+                  "top": 0,
+                  "bottom": 0
+                },
+                "tiledBorder": {
+                  "left": 0,
+                  "right": 0,
+                  "top": 0,
+                  "bottom": 0
+                },
+                "centerInvisible": false,
+                "fillDir": 0,
+                "fillAmount": 0,
+                "invertFill": false,
+                "reverse": {
+                  "x": false,
+                  "y": false
+                },
+                "flip": 0,
+                "gradient": 1,
+                "gradientTop": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "gradientBottom": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                }
+              }
+            },
+            "ecaProps": {
+              "HudButtonWidget": {
+                "PROP_45691568": {
+                  "type": "CustomEnum90516480",
+                  "value": "E74482783"
+                }
+              },
+              "HudWidget": {},
+              "Entity": {},
+              "CustomComponent87412455": {
+                "PROP_58217166": 0
+              },
+              "CustomComponent56541581": {
+                "PROP_96800806": 0
+              }
+            },
+            "unsupported": [
+              "button.onClicks",
+              "button.clickHandlers",
+              "componentList"
+            ],
+            "children": [
+              {
+                "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon",
+                "id": "ymcAEmKV",
+                "name": "GiftboxIcon",
+                "type": "UIImageEntity",
+                "active": true,
+                "transform": {
+                  "rotate": 340,
+                  "anchorMin": {
+                    "x": 1,
+                    "y": 1
+                  },
+                  "anchorMax": {
+                    "x": 1,
+                    "y": 1
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 0,
+                    "y": -5
+                  },
+                  "sizeDelta": {
+                    "x": 25,
+                    "y": 25
+                  }
+                },
+                "alpha": 100,
+                "priority": 0,
+                "image": {
+                  "source": {
+                    "fileId": "xlsgouu7nr-mq6dqtxs-1joo2w562be",
+                    "filePath": "Assets\\Sprites\\Icons\\GiftboxIcon.png",
+                    "_tag": {
+                      "type": "GFileRefer"
+                    },
+                    "fileType": "texture"
+                  },
+                  "color": "#FF9400",
+                  "reverse": {
+                    "x": false,
+                    "y": false
+                  },
+                  "fillType": 1,
+                  "slicedBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "tiledBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "centerInvisible": false,
+                  "fillDir": 0,
+                  "fillAmount": 0,
+                  "invertFill": false,
+                  "flip": 0,
+                  "gradient": 1,
+                  "gradientTop": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  },
+                  "gradientBottom": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  },
+                  "isApplyAnimation": false,
+                  "animationAtlasID": null,
+                  "animationFrameRate": 30,
+                  "animationLoop": true,
+                  "spriteKey": "Assets/Sprites/Icons/GiftboxIcon.png"
+                },
+                "button": null,
+                "text": null,
+                "layout": null,
+                "propsData": {
+                  "activeSelf": true,
+                  "transform": {
+                    "rotate": 340,
+                    "anchorMin": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "anchorMax": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "anchoredPosition": {
+                      "x": 0,
+                      "y": -5
+                    },
+                    "sizeDelta": {
+                      "x": 25,
+                      "y": 25
+                    }
+                  },
+                  "alpha": 100,
+                  "priority": 0,
+                  "image": {
+                    "source": {
+                      "fileId": "xlsgouu7nr-mq6dqtxs-1joo2w562be",
+                      "filePath": "Assets\\Sprites\\Icons\\GiftboxIcon.png",
+                      "_tag": {
+                        "type": "GFileRefer"
+                      },
+                      "fileType": "texture"
+                    },
+                    "color": "#FF9400",
+                    "reverse": {
+                      "x": false,
+                      "y": false
+                    },
+                    "fillType": 1,
+                    "slicedBorder": {
+                      "left": 0,
+                      "right": 0,
+                      "top": 0,
+                      "bottom": 0
+                    },
+                    "tiledBorder": {
+                      "left": 0,
+                      "right": 0,
+                      "top": 0,
+                      "bottom": 0
+                    },
+                    "centerInvisible": false,
+                    "fillDir": 0,
+                    "fillAmount": 0,
+                    "invertFill": false,
+                    "flip": 0,
+                    "gradient": 1,
+                    "gradientTop": {
+                      "r": 255,
+                      "g": 255,
+                      "b": 255,
+                      "a": 1
+                    },
+                    "gradientBottom": {
+                      "r": 255,
+                      "g": 255,
+                      "b": 255,
+                      "a": 1
+                    },
+                    "isApplyAnimation": false,
+                    "animationAtlasID": null,
+                    "animationFrameRate": 30,
+                    "animationLoop": true
+                  }
+                },
+                "ecaProps": {
+                  "HudImageWidget": {},
+                  "HudWidget": {},
+                  "Entity": {}
+                },
+                "unsupported": [],
+                "children": [
+                  {
+                    "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon",
+                    "id": "M3GrbfYn",
+                    "name": "GlowIcon",
+                    "type": "UIImageEntity",
+                    "active": true,
+                    "transform": {
+                      "rotate": 0,
+                      "anchorMin": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "anchorMax": {
+                        "x": 1,
+                        "y": 1
+                      },
+                      "pivot": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "anchoredPosition": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "sizeDelta": {
+                        "x": 20,
+                        "y": 20
+                      }
+                    },
+                    "alpha": 100,
+                    "priority": 0,
+                    "image": {
+                      "source": {
+                        "fileId": "7a7299163551335f237b94854eb60438",
+                        "filePath": "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png",
+                        "_tag": {
+                          "type": "GFileRefer"
+                        },
+                        "fileType": "texture"
+                      },
+                      "color": "#FF9400",
+                      "reverse": {
+                        "x": false,
+                        "y": false
+                      },
+                      "fillType": 1,
+                      "slicedBorder": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 0
+                      },
+                      "tiledBorder": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 0
+                      },
+                      "centerInvisible": false,
+                      "fillDir": 0,
+                      "fillAmount": 0,
+                      "invertFill": false,
+                      "flip": 0,
+                      "gradient": 1,
+                      "gradientTop": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255,
+                        "a": 1
+                      },
+                      "gradientBottom": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255,
+                        "a": 1
+                      },
+                      "isApplyAnimation": false,
+                      "animationAtlasID": null,
+                      "animationFrameRate": 30,
+                      "animationLoop": true,
+                      "spriteKey": "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png"
+                    },
+                    "button": null,
+                    "text": null,
+                    "layout": null,
+                    "propsData": {
+                      "activeSelf": true,
+                      "transform": {
+                        "rotate": 0,
+                        "anchorMin": {
+                          "x": 0,
+                          "y": 0
+                        },
+                        "anchorMax": {
+                          "x": 1,
+                          "y": 1
+                        },
+                        "pivot": {
+                          "x": 0.5,
+                          "y": 0.5
+                        },
+                        "anchoredPosition": {
+                          "x": 0,
+                          "y": 0
+                        },
+                        "sizeDelta": {
+                          "x": 20,
+                          "y": 20
+                        }
+                      },
+                      "alpha": 100,
+                      "priority": 0,
+                      "image": {
+                        "source": {
+                          "fileId": "7a7299163551335f237b94854eb60438",
+                          "filePath": "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png",
+                          "_tag": {
+                            "type": "GFileRefer"
+                          },
+                          "fileType": "texture"
+                        },
+                        "color": "#FF9400",
+                        "reverse": {
+                          "x": false,
+                          "y": false
+                        },
+                        "fillType": 1,
+                        "slicedBorder": {
+                          "left": 0,
+                          "right": 0,
+                          "top": 0,
+                          "bottom": 0
+                        },
+                        "tiledBorder": {
+                          "left": 0,
+                          "right": 0,
+                          "top": 0,
+                          "bottom": 0
+                        },
+                        "centerInvisible": false,
+                        "fillDir": 0,
+                        "fillAmount": 0,
+                        "invertFill": false,
+                        "flip": 0,
+                        "gradient": 1,
+                        "gradientTop": {
+                          "r": 255,
+                          "g": 255,
+                          "b": 255,
+                          "a": 1
+                        },
+                        "gradientBottom": {
+                          "r": 255,
+                          "g": 255,
+                          "b": 255,
+                          "a": 1
+                        },
+                        "isApplyAnimation": false,
+                        "animationAtlasID": null,
+                        "animationFrameRate": 30,
+                        "animationLoop": true
+                      }
+                    },
+                    "ecaProps": {
+                      "HudImageWidget": {},
+                      "HudWidget": {},
+                      "Entity": {}
+                    },
+                    "unsupported": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardAmount",
+            "id": "VrTcXCKK",
+            "name": "RewardAmount",
+            "type": "UITextEntity",
+            "active": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 1,
+                "y": 0
+              },
+              "anchorMax": {
+                "x": 1,
+                "y": 0
+              },
+              "pivot": {
+                "x": 1,
+                "y": 0
+              },
+              "anchoredPosition": {
+                "x": 10,
+                "y": -4
+              },
+              "sizeDelta": {
+                "x": 60,
+                "y": 20
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "image": null,
+            "button": null,
+            "text": {
+              "value": "x4h",
+              "key": "",
+              "font": "Default",
+              "fontSize": 20,
+              "fontStyle": {
+                "bold": false,
+                "italic": false,
+                "underline": false
+              },
+              "color": "#1f64c4",
+              "alignment": {
+                "h": "right",
+                "v": "middle"
+              },
+              "lineSpacing": 0,
+              "background": false,
+              "backgroundColor": "#e7b200",
+              "overflow": 0,
+              "backgroundRGBA": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+              },
+              "shadow": false,
+              "shadowColor": "#000000",
+              "shadowOffset": {
+                "x": 1,
+                "y": 1
+              },
+              "gradient": 0,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "outline": false,
+              "outlineColor": "#000000",
+              "outlineAlpha": 1,
+              "outlineOffset": 1,
+              "shadowAlpha": 1
+            },
+            "layout": null,
+            "propsData": {
+              "activeSelf": true,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 1,
+                  "y": 0
+                },
+                "anchorMax": {
+                  "x": 1,
+                  "y": 0
+                },
+                "pivot": {
+                  "x": 1,
+                  "y": 0
+                },
+                "anchoredPosition": {
+                  "x": 10,
+                  "y": -4
+                },
+                "sizeDelta": {
+                  "x": 60,
+                  "y": 20
+                }
+              },
+              "alpha": 100,
+              "priority": 0,
+              "text": {
+                "value": "x4h",
+                "key": "",
+                "font": "Default",
+                "fontSize": 20,
+                "fontStyle": {
+                  "bold": false,
+                  "italic": false,
+                  "underline": false
+                },
+                "color": "#1f64c4",
+                "alignment": {
+                  "h": "right",
+                  "v": "middle"
+                },
+                "lineSpacing": 0,
+                "background": false,
+                "backgroundColor": "#e7b200",
+                "overflow": 0,
+                "backgroundRGBA": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 0
+                },
+                "shadow": false,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "x": 1,
+                  "y": 1
+                },
+                "gradient": 0,
+                "gradientTop": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "gradientBottom": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "outline": false,
+                "outlineColor": "#000000",
+                "outlineAlpha": 1,
+                "outlineOffset": 1,
+                "shadowAlpha": 1
+              }
+            },
+            "ecaProps": {
+              "HudLabelWidget": {},
+              "HudWidget": {},
+              "Entity": {}
+            },
+            "unsupported": [],
+            "children": []
+          },
+          {
+            "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask",
+            "id": "fsIbZlK3",
+            "name": "ClaimedMask",
+            "type": "UIImageEntity",
+            "active": false,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0,
+                "y": 0
+              },
+              "anchorMax": {
+                "x": 1,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 0,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 6,
+                "y": 6
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "image": {
+              "source": {
+                "fileId": "amqbaf0ix1n-mincvgtv-gm0n5ept0bj",
+                "filePath": "Assets\\Sprites\\Backgrounds\\DarkBG.png",
+                "_tag": {
+                  "type": "GFileRefer"
+                },
+                "fileType": "texture"
+              },
+              "color": "#ffffff",
+              "reverse": {
+                "x": false,
+                "y": false
+              },
+              "fillType": 1,
+              "slicedBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "tiledBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "centerInvisible": false,
+              "fillDir": 0,
+              "fillAmount": 0,
+              "invertFill": false,
+              "flip": 0,
+              "gradient": 1,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "isApplyAnimation": false,
+              "animationAtlasID": null,
+              "animationFrameRate": 30,
+              "animationLoop": true,
+              "spriteKey": "Assets/Sprites/Backgrounds/DarkBG.png"
+            },
+            "button": null,
+            "text": null,
+            "layout": null,
+            "propsData": {
+              "activeSelf": false,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0,
+                  "y": 0
+                },
+                "anchorMax": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 0,
+                  "y": 0
+                },
+                "sizeDelta": {
+                  "x": 6,
+                  "y": 6
+                }
+              },
+              "alpha": 100,
+              "priority": 0,
+              "image": {
+                "source": {
+                  "fileId": "amqbaf0ix1n-mincvgtv-gm0n5ept0bj",
+                  "filePath": "Assets\\Sprites\\Backgrounds\\DarkBG.png",
+                  "_tag": {
+                    "type": "GFileRefer"
+                  },
+                  "fileType": "texture"
+                },
+                "color": "#ffffff",
+                "reverse": {
+                  "x": false,
+                  "y": false
+                },
+                "fillType": 1,
+                "slicedBorder": {
+                  "left": 0,
+                  "right": 0,
+                  "top": 0,
+                  "bottom": 0
+                },
+                "tiledBorder": {
+                  "left": 0,
+                  "right": 0,
+                  "top": 0,
+                  "bottom": 0
+                },
+                "centerInvisible": false,
+                "fillDir": 0,
+                "fillAmount": 0,
+                "invertFill": false,
+                "flip": 0,
+                "gradient": 1,
+                "gradientTop": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "gradientBottom": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255,
+                  "a": 1
+                },
+                "isApplyAnimation": false,
+                "animationAtlasID": null,
+                "animationFrameRate": 30,
+                "animationLoop": true
+              }
+            },
+            "ecaProps": {
+              "HudImageWidget": {},
+              "HudWidget": {},
+              "Entity": {}
+            },
+            "unsupported": [],
+            "children": [
+              {
+                "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon",
+                "id": "IodT7NdR",
+                "name": "CheckIcon",
+                "type": "UIImageEntity",
+                "active": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "anchorMax": {
+                    "x": 1,
+                    "y": 1
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "sizeDelta": {
+                    "x": -10,
+                    "y": -10
+                  }
+                },
+                "alpha": 100,
+                "priority": 0,
+                "image": {
+                  "source": {
+                    "fileId": "a5b23c33df0caacdc38f928a09edb4b5",
+                    "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_YES.png",
+                    "_tag": {
+                      "type": "GFileRefer"
+                    },
+                    "fileType": "texture"
+                  },
+                  "color": "#00FF00",
+                  "reverse": {
+                    "x": false,
+                    "y": false
+                  },
+                  "fillType": 1,
+                  "slicedBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "tiledBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "centerInvisible": false,
+                  "fillDir": 0,
+                  "fillAmount": 0,
+                  "invertFill": false,
+                  "flip": 0,
+                  "gradient": 1,
+                  "gradientTop": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  },
+                  "gradientBottom": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  },
+                  "isApplyAnimation": false,
+                  "animationAtlasID": null,
+                  "animationFrameRate": 30,
+                  "animationLoop": true,
+                  "spriteKey": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_YES.png"
+                },
+                "button": null,
+                "text": null,
+                "layout": null,
+                "propsData": {
+                  "activeSelf": true,
+                  "transform": {
+                    "rotate": 0,
+                    "anchorMin": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "anchorMax": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "anchoredPosition": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "sizeDelta": {
+                      "x": -10,
+                      "y": -10
+                    }
+                  },
+                  "alpha": 100,
+                  "priority": 0,
+                  "image": {
+                    "source": {
+                      "fileId": "a5b23c33df0caacdc38f928a09edb4b5",
+                      "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_YES.png",
+                      "_tag": {
+                        "type": "GFileRefer"
+                      },
+                      "fileType": "texture"
+                    },
+                    "color": "#00FF00",
+                    "reverse": {
+                      "x": false,
+                      "y": false
+                    },
+                    "fillType": 1,
+                    "slicedBorder": {
+                      "left": 0,
+                      "right": 0,
+                      "top": 0,
+                      "bottom": 0
+                    },
+                    "tiledBorder": {
+                      "left": 0,
+                      "right": 0,
+                      "top": 0,
+                      "bottom": 0
+                    },
+                    "centerInvisible": false,
+                    "fillDir": 0,
+                    "fillAmount": 0,
+                    "invertFill": false,
+                    "flip": 0,
+                    "gradient": 1,
+                    "gradientTop": {
+                      "r": 255,
+                      "g": 255,
+                      "b": 255,
+                      "a": 1
+                    },
+                    "gradientBottom": {
+                      "r": 255,
+                      "g": 255,
+                      "b": 255,
+                      "a": 1
+                    },
+                    "isApplyAnimation": false,
+                    "animationAtlasID": null,
+                    "animationFrameRate": 30,
+                    "animationLoop": true
+                  }
+                },
+                "ecaProps": {
+                  "HudImageWidget": {},
+                  "HudWidget": {},
+                  "Entity": {}
+                },
+                "unsupported": [],
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "entityCount": 12,
+  "spec": {
+    "nodes": [
+      {
+        "id": "vcMK3Alh",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 0,
+          "top": 35.5,
+          "width": 35,
+          "height": 25
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "ZB6lMV8i",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/MilestoneLabel",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 4,
+          "top": 2,
+          "width": 27,
+          "height": 21
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "L5ulzj3p",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": -10.5,
+          "top": -58,
+          "width": 56,
+          "height": 56
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "tfv628it",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 2,
+          "top": 45,
+          "width": 52,
+          "height": 10
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "xQuFhSJs",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 8,
+          "top": 4,
+          "width": 40,
+          "height": 40
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "dKkio1k4",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": -2,
+          "top": -2,
+          "width": 60,
+          "height": 60
+        },
+        "active": true,
+        "alpha": 0
+      },
+      {
+        "id": "SVXgozSk",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": -2,
+          "top": -2,
+          "width": 60,
+          "height": 60
+        },
+        "active": false,
+        "alpha": 100
+      },
+      {
+        "id": "ymcAEmKV",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 47.5,
+          "top": -7.5,
+          "width": 25,
+          "height": 25
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "M3GrbfYn",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": -10,
+          "top": -10,
+          "width": 45,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "VrTcXCKK",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardAmount",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 6,
+          "top": 40,
+          "width": 60,
+          "height": 20
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "fsIbZlK3",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": -3,
+          "top": -3,
+          "width": 62,
+          "height": 62
+        },
+        "active": false,
+        "alpha": 100
+      },
+      {
+        "id": "IodT7NdR",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 5,
+          "top": 5,
+          "width": 52,
+          "height": 52
+        },
+        "active": true,
+        "alpha": 100
+      }
+    ],
+    "images": [
+      {
+        "id": "vcMK3Alh",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 0,
+          "top": 35.5,
+          "width": 35,
+          "height": 25
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/Backgrounds/BG.png",
+        "sprite": {
+          "key": "Assets/Sprites/Backgrounds/BG.png",
+          "declaredKey": "Assets/Sprites/Backgrounds/BG.png",
+          "declaredKeys": [
+            "Assets/Sprites/Backgrounds/BG.png"
+          ],
+          "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+          "output": "./assets/ui-sprites/activities/Backgrounds__BG.png",
+          "missing": false,
+          "references": [
+            "Activities/Activities/Container/Missions/Milestones/Milestone",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (1)",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (2)",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (3)",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (4)",
+            "Activities/Activities/Container/Event/Timeline",
+            "Activities/Activities/Container/Event/Timeline/TitleBG",
+            "Activities/Activities/Container/Event/EventLayout/Reward/Day",
+            "Activities/Activities/Container/Event/EventLayout/Reward/RewardDetails",
+            "Activities/Activities/Container/Event/EventLayout/Reward/Day",
+            "Activities/Activities/Container/Event/EventLayout/Reward/RewardDetails",
+            "Activities/Activities/Container/Event/EventLayout/Reward/Day",
+            "Activities/Activities/Container/Event/EventLayout/Reward/RewardDetails"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 8,
+            "right": 8,
+            "top": 8,
+            "bottom": 8
+          },
+          "width": 26,
+          "height": 26
+        },
+        "image": {
+          "source": {
+            "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+            "filePath": "Assets\\Sprites\\Backgrounds\\BG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#1f64c4",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/Backgrounds/BG.png"
+        },
+        "tint": "#1f64c4"
+      },
+      {
+        "id": "L5ulzj3p",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": -10.5,
+          "top": -58,
+          "width": 56,
+          "height": 56
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/ItemBG.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/ItemBG.png",
+          "declaredKey": "Assets/Sprites/NewAssets/ItemBG.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/ItemBG.png"
+          ],
+          "fileId": "uxm85o6u4w-mu6xhq1i-eqcetnq7xhd",
+          "output": "./assets/ui-sprites/activities/NewAssets__ItemBG.png",
+          "missing": false,
+          "references": [
+            "Activities/Activities/Container/Rewards/Reward",
+            "Activities/Activities/Container/Rewards/Reward (1)",
+            "Activities/Activities/Container/Rewards/Reward (2)",
+            "Activities/Activities/Container/Rewards/Reward (3)",
+            "Activities/Activities/Container/Rewards/Reward (4)",
+            "Activities/Activities/Container/Rewards/Reward (5)",
+            "Activities/Activities/Container/Rewards/Reward (6)",
+            "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail",
+            "Activities/Activities/Container/Missions/Scroll View/Missions/Mission",
+            "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward",
+            "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 20,
+            "right": 20,
+            "top": 20,
+            "bottom": 20
+          },
+          "width": 90,
+          "height": 90
+        },
+        "image": {
+          "source": {
+            "fileId": "uxm85o6u4w-mu6xhq1i-eqcetnq7xhd",
+            "filePath": "Assets\\Sprites\\NewAssets\\ItemBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 119,
+            "g": 119,
+            "b": 119,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/ItemBG.png"
+        },
+        "tint": "#ffffff"
+      },
+      {
+        "id": "tfv628it",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 2,
+          "top": 45,
+          "width": 52,
+          "height": 10
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/RarityBG.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/RarityBG.png",
+          "declaredKey": "Assets/Sprites/NewAssets/RarityBG.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/RarityBG.png"
+          ],
+          "fileId": "rqpomo66vjg-mu6vezgl-j2m6wc8co4",
+          "output": "./assets/ui-sprites/activities/NewAssets__RarityBG.png",
+          "missing": false,
+          "references": [
+            "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail/Rarity",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail/Rarity",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail/Rarity",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail/Rarity",
+            "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/Rarity",
+            "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/Rarity"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 10,
+            "right": 10,
+            "top": 0,
+            "bottom": 3
+          },
+          "width": 62,
+          "height": 10
+        },
+        "image": {
+          "source": {
+            "fileId": "rqpomo66vjg-mu6vezgl-j2m6wc8co4",
+            "filePath": "Assets\\Sprites\\NewAssets\\RarityBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/NewAssets/RarityBG.png"
+        },
+        "tint": "#ffffff"
+      },
+      {
+        "id": "xQuFhSJs",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 8,
+          "top": 4,
+          "width": 40,
+          "height": 40
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/Icons/PetCoinIcon.png",
+        "sprite": {
+          "key": "Assets/Sprites/Icons/PetCoinIcon.png",
+          "declaredKey": "Assets/Sprites/UIComponents/Icons/PetCoinIcon.png",
+          "declaredKeys": [
+            "Assets/Sprites/UIComponents/Icons/PetCoinIcon.png",
+            "Assets/Sprites/Icons/PetCoinIcon.png"
+          ],
+          "fileId": "bju08pkwxav-mincvh54-3nkt79t4vxw",
+          "output": "./assets/ui-sprites/activities/Icons__PetCoinIcon.png",
+          "missing": false,
+          "references": [
+            "Activities/Activities/Container/Rewards/Reward (1)/RewardIcon",
+            "Activities/Activities/Container/Rewards/Reward (2)/RewardIcon",
+            "Activities/Activities/Container/Rewards/Reward (3)/RewardIcon",
+            "Activities/Activities/Container/Rewards/Reward (4)/RewardIcon",
+            "Activities/Activities/Container/Rewards/Reward (5)/RewardIcon",
+            "Activities/Activities/Container/Rewards/Reward (6)/RewardIcon",
+            "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail/RewardIcon",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail/RewardIcon",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail/RewardIcon",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail/RewardIcon",
+            "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/RewardIcon",
+            "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/RewardIcon",
+            "Activities/Activities/Container/Spin/SpinLayout/Reward/RewardIcon",
+            "Activities/Activities/Container/Spin/SpinLayout/Reward/RewardIcon",
+            "Activities/Activities/Container/Spin/SpinLayout/Reward/RewardIcon",
+            "Activities/Activities/Container/Event/EventLayout/Reward/RewardIcon",
+            "Activities/Activities/Container/Event/EventLayout/Reward/RewardIcon",
+            "Activities/Activities/Container/Event/EventLayout/Reward/RewardIcon",
+            "runtime:Activities:PetCoinIcon"
+          ],
+          "origins": [
+            ".ui",
+            "runtime-code + ResourceRegisteration.asset"
+          ],
+          "border": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "width": 96,
+          "height": 96
+        },
+        "image": {
+          "source": {
+            "fileId": "bju08pkwxav-mincvh54-3nkt79t4vxw",
+            "filePath": "Assets\\Sprites\\UIComponents\\Icons\\PetCoinIcon.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/Icons/PetCoinIcon.png"
+        },
+        "tint": "#ffffff"
+      },
+      {
+        "id": "dKkio1k4",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": -2,
+          "top": -2,
+          "width": 60,
+          "height": 60
+        },
+        "active": true,
+        "alpha": 0,
+        "key": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+        "sprite": {
+          "key": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+          "declaredKey": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+          "declaredKeys": [
+            "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png"
+          ],
+          "fileId": "4fea53c19488f972a3e911c826b1bea7",
+          "output": null,
+          "missing": true,
+          "references": [
+            "Activities/Activities",
+            "Activities/Activities/Container/Rewards/Reward/TooltipButton",
+            "Activities/Activities/Container/Rewards/Reward (1)/TooltipButton",
+            "Activities/Activities/Container/Rewards/Reward (2)/TooltipButton",
+            "Activities/Activities/Container/Rewards/Reward (3)/TooltipButton",
+            "Activities/Activities/Container/Rewards/Reward (4)/TooltipButton",
+            "Activities/Activities/Container/Rewards/Reward (5)/TooltipButton",
+            "Activities/Activities/Container/Rewards/Reward (6)/TooltipButton",
+            "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail/TooltipButton",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail/TooltipButton",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail/TooltipButton",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail/TooltipButton",
+            "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/TooltipButton",
+            "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/TooltipButton",
+            "Activities/Activities/Container/Event/EventLayout/Reward/TooltipButton",
+            "Activities/Activities/Container/Event/EventLayout/Reward/TooltipButton",
+            "Activities/Activities/Container/Event/EventLayout/Reward/TooltipButton"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": null,
+          "width": null,
+          "height": null
+        },
+        "image": {
+          "spriteName": {
+            "fileId": "4fea53c19488f972a3e911c826b1bea7",
+            "filePath": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#FFFFFF",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png"
+        },
+        "tint": "#FFFFFF"
+      },
+      {
+        "id": "SVXgozSk",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": -2,
+          "top": -2,
+          "width": 60,
+          "height": 60
+        },
+        "active": false,
+        "alpha": 100,
+        "key": "Assets/Sprites/Guides/GuideBox.png",
+        "sprite": {
+          "key": "Assets/Sprites/Guides/GuideBox.png",
+          "declaredKey": "Assets/Sprites/Guides/GuideBox.png",
+          "declaredKeys": [
+            "Assets/Sprites/Guides/GuideBox.png"
+          ],
+          "fileId": "njceqxhqj39-mg4z1yf2-51xpaq2j1ly",
+          "output": "./assets/ui-sprites/activities/Guides__GuideBox.png",
+          "missing": false,
+          "references": [
+            "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail/ClaimButton",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail/ClaimButton",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail/ClaimButton",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail/ClaimButton",
+            "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/ClaimButton",
+            "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/ClaimButton"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 8,
+            "right": 8,
+            "top": 8,
+            "bottom": 8
+          },
+          "width": 32,
+          "height": 32
+        },
+        "image": {
+          "spriteName": {
+            "fileId": "njceqxhqj39-mg4z1yf2-51xpaq2j1ly",
+            "filePath": "Assets\\Sprites\\Guides\\GuideBox.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#ffffff",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/Guides/GuideBox.png"
+        },
+        "tint": "#ffffff"
+      },
+      {
+        "id": "ymcAEmKV",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 47.5,
+          "top": -7.5,
+          "width": 25,
+          "height": 25
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/Icons/GiftboxIcon.png",
+        "sprite": {
+          "key": "Assets/Sprites/Icons/GiftboxIcon.png",
+          "declaredKey": "Assets/Sprites/Icons/GiftboxIcon.png",
+          "declaredKeys": [
+            "Assets/Sprites/Icons/GiftboxIcon.png"
+          ],
+          "fileId": "xlsgouu7nr-mq6dqtxs-1joo2w562be",
+          "output": "./assets/ui-sprites/activities/Icons__GiftboxIcon.png",
+          "missing": false,
+          "references": [
+            "Activities/Activities/TabsLayout/DailyRewardsTabButton/AlertIcon",
+            "Activities/Activities/TabsLayout/DailyMissionsTabButton/AlertIcon",
+            "Activities/Activities/TabsLayout/DailySpinTabButton/AlertIcon",
+            "Activities/Activities/TabsLayout/DailyEventTabButton/AlertIcon",
+            "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail/ClaimButton/GiftboxIcon",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail/ClaimButton/GiftboxIcon",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail/ClaimButton/GiftboxIcon",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail/ClaimButton/GiftboxIcon"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "width": 64,
+          "height": 64
+        },
+        "image": {
+          "source": {
+            "fileId": "xlsgouu7nr-mq6dqtxs-1joo2w562be",
+            "filePath": "Assets\\Sprites\\Icons\\GiftboxIcon.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#FF9400",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/Icons/GiftboxIcon.png"
+        },
+        "tint": "#FF9400"
+      },
+      {
+        "id": "M3GrbfYn",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": -10,
+          "top": -10,
+          "width": 45,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png",
+        "sprite": {
+          "key": "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png",
+          "declaredKey": "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png",
+          "declaredKeys": [
+            "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png"
+          ],
+          "fileId": "7a7299163551335f237b94854eb60438",
+          "output": null,
+          "missing": true,
+          "references": [
+            "Activities/Activities/TabsLayout/DailyRewardsTabButton/AlertIcon/GlowIcon",
+            "Activities/Activities/TabsLayout/DailyMissionsTabButton/AlertIcon/GlowIcon",
+            "Activities/Activities/TabsLayout/DailySpinTabButton/AlertIcon/GlowIcon",
+            "Activities/Activities/TabsLayout/DailyEventTabButton/AlertIcon/GlowIcon",
+            "Activities/Activities/Container/Rewards/Reward/GlowIcon",
+            "Activities/Activities/Container/Rewards/Reward (1)/GlowIcon",
+            "Activities/Activities/Container/Rewards/Reward (2)/GlowIcon",
+            "Activities/Activities/Container/Rewards/Reward (3)/GlowIcon",
+            "Activities/Activities/Container/Rewards/Reward (4)/GlowIcon",
+            "Activities/Activities/Container/Rewards/Reward (5)/GlowIcon",
+            "Activities/Activities/Container/Rewards/Reward (6)/GlowIcon",
+            "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon",
+            "Activities/Activities/Container/Event/EventLayout/Reward/GlowIcon",
+            "Activities/Activities/Container/Event/EventLayout/Reward/GlowIcon",
+            "Activities/Activities/Container/Event/EventLayout/Reward/GlowIcon"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": null,
+          "width": null,
+          "height": null
+        },
+        "image": {
+          "source": {
+            "fileId": "7a7299163551335f237b94854eb60438",
+            "filePath": "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#FF9400",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "lib://fftextures/WorkshopIconLibrary/UI_BG_icon_03.png"
+        },
+        "tint": "#FF9400"
+      },
+      {
+        "id": "fsIbZlK3",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": -3,
+          "top": -3,
+          "width": 62,
+          "height": 62
+        },
+        "active": false,
+        "alpha": 100,
+        "key": "Assets/Sprites/Backgrounds/DarkBG.png",
+        "sprite": {
+          "key": "Assets/Sprites/Backgrounds/DarkBG.png",
+          "declaredKey": "Assets/Sprites/UIComponents/Backgrounds/DarkBG.png",
+          "declaredKeys": [
+            "Assets/Sprites/UIComponents/Backgrounds/DarkBG.png",
+            "Assets/Sprites/Backgrounds/DarkBG.png"
+          ],
+          "fileId": "amqbaf0ix1n-mincvgtv-gm0n5ept0bj",
+          "output": "./assets/ui-sprites/activities/Backgrounds__DarkBG.png",
+          "missing": false,
+          "references": [
+            "Activities/DarkBG",
+            "Activities/Activities/Container/Rewards/Reward/ClaimButton",
+            "Activities/Activities/Container/Rewards/Reward/ClaimedButton",
+            "Activities/Activities/Container/Rewards/Reward (1)/ClaimButton",
+            "Activities/Activities/Container/Rewards/Reward (1)/ClaimedButton",
+            "Activities/Activities/Container/Rewards/Reward (2)/ClaimButton",
+            "Activities/Activities/Container/Rewards/Reward (2)/ClaimedButton",
+            "Activities/Activities/Container/Rewards/Reward (3)/ClaimButton",
+            "Activities/Activities/Container/Rewards/Reward (3)/ClaimedButton",
+            "Activities/Activities/Container/Rewards/Reward (4)/ClaimButton",
+            "Activities/Activities/Container/Rewards/Reward (4)/ClaimedButton",
+            "Activities/Activities/Container/Rewards/Reward (5)/ClaimButton",
+            "Activities/Activities/Container/Rewards/Reward (5)/ClaimedButton",
+            "Activities/Activities/Container/Rewards/Reward (6)/ClaimButton",
+            "Activities/Activities/Container/Rewards/Reward (6)/ClaimedButton",
+            "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail/ClaimedMask",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail/ClaimedMask",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail/ClaimedMask",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail/ClaimedMask",
+            "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/ClaimedMask",
+            "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/ClaimedMask",
+            "Activities/Activities/Container/Event/EventLayout/Reward/ClaimButton",
+            "Activities/Activities/Container/Event/EventLayout/Reward/ClaimedButton",
+            "Activities/Activities/Container/Event/EventLayout/Reward/ClaimButton",
+            "Activities/Activities/Container/Event/EventLayout/Reward/ClaimedButton",
+            "Activities/Activities/Container/Event/EventLayout/Reward/ClaimButton",
+            "Activities/Activities/Container/Event/EventLayout/Reward/ClaimedButton"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": {
+            "left": 12,
+            "right": 12,
+            "top": 12,
+            "bottom": 12
+          },
+          "width": 40,
+          "height": 40
+        },
+        "image": {
+          "source": {
+            "fileId": "amqbaf0ix1n-mincvgtv-gm0n5ept0bj",
+            "filePath": "Assets\\Sprites\\Backgrounds\\DarkBG.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#ffffff",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "Assets/Sprites/Backgrounds/DarkBG.png"
+        },
+        "tint": "#ffffff"
+      },
+      {
+        "id": "IodT7NdR",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 5,
+          "top": 5,
+          "width": 52,
+          "height": 52
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_YES.png",
+        "sprite": {
+          "key": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_YES.png",
+          "declaredKey": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_YES.png",
+          "declaredKeys": [
+            "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_YES.png"
+          ],
+          "fileId": "a5b23c33df0caacdc38f928a09edb4b5",
+          "output": null,
+          "missing": true,
+          "references": [
+            "Activities/Activities/Container/Rewards/Reward/ClaimedButton/Image",
+            "Activities/Activities/Container/Rewards/Reward (1)/ClaimedButton/Image",
+            "Activities/Activities/Container/Rewards/Reward (2)/ClaimedButton/Image",
+            "Activities/Activities/Container/Rewards/Reward (3)/ClaimedButton/Image",
+            "Activities/Activities/Container/Rewards/Reward (4)/ClaimedButton/Image",
+            "Activities/Activities/Container/Rewards/Reward (5)/ClaimedButton/Image",
+            "Activities/Activities/Container/Rewards/Reward (6)/ClaimedButton/Image",
+            "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (1)/RewardDetail/ClaimedMask/CheckIcon",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (2)/RewardDetail/ClaimedMask/CheckIcon",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (3)/RewardDetail/ClaimedMask/CheckIcon",
+            "Activities/Activities/Container/Missions/Milestones/Milestone (4)/RewardDetail/ClaimedMask/CheckIcon",
+            "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/ClaimedMask/CheckIcon",
+            "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/ClaimedMask/CheckIcon",
+            "Activities/Activities/Container/Event/EventLayout/Reward/ClaimedButton/Image",
+            "Activities/Activities/Container/Event/EventLayout/Reward/ClaimedButton/Image",
+            "Activities/Activities/Container/Event/EventLayout/Reward/ClaimedButton/Image"
+          ],
+          "origins": [
+            ".ui"
+          ],
+          "border": null,
+          "width": null,
+          "height": null
+        },
+        "image": {
+          "source": {
+            "fileId": "a5b23c33df0caacdc38f928a09edb4b5",
+            "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_YES.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "color": "#00FF00",
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "isApplyAnimation": false,
+          "animationAtlasID": null,
+          "animationFrameRate": 30,
+          "animationLoop": true,
+          "spriteKey": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_YES.png"
+        },
+        "tint": "#00FF00"
+      }
+    ],
+    "shapes": [
+      {
+        "id": "vcMK3Alh",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 0,
+          "top": 35.5,
+          "width": 35,
+          "height": 25
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#1f64c4",
+        "background": null
+      },
+      {
+        "id": "ZB6lMV8i",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/MilestoneLabel",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 4,
+          "top": 2,
+          "width": 27,
+          "height": 21
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#e7b200",
+        "background": false
+      },
+      {
+        "id": "L5ulzj3p",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": -10.5,
+          "top": -58,
+          "width": 56,
+          "height": 56
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#ffffff",
+        "background": null
+      },
+      {
+        "id": "tfv628it",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 2,
+          "top": 45,
+          "width": 52,
+          "height": 10
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#ffffff",
+        "background": null
+      },
+      {
+        "id": "xQuFhSJs",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 8,
+          "top": 4,
+          "width": 40,
+          "height": 40
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#ffffff",
+        "background": null
+      },
+      {
+        "id": "dKkio1k4",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": -2,
+          "top": -2,
+          "width": 60,
+          "height": 60
+        },
+        "active": true,
+        "alpha": 0,
+        "color": "#FFFFFF",
+        "background": null
+      },
+      {
+        "id": "SVXgozSk",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": -2,
+          "top": -2,
+          "width": 60,
+          "height": 60
+        },
+        "active": false,
+        "alpha": 100,
+        "color": "#ffffff",
+        "background": null
+      },
+      {
+        "id": "ymcAEmKV",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 47.5,
+          "top": -7.5,
+          "width": 25,
+          "height": 25
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#FF9400",
+        "background": null
+      },
+      {
+        "id": "M3GrbfYn",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": -10,
+          "top": -10,
+          "width": 45,
+          "height": 45
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#FF9400",
+        "background": null
+      },
+      {
+        "id": "VrTcXCKK",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardAmount",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 6,
+          "top": 40,
+          "width": 60,
+          "height": 20
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#e7b200",
+        "background": false
+      },
+      {
+        "id": "fsIbZlK3",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": -3,
+          "top": -3,
+          "width": 62,
+          "height": 62
+        },
+        "active": false,
+        "alpha": 100,
+        "color": "#ffffff",
+        "background": null
+      },
+      {
+        "id": "IodT7NdR",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon",
+        "type": "UIImageEntity",
+        "rect": {
+          "left": 5,
+          "top": 5,
+          "width": 52,
+          "height": 52
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#00FF00",
+        "background": null
+      }
+    ],
+    "texts": [
+      {
+        "id": "ZB6lMV8i",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/MilestoneLabel",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 4,
+          "top": 2,
+          "width": 27,
+          "height": 21
+        },
+        "active": true,
+        "alpha": 100,
+        "value": "100",
+        "key": "",
+        "font": "Default",
+        "fontSize": 18,
+        "fontStyle": {
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        "color": "#FFFFFF",
+        "alignment": {
+          "h": "center",
+          "v": "middle"
+        },
+        "lineSpacing": 0,
+        "background": false,
+        "backgroundColor": "#e7b200",
+        "overflow": 0,
+        "backgroundRGBA": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "shadow": true,
+        "shadowColor": "#ffffff",
+        "shadowOffset": {
+          "x": 1,
+          "y": 1
+        },
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "outline": false,
+        "outlineColor": "#000000",
+        "outlineAlpha": 1,
+        "outlineOffset": 1,
+        "shadowAlpha": 1,
+        "localization": null
+      },
+      {
+        "id": "VrTcXCKK",
+        "path": "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardAmount",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 6,
+          "top": 40,
+          "width": 60,
+          "height": 20
+        },
+        "active": true,
+        "alpha": 100,
+        "value": "x4h",
+        "key": "",
+        "font": "Default",
+        "fontSize": 20,
+        "fontStyle": {
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        "color": "#1f64c4",
+        "alignment": {
+          "h": "right",
+          "v": "middle"
+        },
+        "lineSpacing": 0,
+        "background": false,
+        "backgroundColor": "#e7b200",
+        "overflow": 0,
+        "backgroundRGBA": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "shadow": false,
+        "shadowColor": "#000000",
+        "shadowOffset": {
+          "x": 1,
+          "y": 1
+        },
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "outline": false,
+        "outlineColor": "#000000",
+        "outlineAlpha": 1,
+        "outlineOffset": 1,
+        "shadowAlpha": 1,
+        "localization": null
+      }
+    ]
+  },
+  "template": {
+    "op": "add",
+    "parent": "Activities",
+    "parentId": "CFlcLwrb",
+    "reason": "Template activities-milestone; slot: visible = Activities/Activities/Container/Missions/Milestones/Milestone [vcMK3Alh].active; threshold = Activities/Activities/Container/Missions/Milestones/Milestone/MilestoneLabel [ZB6lMV8i].text.value; rewardArt = Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon [xQuFhSJs].image.spriteKey; amount = Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardAmount [VrTcXCKK].text.value",
+    "entity": {
+      "id": "uic-activities-milestone-vcMK3Alh",
+      "name": "Component_activities-milestone",
+      "type": "UIImageEntity",
+      "children": [
+        {
+          "id": "uic-activities-milestone-ZB6lMV8i",
+          "name": "MilestoneLabel",
+          "type": "UITextEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 0,
+              "y": 0
+            },
+            "sizeDelta": {
+              "x": -8,
+              "y": -4
+            }
+          },
+          "text": {
+            "value": "100",
+            "key": "",
+            "fontSize": 18,
+            "fontStyle": {
+              "bold": false,
+              "italic": false,
+              "underline": false
+            },
+            "color": "#FFFFFF",
+            "alignment": {
+              "h": "center",
+              "v": "middle"
+            },
+            "lineSpacing": 0,
+            "background": false,
+            "backgroundColor": "#e7b200",
+            "shadow": true,
+            "shadowColor": "#ffffff",
+            "shadowOffset": {
+              "x": 1,
+              "y": 1
+            },
+            "outline": false,
+            "outlineColor": "#000000",
+            "outlineAlpha": 1,
+            "outlineOffset": 1,
+            "shadowAlpha": 1
+          }
+        },
+        {
+          "id": "uic-activities-milestone-L5ulzj3p",
+          "name": "RewardDetail",
+          "type": "UIImageEntity",
+          "children": [
+            {
+              "id": "uic-activities-milestone-tfv628it",
+              "name": "Rarity",
+              "type": "UIImageEntity",
+              "children": [],
+              "active": true,
+              "alpha": 100,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0.5,
+                  "y": 0
+                },
+                "anchorMax": {
+                  "x": 0.5,
+                  "y": 0
+                },
+                "pivot": {
+                  "x": 0.5,
+                  "y": 0
+                },
+                "anchoredPosition": {
+                  "x": 0,
+                  "y": 1
+                },
+                "sizeDelta": {
+                  "x": 52,
+                  "y": 10
+                }
+              },
+              "image": {
+                "color": "#ffffff",
+                "reverse": {
+                  "x": false,
+                  "y": false
+                },
+                "fillType": 1,
+                "centerInvisible": false,
+                "fillDir": 0,
+                "fillAmount": 0,
+                "invertFill": false,
+                "spriteKey": "Assets/Sprites/NewAssets/RarityBG.png"
+              }
+            },
+            {
+              "id": "uic-activities-milestone-xQuFhSJs",
+              "name": "RewardIcon",
+              "type": "UIImageEntity",
+              "children": [],
+              "active": true,
+              "alpha": 100,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "anchorMax": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 0,
+                  "y": 4
+                },
+                "sizeDelta": {
+                  "x": 40,
+                  "y": 40
+                }
+              },
+              "image": {
+                "color": "#ffffff",
+                "reverse": {
+                  "x": false,
+                  "y": false
+                },
+                "fillType": 1,
+                "centerInvisible": false,
+                "fillDir": 0,
+                "fillAmount": 0,
+                "invertFill": false,
+                "spriteKey": "Assets/Sprites/Icons/PetCoinIcon.png"
+              }
+            },
+            {
+              "id": "uic-activities-milestone-dKkio1k4",
+              "name": "TooltipButton",
+              "type": "UIButtonEntity",
+              "children": [],
+              "active": true,
+              "alpha": 0,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "anchorMax": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 0,
+                  "y": 0
+                },
+                "sizeDelta": {
+                  "x": 60,
+                  "y": 60
+                }
+              },
+              "button": {
+                "normal": "#FFFFFF",
+                "pressed": "#C5C5C5",
+                "disabled": "#494949",
+                "disableCollider": false,
+                "fillType": 1,
+                "centerInvisible": false,
+                "fillDir": 0,
+                "fillAmount": 0,
+                "invertFill": false,
+                "reverse": {
+                  "x": false,
+                  "y": false
+                }
+              }
+            },
+            {
+              "id": "uic-activities-milestone-SVXgozSk",
+              "name": "ClaimButton",
+              "type": "UIButtonEntity",
+              "children": [
+                {
+                  "id": "uic-activities-milestone-ymcAEmKV",
+                  "name": "GiftboxIcon",
+                  "type": "UIImageEntity",
+                  "children": [
+                    {
+                      "id": "uic-activities-milestone-M3GrbfYn",
+                      "name": "GlowIcon",
+                      "type": "UIImageEntity",
+                      "children": [],
+                      "active": true,
+                      "alpha": 100,
+                      "transform": {
+                        "rotate": 0,
+                        "anchorMin": {
+                          "x": 0,
+                          "y": 0
+                        },
+                        "anchorMax": {
+                          "x": 1,
+                          "y": 1
+                        },
+                        "pivot": {
+                          "x": 0.5,
+                          "y": 0.5
+                        },
+                        "anchoredPosition": {
+                          "x": 0,
+                          "y": 0
+                        },
+                        "sizeDelta": {
+                          "x": 20,
+                          "y": 20
+                        }
+                      },
+                      "image": {
+                        "color": "#FF9400",
+                        "reverse": {
+                          "x": false,
+                          "y": false
+                        },
+                        "fillType": 1,
+                        "centerInvisible": false,
+                        "fillDir": 0,
+                        "fillAmount": 0,
+                        "invertFill": false
+                      }
+                    }
+                  ],
+                  "active": true,
+                  "alpha": 100,
+                  "transform": {
+                    "rotate": 340,
+                    "anchorMin": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "anchorMax": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "anchoredPosition": {
+                      "x": 0,
+                      "y": -5
+                    },
+                    "sizeDelta": {
+                      "x": 25,
+                      "y": 25
+                    }
+                  },
+                  "image": {
+                    "color": "#FF9400",
+                    "reverse": {
+                      "x": false,
+                      "y": false
+                    },
+                    "fillType": 1,
+                    "centerInvisible": false,
+                    "fillDir": 0,
+                    "fillAmount": 0,
+                    "invertFill": false,
+                    "spriteKey": "Assets/Sprites/Icons/GiftboxIcon.png"
+                  }
+                }
+              ],
+              "active": false,
+              "alpha": 100,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0,
+                  "y": 0
+                },
+                "anchorMax": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 1,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 2,
+                  "y": 0
+                },
+                "sizeDelta": {
+                  "x": 4,
+                  "y": 4
+                }
+              },
+              "button": {
+                "normal": "#ffffff",
+                "pressed": "#C5C5C5",
+                "disabled": "#494949",
+                "disableCollider": false,
+                "fillType": 1,
+                "centerInvisible": false,
+                "fillDir": 0,
+                "fillAmount": 0,
+                "invertFill": false,
+                "reverse": {
+                  "x": false,
+                  "y": false
+                },
+                "spriteKey": "Assets/Sprites/Guides/GuideBox.png"
+              }
+            },
+            {
+              "id": "uic-activities-milestone-VrTcXCKK",
+              "name": "RewardAmount",
+              "type": "UITextEntity",
+              "children": [],
+              "active": true,
+              "alpha": 100,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 1,
+                  "y": 0
+                },
+                "anchorMax": {
+                  "x": 1,
+                  "y": 0
+                },
+                "pivot": {
+                  "x": 1,
+                  "y": 0
+                },
+                "anchoredPosition": {
+                  "x": 10,
+                  "y": -4
+                },
+                "sizeDelta": {
+                  "x": 60,
+                  "y": 20
+                }
+              },
+              "text": {
+                "value": "x4h",
+                "key": "",
+                "fontSize": 20,
+                "fontStyle": {
+                  "bold": false,
+                  "italic": false,
+                  "underline": false
+                },
+                "color": "#1f64c4",
+                "alignment": {
+                  "h": "right",
+                  "v": "middle"
+                },
+                "lineSpacing": 0,
+                "background": false,
+                "backgroundColor": "#e7b200",
+                "shadow": false,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "x": 1,
+                  "y": 1
+                },
+                "outline": false,
+                "outlineColor": "#000000",
+                "outlineAlpha": 1,
+                "outlineOffset": 1,
+                "shadowAlpha": 1
+              }
+            },
+            {
+              "id": "uic-activities-milestone-fsIbZlK3",
+              "name": "ClaimedMask",
+              "type": "UIImageEntity",
+              "children": [
+                {
+                  "id": "uic-activities-milestone-IodT7NdR",
+                  "name": "CheckIcon",
+                  "type": "UIImageEntity",
+                  "children": [],
+                  "active": true,
+                  "alpha": 100,
+                  "transform": {
+                    "rotate": 0,
+                    "anchorMin": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "anchorMax": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "anchoredPosition": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "sizeDelta": {
+                      "x": -10,
+                      "y": -10
+                    }
+                  },
+                  "image": {
+                    "color": "#00FF00",
+                    "reverse": {
+                      "x": false,
+                      "y": false
+                    },
+                    "fillType": 1,
+                    "centerInvisible": false,
+                    "fillDir": 0,
+                    "fillAmount": 0,
+                    "invertFill": false
+                  }
+                }
+              ],
+              "active": false,
+              "alpha": 100,
+              "transform": {
+                "rotate": 0,
+                "anchorMin": {
+                  "x": 0,
+                  "y": 0
+                },
+                "anchorMax": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "anchoredPosition": {
+                  "x": 0,
+                  "y": 0
+                },
+                "sizeDelta": {
+                  "x": 6,
+                  "y": 6
+                }
+              },
+              "image": {
+                "color": "#ffffff",
+                "reverse": {
+                  "x": false,
+                  "y": false
+                },
+                "fillType": 1,
+                "centerInvisible": false,
+                "fillDir": 0,
+                "fillAmount": 0,
+                "invertFill": false,
+                "spriteKey": "Assets/Sprites/Backgrounds/DarkBG.png"
+              }
+            }
+          ],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0.5,
+              "y": 1
+            },
+            "anchorMax": {
+              "x": 0.5,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0
+            },
+            "anchoredPosition": {
+              "x": 0,
+              "y": 2
+            },
+            "sizeDelta": {
+              "x": 56,
+              "y": 56
+            }
+          },
+          "image": {
+            "color": "#ffffff",
+            "reverse": {
+              "x": false,
+              "y": false
+            },
+            "fillType": 1,
+            "centerInvisible": false,
+            "fillDir": 0,
+            "fillAmount": 0,
+            "invertFill": false,
+            "spriteKey": "Assets/Sprites/NewAssets/ItemBG.png"
+          }
+        }
+      ],
+      "active": true,
+      "alpha": 100,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchorMax": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchoredPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "sizeDelta": {
+          "x": 35,
+          "y": 25
+        }
+      },
+      "image": {
+        "color": "#1f64c4",
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "fillType": 1,
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "spriteKey": "Assets/Sprites/Backgrounds/BG.png"
+      }
+    }
+  },
+  "templateOmitted": [
+    "Activities/Activities/Container/Missions/Milestones/Milestone/MilestoneLabel: text.font",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/MilestoneLabel: text.overflow",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/MilestoneLabel: text.backgroundRGBA.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/MilestoneLabel: text.backgroundRGBA.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/MilestoneLabel: text.backgroundRGBA.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/MilestoneLabel: text.backgroundRGBA.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/MilestoneLabel: text.gradient",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/MilestoneLabel: text.gradientTop.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/MilestoneLabel: text.gradientTop.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/MilestoneLabel: text.gradientTop.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/MilestoneLabel: text.gradientTop.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/MilestoneLabel: text.gradientBottom.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/MilestoneLabel: text.gradientBottom.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/MilestoneLabel: text.gradientBottom.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/MilestoneLabel: text.gradientBottom.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.source.fileId",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.source.filePath",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.source._tag.type",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.source.fileType",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.slicedBorder.left",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.slicedBorder.right",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.slicedBorder.top",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.slicedBorder.bottom",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.tiledBorder.left",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.tiledBorder.right",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.tiledBorder.top",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.tiledBorder.bottom",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.flip",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.gradient",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.gradientTop.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.gradientTop.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.gradientTop.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.gradientTop.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.gradientBottom.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.gradientBottom.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.gradientBottom.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.gradientBottom.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.isApplyAnimation",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.animationAtlasID",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.animationFrameRate",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/Rarity: image.animationLoop",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.source.fileId",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.source.filePath",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.source._tag.type",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.source.fileType",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.slicedBorder.left",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.slicedBorder.right",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.slicedBorder.top",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.slicedBorder.bottom",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.tiledBorder.left",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.tiledBorder.right",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.tiledBorder.top",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.tiledBorder.bottom",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.flip",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.gradient",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.gradientTop.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.gradientTop.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.gradientTop.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.gradientTop.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.gradientBottom.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.gradientBottom.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.gradientBottom.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.gradientBottom.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.isApplyAnimation",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.animationAtlasID",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.animationFrameRate",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardIcon: image.animationLoop",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.spriteName.fileId",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.spriteName.filePath",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.spriteName._tag.type",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.spriteName.fileType",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.highlight",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.enableBorderImage",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.slicedBorder.left",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.slicedBorder.right",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.slicedBorder.top",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.slicedBorder.bottom",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.tiledBorder.left",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.tiledBorder.right",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.tiledBorder.top",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.tiledBorder.bottom",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.flip",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.gradient",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.gradientTop.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.gradientTop.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.gradientTop.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.gradientTop.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.gradientBottom.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.gradientBottom.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.gradientBottom.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.gradientBottom.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/TooltipButton: button.spriteKey (thiếu sprite)",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.source.fileId",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.source.filePath",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.source._tag.type",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.source.fileType",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.slicedBorder.left",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.slicedBorder.right",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.slicedBorder.top",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.slicedBorder.bottom",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.tiledBorder.left",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.tiledBorder.right",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.tiledBorder.top",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.tiledBorder.bottom",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.flip",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.gradient",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.gradientTop.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.gradientTop.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.gradientTop.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.gradientTop.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.gradientBottom.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.gradientBottom.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.gradientBottom.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.gradientBottom.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.isApplyAnimation",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.animationAtlasID",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.animationFrameRate",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.animationLoop",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon/GlowIcon: image.spriteKey (thiếu sprite)",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.source.fileId",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.source.filePath",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.source._tag.type",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.source.fileType",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.slicedBorder.left",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.slicedBorder.right",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.slicedBorder.top",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.slicedBorder.bottom",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.tiledBorder.left",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.tiledBorder.right",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.tiledBorder.top",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.tiledBorder.bottom",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.flip",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.gradient",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.gradientTop.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.gradientTop.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.gradientTop.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.gradientTop.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.gradientBottom.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.gradientBottom.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.gradientBottom.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.gradientBottom.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.isApplyAnimation",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.animationAtlasID",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.animationFrameRate",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton/GiftboxIcon: image.animationLoop",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.spriteName.fileId",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.spriteName.filePath",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.spriteName._tag.type",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.spriteName.fileType",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.highlight",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.enableBorderImage",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.slicedBorder.left",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.slicedBorder.right",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.slicedBorder.top",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.slicedBorder.bottom",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.tiledBorder.left",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.tiledBorder.right",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.tiledBorder.top",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.tiledBorder.bottom",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.flip",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.gradient",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.gradientTop.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.gradientTop.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.gradientTop.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.gradientTop.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.gradientBottom.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.gradientBottom.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.gradientBottom.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimButton: button.gradientBottom.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardAmount: text.font",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardAmount: text.overflow",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardAmount: text.backgroundRGBA.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardAmount: text.backgroundRGBA.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardAmount: text.backgroundRGBA.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardAmount: text.backgroundRGBA.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardAmount: text.gradient",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardAmount: text.gradientTop.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardAmount: text.gradientTop.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardAmount: text.gradientTop.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardAmount: text.gradientTop.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardAmount: text.gradientBottom.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardAmount: text.gradientBottom.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardAmount: text.gradientBottom.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/RewardAmount: text.gradientBottom.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.source.fileId",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.source.filePath",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.source._tag.type",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.source.fileType",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.slicedBorder.left",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.slicedBorder.right",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.slicedBorder.top",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.slicedBorder.bottom",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.tiledBorder.left",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.tiledBorder.right",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.tiledBorder.top",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.tiledBorder.bottom",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.flip",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.gradient",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.gradientTop.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.gradientTop.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.gradientTop.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.gradientTop.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.gradientBottom.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.gradientBottom.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.gradientBottom.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.gradientBottom.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.isApplyAnimation",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.animationAtlasID",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.animationFrameRate",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.animationLoop",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask/CheckIcon: image.spriteKey (thiếu sprite)",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.source.fileId",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.source.filePath",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.source._tag.type",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.source.fileType",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.slicedBorder.left",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.slicedBorder.right",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.slicedBorder.top",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.slicedBorder.bottom",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.tiledBorder.left",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.tiledBorder.right",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.tiledBorder.top",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.tiledBorder.bottom",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.flip",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.gradient",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.gradientTop.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.gradientTop.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.gradientTop.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.gradientTop.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.gradientBottom.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.gradientBottom.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.gradientBottom.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.gradientBottom.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.isApplyAnimation",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.animationAtlasID",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.animationFrameRate",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail/ClaimedMask: image.animationLoop",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.source.fileId",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.source.filePath",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.source._tag.type",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.source.fileType",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.slicedBorder.left",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.slicedBorder.right",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.slicedBorder.top",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.slicedBorder.bottom",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.tiledBorder.left",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.tiledBorder.right",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.tiledBorder.top",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.tiledBorder.bottom",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.flip",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.gradient",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.gradientTop.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.gradientTop.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.gradientTop.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.gradientTop.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.gradientBottom.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.gradientBottom.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.gradientBottom.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.gradientBottom.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.isApplyAnimation",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.animationAtlasID",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.animationFrameRate",
+    "Activities/Activities/Container/Missions/Milestones/Milestone/RewardDetail: image.animationLoop",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.source.fileId",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.source.filePath",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.source._tag.type",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.source.fileType",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.slicedBorder.left",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.slicedBorder.right",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.slicedBorder.top",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.slicedBorder.bottom",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.tiledBorder.left",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.tiledBorder.right",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.tiledBorder.top",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.tiledBorder.bottom",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.flip",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.gradient",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.gradientTop.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.gradientTop.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.gradientTop.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.gradientTop.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.gradientBottom.r",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.gradientBottom.g",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.gradientBottom.b",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.gradientBottom.a",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.isApplyAnimation",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.animationAtlasID",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.animationFrameRate",
+    "Activities/Activities/Container/Missions/Milestones/Milestone: image.animationLoop"
+  ],
+  "stateEvidence": [
+    {
+      "name": "Có thể nhận",
+      "ruleSource": "bindings.milestone",
+      "rule": "Assets/Scripts/HUDs/HudActivities.fcg:1053"
+    },
+    {
+      "name": "Đã nhận",
+      "ruleSource": "bindings.milestone",
+      "rule": "Assets/Scripts/HUDs/HudActivities.fcg:1053"
+    },
+    {
+      "name": "Chưa đạt",
+      "ruleSource": "bindings.milestone",
+      "rule": "Assets/Scripts/HUDs/HudActivities.fcg:1053"
+    }
+  ],
+  "usedBy": []
+}

@@ -1,5 +1,20 @@
 # UI Components
 
+## Bổ sung Activities (2026-10-31)
+
+11 định nghĩa `activities-*.json` lấy từ snapshot Activities trong GDD; tổng
+catalog là 27 component. Dùng bộ lọc Nguồn=Activities ở trang UI Components.
+Định nghĩa mới có `sourceScreen: activities`, slot/override có thể dùng
+`sourceId` để phân biệt widget trùng path. Manifest/i18n/rule dùng đúng nguồn
+màn hình; định nghĩa cũ không có sourceScreen vẫn mặc định Collection.
+
+Milestone bar có `previewFallbacks` cho hai sprite white lib còn thiếu: chỉ
+hiển thị nền màu theo image.color, không tạo asset và không đưa fallback vào
+template export. Danh sách sprite thiếu/field không xuất vẫn có trong spec.
+Đổi slot/state chỉ tác động instance. Template Activities cần chọn parent/ID
+và khai báo sprite ở đích trước khi dùng, chưa có màn Proposal Activities.
+Chi tiết: `plans/PLAN-ui-components-activities.md`.
+
 Định nghĩa theo component.schema.json; validator tools/ui-component-definition.mjs dùng lại PATCH_FIELDS/validateField của Proposal, spriteKey là binding sprite đã có trong renderer và op add. sourcePath + sourceId phải cùng resolve một node; slot.path là full path trong subtree, default phải bằng snapshot .ui. sample là dữ liệu mẫu có nhãn. states.ruleSource là con trỏ dấu chấm vào collection-rules.json, không phải mã thực thi. usedIn.planned ghi rõ màn dự kiến. composedOf chỉ mô tả quan hệ; không nhân bản entity.
 
 Generator chỉ đọc snapshot GDD, không nhận project-root; validate toàn batch trước khi ghi. Không mở rộng allowlist hoặc thay nguồn UI Proposal.

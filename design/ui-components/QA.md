@@ -1,5 +1,23 @@
 # UI Components — nghiệm thu 2026-10-26
 
+## Mở rộng Activities · 2026-10-31
+
+Catalog 27 component, 303 node instance: thêm 11 template Activities (123 node).
+16 payload Collection giữ nguyên byte sau chuẩn hoá CRLF. 57 file source/output
+Preview/Proposal giữ nguyên nội dung. Không đọc thêm repo game, không ghi Proposal.
+
+Static audit: 360 case, 18 đầu vào không hợp lệ không được ghi output, sync
+idempotent. Browser audit `--components-only`: toàn bộ 27 component ở
+1440×1100/390×844 qua source rect/sprite raster, state, slot, instance isolation,
+clipboard op:add validation, filters/deep-link, console và overflow.
+Audit riêng Activities kiểm bộ lọc 11/16; chỉnh hai RewardAmount trùng path
+thành x111/x222 vẫn độc lập trong DOM và JSON export theo entity ID. Thanh
+milestone có hai nền màu tạm được khai báo; fallback không lọt vào op:add,
+sprite thiếu vẫn liệt kê trong templateOmitted. G4 đối chiếu engine chưa có.
+
+Report: `dist/data/ui/components/{components-audit,browser-audit,activities-template-audit}.json`.
+Kế hoạch: `plans/PLAN-ui-components-activities.md`. Phần dưới giữ lịch sử cũ.
+
 Đã triển khai trang tĩnh riêng `#uicomponents/<id>` ngay dưới UI Proposal.
 Không đổi allowlist game. Không đổi renderer/helper dùng chung, Preview,
 controller Collection hoặc nguồn/nội dung Proposal.

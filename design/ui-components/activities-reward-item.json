@@ -1,0 +1,82 @@
+{
+  "id": "activities-reward-item",
+  "name": "Activities · Ô phần thưởng",
+  "sourceScreen": "activities",
+  "sourcePath": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward",
+  "sourceId": "hmbSCP9M",
+  "group": "Hiển thị dữ liệu",
+  "status": "real",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward",
+      "sourceId": "hmbSCP9M",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "rewardArt",
+      "type": "sprite",
+      "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/RewardIcon",
+      "sourceId": "fCVXH0Yj",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/Icons/PetCoinIcon.png"
+    },
+    {
+      "name": "amount",
+      "type": "text",
+      "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/RewardAmount",
+      "sourceId": "THNRBdX4",
+      "field": "text.value",
+      "default": "x4h",
+      "sample": "x99 (mẫu)"
+    },
+    {
+      "name": "rarityTint",
+      "type": "tint",
+      "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/Rarity",
+      "sourceId": "xegGtJr5",
+      "field": "image.color",
+      "default": "#ffffff"
+    }
+  ],
+  "states": [
+    {
+      "name": "Đã nhận",
+      "when": "UIUtils.UpdateRewardWidgetV3: isClaimed",
+      "ruleSource": "bindings.milestone",
+      "overrides": [
+        {
+          "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/ClaimedMask",
+          "sourceId": "Brdxtuo2",
+          "field": "active",
+          "value": true
+        }
+      ]
+    },
+    {
+      "name": "Chưa nhận",
+      "when": "UIUtils.UpdateRewardWidgetV3: !isClaimed",
+      "ruleSource": "bindings.milestone",
+      "overrides": [
+        {
+          "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/RewardsLayout/Reward/ClaimedMask",
+          "sourceId": "Brdxtuo2",
+          "field": "active",
+          "value": false
+        }
+      ]
+    }
+  ],
+  "usedIn": [
+    {
+      "screen": "activities",
+      "note": "Subtree thật từ Activities.ui; không chạy binder trong template"
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ snapshot .ui. Tham số mẫu chỉ dùng xem thử, không phải config game."
+  ]
+}

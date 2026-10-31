@@ -6,6 +6,201 @@
     },
     "components": [
       {
+        "id": "activities-claim-button",
+        "nodes": 2,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Có thể nhận",
+          "Chưa thể nhận"
+        ],
+        "slots": [
+          "visible",
+          "label"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "activities-featured-reward",
+        "nodes": 16,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Đã nhận",
+          "Chưa nhận"
+        ],
+        "slots": [
+          "visible",
+          "dayLabel",
+          "rewardArt",
+          "amount",
+          "description",
+          "cardTint"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "activities-milestone-bar",
+        "nodes": 2,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Chưa có điểm",
+          "Đủ điểm"
+        ],
+        "slots": [
+          "visible",
+          "progress",
+          "trackTint",
+          "fillTint"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "activities-milestone",
+        "nodes": 12,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Có thể nhận",
+          "Đã nhận",
+          "Chưa đạt"
+        ],
+        "slots": [
+          "visible",
+          "threshold",
+          "rewardArt",
+          "amount"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "activities-mission-row",
+        "nodes": 23,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Đã nhận",
+          "Đang làm"
+        ],
+        "slots": [
+          "visible",
+          "description",
+          "progressText",
+          "firstRewardAmount",
+          "secondRewardAmount"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "activities-points-counter",
+        "nodes": 2,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "pointsLabel",
+          "icon"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "activities-reward-card",
+        "nodes": 12,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Đã nhận",
+          "Chưa nhận"
+        ],
+        "slots": [
+          "visible",
+          "dayLabel",
+          "rewardArt",
+          "amount",
+          "description",
+          "cardTint"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "activities-reward-item",
+        "nodes": 8,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Đã nhận",
+          "Chưa nhận"
+        ],
+        "slots": [
+          "visible",
+          "rewardArt",
+          "amount",
+          "rarityTint"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "activities-spin-wheel",
+        "nodes": 25,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "rotation",
+          "reward1Art",
+          "reward2Art",
+          "reward3Art",
+          "reward4Art",
+          "reward5Art",
+          "reward6Art",
+          "reward7Art",
+          "reward8Art"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "activities-tab-bar",
+        "nodes": 17,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "activities-tab-button",
+        "nodes": 4,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Không chọn",
+          "Đang chọn"
+        ],
+        "slots": [
+          "visible",
+          "label",
+          "art",
+          "alert"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
         "id": "close-button",
         "nodes": 1,
         "sourceRectsAndSpritePixels": true,
@@ -267,6 +462,201 @@
       "height": 844
     },
     "components": [
+      {
+        "id": "activities-claim-button",
+        "nodes": 2,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Có thể nhận",
+          "Chưa thể nhận"
+        ],
+        "slots": [
+          "visible",
+          "label"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "activities-featured-reward",
+        "nodes": 16,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Đã nhận",
+          "Chưa nhận"
+        ],
+        "slots": [
+          "visible",
+          "dayLabel",
+          "rewardArt",
+          "amount",
+          "description",
+          "cardTint"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "activities-milestone-bar",
+        "nodes": 2,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Chưa có điểm",
+          "Đủ điểm"
+        ],
+        "slots": [
+          "visible",
+          "progress",
+          "trackTint",
+          "fillTint"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "activities-milestone",
+        "nodes": 12,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Có thể nhận",
+          "Đã nhận",
+          "Chưa đạt"
+        ],
+        "slots": [
+          "visible",
+          "threshold",
+          "rewardArt",
+          "amount"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "activities-mission-row",
+        "nodes": 23,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Đã nhận",
+          "Đang làm"
+        ],
+        "slots": [
+          "visible",
+          "description",
+          "progressText",
+          "firstRewardAmount",
+          "secondRewardAmount"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "activities-points-counter",
+        "nodes": 2,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "pointsLabel",
+          "icon"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "activities-reward-card",
+        "nodes": 12,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Đã nhận",
+          "Chưa nhận"
+        ],
+        "slots": [
+          "visible",
+          "dayLabel",
+          "rewardArt",
+          "amount",
+          "description",
+          "cardTint"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "activities-reward-item",
+        "nodes": 8,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Đã nhận",
+          "Chưa nhận"
+        ],
+        "slots": [
+          "visible",
+          "rewardArt",
+          "amount",
+          "rarityTint"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "activities-spin-wheel",
+        "nodes": 25,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible",
+          "rotation",
+          "reward1Art",
+          "reward2Art",
+          "reward3Art",
+          "reward4Art",
+          "reward5Art",
+          "reward6Art",
+          "reward7Art",
+          "reward8Art"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "activities-tab-bar",
+        "nodes": 17,
+        "sourceRectsAndSpritePixels": true,
+        "states": [],
+        "slots": [
+          "visible"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
+      {
+        "id": "activities-tab-button",
+        "nodes": 4,
+        "sourceRectsAndSpritePixels": true,
+        "states": [
+          "Không chọn",
+          "Đang chọn"
+        ],
+        "slots": [
+          "visible",
+          "label",
+          "art",
+          "alert"
+        ],
+        "sourceAndVariantsIsolated": true,
+        "clipboardProposalValidated": true,
+        "horizontalOverflow": false
+      },
       {
         "id": "close-button",
         "nodes": 1,

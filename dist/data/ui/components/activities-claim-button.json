@@ -1,0 +1,839 @@
+{
+  "id": "activities-claim-button",
+  "name": "Activities · Nút nhận thưởng",
+  "sourceScreen": "activities",
+  "sourcePath": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton",
+  "sourceId": "UaEwmJ0H",
+  "group": "Điều khiển",
+  "status": "runtime",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton",
+      "sourceId": "UaEwmJ0H",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton/Text",
+      "sourceId": "TUrhtG94",
+      "field": "text.key",
+      "default": "HUD_ACTIVITIES_CLAIM",
+      "sample": "Nhận mẫu"
+    }
+  ],
+  "states": [
+    {
+      "name": "Có thể nhận",
+      "when": "isClaimable=true",
+      "ruleSource": "bindings.mission",
+      "overrides": [
+        {
+          "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton",
+          "sourceId": "UaEwmJ0H",
+          "field": "button.spriteKey",
+          "value": "Assets/Sprites/NewAssets/YellowButton.png"
+        },
+        {
+          "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton",
+          "sourceId": "UaEwmJ0H",
+          "field": "button.normal",
+          "value": "#FFFFFF"
+        }
+      ]
+    },
+    {
+      "name": "Chưa thể nhận",
+      "when": "isClaimable=false",
+      "ruleSource": "bindings.mission",
+      "overrides": [
+        {
+          "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton",
+          "sourceId": "UaEwmJ0H",
+          "field": "button.spriteKey",
+          "value": "Assets/Sprites/NewAssets/BlueButton.png"
+        },
+        {
+          "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton",
+          "sourceId": "UaEwmJ0H",
+          "field": "button.normal",
+          "value": "#777777"
+        }
+      ]
+    }
+  ],
+  "usedIn": [
+    {
+      "screen": "activities",
+      "note": "Subtree thật từ Activities.ui; không chạy binder trong template"
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ snapshot .ui. Tham số mẫu chỉ dùng xem thử, không phải config game.",
+    "Đây là biến thể hình ảnh; không gửi request nhận thưởng và không cấp quà."
+  ],
+  "source": "Assets/HUDs/Activities.ui",
+  "sourceRect": {
+    "left": 0,
+    "top": 22,
+    "width": 120,
+    "height": 46
+  },
+  "referenceSize": {
+    "width": 120,
+    "height": 46
+  },
+  "tree": {
+    "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton",
+    "id": "UaEwmJ0H",
+    "name": "ClaimButton",
+    "type": "UIButtonEntity",
+    "active": true,
+    "transform": {
+      "rotate": 0,
+      "anchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchoredPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sizeDelta": {
+        "x": 120,
+        "y": 46
+      }
+    },
+    "alpha": 100,
+    "priority": 0,
+    "image": null,
+    "button": {
+      "spriteName": {
+        "fileId": "mgcae4djxp-mu6vevy5-j3m6yz6bep",
+        "filePath": "Assets\\Sprites\\NewAssets\\BlueButton.png",
+        "_tag": {
+          "type": "GFileRefer"
+        },
+        "fileType": "texture"
+      },
+      "normal": "#777777",
+      "highlight": "#e2a222",
+      "pressed": "#C5C5C5",
+      "disabled": "#494949",
+      "enableBorderImage": true,
+      "disableCollider": false,
+      "fillType": 1,
+      "slicedBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "tiledBorder": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "centerInvisible": false,
+      "fillDir": 0,
+      "fillAmount": 0,
+      "invertFill": false,
+      "reverse": {
+        "x": false,
+        "y": false
+      },
+      "flip": 0,
+      "gradient": 1,
+      "gradientTop": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "gradientBottom": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "spriteKey": "Assets/Sprites/NewAssets/BlueButton.png"
+    },
+    "text": null,
+    "layout": null,
+    "propsData": {
+      "activeSelf": true,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0.5,
+          "y": 0
+        },
+        "anchorMax": {
+          "x": 0.5,
+          "y": 0
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 1
+        },
+        "anchoredPosition": {
+          "x": 0,
+          "y": -2
+        },
+        "sizeDelta": {
+          "x": 120,
+          "y": 46
+        }
+      },
+      "alpha": 100,
+      "priority": 0,
+      "button": {
+        "spriteName": {
+          "fileId": "mgcae4djxp-mu6vevy5-j3m6yz6bep",
+          "filePath": "Assets\\Sprites\\NewAssets\\BlueButton.png",
+          "_tag": {
+            "type": "GFileRefer"
+          },
+          "fileType": "texture"
+        },
+        "normal": "#777777",
+        "highlight": "#e2a222",
+        "pressed": "#C5C5C5",
+        "disabled": "#494949",
+        "onClicks": [],
+        "enableBorderImage": true,
+        "clickHandlers": [],
+        "disableCollider": false,
+        "fillType": 1,
+        "slicedBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "tiledBorder": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "flip": 0,
+        "gradient": 1,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        }
+      }
+    },
+    "ecaProps": {
+      "HudButtonWidget": {
+        "PROP_45691568": {
+          "type": "CustomEnum90516480",
+          "value": "E19070766"
+        }
+      },
+      "HudWidget": {},
+      "Entity": {}
+    },
+    "unsupported": [
+      "button.onClicks",
+      "button.clickHandlers"
+    ],
+    "children": [
+      {
+        "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton/Text",
+        "id": "TUrhtG94",
+        "name": "Text",
+        "type": "UITextEntity",
+        "active": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0,
+            "y": 0
+          },
+          "anchorMax": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 0,
+            "y": 4
+          },
+          "sizeDelta": {
+            "x": -20,
+            "y": -12
+          }
+        },
+        "alpha": 100,
+        "priority": 0,
+        "image": null,
+        "button": null,
+        "text": {
+          "value": "CLAIM",
+          "key": "HUD_ACTIVITIES_CLAIM",
+          "font": "Default",
+          "fontSize": 20,
+          "fontStyle": {
+            "bold": true,
+            "italic": false,
+            "underline": false
+          },
+          "color": "#ffffff",
+          "alignment": {
+            "h": "center",
+            "v": "middle"
+          },
+          "lineSpacing": 0,
+          "background": false,
+          "backgroundColor": "#e7b200",
+          "overflow": 0,
+          "backgroundRGBA": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0
+          },
+          "shadow": true,
+          "shadowColor": "#f15a24",
+          "shadowOffset": {
+            "x": 1,
+            "y": 1
+          },
+          "gradient": 0,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "outline": false,
+          "outlineColor": "#000000",
+          "outlineAlpha": 1,
+          "outlineOffset": 1,
+          "shadowAlpha": 1
+        },
+        "layout": null,
+        "propsData": {
+          "activeSelf": true,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 0,
+              "y": 4
+            },
+            "sizeDelta": {
+              "x": -20,
+              "y": -12
+            }
+          },
+          "alpha": 100,
+          "priority": 0,
+          "text": {
+            "value": "CLAIM",
+            "key": "HUD_ACTIVITIES_CLAIM",
+            "font": "Default",
+            "fontSize": 20,
+            "fontStyle": {
+              "bold": true,
+              "italic": false,
+              "underline": false
+            },
+            "color": "#ffffff",
+            "alignment": {
+              "h": "center",
+              "v": "middle"
+            },
+            "lineSpacing": 0,
+            "background": false,
+            "backgroundColor": "#e7b200",
+            "overflow": 0,
+            "backgroundRGBA": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 0
+            },
+            "shadow": true,
+            "shadowColor": "#f15a24",
+            "shadowOffset": {
+              "x": 1,
+              "y": 1
+            },
+            "gradient": 0,
+            "gradientTop": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "gradientBottom": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "outline": false,
+            "outlineColor": "#000000",
+            "outlineAlpha": 1,
+            "outlineOffset": 1,
+            "shadowAlpha": 1
+          }
+        },
+        "ecaProps": {
+          "HudLabelWidget": {},
+          "HudWidget": {},
+          "Entity": {}
+        },
+        "unsupported": [],
+        "children": []
+      }
+    ]
+  },
+  "entityCount": 2,
+  "spec": {
+    "nodes": [
+      {
+        "id": "UaEwmJ0H",
+        "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 22,
+          "width": 120,
+          "height": 46
+        },
+        "active": true,
+        "alpha": 100
+      },
+      {
+        "id": "TUrhtG94",
+        "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2,
+          "width": 100,
+          "height": 34
+        },
+        "active": true,
+        "alpha": 100
+      }
+    ],
+    "images": [
+      {
+        "id": "UaEwmJ0H",
+        "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 22,
+          "width": 120,
+          "height": 46
+        },
+        "active": true,
+        "alpha": 100,
+        "key": "Assets/Sprites/NewAssets/BlueButton.png",
+        "sprite": {
+          "key": "Assets/Sprites/NewAssets/BlueButton.png",
+          "declaredKey": "Assets/Sprites/NewAssets/BlueButton.png",
+          "declaredKeys": [
+            "Assets/Sprites/NewAssets/BlueButton.png"
+          ],
+          "fileId": "mgcae4djxp-mu6vevy5-j3m6yz6bep",
+          "output": "./assets/ui-sprites/activities/NewAssets__BlueButton.png",
+          "missing": false,
+          "references": [
+            "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton",
+            "runtime:Activities:BlueButton"
+          ],
+          "origins": [
+            ".ui",
+            "runtime-code + ResourceRegisteration.asset"
+          ],
+          "border": {
+            "left": 50,
+            "right": 20,
+            "top": 20,
+            "bottom": 25
+          },
+          "width": 160,
+          "height": 66
+        },
+        "image": {
+          "spriteName": {
+            "fileId": "mgcae4djxp-mu6vevy5-j3m6yz6bep",
+            "filePath": "Assets\\Sprites\\NewAssets\\BlueButton.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "normal": "#777777",
+          "highlight": "#e2a222",
+          "pressed": "#C5C5C5",
+          "disabled": "#494949",
+          "enableBorderImage": true,
+          "disableCollider": false,
+          "fillType": 1,
+          "slicedBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "tiledBorder": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "centerInvisible": false,
+          "fillDir": 0,
+          "fillAmount": 0,
+          "invertFill": false,
+          "reverse": {
+            "x": false,
+            "y": false
+          },
+          "flip": 0,
+          "gradient": 1,
+          "gradientTop": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "gradientBottom": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          },
+          "spriteKey": "Assets/Sprites/NewAssets/BlueButton.png"
+        },
+        "tint": "#777777"
+      }
+    ],
+    "shapes": [
+      {
+        "id": "UaEwmJ0H",
+        "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton",
+        "type": "UIButtonEntity",
+        "rect": {
+          "left": 0,
+          "top": 22,
+          "width": 120,
+          "height": 46
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#777777",
+        "background": null
+      },
+      {
+        "id": "TUrhtG94",
+        "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2,
+          "width": 100,
+          "height": 34
+        },
+        "active": true,
+        "alpha": 100,
+        "color": "#e7b200",
+        "background": false
+      }
+    ],
+    "texts": [
+      {
+        "id": "TUrhtG94",
+        "path": "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton/Text",
+        "type": "UITextEntity",
+        "rect": {
+          "left": 10,
+          "top": 2,
+          "width": 100,
+          "height": 34
+        },
+        "active": true,
+        "alpha": 100,
+        "value": "CLAIM",
+        "key": "HUD_ACTIVITIES_CLAIM",
+        "font": "Default",
+        "fontSize": 20,
+        "fontStyle": {
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        "color": "#ffffff",
+        "alignment": {
+          "h": "center",
+          "v": "middle"
+        },
+        "lineSpacing": 0,
+        "background": false,
+        "backgroundColor": "#e7b200",
+        "overflow": 0,
+        "backgroundRGBA": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "shadow": true,
+        "shadowColor": "#f15a24",
+        "shadowOffset": {
+          "x": 1,
+          "y": 1
+        },
+        "gradient": 0,
+        "gradientTop": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "gradientBottom": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        },
+        "outline": false,
+        "outlineColor": "#000000",
+        "outlineAlpha": 1,
+        "outlineOffset": 1,
+        "shadowAlpha": 1,
+        "localization": {
+          "en": "CLAIM",
+          "vi": "NHẬN"
+        }
+      }
+    ]
+  },
+  "template": {
+    "op": "add",
+    "parent": "Activities",
+    "parentId": "CFlcLwrb",
+    "reason": "Template activities-claim-button; slot: visible = Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton [UaEwmJ0H].active; label = Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton/Text [TUrhtG94].text.key",
+    "entity": {
+      "id": "uic-activities-claim-button-UaEwmJ0H",
+      "name": "Component_activities-claim-button",
+      "type": "UIButtonEntity",
+      "children": [
+        {
+          "id": "uic-activities-claim-button-TUrhtG94",
+          "name": "Text",
+          "type": "UITextEntity",
+          "children": [],
+          "active": true,
+          "alpha": 100,
+          "transform": {
+            "rotate": 0,
+            "anchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "anchorMax": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchoredPosition": {
+              "x": 0,
+              "y": 4
+            },
+            "sizeDelta": {
+              "x": -20,
+              "y": -12
+            }
+          },
+          "text": {
+            "value": "CLAIM",
+            "key": "HUD_ACTIVITIES_CLAIM",
+            "fontSize": 20,
+            "fontStyle": {
+              "bold": true,
+              "italic": false,
+              "underline": false
+            },
+            "color": "#ffffff",
+            "alignment": {
+              "h": "center",
+              "v": "middle"
+            },
+            "lineSpacing": 0,
+            "background": false,
+            "backgroundColor": "#e7b200",
+            "shadow": true,
+            "shadowColor": "#f15a24",
+            "shadowOffset": {
+              "x": 1,
+              "y": 1
+            },
+            "outline": false,
+            "outlineColor": "#000000",
+            "outlineAlpha": 1,
+            "outlineOffset": 1,
+            "shadowAlpha": 1
+          }
+        }
+      ],
+      "active": true,
+      "alpha": 100,
+      "transform": {
+        "rotate": 0,
+        "anchorMin": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchorMax": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "pivot": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "anchoredPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "sizeDelta": {
+          "x": 120,
+          "y": 46
+        }
+      },
+      "button": {
+        "normal": "#777777",
+        "pressed": "#C5C5C5",
+        "disabled": "#494949",
+        "disableCollider": false,
+        "fillType": 1,
+        "centerInvisible": false,
+        "fillDir": 0,
+        "fillAmount": 0,
+        "invertFill": false,
+        "reverse": {
+          "x": false,
+          "y": false
+        },
+        "spriteKey": "Assets/Sprites/NewAssets/BlueButton.png"
+      }
+    }
+  },
+  "templateOmitted": [
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton/Text: text.font",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton/Text: text.overflow",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton/Text: text.backgroundRGBA.r",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton/Text: text.backgroundRGBA.g",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton/Text: text.backgroundRGBA.b",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton/Text: text.backgroundRGBA.a",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton/Text: text.gradient",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton/Text: text.gradientTop.r",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton/Text: text.gradientTop.g",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton/Text: text.gradientTop.b",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton/Text: text.gradientTop.a",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton/Text: text.gradientBottom.r",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton/Text: text.gradientBottom.g",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton/Text: text.gradientBottom.b",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton/Text: text.gradientBottom.a",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.spriteName.fileId",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.spriteName.filePath",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.spriteName._tag.type",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.spriteName.fileType",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.highlight",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.enableBorderImage",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.slicedBorder.left",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.slicedBorder.right",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.slicedBorder.top",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.slicedBorder.bottom",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.tiledBorder.left",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.tiledBorder.right",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.tiledBorder.top",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.tiledBorder.bottom",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.flip",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.gradient",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.gradientTop.r",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.gradientTop.g",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.gradientTop.b",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.gradientTop.a",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.gradientBottom.r",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.gradientBottom.g",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.gradientBottom.b",
+    "Activities/Activities/Container/Missions/Scroll View/Missions/Mission/Progress/ClaimButton: button.gradientBottom.a"
+  ],
+  "stateEvidence": [
+    {
+      "name": "Có thể nhận",
+      "ruleSource": "bindings.mission",
+      "rule": "Assets/Scripts/HUDs/HudActivities.fcg:909"
+    },
+    {
+      "name": "Chưa thể nhận",
+      "ruleSource": "bindings.mission",
+      "rule": "Assets/Scripts/HUDs/HudActivities.fcg:909"
+    }
+  ],
+  "usedBy": [
+    "activities-mission-row"
+  ]
+}

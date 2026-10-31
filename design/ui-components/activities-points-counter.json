@@ -1,0 +1,47 @@
+{
+  "id": "activities-points-counter",
+  "name": "Activities · Bộ đếm Pet Points",
+  "sourceScreen": "activities",
+  "sourcePath": "Activities/Activities/Container/Missions/PetPoints",
+  "sourceId": "FBnDavKh",
+  "group": "Hiển thị dữ liệu",
+  "status": "real",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "Activities/Activities/Container/Missions/PetPoints",
+      "sourceId": "FBnDavKh",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "pointsLabel",
+      "type": "text",
+      "path": "Activities/Activities/Container/Missions/PetPoints/Points",
+      "sourceId": "UdYpC6ko",
+      "field": "text.value",
+      "default": "[b]80[/b]\nPoints",
+      "sample": "60 điểm (mẫu)"
+    },
+    {
+      "name": "icon",
+      "type": "sprite",
+      "path": "Activities/Activities/Container/Missions/PetPoints",
+      "sourceId": "FBnDavKh",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/Icons/DMMPointIcon.png"
+    }
+  ],
+  "states": [],
+  "usedIn": [
+    {
+      "screen": "activities",
+      "note": "Subtree thật từ Activities.ui; không chạy binder trong template"
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ snapshot .ui. Tham số mẫu chỉ dùng xem thử, không phải config game."
+  ]
+}

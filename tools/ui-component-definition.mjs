@@ -24,14 +24,14 @@ export function validateShape(value, schema, at = 'definition') {
   if (schema.pattern && !new RegExp(schema.pattern).test(value)) throw Error(`${at}: invalid format`);
   if (schema.enum && !schema.enum.includes(value)) throw Error(`${at}: invalid enum ${value}`);
 }
-export function validateDefinitions(definitions, { screen, manifest, rules, schema }) {
-  const all = walk(screen.tree), ids = new Set();
-  const resolve = (path, id) => {
+export function validateDefinitions(definitions, inputs) {
+  const { schema } = inputs, ids = new Set();
+  const resolve = (all, path, id) => {
     const matches = all.filter(n => n.path === path && (id == null || n.id === id));
     if (matches.length !== 1) throw Error(`source path/id missing or ambiguous: ${path} / ${id}`);
     return matches[0];
   };
-  const check = (node, field, value, type) => {
+  const check = (manifest, node, field, value, type) => {
     if (/^(image|button)\.spriteKey$/.test(field)) {
       if (type !== 'sprite' || !node[field.split('.')[0]]) throw Error('Invalid sprite field/type');
       if (!manifest.sprites.some(s => s.key === value)) throw Error('Sprite not registered: ' + value);
@@ -44,24 +44,31 @@ export function validateDefinitions(definitions, { screen, manifest, rules, sche
   };
   for (const def of definitions) {
     validateShape(def, schema);
+    const sourceInputs = def.sourceScreen ? inputs.screens?.[def.sourceScreen] : inputs;
+    if (!sourceInputs) throw Error('Unregistered component source: ' + def.sourceScreen);
+    const { screen, manifest, rules } = sourceInputs, all = walk(screen.tree);
     if (ids.has(def.id) || ['registry', 'components-audit'].includes(def.id)) throw Error('Duplicate/reserved component id: ' + def.id);
     ids.add(def.id);
-    const source = resolve(def.sourcePath, def.sourceId), subtree = walk(source);
+    const source = resolve(all, def.sourcePath, def.sourceId), subtree = walk(source);
     if (def.usedIn.some(use => use.screen !== screen.id && !use.planned)) throw Error('Unregistered screen must be planned: ' + def.id);
-    const target = p => { const matches = subtree.filter(n => n.path === p); if (matches.length !== 1) throw Error('Slot/state path missing or ambiguous: ' + p); return matches[0]; };
+    const target = (p, id) => { const matches = subtree.filter(n => n.path === p && (!id || n.id === id)); if (matches.length !== 1) throw Error('Slot/state path missing or ambiguous: ' + p); return matches[0]; };
+    for (const fallback of def.previewFallbacks || []) {
+      const n = subtree.find(n => n.id === fallback.sourceId);
+      if (def.sourceScreen !== 'activities' || fallback.kind !== 'solid-color' || !n?.image?.spriteKey?.startsWith('lib://') || !manifest.missing.some(s => s.key === n.image.spriteKey)) throw Error('Invalid declared missing-sprite preview fallback');
+    }
     const slotNames = new Set(), stateNames = new Set();
     for (const slot of def.slots) {
       if (slotNames.has(slot.name)) throw Error('Duplicate slot: ' + slot.name); slotNames.add(slot.name);
-      const node = target(slot.path); check(node, slot.field, slot.default, slot.type);
+      const node = target(slot.path, slot.sourceId); check(manifest, node, slot.field, slot.default, slot.type);
       if (JSON.stringify(get(node, slot.field)) !== JSON.stringify(slot.default)) throw Error('Slot default differs from .ui: ' + slot.name);
-      if (Object.hasOwn(slot, 'sample')) check(node, slot.field, slot.sample, slot.type);
+      if (Object.hasOwn(slot, 'sample')) check(manifest, node, slot.field, slot.sample, slot.type);
     }
     for (const state of def.states) {
       if (stateNames.has(state.name)) throw Error('Duplicate state: ' + state.name); stateNames.add(state.name);
       // A dotted rule pointer must resolve inside the already-synced rules.
       const evidence = get(rules, state.ruleSource);
       if (evidence == null) throw Error('State ruleSource not found: ' + state.ruleSource);
-      for (const override of state.overrides) check(target(override.path), override.field, override.value, /\.spriteKey$/.test(override.field) ? 'sprite' : undefined);
+      for (const override of state.overrides) check(manifest, target(override.path, override.sourceId), override.field, override.value, /\.spriteKey$/.test(override.field) ? 'sprite' : undefined);
     }
   }
   const visit = (id, stack = []) => {

@@ -1,0 +1,101 @@
+{
+  "id": "activities-featured-reward",
+  "name": "Activities · Thẻ quà ngày cuối",
+  "sourceScreen": "activities",
+  "sourcePath": "Activities/Activities/Container/Rewards/Reward (6)",
+  "sourceId": "cWXjwJoo",
+  "group": "Hiển thị dữ liệu",
+  "status": "runtime",
+  "slots": [
+    {
+      "name": "visible",
+      "type": "active",
+      "path": "Activities/Activities/Container/Rewards/Reward (6)",
+      "sourceId": "cWXjwJoo",
+      "field": "active",
+      "default": true
+    },
+    {
+      "name": "dayLabel",
+      "type": "text",
+      "path": "Activities/Activities/Container/Rewards/Reward (6)/Day/DayLabel",
+      "sourceId": "z0uzfWm2",
+      "field": "text.value",
+      "default": "Day 1",
+      "sample": "Ngày mẫu"
+    },
+    {
+      "name": "rewardArt",
+      "type": "sprite",
+      "path": "Activities/Activities/Container/Rewards/Reward (6)/RewardIcon",
+      "sourceId": "tqqR1HGx",
+      "field": "image.spriteKey",
+      "default": "Assets/Sprites/Icons/PetCoinIcon.png"
+    },
+    {
+      "name": "amount",
+      "type": "text",
+      "path": "Activities/Activities/Container/Rewards/Reward (6)/RewardAmount",
+      "sourceId": "sDdrRVNx",
+      "field": "text.value",
+      "default": "x4h",
+      "sample": "x99 (mẫu)"
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "path": "Activities/Activities/Container/Rewards/Reward (6)/RewardDetails/Content",
+      "sourceId": "TIeGBYCh",
+      "field": "text.value",
+      "default": "Pet Coins",
+      "sample": "Quà mẫu"
+    },
+    {
+      "name": "cardTint",
+      "type": "tint",
+      "path": "Activities/Activities/Container/Rewards/Reward (6)",
+      "sourceId": "cWXjwJoo",
+      "field": "image.color",
+      "default": "#D7FFFF"
+    }
+  ],
+  "states": [
+    {
+      "name": "Đã nhận",
+      "when": "claimedDates chứa ngày này",
+      "ruleSource": "bindings.daily",
+      "overrides": [
+        {
+          "path": "Activities/Activities/Container/Rewards/Reward (6)/ClaimedButton",
+          "sourceId": "Uv4B4TGI",
+          "field": "active",
+          "value": true
+        }
+      ]
+    },
+    {
+      "name": "Chưa nhận",
+      "when": "claimedDates không chứa ngày này",
+      "ruleSource": "bindings.daily",
+      "overrides": [
+        {
+          "path": "Activities/Activities/Container/Rewards/Reward (6)/ClaimedButton",
+          "sourceId": "Uv4B4TGI",
+          "field": "active",
+          "value": false
+        }
+      ]
+    }
+  ],
+  "usedIn": [
+    {
+      "screen": "activities",
+      "note": "Subtree thật từ Activities.ui; không chạy binder trong template"
+    }
+  ],
+  "composedOf": [],
+  "notes": [
+    "Bản mặc định giữ snapshot .ui. Tham số mẫu chỉ dùng xem thử, không phải config game.",
+    "State chỉ bật/tắt lớp đã nhận; không bind quà/ngày/gradient runtime. Icon checkmark lib thiếu vẫn được liệt kê."
+  ]
+}
