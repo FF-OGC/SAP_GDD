@@ -36,6 +36,13 @@
       "rules": "./data/ui/shop-event-rules.json"
     },
     {
+      "id": "rebirth",
+      "name": "Rebirth",
+      "status": "ready",
+      "data": "./data/ui/rebirth.json",
+      "rules": "./data/ui/rebirth-rules.json"
+    },
+    {
       "id": "mission",
       "name": "Mission",
       "status": "planned"

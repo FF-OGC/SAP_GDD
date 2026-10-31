@@ -1,0 +1,342 @@
+{
+  "source": "Assets/Localization/key.csv",
+  "entries": {
+    "RACOON": {
+      "en": "Racoon",
+      "vi": "Gấu Mèo"
+    },
+    "SQUIRREL": {
+      "en": "Squirrel",
+      "vi": "Sóc"
+    },
+    "TURTLE": {
+      "en": "Turtle",
+      "vi": "Rùa"
+    },
+    "BISON": {
+      "en": "Bison",
+      "vi": "Bò Rừng Bison"
+    },
+    "HORSE": {
+      "en": "Horse",
+      "vi": "Ngựa"
+    },
+    "ZEBRA": {
+      "en": "Zebra",
+      "vi": "Ngựa Vằn"
+    },
+    "JELLYFISH": {
+      "en": "Jellyfish",
+      "vi": "Sứa"
+    },
+    "SEALION": {
+      "en": "Sealion",
+      "vi": "Sư Tử Biển"
+    },
+    "MOOSE": {
+      "en": "Moose",
+      "vi": "Nai Sừng Tấm"
+    },
+    "GIRAFFE": {
+      "en": "Giraffe",
+      "vi": "Hươu Cao Cổ"
+    },
+    "SNOWOWL": {
+      "en": "Snow Owl",
+      "vi": "Cú Tuyết"
+    },
+    "ALIGATOR": {
+      "en": "Alligator",
+      "vi": "Cá Sấu"
+    },
+    "TIGER": {
+      "en": "Tiger",
+      "vi": "Hổ"
+    },
+    "ELEPHANT": {
+      "en": "Elephant",
+      "vi": "Voi"
+    },
+    "PANDA": {
+      "en": "Panda",
+      "vi": "Gấu Trúc"
+    },
+    "EAGLE": {
+      "en": "Eagle",
+      "vi": "Chim Ưng"
+    },
+    "POLARBEAR": {
+      "en": "Polar Bear",
+      "vi": "Gấu Bắc Cực"
+    },
+    "RHINO": {
+      "en": "Rhino",
+      "vi": "Tê Giác"
+    },
+    "WOLF": {
+      "en": "Wolf",
+      "vi": "Sói"
+    },
+    "HIPPO": {
+      "en": "Hippo",
+      "vi": "Hà Mã"
+    },
+    "BROWNBEAR": {
+      "en": "Brown Bear",
+      "vi": "Gấu Nâu"
+    },
+    "SMALLWHALE": {
+      "en": "Baby Whale",
+      "vi": "Cá Voi Con"
+    },
+    "GORILLA": {
+      "en": "Gorilla",
+      "vi": "Khỉ Đột"
+    },
+    "NARWHAL": {
+      "en": "Narwhal",
+      "vi": "Kỳ Lân Biển"
+    },
+    "HUSKY": {
+      "en": "Husky",
+      "vi": "Chó Husky"
+    },
+    "PLATYPUS": {
+      "en": "Platypus",
+      "vi": "Thú Mỏ Vịt"
+    },
+    "JAGUAR": {
+      "en": "Jaguar",
+      "vi": "Báo Đen"
+    },
+    "FENNECFOX": {
+      "en": "Fennec Fox",
+      "vi": "Cáo Fennec"
+    },
+    "MOODENG": {
+      "en": "Moo Deng",
+      "vi": "Moo Deng"
+    },
+    "SNOWLEOPARD": {
+      "en": "Snow Leopard",
+      "vi": "Báo Tuyết"
+    },
+    "ARCTICFOX": {
+      "en": "Arctic Fox",
+      "vi": "Cáo Tuyết"
+    },
+    "BAT": {
+      "en": "Bat",
+      "vi": "Dơi"
+    },
+    "PARROT": {
+      "en": "Parrot",
+      "vi": "Vẹt"
+    },
+    "PEACOCK": {
+      "en": "Peacock",
+      "vi": "Công"
+    },
+    "FRILLNECKEDLIZARD": {
+      "en": "Frill Necked Lizard",
+      "vi": "Thằn Lằn Cổ Diềm"
+    },
+    "SEAHORSE": {
+      "en": "Seahorse",
+      "vi": "Cá Ngựa"
+    },
+    "KOALA": {
+      "en": "Koala",
+      "vi": "Gấu Túi"
+    },
+    "FOX": {
+      "en": "Fox",
+      "vi": "Cáo"
+    },
+    "MALLARD": {
+      "en": "Mallard",
+      "vi": "Vịt Trời"
+    },
+    "ARAPAIMA": {
+      "en": "Arapaima",
+      "vi": "Hải Tượng"
+    },
+    "CATFISH": {
+      "en": "Catfish",
+      "vi": "Cá Trê"
+    },
+    "PORCUPINE": {
+      "en": "Porcupine",
+      "vi": "Con Nhím"
+    },
+    "KOMODO": {
+      "en": "Komodo",
+      "vi": "Komodo"
+    },
+    "AXOLOTLGREEN": {
+      "en": "Axolotl-Jade",
+      "vi": "Axolotl-Mộc"
+    },
+    "SERVAL": {
+      "en": "Serval",
+      "vi": "Mèo Đồng Cỏ"
+    },
+    "BABOON": {
+      "en": "Baboon",
+      "vi": "Khỉ Đầu Chó"
+    },
+    "IGUANA": {
+      "en": "Iguana",
+      "vi": "Rồng Nam Mỹ"
+    },
+    "MOUSE": {
+      "en": "Mouse",
+      "vi": "Chuột"
+    },
+    "DINGO": {
+      "en": "Dingo",
+      "vi": "Chó Dingo"
+    },
+    "GEMSBOK": {
+      "en": "Gemsbok",
+      "vi": "Linh Dương Sừng Kiếm"
+    },
+    "REDPANDA": {
+      "en": "Red Panda",
+      "vi": "Gấu Trúc Đỏ"
+    },
+    "MEERKAT": {
+      "en": "Meerkat",
+      "vi": "Chồn Đất"
+    },
+    "PYTHON": {
+      "en": "Python",
+      "vi": "Trăn"
+    },
+    "ORANGUTAN": {
+      "en": "Orangutan",
+      "vi": "Đười Ươi"
+    },
+    "HEDGEHOG": {
+      "en": "Hedgehog",
+      "vi": "Nhím Gai"
+    },
+    "BANDICOOT": {
+      "en": "Bandicoot",
+      "vi": "Chuột Túi Bandicoot"
+    },
+    "JACKAL": {
+      "en": "Jackal",
+      "vi": "Chó Rừng"
+    },
+    "DONKEY": {
+      "en": "Donkey",
+      "vi": "Con Lừa"
+    },
+    "FROG": {
+      "en": "Frog",
+      "vi": "Ếch"
+    },
+    "RARITY_EPIC": {
+      "en": "EPIC",
+      "vi": "SỬ THI"
+    },
+    "RARITY_LEGENDARY": {
+      "en": "LEGENDARY",
+      "vi": "HUYỀN THOẠI"
+    },
+    "RARITY_MYTHIC": {
+      "en": "MYTHIC",
+      "vi": "THẦN THOẠI"
+    },
+    "RARITY_APEX": {
+      "en": "APEX",
+      "vi": "TỐI THƯỢNG"
+    },
+    "RARITY_LIMITED": {
+      "en": "LIMITED",
+      "vi": "LIMITED "
+    },
+    "HUD_REBIRTH_BUTTON": {
+      "en": "Upgrade Base",
+      "vi": "Nâng Cấp"
+    },
+    "HUD_REBIRTH_TITLE": {
+      "en": "UPGRADE BASE",
+      "vi": "NÂNG CẤP"
+    },
+    "HUD_REBIRTH_UNLOCK": {
+      "en": "Unlocks:",
+      "vi": "Bạn sẽ mở khóa:"
+    },
+    "HUD_REBIRTH_MULTI": {
+      "en": "Income",
+      "vi": "Thu nhập"
+    },
+    "HUD_REBIRTH_CASH": {
+      "en": "Initial Cash",
+      "vi": "Tiền vốn"
+    },
+    "HUD_REBIRTH_LOCK": {
+      "en": "Lock Duration",
+      "vi": "Khóa nhà"
+    },
+    "HUD_REBIRTH_SLOT": {
+      "en": "Pet Slots",
+      "vi": "Ô Thú Cưng"
+    },
+    "HUD_REBIRTH_GIFTCODE": {
+      "en": "Giftcode",
+      "vi": "Mã Quà Tặng"
+    },
+    "HUD_REBIRTH_SWAP": {
+      "en": "Swap Pets",
+      "vi": "Đổi vị trí Thú Cưng"
+    },
+    "HUD_REBIRTH_FUSION": {
+      "en": "Fuse Pets",
+      "vi": "Dung hợp Thú Cưng"
+    },
+    "HUD_REBIRTH_STEAL": {
+      "en": "Steal Pets",
+      "vi": "Cướp Thú Cưng"
+    },
+    "HUD_REBIRTH_PORTAL": {
+      "en": "Portal",
+      "vi": "Cổng Dịch Chuyển"
+    },
+    "HUD_REBIRTH_EXTEND_MONEY": {
+      "en": "Extend Money Limit",
+      "vi": "Tăng Giới Hạn Tiền"
+    },
+    "HUD_REBIRTH_EXTEND_DUST": {
+      "en": "Extend Dust Limit",
+      "vi": "Tăng Giới Hạn Mây"
+    },
+    "HUD_REBIRTH_PET_FOLLOWING": {
+      "en": "Pet Buddy",
+      "vi": "Thú cưng đồng hành"
+    },
+    "HUD_REBIRTH_STORAGE": {
+      "en": "Pets Storage",
+      "vi": "Kho Thú cưng"
+    },
+    "HUD_REBIRTH_REQUIREMENT": {
+      "en": "Requirements:",
+      "vi": "Yêu cầu:"
+    },
+    "HUD_REBIRTH_WARNING": {
+      "en": "[WARNING] Upgrading base will consume cash and required pets!!!",
+      "vi": "[CẢNH BÁO] Bạn sẽ mất một phần Tiền và những Thú cưng yêu cầu khi nâng cấp!!!"
+    },
+    "HUD_REBIRTH_MAX_LEVEL": {
+      "en": "YOU REACHED MAX LEVEL",
+      "vi": "BẠN ĐÃ ĐẠT CẤP ĐỘ CAO NHẤT"
+    },
+    "HUD_REBIRTH_POPUP_TITLE": {
+      "en": "YOU'VE UNLOCKED",
+      "vi": "BẠN ĐÃ MỞ KHÓA"
+    }
+  },
+  "missing": []
+}
