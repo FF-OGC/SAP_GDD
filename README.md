@@ -8,6 +8,9 @@ Mở `#uipreview/activities` hoặc chọn Activities bên cạnh Collection. Sn
 Activities có 286 entity, 54 sprite trong manifest; 50 có PNG cục bộ, 4 sprite
 `lib://` chưa có file. Giữ nguyên entity ID, raw props và callback để Inspect.
 Controller/config, localization và sprite runtime lấy từ source có hash.
+Thanh Pet Points chung của 5 milestone dùng nền màu tạm theo tint/geometry
+source để hiển thị dù thiếu sprite white `lib://`; Inspector ghi RenderFallback,
+manifest vẫn đánh dấu thiếu PNG. Thanh chỉ tăng khi nhận điểm nhiệm vụ.
 
 Hỗ trợ quà đăng nhập theo UserType/Rebirth, nhiệm vụ theo ngày cycle, tiến độ,
 nhận thưởng/mốc Pet Points và vòng quay theo weight/angle config. Panel người

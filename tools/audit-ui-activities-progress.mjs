@@ -30,6 +30,7 @@ try {
       assert.equal(await progress.textContent(), `${expected}/3`);
       assert.ok((await status.textContent()).startsWith(`${expected}/3`));
       assert.equal(await page.locator("#activities-points").inputValue(), "0");
+      assert.equal(await page.locator('[role="progressbar"][aria-label="Pet Points"]').getAttribute("aria-valuenow"), "0");
     }
     assert.ok(await add.isDisabled());
     assert.ok((await status.textContent()).includes("Có thể nhận"));
@@ -43,6 +44,7 @@ try {
     }, `${card} > [data-ui-name="Progress"] > [data-ui-name="ClaimButton"]`);
     await claim.click();
     assert.equal(await page.locator("#activities-points").inputValue(), String(points));
+    assert.equal(await page.locator('[role="progressbar"][aria-label="Pet Points"]').getAttribute("aria-valuenow"), String(points));
     assert.ok((await status.textContent()).includes("Đã nhận"));
     await claim.dispatchEvent("click"); // repeat delivery cannot award twice
     assert.equal(await page.locator("#activities-points").inputValue(), String(points));

@@ -2,6 +2,13 @@
 
 ## Activities Preview (2026-10-31)
 
+- Theo yêu cầu hiển thị thanh tiến độ chung 5 milestone, track/fill thiếu
+  sprite white `lib://` được biểu diễn bằng nền màu theo geometry/tint source.
+  Inspector giữ sprite missing và ghi RenderFallback; không tạo PNG thay thế.
+  Source sprite vẫn chưa resolve. Audit milestone-bar kiểm actual pixel xanh/
+  vàng và fill clamp ở 0/20/40/60/80/100/120 trên desktop/mobile. Claim nhiệm vụ
+  mới cộng Pet Points và cập nhật thanh; mới hoàn thành chưa cộng điểm.
+
 - Source Activities: game HEAD `471a62bb8a55ad735cfeebf5a0a315730df90daa`,
   kèm hash từng file `.ui`/controller/resource/enum trong activities-rules.json.
   286 entity được giữ đủ props/eca, 54 sprite, 4 `lib://` thiếu. Các PNG có

@@ -1,5 +1,17 @@
 # Activities trong UI Preview
 
+## Thanh tiến độ chung của 5 milestone (2026-10-31)
+
+Người dùng xác nhận cần thanh Pet Points chung phía trên tab nhiệm vụ.
+Track/fill đã có trong Activities.ui nhưng sprite white `lib://` không có PNG.
+Theo yêu cầu hiển thị thanh này, binder dùng nền màu tạm cho riêng hai visual,
+giữ nguyên geometry/tint serialize (track 660×5, fill cao hơn track 2 đơn vị),
+raw sprite identity và manifest missing. Không tạo PNG thay thế. Inspector ghi
+RenderFallback rõ đây là xấp xỉ web; không coi là đã resolve asset gốc.
+Fill lấy points / mốc cuối theo HudActivities.GetMilestoneFill, clamp 0–1.
+Điểm chỉ tăng khi claim mission, không tăng khi mới hoàn thành nhiệm vụ.
+Kiểm actual pixel và clip ở 0/20/40/60/80/100/over-max trên desktop/mobile.
+
 ## Debug progress (2026-10-31)
 
 Yêu cầu tiếp theo của người dùng: thêm debug kiểm tra tiến độ nhiệm vụ trong

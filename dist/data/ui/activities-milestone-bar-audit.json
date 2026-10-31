@@ -1,0 +1,218 @@
+[
+  {
+    "viewport": {
+      "width": 1440,
+      "height": 1100
+    },
+    "cases": [
+      {
+        "points": 0,
+        "fill": 0,
+        "firstPixel": [
+          31,
+          100,
+          196
+        ],
+        "tailPixel": [
+          31,
+          100,
+          196
+        ]
+      },
+      {
+        "points": 20,
+        "fill": 0.2,
+        "firstPixel": [
+          255,
+          213,
+          21
+        ],
+        "tailPixel": [
+          31,
+          100,
+          196
+        ]
+      },
+      {
+        "points": 40,
+        "fill": 0.4,
+        "firstPixel": [
+          255,
+          213,
+          21
+        ],
+        "tailPixel": [
+          31,
+          100,
+          196
+        ]
+      },
+      {
+        "points": 60,
+        "fill": 0.6,
+        "firstPixel": [
+          255,
+          213,
+          21
+        ],
+        "tailPixel": [
+          31,
+          100,
+          196
+        ]
+      },
+      {
+        "points": 80,
+        "fill": 0.8,
+        "firstPixel": [
+          255,
+          213,
+          21
+        ],
+        "tailPixel": [
+          31,
+          100,
+          196
+        ]
+      },
+      {
+        "points": 100,
+        "fill": 1,
+        "firstPixel": [
+          255,
+          213,
+          21
+        ],
+        "tailPixel": [
+          255,
+          213,
+          21
+        ]
+      },
+      {
+        "points": 120,
+        "fill": 1,
+        "firstPixel": [
+          255,
+          213,
+          21
+        ],
+        "tailPixel": [
+          255,
+          213,
+          21
+        ]
+      }
+    ],
+    "sourceSpriteStillMarkedMissing": true,
+    "errors": []
+  },
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "cases": [
+      {
+        "points": 0,
+        "fill": 0,
+        "firstPixel": [
+          111,
+          154,
+          217
+        ],
+        "tailPixel": [
+          111,
+          154,
+          217
+        ]
+      },
+      {
+        "points": 20,
+        "fill": 0.2,
+        "firstPixel": [
+          219,
+          199,
+          70
+        ],
+        "tailPixel": [
+          111,
+          154,
+          217
+        ]
+      },
+      {
+        "points": 40,
+        "fill": 0.4,
+        "firstPixel": [
+          219,
+          199,
+          70
+        ],
+        "tailPixel": [
+          111,
+          154,
+          217
+        ]
+      },
+      {
+        "points": 60,
+        "fill": 0.6,
+        "firstPixel": [
+          219,
+          199,
+          70
+        ],
+        "tailPixel": [
+          111,
+          154,
+          217
+        ]
+      },
+      {
+        "points": 80,
+        "fill": 0.8,
+        "firstPixel": [
+          219,
+          199,
+          70
+        ],
+        "tailPixel": [
+          111,
+          154,
+          217
+        ]
+      },
+      {
+        "points": 100,
+        "fill": 1,
+        "firstPixel": [
+          219,
+          199,
+          70
+        ],
+        "tailPixel": [
+          219,
+          199,
+          70
+        ]
+      },
+      {
+        "points": 120,
+        "fill": 1,
+        "firstPixel": [
+          219,
+          199,
+          70
+        ],
+        "tailPixel": [
+          219,
+          199,
+          70
+        ]
+      }
+    ],
+    "sourceSpriteStillMarkedMissing": true,
+    "errors": []
+  }
+]

@@ -179,8 +179,22 @@ function initActivitiesPreview(screen, rules, rendered) {
     const values = rules.milestone.Milestone.split(";").map(Number), gifts = rules.milestone.Gift.split(";");
     text(byKey("MilestonePoints"), uiTranslate("HUD_ACTIVITIES_PET_POINTS", [state.points]), source.milestone);
     const bar = byKey("MilestoneBar");
-    uiRenderer.setFillAmount(bar, Math.min(1, state.points / values.at(-1)), node(bar)?.image);
-    record(bar, "FillAmount", Math.min(1, state.points / values.at(-1)), source.milestone);
+    // The user requested this source bar to be visible despite the missing lib://
+    // white sprite. Keep its identity/missing status and approximate only these
+    // two rectangular visuals with the serialized tint and geometry.
+    for (const el of [bar.parentElement, bar]) {
+      const props = node(el)?.image, visual = el.querySelector(":scope > .ui-visual");
+      if (visual?.classList.contains("ui-missing-sprite") && props?.source?.filePath?.startsWith("lib://")) {
+        visual.style.background = props.color;
+        record(el, "RenderFallback", { kind: "solid-color rectangle", missingSprite: props.source.filePath, color: props.color, sourceGeometry: true }, "web approximation requested for Activities milestone bar; original sprite pixels unavailable");
+      }
+    }
+    const maximum = values.at(-1), fill = maximum > 0 ? Math.max(0, Math.min(1, state.points / maximum)) : 0;
+    uiRenderer.setFillAmount(bar, fill, node(bar)?.image);
+    record(bar, "FillAmount", fill, source.milestone);
+    bar.setAttribute("role", "progressbar"); bar.setAttribute("aria-label", "Pet Points");
+    bar.setAttribute("aria-valuemin", "0"); bar.setAttribute("aria-valuemax", String(maximum || 0));
+    bar.setAttribute("aria-valuenow", String(Math.max(0, Math.min(maximum || 0, state.points))));
     children(byKey("MilestoneRewardsLayout")).forEach((el, i) => {
       visible(el, i < values.length, source.milestone); if (i >= values.length) return;
       el.dataset.activityMilestone = String(values[i]);
