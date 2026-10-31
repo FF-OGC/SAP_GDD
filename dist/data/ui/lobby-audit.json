@@ -1,0 +1,178 @@
+{
+  "source": "pass",
+  "sourceCommit": "471a62bb8a55ad735cfeebf5a0a315730df90daa",
+  "entities": 40,
+  "sprites": 40,
+  "missingSprites": [
+    "Assets/Sprites/Weather/Meteorite.png",
+    "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+    "Assets/Sprites/Weather/MoleEmerge.png",
+    "Assets/Sprites/Mutations/Rainy.png",
+    "Assets/Sprites/Mutations/Snowy.png",
+    "Assets/Sprites/Mutations/Windy.png"
+  ],
+  "missingLocalization": [],
+  "unresolvedRegistrations": [],
+  "unsupported": [
+    {
+      "path": "Lobby/Weather/ShowDetailsButton",
+      "id": "EvbQEnwV",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Lobby/Weather/Timer",
+      "id": "SW8fLxw7",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Lobby/EventCountdown/ShowDetailsButton",
+      "id": "bBenaa6d",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Lobby/EventCountdown/Timer",
+      "id": "rruOwWKI",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Lobby/WeekendEvent/ShowDetailsButton",
+      "id": "XiuodCYp",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Lobby/Details/CloseButton",
+      "id": "C16sokjp",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Lobby/Details",
+      "id": "VD6bfH5f",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Lobby/TeleportToBossButton/Icon",
+      "id": "pU7tzQNQ",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Lobby/TeleportToBossButton",
+      "id": "oObLB3Xh",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Lobby/LikeButton/Label",
+      "id": "DSgzqrDd",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "Lobby/LikeButton",
+      "id": "I69NIxu1",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Lobby/Report/Label",
+      "id": "BYTZZMX9",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "Lobby/Report/Free Fire Function Widget",
+      "id": "Y2lDvWH8",
+      "fields": [
+        "propsData.social"
+      ]
+    },
+    {
+      "path": "Lobby/LuckySpinButton/Label",
+      "id": "yq369J56",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "Lobby/LuckySpinButton",
+      "id": "O0JAc625",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Lobby/EditProfileButton/Label",
+      "id": "nWAo6Swg",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "Lobby/EditProfileButton",
+      "id": "skKr2Z13",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Lobby/Event/OpenShopEventButton",
+      "id": "fwz9feVc",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Lobby/Event/Timer",
+      "id": "carqmPaP",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Lobby",
+      "id": "gbaHp8Hl",
+      "fields": [
+        "IsUIRootLike",
+        "ecaScripts"
+      ]
+    }
+  ],
+  "runtimeAssignments": 60,
+  "gaps": [
+    "Database/onboarding/revival gating is exposed as local readiness; no player data read",
+    "External teleport, lucky spin, profile and social effects are reported as simulation only",
+    "Popup sprite/content and weather/event duration are local test inputs; engine tween curves are not reproduced",
+    "Active-event ordering is supplied by the local scenario; live schedule and weekend clock are not queried",
+    "No engine screenshots; font/shader/scaler, hit order, safe area and scroll inertia unverified; player state is a local simulation"
+  ],
+  "browser": "separate CUA verification in screen plan",
+  "engineParity": "unverified; no runtime game screenshots"
+}

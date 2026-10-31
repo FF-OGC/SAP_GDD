@@ -7,8 +7,9 @@ import { activitiesRules } from "./ui-activities-source.mjs";
 import { sourceScreenRules } from "./ui-source-screen.mjs";
 import { shopEventSpec } from "./ui-shop-event-source.mjs";
 import { rebirthSpec } from "./ui-rebirth-source.mjs";
+import { lobbySpec } from "./ui-lobby-source.mjs";
 
-const SOURCE_SCREENS = [shopEventSpec, rebirthSpec];
+const SOURCE_SCREENS = [shopEventSpec, rebirthSpec, lobbySpec];
 
 const UI_FILES = [{ id: "collection", name: "Collection", file: "PetsCollection.ui", status: "ready" }, { id: "activities", name: "Activities", file: "Activities.ui", status: "ready" }, { id: "shop", name: "Shop", file: "Shop.ui", status: "ready" }, { id: "mail", name: "Mail", file: "Mail.ui", status: "ready" }];
 UI_FILES.push(...SOURCE_SCREENS.map(spec => ({ id: spec.id, name: spec.name || "Shop Event", file: spec.ui, status: "ready" })));

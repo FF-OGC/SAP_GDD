@@ -1,0 +1,186 @@
+{
+  "source": "Assets/Localization/key.csv",
+  "entries": {
+    "MUTATION_SOAKED": {
+      "en": "Soaked",
+      "vi": "Ẩm Ướt"
+    },
+    "MUTATION_FROST": {
+      "en": "Frost",
+      "vi": "Sương Tuyết"
+    },
+    "MUTATION_GALE": {
+      "en": "Gale",
+      "vi": "Cuồng Phong"
+    },
+    "MUTATION_THUNDERED": {
+      "en": "Thundered",
+      "vi": "Lôi Điện"
+    },
+    "MUTATION_ECLIPSE": {
+      "en": "Eclipse",
+      "vi": "Nguyệt Thực"
+    },
+    "MUTATION_PRISMATIC": {
+      "en": "Prismatic",
+      "vi": "Đa sắc"
+    },
+    "MUTATION_VORTEX": {
+      "en": "Vortex",
+      "vi": "Lục Xoáy"
+    },
+    "MUTATION_SEQUIN": {
+      "en": "Sequin",
+      "vi": "Kim Tuyến"
+    },
+    "MUTATION_SPARKLE": {
+      "en": "Sparkle",
+      "vi": "Lấp Lánh"
+    },
+    "MUTATION_AURORA": {
+      "en": "Aurora",
+      "vi": "Cực Quang"
+    },
+    "WEATHER_RAINY": {
+      "en": "Rainy",
+      "vi": "Trời Mưa"
+    },
+    "WEATHER_SNOWY": {
+      "en": "Snowy",
+      "vi": "Tuyết Rơi"
+    },
+    "WEATHER_WINDY": {
+      "en": "Windy",
+      "vi": "Gió Nhẹ"
+    },
+    "WEATHER_SHADOWFALL": {
+      "en": "Shadowfall",
+      "vi": "Màn Đêm"
+    },
+    "WEATHER_RAINBOW": {
+      "en": "Rainbow",
+      "vi": "Cầu Vồng"
+    },
+    "WEATHER_TEMPEST": {
+      "en": "Tempest",
+      "vi": "Bích Bão"
+    },
+    "WEATHER_NEBULA": {
+      "en": "Nebula",
+      "vi": "Tinh Vân"
+    },
+    "WEATHER_HIGHTIDE": {
+      "en": "High Tide",
+      "vi": "Triều Cường"
+    },
+    "WEATHER_HEAVYRAIN": {
+      "en": "Heavy Rain",
+      "vi": "Mưa Lớn"
+    },
+    "WEATHER_GROUNDSHAKE": {
+      "en": "Ground Shake",
+      "vi": "Rung Chấn"
+    },
+    "WEATHER_LUCKYBOXSTORM": {
+      "en": "Lucky Box Storm",
+      "vi": "Bão Túi Mù"
+    },
+    "PROMPT_OTHER_LIKE": {
+      "en": "{0} has liked your house",
+      "vi": "{0} đã thích nhà của bạn"
+    },
+    "HUD_LUCKY_SPIN_OPEN_BUTTON": {
+      "en": "Daily spin",
+      "vi": "Quay thưởng"
+    },
+    "HUD_REPORT_BUTTON": {
+      "en": "Report!",
+      "vi": "Báo cáo!"
+    },
+    "HUD_ATTACK_BOSS": {
+      "en": "Attack Monster",
+      "vi": "Đánh Quái Vật"
+    },
+    "HUD_LIKE": {
+      "en": "Like",
+      "vi": "Thích"
+    },
+    "HUD_EDIT_PROFILE_BUTTON": {
+      "en": "Edit",
+      "vi": "Sửa"
+    },
+    "HUD_OBTAIN_METEORITE": {
+      "en": "Obtain by digging meteorites",
+      "vi": "Thu được từ việc đào thiên thạch"
+    },
+    "HUD_TITLE_EVENT_METEORITE": {
+      "en": "METEORITE EVENT",
+      "vi": "SỰ KIỆN THIÊN THẠCH"
+    },
+    "HUD_REWARD_DETAIL_METEORITE": {
+      "en": "Used to exchange items in the Meteorite Event shop",
+      "vi": "Dùng để đổi vật phẩm trong cửa hàng Sự kiện Thiên thạch."
+    },
+    "HUD_OBTAIN_GEM_MOLE": {
+      "en": "Obtain by whacking a mole",
+      "vi": "Thu được từ việc đập chuột chũi"
+    },
+    "HUD_TITLE_EVENT_WHACK_A_MOLE": {
+      "en": "WHACK A MOLE EVENT",
+      "vi": "SỰ KIỆN ĐẬP CHUỘT"
+    },
+    "HUD_REWARD_DETAIL_GEM_MOLE": {
+      "en": "Used to exchange items in the Whack A Mole Event shop",
+      "vi": "Dùng để đổi vật phẩm trong cửa hàng Sự kiện Đập Chuột."
+    },
+    "HUD_REWARD_DETAIL_GEM_BALL": {
+      "en": "Used to exchange items in the Steal A Ball Event shop",
+      "vi": "Dùng để đổi vật phẩm trong cửa hàng Sự kiện Cướp Bóng"
+    },
+    "HUD_OBTAIN_GEM_BALL": {
+      "en": "Obtain by playing Steal A Ball event",
+      "vi": "Thu được từ việc chơi sự kiện Cướp Bóng"
+    },
+    "HUD_TITLE_EVENT_STEAL_A_BALL": {
+      "en": "STEAL A BALL EVENT",
+      "vi": "SỰ KIỆN CƯỚP BÓNG"
+    },
+    "HUD_TITLE_EVENT_KICK_A_BALL": {
+      "en": "KICK A BALL",
+      "vi": "SỰ KIỆN ĐÁ BÓNG"
+    },
+    "HUD_REWARD_DETAIL_GEM_KICK_BALL": {
+      "en": "Used to exchange items in the KICK A BALL shop",
+      "vi": "Dùng để đổi vật phẩm trong cửa hàng Sự kiện ĐÁ BÓNG."
+    },
+    "HUD_OBTAIN_GEM_KICK_BALL": {
+      "en": "Obtain by score a goal",
+      "vi": "Thu được từ việc ghi bàn"
+    },
+    "HUD_OBTAIN_DUST": {
+      "en": "Obtain from fusion",
+      "vi": "Thu được từ dung hợp thú cưng"
+    },
+    "HUD_LOBBY_DETAILS_SUMMONED": {
+      "en": "{0} summoned {1}.",
+      "vi": "{0} đã triệu hồi thời tiết {1}."
+    },
+    "HUD_LOBBY_DETAILS_APPEARANCES": {
+      "en": "Possible appearances: {0}.",
+      "vi": "Các hiệu ứng có thể xuất hiện: {0}."
+    },
+    "HUD_LOBBY_DETAILS_SPECIAL_PETS": {
+      "en": "Chance for [FFFA00]Special Pets[-] to appear.",
+      "vi": "Có cơ hội để [FFFA00]Thú cưng đặc biệt[-] xuất hiện."
+    },
+    "HUD_LOBBY_DETAILS_NEXT_WEATHER": {
+      "en": "Next Weather: {0}.",
+      "vi": "Thời tiết tiếp theo: {0}."
+    },
+    "HUD_LOBBY_WEEKEND_DUST_X4": {
+      "en": "x4 Dust",
+      "vi": "x4 Mây"
+    }
+  },
+  "missing": []
+}

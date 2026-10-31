@@ -43,6 +43,13 @@
       "rules": "./data/ui/rebirth-rules.json"
     },
     {
+      "id": "lobby",
+      "name": "Lobby",
+      "status": "ready",
+      "data": "./data/ui/lobby.json",
+      "rules": "./data/ui/lobby-rules.json"
+    },
+    {
       "id": "mission",
       "name": "Mission",
       "status": "planned"

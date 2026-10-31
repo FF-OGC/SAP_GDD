@@ -1,0 +1,794 @@
+{
+  "sourceCommit": "471a62bb8a55ad735cfeebf5a0a315730df90daa",
+  "uiSha256": "c1e69a6b7a918eb47d59c828cdf5fc6fae9cd29488ae45ae19fdf33b848fa029",
+  "controller": "Assets/Scripts/HUDs/HudLobby.fcg",
+  "sourceFiles": [
+    {
+      "file": "Assets/Scripts/HUDs/HudLobby.fcg",
+      "sha256": "de3599a0e709cd25c258791e59e0a6735e0fb5a4720c76e188d75a7884647cc0"
+    },
+    {
+      "file": "Assets/Scripts/Configs/WeatherConfigs.fcg",
+      "sha256": "0964865f0c17d7f73ff738d6fa792fa64cc0b187ac10b5ede4028fd29755b7db"
+    },
+    {
+      "file": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg",
+      "sha256": "2f68108aa1b677f5dbbf8423d612a5d8282f746aaaaf43858d76dff3c0a94fc0"
+    },
+    {
+      "file": "Assets/Scripts/Configs/FeatureUnlockConfigs.fcg",
+      "sha256": "bd352492e116ad296ae4f80af56a155d19c0aac1aeef5ae5f98b8fef459c7bd7"
+    },
+    {
+      "file": "ProjectSettings/ResourceRegisteration.asset",
+      "sha256": "9166b4e138c086e0cb2c13b2bb2cc205fc7c682fcb3e0bd23e0f9e0fc0f2a01b"
+    },
+    {
+      "file": "Assets/Scripts/Utils/UIUtils.fcg",
+      "sha256": "e97b481d8ac790acf5651808c7421d4393c6be7d7264154fad95cfeee15ebcfe"
+    },
+    {
+      "file": "Assets/CSV/Weather.csv",
+      "sha256": "dfc908efa49d66c12fb92643699ac16196a98f051c49c9f46bdfcf2054c164bb"
+    },
+    {
+      "file": "Assets/CSV/weatherEffects.csv",
+      "sha256": "27525f5578e82fd8eedd8d643f12b83a0ff9fbe5947447199d4590de0ad9fd3e"
+    }
+  ],
+  "projections": [],
+  "widgetIds": {
+    "Weather": "XXzkm9JX",
+    "EventCountdown": "DhJFKysU",
+    "Details": "VD6bfH5f",
+    "TeleportToBossButton": "oObLB3Xh",
+    "LikeButton": "I69NIxu1",
+    "Report": "kKA9mJjt",
+    "LuckySpinButton": "O0JAc625",
+    "PopupIcon": "dEyhdc4O",
+    "EditProfileButton": "skKr2Z13",
+    "WeekendEvent": "lkGBiofd",
+    "Event": "p51zPqgg",
+    "EventCountdownShowDetailsButton": "bBenaa6d",
+    "WeekendEventShowDetailsButton": "XiuodCYp"
+  },
+  "constants": {
+    "TIMEWAITING": 10000,
+    "DURATION_DISAPEAR": 2500,
+    "POPUP_POOL_PREWARM": 2,
+    "POPUP_POOL_MAX": 8,
+    "CONTEXTUAL_LIKE": 1,
+    "CONTEXTUAL_REPORT": 2,
+    "CONTEXTUAL_LUCKY_SPIN": 3,
+    "CONTEXTUAL_EDIT_PROFILE": 4,
+    "COUNTDOWN_REFRESH_INTERVAL_MS": 964,
+    "DETAILS_CONTEXT_WEATHER": 0,
+    "DETAILS_CONTEXT_EVENT_COUNTDOWN": 1,
+    "DETAILS_CONTEXT_WEEKEND_EVENT": 2,
+    "_WeatherTurn": 0,
+    "_BossTeleTurn": 0,
+    "_PopupPoolTotal": 0,
+    "titleKey": "HUD_TITLE_EVENT_KICK_A_BALL",
+    "obtainKey": "HUD_OBTAIN_GEM_KICK_BALL",
+    "rewardKey": "HUD_REWARD_DETAIL_GEM_KICK_BALL",
+    "_EventCountdownEndTimestamp": 0
+  },
+  "bindings": {
+    "InitLobbyHUD": "Assets/Scripts/HUDs/HudLobby.fcg:127",
+    "CreatePopupWidget": "Assets/Scripts/HUDs/HudLobby.fcg:195",
+    "AcquirePopup": "Assets/Scripts/HUDs/HudLobby.fcg:226",
+    "ShowPopUpWithType": "Assets/Scripts/HUDs/HudLobby.fcg:249",
+    "ReleasePopup": "Assets/Scripts/HUDs/HudLobby.fcg:280",
+    "GetHUDWidget": "Assets/Scripts/HUDs/HudLobby.fcg:291",
+    "ShowLobbyHUD": "Assets/Scripts/HUDs/HudLobby.fcg:295",
+    "HideLobbyHUD": "Assets/Scripts/HUDs/HudLobby.fcg:304",
+    "ShowBossTeleHUD": "Assets/Scripts/HUDs/HudLobby.fcg:316",
+    "HideBossTeleHUD": "Assets/Scripts/HUDs/HudLobby.fcg:333",
+    "OpenDetails": "Assets/Scripts/HUDs/HudLobby.fcg:342",
+    "OpenEventCountdownDetails": "Assets/Scripts/HUDs/HudLobby.fcg:349",
+    "OpenWeekendEventDetails": "Assets/Scripts/HUDs/HudLobby.fcg:358",
+    "CloseDetails": "Assets/Scripts/HUDs/HudLobby.fcg:367",
+    "UpdateDetailsContent": "Assets/Scripts/HUDs/HudLobby.fcg:375",
+    "GetEventCountdownDetailsContent": "Assets/Scripts/HUDs/HudLobby.fcg:427",
+    "OpenLuckySpinButton": "Assets/Scripts/HUDs/HudLobby.fcg:447",
+    "CloseLuckySpinButton": "Assets/Scripts/HUDs/HudLobby.fcg:453",
+    "OpenEditProfileButton": "Assets/Scripts/HUDs/HudLobby.fcg:461",
+    "CloseEditProfileButton": "Assets/Scripts/HUDs/HudLobby.fcg:467",
+    "OpenLikeReportHUD": "Assets/Scripts/HUDs/HudLobby.fcg:475",
+    "CloseLikeReportHUD": "Assets/Scripts/HUDs/HudLobby.fcg:489",
+    "LikePlayer": "Assets/Scripts/HUDs/HudLobby.fcg:501",
+    "OpenContextualButton": "Assets/Scripts/HUDs/HudLobby.fcg:518",
+    "CloseContextualButton": "Assets/Scripts/HUDs/HudLobby.fcg:527",
+    "IsAnyContextualButtonShowing": "Assets/Scripts/HUDs/HudLobby.fcg:538",
+    "OpenWeather": "Assets/Scripts/HUDs/HudLobby.fcg:542",
+    "CloseWeather": "Assets/Scripts/HUDs/HudLobby.fcg:553",
+    "UpdateWeather": "Assets/Scripts/HUDs/HudLobby.fcg:561",
+    "RefreshWeather": "Assets/Scripts/HUDs/HudLobby.fcg:586",
+    "CountdownWeather": "Assets/Scripts/HUDs/HudLobby.fcg:611",
+    "HandleEventWidgetsDataLoaded": "Assets/Scripts/HUDs/HudLobby.fcg:628",
+    "HandleEventWidgetMissionUpdate": "Assets/Scripts/HUDs/HudLobby.fcg:638",
+    "CanShowEventWidgets": "Assets/Scripts/HUDs/HudLobby.fcg:644",
+    "RefreshEventWidgets": "Assets/Scripts/HUDs/HudLobby.fcg:652",
+    "HandleMeteoriteChange": "Assets/Scripts/HUDs/HudLobby.fcg:672",
+    "HandleMoleEmergeChange": "Assets/Scripts/HUDs/HudLobby.fcg:680",
+    "HandleBallAppearChange": "Assets/Scripts/HUDs/HudLobby.fcg:691",
+    "OpenEventCountdown": "Assets/Scripts/HUDs/HudLobby.fcg:699",
+    "CloseEventCountdown": "Assets/Scripts/HUDs/HudLobby.fcg:709",
+    "UpdateEventCountdown": "Assets/Scripts/HUDs/HudLobby.fcg:719",
+    "RefreshEventCountdown": "Assets/Scripts/HUDs/HudLobby.fcg:731",
+    "CountdownEvent": "Assets/Scripts/HUDs/HudLobby.fcg:752",
+    "OpenEventWidget": "Assets/Scripts/HUDs/HudLobby.fcg:768",
+    "CloseEventWidget": "Assets/Scripts/HUDs/HudLobby.fcg:777",
+    "UpdateEventWidget": "Assets/Scripts/HUDs/HudLobby.fcg:784",
+    "GetEventWidgetWaitSeconds": "Assets/Scripts/HUDs/HudLobby.fcg:805",
+    "CountdownEventWidget": "Assets/Scripts/HUDs/HudLobby.fcg:816",
+    "OpenWeekendEvent": "Assets/Scripts/HUDs/HudLobby.fcg:837",
+    "CloseWeekendEvent": "Assets/Scripts/HUDs/HudLobby.fcg:847",
+    "UpdateWeekendEvent": "Assets/Scripts/HUDs/HudLobby.fcg:857",
+    "WaitForWeekendChange": "Assets/Scripts/HUDs/HudLobby.fcg:875",
+    "HandleLobbyButton": "Assets/Scripts/HUDs/HudLobby.fcg:882",
+    "InitWeatherConfigs": "Assets/Scripts/Configs/WeatherConfigs.fcg:62",
+    "LoadWeatherConfigs": "Assets/Scripts/Configs/WeatherConfigs.fcg:79",
+    "GetWeatherConfigFromCSV": "Assets/Scripts/Configs/WeatherConfigs.fcg:87",
+    "GetWeatherEffectsConfigFromCSV": "Assets/Scripts/Configs/WeatherConfigs.fcg:102",
+    "GetWeatherWavesConfigFromCSV": "Assets/Scripts/Configs/WeatherConfigs.fcg:116",
+    "GetWeatherCount": "Assets/Scripts/Configs/WeatherConfigs.fcg:135",
+    "GetWeatherName": "Assets/Scripts/Configs/WeatherConfigs.fcg:139",
+    "GetWeatherNameLocalization": "Assets/Scripts/Configs/WeatherConfigs.fcg:143",
+    "GetWeatherIcon": "Assets/Scripts/Configs/WeatherConfigs.fcg:147",
+    "GetWeatherEffects": "Assets/Scripts/Configs/WeatherConfigs.fcg:151",
+    "GetWeatherEffectId2Name": "Assets/Scripts/Configs/WeatherConfigs.fcg:163",
+    "GetWeatherEffectName": "Assets/Scripts/Configs/WeatherConfigs.fcg:167",
+    "GetWeatherMutationEffectLocalization": "Assets/Scripts/Configs/WeatherConfigs.fcg:171",
+    "GetWeatherEffectNameLocalizationColor": "Assets/Scripts/Configs/WeatherConfigs.fcg:175",
+    "GetWeatherColor": "Assets/Scripts/Configs/WeatherConfigs.fcg:203",
+    "GetWeatherEffectIcon": "Assets/Scripts/Configs/WeatherConfigs.fcg:229",
+    "GetWeatherEffectChance": "Assets/Scripts/Configs/WeatherConfigs.fcg:233",
+    "GetWeatherEffectMultiplierPrice": "Assets/Scripts/Configs/WeatherConfigs.fcg:237",
+    "GetWeatherEffectLevelUpCostMultiplier": "Assets/Scripts/Configs/WeatherConfigs.fcg:245",
+    "GetWeatherEffectCount": "Assets/Scripts/Configs/WeatherConfigs.fcg:253",
+    "IsValidWeatherId": "Assets/Scripts/Configs/WeatherConfigs.fcg:257",
+    "GetWeatherWaveType": "Assets/Scripts/Configs/WeatherConfigs.fcg:264",
+    "GetWeatherWaveDuration": "Assets/Scripts/Configs/WeatherConfigs.fcg:268",
+    "GetWeatherWaveDurationSeconds": "Assets/Scripts/Configs/WeatherConfigs.fcg:273",
+    "GetTotalWaves": "Assets/Scripts/Configs/WeatherConfigs.fcg:277",
+    "GetTotalWavesDuration": "Assets/Scripts/Configs/WeatherConfigs.fcg:281",
+    "GetTotalWavesDurationSeconds": "Assets/Scripts/Configs/WeatherConfigs.fcg:286",
+    "AddCurrency": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:23",
+    "SpendCurrency": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:46",
+    "HasEnoughCurrency": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:62",
+    "GetCurrencyBalance": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:70",
+    "GetHighestCurrencyBalance": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:74",
+    "GetGemPerDate": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:78",
+    "UpdateEventParticipationProgress": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:89",
+    "RequestClaimDailyShard": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:118",
+    "CheckConditionClaimDailyShard": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:131",
+    "ProcessClaimDailyShard": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:152",
+    "ClaimDailyShard": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:157",
+    "CanClaimDailyShard": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:174",
+    "GetDailyShardIcon": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:180",
+    "GetEventGemIcon": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:184",
+    "NotifyClaimDailyShardError": "Assets/Scripts/Events/Core/EventCurrencyManager.fcg:200",
+    "GetFeatureUnlockLevel": "Assets/Scripts/Configs/FeatureUnlockConfigs.fcg:48",
+    "IsFeatureUnlocked": "Assets/Scripts/Configs/FeatureUnlockConfigs.fcg:82",
+    "GetHudUnlockLevel": "Assets/Scripts/Configs/FeatureUnlockConfigs.fcg:87",
+    "GetFeaturesUnlockedAt": "Assets/Scripts/Configs/FeatureUnlockConfigs.fcg:107"
+  },
+  "runtimeAssignments": [
+    {
+      "target": "_LobbyHUD",
+      "property": "Depth",
+      "expression": "HudDepth.Lobby",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:134"
+    },
+    {
+      "target": "_LobbyHUD",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:135"
+    },
+    {
+      "target": "_WeatherWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:182"
+    },
+    {
+      "target": "_EventCountdownWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:183"
+    },
+    {
+      "target": "_EventWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:184"
+    },
+    {
+      "target": "_WeekendEventWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:185"
+    },
+    {
+      "target": "_DetailsWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:186"
+    },
+    {
+      "target": "_TeleportToBossButton",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:187"
+    },
+    {
+      "target": "_LikeButton",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:188"
+    },
+    {
+      "target": "_ReportWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:189"
+    },
+    {
+      "target": "_LuckySpinButton",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:190"
+    },
+    {
+      "target": "_EditProfileButton",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:191"
+    },
+    {
+      "target": "_PopupIconTemplate",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:192"
+    },
+    {
+      "target": "popupWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:216"
+    },
+    {
+      "target": "popupWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:242"
+    },
+    {
+      "target": "popupWidget",
+      "property": "AnchorPosition",
+      "expression": "startPosition",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:268"
+    },
+    {
+      "target": "popupWidget",
+      "property": "SpriteName",
+      "expression": "sprite",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:269"
+    },
+    {
+      "target": "_PopupLabelByWidget[popupWidget]",
+      "property": "Content",
+      "expression": "content",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:270"
+    },
+    {
+      "target": "popupWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:271"
+    },
+    {
+      "target": "positionTween",
+      "property": "StartValue",
+      "expression": "startPosition",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:272"
+    },
+    {
+      "target": "positionTween",
+      "property": "EndValue",
+      "expression": "endPosition",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:273"
+    },
+    {
+      "target": "popupWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:286"
+    },
+    {
+      "target": "_LobbyHUD",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:298"
+    },
+    {
+      "target": "_LobbyHUD",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:309"
+    },
+    {
+      "target": "_TeleportToBossIcon",
+      "property": "SpriteName",
+      "expression": "bossIcon",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:324"
+    },
+    {
+      "target": "_TeleportToBossButton",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:325"
+    },
+    {
+      "target": "_TeleportToBossButton",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:339"
+    },
+    {
+      "target": "_DetailsWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:345"
+    },
+    {
+      "target": "_DetailsWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:354"
+    },
+    {
+      "target": "_DetailsWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:363"
+    },
+    {
+      "target": "_DetailsWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:372"
+    },
+    {
+      "target": "_DetailsLabel",
+      "property": "Content",
+      "expression": "GetEventCountdownDetailsContent()",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:379"
+    },
+    {
+      "target": "_DetailsLabel",
+      "property": "Content",
+      "expression": "LocString{\"{0}\\n{1}\", {LocString{\"HUD_LOBBY_WEEKEND_DUST_X4\", {}}, LocString{\"HUD_OBTAIN_DUST\", {}}}}",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:383"
+    },
+    {
+      "target": "_DetailsLabel",
+      "property": "Content",
+      "expression": "\"\"",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:415"
+    },
+    {
+      "target": "_DetailsLabel",
+      "property": "Content",
+      "expression": "detailsContent",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:424"
+    },
+    {
+      "target": "_LuckySpinButton",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:449"
+    },
+    {
+      "target": "_LuckySpinButton",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:455"
+    },
+    {
+      "target": "_EditProfileButton",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:463"
+    },
+    {
+      "target": "_EditProfileButton",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:469"
+    },
+    {
+      "target": "_LikeButton",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:482"
+    },
+    {
+      "target": "_ReportWidget",
+      "property": "Target",
+      "expression": "player",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:483"
+    },
+    {
+      "target": "_ReportWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:484"
+    },
+    {
+      "target": "_LikeButton",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:491"
+    },
+    {
+      "target": "_ReportWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:494"
+    },
+    {
+      "target": "_WeatherWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:550"
+    },
+    {
+      "target": "_WeatherWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:558"
+    },
+    {
+      "target": "_WeatherIcon",
+      "property": "SpriteName",
+      "expression": "Res.Sprite[WeatherConfigs.GetWeatherIcon(weather) as EResKeySprite]",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:576"
+    },
+    {
+      "target": "_WeatherTimerLabel",
+      "property": "Content",
+      "expression": "UIUtils.FormatTimeWithColon(duration / 1000, 2)",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:616"
+    },
+    {
+      "target": "_EventCountdownWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:705"
+    },
+    {
+      "target": "_EventCountdownWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:715"
+    },
+    {
+      "target": "_EventCountdownWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:744"
+    },
+    {
+      "target": "_EventCountdownIcon",
+      "property": "SpriteName",
+      "expression": "_EventCountdownIconSprite",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:745"
+    },
+    {
+      "target": "_EventCountdownTimerLabel",
+      "property": "Content",
+      "expression": "UIUtils.FormatTimeWithColon(remainingSeconds, EventSettings.TIME_FORMAT_MODE_FULL)",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:763"
+    },
+    {
+      "target": "_EventWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:774"
+    },
+    {
+      "target": "_EventWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:780"
+    },
+    {
+      "target": "_EventIcon",
+      "property": "SpriteName",
+      "expression": "EventCurrencyManager.GetEventGemIcon(_DisplayedEventType)",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:800"
+    },
+    {
+      "target": "_EventTimerLabel",
+      "property": "Content",
+      "expression": "UIUtils.FormatTimeWithColon(remainingSeconds, formatMode)",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:832"
+    },
+    {
+      "target": "_WeekendEventLabel",
+      "property": "Content",
+      "expression": "LocString{\"HUD_LOBBY_WEEKEND_DUST_X4\", {}}",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:843"
+    },
+    {
+      "target": "_WeekendEventWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:844"
+    },
+    {
+      "target": "_WeekendEventWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLobby.fcg:853"
+    }
+  ],
+  "spriteKeys": {
+    "Meteorite": "Assets/Sprites/Weather/Meteorite.png",
+    "MoleEmerge": "Assets/Sprites/Weather/MoleEmerge.png",
+    "FootBallEvent": "Assets/Sprites/Event/FootBallEvent.png",
+    "RainyWeather": "Assets/Sprites/Weather/Rainy.png",
+    "SnowyWeather": "Assets/Sprites/Weather/Snowy.png",
+    "WindyWeather": "Assets/Sprites/Weather/Windy.png",
+    "ShadowfallWeather": "Assets/Sprites/Weather/Shadowfall.png",
+    "RainbowWeather": "Assets/Sprites/Weather/Rainbow.png",
+    "TempestWeather": "Assets/Sprites/Weather/Tempest.png",
+    "NebulaWeather": "Assets/Sprites/Weather/NebulaWeather.png",
+    "HighTideWeather": "Assets/Sprites/Weather/HighTideWeather.png",
+    "HeavyRainWeather": "Assets/Sprites/Weather/HeavyRainWeather.png",
+    "GroundShakeWeather": "Assets/Sprites/Weather/GroundShakeWeather.png",
+    "GiftboxStormWeather": "Assets/Sprites/Weather/GiftboxStormWeather.png",
+    "Soaked": "Assets/Sprites/Mutations/Rainy.png",
+    "Frost": "Assets/Sprites/Mutations/Snowy.png",
+    "Gale": "Assets/Sprites/Mutations/Windy.png",
+    "Thundered": "Assets/Sprites/Mutations/Thundered.png",
+    "Eclipse": "Assets/Sprites/Mutations/Eclipse.png",
+    "Prismatic": "Assets/Sprites/Mutations/Prismatic.png",
+    "Vortex": "Assets/Sprites/Mutations/Vortex.png",
+    "Sequin": "Assets/Sprites/Mutations/Sequin.png",
+    "Sparkle": "Assets/Sprites/Mutations/Sparkle.png",
+    "Aurora": "Assets/Sprites/Mutations/Aurora.png",
+    "MoleGemIcon": "Assets/Sprites/Icons/MoleGemIcon.png",
+    "GemstoneIcon": "Assets/Sprites/Icons/Gemstone.png",
+    "BallGemIcon": "Assets/Sprites/Icons/BallGemIcon.png",
+    "GoldenBootsIcon": "Assets/Sprites/Icons/GoldenBootsIcon.png",
+    "RarityContractGem": "Assets/Sprites/Icons/RarityContractGem.png"
+  },
+  "rarityColors": {},
+  "suffixes": {},
+  "weather": [
+    {
+      "ID": "1",
+      "Name": "Rainy",
+      "Icon": "RainyWeather",
+      "Effects": "1;4"
+    },
+    {
+      "ID": "2",
+      "Name": "Snowy",
+      "Icon": "SnowyWeather",
+      "Effects": "2"
+    },
+    {
+      "ID": "3",
+      "Name": "Windy",
+      "Icon": "WindyWeather",
+      "Effects": "3"
+    },
+    {
+      "ID": "4",
+      "Name": "Shadowfall",
+      "Icon": "ShadowfallWeather",
+      "Effects": "5"
+    },
+    {
+      "ID": "5",
+      "Name": "Rainbow",
+      "Icon": "RainbowWeather",
+      "Effects": "6"
+    },
+    {
+      "ID": "6",
+      "Name": "Tempest",
+      "Icon": "TempestWeather",
+      "Effects": "7"
+    },
+    {
+      "ID": "7",
+      "Name": "Nebula",
+      "Icon": "NebulaWeather",
+      "Effects": "8;10"
+    },
+    {
+      "ID": "8",
+      "Name": "HighTide",
+      "Icon": "HighTideWeather",
+      "Effects": ""
+    },
+    {
+      "ID": "9",
+      "Name": "HeavyRain",
+      "Icon": "HeavyRainWeather",
+      "Effects": "1;4"
+    },
+    {
+      "ID": "10",
+      "Name": "GroundShake",
+      "Icon": "GroundShakeWeather",
+      "Effects": ""
+    },
+    {
+      "ID": "11",
+      "Name": "GiftboxStorm",
+      "Icon": "GiftboxStormWeather",
+      "Effects": ""
+    }
+  ],
+  "effects": [
+    {
+      "ID": "1",
+      "Name": "Soaked",
+      "Icon": "Soaked",
+      "Chance": "0.0400",
+      "MultiplierPrice": "0.05",
+      "LvUpCostMultiplier": "1.03"
+    },
+    {
+      "ID": "2",
+      "Name": "Frost",
+      "Icon": "Frost",
+      "Chance": "0.0200",
+      "MultiplierPrice": "0.09",
+      "LvUpCostMultiplier": "1.05"
+    },
+    {
+      "ID": "3",
+      "Name": "Gale",
+      "Icon": "Gale",
+      "Chance": "0.0500",
+      "MultiplierPrice": "0.08",
+      "LvUpCostMultiplier": "1.05"
+    },
+    {
+      "ID": "4",
+      "Name": "Thundered",
+      "Icon": "Thundered",
+      "Chance": "0.0090",
+      "MultiplierPrice": "0.12",
+      "LvUpCostMultiplier": "1.07"
+    },
+    {
+      "ID": "5",
+      "Name": "Eclipse",
+      "Icon": "Eclipse",
+      "Chance": "0.0077",
+      "MultiplierPrice": "0.15",
+      "LvUpCostMultiplier": "1.08"
+    },
+    {
+      "ID": "6",
+      "Name": "Prismatic",
+      "Icon": "Prismatic",
+      "Chance": "0.0082",
+      "MultiplierPrice": "0.14",
+      "LvUpCostMultiplier": "1.08"
+    },
+    {
+      "ID": "7",
+      "Name": "Vortex",
+      "Icon": "Vortex",
+      "Chance": "0.0082",
+      "MultiplierPrice": "0.16",
+      "LvUpCostMultiplier": "1.09"
+    },
+    {
+      "ID": "8",
+      "Name": "Sequin",
+      "Icon": "Sequin",
+      "Chance": "0.0082",
+      "MultiplierPrice": "0.17",
+      "LvUpCostMultiplier": "1.10"
+    },
+    {
+      "ID": "9",
+      "Name": "Sparkle",
+      "Icon": "Sparkle",
+      "Chance": "0",
+      "MultiplierPrice": "0.20",
+      "LvUpCostMultiplier": "1.30"
+    },
+    {
+      "ID": "10",
+      "Name": "Aurora",
+      "Icon": "Aurora",
+      "Chance": "0.0082",
+      "MultiplierPrice": "0.18",
+      "LvUpCostMultiplier": "1.11"
+    }
+  ],
+  "weatherNames": {
+    "Rainy": "WEATHER_RAINY",
+    "Snowy": "WEATHER_SNOWY",
+    "Windy": "WEATHER_WINDY",
+    "Shadowfall": "WEATHER_SHADOWFALL",
+    "Rainbow": "WEATHER_RAINBOW",
+    "Tempest": "WEATHER_TEMPEST",
+    "Nebula": "WEATHER_NEBULA",
+    "HighTide": "WEATHER_HIGHTIDE",
+    "HeavyRain": "WEATHER_HEAVYRAIN",
+    "GroundShake": "WEATHER_GROUNDSHAKE",
+    "GiftboxStorm": "WEATHER_LUCKYBOXSTORM"
+  },
+  "effectNames": {
+    "Soaked": "MUTATION_SOAKED",
+    "Frost": "MUTATION_FROST",
+    "Gale": "MUTATION_GALE",
+    "Thundered": "MUTATION_THUNDERED",
+    "Eclipse": "MUTATION_ECLIPSE",
+    "Prismatic": "MUTATION_PRISMATIC",
+    "Vortex": "MUTATION_VORTEX",
+    "Sequin": "MUTATION_SEQUIN",
+    "Sparkle": "MUTATION_SPARKLE",
+    "Aurora": "MUTATION_AURORA"
+  },
+  "eventIcons": {
+    "EventWhackAMole": "MoleGemIcon",
+    "EventDigMeteorite": "GemstoneIcon",
+    "EventStealABall": "BallGemIcon",
+    "EventKickBall": "GoldenBootsIcon",
+    "EventRarityContract": "RarityContractGem"
+  },
+  "details": [
+    {
+      "type": "EventDigMeteorite",
+      "icon": "Meteorite",
+      "title": "HUD_TITLE_EVENT_METEORITE",
+      "obtain": "HUD_OBTAIN_METEORITE",
+      "reward": "HUD_REWARD_DETAIL_METEORITE"
+    },
+    {
+      "type": "EventWhackAMole",
+      "icon": "MoleEmerge",
+      "title": "HUD_TITLE_EVENT_WHACK_A_MOLE",
+      "obtain": "HUD_OBTAIN_GEM_MOLE",
+      "reward": "HUD_REWARD_DETAIL_GEM_MOLE"
+    },
+    {
+      "type": "EventStealABall",
+      "icon": "FootBallEvent",
+      "title": "HUD_TITLE_EVENT_STEAL_A_BALL",
+      "obtain": "HUD_OBTAIN_GEM_BALL",
+      "reward": "HUD_REWARD_DETAIL_GEM_BALL"
+    },
+    {
+      "type": "EventKickBall",
+      "icon": "FootBallEvent",
+      "title": "HUD_TITLE_EVENT_KICK_A_BALL",
+      "obtain": "HUD_OBTAIN_GEM_KICK_BALL",
+      "reward": "HUD_REWARD_DETAIL_GEM_KICK_BALL"
+    }
+  ],
+  "featureUnlockLevel": 6,
+  "bossDurationMs": 5000,
+  "fixturePolicy": "Weather/event selections, countdown duration, player names, data readiness and contextual buttons are synthetic local scenarios; active event schedule is not asserted",
+  "gaps": [
+    "Database/onboarding/revival gating is exposed as local readiness; no player data read",
+    "External teleport, lucky spin, profile and social effects are reported as simulation only",
+    "Popup sprite/content and weather/event duration are local test inputs; engine tween curves are not reproduced",
+    "Active-event ordering is supplied by the local scenario; live schedule and weekend clock are not queried",
+    "No engine screenshots; font/shader/scaler, hit order, safe area and scroll inertia unverified; player state is a local simulation"
+  ]
+}

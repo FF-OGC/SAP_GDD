@@ -1,0 +1,1221 @@
+{
+  "sprites": [
+    {
+      "key": "Assets/Sprites/Backgrounds/BG.png",
+      "declaredKey": "Assets/Sprites/Backgrounds/BG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Backgrounds/BG.png"
+      ],
+      "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+      "output": "./assets/ui-sprites/lobby/Backgrounds__BG.png",
+      "missing": false,
+      "references": [
+        "Lobby/Weather/ShowDetailsButton",
+        "Lobby/EventCountdown/ShowDetailsButton",
+        "Lobby/WeekendEvent/ShowDetailsButton",
+        "Lobby/Event/OpenShopEventButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 8,
+        "right": 8,
+        "top": 8,
+        "bottom": 8
+      },
+      "width": 26,
+      "height": 26
+    },
+    {
+      "key": "Assets/Sprites/Weather/HighTideWeather.png",
+      "declaredKey": "Assets/Sprites/Weather/HighTideWeather.png",
+      "declaredKeys": [
+        "Assets/Sprites/Weather/HighTideWeather.png"
+      ],
+      "fileId": "7jnflw311dh-ms8tq2mw-6o33p3cpyl",
+      "output": "./assets/ui-sprites/lobby/Weather__HighTideWeather.png",
+      "missing": false,
+      "references": [
+        "Lobby/Weather/Icon",
+        "runtime:lobby:HighTideWeather"
+      ],
+      "origins": [
+        ".ui",
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/TimerIcon.png",
+      "declaredKey": "Assets/Sprites/NewAssets/TimerIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/TimerIcon.png"
+      ],
+      "fileId": "0m3fvuyovujk-mu2cto5b-xjbrbwrnudq",
+      "output": "./assets/ui-sprites/lobby/NewAssets__TimerIcon.png",
+      "missing": false,
+      "references": [
+        "Lobby/Weather/Timer",
+        "Lobby/EventCountdown/Timer",
+        "Lobby/Event/Timer"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 12,
+      "height": 12
+    },
+    {
+      "key": "Assets/Sprites/Weather/Meteorite.png",
+      "declaredKey": "Assets/Sprites/Weather/Meteorite.png",
+      "declaredKeys": [
+        "Assets/Sprites/Weather/Meteorite.png"
+      ],
+      "fileId": "xhdzvtvqpwb-mmviyy9o-mxa3cslaox",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Lobby/EventCountdown/Icon",
+        "runtime:lobby:Meteorite"
+      ],
+      "origins": [
+        ".ui",
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Icons/DustIconTemp.png",
+      "declaredKey": "Assets/Sprites/Icons/DustIconTemp.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/DustIconTemp.png"
+      ],
+      "fileId": "hz9mied1b6f-mjcak9ea-mr1we4jeytf",
+      "output": "./assets/ui-sprites/lobby/Icons__DustIconTemp.png",
+      "missing": false,
+      "references": [
+        "Lobby/WeekendEvent/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 96,
+      "height": 96
+    },
+    {
+      "key": "Assets/Sprites/Backgrounds/DarkBG.png",
+      "declaredKey": "Assets/Sprites/Backgrounds/DarkBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Backgrounds/DarkBG.png"
+      ],
+      "fileId": "amqbaf0ix1n-mincvgtv-gm0n5ept0bj",
+      "output": "./assets/ui-sprites/lobby/Backgrounds__DarkBG.png",
+      "missing": false,
+      "references": [
+        "Lobby/Details"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 12,
+        "right": 12,
+        "top": 12,
+        "bottom": 12
+      },
+      "width": 40,
+      "height": 40
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png"
+      ],
+      "fileId": "4fea53c19488f972a3e911c826b1bea7",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Lobby/Details/CloseButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Buttons/SkillButtonBG.png",
+      "declaredKey": "Assets/Sprites/Buttons/SkillButtonBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Buttons/SkillButtonBG.png",
+        "Assets/Sprites/UIComponents/Buttons/SkillButtonBG.png"
+      ],
+      "fileId": "vp527gybpr-mincvg4z-pp4iuvf2pc",
+      "output": "./assets/ui-sprites/lobby/Buttons__SkillButtonBG.png",
+      "missing": false,
+      "references": [
+        "Lobby/TeleportToBossButton",
+        "Lobby/LikeButton",
+        "Lobby/Report",
+        "Lobby/LuckySpinButton",
+        "Lobby/EditProfileButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 152,
+      "height": 152
+    },
+    {
+      "key": "Assets/Sprites/Boss/OrcBoss.png",
+      "declaredKey": "Assets/Sprites/Boss/OrcBoss.png",
+      "declaredKeys": [
+        "Assets/Sprites/Boss/OrcBoss.png"
+      ],
+      "fileId": "phyge2915ka-msztnoli-2b1yjfluetj",
+      "output": "./assets/ui-sprites/lobby/Boss__OrcBoss.png",
+      "missing": false,
+      "references": [
+        "Lobby/TeleportToBossButton/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Icons/LikeIconTemp.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/LikeIconTemp.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/LikeIconTemp.png"
+      ],
+      "fileId": "a9pz7nv2xeq-mivjh7qb-71mdkdin6lj",
+      "output": "./assets/ui-sprites/lobby/Icons__LikeIconTemp.png",
+      "missing": false,
+      "references": [
+        "Lobby/LikeButton/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 48,
+      "height": 48
+    },
+    {
+      "key": "Assets/Sprites/Icons/SpinIcon.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/SpinIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/SpinIcon.png"
+      ],
+      "fileId": "k6vdeu0bq7f-mj6r5x6s-nfie5asuuz",
+      "output": "./assets/ui-sprites/lobby/Icons__SpinIcon.png",
+      "missing": false,
+      "references": [
+        "Lobby/LuckySpinButton/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "key": "Assets/Sprites/Icons/DecorIconTemp.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/DecorIconTemp.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/DecorIconTemp.png"
+      ],
+      "fileId": "buv43kc9r7i-mivjh7es-7l1bz1efozm",
+      "output": "./assets/ui-sprites/lobby/Icons__DecorIconTemp.png",
+      "missing": false,
+      "references": [
+        "Lobby/EditProfileButton/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 48,
+      "height": 48
+    },
+    {
+      "key": "Assets/Sprites/Icons/PetCoinIcon.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/PetCoinIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/PetCoinIcon.png"
+      ],
+      "fileId": "bju08pkwxav-mincvh54-3nkt79t4vxw",
+      "output": "./assets/ui-sprites/lobby/Icons__PetCoinIcon.png",
+      "missing": false,
+      "references": [
+        "Lobby/PopupIcon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 96,
+      "height": 96
+    },
+    {
+      "key": "Assets/Sprites/Icons/Gemstone.png",
+      "declaredKey": "Assets/Sprites/Icons/Gemstone.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/Gemstone.png",
+        "Assets/Sprites/UIComponents/Icons/Gemstone.png"
+      ],
+      "fileId": "nx4wslsl78p-mmwziig7-xi2e4n8c0w",
+      "output": "./assets/ui-sprites/lobby/Icons__Gemstone.png",
+      "missing": false,
+      "references": [
+        "Lobby/Event/Icon",
+        "runtime:lobby:GemstoneIcon"
+      ],
+      "origins": [
+        ".ui",
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Weather/MoleEmerge.png",
+      "declaredKey": "Assets/Sprites/Weather/MoleEmerge.png",
+      "declaredKeys": [
+        "Assets/Sprites/Weather/MoleEmerge.png"
+      ],
+      "fileId": "mb7fhpqalw-mouv1qpz-6fnsg8tz2wk",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:lobby:MoleEmerge"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Event/FootBallEvent.png",
+      "declaredKey": "Assets/Sprites/Event/FootBallEvent.png",
+      "declaredKeys": [
+        "Assets/Sprites/Event/FootBallEvent.png"
+      ],
+      "fileId": "lsldrdct6aj-mpgo8epe-drcto7bpzbm",
+      "output": "./assets/ui-sprites/lobby/Event__FootBallEvent.png",
+      "missing": false,
+      "references": [
+        "runtime:lobby:FootBallEvent"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Weather/Rainy.png",
+      "declaredKey": "Assets/Sprites/Weather/Rainy.png",
+      "declaredKeys": [
+        "Assets/Sprites/Weather/Rainy.png"
+      ],
+      "fileId": "y4csnr45j8k-mk6m3uau-mpdubuwfik",
+      "output": "./assets/ui-sprites/lobby/Weather__Rainy.png",
+      "missing": false,
+      "references": [
+        "runtime:lobby:RainyWeather"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Weather/Snowy.png",
+      "declaredKey": "Assets/Sprites/Weather/Snowy.png",
+      "declaredKeys": [
+        "Assets/Sprites/Weather/Snowy.png"
+      ],
+      "fileId": "i3081qth5qq-mk6m3u7i-qgqj842po6p",
+      "output": "./assets/ui-sprites/lobby/Weather__Snowy.png",
+      "missing": false,
+      "references": [
+        "runtime:lobby:SnowyWeather"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Weather/Windy.png",
+      "declaredKey": "Assets/Sprites/Weather/Windy.png",
+      "declaredKeys": [
+        "Assets/Sprites/Weather/Windy.png"
+      ],
+      "fileId": "dwjj77zpyo4-mk6m3u3y-g1n1obj0ix",
+      "output": "./assets/ui-sprites/lobby/Weather__Windy.png",
+      "missing": false,
+      "references": [
+        "runtime:lobby:WindyWeather"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Weather/Shadowfall.png",
+      "declaredKey": "Assets/Sprites/Weather/Shadowfall.png",
+      "declaredKeys": [
+        "Assets/Sprites/Weather/Shadowfall.png"
+      ],
+      "fileId": "ia1mxo7zxs-mknujm8x-ae1x6ze7soa",
+      "output": "./assets/ui-sprites/lobby/Weather__Shadowfall.png",
+      "missing": false,
+      "references": [
+        "runtime:lobby:ShadowfallWeather"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "key": "Assets/Sprites/Weather/Rainbow.png",
+      "declaredKey": "Assets/Sprites/Weather/Rainbow.png",
+      "declaredKeys": [
+        "Assets/Sprites/Weather/Rainbow.png"
+      ],
+      "fileId": "h7bwvf6uaz-muywxwcc-a7j3y48liqb",
+      "output": "./assets/ui-sprites/lobby/Weather__Rainbow.png",
+      "missing": false,
+      "references": [
+        "runtime:lobby:RainbowWeather"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Weather/Tempest.png",
+      "declaredKey": "Assets/Sprites/Weather/Tempest.png",
+      "declaredKeys": [
+        "Assets/Sprites/Weather/Tempest.png"
+      ],
+      "fileId": "jozkj2tkik-mpbho6ec-px7hqtb4hd",
+      "output": "./assets/ui-sprites/lobby/Weather__Tempest.png",
+      "missing": false,
+      "references": [
+        "runtime:lobby:TempestWeather"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Weather/NebulaWeather.png",
+      "declaredKey": "Assets/Sprites/Weather/NebulaWeather.png",
+      "declaredKeys": [
+        "Assets/Sprites/Weather/NebulaWeather.png"
+      ],
+      "fileId": "usy9duf4s5c-mror966o-uoqulqbn8mi",
+      "output": "./assets/ui-sprites/lobby/Weather__NebulaWeather.png",
+      "missing": false,
+      "references": [
+        "runtime:lobby:NebulaWeather"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Weather/HeavyRainWeather.png",
+      "declaredKey": "Assets/Sprites/Weather/HeavyRainWeather.png",
+      "declaredKeys": [
+        "Assets/Sprites/Weather/HeavyRainWeather.png"
+      ],
+      "fileId": "2t6jig1pum1-ms8tq45c-16kkbz8azgm",
+      "output": "./assets/ui-sprites/lobby/Weather__HeavyRainWeather.png",
+      "missing": false,
+      "references": [
+        "runtime:lobby:HeavyRainWeather"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Weather/GroundShakeWeather.png",
+      "declaredKey": "Assets/Sprites/Weather/GroundShakeWeather.png",
+      "declaredKeys": [
+        "Assets/Sprites/Weather/GroundShakeWeather.png"
+      ],
+      "fileId": "8klkrn5apyk-mt1dq31l-6j6s9ox2ko5",
+      "output": "./assets/ui-sprites/lobby/Weather__GroundShakeWeather.png",
+      "missing": false,
+      "references": [
+        "runtime:lobby:GroundShakeWeather"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Weather/GiftboxStormWeather.png",
+      "declaredKey": "Assets/Sprites/Weather/GiftboxStormWeather.png",
+      "declaredKeys": [
+        "Assets/Sprites/Weather/GiftboxStormWeather.png"
+      ],
+      "fileId": "diaf4t20fu4-mtb90sel-ytanl7gybjb",
+      "output": "./assets/ui-sprites/lobby/Weather__GiftboxStormWeather.png",
+      "missing": false,
+      "references": [
+        "runtime:lobby:GiftboxStormWeather"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Rainy.png",
+      "declaredKey": "Assets/Sprites/Mutations/Rainy.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Rainy.png"
+      ],
+      "fileId": "dos1munflui-mklu5g2n-r7adzl6iw2",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:lobby:Soaked"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Snowy.png",
+      "declaredKey": "Assets/Sprites/Mutations/Snowy.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Snowy.png"
+      ],
+      "fileId": "4ai48vv9fa5-mklu5ftt-syv5mb304or",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:lobby:Frost"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Windy.png",
+      "declaredKey": "Assets/Sprites/Mutations/Windy.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Windy.png"
+      ],
+      "fileId": "em5lvk6bucw-mklu5g6z-fca2qooka18",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:lobby:Gale"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Thundered.png",
+      "declaredKey": "Assets/Sprites/Mutations/Thundered.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Thundered.png"
+      ],
+      "fileId": "eww7txe9ss-mkwhuvbu-mmdkdu7b9wo",
+      "output": "./assets/ui-sprites/lobby/Mutations__Thundered.png",
+      "missing": false,
+      "references": [
+        "runtime:lobby:Thundered"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Eclipse.png",
+      "declaredKey": "Assets/Sprites/Mutations/Eclipse.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Eclipse.png"
+      ],
+      "fileId": "aq7ej17myzf-mknuf12q-ndfu386akd",
+      "output": "./assets/ui-sprites/lobby/Mutations__Eclipse.png",
+      "missing": false,
+      "references": [
+        "runtime:lobby:Eclipse"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Prismatic.png",
+      "declaredKey": "Assets/Sprites/Mutations/Prismatic.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Prismatic.png"
+      ],
+      "fileId": "1r8flxy8y5x-mmbyoww6-gt7ufbuw2vn",
+      "output": "./assets/ui-sprites/lobby/Mutations__Prismatic.png",
+      "missing": false,
+      "references": [
+        "runtime:lobby:Prismatic"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Vortex.png",
+      "declaredKey": "Assets/Sprites/Mutations/Vortex.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Vortex.png"
+      ],
+      "fileId": "893kw7zap0f-mp3xbar2-nsn2o450oo",
+      "output": "./assets/ui-sprites/lobby/Mutations__Vortex.png",
+      "missing": false,
+      "references": [
+        "runtime:lobby:Vortex"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Sequin.png",
+      "declaredKey": "Assets/Sprites/Mutations/Sequin.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Sequin.png"
+      ],
+      "fileId": "ljiri4sl9hj-mror961a-pqwno8dlhw",
+      "output": "./assets/ui-sprites/lobby/Mutations__Sequin.png",
+      "missing": false,
+      "references": [
+        "runtime:lobby:Sequin"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Sparkle.png",
+      "declaredKey": "Assets/Sprites/Mutations/Sparkle.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Sparkle.png"
+      ],
+      "fileId": "34x0s5qc1hg-mtlj1smy-301zg0sx90w",
+      "output": "./assets/ui-sprites/lobby/Mutations__Sparkle.png",
+      "missing": false,
+      "references": [
+        "runtime:lobby:Sparkle"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Aurora.png",
+      "declaredKey": "Assets/Sprites/Mutations/Aurora.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Aurora.png"
+      ],
+      "fileId": "oyrxy5yuvza-mv9bqapn-6icxn0n4uc2",
+      "output": "./assets/ui-sprites/lobby/Mutations__Aurora.png",
+      "missing": false,
+      "references": [
+        "runtime:lobby:Aurora"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Icons/MoleGemIcon.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/MoleGemIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/MoleGemIcon.png"
+      ],
+      "fileId": "pdivwikleqp-moux9b29-9b6d0dnfwr",
+      "output": "./assets/ui-sprites/lobby/Icons__MoleGemIcon.png",
+      "missing": false,
+      "references": [
+        "runtime:lobby:MoleGemIcon"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Icons/BallGemIcon.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/BallGemIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/BallGemIcon.png"
+      ],
+      "fileId": "r2bk25e9il-mpgp864n-7s98bmfkf0u",
+      "output": "./assets/ui-sprites/lobby/Icons__BallGemIcon.png",
+      "missing": false,
+      "references": [
+        "runtime:lobby:BallGemIcon"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Icons/GoldenBootsIcon.png",
+      "declaredKey": "Assets/Sprites/Icons/GoldenBootsIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/GoldenBootsIcon.png"
+      ],
+      "fileId": "fekpq50r8s9-mqhtty07-irc9z33yf6r",
+      "output": "./assets/ui-sprites/lobby/Icons__GoldenBootsIcon.png",
+      "missing": false,
+      "references": [
+        "runtime:lobby:GoldenBootsIcon"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 100,
+      "height": 100
+    },
+    {
+      "key": "Assets/Sprites/Icons/RarityContractGem.png",
+      "declaredKey": "Assets/Sprites/Icons/RarityContractGem.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/RarityContractGem.png"
+      ],
+      "fileId": "ol3ighrq0s-mrep2ii3-lbtfsei04f",
+      "output": "./assets/ui-sprites/lobby/Icons__RarityContractGem.png",
+      "missing": false,
+      "references": [
+        "runtime:lobby:RarityContractGem"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "missing": [
+    {
+      "key": "Assets/Sprites/Weather/Meteorite.png",
+      "declaredKey": "Assets/Sprites/Weather/Meteorite.png",
+      "declaredKeys": [
+        "Assets/Sprites/Weather/Meteorite.png"
+      ],
+      "fileId": "xhdzvtvqpwb-mmviyy9o-mxa3cslaox",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Lobby/EventCountdown/Icon",
+        "runtime:lobby:Meteorite"
+      ],
+      "origins": [
+        ".ui",
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png"
+      ],
+      "fileId": "4fea53c19488f972a3e911c826b1bea7",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Lobby/Details/CloseButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Weather/MoleEmerge.png",
+      "declaredKey": "Assets/Sprites/Weather/MoleEmerge.png",
+      "declaredKeys": [
+        "Assets/Sprites/Weather/MoleEmerge.png"
+      ],
+      "fileId": "mb7fhpqalw-mouv1qpz-6fnsg8tz2wk",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:lobby:MoleEmerge"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Rainy.png",
+      "declaredKey": "Assets/Sprites/Mutations/Rainy.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Rainy.png"
+      ],
+      "fileId": "dos1munflui-mklu5g2n-r7adzl6iw2",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:lobby:Soaked"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Snowy.png",
+      "declaredKey": "Assets/Sprites/Mutations/Snowy.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Snowy.png"
+      ],
+      "fileId": "4ai48vv9fa5-mklu5ftt-syv5mb304or",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:lobby:Frost"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Windy.png",
+      "declaredKey": "Assets/Sprites/Mutations/Windy.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Windy.png"
+      ],
+      "fileId": "em5lvk6bucw-mklu5g6z-fca2qooka18",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:lobby:Gale"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudLobby.fcg"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "unsupported": [
+    {
+      "path": "Lobby/Weather/ShowDetailsButton",
+      "id": "EvbQEnwV",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Lobby/Weather/Timer",
+      "id": "SW8fLxw7",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Lobby/EventCountdown/ShowDetailsButton",
+      "id": "bBenaa6d",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Lobby/EventCountdown/Timer",
+      "id": "rruOwWKI",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Lobby/WeekendEvent/ShowDetailsButton",
+      "id": "XiuodCYp",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Lobby/Details/CloseButton",
+      "id": "C16sokjp",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Lobby/Details",
+      "id": "VD6bfH5f",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Lobby/TeleportToBossButton/Icon",
+      "id": "pU7tzQNQ",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Lobby/TeleportToBossButton",
+      "id": "oObLB3Xh",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Lobby/LikeButton/Label",
+      "id": "DSgzqrDd",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "Lobby/LikeButton",
+      "id": "I69NIxu1",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Lobby/Report/Label",
+      "id": "BYTZZMX9",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "Lobby/Report/Free Fire Function Widget",
+      "id": "Y2lDvWH8",
+      "fields": [
+        "propsData.social"
+      ]
+    },
+    {
+      "path": "Lobby/LuckySpinButton/Label",
+      "id": "yq369J56",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "Lobby/LuckySpinButton",
+      "id": "O0JAc625",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Lobby/EditProfileButton/Label",
+      "id": "nWAo6Swg",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "Lobby/EditProfileButton",
+      "id": "skKr2Z13",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Lobby/Event/OpenShopEventButton",
+      "id": "fwz9feVc",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Lobby/Event/Timer",
+      "id": "carqmPaP",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Lobby",
+      "id": "gbaHp8Hl",
+      "fields": [
+        "IsUIRootLike",
+        "ecaScripts"
+      ]
+    }
+  ]
+}
