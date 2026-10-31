@@ -8,8 +8,9 @@ import { sourceScreenRules } from "./ui-source-screen.mjs";
 import { shopEventSpec } from "./ui-shop-event-source.mjs";
 import { rebirthSpec } from "./ui-rebirth-source.mjs";
 import { lobbySpec } from "./ui-lobby-source.mjs";
+import { fusionConfirmSpec, fusionResultSpec } from "./ui-fusion-source.mjs";
 
-const SOURCE_SCREENS = [shopEventSpec, rebirthSpec, lobbySpec];
+const SOURCE_SCREENS = [shopEventSpec, rebirthSpec, lobbySpec, fusionConfirmSpec, fusionResultSpec];
 
 const UI_FILES = [{ id: "collection", name: "Collection", file: "PetsCollection.ui", status: "ready" }, { id: "activities", name: "Activities", file: "Activities.ui", status: "ready" }, { id: "shop", name: "Shop", file: "Shop.ui", status: "ready" }, { id: "mail", name: "Mail", file: "Mail.ui", status: "ready" }];
 UI_FILES.push(...SOURCE_SCREENS.map(spec => ({ id: spec.id, name: spec.name || "Shop Event", file: spec.ui, status: "ready" })));
@@ -188,6 +189,7 @@ export function syncUiPreview(sourceRoot, gddRoot, screenId = null) {
       referenceSize: { width: tree.transform?.sizeDelta?.x || null, height: tree.transform?.sizeDelta?.y || null },
       referenceSizeNote: "suy từ sizeDelta của root; độ phân giải tham chiếu engine chưa có dữ liệu",
       renderingPolicy: {
+        ...(spec?.nonGridLayout ? { nonGridLayout: spec.nonGridLayout, layoutStatus: "non-grid layout uses authored serialized child transforms; engine fill algorithm unverified" } : {}),
         alpha: "subtree-composite", alphaStatus: "existing web approximation retained; runtime cascade unverified",
         hitTest: "button-rect-unless-disableCollider", hitTestStatus: "DisableCollider documented; alpha threshold and image blocking unverified",
         stacking: "source-tree-order", stackingStatus: ui.id === "activities" ? "runtime mission priority is applied by the source grid sortType; engine depth ordering unverified" : "all source priorities are zero; engine depth ordering unverified",

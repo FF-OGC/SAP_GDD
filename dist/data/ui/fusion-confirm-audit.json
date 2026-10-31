@@ -1,0 +1,350 @@
+{
+  "source": "pass",
+  "sourceCommit": "471a62bb8a55ad735cfeebf5a0a315730df90daa",
+  "entities": 120,
+  "sprites": 214,
+  "missingSprites": [
+    "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_ARROW.png",
+    "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+    "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_CIRCULAR.png",
+    "Assets/Sprites/Pets/MR.FOOTBALL.png"
+  ],
+  "missingLocalization": [],
+  "unresolvedRegistrations": [],
+  "unsupported": [
+    {
+      "path": "FusionConfirm/DarkBG",
+      "id": "P71ow7Gn",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Title/CloseButton",
+      "id": "w3fZzTm8",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Title/Wallet/Icon",
+      "id": "Y2cpVN6v",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Title/Wallet/ExchangeButton",
+      "id": "y9ogkBh6",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Title/Wallet",
+      "id": "G2nNXQb1",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/BG/DecorLeft",
+      "id": "z3wiD6Ij",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/BG/DecorRight",
+      "id": "qiC5lYtW",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet/Rarity",
+      "id": "wXHB1aEP",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet/Thumbnail",
+      "id": "nrIVB8HG",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet/HasMW",
+      "id": "EmHqauBn",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet",
+      "id": "nA7twpE8",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet/Rarity",
+      "id": "aF5YxvXA",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet/Thumbnail",
+      "id": "maXgqC42",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet/HasMW",
+      "id": "lteEEJH7",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet",
+      "id": "ZUgsWsfF",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet/Rarity",
+      "id": "RdcxmNXR",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet/Thumbnail",
+      "id": "CkBP2dkk",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet/HasMW",
+      "id": "NkmRQTQL",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet",
+      "id": "yNBXJyP4",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Rarity",
+      "id": "rHmkaTl1",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Thumbnail",
+      "id": "TP2HucOC",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Mutation",
+      "id": "d4sgkSIQ",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Weathers/Weather",
+      "id": "aLbZZMdR",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Weathers/Weather",
+      "id": "NuAtQqli",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Weathers/Weather",
+      "id": "pTwP4b9N",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Weathers/Weather",
+      "id": "r97QL7YP",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Weathers/Weather",
+      "id": "cud87omn",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1",
+      "id": "RBqlKvBD",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Rarity",
+      "id": "GvEVf9Uy",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Thumbnail",
+      "id": "iAeOxhfX",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Mutation",
+      "id": "WFwZmgOA",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Weathers/Weather",
+      "id": "pe2WR7Ag",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Weathers/Weather",
+      "id": "MFzFY8iD",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Weathers/Weather",
+      "id": "aOVKSf2t",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Weathers/Weather",
+      "id": "iU7ybnf6",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Weathers/Weather",
+      "id": "HTAGK0UL",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2",
+      "id": "mWjqErJk",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/FusionButton",
+      "id": "eQ2fmqUU",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Dust/DustPercent",
+      "id": "lLW6nQOA",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Dust/IncDustButton",
+      "id": "tc4YbsjM",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Dust/DecDustButton",
+      "id": "UvVvGqVM",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Dust/MaxDustButton",
+      "id": "KwZtWnmC",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Dust/MinDustButton",
+      "id": "rZ4FZSC1",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container",
+      "id": "feZ1cR7z",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionConfirm",
+      "id": "RvBaGGlG",
+      "fields": [
+        "ecaScripts"
+      ]
+    }
+  ],
+  "runtimeAssignments": 35,
+  "gaps": [
+    "Source secret pet rows have blank/zero DustCap: 1033, 1047, 1048, 1049, 1050, 1051, 1052, 1053; zero denominator follows BigNumberHandler fallback 0, no cap is invented",
+    "Mutation/weather inheritance and Purebred passive reduction are not simulated; all fixture pets are base level with no mutation/weather/passive",
+    "Mutation percentages are hidden, matching ordinary player capability; GMT rate view is outside this preview",
+    "Hatching, selection ownership, reward/retrieve server requests and pet tooltip popup are not executed",
+    "No engine screenshots; font/shader/scaler, hit order, safe area and scroll inertia unverified; player state is a local simulation"
+  ],
+  "browser": "separate CUA verification in screen plan",
+  "engineParity": "unverified; no runtime game screenshots"
+}

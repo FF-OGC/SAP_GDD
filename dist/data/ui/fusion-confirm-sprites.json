@@ -1,0 +1,5582 @@
+{
+  "sprites": [
+    {
+      "key": "Assets/Sprites/Backgrounds/DarkBG.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Backgrounds/DarkBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Backgrounds/DarkBG.png"
+      ],
+      "fileId": "amqbaf0ix1n-mincvgtv-gm0n5ept0bj",
+      "output": "./assets/ui-sprites/fusion-confirm/Backgrounds__DarkBG.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/DarkBG"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 12,
+        "right": 12,
+        "top": 12,
+        "bottom": 12
+      },
+      "width": 40,
+      "height": 40
+    },
+    {
+      "key": "Assets/Sprites/Backgrounds/BG.png",
+      "declaredKey": "Assets/Sprites/Backgrounds/BG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Backgrounds/BG.png",
+        "Assets/Sprites/UIComponents/Backgrounds/BG.png"
+      ],
+      "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+      "output": "./assets/ui-sprites/fusion-confirm/Backgrounds__BG.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/Container",
+        "FusionConfirm/Container/Dust"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 8,
+        "right": 8,
+        "top": 8,
+        "bottom": 8
+      },
+      "width": 26,
+      "height": 26
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/TitleBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/TitleBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/TitleBG.png"
+      ],
+      "fileId": "zkfpx1yzvtc-mu6xhq5y-nv8ey9h3kfj",
+      "output": "./assets/ui-sprites/fusion-confirm/NewAssets__TitleBG.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/Container/Title"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 113,
+        "right": 12,
+        "top": 48,
+        "bottom": 18
+      },
+      "width": 752,
+      "height": 126
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/CloseButton.png",
+      "declaredKey": "Assets/Sprites/NewAssets/CloseButton.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/CloseButton.png"
+      ],
+      "fileId": "ub3ok34eqnr-mu6xhog5-q0tv8gncefb",
+      "output": "./assets/ui-sprites/fusion-confirm/NewAssets__CloseButton.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/Container/Title/CloseButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 38,
+      "height": 40
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/ItemBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/ItemBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/ItemBG.png"
+      ],
+      "fileId": "uxm85o6u4w-mu6xhq1i-eqcetnq7xhd",
+      "output": "./assets/ui-sprites/fusion-confirm/NewAssets__ItemBG.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/Container/Title/Wallet",
+        "FusionConfirm/Container/Results/ResultsLayout/Pet",
+        "FusionConfirm/Container/Results/ResultsLayout/Pet",
+        "FusionConfirm/Container/Results/ResultsLayout/Pet",
+        "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1",
+        "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2",
+        "runtime:fusion-confirm:ItemBG"
+      ],
+      "origins": [
+        ".ui",
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 20,
+        "right": 20,
+        "top": 20,
+        "bottom": 20
+      },
+      "width": 90,
+      "height": 90
+    },
+    {
+      "key": "Assets/Sprites/Icons/DustIconTemp.png",
+      "declaredKey": "Assets/Sprites/Icons/DustIconTemp.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/DustIconTemp.png",
+        "Assets/Sprites/UIComponents/Icons/DustIconTemp.png"
+      ],
+      "fileId": "hz9mied1b6f-mjcak9ea-mr1we4jeytf",
+      "output": "./assets/ui-sprites/fusion-confirm/Icons__DustIconTemp.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/Container/Title/Wallet/Icon",
+        "FusionConfirm/Container/FusionButton/DustInfo/DustIcon",
+        "FusionConfirm/Container/Dust/DustAmount/Icon",
+        "runtime:fusion-confirm:DustIcon"
+      ],
+      "origins": [
+        ".ui",
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 96,
+      "height": 96
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/AddIcon.png",
+      "declaredKey": "Assets/Sprites/NewAssets/AddIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/AddIcon.png"
+      ],
+      "fileId": "ts0k112auwb-mus98srp-7ghalszq1e2",
+      "output": "./assets/ui-sprites/fusion-confirm/NewAssets__AddIcon.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/Container/Title/Wallet/ExchangeButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 55,
+      "height": 55
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/ContainerBG.png",
+      "declaredKey": "Assets/_Test/NewUI/Assets/Img_bg02_BG.png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Img_bg02_BG.png"
+      ],
+      "fileId": "gszc833692p-mu6veyfp-g1yynwpple7",
+      "output": "./assets/ui-sprites/fusion-confirm/NewAssets__ContainerBG.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/Container/BG"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 34,
+        "right": 33,
+        "top": 32,
+        "bottom": 39
+      },
+      "width": 106,
+      "height": 118
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/DecorateIcon1.png",
+      "declaredKey": "Assets/_Test/NewUI/Assets/Img_decorate01.png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Img_decorate01.png"
+      ],
+      "fileId": "ouansc8n289-mu6xhpqu-centw2ek0ns",
+      "output": "./assets/ui-sprites/fusion-confirm/NewAssets__DecorateIcon1.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/Container/BG/DecorLeft"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 68,
+      "height": 104
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/DecorateIcon2.png",
+      "declaredKey": "Assets/_Test/NewUI/Assets/Img_decorate02.png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Img_decorate02.png"
+      ],
+      "fileId": "z3itg018ujr-mu6xhpvo-cnfqx0exhhp",
+      "output": "./assets/ui-sprites/fusion-confirm/NewAssets__DecorateIcon2.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/Container/BG/DecorRight"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 114,
+      "height": 52
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/NormalTabBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/NormalTabBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/NormalTabBG.png"
+      ],
+      "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+      "output": "./assets/ui-sprites/fusion-confirm/NewAssets__NormalTabBG.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/Container/Results",
+        "FusionConfirm/Container/Materials"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 20,
+        "right": 20,
+        "top": 20,
+        "bottom": 20
+      },
+      "width": 96,
+      "height": 98
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/RarityBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/RarityBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/RarityBG.png"
+      ],
+      "fileId": "rqpomo66vjg-mu6vezgl-j2m6wc8co4",
+      "output": "./assets/ui-sprites/fusion-confirm/NewAssets__RarityBG.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/Container/Results/ResultsLayout/Pet/Rarity",
+        "FusionConfirm/Container/Results/ResultsLayout/Pet/Rarity",
+        "FusionConfirm/Container/Results/ResultsLayout/Pet/Rarity",
+        "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Rarity",
+        "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Rarity"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 10,
+        "right": 10,
+        "top": 0,
+        "bottom": 3
+      },
+      "width": 62,
+      "height": 10
+    },
+    {
+      "key": "Assets/Sprites/Pets/PENGUIN.png",
+      "declaredKey": "Assets/Sprites/Pets/PENGUIN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/PENGUIN.png"
+      ],
+      "fileId": "63tf7u5p89f-mir2uppa-kquuyta6oll",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__PENGUIN.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/Container/Results/ResultsLayout/Pet/Thumbnail",
+        "FusionConfirm/Container/Results/ResultsLayout/Pet/Thumbnail",
+        "FusionConfirm/Container/Results/ResultsLayout/Pet/Thumbnail",
+        "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Thumbnail",
+        "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Thumbnail",
+        "runtime:fusion-confirm:PENGUIN"
+      ],
+      "origins": [
+        ".ui",
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/HasMWIcon.png",
+      "declaredKey": "Assets/_Test/NewAssets/Assets/Icon_mutation.png",
+      "declaredKeys": [
+        "Assets/_Test/NewAssets/Assets/Icon_mutation.png"
+      ],
+      "fileId": "b9hti3lr6oq-mu9dppgj-r0zg509ivmi",
+      "output": "./assets/ui-sprites/fusion-confirm/NewAssets__HasMWIcon.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/Container/Results/ResultsLayout/Pet/HasMW",
+        "FusionConfirm/Container/Results/ResultsLayout/Pet/HasMW",
+        "FusionConfirm/Container/Results/ResultsLayout/Pet/HasMW"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 50,
+      "height": 48
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Sequin.png",
+      "declaredKey": "Assets/Sprites/Mutations/Sequin.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Sequin.png"
+      ],
+      "fileId": "ljiri4sl9hj-mror961a-pqwno8dlhw",
+      "output": "./assets/ui-sprites/fusion-confirm/Mutations__Sequin.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Mutation",
+        "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Weathers/Weather",
+        "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Weathers/Weather",
+        "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Weathers/Weather",
+        "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Weathers/Weather",
+        "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Weathers/Weather",
+        "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Mutation",
+        "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Weathers/Weather",
+        "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Weathers/Weather",
+        "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Weathers/Weather",
+        "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Weathers/Weather",
+        "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Weathers/Weather"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/FuseArrowIcon.png",
+      "declaredKey": "Assets/Sprites/NewAssets/FuseArrowIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/FuseArrowIcon.png"
+      ],
+      "fileId": "1wz868k00w1-mus98sve-2iyqwg5g857",
+      "output": "./assets/ui-sprites/fusion-confirm/NewAssets__FuseArrowIcon.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/Container/Materials/PlusIcon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 119,
+      "height": 70
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/BlueButton.png",
+      "declaredKey": "Assets/Sprites/NewAssets/BlueButton.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/BlueButton.png"
+      ],
+      "fileId": "mgcae4djxp-mu6vevy5-j3m6yz6bep",
+      "output": "./assets/ui-sprites/fusion-confirm/NewAssets__BlueButton.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/Container/FusionButton",
+        "FusionConfirm/Container/Dust/MinDustButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 50,
+        "right": 20,
+        "top": 20,
+        "bottom": 25
+      },
+      "width": 160,
+      "height": 66
+    },
+    {
+      "key": "Assets/Sprites/Icons/MoneyIcon.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/MoneyIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/MoneyIcon.png"
+      ],
+      "fileId": "1ev4vbb6r81-mincvh0q-an2r8ytn9ao",
+      "output": "./assets/ui-sprites/fusion-confirm/Icons__MoneyIcon.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/Container/FusionButton/MoneyInfo/MoneyIcon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 96,
+      "height": 96
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_ARROW.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_ARROW.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_ARROW.png"
+      ],
+      "fileId": "cf3750e71f84976474e1818e0f1f9099",
+      "output": null,
+      "missing": true,
+      "references": [
+        "FusionConfirm/Container/Chances/Chance1/ChanceIcon",
+        "FusionConfirm/Container/Chances/Chance1/ChanceIcon (1)",
+        "FusionConfirm/Container/Chances/Chance1/ChanceIcon (2)",
+        "FusionConfirm/Container/Chances/Chance2/ChanceIcon (1)",
+        "FusionConfirm/Container/Chances/Chance2/ChanceIcon (2)",
+        "FusionConfirm/Container/Chances/Chance2/ChanceIcon (3)",
+        "FusionConfirm/Container/Chances/ChanceSecret/ChanceIcon (2)",
+        "FusionConfirm/Container/Chances/ChanceSecret/ChanceIcon (3)",
+        "FusionConfirm/Container/Chances/ChanceSecret/ChanceIcon (4)"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png"
+      ],
+      "fileId": "5d250edc7ccde0be5ccab1e2cf53b57f",
+      "output": null,
+      "missing": true,
+      "references": [
+        "FusionConfirm/Container/Dust/BG",
+        "FusionConfirm/Container/Dust/DustPercent"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Shapes/ShadowTriangleRounded.png",
+      "declaredKey": "Assets/Sprites/Shapes/ShadowTriangleRounded.png",
+      "declaredKeys": [
+        "Assets/Sprites/Shapes/ShadowTriangleRounded.png"
+      ],
+      "fileId": "2dwx88lny2t-mgctluht-todfgsnoa3q",
+      "output": "./assets/ui-sprites/fusion-confirm/Shapes__ShadowTriangleRounded.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/Container/Dust/IncDustButton",
+        "FusionConfirm/Container/Dust/DecDustButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/YellowButton.png",
+      "declaredKey": "Assets/Sprites/NewAssets/YellowButton.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/YellowButton.png"
+      ],
+      "fileId": "155t2glvvdq-mu6vewp3-o48sy8osfsn",
+      "output": "./assets/ui-sprites/fusion-confirm/NewAssets__YellowButton.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/Container/Dust/MaxDustButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 50,
+        "right": 20,
+        "top": 20,
+        "bottom": 25
+      },
+      "width": 160,
+      "height": 66
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_CIRCULAR.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_CIRCULAR.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_CIRCULAR.png"
+      ],
+      "fileId": "ea89a8fe33e831ff0a9f5b4d9af14c18",
+      "output": null,
+      "missing": true,
+      "references": [
+        "FusionConfirm/MutationPercentsLayout/Normal/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Golden.png",
+      "declaredKey": "Assets/Sprites/Mutations/Golden.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Golden.png"
+      ],
+      "fileId": "0wp8iz05lsm-mkwi46cs-73hyb35ojli",
+      "output": "./assets/ui-sprites/fusion-confirm/Mutations__Golden.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/MutationPercentsLayout/Golden/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Frozen.png",
+      "declaredKey": "Assets/Sprites/Mutations/Frozen.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Frozen.png"
+      ],
+      "fileId": "8ajnvme4rqx-mkwi46iv-16h95sigbk9",
+      "output": "./assets/ui-sprites/fusion-confirm/Mutations__Frozen.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/MutationPercentsLayout/Frozen/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Magma.png",
+      "declaredKey": "Assets/Sprites/Mutations/Magma.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Magma.png"
+      ],
+      "fileId": "iw06sij8s9a-mkwi468g-mru8fexp3w9",
+      "output": "./assets/ui-sprites/fusion-confirm/Mutations__Magma.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/MutationPercentsLayout/Magma/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Clover.png",
+      "declaredKey": "Assets/Sprites/Mutations/Clover.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Clover.png"
+      ],
+      "fileId": "dk4horsud8-mkwi46ob-1ukdaa3inuh",
+      "output": "./assets/ui-sprites/fusion-confirm/Mutations__Clover.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/MutationPercentsLayout/Clover/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Fossilized.png",
+      "declaredKey": "Assets/Sprites/Mutations/Fossilized.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Fossilized.png"
+      ],
+      "fileId": "4ill2f6tqa-mkz71zq1-vqfxbwne47",
+      "output": "./assets/ui-sprites/fusion-confirm/Mutations__Fossilized.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/MutationPercentsLayout/Fossilized/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Sweetheart.png",
+      "declaredKey": "Assets/Sprites/Mutations/Sweetheart.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Sweetheart.png"
+      ],
+      "fileId": "9efwlko3er-mm949s3c-pmvogx7rwop",
+      "output": "./assets/ui-sprites/fusion-confirm/Mutations__Sweetheart.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/MutationPercentsLayout/Sweetheart/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Crystalline.png",
+      "declaredKey": "Assets/Sprites/Mutations/Crystalline.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Crystalline.png"
+      ],
+      "fileId": "com2azpkhkm-mm949z9v-0iru8kg7qigk",
+      "output": "./assets/ui-sprites/fusion-confirm/Mutations__Crystalline.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/MutationPercentsLayout/Crystalline/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Webbed.png",
+      "declaredKey": "Assets/Sprites/Mutations/Webbed.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Webbed.png"
+      ],
+      "fileId": "8b5aiihdx2y-mnqy3rvf-hv9jatw114a",
+      "output": "./assets/ui-sprites/fusion-confirm/Mutations__Webbed.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/MutationPercentsLayout/Webbed/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Football.png",
+      "declaredKey": "Assets/Sprites/Mutations/Football.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Football.png"
+      ],
+      "fileId": "wzo5fnsjofr-mpnrcjk6-xr3fr83ymzd",
+      "output": "./assets/ui-sprites/fusion-confirm/Mutations__Football.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/MutationPercentsLayout/Football/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Radioactive.png",
+      "declaredKey": "Assets/Sprites/Mutations/Radioactive.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Radioactive.png"
+      ],
+      "fileId": "ej14fvwcjee-mpdifppb-uvb9s3wdvmk",
+      "output": "./assets/ui-sprites/fusion-confirm/Mutations__Radioactive.png",
+      "missing": false,
+      "references": [
+        "FusionConfirm/MutationPercentsLayout/Radioactive/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Pets/CHICK.png",
+      "declaredKey": "Assets/Sprites/Pets/CHICK.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/CHICK.png"
+      ],
+      "fileId": "xf94qan4bpa-mggb0hpl-vdqyrmsossg",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__CHICK.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:CHICK"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/ROOSTER.png",
+      "declaredKey": "Assets/Sprites/Pets/ROOSTER.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/ROOSTER.png"
+      ],
+      "fileId": "9yihlikpa9g-mggb0et8-eo6pxlq6m4v",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__ROOSTER.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:ROOSTER"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/RABBIT.png",
+      "declaredKey": "Assets/Sprites/Pets/RABBIT.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/RABBIT.png"
+      ],
+      "fileId": "gtpipo3qvc-mggb0f3h-hk9lqlwp7re",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__RABBIT.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:RABBIT"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/PIG.png",
+      "declaredKey": "Assets/Sprites/Pets/PIG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/PIG.png"
+      ],
+      "fileId": "dlpyaggw4et-mggb0fgi-ej1iswav6kw",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__PIG.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:PIG"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SHEEP.png",
+      "declaredKey": "Assets/Sprites/Pets/SHEEP.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SHEEP.png"
+      ],
+      "fileId": "v6vi7y6my5c-mggb0en3-87d2dpmcklm",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__SHEEP.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:SHEEP"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/GOAT.png",
+      "declaredKey": "Assets/Sprites/Pets/GOAT.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/GOAT.png"
+      ],
+      "fileId": "heeyxvusfdw-mggb0gr8-aune6rw8eol",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__GOAT.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:GOAT"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/GOOSE.png",
+      "declaredKey": "Assets/Sprites/Pets/GOOSE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/GOOSE.png"
+      ],
+      "fileId": "2ajniqfdbmy-mggb0go0-wx6mzijvkq",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__GOOSE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:GOOSE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/DOG.png",
+      "declaredKey": "Assets/Sprites/Pets/DOG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/DOG.png"
+      ],
+      "fileId": "eyu2fnurisl-mggb0hax-d6zuegd3sv",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__DOG.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:DOG"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SHRIMP.png",
+      "declaredKey": "Assets/Sprites/Pets/SHRIMP.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SHRIMP.png"
+      ],
+      "fileId": "ytkngrrcy3-mh92zf7a-l6pwuf8bvy",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__SHRIMP.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:SHRIMP"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/MOLE.png",
+      "declaredKey": "Assets/Sprites/Pets/MOLE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MOLE.png"
+      ],
+      "fileId": "s9ya6lrw4ia-micz8y01-g56c7yi95gl",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__MOLE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:MOLE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SNOWRABBIT.png",
+      "declaredKey": "Assets/Sprites/Pets/SNOWRABBIT.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SNOWRABBIT.png"
+      ],
+      "fileId": "4fpyfybrm7a-mir2uphk-2ar183avdhv",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__SNOWRABBIT.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:SNOWRABBIT"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/MUDSKIPPER.png",
+      "declaredKey": "Assets/Sprites/Pets/MUDSKIPPER.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MUDSKIPPER.png"
+      ],
+      "fileId": "0s9q3lppxmp-mjgwdv5l-b0sga3eg5i",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__MUDSKIPPER.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:MUDSKIPPER"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/KINGFISHER.png",
+      "declaredKey": "Assets/Sprites/Pets/KINGFISHER.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/KINGFISHER.png"
+      ],
+      "fileId": "culmv91q47u-mjs3ed3a-b6wzjuf2t0r",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__KINGFISHER.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:KINGFISHER"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/CAT.png",
+      "declaredKey": "Assets/Sprites/Pets/CAT.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/CAT.png"
+      ],
+      "fileId": "wpqk631142-mggb0hw5-odz2w627bl",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__CAT.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:CAT"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/HAMSTER.png",
+      "declaredKey": "Assets/Sprites/Pets/HAMSTER.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/HAMSTER.png"
+      ],
+      "fileId": "vruhzuydem-mggb0gkz-hy7ci20um2w",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__HAMSTER.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:HAMSTER"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/MONKEY.png",
+      "declaredKey": "Assets/Sprites/Pets/MONKEY.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MONKEY.png"
+      ],
+      "fileId": "llhcolhim3-mggb0g3q-kx9r2nj72n",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__MONKEY.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:MONKEY"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/CRAB.png",
+      "declaredKey": "Assets/Sprites/Pets/CRAB.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/CRAB.png"
+      ],
+      "fileId": "ibcrnyfy7c-mggb0hm8-pu0byvonj5c",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__CRAB.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:CRAB"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/CLOWNFISH.png",
+      "declaredKey": "Assets/Sprites/Pets/CLOWNFISH.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/CLOWNFISH.png"
+      ],
+      "fileId": "zzygo8lg75-mggb0g0l-hf6caxbujya",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__CLOWNFISH.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:CLOWNFISH"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/CAPYBARA.png",
+      "declaredKey": "Assets/Sprites/Pets/CAPYBARA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/CAPYBARA.png"
+      ],
+      "fileId": "x7d4qe2n9ie-mggb0hzg-istyy5y56le",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__CAPYBARA.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:CAPYBARA"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/RACOON.png",
+      "declaredKey": "Assets/Sprites/Pets/RACOON.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/RACOON.png"
+      ],
+      "fileId": "7a4islqpsmg-mggb0eze-gbznekfdw",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__RACOON.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:RACOON"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SQUIRREL.png",
+      "declaredKey": "Assets/Sprites/Pets/SQUIRREL.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SQUIRREL.png"
+      ],
+      "fileId": "fl0bskxkpvv-mggb0eh4-lb2m9xuuxuf",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__SQUIRREL.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:SQUIRREL"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/TURTLE.png",
+      "declaredKey": "Assets/Sprites/Pets/TURTLE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/TURTLE.png"
+      ],
+      "fileId": "bpsesy0jovs-mggb0eax-fa0qfdzj3wc",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__TURTLE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:TURTLE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SNAKE.png",
+      "declaredKey": "Assets/Sprites/Pets/SNAKE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SNAKE.png"
+      ],
+      "fileId": "o73cf7qrd9g-mh92zf3w-848arie3xjt",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__SNAKE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:SNAKE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SQUID.png",
+      "declaredKey": "Assets/Sprites/Pets/SQUID.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SQUID.png"
+      ],
+      "fileId": "x46fkvveoir-micz8xfv-3yd242z7iw",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__SQUID.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:SQUID"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/POSSUM.png",
+      "declaredKey": "Assets/Sprites/Pets/POSSUM.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/POSSUM.png"
+      ],
+      "fileId": "fwftjtb51hg-mir2upww-g8nbft7x8de",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__POSSUM.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:POSSUM"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/BAT.png",
+      "declaredKey": "Assets/Sprites/Pets/BAT.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/BAT.png"
+      ],
+      "fileId": "egz3c2fcmqu-mjgwprmx-ismmp7791h",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__BAT.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:BAT"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/CARDINAL.png",
+      "declaredKey": "Assets/Sprites/Pets/CARDINAL.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/CARDINAL.png"
+      ],
+      "fileId": "0nucn37kcyxc-mjs36ejf-kuluj3ufo07",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__CARDINAL.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:CARDINAL"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/OWL.png",
+      "declaredKey": "Assets/Sprites/Pets/OWL.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/OWL.png"
+      ],
+      "fileId": "015hg10818j1-mggb0fnm-kfhx246ktkj",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__OWL.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:OWL"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/FLAMINGO.png",
+      "declaredKey": "Assets/Sprites/Pets/FLAMINGO.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/FLAMINGO.png"
+      ],
+      "fileId": "xhyj1tkn18-mggb0gxq-7jxxxrrdeck",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__FLAMINGO.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:FLAMINGO"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/BISON.png",
+      "declaredKey": "Assets/Sprites/Pets/BISON.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/BISON.png"
+      ],
+      "fileId": "927mdzvzpuh-mh4kvmmf-gc8cgd0zibi",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__BISON.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:BISON"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/HORSE.png",
+      "declaredKey": "Assets/Sprites/Pets/HORSE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/HORSE.png"
+      ],
+      "fileId": "8np9tor8ak7-mggb0gek-ss7w1ay0tbq",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__HORSE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:HORSE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/ZEBRA.png",
+      "declaredKey": "Assets/Sprites/Pets/ZEBRA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/ZEBRA.png"
+      ],
+      "fileId": "vnt9g7pgocs-mh4kvmiv-o1z6fxyy6gk",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__ZEBRA.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:ZEBRA"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/OCTOPUS.png",
+      "declaredKey": "Assets/Sprites/Pets/OCTOPUS.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/OCTOPUS.png"
+      ],
+      "fileId": "bigkkmpvn5b-mggb0ftz-o178x21y22q",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__OCTOPUS.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:OCTOPUS"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/JELLYFISH.png",
+      "declaredKey": "Assets/Sprites/Pets/JELLYFISH.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/JELLYFISH.png"
+      ],
+      "fileId": "l3zn1x8e06-mggb0gbe-488m9zd8qec",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__JELLYFISH.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:JELLYFISH"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/DOLPHIN.png",
+      "declaredKey": "Assets/Sprites/Pets/DOLPHIN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/DOLPHIN.png"
+      ],
+      "fileId": "unq31dcyq2f-mggb0h7j-7sqvzlz5ua",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__DOLPHIN.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:DOLPHIN"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SEALION.png",
+      "declaredKey": "Assets/Sprites/Pets/SEALION.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SEALION.png"
+      ],
+      "fileId": "o1wai7vdcv-mggb0eq5-ifa5e5loku",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__SEALION.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:SEALION"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/WALRUS.png",
+      "declaredKey": "Assets/Sprites/Pets/WALRUS.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/WALRUS.png"
+      ],
+      "fileId": "xch9pwj779m-mggb0e7t-03ylbxpn1pvl",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__WALRUS.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:WALRUS"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/GAZELLE.png",
+      "declaredKey": "Assets/Sprites/Pets/GAZELLE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/GAZELLE.png"
+      ],
+      "fileId": "iiweby4g5d-mh92zeju-gzsfaymou1p",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__GAZELLE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:GAZELLE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/LOBSTER.png",
+      "declaredKey": "Assets/Sprites/Pets/LOBSTER.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/LOBSTER.png"
+      ],
+      "fileId": "ejwq7rili0m-mhucubmk-mwjl2vlr0fj",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__LOBSTER.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:LOBSTER"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/FENNECFOX.png",
+      "declaredKey": "Assets/Sprites/Pets/FENNECFOX.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/FENNECFOX.png"
+      ],
+      "fileId": "gwg29fiaqq-micz8y8b-brlnd3f9ly",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__FENNECFOX.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:FENNECFOX"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SNOWWEASEL.png",
+      "declaredKey": "Assets/Sprites/Pets/SNOWWEASEL.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SNOWWEASEL.png"
+      ],
+      "fileId": "nfxb0sdu0j-mir2uple-9p8vlnkdcx",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__SNOWWEASEL.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:SNOWWEASEL"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SKUNK.png",
+      "declaredKey": "Assets/Sprites/Pets/SKUNK.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SKUNK.png"
+      ],
+      "fileId": "fy676i6arsv-mjgwprj2-s4vfe8mz1o9",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__SKUNK.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:SKUNK"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/PARROT.png",
+      "declaredKey": "Assets/Sprites/Pets/PARROT.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/PARROT.png"
+      ],
+      "fileId": "6g6q31qwxw-mjs36efe-usd5ntwd779",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__PARROT.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:PARROT"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/MOOSE.png",
+      "declaredKey": "Assets/Sprites/Pets/MOOSE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MOOSE.png"
+      ],
+      "fileId": "awi4tygkool-mggb0fx9-9bc739j4nyv",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__MOOSE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:MOOSE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/CAMEL.png",
+      "declaredKey": "Assets/Sprites/Pets/CAMEL.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/CAMEL.png"
+      ],
+      "fileId": "fp3zmu5xj7w-mggb0i2l-rko55snmf",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__CAMEL.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:CAMEL"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/GIRAFFE.png",
+      "declaredKey": "Assets/Sprites/Pets/GIRAFFE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/GIRAFFE.png"
+      ],
+      "fileId": "60aavd32vqr-mggb0guf-ad65eb611a",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__GIRAFFE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:GIRAFFE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/CHEETAH.png",
+      "declaredKey": "Assets/Sprites/Pets/CHEETAH.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/CHEETAH.png"
+      ],
+      "fileId": "k7k75xxcivi-mggb0hsz-5v6fetdv3tr",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__CHEETAH.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:CHEETAH"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SNOWOWL.png",
+      "declaredKey": "Assets/Sprites/Pets/SNOWOWL.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SNOWOWL.png"
+      ],
+      "fileId": "i6q7oz7cmec-mggb0ek2-dlu7cxh9s3m",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__SNOWOWL.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:SNOWOWL"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/ALIGATOR.png",
+      "declaredKey": "Assets/Sprites/Pets/ALIGATOR.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/ALIGATOR.png"
+      ],
+      "fileId": "z68uw5uyp4-mggb0i95-t7410a0isc",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__ALIGATOR.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:ALIGATOR"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/LION.png",
+      "declaredKey": "Assets/Sprites/Pets/LION.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/LION.png"
+      ],
+      "fileId": "a6zfq6w14qa-mggb0g71-dvbb66bgsi4",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__LION.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:LION"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/TIGER.png",
+      "declaredKey": "Assets/Sprites/Pets/TIGER.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/TIGER.png"
+      ],
+      "fileId": "30fs8c8y3kt-mggb0ee3-a53g7spf65c",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__TIGER.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:TIGER"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/ELEPHANT.png",
+      "declaredKey": "Assets/Sprites/Pets/ELEPHANT.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/ELEPHANT.png"
+      ],
+      "fileId": "b48jygs8tke-mggb0h17-yhdf0nczmv",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__ELEPHANT.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:ELEPHANT"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/ORCA.png",
+      "declaredKey": "Assets/Sprites/Pets/ORCA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/ORCA.png"
+      ],
+      "fileId": "yhb9338h3qa-mggb0fqs-7rhuah4tlce",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__ORCA.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:ORCA"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/PANDA.png",
+      "declaredKey": "Assets/Sprites/Pets/PANDA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/PANDA.png"
+      ],
+      "fileId": "40xapfmsn4p-mggb0fjx-kgc08yypygd",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__PANDA.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:PANDA"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/EAGLE.png",
+      "declaredKey": "Assets/Sprites/Pets/EAGLE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/EAGLE.png"
+      ],
+      "fileId": "fylzkverh7o-mggb0h4g-ba3y76sndd",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__EAGLE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:EAGLE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SHOEBILL.png",
+      "declaredKey": "Assets/Sprites/Pets/SHOEBILL.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SHOEBILL.png"
+      ],
+      "fileId": "9b12d3qyxh8-mh92zf0j-mrkkf2efw7n",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__SHOEBILL.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:SHOEBILL"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SWAN.png",
+      "declaredKey": "Assets/Sprites/Pets/SWAN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SWAN.png"
+      ],
+      "fileId": "qlexqes74c-mhucub3g-4abuv17yuoh",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__SWAN.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:SWAN"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/VULTURE.png",
+      "declaredKey": "Assets/Sprites/Pets/VULTURE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/VULTURE.png"
+      ],
+      "fileId": "76wyiqklooi-mhud7b43-nr4sieay6z",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__VULTURE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:VULTURE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/Bull.png",
+      "declaredKey": "Assets/Sprites/Pets/Bull.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/Bull.png"
+      ],
+      "fileId": "ja6knfptv6r-mkv1zrqo-av4ae1gkra",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__Bull.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:BULL"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/KIWI.png",
+      "declaredKey": "Assets/Sprites/Pets/KIWI.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/KIWI.png"
+      ],
+      "fileId": "17e4fi9u7vf-micz8y41-fmm9mackw1",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__KIWI.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:KIWI"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SNOWLEOPARD.png",
+      "declaredKey": "Assets/Sprites/Pets/SNOWLEOPARD.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SNOWLEOPARD.png"
+      ],
+      "fileId": "cawargijt3g-mir2upt7-qcctmz9ff3",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__SNOWLEOPARD.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:SNOWLEOPARD"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/RATTLESNAKE.png",
+      "declaredKey": "Assets/Sprites/Pets/RATTLESNAKE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/RATTLESNAKE.png"
+      ],
+      "fileId": "kk88qdli6ns-mjgwduyh-23kasf9nctl",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__RATTLESNAKE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:RATTLESNAKE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/WOODPECKER.png",
+      "declaredKey": "Assets/Sprites/Pets/WOODPECKER.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/WOODPECKER.png"
+      ],
+      "fileId": "cbfvorhd2ep-mjs36en1-ch27jkfilsq",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__WOODPECKER.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:WOODPECKER"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/LAMB.png",
+      "declaredKey": "Assets/Sprites/Pets/LAMB.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/LAMB.png"
+      ],
+      "fileId": "ngje1pghfl-mkf6t5hv-as5ot0qhn5a",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__LAMB.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:LAMB"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/POLARBEAR.png",
+      "declaredKey": "Assets/Sprites/Pets/POLARBEAR.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/POLARBEAR.png"
+      ],
+      "fileId": "6euz1q9ndla-mggb0f6h-fi84jwcfrx4",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__POLARBEAR.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:POLARBEAR"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/RHINO.png",
+      "declaredKey": "Assets/Sprites/Pets/RHINO.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/RHINO.png"
+      ],
+      "fileId": "3peplzr50vl-mggb0ew7-udimrm238e",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__RHINO.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:RHINO"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/WOLF.png",
+      "declaredKey": "Assets/Sprites/Pets/WOLF.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/WOLF.png"
+      ],
+      "fileId": "18g63zgudrz-mh4kvmq4-tcic58og6bh",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__WOLF.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:WOLF"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/HORNBILL.png",
+      "declaredKey": "Assets/Sprites/Pets/HORNBILL.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/HORNBILL.png"
+      ],
+      "fileId": "746y68oztc3-mggb0dv6-9kw9xm95dns",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__HORNBILL.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:HORNBILL"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/HIPPO.png",
+      "declaredKey": "Assets/Sprites/Pets/HIPPO.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/HIPPO.png"
+      ],
+      "fileId": "1acgc8jgii4-mggb0ghw-vdw7drowm6h",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__HIPPO.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:HIPPO"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/BROWNBEAR.png",
+      "declaredKey": "Assets/Sprites/Pets/BROWNBEAR.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/BROWNBEAR.png"
+      ],
+      "fileId": "crsqp70eev-mggb0dnx-e0k0w5xl5xu",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__BROWNBEAR.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:BROWNBEAR"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/MANATEE.png",
+      "declaredKey": "Assets/Sprites/Pets/MANATEE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MANATEE.png"
+      ],
+      "fileId": "tyhnwkt3chq-mhbsv9ee-dz4v0vlabc4",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__MANATEE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:MANATEE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/OSTRICH.png",
+      "declaredKey": "Assets/Sprites/Pets/OSTRICH.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/OSTRICH.png"
+      ],
+      "fileId": "rk88g0rysa-mggb0del-45nfv3y15be",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__OSTRICH.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:OSTRICH"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SMALLWHALE.png",
+      "declaredKey": "Assets/Sprites/Pets/SMALLWHALE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SMALLWHALE.png"
+      ],
+      "fileId": "rdbyw5x2woq-mhbsxp7p-i4agr52n6o",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__SMALLWHALE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:SMALLWHALE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/GORILLA.png",
+      "declaredKey": "Assets/Sprites/Pets/GORILLA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/GORILLA.png"
+      ],
+      "fileId": "9cy6my0ir4f-mggb0d4k-ub8n3z3y9",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__GORILLA.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:GORILLA"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/BELUGA.png",
+      "declaredKey": "Assets/Sprites/Pets/BELUGA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/BELUGA.png"
+      ],
+      "fileId": "vu7mzez9kir-mggb0dhn-p0azt1pc8mb",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__BELUGA.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:BELUGA"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/NARWHAL.png",
+      "declaredKey": "Assets/Sprites/Pets/NARWHAL.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/NARWHAL.png"
+      ],
+      "fileId": "1ndxyn7ljdc-mggb0ds2-rl4gjyuxtl",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__NARWHAL.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:NARWHAL"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/HUSKY.png",
+      "declaredKey": "Assets/Sprites/Pets/HUSKY.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/HUSKY.png"
+      ],
+      "fileId": "ad91i1v2385-mh92zex6-pr945opazuf",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__HUSKY.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:HUSKY"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/PLATYPUS.png",
+      "declaredKey": "Assets/Sprites/Pets/PLATYPUS.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/PLATYPUS.png"
+      ],
+      "fileId": "oxazkt4r1ti-mhucubbs-76m3tg14nhp",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__PLATYPUS.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:PLATYPUS"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/JAGUAR.png",
+      "declaredKey": "Assets/Sprites/Pets/JAGUAR.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/JAGUAR.png"
+      ],
+      "fileId": "30rcq3tjjr7-mhucubg6-qbzcj7g3vij",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__JAGUAR.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:JAGUAR"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/REINDEER.png",
+      "declaredKey": "Assets/Sprites/Pets/REINDEER.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/REINDEER.png"
+      ],
+      "fileId": "qved57h6sys-micxcfas-p8hu7dw7j1",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__REINDEER.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:REINDEER"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/ARTICFOX.png",
+      "declaredKey": "Assets/Sprites/Pets/ARTICFOX.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/ARTICFOX.png"
+      ],
+      "fileId": "0bp17wr6rbf-mir2uq10-v8e0shodvm",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__ARTICFOX.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:ARCTICFOX"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/COW.png",
+      "declaredKey": "Assets/Sprites/Pets/COW.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/COW.png"
+      ],
+      "fileId": "pedx85vhf2q-mkf6t5lc-jtiydfx8db",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__COW.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:COW"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/Ox.png",
+      "declaredKey": "Assets/Sprites/Pets/Ox.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/Ox.png"
+      ],
+      "fileId": "dhtk6e2lwbm-mkv1zrur-xnh0xm7xt7",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__Ox.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:OX"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/TURKEY.png",
+      "declaredKey": "Assets/Sprites/Pets/TURKEY.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/TURKEY.png"
+      ],
+      "fileId": "azr0np46z9t-mhucub7t-0rm5kdaafjba",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__TURKEY.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:TURKEY"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/FrillNeckedLizard.png",
+      "declaredKey": "Assets/Sprites/Pets/FrillNeckedLizard.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/FrillNeckedLizard.png"
+      ],
+      "fileId": "8mzoimcs098-mkv1zrlu-kndqdkkk93s",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__FrillNeckedLizard.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:FRILLNECKEDLIZARD"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/TORTOISE.png",
+      "declaredKey": "Assets/Sprites/Pets/TORTOISE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/TORTOISE.png"
+      ],
+      "fileId": "yccrq0r5cvh-mkxykan7-11fok9y4hcd",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__TORTOISE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:TORTOISE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SEAHORSE.png",
+      "declaredKey": "Assets/Sprites/Pets/SEAHORSE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SEAHORSE.png"
+      ],
+      "fileId": "z2gec5o4q5j-mkxykae9-9k0xek0yqx9",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__SEAHORSE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:SEAHORSE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/ALPACA.png",
+      "declaredKey": "Assets/Sprites/Pets/ALPACA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/ALPACA.png"
+      ],
+      "fileId": "l3kqso1qmv-mkxyka1y-bcz9b41x53u",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__ALPACA.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:ALPACA"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/COYOTE.png",
+      "declaredKey": "Assets/Sprites/Pets/COYOTE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/COYOTE.png"
+      ],
+      "fileId": "3j1m9mk1uw3-mkxyka93-6trte1s335k",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__COYOTE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:COYOTE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/CATFISH.png",
+      "declaredKey": "Assets/Sprites/Pets/CATFISH.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/CATFISH.png"
+      ],
+      "fileId": "fuu4da8h5x8-mlhvgh9q-h63zbv0avuw",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__CATFISH.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:CATFISH"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SLOTH.png",
+      "declaredKey": "Assets/Sprites/Pets/SLOTH.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SLOTH.png"
+      ],
+      "fileId": "x35jumkb79j-mlhuurw9-22z1dgxitr1",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__SLOTH.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:SLOTH"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/MALLARD.png",
+      "declaredKey": "Assets/Sprites/Pets/MALLARD.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MALLARD.png"
+      ],
+      "fileId": "1fku85arfb2-ml0aiq89-8dlv48bjl0a",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__MALLARD.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:MALLARD"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/ARMADILLO.png",
+      "declaredKey": "Assets/Sprites/Pets/ARMADILLO.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/ARMADILLO.png"
+      ],
+      "fileId": "u3qn0wijlx-mm94ud6j-qoj2ea3obo",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__ARMADILLO.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:ARMADILLO"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/AXOLOTLBLUE.png",
+      "declaredKey": "Assets/Sprites/Pets/AXOLOTLBLUE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/AXOLOTLBLUE.png"
+      ],
+      "fileId": "fh8kbzl4knc-mm9zn8ok-9riujcvb07",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__AXOLOTLBLUE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:AXOLOTLBLUE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/AXOLOTLPINK.png",
+      "declaredKey": "Assets/Sprites/Pets/AXOLOTLPINK.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/AXOLOTLPINK.png"
+      ],
+      "fileId": "vnx6reebt7h-mm9zn8zj-9ev4le6ifo",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__AXOLOTLPINK.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:AXOLOTLPINK"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/AXOLOTLGREEN.png",
+      "declaredKey": "Assets/Sprites/Pets/AXOLOTLGREEN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/AXOLOTLGREEN.png"
+      ],
+      "fileId": "v2q15hhtk6-mm9zn8jq-r57tvygy4e",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__AXOLOTLGREEN.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:AXOLOTLGREEN"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/AXOLOTLORANGE.png",
+      "declaredKey": "Assets/Sprites/Pets/AXOLOTLORANGE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/AXOLOTLORANGE.png"
+      ],
+      "fileId": "a4s55ggztb-mm9zn8sx-k9ffxgbme6",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__AXOLOTLORANGE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:AXOLOTLORANGE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/AXOLOTLWHITE.png",
+      "declaredKey": "Assets/Sprites/Pets/AXOLOTLWHITE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/AXOLOTLWHITE.png"
+      ],
+      "fileId": "97y42atcqd-mm9zn93y-jdg8veva33",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__AXOLOTLWHITE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:AXOLOTLWHITE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/LLAMA.png",
+      "declaredKey": "Assets/Sprites/Pets/LLAMA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/LLAMA.png"
+      ],
+      "fileId": "tafjn3xsgis-mmbgcbuh-k1uee1i94ia",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__LLAMA.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:LLAMA"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/BABOON.png",
+      "declaredKey": "Assets/Sprites/Pets/BABOON.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/BABOON.png"
+      ],
+      "fileId": "gdr3pa9oyko-mmbgcbpn-25emffl3y2k",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__BABOON.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:BABOON"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SNOWMAN.png",
+      "declaredKey": "Assets/Sprites/Pets/SNOWMAN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SNOWMAN.png"
+      ],
+      "fileId": "uy8ktknvjrg-mie2k46i-ksnctpo51an",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__SNOWMAN.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:SNOWMAN"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/KANGAROO.png",
+      "declaredKey": "Assets/Sprites/Pets/KANGAROO.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/KANGAROO.png"
+      ],
+      "fileId": "sn73ih8a84-mjgwduuf-8b7pa6roh3n",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__KANGAROO.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:KANGAROO"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/MOODENG.png",
+      "declaredKey": "Assets/Sprites/Pets/MOODENG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MOODENG.png"
+      ],
+      "fileId": "o1r825gq6l8-micxi0sy-1v3gpl596h5",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__MOODENG.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:MOODENG"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/PEACOCK.png",
+      "declaredKey": "Assets/Sprites/Pets/PEACOCK.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/PEACOCK.png"
+      ],
+      "fileId": "d2swnrip0st-mjs385qx-tp2f9e7s2id",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__PEACOCK.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:PEACOCK"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SHARK.png",
+      "declaredKey": "Assets/Sprites/Pets/SHARK.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SHARK.png"
+      ],
+      "fileId": "2l1nxhcbgrm-mkf6t5oq-96o07njnnaf",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__SHARK.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:SHARK"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/KOALA.png",
+      "declaredKey": "Assets/Sprites/Pets/KOALA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/KOALA.png"
+      ],
+      "fileId": "n35ozsqtvy-mkxykawu-zqp2rbrw0a",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__KOALA.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:KOALA"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/FOX.png",
+      "declaredKey": "Assets/Sprites/Pets/FOX.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/FOX.png"
+      ],
+      "fileId": "3fg4eap4t9p-mkxykaik-qbqakvp6ail",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__FOX.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:FOX"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/PORCUPINE.png",
+      "declaredKey": "Assets/Sprites/Pets/PORCUPINE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/PORCUPINE.png"
+      ],
+      "fileId": "coyu7bamm36-mlhuus7c-kru7oa22nhi",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__PORCUPINE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:PORCUPINE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/DINGO.png",
+      "declaredKey": "Assets/Sprites/Pets/DINGO.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/DINGO.png"
+      ],
+      "fileId": "rcdynaeqcwh-mmk9x1oq-jyfzwua60w",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__DINGO.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:DINGO"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/MOUSE.png",
+      "declaredKey": "Assets/Sprites/Pets/MOUSE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MOUSE.png"
+      ],
+      "fileId": "tei4947cg7i-mmk9x26z-qvozcmo4ug8",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__MOUSE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:MOUSE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/FROG.png",
+      "declaredKey": "Assets/Sprites/Pets/FROG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/FROG.png"
+      ],
+      "fileId": "y8wcqf5b7zf-mrd3bw6v-zy9jzch5yge",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__FROG.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:FROG"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/TASMANIANDEVIL.png",
+      "declaredKey": "Assets/Sprites/Pets/TASMANIANDEVIL.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/TASMANIANDEVIL.png"
+      ],
+      "fileId": "3wu3cbxacou-mo2nmk69-s3rzthm9e9",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__TASMANIANDEVIL.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:TASMANIANDEVIL"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/KOMODO.png",
+      "declaredKey": "Assets/Sprites/Pets/KOMODO.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/KOMODO.png"
+      ],
+      "fileId": "dyhloflumt4-mlhv52ez-3fhpbwjd4gq",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__KOMODO.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:KOMODO"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SERVAL.png",
+      "declaredKey": "Assets/Sprites/Pets/SERVAL.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SERVAL.png"
+      ],
+      "fileId": "6ak5225ccqi-mmbgcbl4-dgb3zts1lpn",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__SERVAL.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:SERVAL"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/JAVELINA.png",
+      "declaredKey": "Assets/Sprites/Pets/JAVELINA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/JAVELINA.png"
+      ],
+      "fileId": "9su6uu1z0fa-mmub4gr7-chw4c21rib6",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__JAVELINA.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:JAVELINA"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/REDPANDA.png",
+      "declaredKey": "Assets/Sprites/Pets/REDPANDA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/REDPANDA.png"
+      ],
+      "fileId": "qxsx2du819e-mncmigsk-4fhgu9kh9rf",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__REDPANDA.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:REDPANDA"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/MEERKAT.png",
+      "declaredKey": "Assets/Sprites/Pets/MEERKAT.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MEERKAT.png"
+      ],
+      "fileId": "3i66dg2rfui-mncmij9e-khms28psube",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__MEERKAT.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:MEERKAT"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/PYTHON.png",
+      "declaredKey": "Assets/Sprites/Pets/PYTHON.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/PYTHON.png"
+      ],
+      "fileId": "v9ocakx819l-mnh8j20y-y7icovw5j8m",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__PYTHON.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:PYTHON"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/MARTEN.png",
+      "declaredKey": "Assets/Sprites/Pets/MARTEN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MARTEN.png"
+      ],
+      "fileId": "vhf2jflv4bh-mnh8j07a-gtyaayv672",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__MARTEN.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:MARTEN"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/HEDGEHOG.png",
+      "declaredKey": "Assets/Sprites/Pets/HEDGEHOG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/HEDGEHOG.png"
+      ],
+      "fileId": "og61a98drkg-mnwzn4ch-y2y98zc8f8m",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__HEDGEHOG.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:HEDGEHOG"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/WILDBOAR.png",
+      "declaredKey": "Assets/Sprites/Pets/WILDBOAR.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/WILDBOAR.png"
+      ],
+      "fileId": "uu1eupgl3te-mnwzn4hs-qdvaonjsv2a",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__WILDBOAR.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:WILDBOAR"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/HYENA.png",
+      "declaredKey": "Assets/Sprites/Pets/HYENA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/HYENA.png"
+      ],
+      "fileId": "yck1w8xikk-moldpmn3-yhcldtakso",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__HYENA.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:HYENA"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/JERBOA.png",
+      "declaredKey": "Assets/Sprites/Pets/JERBOA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/JERBOA.png"
+      ],
+      "fileId": "g7dbvnxnhkl-moldpmth-a9u0w78lg9",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__JERBOA.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:JERBOA"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/MOUSEDEER.png",
+      "declaredKey": "Assets/Sprites/Pets/MOUSEDEER.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MOUSEDEER.png"
+      ],
+      "fileId": "td8x65i0ea-movcw5go-cle6cr84x5",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__MOUSEDEER.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:MOUSEDEER"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/BANDICOOT.png",
+      "declaredKey": "Assets/Sprites/Pets/BANDICOOT.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/BANDICOOT.png"
+      ],
+      "fileId": "b8lw2m3gc7c-movcw5ae-idlh7kz33m",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__BANDICOOT.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:BANDICOOT"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/JACKAL.png",
+      "declaredKey": "Assets/Sprites/Pets/JACKAL.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/JACKAL.png"
+      ],
+      "fileId": "psenll38uo-mpl1qben-o6qv27dt4q",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__JACKAL.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:JACKAL"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "key": "Assets/Sprites/Pets/DONKEY.png",
+      "declaredKey": "Assets/Sprites/Pets/DONKEY.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/DONKEY.png"
+      ],
+      "fileId": "ye2po67f8u-mqen92qd-fvjetcx7hcg",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__DONKEY.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:DONKEY"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/ANTELOPE.png",
+      "declaredKey": "Assets/Sprites/Pets/ANTELOPE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/ANTELOPE.png"
+      ],
+      "fileId": "btndfyvcbah-mqen92y4-nyt8qip14op",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__ANTELOPE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:ANTELOPE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/BADGER.png",
+      "declaredKey": "Assets/Sprites/Pets/BADGER.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/BADGER.png"
+      ],
+      "fileId": "f3i7ta9oodn-mr2xtw0m-4snzp1m5rq4",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__BADGER.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:BADGER"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/PIRANHA.png",
+      "declaredKey": "Assets/Sprites/Pets/PIRANHA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/PIRANHA.png"
+      ],
+      "fileId": "k1238csnnvk-mr2xthah-qnizwwpw0h",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__PIRANHA.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:PIRANHA"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/BEAVER.png",
+      "declaredKey": "Assets/Sprites/Pets/BEAVER.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/BEAVER.png"
+      ],
+      "fileId": "twbwrtctia8-mrd3bwmm-7t2hp6bfaub",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__BEAVER.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:BEAVER"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/NUMBAT.png",
+      "declaredKey": "Assets/Sprites/Pets/NUMBAT.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/NUMBAT.png"
+      ],
+      "fileId": "bhz541cmxdr-mrd3bwsh-t0melx9rabd",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__NUMBAT.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:NUMBAT"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/QUOKKA.png",
+      "declaredKey": "Assets/Sprites/Pets/QUOKKA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/QUOKKA.png"
+      ],
+      "fileId": "e5633q6skuh-mru19rc0-tlfl1ciig3l",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__QUOKKA.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:QUOKKA"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/FERRET.png",
+      "declaredKey": "Assets/Sprites/Pets/FERRET.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/FERRET.png"
+      ],
+      "fileId": "txlksjwqzsh-mru19roj-jtf9fe7q6pr",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__FERRET.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:FERRET"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/LEMUR.png",
+      "declaredKey": "Assets/Sprites/Pets/LEMUR.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/LEMUR.png"
+      ],
+      "fileId": "jc3v4fo56c-mru19riy-0z8h5hahm1y",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__LEMUR.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:LEMUR"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/GOLDFISH.png",
+      "declaredKey": "Assets/Sprites/Pets/GOLDFISH.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/GOLDFISH.png"
+      ],
+      "fileId": "wflitya0s4r-msei7uky-htdlr3p0zat",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__GOLDFISH.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:GOLDFISH"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/BASS.png",
+      "declaredKey": "Assets/Sprites/Pets/BASS.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/BASS.png"
+      ],
+      "fileId": "dujfwt9iq0c-msei7uej-kphtglm8fxf",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__BASS.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:BASS"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/TUNA.png",
+      "declaredKey": "Assets/Sprites/Pets/TUNA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/TUNA.png"
+      ],
+      "fileId": "ibhzs3gn5y-msei7tw6-yxs1stssqm",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__TUNA.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:TUNA"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/ECHIDNA.png",
+      "declaredKey": "Assets/Sprites/Pets/ECHIDNA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/ECHIDNA.png"
+      ],
+      "fileId": "y548nmb5xf-msycoh4o-w45tmi7556",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__ECHIDNA.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:ECHIDNA"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/CHIPMUNK.png",
+      "declaredKey": "Assets/Sprites/Pets/CHIPMUNK.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/CHIPMUNK.png"
+      ],
+      "fileId": "sklfa4iy2ub-msycohr9-y0mwv1vkgud",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__CHIPMUNK.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:CHIPMUNK"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/COBRA.png",
+      "declaredKey": "Assets/Sprites/Pets/COBRA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/COBRA.png"
+      ],
+      "fileId": "y2prdzcbwtb-msycogdu-bbyuov22loh",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__COBRA.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:COBRA"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/JACKRABBIT.png",
+      "declaredKey": "Assets/Sprites/Pets/JACKRABBIT.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/JACKRABBIT.png"
+      ],
+      "fileId": "ob2epu860h-msycohdz-69qv6ycd8m3",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__JACKRABBIT.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:JACKRABBIT"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/GOLDENMOLE.png",
+      "declaredKey": "Assets/Sprites/Pets/GOLDENMOLE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/GOLDENMOLE.png"
+      ],
+      "fileId": "hhpuryusfob-msycogwa-03v3g2oc41m2",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__GOLDENMOLE.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:GOLDENMOLE"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/LIONESS.png",
+      "declaredKey": "Assets/Sprites/Pets/LIONESS.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/LIONESS.png"
+      ],
+      "fileId": "mfamelrpjki-mtob76im-htogqxlk78l",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__LIONESS.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:LIONESS"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/BUFFALO.png",
+      "declaredKey": "Assets/Sprites/Pets/BUFFALO.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/BUFFALO.png"
+      ],
+      "fileId": "atjhtt8a8uk-mtob75v1-x3om92arz8b",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__BUFFALO.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:BUFFALO"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SALMON.png",
+      "declaredKey": "Assets/Sprites/Pets/SALMON.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SALMON.png"
+      ],
+      "fileId": "1h5d7mm83hfi-mtob76v0-yadti0038j",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__SALMON.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:SALMON"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/EMU.png",
+      "declaredKey": "Assets/Sprites/Pets/EMU.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/EMU.png"
+      ],
+      "fileId": "f1vubbj4c56-mtob766r-c6yxw51jj9t",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__EMU.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:EMU"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/BIGHORN.png",
+      "declaredKey": "Assets/Sprites/Pets/BIGHORN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/BIGHORN.png"
+      ],
+      "fileId": "ap4xb1dncyj-mtob75j6-rga23icaak",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__BIGHORN.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:BIGHORN"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/ARAPAIMA.png",
+      "declaredKey": "Assets/Sprites/Pets/ARAPAIMA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/ARAPAIMA.png"
+      ],
+      "fileId": "53f48jbu7r4-ml0dnmtj-etnvgw63z3c",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__ARAPAIMA.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:ARAPAIMA"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/IGUANA.png",
+      "declaredKey": "Assets/Sprites/Pets/IGUANA.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/IGUANA.png"
+      ],
+      "fileId": "3kmivok1fbo-mmbgcb4j-gxq405y7wvb",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__IGUANA.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:IGUANA"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/GEMSBOK.png",
+      "declaredKey": "Assets/Sprites/Pets/GEMSBOK.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/GEMSBOK.png"
+      ],
+      "fileId": "88s6jyhrlac-mmyf4m3l-qejkxfd48h",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__GEMSBOK.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:GEMSBOK"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/ORANGUTAN.png",
+      "declaredKey": "Assets/Sprites/Pets/ORANGUTAN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/ORANGUTAN.png"
+      ],
+      "fileId": "2v6atdnw25e-mnvjkohj-il1y7ff5g1d",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__ORANGUTAN.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:ORANGUTAN"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/CARP.png",
+      "declaredKey": "Assets/Sprites/Pets/CARP.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/CARP.png"
+      ],
+      "fileId": "bhyca6bykfm-momc4nr4-bvd2izdkrmp",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__CARP.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:CARP"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/WOMBAT.png",
+      "declaredKey": "Assets/Sprites/Pets/WOMBAT.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/WOMBAT.png"
+      ],
+      "fileId": "u6ehtb3x0wn-movcw5lt-54jwh4xbcz4",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__WOMBAT.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:WOMBAT"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/KAKAPO.png",
+      "declaredKey": "Assets/Sprites/Pets/KAKAPO.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/KAKAPO.png"
+      ],
+      "fileId": "9z5u7f3e5xh-muywzg3o-ao4ffhkrnch",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__KAKAPO.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:KAKAPO"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/GILAMONSTER.png",
+      "declaredKey": "Assets/Sprites/Pets/GILAMONSTER.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/GILAMONSTER.png"
+      ],
+      "fileId": "h96durl6krn-mpl1pubt-e8m44nc2oro",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__GILAMONSTER.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:GILAMONSTER"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/HORNEDLIZARD.png",
+      "declaredKey": "Assets/Sprites/Pets/HORNEDLIZARD.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/HORNEDLIZARD.png"
+      ],
+      "fileId": "7jx0zbr57v-mqg6i8u9-9iursmhbens",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__HORNEDLIZARD.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:HORNEDLIZARD"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/LYNX.png",
+      "declaredKey": "Assets/Sprites/Pets/LYNX.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/LYNX.png"
+      ],
+      "fileId": "487ybzjnadv-mqgajfkl-rmbutt8nb7h",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__LYNX.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:LYNX"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/PRONGHORN.png",
+      "declaredKey": "Assets/Sprites/Pets/PRONGHORN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/PRONGHORN.png"
+      ],
+      "fileId": "i68yrxxvdfk-mqg6i5wp-vlhwjk08hnr",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__PRONGHORN.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:PRONGHORN"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/OTTER.png",
+      "declaredKey": "Assets/Sprites/Pets/OTTER.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/OTTER.png"
+      ],
+      "fileId": "g4orrncxw9m-mru19soi-fparq8cdbaf",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__OTTER.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:OTTER"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/BULL_PUMPKIN.png",
+      "declaredKey": "Assets/Sprites/Pets/BULL_PUMPKIN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/BULL_PUMPKIN.png"
+      ],
+      "fileId": "kk14mnzh0wk-mv9270jt-kgp87y7qm68",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__BULL_PUMPKIN.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:BULL_PUMPKIN"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/WILDBOAR_PUMPKIN.png",
+      "declaredKey": "Assets/Sprites/Pets/WILDBOAR_PUMPKIN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/WILDBOAR_PUMPKIN.png"
+      ],
+      "fileId": "wj631ayx6v-mv9270as-8kfeako6fqn",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__WILDBOAR_PUMPKIN.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:WILDBOAR_PUMPKIN"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/GORILLA_PUMPKIN.png",
+      "declaredKey": "Assets/Sprites/Pets/GORILLA_PUMPKIN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/GORILLA_PUMPKIN.png"
+      ],
+      "fileId": "xnt2o5s3du-mv9271at-e60uk8t4xi",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__GORILLA_PUMPKIN.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:GORILLA_PUMPKIN"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SQUID_PUMPKIN.png",
+      "declaredKey": "Assets/Sprites/Pets/SQUID_PUMPKIN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SQUID_PUMPKIN.png"
+      ],
+      "fileId": "i9trrd33pmo-mv92701o-l100mkl8bo",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__SQUID_PUMPKIN.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:SQUID_PUMPKIN"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/JELLYFISH_PUMPKIN.png",
+      "declaredKey": "Assets/Sprites/Pets/JELLYFISH_PUMPKIN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/JELLYFISH_PUMPKIN.png"
+      ],
+      "fileId": "9xcme5by5f6-mv9271jj-yne3dsevpo",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__JELLYFISH_PUMPKIN.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:JELLYFISH_PUMPKIN"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/GIRAFFE_PUMPKIN.png",
+      "declaredKey": "Assets/Sprites/Pets/GIRAFFE_PUMPKIN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/GIRAFFE_PUMPKIN.png"
+      ],
+      "fileId": "lrmw1lnztab-mv927128-4ybmvwncmkn",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__GIRAFFE_PUMPKIN.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:GIRAFFE_PUMPKIN"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/PENGUIN_PUMPKIN.png",
+      "declaredKey": "Assets/Sprites/Pets/PENGUIN_PUMPKIN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/PENGUIN_PUMPKIN.png"
+      ],
+      "fileId": "zcgy1jbybtk-mv926zo1-n7trzjqo2dk",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__PENGUIN_PUMPKIN.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:PENGUIN_PUMPKIN"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/CHICK_PUMPKIN.png",
+      "declaredKey": "Assets/Sprites/Pets/CHICK_PUMPKIN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/CHICK_PUMPKIN.png"
+      ],
+      "fileId": "tbe90spy5kb-mv9270t1-9jlejwb6gbm",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__CHICK_PUMPKIN.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:CHICK_PUMPKIN"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/HUSKY_SPIDERLEGS.png",
+      "declaredKey": "Assets/Sprites/Pets/HUSKY_SPIDERLEGS.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/HUSKY_SPIDERLEGS.png"
+      ],
+      "fileId": "gnqe18163cs-mvsvakt7-2e1agkvrdwm",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__HUSKY_SPIDERLEGS.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:HUSKY_SPIDERLEGS"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/MUDSKIPPER_SPIDERLEGS.png",
+      "declaredKey": "Assets/Sprites/Pets/MUDSKIPPER_SPIDERLEGS.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MUDSKIPPER_SPIDERLEGS.png"
+      ],
+      "fileId": "nfsv5yv0o5-mvsval7a-0229a80326vj",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__MUDSKIPPER_SPIDERLEGS.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:MUDSKIPPER_SPIDERLEGS"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/HORNEDLIZARD_SPIDERLEGS.png",
+      "declaredKey": "Assets/Sprites/Pets/HORNEDLIZARD_SPIDERLEGS.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/HORNEDLIZARD_SPIDERLEGS.png"
+      ],
+      "fileId": "z69m35rr4w-mvsvaknh-jp3apr00tlf",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__HORNEDLIZARD_SPIDERLEGS.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:HORNEDLIZARD_SPIDERLEGS"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/OCTOPUS_SPIDERLEGS.png",
+      "declaredKey": "Assets/Sprites/Pets/OCTOPUS_SPIDERLEGS.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/OCTOPUS_SPIDERLEGS.png"
+      ],
+      "fileId": "dqodmvpc7ha-mvsvak1g-ohb0qqvgch",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__OCTOPUS_SPIDERLEGS.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:OCTOPUS_SPIDERLEGS"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/ALIGATOR_SPIDERLEGS.png",
+      "declaredKey": "Assets/Sprites/Pets/ALIGATOR_SPIDERLEGS.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/ALIGATOR_SPIDERLEGS.png"
+      ],
+      "fileId": "i9o84eiaev-mvsvakg5-tlkcxfqwto",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__ALIGATOR_SPIDERLEGS.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:ALIGATOR_SPIDERLEGS"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/PENGUIN_SPIDERLEGS.png",
+      "declaredKey": "Assets/Sprites/Pets/PENGUIN_SPIDERLEGS.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/PENGUIN_SPIDERLEGS.png"
+      ],
+      "fileId": "g8mg0hmg528-mvsvalde-ehv01zn7pgk",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__PENGUIN_SPIDERLEGS.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:PENGUIN_SPIDERLEGS"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SHARK_SPIDERLEGS.png",
+      "declaredKey": "Assets/Sprites/Pets/SHARK_SPIDERLEGS.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SHARK_SPIDERLEGS.png"
+      ],
+      "fileId": "fmvptjo1wb4-mvsvalje-fpyo9skh2iu",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__SHARK_SPIDERLEGS.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:SHARK_SPIDERLEGS"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/MR.FOOTBALL.png",
+      "declaredKey": "Assets/Sprites/Pets/MR.FOOTBALL.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MR.FOOTBALL.png"
+      ],
+      "fileId": "ymki1n1wtgk-mpl1t36n-dcjo4wtmbll",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:fusion-confirm:MRFOOTBALL"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Pets/DRAGON.png",
+      "declaredKey": "Assets/Sprites/Pets/DRAGON.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/DRAGON.png"
+      ],
+      "fileId": "ss05ttcmoj-mqaqrhi6-raqxk8m7d4f",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__DRAGON.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:DRAGON"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/PEGASUS.png",
+      "declaredKey": "Assets/Sprites/Pets/PEGASUS.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/PEGASUS.png"
+      ],
+      "fileId": "q84n66em4m-mtyedwso-w9jw6eoixei",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__PEGASUS.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:PEGASUS"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/KIRIN.png",
+      "declaredKey": "Assets/Sprites/Pets/KIRIN.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/KIRIN.png"
+      ],
+      "fileId": "r9qr1fsl9ph-mtyedwh7-9wl1ishaptl",
+      "output": "./assets/ui-sprites/fusion-confirm/Pets__KIRIN.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:KIRIN"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/EmptyItemBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/EmptyItemBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/EmptyItemBG.png"
+      ],
+      "fileId": "ai7k1vl7ihl-mu2oi2k4-deox1krlu4",
+      "output": "./assets/ui-sprites/fusion-confirm/NewAssets__EmptyItemBG.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:EmptyItemBG"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 100,
+      "height": 100
+    },
+    {
+      "key": "Assets/Sprites/Icons/PetCoinIcon.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/PetCoinIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/PetCoinIcon.png"
+      ],
+      "fileId": "bju08pkwxav-mincvh54-3nkt79t4vxw",
+      "output": "./assets/ui-sprites/fusion-confirm/Icons__PetCoinIcon.png",
+      "missing": false,
+      "references": [
+        "runtime:fusion-confirm:PetCoinIcon"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 96,
+      "height": 96
+    }
+  ],
+  "missing": [
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_ARROW.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_ARROW.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_ARROW.png"
+      ],
+      "fileId": "cf3750e71f84976474e1818e0f1f9099",
+      "output": null,
+      "missing": true,
+      "references": [
+        "FusionConfirm/Container/Chances/Chance1/ChanceIcon",
+        "FusionConfirm/Container/Chances/Chance1/ChanceIcon (1)",
+        "FusionConfirm/Container/Chances/Chance1/ChanceIcon (2)",
+        "FusionConfirm/Container/Chances/Chance2/ChanceIcon (1)",
+        "FusionConfirm/Container/Chances/Chance2/ChanceIcon (2)",
+        "FusionConfirm/Container/Chances/Chance2/ChanceIcon (3)",
+        "FusionConfirm/Container/Chances/ChanceSecret/ChanceIcon (2)",
+        "FusionConfirm/Container/Chances/ChanceSecret/ChanceIcon (3)",
+        "FusionConfirm/Container/Chances/ChanceSecret/ChanceIcon (4)"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png"
+      ],
+      "fileId": "5d250edc7ccde0be5ccab1e2cf53b57f",
+      "output": null,
+      "missing": true,
+      "references": [
+        "FusionConfirm/Container/Dust/BG",
+        "FusionConfirm/Container/Dust/DustPercent"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_CIRCULAR.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_CIRCULAR.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_CIRCULAR.png"
+      ],
+      "fileId": "ea89a8fe33e831ff0a9f5b4d9af14c18",
+      "output": null,
+      "missing": true,
+      "references": [
+        "FusionConfirm/MutationPercentsLayout/Normal/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Pets/MR.FOOTBALL.png",
+      "declaredKey": "Assets/Sprites/Pets/MR.FOOTBALL.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MR.FOOTBALL.png"
+      ],
+      "fileId": "ymki1n1wtgk-mpl1t36n-dcjo4wtmbll",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:fusion-confirm:MRFOOTBALL"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudFusionConfirm.fcg"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "unsupported": [
+    {
+      "path": "FusionConfirm/DarkBG",
+      "id": "P71ow7Gn",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Title/CloseButton",
+      "id": "w3fZzTm8",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Title/Wallet/Icon",
+      "id": "Y2cpVN6v",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Title/Wallet/ExchangeButton",
+      "id": "y9ogkBh6",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Title/Wallet",
+      "id": "G2nNXQb1",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/BG/DecorLeft",
+      "id": "z3wiD6Ij",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/BG/DecorRight",
+      "id": "qiC5lYtW",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet/Rarity",
+      "id": "wXHB1aEP",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet/Thumbnail",
+      "id": "nrIVB8HG",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet/HasMW",
+      "id": "EmHqauBn",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet",
+      "id": "nA7twpE8",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet/Rarity",
+      "id": "aF5YxvXA",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet/Thumbnail",
+      "id": "maXgqC42",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet/HasMW",
+      "id": "lteEEJH7",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet",
+      "id": "ZUgsWsfF",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet/Rarity",
+      "id": "RdcxmNXR",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet/Thumbnail",
+      "id": "CkBP2dkk",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet/HasMW",
+      "id": "NkmRQTQL",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Results/ResultsLayout/Pet",
+      "id": "yNBXJyP4",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Rarity",
+      "id": "rHmkaTl1",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Thumbnail",
+      "id": "TP2HucOC",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Mutation",
+      "id": "d4sgkSIQ",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Weathers/Weather",
+      "id": "aLbZZMdR",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Weathers/Weather",
+      "id": "NuAtQqli",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Weathers/Weather",
+      "id": "pTwP4b9N",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Weathers/Weather",
+      "id": "r97QL7YP",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1/Weathers/Weather",
+      "id": "cud87omn",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial1",
+      "id": "RBqlKvBD",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Rarity",
+      "id": "GvEVf9Uy",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Thumbnail",
+      "id": "iAeOxhfX",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Mutation",
+      "id": "WFwZmgOA",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Weathers/Weather",
+      "id": "pe2WR7Ag",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Weathers/Weather",
+      "id": "MFzFY8iD",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Weathers/Weather",
+      "id": "aOVKSf2t",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Weathers/Weather",
+      "id": "iU7ybnf6",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2/Weathers/Weather",
+      "id": "HTAGK0UL",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Materials/PetsLayout/PetMaterial2",
+      "id": "mWjqErJk",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/FusionButton",
+      "id": "eQ2fmqUU",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Dust/DustPercent",
+      "id": "lLW6nQOA",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Dust/IncDustButton",
+      "id": "tc4YbsjM",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Dust/DecDustButton",
+      "id": "UvVvGqVM",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Dust/MaxDustButton",
+      "id": "KwZtWnmC",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container/Dust/MinDustButton",
+      "id": "rZ4FZSC1",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionConfirm/Container",
+      "id": "feZ1cR7z",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionConfirm",
+      "id": "RvBaGGlG",
+      "fields": [
+        "ecaScripts"
+      ]
+    }
+  ]
+}

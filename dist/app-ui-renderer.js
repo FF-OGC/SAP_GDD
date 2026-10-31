@@ -385,6 +385,9 @@ const uiRenderer = (() => {
   function applyLayout(element, node) {
     const layout = node.layout;
     if (!layout?.enable) return;
+    // Some HUDs serialize non-grid layouts whose engine algorithm is not
+    // documented. Retain their authored transforms instead of applying grid.
+    if (layout.type !== "grid" && element.closest(".ui-canvas")?.dataset.uiNonGridLayout === "serialized") return;
     const options = layoutOptions(element);
     const children = [...element.children].filter(child => child.classList.contains("ui-entity"));
     const ordered = children.map((child, index) => ({ child, index, priority: Number(child.dataset.uiPriority || 0), active: childIsActive(child) }));
@@ -493,6 +496,7 @@ const uiRenderer = (() => {
   function render(data, manifest, width, height, options = {}) {
     const canvas = document.createElement("div");
     canvas.className = "ui-canvas";
+    if (data.renderingPolicy?.nonGridLayout) canvas.dataset.uiNonGridLayout = data.renderingPolicy.nonGridLayout;
     canvas.style.width = `${width}px`;
     canvas.style.height = `${height}px`;
     const byId = new Map();

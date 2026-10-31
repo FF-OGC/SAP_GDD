@@ -1,0 +1,309 @@
+{
+  "source": "pass",
+  "sourceCommit": "471a62bb8a55ad735cfeebf5a0a315730df90daa",
+  "entities": 64,
+  "sprites": 200,
+  "missingSprites": [
+    "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+    "Assets/Sprites/Pets/MR.FOOTBALL.png"
+  ],
+  "missingLocalization": [],
+  "unresolvedRegistrations": [],
+  "unsupported": [
+    {
+      "path": "FusionResult/DarkBG",
+      "id": "xXl8mqfW",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Title/CloseButton",
+      "id": "dvnfJcXt",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/BG/DecorLeft",
+      "id": "QoaUFfEx",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/BG/DecorRight",
+      "id": "rdJttLrj",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Result/PetResult/Rarity",
+      "id": "Cg5vLWS9",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Result/PetResult/Thumbnail",
+      "id": "ry2Hoc1i",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Result/PetResult/Mutation",
+      "id": "G2vjppJC",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Result/PetResult/Weathers/Weather",
+      "id": "ZT1mWMvJ",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Result/PetResult/Weathers/Weather",
+      "id": "EUTXiOGb",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Result/PetResult/Weathers/Weather",
+      "id": "dp8gTSTt",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Result/PetResult/Weathers/Weather",
+      "id": "ANctbTbZ",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Result/PetResult/Weathers/Weather",
+      "id": "wRGQTMjG",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Result/PetResult/Tooltip",
+      "id": "d5WQ781G",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Result/PetResult",
+      "id": "A4AHvCkd",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Result/ClaimPetResultButton",
+      "id": "ML3xoRAi",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Materials/Material1/Rarity",
+      "id": "NGfCi0Vs",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Materials/Material1/Thumbnail",
+      "id": "zree1VcF",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Materials/Material1/Mutation",
+      "id": "jTGeY5ZO",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Materials/Material1/Weathers/Weather",
+      "id": "Ov0BiNRd",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Materials/Material1/Weathers/Weather",
+      "id": "UpD44xdy",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Materials/Material1/Weathers/Weather",
+      "id": "BfcUlKNW",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Materials/Material1/Weathers/Weather",
+      "id": "WWZUNw3J",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Materials/Material1/Weathers/Weather",
+      "id": "xbDLYE2o",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Materials/Material1/RetrievePet1Button",
+      "id": "HyClYaEU",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Materials/Material1/Tooltip",
+      "id": "UHM6AaYT",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Materials/Material1",
+      "id": "OZhfKrqn",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Materials/Material2/Rarity",
+      "id": "c1wZpwAA",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Materials/Material2/Thumbnail",
+      "id": "osqW4eKe",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Materials/Material2/Mutation",
+      "id": "n2dKoxur",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Materials/Material2/Weathers/Weather",
+      "id": "LruNXCRr",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Materials/Material2/Weathers/Weather",
+      "id": "PX3mZsry",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Materials/Material2/Weathers/Weather",
+      "id": "VJ52qsmq",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Materials/Material2/Weathers/Weather",
+      "id": "ObQgEbJv",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Materials/Material2/Weathers/Weather",
+      "id": "ZN17y4b7",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Materials/Material2/RetrievePet2Button",
+      "id": "YLjfKlz7",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Materials/Material2/Tooltip",
+      "id": "uvy7HfDz",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "FusionResult/Container/Materials/Material2",
+      "id": "GGWtMYfQ",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "FusionResult/Container",
+      "id": "Hyvfcoet",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "FusionResult",
+      "id": "zX4kPfCr",
+      "fields": [
+        "ecaScripts"
+      ]
+    }
+  ],
+  "runtimeAssignments": 16,
+  "gaps": [
+    "Source secret pet rows have blank/zero DustCap: 1033, 1047, 1048, 1049, 1050, 1051, 1052, 1053; zero denominator follows BigNumberHandler fallback 0, no cap is invented",
+    "Mutation/weather inheritance and Purebred passive reduction are not simulated; all fixture pets are base level with no mutation/weather/passive",
+    "Mutation percentages are hidden, matching ordinary player capability; GMT rate view is outside this preview",
+    "Hatching, selection ownership, reward/retrieve server requests and pet tooltip popup are not executed",
+    "No engine screenshots; font/shader/scaler, hit order, safe area and scroll inertia unverified; player state is a local simulation"
+  ],
+  "browser": "separate CUA verification in screen plan",
+  "engineParity": "unverified; no runtime game screenshots"
+}

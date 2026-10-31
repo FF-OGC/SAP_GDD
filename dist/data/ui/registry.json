@@ -50,6 +50,20 @@
       "rules": "./data/ui/lobby-rules.json"
     },
     {
+      "id": "fusion-confirm",
+      "name": "Fusion · Confirm",
+      "status": "ready",
+      "data": "./data/ui/fusion-confirm.json",
+      "rules": "./data/ui/fusion-confirm-rules.json"
+    },
+    {
+      "id": "fusion-result",
+      "name": "Fusion · Result",
+      "status": "ready",
+      "data": "./data/ui/fusion-result.json",
+      "rules": "./data/ui/fusion-result-rules.json"
+    },
+    {
       "id": "mission",
       "name": "Mission",
       "status": "planned"
