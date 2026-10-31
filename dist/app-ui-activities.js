@@ -1,6 +1,8 @@
 "use strict";
 
 const activitiesPreview = { tab: 0, userType: "New", rebirth: 1, day: 1, cycleDay: 1, eventDay: 0, progress: 0, income: 0, points: 0, spins: null, claimed: new Set(), claimedMissions: new Set(), claimedMilestones: new Set(), claimedEvent: new Set() };
+activitiesPreview.missionProgress = new Map();
+activitiesPreview.debugMission = null;
 
 function initActivitiesPreview(screen, rules, rendered) {
   const state = activitiesPreview, c = rules.constants, source = rules.bindings;
@@ -133,6 +135,8 @@ function initActivitiesPreview(screen, rules, rendered) {
   scroll.style.pointerEvents = "auto";
   record(scroll, "ScrollPolicy", "web vertical scrolling; engine inertia unverified", "Activities.ui propsData.scrollView");
   function missionRows() { return rules.missions.filter(r => Number(r.Day) === 0 || Number(r.Day) === state.cycleDay); }
+  function missionProgress(row) { return Math.max(0, Math.min(Number(row.TargetValue), state.missionProgress.get(row.ID) ?? Math.floor(Number(row.TargetValue) * state.progress / 100))); }
+  function missionClaimable(row) { return Number(row.TargetValue) > 0 && missionProgress(row) >= Number(row.TargetValue) && !state.claimedMissions.has(row.ID); }
   function description(row) {
     const value = row.Action === "SaveMoney" ? money(row.TargetValue) : row.TargetValue;
     let condition = "";
@@ -146,8 +150,8 @@ function initActivitiesPreview(screen, rules, rendered) {
     while (cards.length < rows.length) cards.push(clone(template, layout, cards.length));
     cards.forEach((el, index) => {
       const row = rows[index]; visible(el, !!row, source.mission); if (!row) return;
-      const claimed = state.claimedMissions.has(row.ID), claimable = state.progress >= 100 && Number(row.TargetValue) > 0 && !claimed;
-      const progress = Math.floor(Number(row.TargetValue) * state.progress / 100);
+      const claimed = state.claimedMissions.has(row.ID), claimable = missionClaimable(row);
+      const progress = missionProgress(row);
       el.dataset.activityMission = row.ID;
       el.dataset.uiPriority = String(Number(row.Priority) + rows.length * (claimable ? c.PRIORITY_CLAIMABLE : claimed ? c.PRIORITY_CLAIMED : c.PRIORITY_INPROGRESS));
       record(el, "Priority", Number(el.dataset.uiPriority), source.mission);
@@ -212,12 +216,27 @@ function initActivitiesPreview(screen, rules, rendered) {
       const button = lookup(tab.button), active = state.tab === tab.index;
       image(button, active ? "SelectTabBG" : "NormalTabBG", "#FFFFFF", tab.source); color(child(button, "Text"), active ? c.ACTIVE_TEXT_COLOR : c.DEFAULT_TEXT_COLOR, tab.source);
       visible(byKey(tab.content), active, tab.source);
-      visible(child(button, "AlertIcon"), tab.index === 0 ? [...Array(state.day)].some((_, i) => !state.claimed.has(i + 1)) : tab.index === 1 ? state.progress === 100 && missionRows().some(r => !state.claimedMissions.has(r.ID)) : tab.index === 2 ? state.spins > 0 : false);
+      visible(child(button, "AlertIcon"), tab.index === 0 ? [...Array(state.day)].some((_, i) => !state.claimed.has(i + 1)) : tab.index === 1 ? missionRows().some(missionClaimable) : tab.index === 2 ? state.spins > 0 : false);
     }
     visible(byKey("ClaimAllButton"), false, rules.tabs[0].source); visible(byKey("ComingSoonLabel"), false, rules.tabs[0].source);
     if (state.tab === 0) daily(); else if (state.tab === 1) missions(); else if (state.tab === 2) spin(); else eventRewards();
     uiRenderer.refreshLayouts(rendered.canvas, screen); renderUiResourcePanel();
     const result = document.getElementById("activities-result"); if (result) result.textContent = spinning ? "Đang quay…" : lastResult;
+    updateMissionDebug();
+  }
+  function updateMissionDebug() {
+    const select = document.getElementById("activities-debug-mission"); if (!select) return;
+    const rows = missionRows();
+    const signature = `${uiPreview.language}:${rows.map(row => row.ID).join(",")}`;
+    if (select.dataset.rows !== signature) {
+      select.innerHTML = rows.map(row => `<option value="${esc(row.ID)}">#${esc(row.ID)} · ${esc(description(row))}</option>`).join("");
+      select.dataset.rows = signature;
+    }
+    const row = rows.find(row => row.ID === state.debugMission) || rows[0];
+    state.debugMission = row?.ID || null; select.value = state.debugMission || "";
+    const progress = row ? missionProgress(row) : 0, claimed = row && state.claimedMissions.has(row.ID);
+    document.getElementById("activities-debug-progress").textContent = row ? `${row.Action === "SaveMoney" ? money(progress) + "/" + money(row.TargetValue) : progress + "/" + row.TargetValue} · ${claimed ? "Đã nhận" : missionClaimable(row) ? "Có thể nhận" : "Đang làm"}${row.Action === "SaveMoney" ? " (đơn vị MoneyRank theo source)" : ""}` : "Không có nhiệm vụ trong ngày này";
+    for (const id of ["activities-debug-add", "activities-debug-complete"]) document.getElementById(id).disabled = !row || claimed || progress >= Number(row.TargetValue);
   }
   if (state.spins == null) state.spins = Number(rules.spins.find(r => Number(r.Day) === state.day)?.Spin || 0);
   const panel = document.getElementById("ui-player-panel");
@@ -227,6 +246,15 @@ function initActivitiesPreview(screen, rules, rendered) {
     <label>Ngày đăng nhập <select id="activities-day">${Array.from({ length: rules.managerConstants.MAX_LOGIN_REWARD_DAY }, (_, i) => `<option value="${i + 1}" ${i + 1 === state.day ? "selected" : ""}>${i + 1}</option>`).join("")}</select></label>
     <label>Ngày cycle nhiệm vụ <select id="activities-cycle">${Array.from({ length: rules.maxCycleDays }, (_, i) => `<option value="${i + 1}" ${i + 1 === state.cycleDay ? "selected" : ""}>${i + 1}</option>`).join("")}</select></label>
     <label>Tiến độ nhiệm vụ <select id="activities-progress">${[0, 50, 100].map(n => `<option value="${n}" ${n === state.progress ? "selected" : ""}>${n}%</option>`).join("")}</select></label>
+    <details open><summary>Debug progress nhiệm vụ</summary>
+      <label>Nhiệm vụ <select id="activities-debug-mission" style="width:100%"></select></label>
+      <p id="activities-debug-progress" role="status"></p>
+      <label>Mức tăng <input id="activities-debug-step" type="number" min="1" max="9007199254740991" step="1" value="1" required></label>
+      <button type="button" id="activities-debug-add">Tăng progress</button>
+      <button type="button" id="activities-debug-complete">Hoàn thành</button>
+      <button type="button" id="activities-debug-reset">Reset nhiệm vụ</button>
+      <p>Tăng riêng nhiệm vụ đã chọn. Pet Points chỉ cộng khi bấm Nhận. Reset xoá tiến độ, quà nhiệm vụ đã nhận và Pet Points mô phỏng.</p>
+    </details>
     <label>Pet Points <input id="activities-points" type="number" min="0" max="99999" value="${state.points}"></label>
     <label>Lượt quay <input id="activities-spins" type="number" min="0" max="999" value="${state.spins}"></label>
     <label>Thu nhập base / giây (MoneyTime) <input id="activities-income" type="number" min="0" value="${state.income}"></label>
@@ -234,12 +262,27 @@ function initActivitiesPreview(screen, rules, rendered) {
     <details><summary>Kiểm tra nhánh Event (inactive)</summary><p>Tab Event được giữ ẩn theo .ui. Công cụ này chỉ mở nội dung để kiểm tra.</p><label>Ngày Event có thể nhận <input id="activities-event-day" type="number" min="0" max="${rules.managerConstants.MAX_LOGIN_REWARD_EVENT_DAY}" value="${state.eventDay}"></label><button type="button" id="activities-event-preview">Xem nội dung Event</button></details>
     <details><summary>Giới hạn đối chiếu</summary><p>${rules.gaps.map(esc).join("<br>")}</p></details>`;
   panel.onchange = event => {
+    if (event.target.id === "activities-debug-mission") { state.debugMission = event.target.value; state.tab = rules.tabs.find(tab => tab.content === "Missions").index; refresh(); return; }
     const map = { "activities-user": "userType", "activities-rebirth": "rebirth", "activities-day": "day", "activities-cycle": "cycleDay", "activities-event-day": "eventDay", "activities-progress": "progress", "activities-points": "points", "activities-spins": "spins", "activities-income": "income" };
     const key = map[event.target.id]; if (!key) return;
     state[key] = key === "userType" ? event.target.value : Math.max(0, Math.min(Number(event.target.max) || Number.MAX_SAFE_INTEGER, Number(event.target.value) || 0));
+    if (["progress", "userType", "rebirth", "day", "cycleDay"].includes(key)) state.missionProgress.clear();
     if (["userType", "rebirth", "day"].includes(key)) state.claimed.clear();
     if (["userType", "rebirth", "day", "cycleDay"].includes(key)) { state.claimedMissions.clear(); state.claimedMilestones.clear(); state.points = 0; document.getElementById("activities-points").value = 0; }
     refresh();
+  };
+  for (const [id, complete] of [["activities-debug-add", false], ["activities-debug-complete", true]]) panel.querySelector("#" + id).onclick = () => {
+    const row = missionRows().find(row => row.ID === state.debugMission);
+    if (!row || state.claimedMissions.has(row.ID)) return;
+    const input = document.getElementById("activities-debug-step"), step = Number(input.value);
+    if (!complete && (!Number.isSafeInteger(step) || step < 1)) { input.reportValidity(); return; }
+    state.missionProgress.set(row.ID, complete ? Number(row.TargetValue) : Math.min(Number(row.TargetValue), missionProgress(row) + step));
+    state.tab = rules.tabs.find(tab => tab.content === "Missions").index; refresh();
+  };
+  panel.querySelector("#activities-debug-reset").onclick = () => {
+    state.progress = 0; state.missionProgress.clear(); state.claimedMissions.clear(); state.claimedMilestones.clear(); state.points = 0;
+    document.getElementById("activities-progress").value = "0"; document.getElementById("activities-points").value = "0";
+    state.tab = rules.tabs.find(tab => tab.content === "Missions").index; refresh();
   };
   panel.querySelector("#activities-reset").onclick = () => { state.claimed.clear(); state.claimedMissions.clear(); state.claimedMilestones.clear(); state.claimedEvent.clear(); lastResult = ""; refresh(); };
   panel.querySelector("#activities-event-preview").onclick = () => { state.tab = rules.tabs.find(tab => tab.content === "Event").index; refresh(); };
@@ -270,7 +313,7 @@ function initActivitiesPreview(screen, rules, rendered) {
     if (name !== "ClaimButton") return;
     const dailyEl = button.closest("[data-activity-day]"), missionEl = button.closest("[data-activity-mission]"), milestoneEl = button.closest("[data-activity-milestone]"), eventEl = button.closest("[data-activity-event]");
     if (dailyEl) { const day = Number(dailyEl.dataset.activityDay); if (day <= state.day) state.claimed.add(day); }
-    if (missionEl && state.progress === 100 && !state.claimedMissions.has(missionEl.dataset.activityMission)) {
+    if (missionEl && missionClaimable(rules.missions.find(r => r.ID === missionEl.dataset.activityMission))) {
       const row = rules.missions.find(r => r.ID === missionEl.dataset.activityMission); state.claimedMissions.add(row.ID);
       const pointAt = row.RewardType.split("|").findIndex(type => rules.itemTypes[type] === "DMMPoint");
       if (pointAt >= 0) state.points += Number(row.RewardValue.split("|")[pointAt]);

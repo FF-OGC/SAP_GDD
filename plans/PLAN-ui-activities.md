@@ -1,5 +1,16 @@
 # Activities trong UI Preview
 
+## Debug progress (2026-10-31)
+
+Yêu cầu tiếp theo của người dùng: thêm debug kiểm tra tiến độ nhiệm vụ trong
+Preview. Đây là công cụ ở panel mô phỏng, không phải thay đổi thiết kế HUD.
+Chọn nhiệm vụ theo cycle đang xem, tăng riêng theo số đơn vị nhập hoặc hoàn
+thành; clamp ở TargetValue. Preset 0/50/100% xoá override riêng. Nhận thưởng
+chỉ được phép khi nhiệm vụ đủ tiến độ và chưa nhận, Pet Points cộng một lần.
+Reset nhiệm vụ xoá tiến độ/claim/milestone/points mô phỏng; đổi cycle/profile
+cũng xoá override riêng. Giữ state khi đổi ngôn ngữ hoặc rời rồi mở lại màn.
+Kiểm bằng `node tools/audit-ui-activities-progress.mjs http://localhost:8080`.
+
 Yêu cầu ngày 2026-10-31: adapt màn hình Activities đã có trong game, tương tự
 Collection. Đích là UI Preview. Không tạo Proposal; các Proposal Collection
 đã chỉnh sửa (lịch sử `6700b5f`, `c1bb1bc`) được giữ nguyên baseline và patch.
