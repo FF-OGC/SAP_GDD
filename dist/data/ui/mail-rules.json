@@ -1,0 +1,612 @@
+{
+  "sourceCommit": "471a62bb8a55ad735cfeebf5a0a315730df90daa",
+  "uiSha256": "3733d2ee9b76f6abc9601fc7f03a450d71d8143d13bdde160452c9f99f04cd24",
+  "sourceFiles": [
+    {
+      "file": "Assets/Scripts/HUDs/HudMail.fcg",
+      "sha256": "12d7df3b72360a4a63f882ce90a9d2e6fa72c479087a89ada18ee0929d286cbe"
+    },
+    {
+      "file": "Assets/Scripts/Manager/MailsManager.fcg",
+      "sha256": "8671781558743425f54e2ae231ec6cb79659f83443be3b95d33926ebac91963e"
+    },
+    {
+      "file": "Assets/Scripts/Configs/MailConfigs.fcg",
+      "sha256": "c313554b773aa781e5c6844ef4368af059bc175ca7fafafb47e12b5b729c1289"
+    },
+    {
+      "file": "Assets/Scripts/Configs/ItemConfigs.fcg",
+      "sha256": "b1414e65a378db22c96858e53485a60fed2b96a6bdfa56afbb1a34b4369ee135"
+    },
+    {
+      "file": "Assets/Scripts/Configs/PetConfigs.fcg",
+      "sha256": "b8b9da79606e10c84027fefcb364682b3d97cc82b4fd534d83860125f528d19c"
+    },
+    {
+      "file": "Assets/Scripts/Utils/UIUtils.fcg",
+      "sha256": "e97b481d8ac790acf5651808c7421d4393c6be7d7264154fad95cfeee15ebcfe"
+    },
+    {
+      "file": "Assets/Scripts/Utils/BigNumberHandler.fcg",
+      "sha256": "404cdbc68440f4654a085a7adc2cbc5ae462b008fd3cac7397409bca1249f46e"
+    },
+    {
+      "file": "Assets/CSV/MailDetails.csv",
+      "sha256": "1d6e432a487b2faafbd8df429de4051d913a8d3a3710eeb4c1cba20e32f5534e"
+    },
+    {
+      "file": "Assets/CSV/Pet.csv",
+      "sha256": "f3cf8ccfe62493c72bc05195e90c83c8bc886cb0c7aa7bf2cf2a53b7e054488a"
+    },
+    {
+      "file": "Assets/CSV/Mutagen.csv",
+      "sha256": "ddf349123d94d80e4d04c65c166adf9f152b15225875ca276f624f51e93e5b71"
+    },
+    {
+      "file": "Assets/CSV/WeatherGen.csv",
+      "sha256": "5e93cb75758105453c08750976a150c6ae8a086b44cbed6f961ad49e91edd644"
+    },
+    {
+      "file": "Assets/CSV/mutation.csv",
+      "sha256": "8c496bb4a5e197ece437c9e7334c2e75e5ff5154714e3c7a8e6a29784077141e"
+    },
+    {
+      "file": "Assets/CSV/weatherEffects.csv",
+      "sha256": "27525f5578e82fd8eedd8d643f12b83a0ff9fbe5947447199d4590de0ad9fd3e"
+    },
+    {
+      "file": "ProjectSettings/ResourceRegisteration.asset",
+      "sha256": "9166b4e138c086e0cb2c13b2bb2cc205fc7c682fcb3e0bd23e0f9e0fc0f2a01b"
+    }
+  ],
+  "widgetIds": {
+    "MailTitlesLayout": "q2GZKBfr",
+    "NoticeContent": "jTRMPcUh",
+    "SystemContent": "cL0d6798",
+    "RewardsLayout": "m194T2wW",
+    "Url": "xuGJ9sQx",
+    "TabsLayout": "R4hxxwTY",
+    "MailContent": "rmYYbyNa",
+    "ClaimButton": "vtvvCqgN",
+    "NextVersionLabel": "Ixqea0qN",
+    "MailsCount": "XtZhvpOH"
+  },
+  "constants": {
+    "MIN_GIFT_MONEY_TIME": 30100,
+    "MAX_GIFT_MONEY_TIME": 80020,
+    "DEFAULT_TEXT_COLOR": "#1F64C4",
+    "ACTIVE_TEXT_COLOR": "#FFFFFF",
+    "MAX_NOTICE_MAILS": 3,
+    "_SelectingMailIndex": 0,
+    "MAX_MAILS": 30,
+    "MAX_VALID_DATE": 7
+  },
+  "notices": [
+    "HUD_MAIL_TITLE_NOTICE_CONTENT_NEW",
+    "HUD_MAIL_TITLE_NOTICE_CONTENT_OLD_1",
+    "HUD_MAIL_TITLE_NOTICE_CONTENT_OLD_2"
+  ],
+  "contents": [
+    "HUD_MAIL_NOTICE_CONTENT_NEW",
+    "HUD_MAIL_NOTICE_CONTENT_OLD_1",
+    "HUD_MAIL_NOTICE_CONTENT_OLD_2"
+  ],
+  "details": [
+    {
+      "ID": "1",
+      "Title": "HUD_MAIL_TITLE_SYSTEM",
+      "Content": "HUD_MAIL_CONTENT_SYSTEM"
+    },
+    {
+      "ID": "2",
+      "Title": "HUD_MAIL_TITLE_LOGIN",
+      "Content": "HUD_MAIL_CONTENT_LOGIN"
+    },
+    {
+      "ID": "3",
+      "Title": "HUD_MAIL_TITLE_EVENT",
+      "Content": "HUD_MAIL_CONTENT_EVENT"
+    },
+    {
+      "ID": "4",
+      "Title": "HUD_MAIL_TITLE_COMPENSATE",
+      "Content": "HUD_MAIL_CONTENT_COMPENSATE"
+    },
+    {
+      "ID": "5",
+      "Title": "HUD_MAIL_TITLE_SHOP",
+      "Content": "HUD_MAIL_CONTENT_SHOP"
+    }
+  ],
+  "contactUrl": "facebook.com/groups/stealapetff",
+  "petMailTypes": [
+    "Pet",
+    "RandomPet"
+  ],
+  "spriteKeys": {
+    "NewsIcon": "Assets/Sprites/Icons/NewsIcon.png",
+    "MailsIcon": "Assets/Sprites/Icons/MailsIcon.png",
+    "SelectTabBG": "Assets/Sprites/NewAssets/SelectTabBG.png",
+    "NormalTabBG": "Assets/Sprites/NewAssets/NormalTabBG.png",
+    "LongSelectTabBG": "Assets/Sprites/NewAssets/LongSelectTabBG.png",
+    "PetCoinIcon": "Assets/Sprites/Icons/PetCoinIcon.png",
+    "DustIcon": "Assets/Sprites/Icons/DustIconTemp.png",
+    "SpinIcon": "Assets/Sprites/Icons/SpinIcon.png",
+    "SummonCOMMON": "Assets/Sprites/Summon/COMMON.png",
+    "MoneyIcon": "Assets/Sprites/Icons/MoneyIcon.png",
+    "CHICK": "Assets/Sprites/Pets/CHICK.png",
+    "Golden": "Assets/Sprites/Mutations/Golden.png",
+    "Soaked": "Assets/Sprites/Mutations/Rainy.png",
+    "DuplicateTicket": "Assets/Sprites/Icons/DuplicateTicket.png",
+    "RandomPet": "Assets/Sprites/Icons/RandomPet.png"
+  },
+  "itemIcons": {
+    "Money": "MoneyIcon",
+    "PetCoin": "PetCoinIcon",
+    "Dust": "DustIcon",
+    "MoneyTime": "MoneyIcon",
+    "Spin": "SpinIcon",
+    "DMMPoint": "DMMPointIcon",
+    "RandomSecretPool": "RandomPet",
+    "Meteorite": "GemstoneIcon",
+    "Mole": "MoleGemIcon",
+    "Ball1": "BallGemIcon",
+    "Ball2": "GoldenBootsIcon",
+    "RarityGem": "RarityContractGem",
+    "DuplicateTicket": "DuplicateTicket"
+  },
+  "itemRarities": {
+    "Money": "RARE",
+    "Dust": "EPIC",
+    "PetCoin": "LEGENDARY",
+    "Meteorite": "EPIC",
+    "MoneyTime": "RARE",
+    "Spin": "RARE",
+    "Mutagen": "LEGENDARY",
+    "DMMPoint": "EPIC",
+    "WeatherGen": "LEGENDARY",
+    "DuplicateTicket": "MYTHIC"
+  },
+  "rarityColors": {
+    "COMMON": "#8CFF91",
+    "RARE": "#4CC8FE",
+    "EPIC": "#EA70FF",
+    "LEGENDARY": "#FED868",
+    "MYTHIC": "#FF6F6F",
+    "APEX": "#FF9F43",
+    "LIMITED": "#B3CA1F"
+  },
+  "suffixes": {
+    "1": "",
+    "2": "k",
+    "3": "m",
+    "4": "B",
+    "5": "T",
+    "6": "Q",
+    "7": "Qi",
+    "8": "Sx",
+    "9": "Sp",
+    "10": "Oc",
+    "11": "No",
+    "12": "De",
+    "13": "Ud",
+    "14": "Dd",
+    "15": "Td",
+    "16": "Qad",
+    "17": "Qid",
+    "18": "Sxd",
+    "19": "Spd",
+    "20": "Ocd",
+    "21": "Nod",
+    "22": "Vg",
+    "23": "Uvg",
+    "24": "Dvg",
+    "25": "Tvg",
+    "26": "Qavg",
+    "27": "Qivg",
+    "28": "Sxvg",
+    "29": "Spvg",
+    "30": "Ocvg",
+    "31": "Novg",
+    "32": "Tg",
+    "33": "Utg",
+    "34": "Dtg",
+    "35": "Ttg",
+    "36": "Qatg",
+    "37": "Qitg",
+    "38": "Sxtg",
+    "39": "Sptg",
+    "40": "Octg",
+    "41": "Notg",
+    "42": "Qag",
+    "43": "Uqag",
+    "44": "Dqag",
+    "45": "Tqag",
+    "46": "Qaqag",
+    "47": "Qiqag",
+    "48": "Sxqag",
+    "49": "Spqag",
+    "50": "Ocqag"
+  },
+  "bindings": {
+    "InitMailHUD": "Assets/Scripts/HUDs/HudMail.fcg:56",
+    "GetHUDWidget": "Assets/Scripts/HUDs/HudMail.fcg:97",
+    "ShowMailHUD": "Assets/Scripts/HUDs/HudMail.fcg:101",
+    "HideMailHUD": "Assets/Scripts/HUDs/HudMail.fcg:107",
+    "IsShowing": "Assets/Scripts/HUDs/HudMail.fcg:115",
+    "OpenMail": "Assets/Scripts/HUDs/HudMail.fcg:123",
+    "CloseMail": "Assets/Scripts/HUDs/HudMail.fcg:136",
+    "SwitchMailTab": "Assets/Scripts/HUDs/HudMail.fcg:151",
+    "UpdateTab": "Assets/Scripts/HUDs/HudMail.fcg:176",
+    "RefreshMailTabs": "Assets/Scripts/HUDs/HudMail.fcg:200",
+    "RefreshMailTitles": "Assets/Scripts/HUDs/HudMail.fcg:215",
+    "UpdateNoticeMails": "Assets/Scripts/HUDs/HudMail.fcg:262",
+    "UpdateNoticeTitles": "Assets/Scripts/HUDs/HudMail.fcg:271",
+    "UpdateNoticeContent": "Assets/Scripts/HUDs/HudMail.fcg:279",
+    "UpdateSystemMails": "Assets/Scripts/HUDs/HudMail.fcg:288",
+    "UpdateSystemTitles": "Assets/Scripts/HUDs/HudMail.fcg:298",
+    "UpdateSystemContent": "Assets/Scripts/HUDs/HudMail.fcg:326",
+    "UpdateSystemRewards": "Assets/Scripts/HUDs/HudMail.fcg:351",
+    "HandleSwitchMail": "Assets/Scripts/HUDs/HudMail.fcg:383",
+    "HandleClaimMail": "Assets/Scripts/HUDs/HudMail.fcg:395"
+  },
+  "runtimeAssignments": [
+    {
+      "target": "_MailHUD",
+      "property": "Depth",
+      "expression": "HudDepth.Mails",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:63"
+    },
+    {
+      "target": "contactInfoLabel",
+      "property": "ActiveText",
+      "expression": "\"facebook.com/groups/stealapetff\"",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:85"
+    },
+    {
+      "target": "_MailHUD",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:104"
+    },
+    {
+      "target": "_MailHUD",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:112"
+    },
+    {
+      "target": "_MailContentLabel",
+      "property": "Content",
+      "expression": "LocString{\"HUD_LOADING\", {}}",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:169"
+    },
+    {
+      "target": "tabButton",
+      "property": "SpriteName",
+      "expression": "EResSprite.SelectTabBG",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:185"
+    },
+    {
+      "target": "tabLabel",
+      "property": "Color",
+      "expression": "ACTIVE_TEXT_COLOR",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:186"
+    },
+    {
+      "target": "tabButton",
+      "property": "SpriteName",
+      "expression": "EResSprite.NormalTabBG",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:188"
+    },
+    {
+      "target": "tabLabel",
+      "property": "Color",
+      "expression": "DEFAULT_TEXT_COLOR",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:189"
+    },
+    {
+      "target": "contentWidget",
+      "property": "IsVisible",
+      "expression": "isActive",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:193"
+    },
+    {
+      "target": "alertNoticeIcon",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:206"
+    },
+    {
+      "target": "alertSystemIcon",
+      "property": "IsVisible",
+      "expression": "isShowSystemIcon",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:210"
+    },
+    {
+      "target": "mailTitle",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:232"
+    },
+    {
+      "target": "mailTitle",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:236"
+    },
+    {
+      "target": "icon",
+      "property": "SpriteName",
+      "expression": "MAIL_ICON[_CurrentMailTab]",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:237"
+    },
+    {
+      "target": "timeLabel",
+      "property": "IsVisible",
+      "expression": "(_CurrentMailTab == MailKey.MailTab_System)",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:238"
+    },
+    {
+      "target": "expiredIcon",
+      "property": "IsVisible",
+      "expression": "(_CurrentMailTab == MailKey.MailTab_System)",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:239"
+    },
+    {
+      "target": "mailTitle",
+      "property": "SpriteName",
+      "expression": "EResSprite.NormalTabBG",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:241"
+    },
+    {
+      "target": "titleLabel",
+      "property": "Color",
+      "expression": "DEFAULT_TEXT_COLOR",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:242"
+    },
+    {
+      "target": "timeLabel",
+      "property": "Color",
+      "expression": "DEFAULT_TEXT_COLOR",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:243"
+    },
+    {
+      "target": "expiredIcon",
+      "property": "Color",
+      "expression": "DEFAULT_TEXT_COLOR",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:244"
+    },
+    {
+      "target": "currentMailTitle",
+      "property": "SpriteName",
+      "expression": "EResSprite.LongSelectTabBG",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:252"
+    },
+    {
+      "target": "currentTitleLabel",
+      "property": "Color",
+      "expression": "ACTIVE_TEXT_COLOR",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:253"
+    },
+    {
+      "target": "currentTimeLabel",
+      "property": "Color",
+      "expression": "ACTIVE_TEXT_COLOR",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:254"
+    },
+    {
+      "target": "currentExpiredIcon",
+      "property": "Color",
+      "expression": "ACTIVE_TEXT_COLOR",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:255"
+    },
+    {
+      "target": "_MailsCount",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:265"
+    },
+    {
+      "target": "titleLabel",
+      "property": "Content",
+      "expression": "MAIL_NOTICE_TITLE[mailIndex]",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:275"
+    },
+    {
+      "target": "_MailContentLabel",
+      "property": "Content",
+      "expression": "MAIL_NOTICE_CONTENT[_SelectingMailIndex]",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:280"
+    },
+    {
+      "target": "_NextVersionLabel",
+      "property": "IsVisible",
+      "expression": "(_SelectingMailIndex == 0)",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:281"
+    },
+    {
+      "target": "_MailsCount",
+      "property": "Content",
+      "expression": "LocString{\"HUD_MAIL_COUNT\", {MailsManager.GetPlayerMailsCount(thisEntity<Player>.UserUID), MailsManager.MAX_MAILS}}",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:292"
+    },
+    {
+      "target": "_MailsCount",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:293"
+    },
+    {
+      "target": "mailTitle",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:315"
+    },
+    {
+      "target": "timeLabel",
+      "property": "Content",
+      "expression": "LocString{\"HUD_REWARD_DATE\", {MailsManager.GetExpireDatesLeft(playerUID, mailIndex)}}",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:316"
+    },
+    {
+      "target": "mailTitleLabel",
+      "property": "Content",
+      "expression": "LocString{MailConfigs.GetGiftNameById(mail[DataKey.Mail_Id] as int), {}}",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:319"
+    },
+    {
+      "target": "mailTitleLabel",
+      "property": "Content",
+      "expression": "MailConfigs.GetMailTitleById(mail[DataKey.Mail_Id] as int)",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:321"
+    },
+    {
+      "target": "_MailContentLabel",
+      "property": "Content",
+      "expression": "LocString{\"HUD_MAIL_NO_REWARD\", {}}",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:330"
+    },
+    {
+      "target": "_MailRewardsLayout",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:331"
+    },
+    {
+      "target": "_ClaimButton",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:332"
+    },
+    {
+      "target": "_MailContentLabel",
+      "property": "Content",
+      "expression": "mailContent",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:345"
+    },
+    {
+      "target": "_ClaimButton",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:346"
+    },
+    {
+      "target": "rewardWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:358"
+    },
+    {
+      "target": "rewardWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:373"
+    },
+    {
+      "target": "_MailRewardsLayout",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudMail.fcg:376"
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "currency",
+      "detailId": "1",
+      "daysLeft": 7,
+      "rewards": [
+        {
+          "type": "PetCoin",
+          "amount": 100
+        },
+        {
+          "type": "Dust",
+          "amount": 50
+        },
+        {
+          "type": "Spin",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "random",
+      "detailId": "3",
+      "daysLeft": 1,
+      "rewards": [
+        {
+          "type": "RandomPet",
+          "rarity": "COMMON",
+          "amount": 1
+        },
+        {
+          "type": "Money",
+          "amount": 30100
+        }
+      ]
+    },
+    {
+      "id": "login",
+      "detailId": "2",
+      "daysLeft": 3,
+      "rewards": []
+    },
+    {
+      "id": "pet",
+      "detailId": "5",
+      "daysLeft": 5,
+      "rewards": [
+        {
+          "type": "Pet",
+          "amount": 1,
+          "petId": "1",
+          "icon": "CHICK",
+          "rarity": "COMMON",
+          "mutationIcon": "Golden",
+          "weatherIcons": [
+            "Soaked"
+          ],
+          "badge": null
+        }
+      ]
+    },
+    {
+      "id": "items",
+      "detailId": "3",
+      "daysLeft": 4,
+      "rewards": [
+        {
+          "type": "Mutagen",
+          "amount": 1,
+          "icon": "Golden"
+        },
+        {
+          "type": "WeatherGen",
+          "amount": 1,
+          "icon": "Soaked"
+        },
+        {
+          "type": "DuplicateTicket",
+          "amount": 2
+        },
+        {
+          "type": "RandomSecretPool",
+          "amount": 1
+        },
+        {
+          "type": "MoneyTime",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "fixturePolicy": "synthetic QA data; not server mail or giftcode config; pet fixture uses first road pet, whose obtain badge is nil",
+  "gaps": [
+    "No engine screenshots; font/shader/scaler, input, hit order and scroll inertia unverified",
+    "Server/database gating, reward granting and tooltip effects are not executed; loading switch is an isolated web scenario",
+    "Config gift mail names are unavailable under current giftcode projection; never export operational Name",
+    "Pet fixture covers one road pet with mutation/weather; other obtain badges are not exercised",
+    "Source keeps selected index after claim, including out-of-range selection after last-item claim"
+  ]
+}

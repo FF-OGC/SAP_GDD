@@ -2,6 +2,20 @@
 
 Private design dashboard generated from the checked-in StealAPet config snapshot and source references.
 
+## Mail · UI Preview
+
+Mở `#uipreview/mail` hoặc chọn Mail cạnh Collection/Activities/Shop.
+Mail dựng từ 128 entity của project: hai tab Thông báo/Hệ thống, chọn thư,
+nội dung localization, phần thưởng và nhận thử. Panel có hộp thư trống,
+5 thư thử hoặc 30 thư; dữ liệu thử tổng hợp, không lấy hộp thư server.
+Nhận thử chỉ cập nhật RAM, có kiểm ô trống cho thưởng pet.
+
+Sync riêng: `node tools/sync-ui-preview.mjs --project-root "C:\_Code\craftland\StealAPet" --screen mail`.
+Audit: `node tools/audit-ui-mail.mjs --project-root "C:\_Code\craftland\StealAPet"`.
+Đã kiểm desktop/mobile và tương tác; 31/36 sprite có PNG, 5 sprite thiếu
+được ghi trong manifest. Chưa có ảnh game để xác nhận pixel parity.
+Xem [kế hoạch và nghiệm thu](plans/PLAN-ui-mail.md).
+
 ## Shop · UI Preview
 
 Mở `#uipreview/shop` hoặc chọn Shop cạnh Collection/Activities. Pipeline đọc

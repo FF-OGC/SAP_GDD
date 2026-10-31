@@ -24,7 +24,9 @@
     {
       "id": "mail",
       "name": "Mail",
-      "status": "planned"
+      "status": "ready",
+      "data": "./data/ui/mail.json",
+      "rules": "./data/ui/mail-rules.json"
     },
     {
       "id": "mission",

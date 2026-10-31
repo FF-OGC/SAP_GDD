@@ -1,0 +1,122 @@
+{
+  "source": "Assets/Localization/key.csv",
+  "entries": {
+    "PROMPT_FULL_SLOT": {
+      "en": "Your base is full!",
+      "vi": "Bạn đã hết vị trí trống!"
+    },
+    "HUD_MAIL_TITLE": {
+      "en": "MAILS",
+      "vi": "HỘP THƯ"
+    },
+    "HUD_MAIL_NOTICE": {
+      "en": "NOTICE",
+      "vi": "THÔNG BÁO"
+    },
+    "HUD_MAIL_SYSTEM": {
+      "en": "SYSTEM",
+      "vi": "HỆ THỐNG"
+    },
+    "HUD_MAIL_NO_REWARD": {
+      "en": "You don't have any gifts to receive yet.",
+      "vi": "Bạn chưa có quà nào để nhận cả."
+    },
+    "HUD_MAIL_TITLE_NOTICE_CONTENT_NEW": {
+      "en": "November 5th Update",
+      "vi": "Cập Nhật 05/11"
+    },
+    "HUD_MAIL_TITLE_NOTICE_CONTENT_OLD_1": {
+      "en": "October 22nd Update",
+      "vi": "Cập Nhật 22/10"
+    },
+    "HUD_MAIL_TITLE_NOTICE_CONTENT_OLD_2": {
+      "en": "October 8th Update",
+      "vi": "Cập Nhật 08/10"
+    },
+    "HUD_MAIL_NEXT_VERSION": {
+      "en": "Next update arrives on November 19th!",
+      "vi": "Phiên bản tiếp theo sẽ ra mắt vào ngày 19/11!"
+    },
+    "HUD_MAIL_NOTICE_CONTENT_NEW": {
+      "en": "[b]NEW UPDATE ON NOVEMBER 5TH[/b]\r\n[b]============[/b]\r\n\r\n• [NEW] Pet Collection Rewards: Expand your collection with different pets, rarities, mutations, and weather variants to unlock exciting milestone rewards!\r\n• [RETURN] Meteorite Event is back! Join the event and earn exclusive rewards.\r\n• [UPDATE] Dig Event: Scanning is now FREE! You only need to pay when purchasing a pet.\r\n• [UPDATE] Guaranteed Top Prizes: Dig, Fishing, and Lucky Box events now feature a guaranteed reward system, giving you a better chance to claim top prizes!\r\n• [NEW] Halloween Pets: SHARK, HUSKY, PENGUIN, ALLIGATOR, OCTOPUS, MUDSKIPPER, and HORNED LIZARD have arrived!",
+      "vi": "[b]CẬP NHẬT NGÀY 05/11[/b]\r\n[b]============[/b]\r\n\r\n• [MỚI] Phần Thưởng Bộ Sưu Tập Thú Cưng: Mở rộng bộ sưu tập với nhiều thú cưng, độ hiếm, đột biến và biến thể thời tiết khác nhau để mở khóa những phần thưởng hấp dẫn theo từng cột mốc!\r\n• [TRỞ LẠI] Sự Kiện Thiên Thạch đã quay trở lại! Tham gia ngay để nhận những phần thưởng độc quyền.\r\n• [CẬP NHẬT] Sự Kiện Đào Kho Báu: Giờ đây bạn có thể Quét hoàn toàn MIỄN PHÍ! Chỉ cần trả phí khi mua thú cưng.\r\n• [CẬP NHẬT] Đảm Bảo Phần Thưởng Cao Nhất: Sự Kiện Đào, Câu Cá và Lucky Box giờ đây có cơ chế đảm bảo nhận thưởng, giúp bạn có cơ hội sở hữu những phần thưởng giá trị nhất!\r\n• [MỚI] Thú Cưng Halloween: CÁ MẬP, CHÓ HUSKY, CHIM CÁNH CỤT, CÁ SẤU, BẠCH TUỘC, CÁ THÒI LÒI và THẰN LẰN CÓ SỪNG đã xuất hiện!"
+    },
+    "HUD_MAIL_NOTICE_CONTENT_OLD_1": {
+      "en": "[b]NEW UPDATE ON OCTOBER 22ND[/b]\r\n[b]============[/b]\r\n\r\n• [RETURN] Rarity Hunt Event is back! Join the event and hunt for rare pets to earn exciting rewards.\r\n• [UPDATE] Chat System: Improved the chat system for a smoother communication experience.\r\n• [NEW] Halloween Decorations: The Halloween spirit has arrived! Explore the map with spooky Halloween-themed decorations.\r\n• [NEW] 8 Halloween APEX Pets: CHICK, BULL, WILDBOAR, GORILLA, GIRAFFE, JELLYFISH, SQUID, and PENGUIN have arrived!\r\n• [NEW] Weather Effect: AURORA - Experience the magical glow of the Northern Lights!",
+      "vi": "[b]CẬP NHẬT NGÀY 22/10[/b]\r\n[b]============[/b]\r\n\r\n• [TRỞ LẠI] Sự Kiện Săn Thú Cưng Hiếm đã quay trở lại! Tham gia săn tìm những thú cưng quý hiếm để nhận nhiều phần thưởng hấp dẫn.\r\n• [CẬP NHẬT] Hệ Thống Chat: Cải thiện hệ thống trò chuyện, giúp người chơi giao tiếp thuận tiện và mượt mà hơn.\r\n• [MỚI] Trang Trí Halloween: Không khí Halloween đã đến! Khám phá bản đồ với những đồ trang trí Halloween ma mị và độc đáo.\r\n• [MỚI] 8 Thú Cưng TỐI THƯỢNG Halloween: GÀ CON, BÒ ĐỰC, LỢN RỪNG, KHỈ ĐỘT, HƯƠU CAO CỔ, SỨA, MỰC và CHIM CÁNH CỤT đã xuất hiện!\r\n• [MỚI] Hiệu Ứng Thời Tiết: CỰC QUANG - Chiêm ngưỡng bầu trời rực rỡ với những dải ánh sáng huyền ảo!"
+    },
+    "HUD_MAIL_NOTICE_CONTENT_OLD_2": {
+      "en": "[b]NEW UPDATE ON OCTOBER 8TH[/b]\r\n[b]============[/b]\r\n\r\n• [UPDATE] UI: Refreshed the UI for a smoother experience.\r\n• [NEW] Returning-player catch-up rewards: Play to earn extra rewards as you get back into the game.\r\n• [UPDATE] The Shop now sells pets needed for base upgrades.\r\n• [UPDATE] Improved Weather pet spawns.\r\n• [UPDATE] OTTER is now obtainable by fusion.",
+      "vi": "[b]CẬP NHẬT NGÀY 08/10[/b]\r\n[b]============[/b]\r\n\r\n• [CẬP NHẬT] Giao diện Mới: Làm mới giao diện để mang đến trải nghiệm mượt mà hơn.\r\n• [MỚI] Thưởng hỗ trợ người chơi quay trở lại: Chơi để nhận thêm phần thưởng khi bạn trở lại Phi vụ Trộm Pet.\r\n• [CẬP NHẬT] Cửa Hàng hiện bán thú cưng cần thiết để nâng cấp căn cứ.\r\n• [CẬP NHẬT] Tối ưu cơ chế xuất hiện Thú Cưng Thời Tiết.\r\n• [CẬP NHẬT] Người chơi giờ có thể dung hợp để nhận thú cưng: RÁI CÁ."
+    },
+    "HUD_MAIL_DELETE_ALL": {
+      "en": "DELETE ALL",
+      "vi": "XÓA TẤT CẢ"
+    },
+    "HUD_MAIL_CLAIM_ALL": {
+      "en": "CLAIM ALL",
+      "vi": "NHẬN TẤT CẢ"
+    },
+    "HUD_MAIL_CLAIM": {
+      "en": "CLAIM",
+      "vi": "NHẬN"
+    },
+    "HUD_MAIL_COUNT": {
+      "en": "Mails: {0}/{1}",
+      "vi": "Thư: {0}/{1}"
+    },
+    "HUD_MAIL_TITLE_SYSTEM": {
+      "en": "System Reward",
+      "vi": "Móp có quà cho bạn nè"
+    },
+    "HUD_MAIL_TITLE_LOGIN": {
+      "en": "Login Reward",
+      "vi": "Quà Đăng Nhập"
+    },
+    "HUD_MAIL_TITLE_EVENT": {
+      "en": "Event Reward",
+      "vi": "Quà Sự Kiện"
+    },
+    "HUD_MAIL_TITLE_COMPENSATE": {
+      "en": "Compensation",
+      "vi": "Quà Đền Bù"
+    },
+    "HUD_MAIL_TITLE_SHOP": {
+      "en": "Shop Purchase",
+      "vi": "Hàng Đã Mua"
+    },
+    "HUD_MAIL_CONTENT_SYSTEM": {
+      "en": "A special reward from map's owner!",
+      "vi": "Móp có quà cho bạn nè"
+    },
+    "HUD_MAIL_CONTENT_LOGIN": {
+      "en": "Here's your daily login reward!",
+      "vi": "Cảm ơn bạn đã đăng nhập! Hãy nhận quà của mình nhé."
+    },
+    "HUD_MAIL_CONTENT_EVENT": {
+      "en": "Great job! You've earned an event reward.",
+      "vi": "Tuyệt vời! Bạn đã nhận được quà từ sự kiện."
+    },
+    "HUD_MAIL_CONTENT_COMPENSATE": {
+      "en": "Please accept this compensation reward.",
+      "vi": "Cảm ơn bạn đã kiên nhẫn. Hãy nhận món quà này nhé!"
+    },
+    "HUD_MAIL_CONTENT_SHOP": {
+      "en": "Here are the items you purchased from the shop",
+      "vi": "Đây là các vật phẩm bạn đã mua từ cửa hàng"
+    },
+    "HUD_REWARD_NOT_RECEIVE": {
+      "en": "You have an unclaimed reward",
+      "vi": "Bạn có một phần quà chưa nhận"
+    },
+    "HUD_REWARD_DATE": {
+      "en": "{0} day",
+      "vi": "{0} ngày"
+    },
+    "HUD_LOADING": {
+      "en": "Loading data...",
+      "vi": "Đang tải dữ liệu..."
+    }
+  },
+  "missing": []
+}

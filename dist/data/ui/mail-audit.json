@@ -1,0 +1,207 @@
+{
+  "source": "pass",
+  "sourceCommit": "471a62bb8a55ad735cfeebf5a0a315730df90daa",
+  "entities": 128,
+  "sprites": 36,
+  "missing": [
+    "lib://fftextures/WorkshopIconLibrary/FF_UI_Online_Workday.png",
+    "Assets/Sprites/Facebook.png",
+    "Assets/Sprites/SquareRounded100.png",
+    "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+    "Assets/Sprites/Mutations/Rainy.png"
+  ],
+  "unsupported": [
+    {
+      "path": "Mail/CloseMailButton",
+      "id": "tcxi9Gs7",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/Title/CloseButton",
+      "id": "k7kIdtmF",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/BG/DecorLeft",
+      "id": "FkPAX3Np",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/BG/DecorRight",
+      "id": "rXPbJjEX",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/TabsLayout/TabNoticeButton",
+      "id": "g3Vcw6Xu",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/TabsLayout/TabSystemButton",
+      "id": "nKMcL6zP",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailsScrollView/MailTitlesLayout/Mail",
+      "id": "hQ6w1xYk",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailsScrollView/MailTitlesLayout/Mail (1)",
+      "id": "EecbN60R",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailsScrollView/MailTitlesLayout/Mail (2)",
+      "id": "wAXfhh5D",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailsScrollView",
+      "id": "tB4FV72e",
+      "fields": [
+        "propsData.panel",
+        "propsData.scrollView"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailDetails/Scroll View",
+      "id": "nZeBAED8",
+      "fields": [
+        "propsData.panel",
+        "propsData.scrollView"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailDetails/NoticeContent/ContactInfo/Url",
+      "id": "xuGJ9sQx",
+      "fields": [
+        "text.wordWrap",
+        "text.maxLength",
+        "text.placeholder",
+        "propsData.input"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail/TooltipButton",
+      "id": "ePJemtl4",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (1)/TooltipButton",
+      "id": "gN4iWU8a",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (2)/TooltipButton",
+      "id": "fRaNg1zk",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (3)/TooltipButton",
+      "id": "HZD2tZ8e",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (4)/TooltipButton",
+      "id": "yGIAceAF",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailDetails/SystemContent/OtherButtons/DeleteAllButton",
+      "id": "Idb8I5fP",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailDetails/SystemContent/OtherButtons/ClaimAllButton",
+      "id": "yr38IAEK",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailDetails/SystemContent/OtherButtons/ClaimButton",
+      "id": "vtvvCqgN",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton",
+      "id": "xKycSvPp",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Mail",
+      "id": "NoYPqULb",
+      "fields": [
+        "ecaScripts"
+      ]
+    }
+  ],
+  "gaps": [
+    "No engine screenshots; font/shader/scaler, input, hit order and scroll inertia unverified",
+    "Server/database gating, reward granting and tooltip effects are not executed; loading switch is an isolated web scenario",
+    "Config gift mail names are unavailable under current giftcode projection; never export operational Name",
+    "Pet fixture covers one road pet with mutation/weather; other obtain badges are not exercised",
+    "Source keeps selected index after claim, including out-of-range selection after last-item claim"
+  ],
+  "browser": "see mail-browser-audit.json and plans/PLAN-ui-mail.md for CUA checks",
+  "engineParity": "unverified; no engine screenshots"
+}

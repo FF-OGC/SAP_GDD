@@ -1,0 +1,1206 @@
+{
+  "sprites": [
+    {
+      "key": "Assets/Sprites/Backgrounds/DarkBG.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Backgrounds/DarkBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Backgrounds/DarkBG.png"
+      ],
+      "fileId": "amqbaf0ix1n-mincvgtv-gm0n5ept0bj",
+      "output": "./assets/ui-sprites/mail/Backgrounds__DarkBG.png",
+      "missing": false,
+      "references": [
+        "Mail/CloseMailButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 12,
+        "right": 12,
+        "top": 12,
+        "bottom": 12
+      },
+      "width": 40,
+      "height": 40
+    },
+    {
+      "key": "Assets/Sprites/Backgrounds/BG.png",
+      "declaredKey": "Assets/Sprites/Backgrounds/BG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Backgrounds/BG.png"
+      ],
+      "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+      "output": "./assets/ui-sprites/mail/Backgrounds__BG.png",
+      "missing": false,
+      "references": [
+        "Mail/PreventCloseMailButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 8,
+        "right": 8,
+        "top": 8,
+        "bottom": 8
+      },
+      "width": 26,
+      "height": 26
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/TitleBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/TitleBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/TitleBG.png"
+      ],
+      "fileId": "zkfpx1yzvtc-mu6xhq5y-nv8ey9h3kfj",
+      "output": "./assets/ui-sprites/mail/NewAssets__TitleBG.png",
+      "missing": false,
+      "references": [
+        "Mail/PreventCloseMailButton/Title"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 113,
+        "right": 12,
+        "top": 48,
+        "bottom": 18
+      },
+      "width": 752,
+      "height": 126
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/CloseButton.png",
+      "declaredKey": "Assets/Sprites/NewAssets/CloseButton.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/CloseButton.png"
+      ],
+      "fileId": "ub3ok34eqnr-mu6xhog5-q0tv8gncefb",
+      "output": "./assets/ui-sprites/mail/NewAssets__CloseButton.png",
+      "missing": false,
+      "references": [
+        "Mail/PreventCloseMailButton/Title/CloseButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 38,
+      "height": 40
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/ContainerBG.png",
+      "declaredKey": "Assets/_Test/NewUI/Assets/Img_bg02_BG.png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Img_bg02_BG.png"
+      ],
+      "fileId": "gszc833692p-mu6veyfp-g1yynwpple7",
+      "output": "./assets/ui-sprites/mail/NewAssets__ContainerBG.png",
+      "missing": false,
+      "references": [
+        "Mail/PreventCloseMailButton/BG"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 34,
+        "right": 33,
+        "top": 32,
+        "bottom": 39
+      },
+      "width": 106,
+      "height": 118
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/DecorateIcon1.png",
+      "declaredKey": "Assets/_Test/NewUI/Assets/Img_decorate01.png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Img_decorate01.png"
+      ],
+      "fileId": "ouansc8n289-mu6xhpqu-centw2ek0ns",
+      "output": "./assets/ui-sprites/mail/NewAssets__DecorateIcon1.png",
+      "missing": false,
+      "references": [
+        "Mail/PreventCloseMailButton/BG/DecorLeft"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 68,
+      "height": 104
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/DecorateIcon2.png",
+      "declaredKey": "Assets/_Test/NewUI/Assets/Img_decorate02.png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Img_decorate02.png"
+      ],
+      "fileId": "z3itg018ujr-mu6xhpvo-cnfqx0exhhp",
+      "output": "./assets/ui-sprites/mail/NewAssets__DecorateIcon2.png",
+      "missing": false,
+      "references": [
+        "Mail/PreventCloseMailButton/BG/DecorRight"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 114,
+      "height": 52
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/LongSelectTabBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/LongSelectTabBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/LongSelectTabBG.png"
+      ],
+      "fileId": "8ildizw7xxo-mu2ohzc9-rtkaiq296jo",
+      "output": "./assets/ui-sprites/mail/NewAssets__LongSelectTabBG.png",
+      "missing": false,
+      "references": [
+        "Mail/PreventCloseMailButton/TabsLayout/TabNoticeButton",
+        "Mail/PreventCloseMailButton/MailsScrollView/MailTitlesLayout/Mail",
+        "Mail/PreventCloseMailButton/MailsScrollView/MailTitlesLayout/Mail (1)",
+        "Mail/PreventCloseMailButton/MailsScrollView/MailTitlesLayout/Mail (2)",
+        "runtime:Mail:LongSelectTabBG"
+      ],
+      "origins": [
+        ".ui",
+        "HudMail/ItemConfigs + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 70,
+        "right": 70,
+        "top": 20,
+        "bottom": 20
+      },
+      "width": 200,
+      "height": 54
+    },
+    {
+      "key": "Assets/Sprites/Icons/NewsIcon.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/NewsIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/NewsIcon.png"
+      ],
+      "fileId": "yx8djitv8x-mincvgn2-3uhjem39mhx",
+      "output": "./assets/ui-sprites/mail/Icons__NewsIcon.png",
+      "missing": false,
+      "references": [
+        "Mail/PreventCloseMailButton/TabsLayout/TabNoticeButton/Icon",
+        "Mail/PreventCloseMailButton/MailsScrollView/MailTitlesLayout/Mail/Icon",
+        "Mail/PreventCloseMailButton/MailsScrollView/MailTitlesLayout/Mail (1)/Icon",
+        "Mail/PreventCloseMailButton/MailsScrollView/MailTitlesLayout/Mail (2)/Icon",
+        "runtime:Mail:NewsIcon"
+      ],
+      "origins": [
+        ".ui",
+        "HudMail/ItemConfigs + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 68,
+      "height": 64
+    },
+    {
+      "key": "Assets/Sprites/Icons/RedDotIcon.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/RedDotIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/RedDotIcon.png"
+      ],
+      "fileId": "te8d0lxota-mincvh8o-z811cyv93xg",
+      "output": "./assets/ui-sprites/mail/Icons__RedDotIcon.png",
+      "missing": false,
+      "references": [
+        "Mail/PreventCloseMailButton/TabsLayout/TabNoticeButton/AlertIconNotice"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 18,
+      "height": 18
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/NormalTabBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/NormalTabBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/NormalTabBG.png"
+      ],
+      "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+      "output": "./assets/ui-sprites/mail/NewAssets__NormalTabBG.png",
+      "missing": false,
+      "references": [
+        "Mail/PreventCloseMailButton/TabsLayout/TabSystemButton",
+        "runtime:Mail:NormalTabBG"
+      ],
+      "origins": [
+        ".ui",
+        "HudMail/ItemConfigs + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 20,
+        "right": 20,
+        "top": 20,
+        "bottom": 20
+      },
+      "width": 96,
+      "height": 98
+    },
+    {
+      "key": "Assets/Sprites/Icons/MailsIcon.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/MailsIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/MailsIcon.png"
+      ],
+      "fileId": "kgyyx5h7z9c-mis9ya7k-91yrbeocnqc",
+      "output": "./assets/ui-sprites/mail/Icons__MailsIcon.png",
+      "missing": false,
+      "references": [
+        "Mail/PreventCloseMailButton/TabsLayout/TabSystemButton/Icon",
+        "runtime:Mail:MailsIcon"
+      ],
+      "origins": [
+        ".ui",
+        "HudMail/ItemConfigs + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 48,
+      "height": 48
+    },
+    {
+      "key": "Assets/Sprites/Icons/GiftboxIcon.png",
+      "declaredKey": "Assets/Sprites/Icons/GiftboxIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/GiftboxIcon.png"
+      ],
+      "fileId": "xlsgouu7nr-mq6dqtxs-1joo2w562be",
+      "output": "./assets/ui-sprites/mail/Icons__GiftboxIcon.png",
+      "missing": false,
+      "references": [
+        "Mail/PreventCloseMailButton/TabsLayout/TabSystemButton/AlertIconSystem"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 64,
+      "height": 64
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/FF_UI_Online_Workday.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/FF_UI_Online_Workday.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/FF_UI_Online_Workday.png"
+      ],
+      "fileId": "5fde3cfba40ae1b2de0ae99330cbfd06",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Mail/PreventCloseMailButton/MailsScrollView/MailTitlesLayout/Mail/ExpiredIcon",
+        "Mail/PreventCloseMailButton/MailsScrollView/MailTitlesLayout/Mail (1)/ExpiredIcon",
+        "Mail/PreventCloseMailButton/MailsScrollView/MailTitlesLayout/Mail (2)/ExpiredIcon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/HalfContainerBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/HalfContainerBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/HalfContainerBG.png"
+      ],
+      "fileId": "earvmnoqs6p-mu2oi0z2-k994sun5yc",
+      "output": "./assets/ui-sprites/mail/NewAssets__HalfContainerBG.png",
+      "missing": false,
+      "references": [
+        "Mail/PreventCloseMailButton/MailDetails"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 20,
+        "right": 4,
+        "top": 20,
+        "bottom": 18
+      },
+      "width": 28,
+      "height": 52
+    },
+    {
+      "key": "Assets/Sprites/Facebook.png",
+      "declaredKey": "Assets/Sprites/Facebook.png",
+      "declaredKeys": [
+        "Assets/Sprites/Facebook.png"
+      ],
+      "fileId": "vc1rd0aou4-mgs9roz7-880k7t4570q",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Mail/PreventCloseMailButton/MailDetails/NoticeContent/ContactInfo/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Shapes/SquareRounded100.png",
+      "declaredKey": "Assets/Sprites/Shapes/SquareRounded100.png",
+      "declaredKeys": [
+        "Assets/Sprites/Shapes/SquareRounded100.png"
+      ],
+      "fileId": "l8c4cr6s3nf-mbq68mwy-pxhc7b7pxi9",
+      "output": "./assets/ui-sprites/mail/Shapes__SquareRounded100.png",
+      "missing": false,
+      "references": [
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (1)",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (2)",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (3)",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (4)"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 7,
+        "right": 7,
+        "top": 7,
+        "bottom": 7
+      },
+      "width": 100,
+      "height": 100
+    },
+    {
+      "key": "Assets/Sprites/Icons/PetCoinIcon.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/PetCoinIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/PetCoinIcon.png"
+      ],
+      "fileId": "bju08pkwxav-mincvh54-3nkt79t4vxw",
+      "output": "./assets/ui-sprites/mail/Icons__PetCoinIcon.png",
+      "missing": false,
+      "references": [
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail/RewardIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (1)/RewardIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (2)/RewardIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (3)/RewardIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (4)/RewardIcon",
+        "runtime:Mail:PetCoinIcon"
+      ],
+      "origins": [
+        ".ui",
+        "HudMail/ItemConfigs + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 96,
+      "height": 96
+    },
+    {
+      "key": "Assets/Sprites/SquareRounded100.png",
+      "declaredKey": "Assets/Sprites/SquareRounded100.png",
+      "declaredKeys": [
+        "Assets/Sprites/SquareRounded100.png"
+      ],
+      "fileId": "l8c4cr6s3nf-mbq68mwy-pxhc7b7pxi9",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail/RewardPet/RarityBG",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (1)/RewardPet/RarityBG",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (2)/RewardPet/RarityBG",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (3)/RewardPet/RarityBG",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (4)/RewardPet/RarityBG"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Pets/WHALE.png",
+      "declaredKey": "Assets/Sprites/Pets/WHALE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/WHALE.png"
+      ],
+      "fileId": "mpds1aqpvqj-mhbsxpbl-hjif92xcsp9",
+      "output": "./assets/ui-sprites/mail/Pets__WHALE.png",
+      "missing": false,
+      "references": [
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail/RewardPet/PetThumbnail",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (1)/RewardPet/PetThumbnail",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (2)/RewardPet/PetThumbnail",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (3)/RewardPet/PetThumbnail",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (4)/RewardPet/PetThumbnail"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Magma.png",
+      "declaredKey": "Assets/Sprites/Mutations/Magma.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Magma.png"
+      ],
+      "fileId": "iw06sij8s9a-mkwi468g-mru8fexp3w9",
+      "output": "./assets/ui-sprites/mail/Mutations__Magma.png",
+      "missing": false,
+      "references": [
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail/RewardPet/MutationIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (1)/RewardPet/MutationIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (2)/RewardPet/MutationIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (3)/RewardPet/MutationIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (4)/RewardPet/MutationIcon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "key": "Assets/Sprites/Icons/FusionSecret.png",
+      "declaredKey": "Assets/Sprites/FusionSecret.png",
+      "declaredKeys": [
+        "Assets/Sprites/FusionSecret.png"
+      ],
+      "fileId": "ppvv7o7yus9-miei7cfi-v4eci7ov77a",
+      "output": "./assets/ui-sprites/mail/Icons__FusionSecret.png",
+      "missing": false,
+      "references": [
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail/RewardPet/SecretFusionIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (1)/RewardPet/SecretFusionIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (2)/RewardPet/SecretFusionIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (3)/RewardPet/SecretFusionIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (4)/RewardPet/SecretFusionIcon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Clover.png",
+      "declaredKey": "Assets/Sprites/Mutations/Clover.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Clover.png"
+      ],
+      "fileId": "dk4horsud8-mkwi46ob-1ukdaa3inuh",
+      "output": "./assets/ui-sprites/mail/Mutations__Clover.png",
+      "missing": false,
+      "references": [
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (1)/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (1)/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (1)/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (1)/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (1)/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (2)/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (2)/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (2)/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (2)/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (2)/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (3)/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (3)/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (3)/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (3)/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (3)/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (4)/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (4)/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (4)/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (4)/RewardPet/WeatherIcons/WeatherIcon",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (4)/RewardPet/WeatherIcons/WeatherIcon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png"
+      ],
+      "fileId": "4fea53c19488f972a3e911c826b1bea7",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail/TooltipButton",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (1)/TooltipButton",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (2)/TooltipButton",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (3)/TooltipButton",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (4)/TooltipButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/BlueButton.png",
+      "declaredKey": "Assets/Sprites/NewAssets/BlueButton.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/BlueButton.png"
+      ],
+      "fileId": "mgcae4djxp-mu6vevy5-j3m6yz6bep",
+      "output": "./assets/ui-sprites/mail/NewAssets__BlueButton.png",
+      "missing": false,
+      "references": [
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/OtherButtons/DeleteAllButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 50,
+        "right": 20,
+        "top": 20,
+        "bottom": 25
+      },
+      "width": 160,
+      "height": 66
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/YellowButton.png",
+      "declaredKey": "Assets/Sprites/NewAssets/YellowButton.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/YellowButton.png"
+      ],
+      "fileId": "155t2glvvdq-mu6vewp3-o48sy8osfsn",
+      "output": "./assets/ui-sprites/mail/NewAssets__YellowButton.png",
+      "missing": false,
+      "references": [
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/OtherButtons/ClaimAllButton",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/OtherButtons/ClaimButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 50,
+        "right": 20,
+        "top": 20,
+        "bottom": 25
+      },
+      "width": 160,
+      "height": 66
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/SelectTabBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/SelectTab.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/SelectTab.png"
+      ],
+      "fileId": "f2arxt0zsis-mu9bpuhj-5tki52jlbcn",
+      "output": "./assets/ui-sprites/mail/NewAssets__SelectTabBG.png",
+      "missing": false,
+      "references": [
+        "runtime:Mail:SelectTabBG"
+      ],
+      "origins": [
+        "HudMail/ItemConfigs + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 10,
+        "right": 10,
+        "top": 10,
+        "bottom": 10
+      },
+      "width": 96,
+      "height": 96
+    },
+    {
+      "key": "Assets/Sprites/Icons/DustIconTemp.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/DustIconTemp.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/DustIconTemp.png"
+      ],
+      "fileId": "hz9mied1b6f-mjcak9ea-mr1we4jeytf",
+      "output": "./assets/ui-sprites/mail/Icons__DustIconTemp.png",
+      "missing": false,
+      "references": [
+        "runtime:Mail:DustIcon"
+      ],
+      "origins": [
+        "HudMail/ItemConfigs + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 96,
+      "height": 96
+    },
+    {
+      "key": "Assets/Sprites/Icons/SpinIcon.png",
+      "declaredKey": "Assets/Sprites/Icons/SpinIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/SpinIcon.png"
+      ],
+      "fileId": "k6vdeu0bq7f-mj6r5x6s-nfie5asuuz",
+      "output": "./assets/ui-sprites/mail/Icons__SpinIcon.png",
+      "missing": false,
+      "references": [
+        "runtime:Mail:SpinIcon"
+      ],
+      "origins": [
+        "HudMail/ItemConfigs + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "key": "Assets/Sprites/Summon/COMMON.png",
+      "declaredKey": "Assets/Sprites/Summon/COMMON.png",
+      "declaredKeys": [
+        "Assets/Sprites/Summon/COMMON.png"
+      ],
+      "fileId": "h3cf5wy0y8-mscub0iz-aleidsa7hyk",
+      "output": "./assets/ui-sprites/mail/Summon__COMMON.png",
+      "missing": false,
+      "references": [
+        "runtime:Mail:SummonCOMMON"
+      ],
+      "origins": [
+        "HudMail/ItemConfigs + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 64,
+      "height": 64
+    },
+    {
+      "key": "Assets/Sprites/Icons/MoneyIcon.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/MoneyIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/MoneyIcon.png"
+      ],
+      "fileId": "1ev4vbb6r81-mincvh0q-an2r8ytn9ao",
+      "output": "./assets/ui-sprites/mail/Icons__MoneyIcon.png",
+      "missing": false,
+      "references": [
+        "runtime:Mail:MoneyIcon"
+      ],
+      "origins": [
+        "HudMail/ItemConfigs + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 96,
+      "height": 96
+    },
+    {
+      "key": "Assets/Sprites/Pets/CHICK.png",
+      "declaredKey": "Assets/Sprites/Pets/CHICK.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/CHICK.png"
+      ],
+      "fileId": "xf94qan4bpa-mggb0hpl-vdqyrmsossg",
+      "output": "./assets/ui-sprites/mail/Pets__CHICK.png",
+      "missing": false,
+      "references": [
+        "runtime:Mail:CHICK"
+      ],
+      "origins": [
+        "HudMail/ItemConfigs + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Golden.png",
+      "declaredKey": "Assets/Sprites/Mutations/Golden.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Golden.png"
+      ],
+      "fileId": "0wp8iz05lsm-mkwi46cs-73hyb35ojli",
+      "output": "./assets/ui-sprites/mail/Mutations__Golden.png",
+      "missing": false,
+      "references": [
+        "runtime:Mail:Golden"
+      ],
+      "origins": [
+        "HudMail/ItemConfigs + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Rainy.png",
+      "declaredKey": "Assets/Sprites/Mutations/Rainy.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Rainy.png"
+      ],
+      "fileId": "dos1munflui-mklu5g2n-r7adzl6iw2",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:Mail:Soaked"
+      ],
+      "origins": [
+        "HudMail/ItemConfigs + ResourceRegisteration.asset"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Icons/DuplicateTicket.png",
+      "declaredKey": "Assets/Sprites/Icons/DuplicateTicket.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/DuplicateTicket.png"
+      ],
+      "fileId": "msz3s8y5ph-muap3h6f-lmvzjgr4kio",
+      "output": "./assets/ui-sprites/mail/Icons__DuplicateTicket.png",
+      "missing": false,
+      "references": [
+        "runtime:Mail:DuplicateTicket"
+      ],
+      "origins": [
+        "HudMail/ItemConfigs + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Sprites/Icons/RandomPet.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/RandomPet.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/RandomPet.png"
+      ],
+      "fileId": "bd82dwyddb-mmyedas2-cqv6mlfj6bi",
+      "output": "./assets/ui-sprites/mail/Icons__RandomPet.png",
+      "missing": false,
+      "references": [
+        "runtime:Mail:RandomPet"
+      ],
+      "origins": [
+        "HudMail/ItemConfigs + ResourceRegisteration.asset"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "missing": [
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/FF_UI_Online_Workday.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/FF_UI_Online_Workday.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/FF_UI_Online_Workday.png"
+      ],
+      "fileId": "5fde3cfba40ae1b2de0ae99330cbfd06",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Mail/PreventCloseMailButton/MailsScrollView/MailTitlesLayout/Mail/ExpiredIcon",
+        "Mail/PreventCloseMailButton/MailsScrollView/MailTitlesLayout/Mail (1)/ExpiredIcon",
+        "Mail/PreventCloseMailButton/MailsScrollView/MailTitlesLayout/Mail (2)/ExpiredIcon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Facebook.png",
+      "declaredKey": "Assets/Sprites/Facebook.png",
+      "declaredKeys": [
+        "Assets/Sprites/Facebook.png"
+      ],
+      "fileId": "vc1rd0aou4-mgs9roz7-880k7t4570q",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Mail/PreventCloseMailButton/MailDetails/NoticeContent/ContactInfo/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/SquareRounded100.png",
+      "declaredKey": "Assets/Sprites/SquareRounded100.png",
+      "declaredKeys": [
+        "Assets/Sprites/SquareRounded100.png"
+      ],
+      "fileId": "l8c4cr6s3nf-mbq68mwy-pxhc7b7pxi9",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail/RewardPet/RarityBG",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (1)/RewardPet/RarityBG",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (2)/RewardPet/RarityBG",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (3)/RewardPet/RarityBG",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (4)/RewardPet/RarityBG"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/UGC_Btn_02_Big_Normal.png"
+      ],
+      "fileId": "4fea53c19488f972a3e911c826b1bea7",
+      "output": null,
+      "missing": true,
+      "references": [
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail/TooltipButton",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (1)/TooltipButton",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (2)/TooltipButton",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (3)/TooltipButton",
+        "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (4)/TooltipButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Mutations/Rainy.png",
+      "declaredKey": "Assets/Sprites/Mutations/Rainy.png",
+      "declaredKeys": [
+        "Assets/Sprites/Mutations/Rainy.png"
+      ],
+      "fileId": "dos1munflui-mklu5g2n-r7adzl6iw2",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:Mail:Soaked"
+      ],
+      "origins": [
+        "HudMail/ItemConfigs + ResourceRegisteration.asset"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "unsupported": [
+    {
+      "path": "Mail/CloseMailButton",
+      "id": "tcxi9Gs7",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/Title/CloseButton",
+      "id": "k7kIdtmF",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/BG/DecorLeft",
+      "id": "FkPAX3Np",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/BG/DecorRight",
+      "id": "rXPbJjEX",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/TabsLayout/TabNoticeButton",
+      "id": "g3Vcw6Xu",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/TabsLayout/TabSystemButton",
+      "id": "nKMcL6zP",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailsScrollView/MailTitlesLayout/Mail",
+      "id": "hQ6w1xYk",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailsScrollView/MailTitlesLayout/Mail (1)",
+      "id": "EecbN60R",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailsScrollView/MailTitlesLayout/Mail (2)",
+      "id": "wAXfhh5D",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailsScrollView",
+      "id": "tB4FV72e",
+      "fields": [
+        "propsData.panel",
+        "propsData.scrollView"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailDetails/Scroll View",
+      "id": "nZeBAED8",
+      "fields": [
+        "propsData.panel",
+        "propsData.scrollView"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailDetails/NoticeContent/ContactInfo/Url",
+      "id": "xuGJ9sQx",
+      "fields": [
+        "text.wordWrap",
+        "text.maxLength",
+        "text.placeholder",
+        "propsData.input"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail/TooltipButton",
+      "id": "ePJemtl4",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (1)/TooltipButton",
+      "id": "gN4iWU8a",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (2)/TooltipButton",
+      "id": "fRaNg1zk",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (3)/TooltipButton",
+      "id": "HZD2tZ8e",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailDetails/SystemContent/RewardsLayout/RewardDetail (4)/TooltipButton",
+      "id": "yGIAceAF",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "componentList"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailDetails/SystemContent/OtherButtons/DeleteAllButton",
+      "id": "Idb8I5fP",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailDetails/SystemContent/OtherButtons/ClaimAllButton",
+      "id": "yr38IAEK",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton/MailDetails/SystemContent/OtherButtons/ClaimButton",
+      "id": "vtvvCqgN",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Mail/PreventCloseMailButton",
+      "id": "xKycSvPp",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Mail",
+      "id": "NoYPqULb",
+      "fields": [
+        "ecaScripts"
+      ]
+    }
+  ]
+}

@@ -1,11 +1,12 @@
 import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { mailRules } from "./ui-mail-source.mjs";
 import { shopRules } from "./ui-shop-source.mjs";
 import { activitiesRules } from "./ui-activities-source.mjs";
 
-const UI_FILES = [{ id: "collection", name: "Collection", file: "PetsCollection.ui", status: "ready" }, { id: "activities", name: "Activities", file: "Activities.ui", status: "ready" }, { id: "shop", name: "Shop", file: "Shop.ui", status: "ready" }];
-const PLANNED = ["Mail", "Mission", "Leaderboard"].map(name => ({ id: name.toLowerCase(), name, status: "planned" }));
+const UI_FILES = [{ id: "collection", name: "Collection", file: "PetsCollection.ui", status: "ready" }, { id: "activities", name: "Activities", file: "Activities.ui", status: "ready" }, { id: "shop", name: "Shop", file: "Shop.ui", status: "ready" }, { id: "mail", name: "Mail", file: "Mail.ui", status: "ready" }];
+const PLANNED = ["Mission", "Leaderboard"].map(name => ({ id: name.toLowerCase(), name, status: "planned" }));
 const PROP_FIELDS = {
   image: ["source", "color", "reverse", "fillType", "slicedBorder", "tiledBorder", "centerInvisible", "fillDir", "fillAmount", "invertFill", "flip", "gradient", "gradientTop", "gradientBottom", "isApplyAnimation", "animationAtlasID", "animationFrameRate", "animationLoop"],
   button: ["spriteName", "normal", "highlight", "pressed", "disabled", "enableBorderImage", "disableCollider", "fillType", "slicedBorder", "tiledBorder", "centerInvisible", "fillDir", "fillAmount", "invertFill", "reverse", "flip", "gradient", "gradientTop", "gradientBottom"],
@@ -61,7 +62,7 @@ export function syncUiPreview(sourceRoot, gddRoot, screenId = null) {
     // serialized filePath values in older HUDs can still point to its old name.
     // Only index metadata in the relocation directory confirmed for this HUD.
     const relocatedById = new Map();
-    if (["activities", "shop"].includes(ui.id)) {
+    if (["activities", "shop", "mail"].includes(ui.id)) {
       const registration = readFileSync(source("ProjectSettings/ResourceRegisteration.asset"), "utf8");
       const resources = JSON.parse(registration.includes("\n//") ? registration.slice(0, registration.lastIndexOf("\n//")) : registration).Resource.texture;
       (function walk(node) {
@@ -99,7 +100,7 @@ export function syncUiPreview(sourceRoot, gddRoot, screenId = null) {
       let key = declaredKey;
       if (declaredKey.startsWith("Assets/") && !existsSync(source(declaredKey))) {
         const candidates = ref.fileId ? relocatedById.get(ref.fileId) || [] : [];
-        if (["activities", "shop"].includes(ui.id) && declaredKey.includes("/UIComponents/")) {
+        if (["activities", "shop", "mail"].includes(ui.id) && declaredKey.includes("/UIComponents/")) {
           const candidate = declaredKey.replace("/UIComponents/", "/");
           if (existsSync(source(candidate)) && existsSync(source(candidate + ".meta")) && JSON.parse(readFileSync(source(candidate + ".meta"), "utf8")).fileId === ref.fileId && !candidates.includes(candidate)) candidates.push(candidate);
         }
@@ -151,7 +152,7 @@ export function syncUiPreview(sourceRoot, gddRoot, screenId = null) {
         image: null, button: null, text: null, layout: null,
         propsData: props, ecaProps: node.ecaProps || {}, unsupported: [], children: []
       };
-      if (ui.id === "shop") result.sourceFields = Object.fromEntries(Object.entries(node).filter(([key]) => !["children", "propsData", "ecaProps"].includes(key)));
+      if (["shop", "mail"].includes(ui.id)) result.sourceFields = Object.fromEntries(Object.entries(node).filter(([key]) => !["children", "propsData", "ecaProps"].includes(key)));
       for (const kind of Object.keys(PROP_FIELDS)) if (props[kind]) {
         const value = props[kind];
         result[kind] = Object.fromEntries(PROP_FIELDS[kind].filter(key => key in value).map(key => [key, value[key]]));
@@ -189,7 +190,7 @@ export function syncUiPreview(sourceRoot, gddRoot, screenId = null) {
         flip: "reverse.x/reverse.y map to visual axis flips; numeric flip is retained",
         flipStatus: "all source flip values are zero; numeric FlipType behavior is not documented",
         rotation: "CSS rotation uses the RectTransform pivot as transform origin",
-        rotationStatus: ui.id === "activities" ? "serialized spin reward rotations use negative CSS angles; engine sign and tween easing unverified" : "all source rotations are zero; angle sign in nonzero runtime cases is unverified",
+        rotationStatus: ui.id === "mail" ? "source includes rotated alert icon; web uses serialized CSS angle, engine sign unverified" : ui.id === "activities" ? "serialized spin reward rotations use negative CSS angles; engine sign and tween easing unverified" : "all source rotations are zero; angle sign in nonzero runtime cases is unverified",
         viewport: "root sizeDelta and selectable viewport aspect frame; cover-crop preview",
         viewportStatus: "Editor docs describe root adaptation to device aspect ratio; reference resolution, match mode, and safe area are not specified"
       },
@@ -199,6 +200,11 @@ export function syncUiPreview(sourceRoot, gddRoot, screenId = null) {
       const { rules, i18n } = activitiesRules(source, tree, sprite, parseCsv);
       json(["data", "ui", "activities-rules.json"], rules);
       json(["data", "ui", "activities-i18n.json"], i18n);
+    }
+    if (ui.id === "mail") {
+      const { rules, i18n } = mailRules(source, tree, sprite, parseCsv);
+      json(["data", "ui", "mail-rules.json"], rules);
+      json(["data", "ui", "mail-i18n.json"], i18n);
     }
     if (ui.id === "shop") {
       const { rules, i18n } = shopRules(source, tree, sprite, parseCsv);

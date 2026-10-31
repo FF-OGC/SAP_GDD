@@ -1,0 +1,294 @@
+{
+  "desktop": [
+    {
+      "case": "claim-selected-index-1",
+      "before": {
+        "content": "Tuyệt vời! Bạn đã nhận được quà từ sự kiện.",
+        "count": "Thư: 5/30",
+        "rewards": "x1\n$10.0 m",
+        "rows": 5,
+        "scroll": [
+          0,
+          11.199999809265137
+        ],
+        "stageScroll": 0,
+        "stageTop": 351.3500061035156
+      },
+      "after": {
+        "content": "Cảm ơn bạn đã đăng nhập! Hãy nhận quà của mình nhé.",
+        "count": "Thư: 4/30",
+        "rewards": "",
+        "rows": 4,
+        "scroll": [
+          0,
+          11.199999809265137
+        ],
+        "stageScroll": 0,
+        "stageTop": 351.3500061035156
+      }
+    },
+    {
+      "case": "full",
+      "state": {
+        "content": "Móp có quà cho bạn nè",
+        "count": "Thư: 30/30",
+        "rewards": "x100\nx50\nx2",
+        "rows": 30,
+        "scroll": [
+          0,
+          11.199999809265137
+        ],
+        "stageScroll": 0,
+        "stageTop": 351.3500061035156
+      }
+    },
+    {
+      "case": "return-notices-after-clones",
+      "state": {
+        "content": "CẬP NHẬT NGÀY 05/11\r\n============\r\n\r\n• [MỚI] Phần Thưởng Bộ Sưu Tập Thú Cưng: Mở rộng bộ sưu tập với nhiều thú cưng, độ hiếm, đột biến và biến thể thời tiết khác nhau để mở khóa những phần thưởng hấp dẫn theo từng cột mốc!\r\n• [TRỞ LẠI] Sự Kiện Thiên Thạch đã quay trở lại! Tham gia ngay để nhận những phần thưởng độc quyền.\r\n• [CẬP NHẬT] Sự Kiện Đào Kho Báu: Giờ đây bạn có thể Quét hoàn toàn MIỄN PHÍ! Chỉ cần trả phí khi mua thú cưng.\r\n• [CẬP NHẬT] Đảm Bảo Phần Thưởng Cao Nhất: Sự Kiện Đào, Câu Cá và Lucky Box giờ đây có cơ chế đảm bảo nhận thưởng, giúp bạn có cơ hội sở hữu những phần thưởng giá trị nhất!\r\n• [MỚI] Thú Cưng Halloween: CÁ MẬP, CHÓ HUSKY, CHIM CÁNH CỤT, CÁ SẤU, BẠCH TUỘC, CÁ THÒI LÒI và THẰN LẰN CÓ SỪNG đã xuất hiện!",
+        "count": "Thư: 30/30",
+        "rewards": "x100x50x2x4hx4h",
+        "rows": 3,
+        "scroll": [
+          0,
+          11.199999809265137
+        ],
+        "stageScroll": 0,
+        "stageTop": 351.3500061035156
+      }
+    },
+    {
+      "case": "old-notice",
+      "state": {
+        "content": "CẬP NHẬT NGÀY 08/10\r\n============\r\n\r\n• [CẬP NHẬT] Giao diện Mới: Làm mới giao diện để mang đến trải nghiệm mượt mà hơn.\r\n• [MỚI] Thưởng hỗ trợ người chơi quay trở lại: Chơi để nhận thêm phần thưởng khi bạn trở lại Phi vụ Trộm Pet.\r\n• [CẬP NHẬT] Cửa Hàng hiện bán thú cưng cần thiết để nâng cấp căn cứ.\r\n• [CẬP NHẬT] Tối ưu cơ chế xuất hiện Thú Cưng Thời Tiết.\r\n• [CẬP NHẬT] Người chơi giờ có thể dung hợp để nhận thú cưng: RÁI CÁ.",
+        "count": "Thư: 30/30",
+        "rewards": "x100x50x2x4hx4h",
+        "rows": 3,
+        "scroll": [
+          0,
+          11.199999809265137
+        ],
+        "stageScroll": 0,
+        "stageTop": 351.3500061035156
+      }
+    },
+    {
+      "case": "full-base",
+      "count": "Thư: 5/30",
+      "result": "Bạn đã hết vị trí trống!"
+    },
+    {
+      "case": "claim-with-free-slot",
+      "state": {
+        "content": "Cảm ơn bạn đã đăng nhập! Hãy nhận quà của mình nhé.",
+        "count": "Thư: 4/30",
+        "rewards": "",
+        "rows": 4,
+        "scroll": [
+          0,
+          0
+        ],
+        "stageScroll": 0,
+        "stageTop": 362.5500183105469
+      }
+    },
+    {
+      "case": "close-reopen",
+      "state": {
+        "content": "CẬP NHẬT NGÀY 05/11\r\n============\r\n\r\n• [MỚI] Phần Thưởng Bộ Sưu Tập Thú Cưng: Mở rộng bộ sưu tập với nhiều thú cưng, độ hiếm, đột biến và biến thể thời tiết khác nhau để mở khóa những phần thưởng hấp dẫn theo từng cột mốc!\r\n• [TRỞ LẠI] Sự Kiện Thiên Thạch đã quay trở lại! Tham gia ngay để nhận những phần thưởng độc quyền.\r\n• [CẬP NHẬT] Sự Kiện Đào Kho Báu: Giờ đây bạn có thể Quét hoàn toàn MIỄN PHÍ! Chỉ cần trả phí khi mua thú cưng.\r\n• [CẬP NHẬT] Đảm Bảo Phần Thưởng Cao Nhất: Sự Kiện Đào, Câu Cá và Lucky Box giờ đây có cơ chế đảm bảo nhận thưởng, giúp bạn có cơ hội sở hữu những phần thưởng giá trị nhất!\r\n• [MỚI] Thú Cưng Halloween: CÁ MẬP, CHÓ HUSKY, CHIM CÁNH CỤT, CÁ SẤU, BẠCH TUỘC, CÁ THÒI LÒI và THẰN LẰN CÓ SỪNG đã xuất hiện!",
+        "count": "Thư: 4/30",
+        "rewards": "x1$10.0 mx2x4hx4h",
+        "rows": 3,
+        "scroll": [
+          0,
+          0
+        ],
+        "stageScroll": 0,
+        "stageTop": 362.5500183105469
+      }
+    },
+    {
+      "case": "english",
+      "state": {
+        "content": "NEW UPDATE ON NOVEMBER 5TH\r\n============\r\n\r\n• [NEW] Pet Collection Rewards: Expand your collection with different pets, rarities, mutations, and weather variants to unlock exciting milestone rewards!\r\n• [RETURN] Meteorite Event is back! Join the event and earn exclusive rewards.\r\n• [UPDATE] Dig Event: Scanning is now FREE! You only need to pay when purchasing a pet.\r\n• [UPDATE] Guaranteed Top Prizes: Dig, Fishing, and Lucky Box events now feature a guaranteed reward system, giving you a better chance to claim top prizes!\r\n• [NEW] Halloween Pets: SHARK, HUSKY, PENGUIN, ALLIGATOR, OCTOPUS, MUDSKIPPER, and HORNED LIZARD have arrived!",
+        "count": "Mails: 0/30",
+        "rewards": "x4hx4hx4hx4hx4h",
+        "rows": 3,
+        "scroll": [
+          0,
+          0
+        ],
+        "stageScroll": 0,
+        "stageTop": 362.5500183105469
+      }
+    },
+    {
+      "case": "five-reward-slots",
+      "state": {
+        "content": "Tuyệt vời! Bạn đã nhận được quà từ sự kiện.",
+        "count": "Thư: 5/30",
+        "rewards": "x1\nx1\nx2\nx1\n10 m",
+        "rows": 5,
+        "scroll": [
+          0,
+          0
+        ],
+        "stageScroll": 0,
+        "stageTop": 362.5500183105469
+      }
+    },
+    {
+      "case": "last-selected-claim",
+      "state": {
+        "content": "Bạn chưa có quà nào để nhận cả.",
+        "count": "Thư: 4/30",
+        "rewards": "x1x1x2x110 m",
+        "rows": 4,
+        "scroll": [
+          0,
+          0
+        ],
+        "stageScroll": 0,
+        "stageTop": 362.5500183105469
+      }
+    }
+  ],
+  "mobile": [
+    {
+      "case": "system-tab",
+      "state": {
+        "content": "Móp có quà cho bạn nè",
+        "count": "Thư: 5/30",
+        "rewards": "x100\nx50\nx2",
+        "rows": 5,
+        "scroll": [
+          0,
+          0
+        ],
+        "stageScroll": 0,
+        "stageTop": 481.6375122070313
+      }
+    },
+    {
+      "case": "random-rewards",
+      "state": {
+        "content": "Tuyệt vời! Bạn đã nhận được quà từ sự kiện.",
+        "count": "Thư: 5/30",
+        "rewards": "x1\n$10.0 m",
+        "rows": 5,
+        "scroll": [
+          0,
+          0
+        ],
+        "stageScroll": 0,
+        "stageTop": 481.6375122070313
+      }
+    },
+    {
+      "case": "claim",
+      "state": {
+        "content": "Cảm ơn bạn đã đăng nhập! Hãy nhận quà của mình nhé.",
+        "count": "Thư: 4/30",
+        "rewards": "",
+        "rows": 4,
+        "scroll": [
+          0,
+          0
+        ],
+        "stageScroll": 0,
+        "stageTop": 481.6375122070313
+      }
+    },
+    {
+      "case": "loading",
+      "state": {
+        "content": "Đang tải dữ liệu...",
+        "count": "Thư: 4/30",
+        "rewards": "x1$10.0 mx2x4hx4h",
+        "rows": 4,
+        "scroll": [
+          0,
+          420.7999877929687
+        ],
+        "stageScroll": 0,
+        "stageTop": 60.837501525878906
+      }
+    },
+    {
+      "case": "empty",
+      "state": {
+        "content": "Bạn chưa có quà nào để nhận cả.",
+        "count": "Thư: 0/30",
+        "rewards": "x1$10.0 mx2x4hx4h",
+        "rows": 0,
+        "scroll": [
+          0,
+          420.7999877929687
+        ],
+        "stageScroll": 0,
+        "stageTop": 60.837501525878906
+      }
+    },
+    {
+      "case": "inner-scroll-full",
+      "internal": 2015.199951171875,
+      "window": [
+        0,
+        0
+      ]
+    },
+    {
+      "case": "english",
+      "state": {
+        "content": "NEW UPDATE ON NOVEMBER 5TH\r\n============\r\n\r\n• [NEW] Pet Collection Rewards: Expand your collection with different pets, rarities, mutations, and weather variants to unlock exciting milestone rewards!\r\n• [RETURN] Meteorite Event is back! Join the event and earn exclusive rewards.\r\n• [UPDATE] Dig Event: Scanning is now FREE! You only need to pay when purchasing a pet.\r\n• [UPDATE] Guaranteed Top Prizes: Dig, Fishing, and Lucky Box events now feature a guaranteed reward system, giving you a better chance to claim top prizes!\r\n• [NEW] Halloween Pets: SHARK, HUSKY, PENGUIN, ALLIGATOR, OCTOPUS, MUDSKIPPER, and HORNED LIZARD have arrived!",
+        "count": "Mails: 0/30",
+        "rewards": "x4hx4hx4hx4hx4h",
+        "rows": 3,
+        "scroll": [
+          0,
+          0
+        ],
+        "stageScroll": 0,
+        "stageTop": 481.6375122070313
+      }
+    },
+    {
+      "case": "final-build",
+      "state": {
+        "content": "Móp có quà cho bạn nè",
+        "count": "Thư: 5/30",
+        "rewards": "x100\nx50\nx2",
+        "rows": 5,
+        "scroll": [
+          0,
+          0
+        ],
+        "stageScroll": 0,
+        "stageTop": 481.6375122070313
+      },
+      "overflow": -15
+    }
+  ],
+  "regression": [
+    {
+      "screen": "collection",
+      "meta": "107 entity · 2 sprite thiếu · root 1500×750 từ .ui · khung 18:9; scaler và safe area chưa xác minh · DOM 107/107, lệch 0"
+    },
+    {
+      "screen": "activities",
+      "meta": "286 entity · 4 sprite thiếu · root 1500×750 từ .ui · khung 18:9; scaler và safe area chưa xác minh · DOM 286/286, lệch 0"
+    },
+    {
+      "screen": "shop",
+      "meta": "70 entity · 10 sprite thiếu · root 1500×750 từ .ui · khung 18:9; scaler và safe area chưa xác minh · DOM 70/70, lệch 0"
+    },
+    {
+      "screen": "mail",
+      "meta": "128 entity · 5 sprite thiếu · root 1500×750 từ .ui · khung 18:9; scaler và safe area chưa xác minh · DOM 128/128, lệch 0"
+    }
+  ],
+  "console": [],
+  "engineParity": "not verified; no game screenshots/runtime supplied",
+  "method": "CUA browser; coordinate gameplay clicks; DOM snapshots; manual screenshot review",
+  "date": "2026-11-01"
+}
