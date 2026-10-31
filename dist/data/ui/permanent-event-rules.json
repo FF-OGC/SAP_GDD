@@ -1,0 +1,921 @@
+{
+  "sourceCommit": "471a62bb8a55ad735cfeebf5a0a315730df90daa",
+  "uiSha256": "6efc76bb31d29f643a01bd2fcfe49c096f8aab5e33ce3886972b39c0602bbd50",
+  "controller": "Assets/Scripts/HUDs/HudPermanentEvent.fcg",
+  "sourceFiles": [
+    {
+      "file": "Assets/Scripts/HUDs/HudPermanentEvent.fcg",
+      "sha256": "04b18f2f88539a6c9f70d295f318a78994ff5a46a4acaa2afa1057350c33a1b4"
+    },
+    {
+      "file": "Assets/Scripts/Player/PlayerEventDig.fcg",
+      "sha256": "e2c52e07b799d267a55f93600119b37f8deba94011b37e96c1db57c86fa06efb"
+    },
+    {
+      "file": "Assets/Scripts/Player/PlayerFishingClient.fcg",
+      "sha256": "883b12960474a10997ad0ccfb664730ba436cd30a3c037ea2e8b4027474a5bc5"
+    },
+    {
+      "file": "Assets/Scripts/Configs/EventDigConfig.fcg",
+      "sha256": "eb64bead21ec1df2fb053c0df15fc8e7cedeb73f3c715e34397c9ecf2559eefe"
+    },
+    {
+      "file": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg",
+      "sha256": "8463f7059c1cc86cf03de5dbffa326aa9e7a8bc7a1f4c95160db29a780eb52b8"
+    },
+    {
+      "file": "Assets/Scripts/Utils/UIUtilsClient.fcg",
+      "sha256": "5109fea8e5ef64a45b8591056b5329af35dff10610ef0bbb5c7b59e23d66ab54"
+    },
+    {
+      "file": "Assets/Scripts/Utils/BigNumberHandlerClient.fcg",
+      "sha256": "8f2204fb4ae33d1dddc8027402740c03cfac33601748e43f339447115c2e493d"
+    },
+    {
+      "file": "ProjectSettings/ResourceRegisteration.asset",
+      "sha256": "9166b4e138c086e0cb2c13b2bb2cc205fc7c682fcb3e0bd23e0f9e0fc0f2a01b"
+    },
+    {
+      "file": "Assets/CSV/Pet.csv",
+      "sha256": "f3cf8ccfe62493c72bc05195e90c83c8bc886cb0c7aa7bf2cf2a53b7e054488a"
+    },
+    {
+      "file": "Assets/CSV/Event/Dig/DigPools.csv",
+      "sha256": "84c61dc4ea201147b74361d890c88bf806ea6b7fff7aa5dd878085cba866f688"
+    },
+    {
+      "file": "Assets/CSV/Event/Fishing/PoolFishing.csv",
+      "sha256": "a325533d0155d17a7c27070a4445c037bdbe4decc911c946c2da48d460ac9490"
+    }
+  ],
+  "projections": [],
+  "widgetIds": {
+    "Event": "ka56cZaW",
+    "MashMeter": "Wg0U80eb",
+    "MashButton": "HvUI6wvq",
+    "DigEvent": "RQqexQ3y",
+    "ScanButton": "a0DosDIA",
+    "Cost": "p37TZv1s",
+    "HintSwitchMode": "GURadFvV",
+    "Inventory": "F0jDNiPC",
+    "Reward": "NPZOLpZJ",
+    "SwitchModeButton": "n8m8Inri",
+    "PlacePetButton": "TcmmNZa9",
+    "ConfirmBuy": "W9N1PTR2",
+    "Common": "I8Jo3xLh",
+    "PetInventory": "ZRXq02K6",
+    "HitBar": "N6GKCglK",
+    "Track": "rJApALJS",
+    "Handle": "U8ZeOnYU",
+    "TapPrompt": "ASUjjBxi",
+    "TapRing": "tHYaPHJe",
+    "FishEvent": "XA8yHuP5",
+    "WaitingBorder": "sTnr4tOz",
+    "EventBG": "lbSufxdQ",
+    "MashButtonIcon": "mdfHDo5G"
+  },
+  "constants": {
+    "SWITCH_MODE_COOLDOWN_MS": 2000,
+    "SWITCH_MODE_HINT_DURATION_MS": 2000,
+    "ACTION_BUTTON_SCALE": 0.7,
+    "ACTION_BUTTON_FALLBACK_X": 500,
+    "ACTION_BUTTON_FALLBACK_Y": -125,
+    "HIT_BAR_MIN_RATIO": 0,
+    "HIT_BAR_MAX_RATIO": 1,
+    "HIT_BAR_FISH_DEFAULT_GAIN": 0.12,
+    "HIT_BAR_FISH_DEFAULT_DRIFT": 0.45,
+    "HIT_BAR_FISH_START_RATIO": 0.4,
+    "HIT_BAR_DIG_START_RATIO": 0.125,
+    "HIT_BAR_DIG_RANGE": 400,
+    "HIT_BAR_TRACK_MIN": -200,
+    "HIT_BAR_TRACK_MAX": 200,
+    "HIT_BAR_MILLISECONDS_PER_SECOND": 1000,
+    "HIT_BAR_SHAKE_ANGLE": 8,
+    "HIT_BAR_SHAKE_DURATION_MS": 60,
+    "HIT_BAR_SHAKE_CURVE_START": 0.42,
+    "HIT_BAR_SHAKE_CURVE_END": 0.58,
+    "HIT_BAR_TAP_RING_SIZE_DELTA": 30,
+    "HIT_BAR_TAP_PROMPT_OFFSET_Y": 116,
+    "HIT_BAR_TAP_PROMPT_FONT_DELTA": 4,
+    "HIT_BAR_TAP_TWEEN_DURATION_MS": 250,
+    "SCAN_COOLDOWN_MS": 3000,
+    "INVENTORY_PET_SLOT_INDEX": 0,
+    "INVENTORY_LINE_SPACING": 5,
+    "INVENTORY_MIN_LINES": 1,
+    "INVENTORY_NORMAL_HEIGHT": 60,
+    "INVENTORY_EXCHANGE_HEIGHT": 102,
+    "INVENTORY_EXCHANGE_TEMPLATE_LENGTH": 60,
+    "INVENTORY_DETAILS_TEMPLATE_MAX_LENGTH": 16,
+    "INVENTORY_BUTTON_NORMAL_Y": 0,
+    "INVENTORY_RETURN_EXCHANGE_Y": 22,
+    "INVENTORY_REJECT_EXCHANGE_Y": -22,
+    "_RetrieveSlotIndex": -1,
+    "_PlacePetTargetSlot": -1,
+    "petPriceText": "0"
+  },
+  "bindings": {
+    "HandleAwake": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:144",
+    "InitPermanentEventHUD": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:163",
+    "HandleEventPetInventoryPlaceTargetChanged": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:214",
+    "GetHUDWidget": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:224",
+    "ShowPermanentEventHUD": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:228",
+    "HidePermanentEventHUD": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:235",
+    "SetSwitchModeButtonActive": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:249",
+    "InitSwitchModeHintTween": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:255",
+    "SetSwitchModeHintActive": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:276",
+    "UpdateEventButtons": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:293",
+    "SetMashButtonActive": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:304",
+    "HandleEventStart": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:316",
+    "HandleEventEnd": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:335",
+    "ActivatePermanentEvent": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:356",
+    "IsPermanentEventActive": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:376",
+    "IsActiveEventBusy": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:380",
+    "PermanentEventLifecycleLoop": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:390",
+    "UpdateActiveEventProfile": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:410",
+    "ToggleEventMode": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:431",
+    "StartSwitchModeCooldown": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:448",
+    "PlayEventSwitchHint": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:462",
+    "HandleDeselectPet": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:474",
+    "HandleUserQuitOrUserMatchEnd": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:485",
+    "InitHitBarHUD": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:500",
+    "InitHitBarTweens": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:521",
+    "OpenHitBar": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:566",
+    "CloseHitBar": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:591",
+    "IsHitBarOpen": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:608",
+    "IsEventHitBarOpen": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:612",
+    "UpdateFishingHitBarParams": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:616",
+    "OpenFishingHitBar": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:624",
+    "UpdateHitBarParams": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:628",
+    "UpdateHitBarLayout": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:633",
+    "GetEventIcon": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:643",
+    "UpdateHitBarAppearance": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:651",
+    "UpdateHitBar": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:660",
+    "TapHitBar": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:671",
+    "HandleHitBarTapped": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:682",
+    "HitBarDriftLoop": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:688",
+    "HandleHitBarFinished": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:702",
+    "UpdateInventoryButtons": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:724",
+    "SetInventoryActive": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:740",
+    "SetPlacePetButtonActive": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:744",
+    "UpdateInventory": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:749",
+    "GetEventPetInventoryCards": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:762",
+    "RequestPlaceEventPet": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:773",
+    "ConfirmEventReward": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:785",
+    "IsEventInventoryActionPending": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:799",
+    "UpdateInventoryDetails": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:807",
+    "UpdateInventoryHeight": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:839",
+    "UpdatePlacePetButton": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:863",
+    "OpenEventReward": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:872",
+    "CloseEventReward": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:879",
+    "UpdateRewardWidget": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:887",
+    "OpenEventRewardConfirm": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:896",
+    "CloseEventRewardConfirm": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:907",
+    "ShowEventPetBuyConfirmWidget": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:920",
+    "HideEventPetBuyConfirmWidget": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:939",
+    "SetDigEventActive": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:950",
+    "SetScanButtonActive": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:963",
+    "InitScanCooldownTween": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:968",
+    "StartScanCooldown": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:988",
+    "StopScanCooldown": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:1005",
+    "IsScanCoolingDown": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:1018",
+    "UpdateDigActions": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:1022",
+    "HandleActionsButton": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:1039",
+    "HandleEventPetInventoryPlace": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:1091",
+    "HandleSwitchMode": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:1103",
+    "HandleActionTap": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:1119",
+    "HandleScan": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:1138",
+    "HandleEventPetInventoryUpdated": "Assets/Scripts/Player/PlayerEventDig.fcg:171",
+    "HandleEventRewardReveal": "Assets/Scripts/Player/PlayerEventDig.fcg:196",
+    "ResolveRewardRevealAfterDelay": "Assets/Scripts/Player/PlayerEventDig.fcg:258",
+    "ConfirmDig": "Assets/Scripts/Player/PlayerEventDig.fcg:275",
+    "ClearPendingDigVisual": "Assets/Scripts/Player/PlayerEventDig.fcg:290",
+    "ClearHandPet": "Assets/Scripts/Player/PlayerEventDig.fcg:313",
+    "UpdateInventoryHandPet": "Assets/Scripts/Player/PlayerEventDig.fcg:322",
+    "ClearInventoryHandPet": "Assets/Scripts/Player/PlayerEventDig.fcg:375",
+    "SetShovelActive": "Assets/Scripts/Player/PlayerEventDig.fcg:384",
+    "SetShovelVisualActive": "Assets/Scripts/Player/PlayerEventDig.fcg:402",
+    "IsShovelActive": "Assets/Scripts/Player/PlayerEventDig.fcg:420",
+    "CanScan": "Assets/Scripts/Player/PlayerEventDig.fcg:424",
+    "PlayScanEffect": "Assets/Scripts/Player/PlayerEventDig.fcg:428",
+    "CloseDigHitBar": "Assets/Scripts/Player/PlayerEventDig.fcg:455",
+    "RequestDig": "Assets/Scripts/Player/PlayerEventDig.fcg:462",
+    "HandleDigFail": "Assets/Scripts/Player/PlayerEventDig.fcg:480",
+    "SetDigMashMovement": "Assets/Scripts/Player/PlayerEventDig.fcg:497",
+    "HandleDigTap": "Assets/Scripts/Player/PlayerEventDig.fcg:509",
+    "RequestPlaceEventPetAt": "Assets/Scripts/Player/PlayerEventDig.fcg:533",
+    "RequestEventPetInventoryAction": "Assets/Scripts/Player/PlayerEventDig.fcg:542",
+    "IsEventPetInventoryActionPending": "Assets/Scripts/Player/PlayerEventDig.fcg:551",
+    "IsDigCompletionPending": "Assets/Scripts/Player/PlayerEventDig.fcg:555",
+    "IsPostDigCompletionPending": "Assets/Scripts/Player/PlayerEventDig.fcg:559",
+    "CanDig": "Assets/Scripts/Player/PlayerEventDig.fcg:571",
+    "DigProximityLoop": "Assets/Scripts/Player/PlayerEventDig.fcg:575",
+    "UpdateDigActionButtons": "Assets/Scripts/Player/PlayerEventDig.fcg:582",
+    "GetSpotIdNearPlayer": "Assets/Scripts/Player/PlayerEventDig.fcg:604",
+    "HandleEventDigSpotsUpdated": "Assets/Scripts/Player/PlayerEventDig.fcg:625",
+    "UpdateSpotVisual": "Assets/Scripts/Player/PlayerEventDig.fcg:676",
+    "StartScanRevealDelay": "Assets/Scripts/Player/PlayerEventDig.fcg:698",
+    "FinishScanRevealDelay": "Assets/Scripts/Player/PlayerEventDig.fcg:705",
+    "ClearSpotVisuals": "Assets/Scripts/Player/PlayerEventDig.fcg:716",
+    "SetFishingRodActive": "Assets/Scripts/Player/PlayerFishingClient.fcg:148",
+    "HandlePlayerFishingReturnData": "Assets/Scripts/Player/PlayerFishingClient.fcg:172",
+    "HandleFishingStateChanged": "Assets/Scripts/Player/PlayerFishingClient.fcg:187",
+    "HandleFishingButtonTap": "Assets/Scripts/Player/PlayerFishingClient.fcg:203",
+    "HandleShowHook": "Assets/Scripts/Player/PlayerFishingClient.fcg:232",
+    "GetHookPositionWithMinDistance": "Assets/Scripts/Player/PlayerFishingClient.fcg:240",
+    "GetCameraFlatForward": "Assets/Scripts/Player/PlayerFishingClient.fcg:273",
+    "FaceLocalPlayerToFishingDirection": "Assets/Scripts/Player/PlayerFishingClient.fcg:293",
+    "CanCameraSeeWaterFirst": "Assets/Scripts/Player/PlayerFishingClient.fcg:305",
+    "CalculateReelProgress": "Assets/Scripts/Player/PlayerFishingClient.fcg:324",
+    "CloseFishingHitBar": "Assets/Scripts/Player/PlayerFishingClient.fcg:347",
+    "CompleteFishingSuccess": "Assets/Scripts/Player/PlayerFishingClient.fcg:353",
+    "HasPendingPetReward": "Assets/Scripts/Player/PlayerFishingClient.fcg:364",
+    "ConfirmFishingPetReward": "Assets/Scripts/Player/PlayerFishingClient.fcg:368",
+    "DeclineFishingPetReward": "Assets/Scripts/Player/PlayerFishingClient.fcg:378",
+    "ForceMissFishing": "Assets/Scripts/Player/PlayerFishingClient.fcg:387",
+    "ForceStopFishing": "Assets/Scripts/Player/PlayerFishingClient.fcg:395",
+    "ResetFishingVisuals": "Assets/Scripts/Player/PlayerFishingClient.fcg:409",
+    "ClearPendingRewardValue": "Assets/Scripts/Player/PlayerFishingClient.fcg:420",
+    "HandleCatching": "Assets/Scripts/Player/PlayerFishingClient.fcg:435",
+    "HandleSetFishingComplete": "Assets/Scripts/Player/PlayerFishingClient.fcg:447",
+    "HandleSetValueFishingReward": "Assets/Scripts/Player/PlayerFishingClient.fcg:463",
+    "HandleEventFishingRewardReveal": "Assets/Scripts/Player/PlayerFishingClient.fcg:475",
+    "HandleEventFishingRewardResolved": "Assets/Scripts/Player/PlayerFishingClient.fcg:507",
+    "HandleEventFishingInventoryUpdated": "Assets/Scripts/Player/PlayerFishingClient.fcg:532",
+    "RequestFishingInventoryAction": "Assets/Scripts/Player/PlayerFishingClient.fcg:612",
+    "IsFishingInventoryActionPending": "Assets/Scripts/Player/PlayerFishingClient.fcg:621",
+    "HandleValueReward": "Assets/Scripts/Player/PlayerFishingClient.fcg:625",
+    "ReleaseRewardSkin": "Assets/Scripts/Player/PlayerFishingClient.fcg:677",
+    "IsFishingCompletionPending": "Assets/Scripts/Player/PlayerFishingClient.fcg:699",
+    "GetCurrentState": "Assets/Scripts/Player/PlayerFishingClient.fcg:703",
+    "InitEventDigConfig": "Assets/Scripts/Configs/EventDigConfig.fcg:72",
+    "LoadEventDigConfig": "Assets/Scripts/Configs/EventDigConfig.fcg:107",
+    "LoadScanConfigFromCSV": "Assets/Scripts/Configs/EventDigConfig.fcg:121",
+    "LoadSpotRarityConfigFromCSV": "Assets/Scripts/Configs/EventDigConfig.fcg:147",
+    "LoadPoolMapConfigFromCSV": "Assets/Scripts/Configs/EventDigConfig.fcg:169",
+    "LoadDigPoolConfigFromCSV": "Assets/Scripts/Configs/EventDigConfig.fcg:181",
+    "AddDigPetWeight": "Assets/Scripts/Configs/EventDigConfig.fcg:202",
+    "LoadGuaranteedDigChestConfigFromCSV": "Assets/Scripts/Configs/EventDigConfig.fcg:207",
+    "GetScanTierByRebirthLevel": "Assets/Scripts/Configs/EventDigConfig.fcg:231",
+    "GetScanSpotCount": "Assets/Scripts/Configs/EventDigConfig.fcg:245",
+    "GetScanRarityCap": "Assets/Scripts/Configs/EventDigConfig.fcg:253",
+    "GetScanBaseRadius": "Assets/Scripts/Configs/EventDigConfig.fcg:261",
+    "GetDigMashPower": "Assets/Scripts/Configs/EventDigConfig.fcg:269",
+    "GetDigMashDriftSpeed": "Assets/Scripts/Configs/EventDigConfig.fcg:277",
+    "GetDigMashPowerGapMultiplier": "Assets/Scripts/Configs/EventDigConfig.fcg:285",
+    "GetDigMashDriftGapMultiplier": "Assets/Scripts/Configs/EventDigConfig.fcg:289",
+    "GetDigMashGapMultiplier": "Assets/Scripts/Configs/EventDigConfig.fcg:293",
+    "GetSpotRarityWeighted": "Assets/Scripts/Configs/EventDigConfig.fcg:309",
+    "GetPoolTierByRarity": "Assets/Scripts/Configs/EventDigConfig.fcg:326",
+    "IsPetInDigPool": "Assets/Scripts/Configs/EventDigConfig.fcg:334",
+    "GetRandomDigPetId": "Assets/Scripts/Configs/EventDigConfig.fcg:338",
+    "GetGuaranteedDigChestRate": "Assets/Scripts/Configs/EventDigConfig.fcg:355",
+    "InitPetConfigs_Client": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:118",
+    "LoadPetConfigs_Client": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:130",
+    "GetPetConfigFromCSV": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:137",
+    "GetLuckyBoxConfigFromCSV": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:162",
+    "GetSecretFusionPetConfigFromCSV": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:188",
+    "BuildPetSkinConfigs": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:214",
+    "GetPetName": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:231",
+    "GetPetIdByName": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:239",
+    "IsSkinPetId": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:247",
+    "GetBasePetId": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:251",
+    "GetPetSkinKey": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:259",
+    "GetPetSkinPrefabKey": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:267",
+    "GetPetSkinPosition": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:275",
+    "GetPetSkinRotation": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:283",
+    "GetPetSkinScale": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:291",
+    "GetPetExceptionRegions": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:299",
+    "IsValidPetId": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:307",
+    "IsSecretFusionPetId": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:311",
+    "IsLuckyBoxPetId": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:319",
+    "CanFusePet": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:323",
+    "IsPetSpawnOnRoad": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:327",
+    "GetPetObtainSource": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:331",
+    "GetPetObtainIcon": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:356",
+    "GetPetObtainBadgeIcon": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:373",
+    "GetPetObtainLocalization": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:380",
+    "GetPetRarity": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:397",
+    "GetRarityLocalization": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:401",
+    "GetRarityLocalizationColor": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:409",
+    "GetRarityLocalizationLightColor": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:430",
+    "GetRarityColor": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:451",
+    "GetPetThumbnailKey": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:455",
+    "GetPetNameLocalization": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:459",
+    "GetPetNameLocalizationColor": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:463",
+    "GetPetNameLocalizationLightColor": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:486",
+    "GetPetMeshKey": "Assets/Scripts/ClientConfigs/PetConfigs_Client.fcg:509",
+    "GetWidgetLabelScale": "Assets/Scripts/Utils/UIUtilsClient.fcg:73",
+    "FormatTime": "Assets/Scripts/Utils/UIUtilsClient.fcg:90",
+    "FormatTimeWithColon": "Assets/Scripts/Utils/UIUtilsClient.fcg:165",
+    "UpdatePetObtainBadge": "Assets/Scripts/Utils/UIUtilsClient.fcg:226",
+    "UpdatePetWidget": "Assets/Scripts/Utils/UIUtilsClient.fcg:240",
+    "UpdatePetWidgetV2": "Assets/Scripts/Utils/UIUtilsClient.fcg:293",
+    "UpdatePassiveWidget": "Assets/Scripts/Utils/UIUtilsClient.fcg:344",
+    "GetSortedPassiveIds": "Assets/Scripts/Utils/UIUtilsClient.fcg:371",
+    "GetPassiveValue": "Assets/Scripts/Utils/UIUtilsClient.fcg:399",
+    "GetPassiveDisplayValue": "Assets/Scripts/Utils/UIUtilsClient.fcg:414",
+    "SetUIRewardByType": "Assets/Scripts/Utils/UIUtilsClient.fcg:418",
+    "SetUiReward": "Assets/Scripts/Utils/UIUtilsClient.fcg:455",
+    "StringToListIntV2": "Assets/Scripts/Utils/UIUtilsClient.fcg:476",
+    "UpdateRewardWidgetV2": "Assets/Scripts/Utils/UIUtilsClient.fcg:493",
+    "CleanNumber": "Assets/Scripts/Utils/BigNumberHandlerClient.fcg:66",
+    "ConvertListNumToString": "Assets/Scripts/Utils/BigNumberHandlerClient.fcg:74",
+    "ToDisplayFormat": "Assets/Scripts/Utils/BigNumberHandlerClient.fcg:92",
+    "ConvertMoneyRankValueToMoneyFormat": "Assets/Scripts/Utils/BigNumberHandlerClient.fcg:177"
+  },
+  "runtimeAssignments": [
+    {
+      "target": "_PermanentEventHUD",
+      "property": "Depth",
+      "expression": "HudDepth.PermanentEvent",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:170"
+    },
+    {
+      "target": "_CostWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:177"
+    },
+    {
+      "target": "_SwitchModeWaitingBorder",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:191"
+    },
+    {
+      "target": "_FishEventWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:192"
+    },
+    {
+      "target": "_PermanentEventHUD",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:199"
+    },
+    {
+      "target": "_SwitchModeButton",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:200"
+    },
+    {
+      "target": "_PlacePetButton",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:201"
+    },
+    {
+      "target": "_ConfirmBuyWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:202"
+    },
+    {
+      "target": "_PermanentEventHUD",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:231"
+    },
+    {
+      "target": "_InventoryRejectButton",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:241"
+    },
+    {
+      "target": "_PermanentEventHUD",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:242"
+    },
+    {
+      "target": "_SwitchModeButton",
+      "property": "IsVisible",
+      "expression": "isActive",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:252"
+    },
+    {
+      "target": "_HintSwitchMode",
+      "property": "IsVisible",
+      "expression": "isActive",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:281"
+    },
+    {
+      "target": "_MashButton",
+      "property": "ActualPosition",
+      "expression": "Vector3 {position.X, position.Y, 0}",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:298"
+    },
+    {
+      "target": "_ScanButton",
+      "property": "ActualPosition",
+      "expression": "Vector3 {position.X, position.Y, 0}",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:299"
+    },
+    {
+      "target": "_MashButton",
+      "property": "SizeDelta",
+      "expression": "size * ACTION_BUTTON_SCALE",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:300"
+    },
+    {
+      "target": "_ScanButton",
+      "property": "SizeDelta",
+      "expression": "size * ACTION_BUTTON_SCALE",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:301"
+    },
+    {
+      "target": "_MashButton",
+      "property": "IsVisible",
+      "expression": "isActive",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:305"
+    },
+    {
+      "target": "_SwitchModeWaitingBorder",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:365"
+    },
+    {
+      "target": "_MashButtonIcon",
+      "property": "SpriteName",
+      "expression": "GetEventIcon(_ActiveEventType)",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:413"
+    },
+    {
+      "target": "_DigEventWidget",
+      "property": "IsVisible",
+      "expression": "hasScan && _IsEventMode",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:417"
+    },
+    {
+      "target": "_FishEventWidget",
+      "property": "IsVisible",
+      "expression": "hasFishControls && _IsEventMode",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:418"
+    },
+    {
+      "target": "_SwitchModeWaitingBorder",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:450"
+    },
+    {
+      "target": "_SwitchModeWaitingBorder",
+      "property": "FillAmount",
+      "expression": "HIT_BAR_MAX_RATIO",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:451"
+    },
+    {
+      "target": "_SwitchModeWaitingBorder",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:459"
+    },
+    {
+      "target": "_HitBarWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:516"
+    },
+    {
+      "target": "_HitBarWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:581"
+    },
+    {
+      "target": "_HitBarWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:599"
+    },
+    {
+      "target": "_HitBarHandle",
+      "property": "Angle",
+      "expression": "_HitBarHandleAngle",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:603"
+    },
+    {
+      "target": "_HitBarTapPrompt",
+      "property": "FontSize",
+      "expression": "_HitBarTapPromptFontSize",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:604"
+    },
+    {
+      "target": "_HitBarTapRing",
+      "property": "Size",
+      "expression": "_HitBarTapRingSize",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:605"
+    },
+    {
+      "target": "_HitBarTapRing",
+      "property": "ActualPosition",
+      "expression": "actionPosition",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:635"
+    },
+    {
+      "target": "_HitBarTapPrompt",
+      "property": "ActualPosition",
+      "expression": "Vector3 {",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:636"
+    },
+    {
+      "target": "_HitBarHandle",
+      "property": "SpriteName",
+      "expression": "GetEventIcon(eventType)",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:656"
+    },
+    {
+      "target": "_HitBarBackground",
+      "property": "SpriteName",
+      "expression": "Res.Sprite[backgroundKey]",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:657"
+    },
+    {
+      "target": "_HitBarHandle",
+      "property": "AnchorPosition",
+      "expression": "Vector3 {handleX, _HitBarHandlePosition.Y, _HitBarHandlePosition.Z}",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:662"
+    },
+    {
+      "target": "_InventoryReturnButton",
+      "property": "AnchorPosition",
+      "expression": "Vector3 {returnPosition.X, returnY, returnPosition.Z}",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:734"
+    },
+    {
+      "target": "_InventoryRejectButton",
+      "property": "AnchorPosition",
+      "expression": "Vector3 {rejectPosition.X, rejectY, rejectPosition.Z}",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:735"
+    },
+    {
+      "target": "_InventoryReturnButton",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:736"
+    },
+    {
+      "target": "_InventoryRejectButton",
+      "property": "IsVisible",
+      "expression": "_IsExchangePending",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:737"
+    },
+    {
+      "target": "_InventoryWidget",
+      "property": "IsVisible",
+      "expression": "isActive || _IsExchangePending || List.Length(_EventPetInventoryCards) > 0",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:741"
+    },
+    {
+      "target": "_PlacePetButton",
+      "property": "IsVisible",
+      "expression": "isActive",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:746"
+    },
+    {
+      "target": "_InventoryDetails",
+      "property": "Content",
+      "expression": "\"\"",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:809"
+    },
+    {
+      "target": "_InventoryDetails",
+      "property": "Content",
+      "expression": "LocString{\"HUD_PERMANENT_EVENT_EXCHANGE_DETAILS\", {newPetNameColor, newPetIncome, petNameColor, petIncome}}",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:825"
+    },
+    {
+      "target": "_InventoryReturnLabel",
+      "property": "Content",
+      "expression": "LocString{\"HUD_YES\", {}}",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:826"
+    },
+    {
+      "target": "_InventoryDetails",
+      "property": "Content",
+      "expression": "LocString{\"HUD_PERMANENT_EVENT_INVENTORY_DETAILS\", {petNameColor, petIncome}}",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:829"
+    },
+    {
+      "target": "_InventoryReturnLabel",
+      "property": "Content",
+      "expression": "LocString{\"HUD_BUY\", {}}",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:832"
+    },
+    {
+      "target": "_InventoryReturnLabel",
+      "property": "Content",
+      "expression": "LocString{\"HUD_CLAIM\", {}}",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:834"
+    },
+    {
+      "target": "_InventoryWidget",
+      "property": "SizeDelta",
+      "expression": "Vector2 {_InventoryOriginalSize.X, inventoryHeight}",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:860"
+    },
+    {
+      "target": "_RewardWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:876"
+    },
+    {
+      "target": "_RewardWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:883"
+    },
+    {
+      "target": "titleLabel",
+      "property": "Content",
+      "expression": "LocString{\"HUD_PERMANENT_EVENT_CONFIRM_BUY\", {}}",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:933"
+    },
+    {
+      "target": "confirmDetails",
+      "property": "Content",
+      "expression": "LocString{\"HUD_PERMANENT_EVENT_CONFIRM_BUY_DETAILS\", {petNameColor, petPriceText}}",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:934"
+    },
+    {
+      "target": "_ConfirmBuyWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:935"
+    },
+    {
+      "target": "_ConfirmBuyWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:941"
+    },
+    {
+      "target": "_DigEventWidget",
+      "property": "IsVisible",
+      "expression": "isActive && _ActiveEventType == EventType.PEDig",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:952"
+    },
+    {
+      "target": "_ScanButton",
+      "property": "IsVisible",
+      "expression": "isActive",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:965"
+    },
+    {
+      "target": "_ScanCooldown",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:994"
+    },
+    {
+      "target": "_ScanCooldown",
+      "property": "FillAmount",
+      "expression": "1.0",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:995"
+    },
+    {
+      "target": "_ScanCooldown",
+      "property": "FillAmount",
+      "expression": "0.0",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:1013"
+    },
+    {
+      "target": "_ScanCooldown",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudPermanentEvent.fcg:1014"
+    }
+  ],
+  "spriteKeys": {
+    "RABBIT": "Assets/Sprites/Pets/RABBIT.png",
+    "DOG": "Assets/Sprites/Pets/DOG.png",
+    "SHRIMP": "Assets/Sprites/Pets/SHRIMP.png",
+    "MUDSKIPPER": "Assets/Sprites/Pets/MUDSKIPPER.png",
+    "DigIcon": "Assets/Sprites/Icons/DigIcon.png",
+    "FishIcon": "Assets/Sprites/Icons/FishIcon.png",
+    "Dirt": "Assets/Textures/Dirt.png",
+    "Tidal": "Assets/Textures/Tidal.jpg",
+    "FusionSecret": "Assets/Sprites/Icons/FusionSecret.png"
+  },
+  "rarityColors": {
+    "COMMON": "#8CFF91",
+    "RARE": "#4CC8FE",
+    "EPIC": "#EA70FF",
+    "LEGENDARY": "#FED868",
+    "MYTHIC": "#FF6F6F",
+    "APEX": "#FF9F43",
+    "LIMITED": "#B3CA1F"
+  },
+  "suffixes": {
+    "1": "",
+    "2": "k",
+    "3": "m",
+    "4": "B",
+    "5": "T",
+    "6": "Q",
+    "7": "Qi",
+    "8": "Sx",
+    "9": "Sp",
+    "10": "Oc",
+    "11": "No",
+    "12": "De",
+    "13": "Ud",
+    "14": "Dd",
+    "15": "Td",
+    "16": "Qad",
+    "17": "Qid",
+    "18": "Sxd",
+    "19": "Spd",
+    "20": "Ocd",
+    "21": "Nod",
+    "22": "Vg",
+    "23": "Uvg",
+    "24": "Dvg",
+    "25": "Tvg",
+    "26": "Qavg",
+    "27": "Qivg",
+    "28": "Sxvg",
+    "29": "Spvg",
+    "30": "Ocvg",
+    "31": "Novg",
+    "32": "Tg",
+    "33": "Utg",
+    "34": "Dtg",
+    "35": "Ttg",
+    "36": "Qatg",
+    "37": "Qitg",
+    "38": "Sxtg",
+    "39": "Sptg",
+    "40": "Octg",
+    "41": "Notg",
+    "42": "Qag",
+    "43": "Uqag",
+    "44": "Dqag",
+    "45": "Tqag",
+    "46": "Qaqag",
+    "47": "Qiqag",
+    "48": "Sxqag",
+    "49": "Spqag",
+    "50": "Ocqag"
+  },
+  "fixtures": {
+    "Dig": [
+      {
+        "ID": "3",
+        "Name": "RABBIT",
+        "Rarity": "COMMON",
+        "Value": "7",
+        "Price": "60",
+        "Rank": "3",
+        "DustCap": "",
+        "CanFuse": "1",
+        "ExceptionRegion": "",
+        "ReplaceName": "",
+        "GuaranteeWeight": "",
+        "Weight1": "51111",
+        "Weight2": "46667",
+        "Weight3": "42222",
+        "Weight4": "36667",
+        "Weight5": "31111",
+        "Day 1": "DOWN",
+        "Day 2": "DOWN",
+        "Day 3": "UP",
+        "Day 4": "UP",
+        "Day 5": "NORMAL",
+        "Day 6": "NORMAL",
+        "Day 7": "NORMAL",
+        "obtainIcon": "DigIcon"
+      },
+      {
+        "ID": "8",
+        "Name": "DOG",
+        "Rarity": "COMMON",
+        "Value": "9",
+        "Price": "460",
+        "Rank": "8",
+        "DustCap": "",
+        "CanFuse": "1",
+        "ExceptionRegion": "",
+        "ReplaceName": "",
+        "GuaranteeWeight": "",
+        "Weight1": "51111",
+        "Weight2": "46666",
+        "Weight3": "42222",
+        "Weight4": "36666",
+        "Weight5": "31111",
+        "Day 1": "UP",
+        "Day 2": "UP",
+        "Day 3": "NORMAL",
+        "Day 4": "NORMAL",
+        "Day 5": "NORMAL",
+        "Day 6": "DOWN",
+        "Day 7": "DOWN",
+        "obtainIcon": "DigIcon"
+      }
+    ],
+    "Fish": [
+      {
+        "ID": "52",
+        "Name": "SHRIMP",
+        "Rarity": "COMMON",
+        "Value": "11",
+        "Price": "550",
+        "Rank": "9",
+        "DustCap": "",
+        "CanFuse": "1",
+        "ExceptionRegion": "",
+        "ReplaceName": "",
+        "GuaranteeWeight": "",
+        "Weight1": "51111",
+        "Weight2": "46666",
+        "Weight3": "42222",
+        "Weight4": "36666",
+        "Weight5": "31111",
+        "Day 1": "DOWN",
+        "Day 2": "UP",
+        "Day 3": "UP",
+        "Day 4": "NORMAL",
+        "Day 5": "NORMAL",
+        "Day 6": "NORMAL",
+        "Day 7": "DOWN",
+        "obtainIcon": "FishIcon"
+      },
+      {
+        "ID": "1012",
+        "Name": "MUDSKIPPER",
+        "Rarity": "COMMON",
+        "Value": "1290",
+        "Price": "22222",
+        "Rank": "12",
+        "DustCap": "400",
+        "CanFuse": "1",
+        "ExceptionRegion": "",
+        "ReplaceName": "",
+        "GuaranteeWeight": "",
+        "Weight1": "0",
+        "Weight2": "0",
+        "Weight3": "0",
+        "Weight4": "0",
+        "Weight5": "0",
+        "Day 1": "",
+        "Day 2": "",
+        "Day 3": "",
+        "Day 4": "",
+        "Day 5": "",
+        "Day 6": "",
+        "Day 7": "",
+        "obtainIcon": "FusionSecret"
+      }
+    ]
+  },
+  "digPower": {
+    "COMMON": 45,
+    "RARE": 35,
+    "EPIC": 28,
+    "LEGENDARY": 22,
+    "MYTHIC": 18
+  },
+  "digDrift": {
+    "COMMON": 10,
+    "RARE": 13,
+    "EPIC": 17,
+    "LEGENDARY": 22,
+    "MYTHIC": 28
+  },
+  "characterWidths": {
+    "1": 12.11,
+    "2": 23,
+    "3": 23,
+    "4": 12.11,
+    "5": 7.93,
+    "6": 8.85,
+    "7": 8.21,
+    "8": 8.52,
+    "9": 9.2,
+    "10": 23,
+    "11": 7.93,
+    "12": 12.11,
+    "13": 8.52,
+    "14": 11.5,
+    "15": 23,
+    "16": 8.52,
+    "17": 11.5,
+    "18": 11.5,
+    "19": 12.78,
+    "20": 11.5
+  },
+  "fixturePolicy": "First two source pool pets, base level, no mutation/weather; synthetic nearby spot of matching COMMON scan/spot tier, inventory ownership, purchases and reward outcomes",
+  "gaps": [
+    "Attack control device position/size are unavailable; serialized action control geometry is retained instead of inventing engine default dimensions",
+    "Dig/Fish world targeting, camera/water/spot checks, server RNG and requests are simulated; reward selection is a labelled local scenario",
+    "Only same COMMON scan/spot tier is exercised in Dig hitbar; other tier-gap multipliers and Fish difficulty overrides are not simulated",
+    "3D animations, world assets, tween easing, default attack hiding and real inventory authority are outside the static canvas",
+    "Legacy registered aliases Event/MashMeter can be stale; source tree remains authoritative",
+    "No engine screenshots; font/shader/scaler, hit order, safe area and scroll inertia unverified; player state is a local simulation"
+  ]
+}

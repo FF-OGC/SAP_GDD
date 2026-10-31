@@ -1,0 +1,1080 @@
+{
+  "sprites": [
+    {
+      "key": "Assets/Sprites/NewAssets/TaskBG.png",
+      "declaredKey": "Assets/Sprites/NewAssets/TaskBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/TaskBG.png"
+      ],
+      "fileId": "my2o5w5qwk-mus99lug-h2opk4w1uv8",
+      "output": "./assets/ui-sprites/permanent-event/NewAssets__TaskBG.png",
+      "missing": false,
+      "references": [
+        "PermanentEvent/Common/PetInventory/Inventory/BG"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 50,
+        "right": 110,
+        "top": 5,
+        "bottom": 10
+      },
+      "width": 278,
+      "height": 119
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/YellowButton.png",
+      "declaredKey": "Assets/Sprites/NewAssets/YellowButton.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/YellowButton.png"
+      ],
+      "fileId": "155t2glvvdq-mu6vewp3-o48sy8osfsn",
+      "output": "./assets/ui-sprites/permanent-event/NewAssets__YellowButton.png",
+      "missing": false,
+      "references": [
+        "PermanentEvent/Common/PetInventory/Inventory/ReturnButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 50,
+        "right": 20,
+        "top": 20,
+        "bottom": 25
+      },
+      "width": 160,
+      "height": 66
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/BlueButton.png",
+      "declaredKey": "Assets/Sprites/NewAssets/BlueButton.png",
+      "declaredKeys": [
+        "Assets/Sprites/NewAssets/BlueButton.png"
+      ],
+      "fileId": "mgcae4djxp-mu6vevy5-j3m6yz6bep",
+      "output": "./assets/ui-sprites/permanent-event/NewAssets__BlueButton.png",
+      "missing": false,
+      "references": [
+        "PermanentEvent/Common/PetInventory/Inventory/RejectButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 50,
+        "right": 20,
+        "top": 20,
+        "bottom": 25
+      },
+      "width": 160,
+      "height": 66
+    },
+    {
+      "key": "Assets/Sprites/Buttons/SkillButtonBG.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Buttons/SkillButtonBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Buttons/SkillButtonBG.png",
+        "Assets/Sprites/Buttons/SkillButtonBG.png"
+      ],
+      "fileId": "vp527gybpr-mincvg4z-pp4iuvf2pc",
+      "output": "./assets/ui-sprites/permanent-event/Buttons__SkillButtonBG.png",
+      "missing": false,
+      "references": [
+        "PermanentEvent/Common/PetInventory/PlacePetButton",
+        "PermanentEvent/Common/SwitchModeButton",
+        "PermanentEvent/Common/MashButton/BG",
+        "PermanentEvent/DigEvent/ScanButton/BG"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 152,
+      "height": 152
+    },
+    {
+      "key": "Assets/Sprites/Icons/InteractIconTemp.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/InteractIconTemp.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/InteractIconTemp.png"
+      ],
+      "fileId": "y3nmugqb6lh-mivjh7il-g7pntr7jpm",
+      "output": "./assets/ui-sprites/permanent-event/Icons__InteractIconTemp.png",
+      "missing": false,
+      "references": [
+        "PermanentEvent/Common/PetInventory/PlacePetButton/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 48,
+      "height": 48
+    },
+    {
+      "key": "Assets/Sprites/Shapes/SquareRounded100.png",
+      "declaredKey": "Assets/Sprites/Shapes/SquareRounded100.png",
+      "declaredKeys": [
+        "Assets/Sprites/Shapes/SquareRounded100.png"
+      ],
+      "fileId": "l8c4cr6s3nf-mbq68mwy-pxhc7b7pxi9",
+      "output": "./assets/ui-sprites/permanent-event/Shapes__SquareRounded100.png",
+      "missing": false,
+      "references": [
+        "PermanentEvent/Common/PetInventory/ConfirmBuy/BG"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 7,
+        "right": 7,
+        "top": 7,
+        "bottom": 7
+      },
+      "width": 100,
+      "height": 100
+    },
+    {
+      "key": "Assets/Sprites/Backgrounds/TitleBG.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Backgrounds/TitleBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Backgrounds/TitleBG.png"
+      ],
+      "fileId": "3b4ikebd1mn-minctbs9-a8p23winp6",
+      "output": "./assets/ui-sprites/permanent-event/Backgrounds__TitleBG.png",
+      "missing": false,
+      "references": [
+        "PermanentEvent/Common/PetInventory/ConfirmBuy/Title"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 618,
+      "height": 74
+    },
+    {
+      "key": "Assets/Sprites/Icons/CloseIcon.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Icons/CloseIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Icons/CloseIcon.png"
+      ],
+      "fileId": "f9euyqwxbow-minctbvv-qqbidtvn9l",
+      "output": "./assets/ui-sprites/permanent-event/Icons__CloseIcon.png",
+      "missing": false,
+      "references": [
+        "PermanentEvent/Common/PetInventory/ConfirmBuy/Title/CloseButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 44,
+      "height": 44
+    },
+    {
+      "key": "Assets/Sprites/Buttons/GrayButton.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Buttons/GrayButton.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Buttons/GrayButton.png"
+      ],
+      "fileId": "ximayof5b6f-minctb33-c8tnxb0x3y",
+      "output": "./assets/ui-sprites/permanent-event/Buttons__GrayButton.png",
+      "missing": false,
+      "references": [
+        "PermanentEvent/Common/PetInventory/ConfirmBuy/NoButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 280,
+      "height": 71
+    },
+    {
+      "key": "Assets/Sprites/Buttons/YellowButton.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Buttons/YellowButton.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Buttons/YellowButton.png"
+      ],
+      "fileId": "y6h2esu1a4r-minctbbv-l0h8c6ul12r",
+      "output": "./assets/ui-sprites/permanent-event/Buttons__YellowButton.png",
+      "missing": false,
+      "references": [
+        "PermanentEvent/Common/PetInventory/ConfirmBuy/YesButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 280,
+      "height": 71
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png"
+      ],
+      "fileId": "5d250edc7ccde0be5ccab1e2cf53b57f",
+      "output": null,
+      "missing": true,
+      "references": [
+        "PermanentEvent/Common/HitBar/Track"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Textures/Dirt.png",
+      "declaredKey": "Assets/Textures/Dirt.png",
+      "declaredKeys": [
+        "Assets/Textures/Dirt.png"
+      ],
+      "fileId": "p6eo4jnhr9-moclmwu5-98ycwi7vuge",
+      "output": "./assets/ui-sprites/permanent-event/Textures__Dirt.png",
+      "missing": false,
+      "references": [
+        "PermanentEvent/Common/HitBar/Track/EventBG",
+        "runtime:permanent-event:Dirt"
+      ],
+      "origins": [
+        ".ui",
+        "Assets/Scripts/HUDs/HudPermanentEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Icons/DigIcon.png",
+      "declaredKey": "Assets/Sprites/Icons/DigIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/DigIcon.png"
+      ],
+      "fileId": "15lhsvfhx9q-msvz2uog-xeu9tqybawa",
+      "output": "./assets/ui-sprites/permanent-event/Icons__DigIcon.png",
+      "missing": false,
+      "references": [
+        "PermanentEvent/Common/HitBar/Handle",
+        "PermanentEvent/Common/MashButton/Icon",
+        "runtime:permanent-event:DigIcon"
+      ],
+      "origins": [
+        ".ui",
+        "Assets/Scripts/HUDs/HudPermanentEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 96,
+      "height": 96
+    },
+    {
+      "key": "Assets/Sprites/Guides/GuideCircle.png",
+      "declaredKey": "Assets/Sprites/Guides/GuideCircle.png",
+      "declaredKeys": [
+        "Assets/Sprites/Guides/GuideCircle.png"
+      ],
+      "fileId": "s3zv96erpn-mg4ze9yz-hgh0an9w9es",
+      "output": "./assets/ui-sprites/permanent-event/Guides__GuideCircle.png",
+      "missing": false,
+      "references": [
+        "PermanentEvent/Common/HitBar/TapRing",
+        "PermanentEvent/Common/SwitchModeButton/WaitingBorder",
+        "PermanentEvent/Common/SwitchModeButton/HintSwitchMode",
+        "PermanentEvent/Common/MashButton/Highlight"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 88,
+      "height": 88
+    },
+    {
+      "key": "Assets/Sprites/Fishing/exchange.png",
+      "declaredKey": "Assets/Sprites/Fishing/exchange.png",
+      "declaredKeys": [
+        "Assets/Sprites/Fishing/exchange.png"
+      ],
+      "fileId": "gkooh973i-mosefhuf-6n1sdgt1lhg",
+      "output": null,
+      "missing": true,
+      "references": [
+        "PermanentEvent/Common/SwitchModeButton/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Shapes/SunStar.png",
+      "declaredKey": "Assets/Sprites/Shapes/SunStar.png",
+      "declaredKeys": [
+        "Assets/Sprites/Shapes/SunStar.png"
+      ],
+      "fileId": "0be6tw9yc3ua-mpru7ny8-zx3hku8hk9",
+      "output": "./assets/ui-sprites/permanent-event/Shapes__SunStar.png",
+      "missing": false,
+      "references": [
+        "PermanentEvent/Common/Reward/RarityBG"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 112
+    },
+    {
+      "key": "Assets/Sprites/Pets/WHALE.png",
+      "declaredKey": "Assets/Sprites/Pets/WHALE.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/WHALE.png"
+      ],
+      "fileId": "mpds1aqpvqj-mhbsxpbl-hjif92xcsp9",
+      "output": "./assets/ui-sprites/permanent-event/Pets__WHALE.png",
+      "missing": false,
+      "references": [
+        "PermanentEvent/Common/Reward/PetThumbnail"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Shapes/Trapezoid.png",
+      "declaredKey": "Assets/Sprites/Shapes/Trapezoid.png",
+      "declaredKeys": [
+        "Assets/Sprites/Shapes/Trapezoid.png"
+      ],
+      "fileId": "tttjoo2wh3-mt1cxsn5-8s4gwx9d9j",
+      "output": "./assets/ui-sprites/permanent-event/Shapes__Trapezoid.png",
+      "missing": false,
+      "references": [
+        "PermanentEvent/Common/Reward/NameBG"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 12,
+        "right": 12,
+        "top": 4,
+        "bottom": 13
+      },
+      "width": 125,
+      "height": 30
+    },
+    {
+      "key": "Assets/Sprites/Icons/FusionSecret.png",
+      "declaredKey": "Assets/Sprites/FusionSecret.png",
+      "declaredKeys": [
+        "Assets/Sprites/FusionSecret.png",
+        "Assets/Sprites/Icons/FusionSecret.png"
+      ],
+      "fileId": "ppvv7o7yus9-miei7cfi-v4eci7ov77a",
+      "output": "./assets/ui-sprites/permanent-event/Icons__FusionSecret.png",
+      "missing": false,
+      "references": [
+        "PermanentEvent/Common/Reward/SecretFusionIcon",
+        "runtime:permanent-event:FusionSecret"
+      ],
+      "origins": [
+        ".ui",
+        "Assets/Scripts/HUDs/HudPermanentEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_UGC_Dyeing_SkilliconBg01.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_UGC_Dyeing_SkilliconBg01.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_UGC_Dyeing_SkilliconBg01.png"
+      ],
+      "fileId": "3015426fc9d134d82c12fb6caa178dac",
+      "output": null,
+      "missing": true,
+      "references": [
+        "PermanentEvent/Common/MashButton",
+        "PermanentEvent/DigEvent/ScanButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/ui_icon_skill_Detective.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/ui_icon_skill_Detective.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/ui_icon_skill_Detective.png"
+      ],
+      "fileId": "5a7058d0c36d61bea231175d3395d533",
+      "output": null,
+      "missing": true,
+      "references": [
+        "PermanentEvent/DigEvent/ScanButton/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_UGC_Dyeing_SkilliconBg.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_UGC_Dyeing_SkilliconBg.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_UGC_Dyeing_SkilliconBg.png"
+      ],
+      "fileId": "0d9384a09ed32f303fa939296254458e",
+      "output": null,
+      "missing": true,
+      "references": [
+        "PermanentEvent/DigEvent/ScanButton/Cooldown"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Icons/MoneyIcon.png",
+      "declaredKey": "Assets/Sprites/Icons/MoneyIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/MoneyIcon.png"
+      ],
+      "fileId": "1ev4vbb6r81-mincvh0q-an2r8ytn9ao",
+      "output": "./assets/ui-sprites/permanent-event/Icons__MoneyIcon.png",
+      "missing": false,
+      "references": [
+        "PermanentEvent/DigEvent/Cost/CashIcon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 96,
+      "height": 96
+    },
+    {
+      "key": "Assets/Sprites/Buttons/ButtonBG.png",
+      "declaredKey": "Assets/Sprites/Buttons/ButtonBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Buttons/ButtonBG.png"
+      ],
+      "fileId": "frxwzsm3rt9-mincvgqh-b7kkd1pmc8m",
+      "output": "./assets/ui-sprites/permanent-event/Buttons__ButtonBG.png",
+      "missing": false,
+      "references": [
+        "PermanentEvent/DigEvent/Cost/IncCostButton",
+        "PermanentEvent/DigEvent/Cost/DecCostButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 102,
+      "height": 102
+    },
+    {
+      "key": "Assets/Sprites/Icons/IncreaseIcon.png",
+      "declaredKey": "Assets/Sprites/Icons/IncreaseIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/IncreaseIcon.png"
+      ],
+      "fileId": "2tqcqf75rtu-mswqopit-reknbv3d8u",
+      "output": "./assets/ui-sprites/permanent-event/Icons__IncreaseIcon.png",
+      "missing": false,
+      "references": [
+        "PermanentEvent/DigEvent/Cost/IncCostButton/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 32,
+      "height": 32
+    },
+    {
+      "key": "Assets/Sprites/Icons/DecreaseIcon.png",
+      "declaredKey": "Assets/Sprites/Icons/DecreaseIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/DecreaseIcon.png"
+      ],
+      "fileId": "3ktrqwq852x-mswqoq4h-mz19qr08qbg",
+      "output": "./assets/ui-sprites/permanent-event/Icons__DecreaseIcon.png",
+      "missing": false,
+      "references": [
+        "PermanentEvent/DigEvent/Cost/DecCostButton/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 32,
+      "height": 32
+    },
+    {
+      "key": "Assets/Sprites/Pets/RABBIT.png",
+      "declaredKey": "Assets/Sprites/Pets/RABBIT.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/RABBIT.png"
+      ],
+      "fileId": "gtpipo3qvc-mggb0f3h-hk9lqlwp7re",
+      "output": "./assets/ui-sprites/permanent-event/Pets__RABBIT.png",
+      "missing": false,
+      "references": [
+        "runtime:permanent-event:RABBIT"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudPermanentEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/DOG.png",
+      "declaredKey": "Assets/Sprites/Pets/DOG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/DOG.png"
+      ],
+      "fileId": "eyu2fnurisl-mggb0hax-d6zuegd3sv",
+      "output": "./assets/ui-sprites/permanent-event/Pets__DOG.png",
+      "missing": false,
+      "references": [
+        "runtime:permanent-event:DOG"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudPermanentEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/SHRIMP.png",
+      "declaredKey": "Assets/Sprites/Pets/SHRIMP.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/SHRIMP.png"
+      ],
+      "fileId": "ytkngrrcy3-mh92zf7a-l6pwuf8bvy",
+      "output": "./assets/ui-sprites/permanent-event/Pets__SHRIMP.png",
+      "missing": false,
+      "references": [
+        "runtime:permanent-event:SHRIMP"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudPermanentEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Pets/MUDSKIPPER.png",
+      "declaredKey": "Assets/Sprites/Pets/MUDSKIPPER.png",
+      "declaredKeys": [
+        "Assets/Sprites/Pets/MUDSKIPPER.png"
+      ],
+      "fileId": "0s9q3lppxmp-mjgwdv5l-b0sga3eg5i",
+      "output": "./assets/ui-sprites/permanent-event/Pets__MUDSKIPPER.png",
+      "missing": false,
+      "references": [
+        "runtime:permanent-event:MUDSKIPPER"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudPermanentEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "Assets/Sprites/Icons/FishIcon.png",
+      "declaredKey": "Assets/Sprites/Icons/FishIcon.png",
+      "declaredKeys": [
+        "Assets/Sprites/Icons/FishIcon.png"
+      ],
+      "fileId": "4rmnocgrmp-mt1fr9q2-t5ucsp4gh6c",
+      "output": "./assets/ui-sprites/permanent-event/Icons__FishIcon.png",
+      "missing": false,
+      "references": [
+        "runtime:permanent-event:FishIcon"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudPermanentEvent.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "Assets/Textures/Tidal.jpg",
+      "declaredKey": "Assets/Textures/Tidal.jpg",
+      "declaredKeys": [
+        "Assets/Textures/Tidal.jpg"
+      ],
+      "fileId": "ekfu8dguqgr-ms4di5x9-frau2pzv7c9",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:permanent-event:Tidal"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudPermanentEvent.fcg"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "missing": [
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png"
+      ],
+      "fileId": "5d250edc7ccde0be5ccab1e2cf53b57f",
+      "output": null,
+      "missing": true,
+      "references": [
+        "PermanentEvent/Common/HitBar/Track"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Sprites/Fishing/exchange.png",
+      "declaredKey": "Assets/Sprites/Fishing/exchange.png",
+      "declaredKeys": [
+        "Assets/Sprites/Fishing/exchange.png"
+      ],
+      "fileId": "gkooh973i-mosefhuf-6n1sdgt1lhg",
+      "output": null,
+      "missing": true,
+      "references": [
+        "PermanentEvent/Common/SwitchModeButton/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_UGC_Dyeing_SkilliconBg01.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_UGC_Dyeing_SkilliconBg01.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_UGC_Dyeing_SkilliconBg01.png"
+      ],
+      "fileId": "3015426fc9d134d82c12fb6caa178dac",
+      "output": null,
+      "missing": true,
+      "references": [
+        "PermanentEvent/Common/MashButton",
+        "PermanentEvent/DigEvent/ScanButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/ui_icon_skill_Detective.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/ui_icon_skill_Detective.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/ui_icon_skill_Detective.png"
+      ],
+      "fileId": "5a7058d0c36d61bea231175d3395d533",
+      "output": null,
+      "missing": true,
+      "references": [
+        "PermanentEvent/DigEvent/ScanButton/Icon"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_UGC_Dyeing_SkilliconBg.png",
+      "declaredKey": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_UGC_Dyeing_SkilliconBg.png",
+      "declaredKeys": [
+        "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_UGC_Dyeing_SkilliconBg.png"
+      ],
+      "fileId": "0d9384a09ed32f303fa939296254458e",
+      "output": null,
+      "missing": true,
+      "references": [
+        "PermanentEvent/DigEvent/ScanButton/Cooldown"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "key": "Assets/Textures/Tidal.jpg",
+      "declaredKey": "Assets/Textures/Tidal.jpg",
+      "declaredKeys": [
+        "Assets/Textures/Tidal.jpg"
+      ],
+      "fileId": "ekfu8dguqgr-ms4di5x9-frau2pzv7c9",
+      "output": null,
+      "missing": true,
+      "references": [
+        "runtime:permanent-event:Tidal"
+      ],
+      "origins": [
+        "Assets/Scripts/HUDs/HudPermanentEvent.fcg"
+      ],
+      "border": null,
+      "width": null,
+      "height": null
+    }
+  ],
+  "unsupported": [
+    {
+      "path": "PermanentEvent/Common/PetInventory/Inventory/ReturnButton",
+      "id": "qxT1PJYv",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/PetInventory/Inventory/RejectButton",
+      "id": "zL5NtpOx",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/PetInventory/Inventory",
+      "id": "F0jDNiPC",
+      "fields": [
+        "parent"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/PetInventory/PlacePetButton/Icon",
+      "id": "vVTDp5xS",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/PetInventory/PlacePetButton/Label",
+      "id": "kRkYVLxe",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/PetInventory/PlacePetButton",
+      "id": "TcmmNZa9",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "_filters",
+        "parent"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/PetInventory/ConfirmBuy/Title/CloseButton",
+      "id": "Z1Mt9NeC",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/PetInventory/ConfirmBuy/NoButton",
+      "id": "btuXHVew",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/PetInventory/ConfirmBuy/YesButton",
+      "id": "fZn10ekW",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/PetInventory/ConfirmBuy",
+      "id": "W9N1PTR2",
+      "fields": [
+        "parent"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/HitBar/Track/EventBG",
+      "id": "lbSufxdQ",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/HitBar/Track",
+      "id": "rJApALJS",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/HitBar/Handle",
+      "id": "U8ZeOnYU",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/HitBar/TapRing",
+      "id": "tHYaPHJe",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/SwitchModeButton/WaitingBorder",
+      "id": "sTnr4tOz",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/SwitchModeButton/Icon",
+      "id": "eE8gWuig",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/SwitchModeButton",
+      "id": "n8m8Inri",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/Reward/NameBG",
+      "id": "ImZAmzyB",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/MashButton",
+      "id": "HvUI6wvq",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PermanentEvent/DigEvent/ScanButton/Cooldown",
+      "id": "ugOK6Pfo",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PermanentEvent/DigEvent/ScanButton",
+      "id": "a0DosDIA",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PermanentEvent/DigEvent/Cost/CashIcon",
+      "id": "uRTs0y4n",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PermanentEvent/DigEvent/Cost/IncCostButton/Icon",
+      "id": "MuONFbFw",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PermanentEvent/DigEvent/Cost/IncCostButton",
+      "id": "lp3ksvtO",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PermanentEvent/DigEvent/Cost/DecCostButton/Icon",
+      "id": "oEiEinTH",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PermanentEvent/DigEvent/Cost/DecCostButton",
+      "id": "K0otomtJ",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PermanentEvent",
+      "id": "ljSwuoIY",
+      "fields": [
+        "ecaScripts"
+      ]
+    }
+  ]
+}

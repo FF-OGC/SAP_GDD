@@ -71,6 +71,13 @@
       "rules": "./data/ui/leaderboard-rules.json"
     },
     {
+      "id": "permanent-event",
+      "name": "Permanent Event · Dig / Fish",
+      "status": "ready",
+      "data": "./data/ui/permanent-event.json",
+      "rules": "./data/ui/permanent-event-rules.json"
+    },
+    {
       "id": "mission",
       "name": "Mission",
       "status": "planned"

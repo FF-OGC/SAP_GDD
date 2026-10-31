@@ -1,0 +1,70 @@
+{
+  "source": "Assets/Localization/key.csv",
+  "entries": {
+    "RABBIT": {
+      "en": "Rabbit",
+      "vi": "Thỏ"
+    },
+    "DOG": {
+      "en": "Dog",
+      "vi": "Chó"
+    },
+    "SHRIMP": {
+      "en": "Shrimp",
+      "vi": "Tôm"
+    },
+    "MUDSKIPPER": {
+      "en": "Mudskipper",
+      "vi": "Cá Thòi Lòi"
+    },
+    "HUD_YES": {
+      "en": "YES",
+      "vi": "CÓ"
+    },
+    "HUD_NO": {
+      "en": "NO",
+      "vi": "KHÔNG"
+    },
+    "HUD_CLAIM": {
+      "en": "CLAIM",
+      "vi": "NHẬN"
+    },
+    "HUD_BUY": {
+      "en": "BUY",
+      "vi": "MUA"
+    },
+    "HUD_TAP_TAP": {
+      "en": "TAP TAP TAP",
+      "vi": "NHẤP NHẤP NHẤP"
+    },
+    "HUD_PERMANENT_EVENT_SWITCH": {
+      "en": "Switch",
+      "vi": "Đổi"
+    },
+    "HUD_PERMANENT_EVENT_PLACE_PET": {
+      "en": "Place",
+      "vi": "Đặt"
+    },
+    "HUD_PERMANENT_EVENT_CONFIRM_BUY": {
+      "en": "CONFIRM BUY",
+      "vi": "XÁC NHẬN MUA"
+    },
+    "HUD_PERMANENT_EVENT_CONFIRM_BUY_DETAILS": {
+      "en": "[1F64C4]Do you want to buy [-]{0}[1F64C4] for ${1}?[-]",
+      "vi": "[1F64C4]Bạn có muốn mua [-]{0}[1F64C4] với giá ${1} không?[-]"
+    },
+    "HUD_PERMANENT_EVENT_INVENTORY_DETAILS": {
+      "en": "{0} [324765]- Income {1}/s[-]",
+      "vi": "{0} [324765]- Thu Nhập {1}/s[-]"
+    },
+    "HUD_PERMANENT_EVENT_EXCHANGE_DETAILS": {
+      "en": "[324765]Do you want to exchange [-]{0}[324765] - Income {1}/s with your [-]{2}[324765] - Income {3}/s?[-]",
+      "vi": "[324765]Bạn có muốn nhận[-]{0}[324765] - Thu Nhập {1}/s bằng cách đổi[-]{2}[324765] - Thu Nhập {3}/s của mình không?[-]"
+    },
+    "HUD_PERMANENT_EVENT_DIG_SCAN": {
+      "en": "SCAN",
+      "vi": "QUÉT"
+    }
+  },
+  "missing": []
+}

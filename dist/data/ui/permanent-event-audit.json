@@ -1,0 +1,240 @@
+{
+  "source": "pass",
+  "sourceCommit": "471a62bb8a55ad735cfeebf5a0a315730df90daa",
+  "entities": 58,
+  "sprites": 32,
+  "missingSprites": [
+    "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+    "Assets/Sprites/Fishing/exchange.png",
+    "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_UGC_Dyeing_SkilliconBg01.png",
+    "lib://fftextures/WorkshopIconLibrary/ui_icon_skill_Detective.png",
+    "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_UGC_Dyeing_SkilliconBg.png",
+    "Assets/Textures/Tidal.jpg"
+  ],
+  "missingLocalization": [],
+  "unresolvedRegistrations": [
+    {
+      "name": "Event",
+      "id": "ka56cZaW"
+    },
+    {
+      "name": "MashMeter",
+      "id": "Wg0U80eb"
+    }
+  ],
+  "unsupported": [
+    {
+      "path": "PermanentEvent/Common/PetInventory/Inventory/ReturnButton",
+      "id": "qxT1PJYv",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/PetInventory/Inventory/RejectButton",
+      "id": "zL5NtpOx",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/PetInventory/Inventory",
+      "id": "F0jDNiPC",
+      "fields": [
+        "parent"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/PetInventory/PlacePetButton/Icon",
+      "id": "vVTDp5xS",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/PetInventory/PlacePetButton/Label",
+      "id": "kRkYVLxe",
+      "fields": [
+        "_filters"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/PetInventory/PlacePetButton",
+      "id": "TcmmNZa9",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers",
+        "_filters",
+        "parent"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/PetInventory/ConfirmBuy/Title/CloseButton",
+      "id": "Z1Mt9NeC",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/PetInventory/ConfirmBuy/NoButton",
+      "id": "btuXHVew",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/PetInventory/ConfirmBuy/YesButton",
+      "id": "fZn10ekW",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/PetInventory/ConfirmBuy",
+      "id": "W9N1PTR2",
+      "fields": [
+        "parent"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/HitBar/Track/EventBG",
+      "id": "lbSufxdQ",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/HitBar/Track",
+      "id": "rJApALJS",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/HitBar/Handle",
+      "id": "U8ZeOnYU",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/HitBar/TapRing",
+      "id": "tHYaPHJe",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/SwitchModeButton/WaitingBorder",
+      "id": "sTnr4tOz",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/SwitchModeButton/Icon",
+      "id": "eE8gWuig",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/SwitchModeButton",
+      "id": "n8m8Inri",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/Reward/NameBG",
+      "id": "ImZAmzyB",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PermanentEvent/Common/MashButton",
+      "id": "HvUI6wvq",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PermanentEvent/DigEvent/ScanButton/Cooldown",
+      "id": "ugOK6Pfo",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PermanentEvent/DigEvent/ScanButton",
+      "id": "a0DosDIA",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PermanentEvent/DigEvent/Cost/CashIcon",
+      "id": "uRTs0y4n",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PermanentEvent/DigEvent/Cost/IncCostButton/Icon",
+      "id": "MuONFbFw",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PermanentEvent/DigEvent/Cost/IncCostButton",
+      "id": "lp3ksvtO",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PermanentEvent/DigEvent/Cost/DecCostButton/Icon",
+      "id": "oEiEinTH",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "PermanentEvent/DigEvent/Cost/DecCostButton",
+      "id": "K0otomtJ",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "PermanentEvent",
+      "id": "ljSwuoIY",
+      "fields": [
+        "ecaScripts"
+      ]
+    }
+  ],
+  "runtimeAssignments": 61,
+  "gaps": [
+    "Attack control device position/size are unavailable; serialized action control geometry is retained instead of inventing engine default dimensions",
+    "Dig/Fish world targeting, camera/water/spot checks, server RNG and requests are simulated; reward selection is a labelled local scenario",
+    "Only same COMMON scan/spot tier is exercised in Dig hitbar; other tier-gap multipliers and Fish difficulty overrides are not simulated",
+    "3D animations, world assets, tween easing, default attack hiding and real inventory authority are outside the static canvas",
+    "Legacy registered aliases Event/MashMeter can be stale; source tree remains authoritative",
+    "No engine screenshots; font/shader/scaler, hit order, safe area and scroll inertia unverified; player state is a local simulation"
+  ],
+  "browser": "separate CUA verification in screen plan",
+  "engineParity": "unverified; no runtime game screenshots"
+}
