@@ -1,0 +1,46 @@
+{
+  "source": "Assets/Localization/key.csv",
+  "entries": {
+    "HUD_LEADERBOARD_TITLE": {
+      "en": "LEADERBOARD",
+      "vi": "BẢNG XẾP HẠNG"
+    },
+    "HUD_LEADERBOARD_NOTE": {
+      "en": "Leaderboard updates every hour!",
+      "vi": "Bảng Xếp Hạng được làm mới mỗi giờ!"
+    },
+    "HUD_LEADERBOARD_TAB_INCOME": {
+      "en": "Income",
+      "vi": "Thu Nhập"
+    },
+    "HUD_LEADERBOARD_TAB_COLLECTION": {
+      "en": "Collection",
+      "vi": "Bộ Sưu Tập"
+    },
+    "HUD_LEADERBOARD_TAB_WEALTH": {
+      "en": "Wealth",
+      "vi": "Tài Sản"
+    },
+    "HUD_LEADERBOARD_TAB_LIKE": {
+      "en": "Top Like",
+      "vi": "Lượt Thích"
+    },
+    "HUD_LEADERBOARD_LABEL_RANK": {
+      "en": "RANK",
+      "vi": "HẠNG"
+    },
+    "HUD_LEADERBOARD_LABEL_PLAYER": {
+      "en": "PLAYER",
+      "vi": "NGƯỜI CHƠI"
+    },
+    "HUD_LEADERBOARD_LABEL_SCORE": {
+      "en": "SCORE",
+      "vi": "ĐIỂM"
+    },
+    "HUD_LOADING": {
+      "en": "Loading data...",
+      "vi": "Đang tải dữ liệu..."
+    }
+  },
+  "missing": []
+}

@@ -1,0 +1,539 @@
+{
+  "sprites": [
+    {
+      "key": "Assets/Sprites/Backgrounds/DarkBG.png",
+      "declaredKey": "Assets/Sprites/Backgrounds/DarkBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Backgrounds/DarkBG.png"
+      ],
+      "fileId": "amqbaf0ix1n-mincvgtv-gm0n5ept0bj",
+      "output": "./assets/ui-sprites/leaderboard/Backgrounds__DarkBG.png",
+      "missing": false,
+      "references": [
+        "Leaderboard/CloseButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 12,
+        "right": 12,
+        "top": 12,
+        "bottom": 12
+      },
+      "width": 40,
+      "height": 40
+    },
+    {
+      "key": "Assets/Sprites/Backgrounds/BG.png",
+      "declaredKey": "Assets/Sprites/Backgrounds/BG.png",
+      "declaredKeys": [
+        "Assets/Sprites/Backgrounds/BG.png",
+        "Assets/Sprites/UIComponents/Backgrounds/BG.png"
+      ],
+      "fileId": "h3f4wu0ypr-minctbz1-k8lcbtaehgk",
+      "output": "./assets/ui-sprites/leaderboard/Backgrounds__BG.png",
+      "missing": false,
+      "references": [
+        "Leaderboard/PreventCloseButton",
+        "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo1/BG",
+        "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo2/BG",
+        "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo3/BG",
+        "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo4/BG",
+        "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo5/BG",
+        "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo6/BG",
+        "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo7/BG",
+        "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo8/BG",
+        "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo9/BG",
+        "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo10/BG",
+        "Leaderboard/PreventCloseButton/Details/CurrentRank"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 8,
+        "right": 8,
+        "top": 8,
+        "bottom": 8
+      },
+      "width": 26,
+      "height": 26
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/TitleBG.png",
+      "declaredKey": "Assets/_Test/NewUI/Assets/Img_Titleaward.png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Img_Titleaward.png"
+      ],
+      "fileId": "zkfpx1yzvtc-mu6xhq5y-nv8ey9h3kfj",
+      "output": "./assets/ui-sprites/leaderboard/NewAssets__TitleBG.png",
+      "missing": false,
+      "references": [
+        "Leaderboard/PreventCloseButton/Title"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 113,
+        "right": 12,
+        "top": 48,
+        "bottom": 18
+      },
+      "width": 752,
+      "height": 126
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/CloseButton.png",
+      "declaredKey": "Assets/_Test/NewUI/Assets/Btn_Close.png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Btn_Close.png"
+      ],
+      "fileId": "ub3ok34eqnr-mu6xhog5-q0tv8gncefb",
+      "output": "./assets/ui-sprites/leaderboard/NewAssets__CloseButton.png",
+      "missing": false,
+      "references": [
+        "Leaderboard/PreventCloseButton/Title/CloseButton"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 38,
+      "height": 40
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/ContainerBG.png",
+      "declaredKey": "Assets/_Test/NewUI/Assets/Img_bg02_BG.png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Img_bg02_BG.png"
+      ],
+      "fileId": "gszc833692p-mu6veyfp-g1yynwpple7",
+      "output": "./assets/ui-sprites/leaderboard/NewAssets__ContainerBG.png",
+      "missing": false,
+      "references": [
+        "Leaderboard/PreventCloseButton/BG"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 34,
+        "right": 33,
+        "top": 32,
+        "bottom": 39
+      },
+      "width": 106,
+      "height": 118
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/HalfContainerBG.png",
+      "declaredKey": "Assets/_Test/NewUI/Assets/Img_bg03.png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Img_bg03.png"
+      ],
+      "fileId": "earvmnoqs6p-mu2oi0z2-k994sun5yc",
+      "output": "./assets/ui-sprites/leaderboard/NewAssets__HalfContainerBG.png",
+      "missing": false,
+      "references": [
+        "Leaderboard/PreventCloseButton/BG/MainBG"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 20,
+        "right": 4,
+        "top": 20,
+        "bottom": 18
+      },
+      "width": 28,
+      "height": 52
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/DecorateIcon1.png",
+      "declaredKey": "Assets/_Test/NewUI/Assets/Img_decorate01.png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Img_decorate01.png"
+      ],
+      "fileId": "ouansc8n289-mu6xhpqu-centw2ek0ns",
+      "output": "./assets/ui-sprites/leaderboard/NewAssets__DecorateIcon1.png",
+      "missing": false,
+      "references": [
+        "Leaderboard/PreventCloseButton/BG/DecorLeft"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 68,
+      "height": 104
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/DecorateIcon2.png",
+      "declaredKey": "Assets/_Test/NewUI/Assets/Img_decorate02.png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Img_decorate02.png"
+      ],
+      "fileId": "z3itg018ujr-mu6xhpvo-cnfqx0exhhp",
+      "output": "./assets/ui-sprites/leaderboard/NewAssets__DecorateIcon2.png",
+      "missing": false,
+      "references": [
+        "Leaderboard/PreventCloseButton/BG/DecorRight"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 114,
+      "height": 52
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/SelectTabBG.png",
+      "declaredKey": "Assets/_Test/NewUI/Assets/Btn_tab_Select02.png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Btn_tab_Select02.png",
+        "Assets/Sprites/NewAssets/SelectTab.png"
+      ],
+      "fileId": "f2arxt0zsis-mu9bpuhj-5tki52jlbcn",
+      "output": "./assets/ui-sprites/leaderboard/NewAssets__SelectTabBG.png",
+      "missing": false,
+      "references": [
+        "Leaderboard/PreventCloseButton/TabsLayout/HouseValueTabButton",
+        "runtime:leaderboard:SelectTabBG"
+      ],
+      "origins": [
+        ".ui",
+        "Assets/Scripts/HUDs/HudLeaderboard.fcg"
+      ],
+      "border": {
+        "left": 10,
+        "right": 10,
+        "top": 10,
+        "bottom": 10
+      },
+      "width": 96,
+      "height": 96
+    },
+    {
+      "key": "Assets/Sprites/NewAssets/NormalTabBG.png",
+      "declaredKey": "Assets/_Test/NewUI/Assets/Btn_tab_normal (1).png",
+      "declaredKeys": [
+        "Assets/_Test/NewUI/Assets/Btn_tab_normal (1).png",
+        "Assets/Sprites/NewAssets/NormalTabBG.png"
+      ],
+      "fileId": "8q8jtos36t8-mu9bpuqq-pdwrr2shljg",
+      "output": "./assets/ui-sprites/leaderboard/NewAssets__NormalTabBG.png",
+      "missing": false,
+      "references": [
+        "Leaderboard/PreventCloseButton/TabsLayout/CollectionTabButton",
+        "Leaderboard/PreventCloseButton/TabsLayout/WealthButton",
+        "Leaderboard/PreventCloseButton/TabsLayout/LikeButton",
+        "runtime:leaderboard:NormalTabBG"
+      ],
+      "origins": [
+        ".ui",
+        "Assets/Scripts/HUDs/HudLeaderboard.fcg"
+      ],
+      "border": {
+        "left": 20,
+        "right": 20,
+        "top": 20,
+        "bottom": 20
+      },
+      "width": 96,
+      "height": 98
+    },
+    {
+      "key": "Assets/Sprites/Backgrounds/SubTitleBG.png",
+      "declaredKey": "Assets/Sprites/UIComponents/Backgrounds/SubTitleBG.png",
+      "declaredKeys": [
+        "Assets/Sprites/UIComponents/Backgrounds/SubTitleBG.png"
+      ],
+      "fileId": "dhjrxrqsae-minctbj0-6m5g28gtv1j",
+      "output": "./assets/ui-sprites/leaderboard/Backgrounds__SubTitleBG.png",
+      "missing": false,
+      "references": [
+        "Leaderboard/PreventCloseButton/Details/Title"
+      ],
+      "origins": [
+        ".ui"
+      ],
+      "border": {
+        "left": 8,
+        "right": 8,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 38,
+      "height": 36
+    },
+    {
+      "key": "Assets/Sprites/Leaderboard/RankNo1.png",
+      "declaredKey": "Assets/Sprites/Leaderboard/RankNo1.png",
+      "declaredKeys": [
+        "Assets/Sprites/Leaderboard/RankNo1.png"
+      ],
+      "fileId": "874cd521-f022-4c68-86ec-127c22ce4002",
+      "output": "./assets/ui-sprites/leaderboard/Leaderboard__RankNo1.png",
+      "missing": false,
+      "references": [
+        "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo1/Icon",
+        "Leaderboard/PreventCloseButton/Details/CurrentRank/RankNumber/Icon",
+        "runtime:leaderboard:RankNo1"
+      ],
+      "origins": [
+        ".ui",
+        "Assets/Scripts/HUDs/HudLeaderboard.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 47,
+      "height": 42
+    },
+    {
+      "key": "Assets/Sprites/Leaderboard/RankNo2.png",
+      "declaredKey": "Assets/Sprites/Leaderboard/RankNo2.png",
+      "declaredKeys": [
+        "Assets/Sprites/Leaderboard/RankNo2.png"
+      ],
+      "fileId": "71eaf7d9-10fd-4b22-bd49-c8f560823068",
+      "output": "./assets/ui-sprites/leaderboard/Leaderboard__RankNo2.png",
+      "missing": false,
+      "references": [
+        "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo2/Icon",
+        "runtime:leaderboard:RankNo2"
+      ],
+      "origins": [
+        ".ui",
+        "Assets/Scripts/HUDs/HudLeaderboard.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 26,
+      "height": 34
+    },
+    {
+      "key": "Assets/Sprites/Leaderboard/RankNo3.png",
+      "declaredKey": "Assets/Sprites/Leaderboard/RankNo3.png",
+      "declaredKeys": [
+        "Assets/Sprites/Leaderboard/RankNo3.png"
+      ],
+      "fileId": "3f421e77-c6c6-49b4-9019-944894ee9b82",
+      "output": "./assets/ui-sprites/leaderboard/Leaderboard__RankNo3.png",
+      "missing": false,
+      "references": [
+        "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo3/Icon",
+        "runtime:leaderboard:RankNo3"
+      ],
+      "origins": [
+        ".ui",
+        "Assets/Scripts/HUDs/HudLeaderboard.fcg"
+      ],
+      "border": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "width": 26,
+      "height": 34
+    }
+  ],
+  "missing": [],
+  "unsupported": [
+    {
+      "path": "Leaderboard/CloseButton",
+      "id": "j0k5NYsX",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Title/CloseButton",
+      "id": "yyYU1hUz",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/BG/MainBG",
+      "id": "kvlOT5hs",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/BG/DecorLeft",
+      "id": "GiH0GlBh",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/BG/DecorRight",
+      "id": "bsluU8KG",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/TabsLayout/HouseValueTabButton",
+      "id": "YAVG6lDv",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/TabsLayout/CollectionTabButton",
+      "id": "RNkvbyhc",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/TabsLayout/WealthButton",
+      "id": "8h4afyRx",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/TabsLayout/LikeButton",
+      "id": "opFRB3BN",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo1/Avatar",
+      "id": "6m7eTGKV",
+      "fields": [
+        "propsData.profile"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo2/Avatar",
+      "id": "6CBWUORi",
+      "fields": [
+        "propsData.profile"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo3/Avatar",
+      "id": "U5JaDyx2",
+      "fields": [
+        "propsData.profile"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo4/Avatar",
+      "id": "WOLMHC5G",
+      "fields": [
+        "propsData.profile"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo5/Avatar",
+      "id": "hMI2P8JU",
+      "fields": [
+        "propsData.profile"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo6/Avatar",
+      "id": "mzYSIdoE",
+      "fields": [
+        "propsData.profile"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo7/Avatar",
+      "id": "UL5r90Zh",
+      "fields": [
+        "propsData.profile"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo8/Avatar",
+      "id": "zrpRM4hB",
+      "fields": [
+        "propsData.profile"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo9/Avatar",
+      "id": "fbPnHBsr",
+      "fields": [
+        "propsData.profile"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo10/Avatar",
+      "id": "woPDVZKm",
+      "fields": [
+        "propsData.profile"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/Scroll View",
+      "id": "pAOcl9zR",
+      "fields": [
+        "propsData.panel",
+        "propsData.scrollView"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/CurrentRank/Avatar",
+      "id": "Oo6ogyBM",
+      "fields": [
+        "propsData.profile"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton",
+      "id": "vEG2ookV",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Leaderboard",
+      "id": "Z8n3WfCd",
+      "fields": [
+        "ecaScripts"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "source": "pass",
+  "sourceCommit": "471a62bb8a55ad735cfeebf5a0a315730df90daa",
+  "entities": 84,
+  "sprites": 14,
+  "missingSprites": [],
+  "missingLocalization": [],
+  "unresolvedRegistrations": [],
+  "unsupported": [
+    {
+      "path": "Leaderboard/CloseButton",
+      "id": "j0k5NYsX",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Title/CloseButton",
+      "id": "yyYU1hUz",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/BG/MainBG",
+      "id": "kvlOT5hs",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/BG/DecorLeft",
+      "id": "GiH0GlBh",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/BG/DecorRight",
+      "id": "bsluU8KG",
+      "fields": [
+        "m_ApplyingPreviewAnimation"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/TabsLayout/HouseValueTabButton",
+      "id": "YAVG6lDv",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/TabsLayout/CollectionTabButton",
+      "id": "RNkvbyhc",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/TabsLayout/WealthButton",
+      "id": "8h4afyRx",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/TabsLayout/LikeButton",
+      "id": "opFRB3BN",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo1/Avatar",
+      "id": "6m7eTGKV",
+      "fields": [
+        "propsData.profile"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo2/Avatar",
+      "id": "6CBWUORi",
+      "fields": [
+        "propsData.profile"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo3/Avatar",
+      "id": "U5JaDyx2",
+      "fields": [
+        "propsData.profile"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo4/Avatar",
+      "id": "WOLMHC5G",
+      "fields": [
+        "propsData.profile"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo5/Avatar",
+      "id": "hMI2P8JU",
+      "fields": [
+        "propsData.profile"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo6/Avatar",
+      "id": "mzYSIdoE",
+      "fields": [
+        "propsData.profile"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo7/Avatar",
+      "id": "UL5r90Zh",
+      "fields": [
+        "propsData.profile"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo8/Avatar",
+      "id": "zrpRM4hB",
+      "fields": [
+        "propsData.profile"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo9/Avatar",
+      "id": "fbPnHBsr",
+      "fields": [
+        "propsData.profile"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/Scroll View/RanksLayout/RankNo10/Avatar",
+      "id": "woPDVZKm",
+      "fields": [
+        "propsData.profile"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/Scroll View",
+      "id": "pAOcl9zR",
+      "fields": [
+        "propsData.panel",
+        "propsData.scrollView"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton/Details/CurrentRank/Avatar",
+      "id": "Oo6ogyBM",
+      "fields": [
+        "propsData.profile"
+      ]
+    },
+    {
+      "path": "Leaderboard/PreventCloseButton",
+      "id": "vEG2ookV",
+      "fields": [
+        "button.onClicks",
+        "button.clickHandlers"
+      ]
+    },
+    {
+      "path": "Leaderboard",
+      "id": "Z8n3WfCd",
+      "fields": [
+        "ecaScripts"
+      ]
+    }
+  ],
+  "runtimeAssignments": 32,
+  "gaps": [
+    "UIProfile is a native account widget; account avatar/name rendering unavailable without server data, serialized props retained and AccountID shown in Inspector",
+    "Synthetic rows are already ranked inputs; server cache, timing, anti-cheat, ranking calculations and database responses are not executed",
+    "No engine screenshots; font/shader/scaler, hit order, safe area and scroll inertia unverified; player state is a local simulation"
+  ],
+  "browser": "separate CUA verification in screen plan",
+  "engineParity": "unverified; no runtime game screenshots"
+}

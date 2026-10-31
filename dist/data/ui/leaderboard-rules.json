@@ -1,0 +1,386 @@
+{
+  "sourceCommit": "471a62bb8a55ad735cfeebf5a0a315730df90daa",
+  "uiSha256": "a37ce77aa2d579b3600c13cb8770654814fdcfca39bc421cebf4bbb7e00afd2e",
+  "controller": "Assets/Scripts/HUDs/HudLeaderboard.fcg",
+  "sourceFiles": [
+    {
+      "file": "Assets/Scripts/HUDs/HudLeaderboard.fcg",
+      "sha256": "f43ede49c3c14a4e02e7bf7c461b04f3d28812dda810f1a5e1b76c39e6d6597d"
+    },
+    {
+      "file": "Assets/Scripts/Manager/LeaderboardManager.fcg",
+      "sha256": "54221c64bb895e3dc52b4d66319f2f9c1f2c42bd330cbd162bb9448a7390f2a0"
+    },
+    {
+      "file": "Assets/Scripts/Utils/BigNumberHandler.fcg",
+      "sha256": "404cdbc68440f4654a085a7adc2cbc5ae462b008fd3cac7397409bca1249f46e"
+    },
+    {
+      "file": "ProjectSettings/ResourceRegisteration.asset",
+      "sha256": "9166b4e138c086e0cb2c13b2bb2cc205fc7c682fcb3e0bd23e0f9e0fc0f2a01b"
+    }
+  ],
+  "projections": [],
+  "widgetIds": {
+    "TabsLayout": "ifrc1ZcP",
+    "LoadingLabel": "MzmevQIN",
+    "DetailsWidget": "8Kq8nJji",
+    "RanksLayout": "OR6JHxRP",
+    "CurrentRank": "HIRMT7O9"
+  },
+  "constants": {
+    "ACTIVE_TEXT_COLOR": "#FFFFFF",
+    "DEFAULT_TEXT_COLOR": "#1F64C4"
+  },
+  "bindings": {
+    "InitLeaderboardHUD": "Assets/Scripts/HUDs/HudLeaderboard.fcg:52",
+    "GetHUDWidget": "Assets/Scripts/HUDs/HudLeaderboard.fcg:88",
+    "ShowLeaderboardHUD": "Assets/Scripts/HUDs/HudLeaderboard.fcg:92",
+    "HideLeaderboardHUD": "Assets/Scripts/HUDs/HudLeaderboard.fcg:100",
+    "IsShowing": "Assets/Scripts/HUDs/HudLeaderboard.fcg:108",
+    "UpdateLeaderboardLayout": "Assets/Scripts/HUDs/HudLeaderboard.fcg:116",
+    "UpdateRankWidget": "Assets/Scripts/HUDs/HudLeaderboard.fcg:147",
+    "ConvertMoneyRankScore": "Assets/Scripts/HUDs/HudLeaderboard.fcg:209",
+    "SwitchLeaderboardTab": "Assets/Scripts/HUDs/HudLeaderboard.fcg:223",
+    "InitLeaderboardManager": "Assets/Scripts/Manager/LeaderboardManager.fcg:36",
+    "GetLeaderboardType": "Assets/Scripts/Manager/LeaderboardManager.fcg:49",
+    "LoadLeaderboard": "Assets/Scripts/Manager/LeaderboardManager.fcg:75",
+    "SaveLeaderboardDatabase": "Assets/Scripts/Manager/LeaderboardManager.fcg:104",
+    "SavePlayerLeaderboard": "Assets/Scripts/Manager/LeaderboardManager.fcg:117",
+    "CheckUpdateLeaderboardScore": "Assets/Scripts/Manager/LeaderboardManager.fcg:160",
+    "GetPlayerRankScore": "Assets/Scripts/Manager/LeaderboardManager.fcg:186",
+    "GetPlayerIncomeRank": "Assets/Scripts/Manager/LeaderboardManager.fcg:202",
+    "GetPlayerCollectionRank": "Assets/Scripts/Manager/LeaderboardManager.fcg:208",
+    "GetPlayerWealthRank": "Assets/Scripts/Manager/LeaderboardManager.fcg:212",
+    "GetPlayerLikeRank": "Assets/Scripts/Manager/LeaderboardManager.fcg:218",
+    "MultiplyListIntByFloat": "Assets/Scripts/Utils/BigNumberHandler.fcg:68",
+    "ConvertIntToList": "Assets/Scripts/Utils/BigNumberHandler.fcg:107",
+    "ConvertListToInt": "Assets/Scripts/Utils/BigNumberHandler.fcg:123",
+    "ConvertFloatToList": "Assets/Scripts/Utils/BigNumberHandler.fcg:133",
+    "ShortenNumber": "Assets/Scripts/Utils/BigNumberHandler.fcg:142",
+    "CleanNumber": "Assets/Scripts/Utils/BigNumberHandler.fcg:163",
+    "AddNumber": "Assets/Scripts/Utils/BigNumberHandler.fcg:172",
+    "SubtractNumber": "Assets/Scripts/Utils/BigNumberHandler.fcg:203",
+    "MultiplyNumber": "Assets/Scripts/Utils/BigNumberHandler.fcg:239",
+    "MultiplierNumber": "Assets/Scripts/Utils/BigNumberHandler.fcg:273",
+    "FixBlankList": "Assets/Scripts/Utils/BigNumberHandler.fcg:282",
+    "GetMaxLength2Num": "Assets/Scripts/Utils/BigNumberHandler.fcg:289",
+    "CompareListNum": "Assets/Scripts/Utils/BigNumberHandler.fcg:298",
+    "ConvertStringToListNum": "Assets/Scripts/Utils/BigNumberHandler.fcg:319",
+    "ConvertListNumToString": "Assets/Scripts/Utils/BigNumberHandler.fcg:345",
+    "ToDisplayFormat": "Assets/Scripts/Utils/BigNumberHandler.fcg:364",
+    "ToDisplayFormatHasComma": "Assets/Scripts/Utils/BigNumberHandler.fcg:450",
+    "DivideListNumToFloat": "Assets/Scripts/Utils/BigNumberHandler.fcg:457",
+    "MultiplyListIntByFloatV2": "Assets/Scripts/Utils/BigNumberHandler.fcg:485",
+    "ConvertStringLikeToFormatString": "Assets/Scripts/Utils/BigNumberHandler.fcg:530",
+    "ConvertMoneyRankValueToMoneyFormat": "Assets/Scripts/Utils/BigNumberHandler.fcg:547",
+    "ConvertMoneyRankValueToListNum": "Assets/Scripts/Utils/BigNumberHandler.fcg:562",
+    "GetMaxListNum": "Assets/Scripts/Utils/BigNumberHandler.fcg:583",
+    "GetMinListNum": "Assets/Scripts/Utils/BigNumberHandler.fcg:591",
+    "DivideNumberByInt": "Assets/Scripts/Utils/BigNumberHandler.fcg:599",
+    "MultiplyListIntByFloatV3": "Assets/Scripts/Utils/BigNumberHandler.fcg:621",
+    "ExponentiationListInt": "Assets/Scripts/Utils/BigNumberHandler.fcg:631"
+  },
+  "runtimeAssignments": [
+    {
+      "target": "_LeaderboardHUD",
+      "property": "Depth",
+      "expression": "HudDepth.Leaderboard",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:59"
+    },
+    {
+      "target": "_LeaderboardHUD",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:97"
+    },
+    {
+      "target": "_LeaderboardHUD",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:105"
+    },
+    {
+      "target": "_LoadingLabel",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:119"
+    },
+    {
+      "target": "_DetailsWidget",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:120"
+    },
+    {
+      "target": "_LoadingLabel",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:127"
+    },
+    {
+      "target": "_DetailsWidget",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:128"
+    },
+    {
+      "target": "playerAvatar",
+      "property": "AccountID",
+      "expression": "rankDetails[1] as UUID",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:159"
+    },
+    {
+      "target": "playerAvatar",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:160"
+    },
+    {
+      "target": "playerAvatar",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:162"
+    },
+    {
+      "target": "scoreLabel",
+      "property": "Content",
+      "expression": "\"\" + rankDetails[2]",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:165"
+    },
+    {
+      "target": "scoreLabel",
+      "property": "Content",
+      "expression": "ConvertMoneyRankScore(rankDetails[2] as int) + \"/s\"",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:171"
+    },
+    {
+      "target": "scoreLabel",
+      "property": "Content",
+      "expression": "ConvertMoneyRankScore(rankDetails[2] as int)",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:173"
+    },
+    {
+      "target": "scoreLabel",
+      "property": "Content",
+      "expression": "BigNumberHandler.ConvertStringLikeToFormatString(ToString(rankDetails[2] as int))",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:175"
+    },
+    {
+      "target": "_PlayerRankNumberIcon",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:182"
+    },
+    {
+      "target": "_PlayerRankNumberLabel",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:183"
+    },
+    {
+      "target": "_PlayerRankNumberIcon",
+      "property": "SpriteName",
+      "expression": "EResSprite.RankNo1",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:186"
+    },
+    {
+      "target": "_PlayerRankNumberLabel",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:187"
+    },
+    {
+      "target": "_PlayerRankNumberIcon",
+      "property": "SpriteName",
+      "expression": "EResSprite.RankNo2",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:189"
+    },
+    {
+      "target": "_PlayerRankNumberLabel",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:190"
+    },
+    {
+      "target": "_PlayerRankNumberIcon",
+      "property": "SpriteName",
+      "expression": "EResSprite.RankNo3",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:192"
+    },
+    {
+      "target": "_PlayerRankNumberLabel",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:193"
+    },
+    {
+      "target": "_PlayerRankNumberIcon",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:195"
+    },
+    {
+      "target": "_PlayerRankNumberLabel",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:196"
+    },
+    {
+      "target": "_PlayerRankNumberLabel",
+      "property": "Content",
+      "expression": "\"120+\"",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:198"
+    },
+    {
+      "target": "_PlayerRankNumberIcon",
+      "property": "IsVisible",
+      "expression": "false",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:201"
+    },
+    {
+      "target": "_PlayerRankNumberLabel",
+      "property": "IsVisible",
+      "expression": "true",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:202"
+    },
+    {
+      "target": "_PlayerRankNumberLabel",
+      "property": "Content",
+      "expression": "\"\" + rankNumber",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:204"
+    },
+    {
+      "target": "currentTabButton",
+      "property": "SpriteResource",
+      "expression": "EResSprite.NormalTabBG",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:229"
+    },
+    {
+      "target": "currentText",
+      "property": "Color",
+      "expression": "DEFAULT_TEXT_COLOR",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:231"
+    },
+    {
+      "target": "newTabButton",
+      "property": "SpriteResource",
+      "expression": "EResSprite.SelectTabBG",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:236"
+    },
+    {
+      "target": "newText",
+      "property": "Color",
+      "expression": "ACTIVE_TEXT_COLOR",
+      "source": "Assets/Scripts/HUDs/HudLeaderboard.fcg:238"
+    }
+  ],
+  "spriteKeys": {
+    "RankNo1": "Assets/Sprites/Leaderboard/RankNo1.png",
+    "RankNo2": "Assets/Sprites/Leaderboard/RankNo2.png",
+    "RankNo3": "Assets/Sprites/Leaderboard/RankNo3.png",
+    "NormalTabBG": "Assets/Sprites/NewAssets/NormalTabBG.png",
+    "SelectTabBG": "Assets/Sprites/NewAssets/SelectTabBG.png"
+  },
+  "rarityColors": {},
+  "suffixes": {
+    "1": "",
+    "2": "k",
+    "3": "m",
+    "4": "B",
+    "5": "T",
+    "6": "Q",
+    "7": "Qi",
+    "8": "Sx",
+    "9": "Sp",
+    "10": "Oc",
+    "11": "No",
+    "12": "De"
+  },
+  "tabs": [
+    {
+      "type": "Income",
+      "widget": "HouseValueTabButton"
+    },
+    {
+      "type": "Collection",
+      "widget": "CollectionTabButton"
+    },
+    {
+      "type": "Wealth",
+      "widget": "WealthButton"
+    },
+    {
+      "type": "Like",
+      "widget": "LikeButton"
+    }
+  ],
+  "fixturePolicy": "Synthetic top-ten rank-score values, player rank and loading/empty modes; no server leaderboard or accounts read",
+  "fixtures": [
+    {
+      "rank": 1,
+      "moneyRankScore": 31000,
+      "collection": 100,
+      "likes": 12345
+    },
+    {
+      "rank": 2,
+      "moneyRankScore": 30963,
+      "collection": 97,
+      "likes": 12316
+    },
+    {
+      "rank": 3,
+      "moneyRankScore": 30926,
+      "collection": 94,
+      "likes": 12287
+    },
+    {
+      "rank": 4,
+      "moneyRankScore": 30889,
+      "collection": 91,
+      "likes": 12258
+    },
+    {
+      "rank": 5,
+      "moneyRankScore": 30852,
+      "collection": 88,
+      "likes": 12229
+    },
+    {
+      "rank": 6,
+      "moneyRankScore": 30815,
+      "collection": 85,
+      "likes": 12200
+    },
+    {
+      "rank": 7,
+      "moneyRankScore": 30778,
+      "collection": 82,
+      "likes": 12171
+    },
+    {
+      "rank": 8,
+      "moneyRankScore": 30741,
+      "collection": 79,
+      "likes": 12142
+    },
+    {
+      "rank": 9,
+      "moneyRankScore": 30704,
+      "collection": 76,
+      "likes": 12113
+    },
+    {
+      "rank": 10,
+      "moneyRankScore": 30667,
+      "collection": 73,
+      "likes": 12084
+    }
+  ],
+  "gaps": [
+    "UIProfile is a native account widget; account avatar/name rendering unavailable without server data, serialized props retained and AccountID shown in Inspector",
+    "Synthetic rows are already ranked inputs; server cache, timing, anti-cheat, ranking calculations and database responses are not executed",
+    "No engine screenshots; font/shader/scaler, hit order, safe area and scroll inertia unverified; player state is a local simulation"
+  ]
+}

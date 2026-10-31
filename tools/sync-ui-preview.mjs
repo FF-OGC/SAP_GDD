@@ -9,12 +9,13 @@ import { shopEventSpec } from "./ui-shop-event-source.mjs";
 import { rebirthSpec } from "./ui-rebirth-source.mjs";
 import { lobbySpec } from "./ui-lobby-source.mjs";
 import { fusionConfirmSpec, fusionResultSpec } from "./ui-fusion-source.mjs";
+import { leaderboardSpec } from "./ui-leaderboard-source.mjs";
 
-const SOURCE_SCREENS = [shopEventSpec, rebirthSpec, lobbySpec, fusionConfirmSpec, fusionResultSpec];
+const SOURCE_SCREENS = [shopEventSpec, rebirthSpec, lobbySpec, fusionConfirmSpec, fusionResultSpec, leaderboardSpec];
 
 const UI_FILES = [{ id: "collection", name: "Collection", file: "PetsCollection.ui", status: "ready" }, { id: "activities", name: "Activities", file: "Activities.ui", status: "ready" }, { id: "shop", name: "Shop", file: "Shop.ui", status: "ready" }, { id: "mail", name: "Mail", file: "Mail.ui", status: "ready" }];
 UI_FILES.push(...SOURCE_SCREENS.map(spec => ({ id: spec.id, name: spec.name || "Shop Event", file: spec.ui, status: "ready" })));
-const PLANNED = ["Mission", "Leaderboard"].map(name => ({ id: name.toLowerCase(), name, status: "planned" }));
+const PLANNED = ["Mission"].map(name => ({ id: name.toLowerCase(), name, status: "planned" }));
 const PROP_FIELDS = {
   image: ["source", "color", "reverse", "fillType", "slicedBorder", "tiledBorder", "centerInvisible", "fillDir", "fillAmount", "invertFill", "flip", "gradient", "gradientTop", "gradientBottom", "isApplyAnimation", "animationAtlasID", "animationFrameRate", "animationLoop"],
   button: ["spriteName", "normal", "highlight", "pressed", "disabled", "enableBorderImage", "disableCollider", "fillType", "slicedBorder", "tiledBorder", "centerInvisible", "fillDir", "fillAmount", "invertFill", "reverse", "flip", "gradient", "gradientTop", "gradientBottom"],

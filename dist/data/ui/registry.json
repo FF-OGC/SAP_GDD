@@ -64,13 +64,15 @@
       "rules": "./data/ui/fusion-result-rules.json"
     },
     {
-      "id": "mission",
-      "name": "Mission",
-      "status": "planned"
-    },
-    {
       "id": "leaderboard",
       "name": "Leaderboard",
+      "status": "ready",
+      "data": "./data/ui/leaderboard.json",
+      "rules": "./data/ui/leaderboard-rules.json"
+    },
+    {
+      "id": "mission",
+      "name": "Mission",
       "status": "planned"
     }
   ]
