@@ -21,8 +21,8 @@ Preview/Proposal, không ghi vào game (chỉ đọc), không sửa `reward.csv`
 | 7 | Dust | `7·Amount` | Value amount, Qty 1 | 7999, 7012300 |
 | 8 | DMMP | `8·Amount` | Value amount, Qty 1 | 8999 |
 | 9 | Spin | `9·Amount` | Value amount, Qty 1 | 9999 |
-| 10 | Mutagen | `10·RSItemID(5)·Amount` | Value MutagenID, Qty amount | 1020001005 |
-| 16 | WeatherGen | `16·RSItemID(5)·Amount` | Value WeatherGenID, Qty amount | 1640027010 |
+| 10 | Mutagen | `10·MutagenID(3)·Amount` | Value MutagenID, Qty amount | 10000005 (MutagenID 0, x5) |
+| 16 | WeatherGen | `16·WeatherGenID(3)·Amount` | Value WeatherGenID, Qty amount | 16015010 (WeatherGenID 15, x10) |
 | 17 | Duplicate Ticket | `17·Amount` | Value amount, Qty 1 | 17050 |
 
 Bỏ qua (chưa có chuẩn): 6 RandomSecretPool, 11 Meteorite, 12 Mole, 13 Ball1,
@@ -38,11 +38,13 @@ Quy tắc đã chốt:
 - **Mutation**: ID trong `mutation.csv`, 2 số, `01` = Normal (không đột biến).
 - **Weather**: đúng một weather, ID trong `weatherEffects.csv`, 2 số, `00` =
   không có. Tool cho chọn weather ở Pet và RandomPet.
-- **RSItemID (Type 10/16)**: lấy từ `RotationShopItems.csv` — dòng có
-  `Type=2` (Mutagen) / `Type=4` (WeatherGen) và cột `Value` = ID Mutagen /
-  WeatherGen trong `Mutagen.csv` / `WeatherGen.csv`; RSItemID là cột `ID` của
-  dòng đó (vd 20001 ↔ Mutagen 0 Golden Common). Mutagen/WeatherGen không có
-  dòng Rotation Shop → báo "chưa có RSItemID", không sinh ID.
+- **Mutagen/WeatherGen ID (Type 10/16)**: lấy trực tiếp cột `ID` từ
+  `Mutagen.csv` / `WeatherGen.csv`, pad 3 chữ số trong Reward ID.
+  Không phụ thuộc `RotationShopItems.csv`. Phần Amount theo quy tắc chung:
+  dưới 1000 pad 3 số; 1000–999999 pad 6 số; 1000000 trở lên lỗi.
+  Ví dụ Mutagen ID 0 × 5 → `10000005`; WeatherGen ID 15 × 10 → `16015010`.
+  CSV giữ `Value = config ID`, `Quantity = amount`.
+
 - **Money**: nhập mantissa (0.1–999.9, tối đa 1 số thập phân) + hậu tố như bộ
   soạn Mail (`unit×10000 + mantissa×10`). 25k → `20250`. Đơn vị cơ bản chỉ nhận
   số nguyên.
@@ -103,8 +105,9 @@ Pha 2 (nếu muốn sau): ô giải mã ID → type/field; bảng liệt kê dò
 
 - `tools/sync-reward-id.mjs`: chỉ đọc `Assets/CSV/reward.csv`, `Pet.csv`,
   `mutation.csv`, `weatherEffects.csv`, `Mutagen.csv`, `WeatherGen.csv`,
-  `RotationShopItems.csv` (đều trong `Assets/CSV/**`, không cần mở allowlist)
-  cùng các `.fcg` reward để xác nhận parser. Ghi hash nguồn + commit game.
+  (đều trong `Assets/CSV/**`, không cần mở allowlist) cùng các `.fcg` reward
+  để xác nhận parser. Mutagen/WeatherGen ID lấy trực tiếp từ catalog tương ứng.
+  Ghi hash nguồn + commit game.
   Output duy nhất `dist/data/reward-id.json` (guard đích trong `dist/`). Không
   đọc giftcode/Compensate.
 - Icon: tái dùng snapshot GDD đã có (`dist/data/ui/mail-composer.json`: pets,
@@ -121,7 +124,7 @@ Pha 2 (nếu muốn sau): ô giải mã ID → type/field; bảng liệt kê dò
 ## Acceptance
 
 - Test vector khớp bảng ví dụ: 100010100, 220250, 3999, 3012300, 4050100,
-  50015, 7999, 7012300, 8999, 9999, 1020001005, 1640027010, 17050.
+  50015, 7999, 7012300, 8999, 9999, 10000005, 16015010, 17050.
 - Biên amount: 999→`999`, 1000→`001000`, 999999→`999999`, 1000000→lỗi, 0/âm/thập phân→lỗi; ID > int32→lỗi.
 - Mọi dòng `reward.csv` hiện có được phân loại không crash; ID chuẩn trùng ID
   legacy khác nội dung được phát hiện; dòng tương đương được báo.
@@ -140,7 +143,7 @@ Catalog ghi source commit `92918e23af54d9d55a6c9545eb0d8948ef5530d3`
 và SHA-256 của từng CSV/parser đã đọc. Không đọc giftcode/Compensate.
 
 - Model: 13/13 vector chuẩn pass; biên amount 999/1000/999999,
-  1000000/0/âm/thập phân, int32, thiếu RSItemID, fixed Quantity,
+  1000000/0/âm/thập phân, int32, config ID 3 chữ số, fixed Quantity,
   Money/MoneyTime và weather fallback pass.
 - Browser Microsoft Edge headless, 1440×1000 và 390×1000: 13 vector/mỗi
   viewport, không overflow ngang, không console error hoặc HTTP lỗi,

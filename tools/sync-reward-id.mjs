@@ -21,7 +21,6 @@ const rewards = csv('reward');
 const project = (name, fields) => csv(name).map(r => Object.fromEntries(fields.map(f => [f, r[f]])));
 const pets = project('Pet', ['ID','Name','Rarity']), mutations = project('mutation',['ID','Name']), weathers = project('weatherEffects',['ID','Name']);
 const mutagens = project('Mutagen',['ID','Mutation','Rarity']), weatherGens = project('WeatherGen',['ID','WeatherEffect','Rarity']);
-const rotationItems = csv('RotationShopItems').filter(r => ['2','4'].includes(r.Type)).map(r => ({ RSItemID:r.ID, Type:r.Type, Value:r.Value }));
 const notes = [];
 function evidence(file, pattern, text) { const code = read(file), line = code.split(/\r?\n/).findIndex(l => l.includes(pattern)) + 1; if (!line) throw Error('Parser changed: ' + pattern); notes.push({ source: `${file}:${line}`, text }); }
 evidence('Assets/Scripts/Configs/MailConfigs.fcg', '_RewardId2Value[rewardId] = Split', 'Value reward.csv được tách theo dấu ;.');
@@ -29,7 +28,7 @@ evidence('Assets/Scripts/Manager/MailsManager.fcg', 'var weatherIds List<int> = 
 evidence('Assets/Scripts/Manager/RewardManager.fcg', 'ClaimPet(player, petId, mutationId, weatherIds, true, "mail")', 'ClaimReward truyền weather vào ClaimPet. Chưa chạy engine; hành vi thiếu phần thứ tư trong Value chưa được kiểm trong engine.');
 const mail = JSON.parse(readFileSync(path.join(root,'dist/data/ui/mail-composer.json'),'utf8'));
 const types = [[1,'Pet'],[2,'Money'],[3,'Pet Coin'],[4,'RandomPet'],[5,'MoneyTime'],[7,'Dust'],[8,'DMMP'],[9,'Spin'],[10,'Mutagen'],[16,'WeatherGen'],[17,'Duplicate Ticket']].map(([id,label])=>({id,label}));
-const result = { sourceCommit:spawnSync('git',['-C',game,'rev-parse','HEAD'],{encoding:'utf8'}).stdout.trim(), sourceFiles, rewards, pets, mutations, weathers, mutagens, weatherGens, rotationItems, rarities: Object.fromEntries(['COMMON','RARE','EPIC','LEGENDARY','MYTHIC','APEX','LIMITED'].map((r,i)=>[r,i+1])), types, suffixes:mail.suffixes, petWeatherSupported:true, randomWeatherSupported:false, notes };
+const result = { sourceCommit:spawnSync('git',['-C',game,'rev-parse','HEAD'],{encoding:'utf8'}).stdout.trim(), sourceFiles, rewards, pets, mutations, weathers, mutagens, weatherGens, rarities: Object.fromEntries(['COMMON','RARE','EPIC','LEGENDARY','MYTHIC','APEX','LIMITED'].map((r,i)=>[r,i+1])), types, suffixes:mail.suffixes, petWeatherSupported:true, randomWeatherSupported:false, notes };
 if (!result.sourceCommit) throw Error('Missing source commit');
 writeFileSync(output, JSON.stringify(result,null,2)+'\n');
-console.log(`Reward ID: ${rewards.length} rewards, ${rotationItems.length} rotation items`);
+console.log(`Reward ID: ${rewards.length} rewards, ${mutagens.length} Mutagen configs, ${weatherGens.length} WeatherGen configs`);

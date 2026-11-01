@@ -102,7 +102,7 @@ Mở `http://localhost:8080`. Sync chỉ đọc allowlist CSV và `.fcg` từ ch
 
 ## Bản đồ project
 
-- `tools/sync-reward-id.mjs` / `tools/audit-reward-id.mjs`: catalog reward + RSItemID, encode/lookup và audit; `dist/app-reward-id.js`, `dist/reward-id-model.js`, `dist/data/reward-id*.json` phục vụ tab Reward ID.
+- `tools/sync-reward-id.mjs` / `tools/audit-reward-id.mjs`: catalog reward + Mutagen/WeatherGen ID trực tiếp, encode/lookup và audit; `dist/app-reward-id.js`, `dist/reward-id-model.js`, `dist/data/reward-id*.json` phục vụ tab Reward ID.
 
 - `plans/PLAN-features-from-pvz.md`: thứ tự và phạm vi tính năng.
 - `design/00-decisions.md`: quyết định đã chốt và trạng thái nguồn.

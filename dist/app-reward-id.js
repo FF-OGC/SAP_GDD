@@ -26,7 +26,7 @@ async function updateRewardIdPage() {
       if(type===2) fields+=field('moneyValue','Mantissa (Amount tiền)',input('moneyValue',draft.moneyValue,'min="0.1" max="999.9" step="0.1" required'))+field('moneyUnit','Hậu tố',select('moneyUnit',Object.entries(data.suffixes).map(([id,label])=>`<option value="${esc(id)}" ${id===String(draft.moneyUnit)?'selected':''}>${esc(label||'Cơ bản')}</option>`).join('')));
       if(type===5) fields+=field('hours','Số giờ (Amount giờ)',input('hours',draft.hours,'min="0.1" max="999.9" step="0.1" required'));
       if([10,16].includes(type)) fields+=field('value',type===10?'Mutagen · tên + rarity':'WeatherGen · weather + rarity',select('value',opts(type===10?data.mutagens:data.weatherGens,draft.value,r=>itemName(r,type))));
-      host.innerHTML=`<div class="rid-columns"><form id="rid-form" class="rid-form" novalidate>${fields}</form><div class="rid-result"><div id="rid-visual" class="rid-visual"></div><h2 id="rid-name"></h2><div id="rid-status" role="status" aria-live="polite"></div><div id="rid-errors" role="alert"></div><label for="rid-id">Reward ID</label><div class="rid-copy"><input id="rid-id" readonly><button data-copy="id" type="button">Copy ID</button></div><label for="rid-csv">CSV · ID,TypeReward,Value,Quantity</label><div class="rid-copy"><textarea id="rid-csv" rows="3" readonly></textarea><button data-copy="csvRow" type="button">Copy CSV</button></div><p id="rid-copy-status" role="status"></p><div id="rid-warnings"></div><details><summary>Nguồn và giới hạn</summary>${data.notes.map(n=>`<p>${esc(n.text)}<br><small>${esc(n.source)}</small></p>`).join('')}<p>Không ghi config hoặc cấp thưởng trong game.</p></details></div></div>`;
+      host.innerHTML=`<div class="rid-columns"><form id="rid-form" class="rid-form" novalidate>${fields}</form><div class="rid-result"><div id="rid-visual" class="rid-visual"></div><h2 id="rid-name"></h2><div id="rid-status" role="status" aria-live="polite"></div><div id="rid-errors" role="alert"></div><label for="rid-id">Reward ID</label><div class="rid-copy"><input id="rid-id" readonly><button data-copy="id" type="button">Copy ID</button></div><label for="rid-csv">CSV · ID,TypeReward,Value,Quantity</label><div class="rid-copy"><textarea id="rid-csv" rows="2" readonly></textarea><button data-copy="csvRow" type="button">Copy CSV</button></div><label for="rid-table">Bảng để dán vào Google Sheets · phân cách bằng tab</label><div class="rid-copy"><textarea id="rid-table" rows="3" readonly></textarea><button data-copy="table" type="button">Copy bảng</button></div><p id="rid-copy-status" role="status"></p><div id="rid-warnings"></div><details><summary>Nguồn và giới hạn</summary>${data.notes.map(n=>`<p>${esc(n.text)}<br><small>${esc(n.source)}</small></p>`).join('')}<p>Không ghi config hoặc cấp thưởng trong game.</p></details></div></div>`;
       host.querySelector('form').onsubmit=e=>e.preventDefault();
     }
     function visual(result) {
@@ -41,7 +41,8 @@ async function updateRewardIdPage() {
       current=rewardIdModel.encode(data,draft); status=current.valid?rewardIdModel.lookup(data,current):null;
       try { localStorage.setItem('rewardIdDraft',JSON.stringify({...draft,version:1})); } catch {}
       host.querySelector('#rid-id').value=current.id||''; host.querySelector('#rid-csv').value=current.csvRow||'';
-      host.querySelectorAll('[data-copy]').forEach(b=>b.disabled=!current.valid || !current[b.dataset.copy] || status==='id-conflict');
+      host.querySelector('#rid-table').value=current.row?[current.row.ID,current.row.TypeReward,current.row.Value,current.row.Quantity].join('\t'):'';
+      host.querySelectorAll('[data-copy]').forEach(b=>b.disabled=!current.valid || !(b.dataset.copy==='table'?current.row:current[b.dataset.copy]) || status==='id-conflict');
       for(const el of host.querySelectorAll('[data-error]')) { el.textContent=(current.fieldErrors[el.dataset.error]||[]).join(' '); const control=host.querySelector('#rid-'+el.dataset.error); if(control) control.setAttribute('aria-invalid',el.textContent?'true':'false'); }
       host.querySelector('#rid-errors').textContent=(current.fieldErrors.id||[]).join(' ');
       host.querySelector('#rid-visual').innerHTML=current.valid?visual(current):'';
@@ -67,7 +68,7 @@ async function updateRewardIdPage() {
       else draft[name]=e.target.value;
       update();
     };
-    host.onclick=async e=> { const b=e.target.closest('[data-copy]'); if(!b || b.disabled || !current.valid || status==='id-conflict') return; try { await navigator.clipboard.writeText(current[b.dataset.copy]); host.querySelector('#rid-copy-status').textContent='Đã sao chép.'; } catch { host.querySelector('#rid-copy-status').textContent='Clipboard chưa khả dụng; chọn và sao chép trực tiếp trong ô.'; } };
+    host.onclick=async e=> { const b=e.target.closest('[data-copy]'); if(!b || b.disabled || !current.valid || status==='id-conflict') return; try { await navigator.clipboard.writeText(b.dataset.copy==='table'?host.querySelector('#rid-table').value:current[b.dataset.copy]); host.querySelector('#rid-copy-status').textContent=b.dataset.copy==='table'?'Đã sao chép bảng để dán vào Google Sheets.':'Đã sao chép.'; } catch { host.querySelector('#rid-copy-status').textContent='Clipboard chưa khả dụng; chọn và sao chép trực tiếp trong ô.'; } };
     renderForm(); update();
   } catch(error) { if(host.isConnected) host.textContent='Không tải được Reward ID: '+error.message; }
 }

@@ -44,12 +44,10 @@ const rewardIdModel = (() => {
     }
     if ([10,16].includes(type)) {
       const config = catalog(type === 10 ? 'mutagens' : 'weatherGens',draft.value,'value');
-      const matches = data.rotationItems.filter(r => r.Type === (type === 10 ? '2' : '4') && r.Value === String(draft.value));
-      if (!matches.length) fail('value','Vật phẩm: chưa có RSItemID.');
-      else if (matches.length > 1) fail('value','Vật phẩm: có nhiều RSItemID, chưa có dữ liệu chọn chuẩn.');
-      tail = pad(matches[0]?.RSItemID,5,'value') + tail; value = String(draft.value); quantity = amount;
+      tail = pad(draft.value,3,'value') + tail; value = String(draft.value); quantity = amount;
       display.rarity = config?.Rarity;
-      display.name = (type === 10 ? data.mutations.find(m=>m.ID===config?.Mutation)?.Name : data.weathers.find(w=>w.ID===config?.WeatherEffect)?.Name) || 'chưa có dữ liệu';
+      const itemLabel = type === 10 ? data.mutations.find(m=>m.ID===config?.Mutation)?.Name : data.weathers.find(w=>w.ID===config?.WeatherEffect)?.Name;
+      display.name = `${type === 10 ? 'Mutagen' : 'WeatherGen'} ${itemLabel || 'chưa có dữ liệu'}`;
     }
     if (type === 8) warnings.push('DMMP: chưa có mẫu legacy; chưa xác minh cấp thưởng trong game.');
     const numericId = Number(String(type) + tail);
