@@ -88,6 +88,8 @@ Chạy `node tools/sync-ui-components.mjs` rồi
 Chạy từ thư mục project GDD:
 
 ```powershell
+node tools/sync-reward-id.mjs --project-root "C:\_Code\craftland\StealAPet"
+node tools/audit-reward-id.mjs --project-root "C:\_Code\craftland\StealAPet"
 node tools/sync-source-data.mjs --project-root "C:\_Code\craftland\StealAPet"
 node tools/sync-ui-preview.mjs --project-root "C:\_Code\craftland\StealAPet"
 node tools/sync-ui-proposals.mjs
@@ -99,6 +101,8 @@ python -m http.server 8080 --directory dist
 Mở `http://localhost:8080`. Sync chỉ đọc allowlist CSV và `.fcg` từ checkout game; mọi output được neo trong `dist/` của project này.
 
 ## Bản đồ project
+
+- `tools/sync-reward-id.mjs` / `tools/audit-reward-id.mjs`: catalog reward + RSItemID, encode/lookup và audit; `dist/app-reward-id.js`, `dist/reward-id-model.js`, `dist/data/reward-id*.json` phục vụ tab Reward ID.
 
 - `plans/PLAN-features-from-pvz.md`: thứ tự và phạm vi tính năng.
 - `design/00-decisions.md`: quyết định đã chốt và trạng thái nguồn.

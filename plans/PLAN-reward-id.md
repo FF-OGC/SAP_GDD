@@ -81,15 +81,23 @@ Mọi type có **Type** và **Amount** (bắt buộc). Field riêng:
 Pha 2 (nếu muốn sau): ô giải mã ID → type/field; bảng liệt kê dòng legacy
 đã/chưa đúng chuẩn để chuẩn hóa dần.
 
-## Câu hỏi còn mở (Codex phải kiểm, không tự bịa)
+## Câu hỏi nguồn — đã đối chiếu ngày 2026-11-01
 
-- `reward.csv` Value của Pet chỉ có `IdPet;Mutation`, chưa có chỗ weather. Cần
-  đọc parser reward trong `.fcg` (RewardManager và config reward) để biết có
-  đọc phần thứ 3 không. Nếu chưa xác nhận: vẫn sinh ID khi chọn weather nhưng
-  KHÔNG sinh dòng CSV, ghi cảnh báo "Value chưa hỗ trợ weather". Chỉ sinh
-  `;WeatherID` khi parser xác nhận.
-- Type 8 (DMMP) và Type 4 có Weather chưa có dòng nào trong `reward.csv`; chỉ sinh
-  theo chuẩn, đánh dấu "chưa có mẫu legacy".
+- **Pet weather đã xác nhận ở luồng config Mail**: `MailConfigs.fcg:87`
+  tách Value theo `;`; `MailsManager.fcg:946` đọc `rewardRawValue[2]`
+  thành danh sách weather; `RewardManager.fcg:58` truyền weather vào ClaimPet.
+  Không có weather: giữ `PetID;Mutation`; có weather: xuất
+  `PetID;Mutation;WeatherID`. Không dùng nhánh ClaimRewardByType để suy ra
+  parser Mail vì nhánh đó truyền danh sách weather rỗng.
+- **Giới hạn Pet còn mở ở engine**: `MailsManager.fcg:947` còn đọc phần thứ
+  tư (level), trong khi ClaimPet hiện không dùng level. Chưa kiểm hành vi
+  thiếu phần thứ tư bằng engine; cảnh báo luôn hiện khi chọn Pet.
+- **RandomPet weather không được parser config hỗ trợ**:
+  `MailsManager.fcg:958` chỉ đọc rarity, không đọc mutation/weather.
+  Weather khác 0 vẫn sinh ID nhưng chặn CSV. Mutation có trong chuẩn CSV
+  người dùng chốt, kèm cảnh báo rằng parser config hiện bỏ qua mutation.
+- **Type 8 DMMP** chưa có mẫu legacy; sinh theo chuẩn người dùng chốt,
+  cảnh báo chưa xác minh nhánh cấp thưởng trong engine.
 
 ## Dữ liệu và kiến trúc
 
@@ -123,3 +131,71 @@ Pha 2 (nếu muốn sau): ô giải mã ID → type/field; bảng liệt kê dò
 - Regression: audit Preview/Proposal/Mail composer/UI Components không đổi
   (0 mismatch); `git diff` không chạm `design/ui-proposals/**`, snapshot UI, repo game.
 - Chỉ commit local, Conventional Commits, mỗi pha một commit; không push.
+
+## Kết quả triển khai và kiểm tra (2026-11-01)
+
+Tab `#rewardid` nằm trong nhóm NỘI DUNG. Tool static, vanilla JS; không
+sửa reward.csv, không copy asset mới, không đổi Preview/Proposal.
+Catalog ghi source commit `92918e23af54d9d55a6c9545eb0d8948ef5530d3`
+và SHA-256 của từng CSV/parser đã đọc. Không đọc giftcode/Compensate.
+
+- Model: 13/13 vector chuẩn pass; biên amount 999/1000/999999,
+  1000000/0/âm/thập phân, int32, thiếu RSItemID, fixed Quantity,
+  Money/MoneyTime và weather fallback pass.
+- Browser Microsoft Edge headless, 1440×1000 và 390×1000: 13 vector/mỗi
+  viewport, không overflow ngang, không console error hoặc HTTP lỗi,
+  invalid xóa output/chặn copy; clipboard, draft qua reload, tìm Pet,
+  Pet weather, RandomPet weather và đối chiếu trạng thái pass.
+- Trạng thái **Đã có** dùng fixture chỉ trong browser vì catalog thực chưa
+  có ID chuẩn; không sửa JSON/config. Va chạm và tương đương dùng dữ liệu
+  thật, quà mới dùng Pet Coin 12345. Va chạm khóa cả hai nút copy, hiện
+  dòng đang có để người dùng xử lý ID legacy.
+- Đã xem ảnh desktop/mobile. Icon hiển thị không có ảnh vỡ; placeholder
+  có nhãn và cảnh báo khi thiếu icon. Icon/mutation/weather giữ snapshot
+  Mail, scalar giữ mapping app-reward-display.js.
+- Thiếu icon: Pet **1055, 1056, 1057, 1058, 1059, 1060, 1061**;
+  **Mutation 1 (Normal)**; **RandomPet LIMITED**; **DMMP**.
+  Các field ID/tên/rarity của catalog có mặt trong snapshot Mail vẫn khớp.
+
+### Phân loại 210 dòng reward.csv
+
+Đối chiếu nguyên dòng hiện tại theo chính ID của nó: **exists 210,
+id-conflict 0, equivalent-other-id 0, new 0**.
+
+Khi chuyển nội dung từng dòng sang ID chuẩn mới: **exists 0,
+id-conflict 6, equivalent-other-id 201, new 0, unencodable 3**.
+Đây là số dòng nguồn, không phải số tuple quà duy nhất.
+
+- Va chạm: ID nguồn 17, 22, 47, 48, 50, 21003; ID chuẩn đụng
+  các ID legacy 50020, 50050, 50060, 50090.
+- Chưa mã hóa: 20001 (type chưa có chuẩn), 20013 và 21001
+  (Pet ID không có trong catalog hiện tại).
+- Chi tiết mỗi dòng: `dist/data/reward-id-audit.json`.
+
+### Regression — chưa đạt gate 0 mismatch
+
+Đã chạy lại các audit yêu cầu. Không sửa audit hoặc snapshot để che lỗi.
+Các input audit/snapshot UI và design/ui-proposals không có diff so với
+commit trước task; các lỗi bên dưới nằm ở đối chiếu nguồn game/snapshot cũ.
+
+| Audit | Kết quả |
+|---|---|
+| Reward ID | pass, 13 vector + các biên và lookup |
+| Reward ID browser | pass cả 1440 và 390 |
+| UI Components | pass 360 cases, 27 components, 303 entity instances |
+| Preview Collection | fail: alpha PreventCloseButton, snapshot 100 / nguồn 0 |
+| Proposal | fail: binding line HudCollection khác snapshot (132/174, 662/775…) |
+| Mail composer | fail: hash EditorGenLib.fcc khác snapshot |
+| Preview Activities / Shop / Mail | fail: hash PetConfigs.fcg khác snapshot |
+
+Vì các audit dừng ở assertion đầu tiên, chưa biết tổng số mismatch phía sau.
+Không tuyên bố toàn bộ regression pass. Việc hòa lại snapshot với checkout
+mới là công việc riêng vì yêu cầu hiện tại bảo toàn snapshot UI/Proposal.
+Không chạy game/Studio, chưa xác minh cấp thưởng thực tế, DMMP, RandomPet
+mutation/weather hoặc Pet Value thiếu level trong engine.
+
+Artifacts: `dist/data/reward-id.json`, `reward-id-audit.json`,
+`reward-id-browser-audit.json`, `reward-id-1440.png`, `reward-id-390.png`.
+Browser audit tái chạy bằng `node tools/audit-reward-id-browser.mjs`
+(khi môi trường đã có Playwright và Microsoft Edge; không thêm build step).
+Chỉ commit local; không push. Server kiểm tra: `http://localhost:8080/#rewardid`.
