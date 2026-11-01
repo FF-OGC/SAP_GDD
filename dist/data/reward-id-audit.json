@@ -1,0 +1,1491 @@
+{
+  "vectors": 13,
+  "passed": true,
+  "sourceRows": 210,
+  "currentCounts": {
+    "exists": 210
+  },
+  "canonicalCounts": {
+    "equivalent-other-id": 201,
+    "id-conflict": 6,
+    "unencodable": 3
+  },
+  "rows": [
+    {
+      "sourceId": "1",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100580500",
+      "errors": []
+    },
+    {
+      "sourceId": "2",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "250100",
+      "errors": []
+    },
+    {
+      "sourceId": "3",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "3010",
+      "errors": []
+    },
+    {
+      "sourceId": "4",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "250100",
+      "errors": []
+    },
+    {
+      "sourceId": "5",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "3020",
+      "errors": []
+    },
+    {
+      "sourceId": "6",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100480100",
+      "errors": []
+    },
+    {
+      "sourceId": "7",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100440100",
+      "errors": []
+    },
+    {
+      "sourceId": "8",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "4050500",
+      "errors": []
+    },
+    {
+      "sourceId": "9",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "250100",
+      "errors": []
+    },
+    {
+      "sourceId": "10",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "3200",
+      "errors": []
+    },
+    {
+      "sourceId": "11",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50010",
+      "errors": []
+    },
+    {
+      "sourceId": "12",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50040",
+      "errors": []
+    },
+    {
+      "sourceId": "13",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50080",
+      "errors": []
+    },
+    {
+      "sourceId": "14",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50240",
+      "errors": []
+    },
+    {
+      "sourceId": "15",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "4050100",
+      "errors": []
+    },
+    {
+      "sourceId": "16",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50005",
+      "errors": []
+    },
+    {
+      "sourceId": "17",
+      "current": "exists",
+      "canonical": "id-conflict",
+      "id": "50020",
+      "errors": []
+    },
+    {
+      "sourceId": "18",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "4040100",
+      "errors": []
+    },
+    {
+      "sourceId": "19",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "4030100",
+      "errors": []
+    },
+    {
+      "sourceId": "20",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100400300",
+      "errors": []
+    },
+    {
+      "sourceId": "21",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "3024",
+      "errors": []
+    },
+    {
+      "sourceId": "22",
+      "current": "exists",
+      "canonical": "id-conflict",
+      "id": "50020",
+      "errors": []
+    },
+    {
+      "sourceId": "23",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "3999",
+      "errors": []
+    },
+    {
+      "sourceId": "24",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "3005",
+      "errors": []
+    },
+    {
+      "sourceId": "25",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100510100",
+      "errors": []
+    },
+    {
+      "sourceId": "26",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100610100",
+      "errors": []
+    },
+    {
+      "sourceId": "27",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100490100",
+      "errors": []
+    },
+    {
+      "sourceId": "28",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100560100",
+      "errors": []
+    },
+    {
+      "sourceId": "29",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100620100",
+      "errors": []
+    },
+    {
+      "sourceId": "30",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110160100",
+      "errors": []
+    },
+    {
+      "sourceId": "31",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100350100",
+      "errors": []
+    },
+    {
+      "sourceId": "32",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100370100",
+      "errors": []
+    },
+    {
+      "sourceId": "33",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100380100",
+      "errors": []
+    },
+    {
+      "sourceId": "34",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110260100",
+      "errors": []
+    },
+    {
+      "sourceId": "35",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "221000",
+      "errors": []
+    },
+    {
+      "sourceId": "36",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "230010",
+      "errors": []
+    },
+    {
+      "sourceId": "37",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "3020",
+      "errors": []
+    },
+    {
+      "sourceId": "38",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "7010",
+      "errors": []
+    },
+    {
+      "sourceId": "39",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "7050",
+      "errors": []
+    },
+    {
+      "sourceId": "40",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "230020",
+      "errors": []
+    },
+    {
+      "sourceId": "41",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50120",
+      "errors": []
+    },
+    {
+      "sourceId": "43",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "7400",
+      "errors": []
+    },
+    {
+      "sourceId": "44",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "7800",
+      "errors": []
+    },
+    {
+      "sourceId": "45",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "7001500",
+      "errors": []
+    },
+    {
+      "sourceId": "46",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50030",
+      "errors": []
+    },
+    {
+      "sourceId": "47",
+      "current": "exists",
+      "canonical": "id-conflict",
+      "id": "50050",
+      "errors": []
+    },
+    {
+      "sourceId": "48",
+      "current": "exists",
+      "canonical": "id-conflict",
+      "id": "50060",
+      "errors": []
+    },
+    {
+      "sourceId": "49",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50070",
+      "errors": []
+    },
+    {
+      "sourceId": "50",
+      "current": "exists",
+      "canonical": "id-conflict",
+      "id": "50090",
+      "errors": []
+    },
+    {
+      "sourceId": "51",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50100",
+      "errors": []
+    },
+    {
+      "sourceId": "52",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50110",
+      "errors": []
+    },
+    {
+      "sourceId": "53",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50130",
+      "errors": []
+    },
+    {
+      "sourceId": "54",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50140",
+      "errors": []
+    },
+    {
+      "sourceId": "55",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50150",
+      "errors": []
+    },
+    {
+      "sourceId": "56",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50160",
+      "errors": []
+    },
+    {
+      "sourceId": "57",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50170",
+      "errors": []
+    },
+    {
+      "sourceId": "58",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50180",
+      "errors": []
+    },
+    {
+      "sourceId": "59",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50190",
+      "errors": []
+    },
+    {
+      "sourceId": "60",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50200",
+      "errors": []
+    },
+    {
+      "sourceId": "61",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50210",
+      "errors": []
+    },
+    {
+      "sourceId": "62",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50220",
+      "errors": []
+    },
+    {
+      "sourceId": "63",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50230",
+      "errors": []
+    },
+    {
+      "sourceId": "64",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "220500",
+      "errors": []
+    },
+    {
+      "sourceId": "65",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "240010",
+      "errors": []
+    },
+    {
+      "sourceId": "66",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "250010",
+      "errors": []
+    },
+    {
+      "sourceId": "67",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "7150",
+      "errors": []
+    },
+    {
+      "sourceId": "68",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "3025",
+      "errors": []
+    },
+    {
+      "sourceId": "10009",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "230020",
+      "errors": []
+    },
+    {
+      "sourceId": "10010",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50005",
+      "errors": []
+    },
+    {
+      "sourceId": "10011",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "7020",
+      "errors": []
+    },
+    {
+      "sourceId": "10012",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "50010",
+      "errors": []
+    },
+    {
+      "sourceId": "10013",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "4040100",
+      "errors": []
+    },
+    {
+      "sourceId": "10014",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "7050",
+      "errors": []
+    },
+    {
+      "sourceId": "10015",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "4050100",
+      "errors": []
+    },
+    {
+      "sourceId": "10016",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "7100",
+      "errors": []
+    },
+    {
+      "sourceId": "10017",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "9002",
+      "errors": []
+    },
+    {
+      "sourceId": "10018",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "9003",
+      "errors": []
+    },
+    {
+      "sourceId": "10019",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "1020007001",
+      "errors": []
+    },
+    {
+      "sourceId": "10020",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "1020010001",
+      "errors": []
+    },
+    {
+      "sourceId": "10021",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "1020011001",
+      "errors": []
+    },
+    {
+      "sourceId": "10022",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "1020005001",
+      "errors": []
+    },
+    {
+      "sourceId": "10023",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "1020002001",
+      "errors": []
+    },
+    {
+      "sourceId": "10024",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "1020008001",
+      "errors": []
+    },
+    {
+      "sourceId": "10025",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "1020017001",
+      "errors": []
+    },
+    {
+      "sourceId": "10026",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100440300",
+      "errors": []
+    },
+    {
+      "sourceId": "10027",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "230050",
+      "errors": []
+    },
+    {
+      "sourceId": "10028",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "1020005005",
+      "errors": []
+    },
+    {
+      "sourceId": "10029",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "1640027001",
+      "errors": []
+    },
+    {
+      "sourceId": "10030",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "1640027004",
+      "errors": []
+    },
+    {
+      "sourceId": "10031",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "1020011002",
+      "errors": []
+    },
+    {
+      "sourceId": "10032",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "1020011003",
+      "errors": []
+    },
+    {
+      "sourceId": "10033",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "1640011001",
+      "errors": []
+    },
+    {
+      "sourceId": "10034",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "1640011002",
+      "errors": []
+    },
+    {
+      "sourceId": "10035",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "1640011003",
+      "errors": []
+    },
+    {
+      "sourceId": "10036",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "1640011004",
+      "errors": []
+    },
+    {
+      "sourceId": "10037",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "1640011005",
+      "errors": []
+    },
+    {
+      "sourceId": "10038",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "9004",
+      "errors": []
+    },
+    {
+      "sourceId": "10039",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "9005",
+      "errors": []
+    },
+    {
+      "sourceId": "10040",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "7300",
+      "errors": []
+    },
+    {
+      "sourceId": "10041",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "17003",
+      "errors": []
+    },
+    {
+      "sourceId": "10042",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "17007",
+      "errors": []
+    },
+    {
+      "sourceId": "20001",
+      "current": "exists",
+      "canonical": "unencodable",
+      "id": null,
+      "errors": [
+        "Type: chưa có chuẩn ID."
+      ]
+    },
+    {
+      "sourceId": "20002",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110070100",
+      "errors": []
+    },
+    {
+      "sourceId": "20003",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110080100",
+      "errors": []
+    },
+    {
+      "sourceId": "20004",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110090100",
+      "errors": []
+    },
+    {
+      "sourceId": "20005",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110100100",
+      "errors": []
+    },
+    {
+      "sourceId": "20006",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110050100",
+      "errors": []
+    },
+    {
+      "sourceId": "20007",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110060100",
+      "errors": []
+    },
+    {
+      "sourceId": "20008",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100050100",
+      "errors": []
+    },
+    {
+      "sourceId": "20009",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110020100",
+      "errors": []
+    },
+    {
+      "sourceId": "20010",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110030100",
+      "errors": []
+    },
+    {
+      "sourceId": "20011",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100380100",
+      "errors": []
+    },
+    {
+      "sourceId": "20012",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100620100",
+      "errors": []
+    },
+    {
+      "sourceId": "20013",
+      "current": "exists",
+      "canonical": "unencodable",
+      "id": null,
+      "errors": [
+        "value: chọn ID hợp lệ."
+      ]
+    },
+    {
+      "sourceId": "20014",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100010100",
+      "errors": []
+    },
+    {
+      "sourceId": "20015",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100120100",
+      "errors": []
+    },
+    {
+      "sourceId": "20016",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110080100",
+      "errors": []
+    },
+    {
+      "sourceId": "20017",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100260100",
+      "errors": []
+    },
+    {
+      "sourceId": "20018",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110030100",
+      "errors": []
+    },
+    {
+      "sourceId": "20019",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100380100",
+      "errors": []
+    },
+    {
+      "sourceId": "20020",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110150100",
+      "errors": []
+    },
+    {
+      "sourceId": "20021",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100490100",
+      "errors": []
+    },
+    {
+      "sourceId": "20022",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100430100",
+      "errors": []
+    },
+    {
+      "sourceId": "20023",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100740100",
+      "errors": []
+    },
+    {
+      "sourceId": "21001",
+      "current": "exists",
+      "canonical": "unencodable",
+      "id": null,
+      "errors": [
+        "value: chọn ID hợp lệ."
+      ]
+    },
+    {
+      "sourceId": "21002",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "7200",
+      "errors": []
+    },
+    {
+      "sourceId": "21003",
+      "current": "exists",
+      "canonical": "id-conflict",
+      "id": "50020",
+      "errors": []
+    },
+    {
+      "sourceId": "21004",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "230020",
+      "errors": []
+    },
+    {
+      "sourceId": "21005",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110260100",
+      "errors": []
+    },
+    {
+      "sourceId": "21006",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "7500",
+      "errors": []
+    },
+    {
+      "sourceId": "30009",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "7005000",
+      "errors": []
+    },
+    {
+      "sourceId": "50001",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100010100",
+      "errors": []
+    },
+    {
+      "sourceId": "50009",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100090100",
+      "errors": []
+    },
+    {
+      "sourceId": "50012",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100120100",
+      "errors": []
+    },
+    {
+      "sourceId": "50018",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100180100",
+      "errors": []
+    },
+    {
+      "sourceId": "50019",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100190100",
+      "errors": []
+    },
+    {
+      "sourceId": "50020",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100200100",
+      "errors": []
+    },
+    {
+      "sourceId": "50041",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100410100",
+      "errors": []
+    },
+    {
+      "sourceId": "50042",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100420100",
+      "errors": []
+    },
+    {
+      "sourceId": "50044",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100440100",
+      "errors": []
+    },
+    {
+      "sourceId": "50046",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100460100",
+      "errors": []
+    },
+    {
+      "sourceId": "50047",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100470100",
+      "errors": []
+    },
+    {
+      "sourceId": "50048",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100480100",
+      "errors": []
+    },
+    {
+      "sourceId": "50049",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100490100",
+      "errors": []
+    },
+    {
+      "sourceId": "50050",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100500100",
+      "errors": []
+    },
+    {
+      "sourceId": "50051",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100510100",
+      "errors": []
+    },
+    {
+      "sourceId": "50056",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100560100",
+      "errors": []
+    },
+    {
+      "sourceId": "50058",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100580100",
+      "errors": []
+    },
+    {
+      "sourceId": "50059",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100590100",
+      "errors": []
+    },
+    {
+      "sourceId": "50060",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100600100",
+      "errors": []
+    },
+    {
+      "sourceId": "50061",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100610100",
+      "errors": []
+    },
+    {
+      "sourceId": "50062",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100620100",
+      "errors": []
+    },
+    {
+      "sourceId": "50063",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100630100",
+      "errors": []
+    },
+    {
+      "sourceId": "50064",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100640100",
+      "errors": []
+    },
+    {
+      "sourceId": "50065",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100650100",
+      "errors": []
+    },
+    {
+      "sourceId": "50066",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100660100",
+      "errors": []
+    },
+    {
+      "sourceId": "50067",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100670100",
+      "errors": []
+    },
+    {
+      "sourceId": "50068",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100680100",
+      "errors": []
+    },
+    {
+      "sourceId": "50069",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100690100",
+      "errors": []
+    },
+    {
+      "sourceId": "50074",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100740100",
+      "errors": []
+    },
+    {
+      "sourceId": "50076",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100760100",
+      "errors": []
+    },
+    {
+      "sourceId": "50082",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100820100",
+      "errors": []
+    },
+    {
+      "sourceId": "50083",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100830100",
+      "errors": []
+    },
+    {
+      "sourceId": "50084",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100840100",
+      "errors": []
+    },
+    {
+      "sourceId": "50085",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100850100",
+      "errors": []
+    },
+    {
+      "sourceId": "50086",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100860100",
+      "errors": []
+    },
+    {
+      "sourceId": "50088",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100880100",
+      "errors": []
+    },
+    {
+      "sourceId": "50090",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100900100",
+      "errors": []
+    },
+    {
+      "sourceId": "50101",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "101010100",
+      "errors": []
+    },
+    {
+      "sourceId": "51004",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110040100",
+      "errors": []
+    },
+    {
+      "sourceId": "51005",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110050100",
+      "errors": []
+    },
+    {
+      "sourceId": "51006",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110060100",
+      "errors": []
+    },
+    {
+      "sourceId": "51007",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110070100",
+      "errors": []
+    },
+    {
+      "sourceId": "51008",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110080100",
+      "errors": []
+    },
+    {
+      "sourceId": "51010",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110100100",
+      "errors": []
+    },
+    {
+      "sourceId": "51011",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110110100",
+      "errors": []
+    },
+    {
+      "sourceId": "51014",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110140100",
+      "errors": []
+    },
+    {
+      "sourceId": "51016",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110160100",
+      "errors": []
+    },
+    {
+      "sourceId": "51021",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110210100",
+      "errors": []
+    },
+    {
+      "sourceId": "51023",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110230100",
+      "errors": []
+    },
+    {
+      "sourceId": "51029",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110290100",
+      "errors": []
+    },
+    {
+      "sourceId": "51032",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110320100",
+      "errors": []
+    },
+    {
+      "sourceId": "51033",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110330100",
+      "errors": []
+    },
+    {
+      "sourceId": "51034",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110340100",
+      "errors": []
+    },
+    {
+      "sourceId": "51035",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110350100",
+      "errors": []
+    },
+    {
+      "sourceId": "51036",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110360100",
+      "errors": []
+    },
+    {
+      "sourceId": "51037",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110370100",
+      "errors": []
+    },
+    {
+      "sourceId": "51038",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110380100",
+      "errors": []
+    },
+    {
+      "sourceId": "70001",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "7001000",
+      "errors": []
+    },
+    {
+      "sourceId": "70002",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "7003000",
+      "errors": []
+    },
+    {
+      "sourceId": "51042",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110420100",
+      "errors": []
+    },
+    {
+      "sourceId": "51039",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110390100",
+      "errors": []
+    },
+    {
+      "sourceId": "51040",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110400100",
+      "errors": []
+    },
+    {
+      "sourceId": "51041",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110410100",
+      "errors": []
+    },
+    {
+      "sourceId": "51030",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110300100",
+      "errors": []
+    },
+    {
+      "sourceId": "50094",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100940100",
+      "errors": []
+    },
+    {
+      "sourceId": "50095",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "100950100",
+      "errors": []
+    },
+    {
+      "sourceId": "50103",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "101030100",
+      "errors": []
+    },
+    {
+      "sourceId": "51028",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110280100",
+      "errors": []
+    },
+    {
+      "sourceId": "51044",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110440100",
+      "errors": []
+    },
+    {
+      "sourceId": "50105",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "101050100",
+      "errors": []
+    },
+    {
+      "sourceId": "51045",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110450100",
+      "errors": []
+    },
+    {
+      "sourceId": "56002",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "160020100",
+      "errors": []
+    },
+    {
+      "sourceId": "50107",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "101070100",
+      "errors": []
+    },
+    {
+      "sourceId": "51047",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110470100",
+      "errors": []
+    },
+    {
+      "sourceId": "51054",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110540100",
+      "errors": []
+    },
+    {
+      "sourceId": "56003",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "160030100",
+      "errors": []
+    },
+    {
+      "sourceId": "16088",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "1640025005",
+      "errors": []
+    },
+    {
+      "sourceId": "16089",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "1640016005",
+      "errors": []
+    },
+    {
+      "sourceId": "51061",
+      "current": "exists",
+      "canonical": "equivalent-other-id",
+      "id": "110610100",
+      "errors": []
+    }
+  ]
+}
