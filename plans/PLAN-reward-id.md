@@ -153,6 +153,10 @@ và SHA-256 của từng CSV/parser đã đọc. Không đọc giftcode/Compensa
   có ID chuẩn; không sửa JSON/config. Va chạm và tương đương dùng dữ liệu
   thật, quà mới dùng Pet Coin 12345. Va chạm khóa cả hai nút copy, hiện
   dòng đang có để người dùng xử lý ID legacy.
+- Kết quả TSV Google Sheets phụ: 10 cột `ID, CODE,
+  HUD_REWARD_TITLE_SYSTEM, ∞, -1, -1, ID, true, 0, Reward Details`;
+  hai cột ID trùng Reward ID. CODE theo mẫu đã cung cấp; Duplicate Ticket
+  chưa có mẫu CODE nên để trống và cảnh báo. Reward Details ghi tên và số.
 - Đã xem ảnh desktop/mobile. Icon hiển thị không có ảnh vỡ; placeholder
   có nhãn và cảnh báo khi thiếu icon. Icon/mutation/weather giữ snapshot
   Mail, scalar giữ mapping app-reward-display.js.

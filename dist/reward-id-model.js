@@ -55,7 +55,29 @@ const rewardIdModel = (() => {
     const valid = errors.length === 0, id = valid ? String(numericId) : null;
     const row = valid ? { ID:id, TypeReward:String(type), Value:value, Quantity:String(quantity) } : null;
     display.amount = fixed.includes(type) ? 1 : amount;
-    return { valid, errors, fieldErrors, warnings, id, csvRow:valid && csvAllowed ? [id,type,value,quantity].join(',') : null, row, display };
+    const token = raw => String(raw ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toUpperCase().replace(/[^A-Z0-9]+/g,'_').replace(/^_+|_+$/g,'');
+    const codeAmount = type === 2 ? `${draft.moneyValue}${data.suffixes[Number(draft.moneyUnit)] || ''}` : type === 5 ? draft.hours : draft.amount;
+    let code = '', details = '';
+    if (type === 1) {
+      const pet=data.pets.find(r=>r.ID===String(draft.value));
+      const weather=String(draft.weatherId)==='0'?'NONE':data.weathers.find(r=>r.ID===String(draft.weatherId))?.Name || 'UNKNOWN';
+      code=`PET_${token(pet?.Name)}_${token(display.mutationName)}_${token(weather)}`;
+      details=`${pet?.Name || 'Pet'} · ${display.mutationName || 'Mutation'} · ${weather} x1`;
+    } else if (type===2) { code=`WALLET_CASH_${token(codeAmount)}`; details=`Money ${codeAmount}`; }
+    else if (type===3) { code=`WALLET_PET_COIN_${amount}`; details=`Pet Coin x${amount}`; }
+    else if (type===4) { code=`ANY_RARITY_${token(draft.rarity)}`; details=`RandomPet ${draft.rarity} x1`; }
+    else if (type===5) { code=`WALLET_INCOME_CASH_${token(codeAmount)}`; details=`MoneyTime ${draft.hours} giờ`; }
+    else if (type===7) { code=`WALLET_DUST_${amount}`; details=`Dust x${amount}`; }
+    else if (type===8) { code=`DAILY_MISSON_MILESTONE_POINT_${amount}`; details=`Daily Mission Milestone Points x${amount}`; }
+    else if (type===9) { code=`DAILY_LUCKY_SPIN_${amount}`; details=`Spin x${amount}`; }
+    else if (type===10 || type===16) {
+      const config=type===10?data.mutagens.find(r=>r.ID===String(draft.value)):data.weatherGens.find(r=>r.ID===String(draft.value));
+      const name=type===10?data.mutations.find(r=>r.ID===config?.Mutation)?.Name:data.weathers.find(r=>r.ID===config?.WeatherEffect)?.Name;
+      code=`${type===10?'MUTAGEN':'WEATHERGEN'}_${token(name)}_${amount}`;
+      details=`${type===10?'Mutagen':'WeatherGen'} ${name || 'chưa có dữ liệu'} ${config?.Rarity || ''} x${amount}`.trim();
+    } else if (type===17) { details=`Duplicate Ticket x${amount}`; warnings.push('Chưa có mẫu CODE cho Duplicate Ticket; ô CODE trong bảng để trống.'); }
+    const sheetRow=valid?[id,code,'HUD_REWARD_TITLE_SYSTEM','∞','-1','-1',id,'true','0',details].join('\t'):null;
+    return { valid, errors, fieldErrors, warnings, id, csvRow:valid && csvAllowed ? [id,type,value,quantity].join(',') : null, sheetRow, row, display };
   }
   function key(row) {
     const type = String(row.TypeReward), parts = String(row.Value).split(';');
