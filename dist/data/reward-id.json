@@ -1,0 +1,3011 @@
+{
+  "sourceCommit": "92918e23af54d9d55a6c9545eb0d8948ef5530d3",
+  "sourceFiles": [
+    {
+      "file": "Assets/CSV/reward.csv",
+      "sha256": "8c205ba5d83dea07ded5cdb9aaf671aec7f85027d006bc5f51a3a35f59df6348"
+    },
+    {
+      "file": "Assets/CSV/Pet.csv",
+      "sha256": "f3cf8ccfe62493c72bc05195e90c83c8bc886cb0c7aa7bf2cf2a53b7e054488a"
+    },
+    {
+      "file": "Assets/CSV/mutation.csv",
+      "sha256": "8c496bb4a5e197ece437c9e7334c2e75e5ff5154714e3c7a8e6a29784077141e"
+    },
+    {
+      "file": "Assets/CSV/weatherEffects.csv",
+      "sha256": "27525f5578e82fd8eedd8d643f12b83a0ff9fbe5947447199d4590de0ad9fd3e"
+    },
+    {
+      "file": "Assets/CSV/Mutagen.csv",
+      "sha256": "ddf349123d94d80e4d04c65c166adf9f152b15225875ca276f624f51e93e5b71"
+    },
+    {
+      "file": "Assets/CSV/WeatherGen.csv",
+      "sha256": "5e93cb75758105453c08750976a150c6ae8a086b44cbed6f961ad49e91edd644"
+    },
+    {
+      "file": "Assets/CSV/RotationShopItems.csv",
+      "sha256": "8728bf0f9398785bf7be4bce9fc08c1ff52096c6cc1afed4083c9faf63ec9659"
+    },
+    {
+      "file": "Assets/Scripts/Configs/MailConfigs.fcg",
+      "sha256": "c313554b773aa781e5c6844ef4368af059bc175ca7fafafb47e12b5b729c1289"
+    },
+    {
+      "file": "Assets/Scripts/Manager/MailsManager.fcg",
+      "sha256": "8671781558743425f54e2ae231ec6cb79659f83443be3b95d33926ebac91963e"
+    },
+    {
+      "file": "Assets/Scripts/Manager/RewardManager.fcg",
+      "sha256": "2fdd40761f0a6f009cbdfff9360a3f9e7f500e92477a2f032171bf68b2eff9d7"
+    }
+  ],
+  "rewards": [
+    {
+      "ID": "1",
+      "TypeReward": "1",
+      "Value": "58;5",
+      "Quantity": "1"
+    },
+    {
+      "ID": "2",
+      "TypeReward": "2",
+      "Value": "50100",
+      "Quantity": "1"
+    },
+    {
+      "ID": "3",
+      "TypeReward": "3",
+      "Value": "10",
+      "Quantity": "1"
+    },
+    {
+      "ID": "4",
+      "TypeReward": "2",
+      "Value": "50100",
+      "Quantity": "1"
+    },
+    {
+      "ID": "5",
+      "TypeReward": "3",
+      "Value": "20",
+      "Quantity": "1"
+    },
+    {
+      "ID": "6",
+      "TypeReward": "1",
+      "Value": "48;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "7",
+      "TypeReward": "1",
+      "Value": "44;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "8",
+      "TypeReward": "4",
+      "Value": "MYTHIC;5",
+      "Quantity": "1"
+    },
+    {
+      "ID": "9",
+      "TypeReward": "2",
+      "Value": "50100",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10",
+      "TypeReward": "3",
+      "Value": "200",
+      "Quantity": "1"
+    },
+    {
+      "ID": "11",
+      "TypeReward": "5",
+      "Value": "1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "12",
+      "TypeReward": "5",
+      "Value": "4",
+      "Quantity": "1"
+    },
+    {
+      "ID": "13",
+      "TypeReward": "5",
+      "Value": "8",
+      "Quantity": "1"
+    },
+    {
+      "ID": "14",
+      "TypeReward": "5",
+      "Value": "24",
+      "Quantity": "1"
+    },
+    {
+      "ID": "15",
+      "TypeReward": "4",
+      "Value": "MYTHIC;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "16",
+      "TypeReward": "5",
+      "Value": "0.5",
+      "Quantity": "1"
+    },
+    {
+      "ID": "17",
+      "TypeReward": "5",
+      "Value": "2",
+      "Quantity": "1"
+    },
+    {
+      "ID": "18",
+      "TypeReward": "4",
+      "Value": "LEGENDARY;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "19",
+      "TypeReward": "4",
+      "Value": "EPIC;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20",
+      "TypeReward": "1",
+      "Value": "40;3",
+      "Quantity": "1"
+    },
+    {
+      "ID": "21",
+      "TypeReward": "3",
+      "Value": "24",
+      "Quantity": "1"
+    },
+    {
+      "ID": "22",
+      "TypeReward": "5",
+      "Value": "2",
+      "Quantity": "1"
+    },
+    {
+      "ID": "23",
+      "TypeReward": "3",
+      "Value": "999",
+      "Quantity": "1"
+    },
+    {
+      "ID": "24",
+      "TypeReward": "3",
+      "Value": "5",
+      "Quantity": "1"
+    },
+    {
+      "ID": "25",
+      "TypeReward": "1",
+      "Value": "51;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "26",
+      "TypeReward": "1",
+      "Value": "61;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "27",
+      "TypeReward": "1",
+      "Value": "49;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "28",
+      "TypeReward": "1",
+      "Value": "56;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "29",
+      "TypeReward": "1",
+      "Value": "62;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "30",
+      "TypeReward": "1",
+      "Value": "1016;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "31",
+      "TypeReward": "1",
+      "Value": "35;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "32",
+      "TypeReward": "1",
+      "Value": "37;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "33",
+      "TypeReward": "1",
+      "Value": "38;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "34",
+      "TypeReward": "1",
+      "Value": "1026;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "35",
+      "TypeReward": "2",
+      "Value": "21000",
+      "Quantity": "1"
+    },
+    {
+      "ID": "36",
+      "TypeReward": "2",
+      "Value": "30010",
+      "Quantity": "1"
+    },
+    {
+      "ID": "37",
+      "TypeReward": "3",
+      "Value": "20",
+      "Quantity": "1"
+    },
+    {
+      "ID": "38",
+      "TypeReward": "7",
+      "Value": "10",
+      "Quantity": "1"
+    },
+    {
+      "ID": "39",
+      "TypeReward": "7",
+      "Value": "50",
+      "Quantity": "1"
+    },
+    {
+      "ID": "40",
+      "TypeReward": "2",
+      "Value": "30020",
+      "Quantity": "1"
+    },
+    {
+      "ID": "41",
+      "TypeReward": "5",
+      "Value": "12",
+      "Quantity": "1"
+    },
+    {
+      "ID": "43",
+      "TypeReward": "7",
+      "Value": "400",
+      "Quantity": "1"
+    },
+    {
+      "ID": "44",
+      "TypeReward": "7",
+      "Value": "800",
+      "Quantity": "1"
+    },
+    {
+      "ID": "45",
+      "TypeReward": "7",
+      "Value": "1500",
+      "Quantity": "1"
+    },
+    {
+      "ID": "46",
+      "TypeReward": "5",
+      "Value": "3",
+      "Quantity": "1"
+    },
+    {
+      "ID": "47",
+      "TypeReward": "5",
+      "Value": "5",
+      "Quantity": "1"
+    },
+    {
+      "ID": "48",
+      "TypeReward": "5",
+      "Value": "6",
+      "Quantity": "1"
+    },
+    {
+      "ID": "49",
+      "TypeReward": "5",
+      "Value": "7",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50",
+      "TypeReward": "5",
+      "Value": "9",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51",
+      "TypeReward": "5",
+      "Value": "10",
+      "Quantity": "1"
+    },
+    {
+      "ID": "52",
+      "TypeReward": "5",
+      "Value": "11",
+      "Quantity": "1"
+    },
+    {
+      "ID": "53",
+      "TypeReward": "5",
+      "Value": "13",
+      "Quantity": "1"
+    },
+    {
+      "ID": "54",
+      "TypeReward": "5",
+      "Value": "14",
+      "Quantity": "1"
+    },
+    {
+      "ID": "55",
+      "TypeReward": "5",
+      "Value": "15",
+      "Quantity": "1"
+    },
+    {
+      "ID": "56",
+      "TypeReward": "5",
+      "Value": "16",
+      "Quantity": "1"
+    },
+    {
+      "ID": "57",
+      "TypeReward": "5",
+      "Value": "17",
+      "Quantity": "1"
+    },
+    {
+      "ID": "58",
+      "TypeReward": "5",
+      "Value": "18",
+      "Quantity": "1"
+    },
+    {
+      "ID": "59",
+      "TypeReward": "5",
+      "Value": "19",
+      "Quantity": "1"
+    },
+    {
+      "ID": "60",
+      "TypeReward": "5",
+      "Value": "20",
+      "Quantity": "1"
+    },
+    {
+      "ID": "61",
+      "TypeReward": "5",
+      "Value": "21",
+      "Quantity": "1"
+    },
+    {
+      "ID": "62",
+      "TypeReward": "5",
+      "Value": "22",
+      "Quantity": "1"
+    },
+    {
+      "ID": "63",
+      "TypeReward": "5",
+      "Value": "23",
+      "Quantity": "1"
+    },
+    {
+      "ID": "64",
+      "TypeReward": "2",
+      "Value": "20500",
+      "Quantity": "1"
+    },
+    {
+      "ID": "65",
+      "TypeReward": "2",
+      "Value": "40010",
+      "Quantity": "1"
+    },
+    {
+      "ID": "66",
+      "TypeReward": "2",
+      "Value": "50010",
+      "Quantity": "1"
+    },
+    {
+      "ID": "67",
+      "TypeReward": "7",
+      "Value": "150",
+      "Quantity": "1"
+    },
+    {
+      "ID": "68",
+      "TypeReward": "3",
+      "Value": "25",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10009",
+      "TypeReward": "2",
+      "Value": "30020",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10010",
+      "TypeReward": "5",
+      "Value": "0.5",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10011",
+      "TypeReward": "7",
+      "Value": "20",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10012",
+      "TypeReward": "5",
+      "Value": "1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10013",
+      "TypeReward": "4",
+      "Value": "LEGENDARY;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10014",
+      "TypeReward": "7",
+      "Value": "50",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10015",
+      "TypeReward": "4",
+      "Value": "MYTHIC;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10016",
+      "TypeReward": "7",
+      "Value": "100",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10017",
+      "TypeReward": "9",
+      "Value": "2",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10018",
+      "TypeReward": "9",
+      "Value": "3",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10019",
+      "TypeReward": "10",
+      "Value": "6",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10020",
+      "TypeReward": "10",
+      "Value": "9",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10021",
+      "TypeReward": "10",
+      "Value": "10",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10022",
+      "TypeReward": "10",
+      "Value": "4",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10023",
+      "TypeReward": "10",
+      "Value": "1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10024",
+      "TypeReward": "10",
+      "Value": "7",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10025",
+      "TypeReward": "10",
+      "Value": "16",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10026",
+      "TypeReward": "1",
+      "Value": "44;3",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10027",
+      "TypeReward": "2",
+      "Value": "30050",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10028",
+      "TypeReward": "10",
+      "Value": "4",
+      "Quantity": "5"
+    },
+    {
+      "ID": "10029",
+      "TypeReward": "16",
+      "Value": "26",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10030",
+      "TypeReward": "16",
+      "Value": "26",
+      "Quantity": "4"
+    },
+    {
+      "ID": "10031",
+      "TypeReward": "10",
+      "Value": "10",
+      "Quantity": "2"
+    },
+    {
+      "ID": "10032",
+      "TypeReward": "10",
+      "Value": "10",
+      "Quantity": "3"
+    },
+    {
+      "ID": "10033",
+      "TypeReward": "16",
+      "Value": "10",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10034",
+      "TypeReward": "16",
+      "Value": "10",
+      "Quantity": "2"
+    },
+    {
+      "ID": "10035",
+      "TypeReward": "16",
+      "Value": "10",
+      "Quantity": "3"
+    },
+    {
+      "ID": "10036",
+      "TypeReward": "16",
+      "Value": "10",
+      "Quantity": "4"
+    },
+    {
+      "ID": "10037",
+      "TypeReward": "16",
+      "Value": "10",
+      "Quantity": "5"
+    },
+    {
+      "ID": "10038",
+      "TypeReward": "9",
+      "Value": "4",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10039",
+      "TypeReward": "9",
+      "Value": "5",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10040",
+      "TypeReward": "7",
+      "Value": "300",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10041",
+      "TypeReward": "17",
+      "Value": "3",
+      "Quantity": "1"
+    },
+    {
+      "ID": "10042",
+      "TypeReward": "17",
+      "Value": "7",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20001",
+      "TypeReward": "6",
+      "Value": "1;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20002",
+      "TypeReward": "1",
+      "Value": "1007;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20003",
+      "TypeReward": "1",
+      "Value": "1008;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20004",
+      "TypeReward": "1",
+      "Value": "1009;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20005",
+      "TypeReward": "1",
+      "Value": "1010;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20006",
+      "TypeReward": "1",
+      "Value": "1005;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20007",
+      "TypeReward": "1",
+      "Value": "1006;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20008",
+      "TypeReward": "1",
+      "Value": "5;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20009",
+      "TypeReward": "1",
+      "Value": "1002;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20010",
+      "TypeReward": "1",
+      "Value": "1003;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20011",
+      "TypeReward": "1",
+      "Value": "38;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20012",
+      "TypeReward": "1",
+      "Value": "62;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20013",
+      "TypeReward": "1",
+      "Value": "200;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20014",
+      "TypeReward": "1",
+      "Value": "1;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20015",
+      "TypeReward": "1",
+      "Value": "12;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20016",
+      "TypeReward": "1",
+      "Value": "1008;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20017",
+      "TypeReward": "1",
+      "Value": "26;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20018",
+      "TypeReward": "1",
+      "Value": "1003;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20019",
+      "TypeReward": "1",
+      "Value": "38;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20020",
+      "TypeReward": "1",
+      "Value": "1015;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20021",
+      "TypeReward": "1",
+      "Value": "49;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20022",
+      "TypeReward": "1",
+      "Value": "43;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "20023",
+      "TypeReward": "1",
+      "Value": "74;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "21001",
+      "TypeReward": "1",
+      "Value": "1100;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "21002",
+      "TypeReward": "7",
+      "Value": "200",
+      "Quantity": "1"
+    },
+    {
+      "ID": "21003",
+      "TypeReward": "5",
+      "Value": "2",
+      "Quantity": "1"
+    },
+    {
+      "ID": "21004",
+      "TypeReward": "2",
+      "Value": "30020",
+      "Quantity": "1"
+    },
+    {
+      "ID": "21005",
+      "TypeReward": "1",
+      "Value": "1026;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "21006",
+      "TypeReward": "7",
+      "Value": "500",
+      "Quantity": "1"
+    },
+    {
+      "ID": "30009",
+      "TypeReward": "7",
+      "Value": "5000",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50001",
+      "TypeReward": "1",
+      "Value": "1;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50009",
+      "TypeReward": "1",
+      "Value": "9;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50012",
+      "TypeReward": "1",
+      "Value": "12;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50018",
+      "TypeReward": "1",
+      "Value": "18;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50019",
+      "TypeReward": "1",
+      "Value": "19;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50020",
+      "TypeReward": "1",
+      "Value": "20;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50041",
+      "TypeReward": "1",
+      "Value": "41;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50042",
+      "TypeReward": "1",
+      "Value": "42;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50044",
+      "TypeReward": "1",
+      "Value": "44;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50046",
+      "TypeReward": "1",
+      "Value": "46;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50047",
+      "TypeReward": "1",
+      "Value": "47;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50048",
+      "TypeReward": "1",
+      "Value": "48;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50049",
+      "TypeReward": "1",
+      "Value": "49;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50050",
+      "TypeReward": "1",
+      "Value": "50;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50051",
+      "TypeReward": "1",
+      "Value": "51;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50056",
+      "TypeReward": "1",
+      "Value": "56;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50058",
+      "TypeReward": "1",
+      "Value": "58;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50059",
+      "TypeReward": "1",
+      "Value": "59;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50060",
+      "TypeReward": "1",
+      "Value": "60;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50061",
+      "TypeReward": "1",
+      "Value": "61;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50062",
+      "TypeReward": "1",
+      "Value": "62;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50063",
+      "TypeReward": "1",
+      "Value": "63;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50064",
+      "TypeReward": "1",
+      "Value": "64;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50065",
+      "TypeReward": "1",
+      "Value": "65;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50066",
+      "TypeReward": "1",
+      "Value": "66;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50067",
+      "TypeReward": "1",
+      "Value": "67;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50068",
+      "TypeReward": "1",
+      "Value": "68;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50069",
+      "TypeReward": "1",
+      "Value": "69;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50074",
+      "TypeReward": "1",
+      "Value": "74;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50076",
+      "TypeReward": "1",
+      "Value": "76;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50082",
+      "TypeReward": "1",
+      "Value": "82;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50083",
+      "TypeReward": "1",
+      "Value": "83;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50084",
+      "TypeReward": "1",
+      "Value": "84;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50085",
+      "TypeReward": "1",
+      "Value": "85;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50086",
+      "TypeReward": "1",
+      "Value": "86;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50088",
+      "TypeReward": "1",
+      "Value": "88;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50090",
+      "TypeReward": "1",
+      "Value": "90;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50101",
+      "TypeReward": "1",
+      "Value": "101;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51004",
+      "TypeReward": "1",
+      "Value": "1004;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51005",
+      "TypeReward": "1",
+      "Value": "1005;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51006",
+      "TypeReward": "1",
+      "Value": "1006;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51007",
+      "TypeReward": "1",
+      "Value": "1007;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51008",
+      "TypeReward": "1",
+      "Value": "1008;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51010",
+      "TypeReward": "1",
+      "Value": "1010;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51011",
+      "TypeReward": "1",
+      "Value": "1011;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51014",
+      "TypeReward": "1",
+      "Value": "1014;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51016",
+      "TypeReward": "1",
+      "Value": "1016;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51021",
+      "TypeReward": "1",
+      "Value": "1021;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51023",
+      "TypeReward": "1",
+      "Value": "1023;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51029",
+      "TypeReward": "1",
+      "Value": "1029;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51032",
+      "TypeReward": "1",
+      "Value": "1032;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51033",
+      "TypeReward": "1",
+      "Value": "1033;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51034",
+      "TypeReward": "1",
+      "Value": "1034;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51035",
+      "TypeReward": "1",
+      "Value": "1035;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51036",
+      "TypeReward": "1",
+      "Value": "1036;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51037",
+      "TypeReward": "1",
+      "Value": "1037;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51038",
+      "TypeReward": "1",
+      "Value": "1038;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "70001",
+      "TypeReward": "7",
+      "Value": "1000",
+      "Quantity": "1"
+    },
+    {
+      "ID": "70002",
+      "TypeReward": "7",
+      "Value": "3000",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51042",
+      "TypeReward": "1",
+      "Value": "1042;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51039",
+      "TypeReward": "1",
+      "Value": "1039;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51040",
+      "TypeReward": "1",
+      "Value": "1040;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51041",
+      "TypeReward": "1",
+      "Value": "1041;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51030",
+      "TypeReward": "1",
+      "Value": "1030;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50094",
+      "TypeReward": "1",
+      "Value": "94;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50095",
+      "TypeReward": "1",
+      "Value": "95;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50103",
+      "TypeReward": "1",
+      "Value": "103;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51028",
+      "TypeReward": "1",
+      "Value": "1028;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51044",
+      "TypeReward": "1",
+      "Value": "1044;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50105",
+      "TypeReward": "1",
+      "Value": "105;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51045",
+      "TypeReward": "1",
+      "Value": "1045;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "56002",
+      "TypeReward": "1",
+      "Value": "6002;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "50107",
+      "TypeReward": "1",
+      "Value": "107;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51047",
+      "TypeReward": "1",
+      "Value": "1047;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "51054",
+      "TypeReward": "1",
+      "Value": "1054;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "56003",
+      "TypeReward": "1",
+      "Value": "6003;1",
+      "Quantity": "1"
+    },
+    {
+      "ID": "16088",
+      "TypeReward": "16",
+      "Value": "24",
+      "Quantity": "5"
+    },
+    {
+      "ID": "16089",
+      "TypeReward": "16",
+      "Value": "15",
+      "Quantity": "5"
+    },
+    {
+      "ID": "51061",
+      "TypeReward": "1",
+      "Value": "1061;1",
+      "Quantity": "1"
+    }
+  ],
+  "pets": [
+    {
+      "ID": "1",
+      "Name": "CHICK",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "2",
+      "Name": "ROOSTER",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "3",
+      "Name": "RABBIT",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "4",
+      "Name": "PIG",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "5",
+      "Name": "SHEEP",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "6",
+      "Name": "GOAT",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "7",
+      "Name": "GOOSE",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "8",
+      "Name": "DOG",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "52",
+      "Name": "SHRIMP",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "1001",
+      "Name": "MOLE",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "1007",
+      "Name": "SNOWRABBIT",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "1012",
+      "Name": "MUDSKIPPER",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "1017",
+      "Name": "KINGFISHER",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "9",
+      "Name": "CAT",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "10",
+      "Name": "HAMSTER",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "11",
+      "Name": "MONKEY",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "12",
+      "Name": "CRAB",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "13",
+      "Name": "CLOWNFISH",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "14",
+      "Name": "CAPYBARA",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "15",
+      "Name": "RACOON",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "16",
+      "Name": "SQUIRREL",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "17",
+      "Name": "TURTLE",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "53",
+      "Name": "SNAKE",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "1002",
+      "Name": "SQUID",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "1008",
+      "Name": "POSSUM",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "1013",
+      "Name": "BAT",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "1018",
+      "Name": "CARDINAL",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "18",
+      "Name": "OWL",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "19",
+      "Name": "FLAMINGO",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "20",
+      "Name": "BISON",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "21",
+      "Name": "HORSE",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "22",
+      "Name": "ZEBRA",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "23",
+      "Name": "OCTOPUS",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "24",
+      "Name": "JELLYFISH",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "25",
+      "Name": "DOLPHIN",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "26",
+      "Name": "SEALION",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "27",
+      "Name": "WALRUS",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "54",
+      "Name": "GAZELLE",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "57",
+      "Name": "LOBSTER",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "1003",
+      "Name": "FENNECFOX",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "1009",
+      "Name": "SNOWWEASEL",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "1014",
+      "Name": "SKUNK",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "1019",
+      "Name": "PARROT",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "28",
+      "Name": "MOOSE",
+      "Rarity": "LEGENDARY"
+    },
+    {
+      "ID": "29",
+      "Name": "CAMEL",
+      "Rarity": "LEGENDARY"
+    },
+    {
+      "ID": "30",
+      "Name": "GIRAFFE",
+      "Rarity": "LEGENDARY"
+    },
+    {
+      "ID": "31",
+      "Name": "CHEETAH",
+      "Rarity": "LEGENDARY"
+    },
+    {
+      "ID": "32",
+      "Name": "SNOWOWL",
+      "Rarity": "LEGENDARY"
+    },
+    {
+      "ID": "33",
+      "Name": "ALIGATOR",
+      "Rarity": "LEGENDARY"
+    },
+    {
+      "ID": "34",
+      "Name": "LION",
+      "Rarity": "LEGENDARY"
+    },
+    {
+      "ID": "35",
+      "Name": "TIGER",
+      "Rarity": "LEGENDARY"
+    },
+    {
+      "ID": "36",
+      "Name": "ELEPHANT",
+      "Rarity": "LEGENDARY"
+    },
+    {
+      "ID": "37",
+      "Name": "ORCA",
+      "Rarity": "LEGENDARY"
+    },
+    {
+      "ID": "38",
+      "Name": "PANDA",
+      "Rarity": "LEGENDARY"
+    },
+    {
+      "ID": "39",
+      "Name": "EAGLE",
+      "Rarity": "LEGENDARY"
+    },
+    {
+      "ID": "55",
+      "Name": "SHOEBILL",
+      "Rarity": "LEGENDARY"
+    },
+    {
+      "ID": "58",
+      "Name": "SWAN",
+      "Rarity": "LEGENDARY"
+    },
+    {
+      "ID": "59",
+      "Name": "VULTURE",
+      "Rarity": "LEGENDARY"
+    },
+    {
+      "ID": "65",
+      "Name": "BULL",
+      "Rarity": "LEGENDARY"
+    },
+    {
+      "ID": "1004",
+      "Name": "KIWI",
+      "Rarity": "LEGENDARY"
+    },
+    {
+      "ID": "1010",
+      "Name": "SNOWLEOPARD",
+      "Rarity": "LEGENDARY"
+    },
+    {
+      "ID": "1015",
+      "Name": "RATTLESNAKE",
+      "Rarity": "LEGENDARY"
+    },
+    {
+      "ID": "1020",
+      "Name": "WOODPECKER",
+      "Rarity": "LEGENDARY"
+    },
+    {
+      "ID": "1022",
+      "Name": "LAMB",
+      "Rarity": "LEGENDARY"
+    },
+    {
+      "ID": "40",
+      "Name": "POLARBEAR",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "41",
+      "Name": "RHINO",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "42",
+      "Name": "WOLF",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "45",
+      "Name": "HORNBILL",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "43",
+      "Name": "HIPPO",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "46",
+      "Name": "BROWNBEAR",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "47",
+      "Name": "MANATEE",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "48",
+      "Name": "OSTRICH",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "44",
+      "Name": "SMALLWHALE",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "49",
+      "Name": "GORILLA",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "50",
+      "Name": "BELUGA",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "51",
+      "Name": "NARWHAL",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "56",
+      "Name": "HUSKY",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "60",
+      "Name": "PLATYPUS",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "61",
+      "Name": "JAGUAR",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "62",
+      "Name": "REINDEER",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "63",
+      "Name": "ARCTICFOX",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "64",
+      "Name": "COW",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "66",
+      "Name": "OX",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "67",
+      "Name": "TURKEY",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "68",
+      "Name": "FRILLNECKEDLIZARD",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "69",
+      "Name": "TORTOISE",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "70",
+      "Name": "SEAHORSE",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "71",
+      "Name": "ALPACA",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "72",
+      "Name": "COYOTE",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "73",
+      "Name": "CATFISH",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "74",
+      "Name": "SLOTH",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "75",
+      "Name": "MALLARD",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "77",
+      "Name": "ARMADILLO",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "78",
+      "Name": "AXOLOTLBLUE",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "79",
+      "Name": "AXOLOTLPINK",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "80",
+      "Name": "AXOLOTLGREEN",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "81",
+      "Name": "AXOLOTLORANGE",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "82",
+      "Name": "AXOLOTLWHITE",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "83",
+      "Name": "LLAMA",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "84",
+      "Name": "BABOON",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "1005",
+      "Name": "SNOWMAN",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "1011",
+      "Name": "PENGUIN",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "1016",
+      "Name": "KANGAROO",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "1006",
+      "Name": "MOODENG",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "1021",
+      "Name": "PEACOCK",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "1023",
+      "Name": "SHARK",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "1024",
+      "Name": "KOALA",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "1025",
+      "Name": "FOX",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "1027",
+      "Name": "PORCUPINE",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "1029",
+      "Name": "DINGO",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "1030",
+      "Name": "MOUSE",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "1043",
+      "Name": "FROG",
+      "Rarity": "MYTHIC"
+    },
+    {
+      "ID": "1033",
+      "Name": "TASMANIANDEVIL",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "76",
+      "Name": "KOMODO",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "85",
+      "Name": "SERVAL",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "86",
+      "Name": "JAVELINA",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "87",
+      "Name": "REDPANDA",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "88",
+      "Name": "MEERKAT",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "89",
+      "Name": "PYTHON",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "90",
+      "Name": "MARTEN",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "91",
+      "Name": "HEDGEHOG",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "92",
+      "Name": "WILDBOAR",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "93",
+      "Name": "HYENA",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "94",
+      "Name": "JERBOA",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "95",
+      "Name": "MOUSEDEER",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "96",
+      "Name": "BANDICOOT",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "97",
+      "Name": "JACKAL",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "98",
+      "Name": "DONKEY",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "99",
+      "Name": "ANTELOPE",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "100",
+      "Name": "BADGER",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "101",
+      "Name": "PIRANHA",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "102",
+      "Name": "BEAVER",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "103",
+      "Name": "NUMBAT",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "104",
+      "Name": "QUOKKA",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "105",
+      "Name": "FERRET",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "106",
+      "Name": "LEMUR",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "107",
+      "Name": "GOLDFISH",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "108",
+      "Name": "BASS",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "109",
+      "Name": "TUNA",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "110",
+      "Name": "ECHIDNA",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "111",
+      "Name": "CHIPMUNK",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "112",
+      "Name": "COBRA",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "113",
+      "Name": "JACKRABBIT",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "114",
+      "Name": "GOLDENMOLE",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "115",
+      "Name": "LIONESS",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "116",
+      "Name": "BUFFALO",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "117",
+      "Name": "SALMON",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "118",
+      "Name": "EMU",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "119",
+      "Name": "BIGHORN",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1026",
+      "Name": "ARAPAIMA",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1028",
+      "Name": "IGUANA",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1031",
+      "Name": "GEMSBOK",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1032",
+      "Name": "ORANGUTAN",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1034",
+      "Name": "CARP",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1035",
+      "Name": "WOMBAT",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1036",
+      "Name": "KAKAPO",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1038",
+      "Name": "GILAMONSTER",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1039",
+      "Name": "HORNEDLIZARD",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1040",
+      "Name": "LYNX",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1041",
+      "Name": "PRONGHORN",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1044",
+      "Name": "OTTER",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1047",
+      "Name": "BULL_PUMPKIN",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1048",
+      "Name": "WILDBOAR_PUMPKIN",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1049",
+      "Name": "GORILLA_PUMPKIN",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1050",
+      "Name": "SQUID_PUMPKIN",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1051",
+      "Name": "JELLYFISH_PUMPKIN",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1052",
+      "Name": "GIRAFFE_PUMPKIN",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1053",
+      "Name": "PENGUIN_PUMPKIN",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1054",
+      "Name": "CHICK_PUMPKIN",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1055",
+      "Name": "HUSKY_SPIDERLEGS",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1056",
+      "Name": "MUDSKIPPER_SPIDERLEGS",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1057",
+      "Name": "HORNEDLIZARD_SPIDERLEGS",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1058",
+      "Name": "OCTOPUS_SPIDERLEGS",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1059",
+      "Name": "ALIGATOR_SPIDERLEGS",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1060",
+      "Name": "PENGUIN_SPIDERLEGS",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1061",
+      "Name": "SHARK_SPIDERLEGS",
+      "Rarity": "APEX"
+    },
+    {
+      "ID": "1037",
+      "Name": "MRFOOTBALL",
+      "Rarity": "LIMITED"
+    },
+    {
+      "ID": "1042",
+      "Name": "DRAGON",
+      "Rarity": "LIMITED"
+    },
+    {
+      "ID": "1045",
+      "Name": "PEGASUS",
+      "Rarity": "LIMITED"
+    },
+    {
+      "ID": "1046",
+      "Name": "KIRIN",
+      "Rarity": "LIMITED"
+    },
+    {
+      "ID": "6001",
+      "Name": "LUCKYBOXEPIC",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "6002",
+      "Name": "LUCKYBOXLEGENDARY",
+      "Rarity": "LEGENDARY"
+    },
+    {
+      "ID": "6003",
+      "Name": "LUCKYBOXMYTHIC",
+      "Rarity": "MYTHIC"
+    }
+  ],
+  "mutations": [
+    {
+      "ID": "1",
+      "Name": "Normal"
+    },
+    {
+      "ID": "2",
+      "Name": "Golden"
+    },
+    {
+      "ID": "3",
+      "Name": "Frozen"
+    },
+    {
+      "ID": "4",
+      "Name": "Magma"
+    },
+    {
+      "ID": "5",
+      "Name": "Clover"
+    },
+    {
+      "ID": "6",
+      "Name": "Fossilized"
+    },
+    {
+      "ID": "7",
+      "Name": "Sweetheart"
+    },
+    {
+      "ID": "8",
+      "Name": "Crystalline"
+    },
+    {
+      "ID": "9",
+      "Name": "Webbed"
+    },
+    {
+      "ID": "10",
+      "Name": "Football"
+    },
+    {
+      "ID": "11",
+      "Name": "Radioactive"
+    }
+  ],
+  "weathers": [
+    {
+      "ID": "1",
+      "Name": "Soaked"
+    },
+    {
+      "ID": "2",
+      "Name": "Frost"
+    },
+    {
+      "ID": "3",
+      "Name": "Gale"
+    },
+    {
+      "ID": "4",
+      "Name": "Thundered"
+    },
+    {
+      "ID": "5",
+      "Name": "Eclipse"
+    },
+    {
+      "ID": "6",
+      "Name": "Prismatic"
+    },
+    {
+      "ID": "7",
+      "Name": "Vortex"
+    },
+    {
+      "ID": "8",
+      "Name": "Sequin"
+    },
+    {
+      "ID": "9",
+      "Name": "Sparkle"
+    },
+    {
+      "ID": "10",
+      "Name": "Aurora"
+    }
+  ],
+  "mutagens": [
+    {
+      "ID": "0",
+      "Mutation": "2",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "1",
+      "Mutation": "2",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "2",
+      "Mutation": "2",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "3",
+      "Mutation": "3",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "4",
+      "Mutation": "3",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "5",
+      "Mutation": "3",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "6",
+      "Mutation": "4",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "7",
+      "Mutation": "4",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "8",
+      "Mutation": "4",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "9",
+      "Mutation": "5",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "10",
+      "Mutation": "5",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "11",
+      "Mutation": "5",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "12",
+      "Mutation": "6",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "13",
+      "Mutation": "6",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "14",
+      "Mutation": "6",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "15",
+      "Mutation": "7",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "16",
+      "Mutation": "7",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "17",
+      "Mutation": "7",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "18",
+      "Mutation": "8",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "19",
+      "Mutation": "8",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "20",
+      "Mutation": "8",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "21",
+      "Mutation": "9",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "22",
+      "Mutation": "9",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "23",
+      "Mutation": "9",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "24",
+      "Mutation": "10",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "25",
+      "Mutation": "10",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "26",
+      "Mutation": "10",
+      "Rarity": "EPIC"
+    }
+  ],
+  "weatherGens": [
+    {
+      "ID": "0",
+      "WeatherEffect": "1",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "1",
+      "WeatherEffect": "1",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "2",
+      "WeatherEffect": "1",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "3",
+      "WeatherEffect": "2",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "4",
+      "WeatherEffect": "2",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "5",
+      "WeatherEffect": "2",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "6",
+      "WeatherEffect": "3",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "7",
+      "WeatherEffect": "3",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "8",
+      "WeatherEffect": "3",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "9",
+      "WeatherEffect": "4",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "10",
+      "WeatherEffect": "4",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "11",
+      "WeatherEffect": "4",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "12",
+      "WeatherEffect": "5",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "13",
+      "WeatherEffect": "5",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "14",
+      "WeatherEffect": "5",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "15",
+      "WeatherEffect": "6",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "16",
+      "WeatherEffect": "6",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "17",
+      "WeatherEffect": "6",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "18",
+      "WeatherEffect": "7",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "19",
+      "WeatherEffect": "7",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "20",
+      "WeatherEffect": "7",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "21",
+      "WeatherEffect": "8",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "22",
+      "WeatherEffect": "8",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "23",
+      "WeatherEffect": "8",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "24",
+      "WeatherEffect": "9",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "25",
+      "WeatherEffect": "9",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "26",
+      "WeatherEffect": "9",
+      "Rarity": "EPIC"
+    },
+    {
+      "ID": "27",
+      "WeatherEffect": "10",
+      "Rarity": "COMMON"
+    },
+    {
+      "ID": "28",
+      "WeatherEffect": "10",
+      "Rarity": "RARE"
+    },
+    {
+      "ID": "29",
+      "WeatherEffect": "10",
+      "Rarity": "EPIC"
+    }
+  ],
+  "rotationItems": [
+    {
+      "RSItemID": "20001",
+      "Type": "2",
+      "Value": "0"
+    },
+    {
+      "RSItemID": "20002",
+      "Type": "2",
+      "Value": "1"
+    },
+    {
+      "RSItemID": "20003",
+      "Type": "2",
+      "Value": "2"
+    },
+    {
+      "RSItemID": "20004",
+      "Type": "2",
+      "Value": "3"
+    },
+    {
+      "RSItemID": "20005",
+      "Type": "2",
+      "Value": "4"
+    },
+    {
+      "RSItemID": "20006",
+      "Type": "2",
+      "Value": "5"
+    },
+    {
+      "RSItemID": "20007",
+      "Type": "2",
+      "Value": "6"
+    },
+    {
+      "RSItemID": "20008",
+      "Type": "2",
+      "Value": "7"
+    },
+    {
+      "RSItemID": "20009",
+      "Type": "2",
+      "Value": "8"
+    },
+    {
+      "RSItemID": "20010",
+      "Type": "2",
+      "Value": "9"
+    },
+    {
+      "RSItemID": "20011",
+      "Type": "2",
+      "Value": "10"
+    },
+    {
+      "RSItemID": "20012",
+      "Type": "2",
+      "Value": "11"
+    },
+    {
+      "RSItemID": "20013",
+      "Type": "2",
+      "Value": "12"
+    },
+    {
+      "RSItemID": "20014",
+      "Type": "2",
+      "Value": "13"
+    },
+    {
+      "RSItemID": "20015",
+      "Type": "2",
+      "Value": "14"
+    },
+    {
+      "RSItemID": "20016",
+      "Type": "2",
+      "Value": "15"
+    },
+    {
+      "RSItemID": "20017",
+      "Type": "2",
+      "Value": "16"
+    },
+    {
+      "RSItemID": "20018",
+      "Type": "2",
+      "Value": "17"
+    },
+    {
+      "RSItemID": "20019",
+      "Type": "2",
+      "Value": "18"
+    },
+    {
+      "RSItemID": "20020",
+      "Type": "2",
+      "Value": "19"
+    },
+    {
+      "RSItemID": "20021",
+      "Type": "2",
+      "Value": "20"
+    },
+    {
+      "RSItemID": "20022",
+      "Type": "2",
+      "Value": "21"
+    },
+    {
+      "RSItemID": "20023",
+      "Type": "2",
+      "Value": "22"
+    },
+    {
+      "RSItemID": "20024",
+      "Type": "2",
+      "Value": "23"
+    },
+    {
+      "RSItemID": "20025",
+      "Type": "2",
+      "Value": "24"
+    },
+    {
+      "RSItemID": "20026",
+      "Type": "2",
+      "Value": "25"
+    },
+    {
+      "RSItemID": "20027",
+      "Type": "2",
+      "Value": "26"
+    },
+    {
+      "RSItemID": "40001",
+      "Type": "4",
+      "Value": "0"
+    },
+    {
+      "RSItemID": "40002",
+      "Type": "4",
+      "Value": "1"
+    },
+    {
+      "RSItemID": "40003",
+      "Type": "4",
+      "Value": "2"
+    },
+    {
+      "RSItemID": "40004",
+      "Type": "4",
+      "Value": "3"
+    },
+    {
+      "RSItemID": "40005",
+      "Type": "4",
+      "Value": "4"
+    },
+    {
+      "RSItemID": "40006",
+      "Type": "4",
+      "Value": "5"
+    },
+    {
+      "RSItemID": "40007",
+      "Type": "4",
+      "Value": "6"
+    },
+    {
+      "RSItemID": "40008",
+      "Type": "4",
+      "Value": "7"
+    },
+    {
+      "RSItemID": "40009",
+      "Type": "4",
+      "Value": "8"
+    },
+    {
+      "RSItemID": "40010",
+      "Type": "4",
+      "Value": "9"
+    },
+    {
+      "RSItemID": "40011",
+      "Type": "4",
+      "Value": "10"
+    },
+    {
+      "RSItemID": "40012",
+      "Type": "4",
+      "Value": "11"
+    },
+    {
+      "RSItemID": "40013",
+      "Type": "4",
+      "Value": "12"
+    },
+    {
+      "RSItemID": "40014",
+      "Type": "4",
+      "Value": "13"
+    },
+    {
+      "RSItemID": "40015",
+      "Type": "4",
+      "Value": "14"
+    },
+    {
+      "RSItemID": "40016",
+      "Type": "4",
+      "Value": "15"
+    },
+    {
+      "RSItemID": "40017",
+      "Type": "4",
+      "Value": "16"
+    },
+    {
+      "RSItemID": "40018",
+      "Type": "4",
+      "Value": "17"
+    },
+    {
+      "RSItemID": "40019",
+      "Type": "4",
+      "Value": "18"
+    },
+    {
+      "RSItemID": "40020",
+      "Type": "4",
+      "Value": "19"
+    },
+    {
+      "RSItemID": "40021",
+      "Type": "4",
+      "Value": "20"
+    },
+    {
+      "RSItemID": "40022",
+      "Type": "4",
+      "Value": "21"
+    },
+    {
+      "RSItemID": "40023",
+      "Type": "4",
+      "Value": "22"
+    },
+    {
+      "RSItemID": "40024",
+      "Type": "4",
+      "Value": "23"
+    },
+    {
+      "RSItemID": "40025",
+      "Type": "4",
+      "Value": "24"
+    },
+    {
+      "RSItemID": "40026",
+      "Type": "4",
+      "Value": "25"
+    },
+    {
+      "RSItemID": "40027",
+      "Type": "4",
+      "Value": "26"
+    },
+    {
+      "RSItemID": "40028",
+      "Type": "4",
+      "Value": "27"
+    },
+    {
+      "RSItemID": "40029",
+      "Type": "4",
+      "Value": "28"
+    },
+    {
+      "RSItemID": "40030",
+      "Type": "4",
+      "Value": "29"
+    }
+  ],
+  "rarities": {
+    "COMMON": 1,
+    "RARE": 2,
+    "EPIC": 3,
+    "LEGENDARY": 4,
+    "MYTHIC": 5,
+    "APEX": 6,
+    "LIMITED": 7
+  },
+  "types": [
+    {
+      "id": 1,
+      "label": "Pet"
+    },
+    {
+      "id": 2,
+      "label": "Money"
+    },
+    {
+      "id": 3,
+      "label": "Pet Coin"
+    },
+    {
+      "id": 4,
+      "label": "RandomPet"
+    },
+    {
+      "id": 5,
+      "label": "MoneyTime"
+    },
+    {
+      "id": 7,
+      "label": "Dust"
+    },
+    {
+      "id": 8,
+      "label": "DMMP"
+    },
+    {
+      "id": 9,
+      "label": "Spin"
+    },
+    {
+      "id": 10,
+      "label": "Mutagen"
+    },
+    {
+      "id": 16,
+      "label": "WeatherGen"
+    },
+    {
+      "id": 17,
+      "label": "Duplicate Ticket"
+    }
+  ],
+  "suffixes": {
+    "1": "",
+    "2": "k",
+    "3": "m",
+    "4": "B",
+    "5": "T",
+    "6": "Q",
+    "7": "Qi",
+    "8": "Sx",
+    "9": "Sp",
+    "10": "Oc",
+    "11": "No",
+    "12": "De",
+    "13": "Ud",
+    "14": "Dd",
+    "15": "Td",
+    "16": "Qad",
+    "17": "Qid",
+    "18": "Sxd",
+    "19": "Spd",
+    "20": "Ocd",
+    "21": "Nod",
+    "22": "Vg",
+    "23": "Uvg",
+    "24": "Dvg",
+    "25": "Tvg",
+    "26": "Qavg",
+    "27": "Qivg",
+    "28": "Sxvg",
+    "29": "Spvg",
+    "30": "Ocvg",
+    "31": "Novg",
+    "32": "Tg",
+    "33": "Utg",
+    "34": "Dtg",
+    "35": "Ttg",
+    "36": "Qatg",
+    "37": "Qitg",
+    "38": "Sxtg",
+    "39": "Sptg",
+    "40": "Octg",
+    "41": "Notg",
+    "42": "Qag",
+    "43": "Uqag",
+    "44": "Dqag",
+    "45": "Tqag",
+    "46": "Qaqag",
+    "47": "Qiqag",
+    "48": "Sxqag",
+    "49": "Spqag",
+    "50": "Ocqag"
+  },
+  "petWeatherSupported": true,
+  "randomWeatherSupported": false,
+  "notes": [
+    {
+      "source": "Assets/Scripts/Configs/MailConfigs.fcg:87",
+      "text": "Value reward.csv được tách theo dấu ;."
+    },
+    {
+      "source": "Assets/Scripts/Manager/MailsManager.fcg:946",
+      "text": "Pet đọc weather từ phần thứ ba, ngăn nhiều weather bằng dấu phẩy; phần thứ tư đọc level, ClaimPet hiện không dùng level. RandomPet config chỉ đọc rarity, không đọc mutation/weather."
+    },
+    {
+      "source": "Assets/Scripts/Manager/RewardManager.fcg:58",
+      "text": "ClaimReward truyền weather vào ClaimPet. Chưa chạy engine; hành vi thiếu phần thứ tư trong Value chưa được kiểm trong engine."
+    }
+  ]
+}
