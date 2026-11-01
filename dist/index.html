@@ -7,6 +7,7 @@
   <meta name="description" content="Steal A Pet balance, pacing, and configuration design snapshot.">
   <title>Steal A Pet — Balance & Pacing GDD</title>
   <link rel="stylesheet" href="./styles.css?v=mail-composer-20261101">
+  <link rel="stylesheet" href="./reward-id.css?v=20261101">
   <script defer src="./app-core.js"></script>
   <script defer src="./app-config.js"></script>
   <script defer src="./app-changes.js"></script>
@@ -41,7 +42,9 @@
   <script defer src="./app-uiproposal.js?v=collection-rewards-20261025"></script>
   <script defer src="./app-ui-rewards-proposal.js?v=20261025"></script>
   <script defer src="./app-uicomponents.js?v=activities-templates-20261031"></script>
-  <script defer src="./app-router.js?v=activities-20261031"></script>
+  <script defer src="./reward-id-model.js?v=20261101"></script>
+  <script defer src="./app-reward-id.js?v=20261101"></script>
+  <script defer src="./app-router.js?v=reward-id-20261101"></script>
 </head>
 <body>
   <div class="app-shell">
@@ -66,6 +69,7 @@
 
       <div class="nav-label system-nav-label">NỘI DUNG</div>
       <nav class="nav-list" aria-label="Nội dung cấu hình">
+        <button class="nav-item" data-page="rewardid"><span class="nav-glyph">▤</span><span>Reward ID</span></button>
         <button class="nav-item" data-page="shop"><span class="nav-glyph">▣</span><span>Lịch shop</span></button>
         <button class="nav-item" data-page="missions"><span class="nav-glyph">☷</span><span>Nhiệm vụ &amp; quà</span></button>
         <button class="nav-item" data-page="pools"><span class="nav-glyph">◉</span><span>Pool &amp; phần thưởng</span></button>

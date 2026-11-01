@@ -1,0 +1,48 @@
+{
+  "reports": [
+    {
+      "width": 1440,
+      "vectors": 13,
+      "overflow": false,
+      "consoleErrors": [],
+      "invalidCopyBlocked": true,
+      "clipboard": true,
+      "draftReload": true,
+      "statuses": [
+        "exists (synthetic fixture)",
+        "id-conflict",
+        "equivalent-other-id",
+        "new"
+      ],
+      "brokenImages": 0
+    },
+    {
+      "width": 390,
+      "vectors": 13,
+      "overflow": false,
+      "consoleErrors": [],
+      "invalidCopyBlocked": true,
+      "clipboard": true,
+      "draftReload": true,
+      "statuses": [
+        "exists (synthetic fixture)",
+        "id-conflict",
+        "equivalent-other-id",
+        "new"
+      ],
+      "brokenImages": 0
+    }
+  ],
+  "missingIcons": [
+    "pets:1055",
+    "pets:1056",
+    "pets:1057",
+    "pets:1058",
+    "pets:1059",
+    "pets:1060",
+    "pets:1061",
+    "mutations:1",
+    "RandomPet:LIMITED",
+    "DMMP"
+  ]
+}
