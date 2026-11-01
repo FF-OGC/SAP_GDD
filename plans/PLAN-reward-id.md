@@ -1,4 +1,4 @@
-# Bộ chuyển đổi Reward ID (tab "Reward ID")
+# Bộ chuyển đổi Reward ID (tab "Gift/Reward")
 
 Yêu cầu 2026-11-01: `reward.csv` chưa có chuẩn ID nên mỗi lần config phải dò tay
 xem quà đã tồn tại chưa, thứ tự lộn xộn. Chuẩn ID mới do người dùng chốt ở
@@ -117,7 +117,7 @@ Pha 2 (nếu muốn sau): ô giải mã ID → type/field; bảng liệt kê dò
   có nhãn, ghi rõ trong report.
 - `dist/reward-id-model.js`: logic thuần (encode, đối chiếu), chạy được trong
   Node để audit; `dist/app-reward-id.js`: form + hiển thị. Thêm vào
-  `index.html` (nút nav `Reward ID` trong nhóm "NỘI DUNG") và `app-router.js`.
+  `index.html` (nút nav `Gift/Reward` trong nhóm "NỘI DUNG") và `app-router.js`.
   Vanilla JS, tiếng Việt, gọn, hợp 390px; draft lưu localStorage (bọc try/catch).
 - `tools/audit-reward-id.mjs`: test vector, đối chiếu, báo cáo `dist/data/reward-id-audit.json`.
 
