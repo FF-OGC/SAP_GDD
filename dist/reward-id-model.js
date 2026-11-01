@@ -77,7 +77,8 @@ const rewardIdModel = (() => {
       details=`${type===10?'Mutagen':'WeatherGen'} ${name || 'chưa có dữ liệu'} ${config?.Rarity || ''} x${amount}`.trim();
     } else if (type===17) { details=`Duplicate Ticket x${amount}`; warnings.push('Chưa có mẫu CODE cho Duplicate Ticket; ô CODE trong bảng để trống.'); }
     const sheetRow=valid?[id,code,'HUD_REWARD_TITLE_SYSTEM','∞','-1','-1',id,'true','0',details].join('\t'):null;
-    return { valid, errors, fieldErrors, warnings, id, csvRow:valid && csvAllowed ? [id,type,value,quantity].join(',') : null, sheetRow, row, display };
+    const rewardTableRow=valid?[id,type,value,quantity,'TRUE',details].join('\t'):null;
+    return { valid, errors, fieldErrors, warnings, id, csvRow:valid && csvAllowed ? [id,type,value,quantity].join(',') : null, rewardTableRow, sheetRow, row, display };
   }
   function key(row) {
     const type = String(row.TypeReward), parts = String(row.Value).split(';');
