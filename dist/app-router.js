@@ -37,7 +37,7 @@ document.addEventListener("change",e=>{
   if(e.target.id==="day-select"){s.day=Number(e.target.value);go("cadence")}
 });
 document.getElementById("menu-toggle").addEventListener("click",()=>document.getElementById("sidebar").classList.toggle("open"));
-fetch("./data/config-snapshot.json").then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json()}).then(d=>{s.data=d;go(location.hash==="#rewardid"?"rewardid":location.hash.startsWith("#uicomponents")?"uicomponents":location.hash.startsWith("#uiproposal/")?"uiproposal":location.hash.startsWith("#uipreview/")?"uipreview":"overview")}).catch(err=>{root.innerHTML=note("Không đọc được snapshot",err.message+" · Chạy tools/sync-source-data.mjs rồi serve dist qua HTTP.","","review")});
+fetch("./data/config-snapshot.json").then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json()}).then(d=>{s.data=d;go(location.hash==="#rewardid"?"rewardid":location.hash.startsWith("#uicomponents")?"uicomponents":location.hash.startsWith("#uiproposal/")?"uiproposal":location.hash.startsWith("#uipreview/")?"uipreview":"overview")}).catch(err=>{root.innerHTML=note("Không đọc được snapshot",location.protocol==="file:"?"Trình duyệt không tải được JSON khi mở file trực tiếp. Hãy chạy start.cmd ở thư mục project để mở dashboard qua HTTP local.":err.message+" · Không tải được data/config-snapshot.json. Kiểm tra HTTP server đang phục vụ thư mục dist và thử tải lại trang.","","review")});
 window.addEventListener("hashchange",()=>{if(location.hash.startsWith("#uipreview/")&&s.page!=="uipreview")go("uipreview")});
 
 window.addEventListener("hashchange",()=>{if(location.hash.startsWith("#uiproposal/"))go("uiproposal")});

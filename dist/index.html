@@ -46,6 +46,7 @@
   <script defer src="./reward-id-model.js?v=20261101"></script>
   <script defer src="./app-reward-id.js?v=20261101"></script>
   <script defer src="./app-router.js?v=reward-id-20261101"></script>
+  <script defer src="./app-nav-search.js"></script>
 </head>
 <body>
   <div class="app-shell">
@@ -56,6 +57,15 @@
         </span>
         <span><strong>STEAL A PET</strong><small>Balance lab · GDD</small></span>
       </a>
+
+      <div class="nav-search" role="search" aria-label="Tìm đề mục">
+        <label class="nav-search-field" for="nav-search-input">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
+          <input id="nav-search-input" type="search" placeholder="Tìm đề mục…" autocomplete="off" aria-label="Tìm đề mục" aria-describedby="nav-search-status">
+          <kbd title="Ctrl hoặc Cmd + K" aria-hidden="true">Ctrl K</kbd>
+        </label>
+        <p id="nav-search-status" class="nav-search-status" role="status" aria-live="polite"></p>
+      </div>
 
       <div class="nav-label">DESIGN REVIEW</div>
       <nav class="nav-list" aria-label="GDD sections">
