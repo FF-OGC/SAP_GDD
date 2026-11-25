@@ -4,6 +4,14 @@
   const sidebar = document.getElementById('sidebar');
   const items = [...sidebar.querySelectorAll('.nav-item')];
   const groups = [...sidebar.querySelectorAll('.nav-list')];
+  const previewItem = items.find(item => item.dataset.page === 'uipreview');
+  const previewResults = [];
+  const screenAliases = {
+    'lock-base': 'base lock khóa nhà khóa base lock token',
+    'permanent-event': 'đào câu cá fishing digging',
+    collection: 'bộ sưu tập thú cưng',
+    storage: 'kho lưu trữ'
+  };
   const normalize = value => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase();
   const aliases = {
     overview: 'tổng quan', progression: 'tiến trình tái sinh rebirth',
@@ -18,7 +26,14 @@
   function filter() {
     const words = normalize(input.value.trim()).split(/\s+/).filter(Boolean);
     let count = 0;
-    for (const item of items) {
+    for (const item of [...items, ...previewResults]) {
+      const screen = item.dataset.previewScreen;
+      if (screen) {
+        const text = normalize(`UI Preview ${item.textContent} ${screen} ${screenAliases[screen] || ''}`);
+        item.hidden = !words.length || !words.every(word => text.includes(word));
+        if (!item.hidden) count++;
+        continue;
+      }
       const text = normalize(item.textContent + ' ' + item.dataset.page + ' ' + (aliases[item.dataset.page] || ''));
       item.hidden = !words.every(word => text.includes(word));
       if (!item.hidden) count++;
@@ -29,6 +44,26 @@
     }
     status.textContent = words.length ? (count ? `${count} đề mục · Enter để mở` : 'Không tìm thấy đề mục phù hợp.') : '';
   }
+  fetchUiResource('./data/ui/registry.json').then(checkUiJson).then(registry => {
+    let previous = previewItem;
+    for (const screen of registry.screens.filter(screen => screen.status === 'ready')) {
+      const result = document.createElement('button');
+      result.type = 'button';
+      result.className = 'nav-item';
+      result.dataset.previewScreen = screen.id;
+      result.textContent = `↳ ${screen.name}`;
+      result.addEventListener('click', () => {
+        if (!s.data) return;
+        history.replaceState(null, '', `#uipreview/${encodeURIComponent(screen.id)}`);
+        go('uipreview');
+        document.getElementById('content').focus();
+      });
+      previous.after(result);
+      previous = result;
+      previewResults.push(result);
+    }
+    filter();
+  }).catch(error => console.warn('Could not load UI Preview search entries', error));
   input.addEventListener('input', filter);
   input.addEventListener('keydown', event => {
     if (event.isComposing) return;
@@ -37,7 +72,7 @@
       input.value = ''; filter();
     }
     if (event.key === 'Enter') {
-      const first = items.find(item => !item.hidden);
+      const first = items.find(item => !item.hidden) || previewResults.find(item => !item.hidden);
       if (!first || !s.data) return;
       event.preventDefault();
       first.click();

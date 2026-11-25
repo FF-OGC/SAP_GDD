@@ -680,6 +680,20 @@ td.mono { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; color:#9db
 .ui-preview-toolbar label{display:flex;align-items:center;gap:5px}
 #ui-preview-meta{font-size:12px;color:#a9bdd6}
 .ui-preview-workspace{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:16px;align-items:start}
+.ui-preview-lock-base > :is(.ui-preview-toolbar,.ui-resource-panel),.ui-preview-lock-base .ui-player-panel{display:none}
+.ui-preview-lock-base .ui-preview-workspace{grid-template-columns:minmax(0,1fr)}
+.ui-preview-lock-base .ui-preview-stage{background:none;max-width:1000px;margin-inline:0 auto}
+.ui-preview-lock-base .ui-canvas{translate:clamp(-14px,-1vw,-4px) 0}
+.ui-preview-lock-base .ui-canvas > [data-ui-name="Container"]{scale:.25 .85;transform-origin:left center!important}
+.ui-preview-lock-base .lock-token-burning::after{
+  content:"";position:absolute;inset:0;pointer-events:none;border-radius:12px;
+  background:linear-gradient(to top,#f4711c8c,#ffd04f99 65%,#fff0a199);
+  clip-path:inset(var(--lock-token-burn-inset,0%) 0 0);
+}
+.ui-preview-lock-base .lock-token-burning > .ui-entity{z-index:1}
+.ui-preview-lock-base button.ui-entity:disabled{opacity:.55;cursor:default}
+.ui-preview-lock-base button.ui-entity:focus-visible{outline:3px solid #1f64c4;outline-offset:3px}
+.ui-preview-lock-base [data-ui-name="LockRemaining"] .ui-text-content,.ui-preview-lock-base [data-ui-name="DustAmount"] .ui-text-content{font-variant-numeric:tabular-nums}
 .ui-preview-stage{width:100%;min-width:0;overflow:hidden;position:relative;border:1px solid #4c617e;border-radius:14px;background:linear-gradient(135deg,#152842,#0b1220)}
 .ui-canvas{position:absolute;top:0;left:0;transform-origin:top left;isolation:isolate}
 .ui-entity{isolation:isolate;position:absolute;box-sizing:border-box;min-width:0;min-height:0;padding:0;margin:0;border:0;background:transparent;color:inherit;overflow:visible}
