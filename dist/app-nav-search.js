@@ -6,6 +6,8 @@
   const groups = [...sidebar.querySelectorAll('.nav-list')];
   const previewItem = items.find(item => item.dataset.page === 'uipreview');
   const previewResults = [];
+  const dataResults = [];
+  let eventIndex = [];
   const screenAliases = {
     'lock-base': 'base lock khóa nhà khóa base lock token',
     'permanent-event': 'đào câu cá fishing digging',
@@ -40,12 +42,44 @@
       item.hidden = !words.every(word => text.includes(word));
       if (!item.hidden) count++;
     }
+    dataResults.splice(0).forEach(result => result.remove());
+    const matches = words.length ? eventIndex.filter(entry => words.every(word => entry.search.includes(word))) : [];
+    for (const entry of matches.slice(0, 8)) {
+      const result = document.createElement('button');
+      result.type = 'button';
+      result.className = 'nav-item';
+      result.textContent = entry.label;
+      result.addEventListener('click', () => {
+        if (!s.data) return;
+        history.replaceState(null, '', entry.hash);
+        go(entry.page);
+        document.getElementById('content').focus({ preventScroll: true });
+      });
+      const parent = items.find(item => item.dataset.page === entry.page);
+      parent.parentElement.append(result);
+      dataResults.push(result);
+      count++;
+    }
     for (const group of groups) {
       group.hidden = ![...group.querySelectorAll('.nav-item')].some(item => !item.hidden);
       if (group.previousElementSibling?.classList.contains('nav-label')) group.previousElementSibling.hidden = group.hidden;
     }
     status.textContent = words.length ? (count ? `${count} đề mục · Enter để mở` : 'Không tìm thấy đề mục phù hợp.') : '';
   }
+  loadEventDesign().then(data => {
+    eventIndex = Object.entries(data).flatMap(([page, sources]) => sources.flatMap(source =>
+      source.sections.flatMap(section => {
+        const anchor = eventTableAnchor(source, section);
+        return section.rows.map((row, index) => ({
+          page,
+          hash: '#' + page + '/' + anchor + '-' + (index + 1),
+          label: pages[page] + ' / ' + section.title + ' / ' + row.slice(0, 2).filter(Boolean).join(' · '),
+          search: normalize([pages[page], source.tab, section.title, ...row].join(' '))
+        }));
+      })
+    ));
+    filter();
+  }).catch(error => console.warn('Could not load event search entries', error));
   fetchUiResource('./data/ui/registry.json').then(checkUiJson).then(registry => {
     let previous = previewItem;
     for (const screen of registry.screens.filter(screen => screen.status === 'ready')) {
@@ -74,7 +108,7 @@
       input.value = ''; filter();
     }
     if (event.key === 'Enter') {
-      const first = items.find(item => !item.hidden) || previewResults.find(item => !item.hidden);
+      const first = items.find(item => !item.hidden) || previewResults.find(item => !item.hidden) || dataResults[0];
       if (!first || !s.data) return;
       event.preventDefault();
       first.click();

@@ -414,6 +414,8 @@ td.mono { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; color:#9db
 .system-nav-label { margin-top:19px; }
 .sidebar { overflow-y:auto; }
 .system-controls-panel,.system-data-panel,.weather-cycle-panel,.system-footnote-panel { margin-bottom:14px; }
+.system-data-panel.event-search-target > .panel,
+.system-data-table tr.event-search-target > td { box-shadow:inset 0 -2px #82e0ba; background:#203850; }
 .system-mapping-note { margin:0 0 14px; }
 .system-controls { display:flex; align-items:flex-end; flex-wrap:wrap; gap:12px; }
 .system-control { display:grid; gap:5px; min-width:170px; color:#8294aa; font-size:10px; font-weight:700; }
