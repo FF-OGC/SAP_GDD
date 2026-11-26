@@ -54,6 +54,7 @@ async function updateUiPreviewPage(selectedId = null) {
     uiPreview.height = screen.referenceSize?.height || 720;
     try { localStorage.setItem("uiPreviewScreen", entry.id); } catch {}
     uiPreview.screenId = entry.id;
+    setScreenBreadcrumb(entry.name);
     uiPreview.heightReferenceWidth = lockBase ? 800 : null;
     uiPreview.open = true;
     document.getElementById("ui-open-toggle").textContent = "Đóng UI";
