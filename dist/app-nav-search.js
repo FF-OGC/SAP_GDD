@@ -21,7 +21,9 @@
     chase: 'bảo đảm bảo hiểm pity chase', pools: 'bể pool phần thưởng',
     weatherdrop: 'thời tiết', luckybox: 'hộp may mắn',
     uipreview: 'xem trước giao diện', uiproposal: 'đề xuất giao diện',
-    uicomponents: 'thành phần giao diện'
+    uicomponents: 'thành phần giao diện',
+    revival: 'quay lại phần thưởng đăng nhập', snowball: 'winterland lăn cầu tuyết',
+    fishing: 'câu cá gen'
   };
   function filter() {
     const words = normalize(input.value.trim()).split(/\s+/).filter(Boolean);
